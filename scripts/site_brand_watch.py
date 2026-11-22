@@ -126,13 +126,16 @@ def live_img(x):
             except Exception: _LIVE[key] = ''
         if _LIVE[key]: return _LIVE[key]
     return None
+# Nov 22 2026: text-only cards. An item with `noimg: true`, or any item of a brand in the data's `no_photo_brands` (Splash of Color), never gets a photo.
+_NOPH = {b.lower() for b in d.get('no_photo_brands') or []}
+NOPHOTO = lambda x: bool(x.get('noimg')) or clean(x['brand']).lower() in _NOPH
 COPYPAGE = re.compile(r'/products/[^/?#]*-copy(?:-\d+)?(?:[/?#]|$)', re.I)
 def line(x):
     # Nov 13 (Tiffany 11:22am): CMC built the Cabana Club page by copying Hunt Club ('the-hunt-club-edition-copy'); the page
     # pulled the HUNT CLUB photo. A copied product page carries the old product's photos, so it needs its own `img`.
     if x.get('partner') and not x.get('hidden') and not x.get('img') and COPYPAGE.search((x.get('buy') or x.get('url') or '').replace('%E2%84%A2', '')):
         sys.exit(f"BRAND WATCH REFUSED: {x['brand']} '{x['what'][:60]}' links a COPIED product page ({x.get('buy') or x.get('url')}); its photo may be the old product's. Set `img` to a photo of THIS product.")
-    (lk, img) = shop(x); img = x.get('img') or img or live_img(x)   # Nov 11: explicit photo > snapshot > the live product page
+    (lk, img) = shop(x); img = None if NOPHOTO(x) else (x.get('img') or img or live_img(x))   # Nov 11: explicit photo > snapshot > the live product page; Nov 22: text-only items/brands get none
     when = ' · '.join(t for t in (x.get('day'), x.get('time')) if t)
     btn = ''
     if lk:
@@ -189,8 +192,18 @@ def grouped(L):
     for x in L:
         k = clean(x['brand']); (order.append(k) if k not in G else None); G.setdefault(k, []).append(x)
     gs = [G[k] for k in order]
-    return sorted(gs, key=lambda g: (min(BIG(x) for x in g) if 'BIG' in globals() else 1, min(RANK(x)[:1] for x in g)))   # stable: tile news first, then the rest in date order
-P = lambda L: [x for x in L if x.get('partner') and not x.get('hidden') and 'yellow mountain' not in x.get('brand', '').lower() and 'ymi' not in x.get('brand', '').lower()]
+    # Nov 22 2026: `order` on an item (low first, default 50) places its brand card ahead of the usual sort: the Black Friday groups
+    # (code works 11-19, not confirmed 21-29, no code yet 31-39, no-stack sales 90) and Splash of Color at the bottom (99).
+    return sorted(gs, key=lambda g: (min(x.get('order', 50) for x in g), min(BIG(x) for x in g) if 'BIG' in globals() else 1, min(RANK(x)[:1] for x in g)))   # stable: tile news first, then the rest in date order
+# Nov 22 2026: permanent exclusions live in the data (`never_show`: brand + pattern), e.g. Royal's Heirloom Crown Jewels. A visible
+# item of that brand whose text or link matches is dropped here on every build, so a re-added item can never reach the page.
+_NEVER = [(norm(n['brand']), re.compile(n['pattern'], re.I)) for n in d.get('never_show') or []]
+def NEVER(x):
+    t = ' '.join(str(x.get(k) or '') for k in ('what', 'buy', 'url'))
+    hit = any(b in norm(x.get('brand', '')) and p.search(t) for b, p in _NEVER)
+    if hit and not x.get('hidden'): print('BRAND WATCH: never_show dropped: ' + x['brand'] + ' | ' + x['what'][:80], file=sys.stderr)
+    return hit
+P = lambda L: [x for x in L if x.get('partner') and not x.get('hidden') and not NEVER(x) and 'yellow mountain' not in x.get('brand', '').lower() and 'ymi' not in x.get('brand', '').lower()]
 for _k in ('this_week', 'sales', 'coming_soon', 'just_dropped'):
     for _x in d[_k]: _x['_sec'] = _k
 # Tiffany Nov 11 10:04am: launches first, then just dropped, then sales, then coming soon; newest first; no item twice.

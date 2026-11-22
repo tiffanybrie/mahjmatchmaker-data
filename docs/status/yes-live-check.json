@@ -1,0 +1,5842 @@
+{
+ "at": "2026-11-22T09:08:43-05:00",
+ "summary": "YES-vs-LIVE CHECK: 94 yes(es) NOT LIVE of 637 checked against live albums (505 live, 38 live by a loose match); 232 more are for 8 album(s) not live yet. 951 yes records read, 869 unique tile set + mat pairs, 56 live pages, 2212 cards.",
+ "pass": false,
+ "counts": {
+  "yes_records": 951,
+  "unique_pairs": 869,
+  "checked_against_live": 637,
+  "live": 505,
+  "live_loose": 38,
+  "not_live": 94,
+  "not_live_yet": 232
+ },
+ "records_by_source": {
+  "config/swipe-yeses/holiday-oct21.json": 293,
+  "config/late-holiday-picks-nov03.json": 33,
+  "config/picks/juniper-final-order-2026-11-07.json": 42,
+  "config/picks/deco-lagoon-fym-m-2026-11-08.json": 41,
+  "config/picks/juniper-fym-m-2026-11-07.json": 42,
+  "config/picks/missed-mats-round1-2026-11-07.txt": 146,
+  "config/picks/missed-mats-round2-partial-2026-11-07.json": 28,
+  "config/fym-thin-picks-oct26.json": 41,
+  "config/album-records/holiday-nov18-picks.json": 45,
+  "config/album-records/deco-indigo.json": 27,
+  "config/album-records/deco-lagoon.json": 38,
+  "config/album-records/deco-mulberry.json": 33,
+  "config/album-records/origami-timber.json": 83,
+  "config/album-records/sadie-jane.json": 59
+ },
+ "not_live_by_source": {
+  "config/picks/missed-mats-round2-partial-2026-11-07.json": 27,
+  "config/album-records/holiday-nov18-picks.json": 36,
+  "config/swipe-yeses/holiday-oct21.json": 28,
+  "config/picks/missed-mats-round1-2026-11-07.txt": 3
+ },
+ "not_live_by_album": {
+  "nivalee-blue": 16,
+  "cmc-apres-ski": 8,
+  "dear-santa": 8,
+  "heritage": 6,
+  "sunday-tile-set": 6,
+  "heritage-2-0": 5,
+  "holly-jolly-green": 5,
+  "hummingbird": 4,
+  "willow": 4,
+  "brownstone-bloom": 3,
+  "lola": 2,
+  "papaya-spritz": 2,
+  "pearlescent": 2,
+  "sunday-blues": 2,
+  "december-1994": 1,
+  "emerald": 1,
+  "glitterville": 1,
+  "holly-jolly-pink": 1,
+  "holly-jolly-red": 1,
+  "jasmine": 1,
+  "la-fete": 1,
+  "limoncello": 1,
+  "malachite": 1,
+  "nantucket": 1,
+  "nutcracker-ballet": 1,
+  "osler": 1,
+  "palm-royale": 1,
+  "rackin-rudolph": 1,
+  "shangri-la": 1,
+  "smith": 1,
+  "solara": 1,
+  "sorbet": 1,
+  "spring-love": 1,
+  "talulah": 1,
+  "tinselle-ruby": 1
+ },
+ "pages": [
+  {
+   "url": "https://www.mahjmatchmaker.com/amara-mahjong-tile-matches",
+   "cards": 60
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/birdie-mahjong-tile-matches",
+   "cards": 44
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/blue-mahjong-tile-matches",
+   "cards": 0
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/brown-mahjong-tile-matches",
+   "cards": 0
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/brownstone-bloom-mahjong-tile-matches",
+   "cards": 53
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/coquette-mahjong-tile-matches",
+   "cards": 77
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/dandy-mahjong-tile-matches",
+   "cards": 40
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/deco-lagoon-mahjong-tile-matches",
+   "cards": 41
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/drake-mahjong-tile-matches",
+   "cards": 51
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/emerald-mahjong-tile-matches",
+   "cards": 34
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/gatsby-mahjong-tile-matches",
+   "cards": 67
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/gemma-mahjong-tile-matches",
+   "cards": 24
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/glitterville-mahjong-tile-matches",
+   "cards": 31
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/glow-wild-mahjong-tile-matches",
+   "cards": 48
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/green-mahjong-tile-matches",
+   "cards": 0
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/heritage-2-0-mahjong-tile-matches",
+   "cards": 89
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/heritage-mahjong-tile-matches",
+   "cards": 68
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches",
+   "cards": 244
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/ivory-mahjong-tile-matches",
+   "cards": 0
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/jade-mahjong-tile-matches",
+   "cards": 76
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/jasmine-mahjong-tile-matches",
+   "cards": 33
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches",
+   "cards": 42
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/la-fete-mahjong-tile-matches",
+   "cards": 49
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/lagoon-mahjong-tile-matches",
+   "cards": 46
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/lilac-soiree-mahjong-tile-matches",
+   "cards": 9
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/limoncello-mahjong-tile-matches",
+   "cards": 22
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/lola-mahjong-tile-matches",
+   "cards": 42
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/luminaire-mahjong-tile-matches",
+   "cards": 29
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/malachite-mahjong-tile-matches",
+   "cards": 69
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/masculine-mahjong-tile-matches",
+   "cards": 0
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/moonlight-mahjong-tile-matches",
+   "cards": 59
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/nantucket-mahjong-tile-matches",
+   "cards": 56
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/neutral-mahjong-tile-matches",
+   "cards": 0
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/osler-mahjong-tile-matches",
+   "cards": 44
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/palm-royale-mahjong-tile-matches",
+   "cards": 30
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/papaya-spritz-mahjong-tile-matches",
+   "cards": 56
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/pearlescent-mahjong-tile-matches",
+   "cards": 43
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/pink-mahjong-tile-matches",
+   "cards": 0
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/pippa-mahjong-tile-matches",
+   "cards": 32
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/preppy-soiree-mahjong-tile-matches",
+   "cards": 20
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/purple-mahjong-tile-matches",
+   "cards": 0
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/red-mahjong-tile-matches",
+   "cards": 0
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/seabreeze-mahjong-tile-matches",
+   "cards": 39
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/shangri-la-mahjong-tile-matches",
+   "cards": 29
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/sierra-mahjong-tile-matches",
+   "cards": 25
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/smith-mahjong-tile-matches",
+   "cards": 48
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/solara-mahjong-tile-matches",
+   "cards": 49
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/sorbet-mahjong-tile-matches",
+   "cards": 29
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/spring-love-mahjong-tile-matches",
+   "cards": 19
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/sunday-tile-set-mahjong-tile-matches",
+   "cards": 45
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/sunset-mahjong-tile-matches",
+   "cards": 18
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/talulah-mahjong-tile-matches",
+   "cards": 41
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/taylor-mahjong-tile-matches",
+   "cards": 28
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/tortoise-mahjong-tile-matches",
+   "cards": 61
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/willow-mahjong-tile-matches",
+   "cards": 53
+  },
+  {
+   "url": "https://www.mahjmatchmaker.com/yellow-orange-mahjong-tile-matches",
+   "cards": 0
+  }
+ ],
+ "pages_failed": [],
+ "notes": [
+  "config/swipe-yeses/holiday-oct21.json book tinselle: mat id \"mahjong-mats-holiday\" is one store listing for 13 different mats; the yes cannot say which, so any live card from that listing counts (loose)"
+ ],
+ "not_live": [
+  {
+   "set": "brownstone-bloom",
+   "set_name": "Brownstone Bloom",
+   "mat": "Fern Berry Wreath",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 4a4ddcbcea|brownstone-bloom"
+   ],
+   "how": ""
+  },
+  {
+   "set": "brownstone-bloom",
+   "set_name": "Brownstone Bloom",
+   "mat": "Forest Bird Bloom",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart f427d69494|brownstone-bloom"
+   ],
+   "how": ""
+  },
+  {
+   "set": "brownstone-bloom",
+   "set_name": "Brownstone Bloom",
+   "mat": "Herbal Drawing Butterfly Border",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 3e21c737b1|brownstone-bloom"
+   ],
+   "how": ""
+  },
+  {
+   "set": "cmc-apres-ski",
+   "set_name": "Après Ski Club",
+   "mat": "Blue & White Snowflake",
+   "brand": "Amazon",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "cmc-apres-ski",
+   "set_name": "Après Ski Club",
+   "mat": "Gray Malin Getaway Dogs (Side B: Ski Lift)",
+   "brand": "Bespoke Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "cmc-apres-ski",
+   "set_name": "Après Ski Club",
+   "mat": "Apres Skiing in Teal",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "cmc-apres-ski",
+   "set_name": "Après Ski Club",
+   "mat": "Apres Skiing in Teal with Skiers",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "cmc-apres-ski",
+   "set_name": "Après Ski Club",
+   "mat": "Green Apres Skiing with Skiers",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "cmc-apres-ski",
+   "set_name": "Après Ski Club",
+   "mat": "Winter Jewel",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "cmc-apres-ski",
+   "set_name": "Après Ski Club",
+   "mat": "The Alpine Mat",
+   "brand": "Maison Mahj",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "cmc-apres-ski",
+   "set_name": "Après Ski Club",
+   "mat": "Winter Ski Resort",
+   "brand": "YOLO Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "dear-santa",
+   "set_name": "Dear Santa",
+   "mat": "The Evergreen Mat",
+   "brand": "Maison Mahj",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "dear-santa",
+   "set_name": "Dear Santa",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, hol-dear-santa]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "dear-santa",
+   "set_name": "Dear Santa",
+   "mat": "Peace Love & Mistletoe",
+   "brand": "Peace Love Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "dear-santa",
+   "set_name": "Dear Santa",
+   "mat": "Spirit of Christmas",
+   "brand": "Peace Love Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "dear-santa",
+   "set_name": "Dear Santa",
+   "mat": "Color Me Merry",
+   "brand": "Soirée All Day",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "dear-santa",
+   "set_name": "Dear Santa",
+   "mat": "Holiday Chintz",
+   "brand": "Soirée All Day",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "dear-santa",
+   "set_name": "Dear Santa",
+   "mat": "Home for the Holidays",
+   "brand": "Soirée All Day",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "dear-santa",
+   "set_name": "Dear Santa",
+   "mat": "Evergreen Christmas Plaid",
+   "brand": "YOLO Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "december-1994",
+   "set_name": "December 1994",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, hol-december-1994]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "emerald",
+   "set_name": "Emerald",
+   "mat": "Green Malachite",
+   "brand": "Mahj Squad",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round1-2026-11-07.txt"
+   ],
+   "details": [
+    "Emerald"
+   ],
+   "how": ""
+  },
+  {
+   "set": "glitterville",
+   "set_name": "Glitterville",
+   "mat": "Pink Blooms",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 22bc81a9b7|glitterville"
+   ],
+   "how": ""
+  },
+  {
+   "set": "heritage",
+   "set_name": "Heritage",
+   "mat": "L'Été Indien Studio Print No. 1",
+   "brand": "Fait à Main",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 7b91814b99|heritage"
+   ],
+   "how": ""
+  },
+  {
+   "set": "heritage",
+   "set_name": "Heritage",
+   "mat": "Tabitha",
+   "brand": "House of Hearts Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 79a09985ae|heritage"
+   ],
+   "how": ""
+  },
+  {
+   "set": "heritage",
+   "set_name": "Heritage",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, heritage]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "heritage",
+   "set_name": "Heritage",
+   "mat": "Miracle",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [miracle, heritage]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "heritage",
+   "set_name": "Heritage",
+   "mat": "Twilight Waltz",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [twilight-waltz, heritage]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "heritage",
+   "set_name": "Heritage",
+   "mat": "Vegan Leather (Chestnut)",
+   "brand": "Sunday Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round1-2026-11-07.txt"
+   ],
+   "details": [
+    "Heritage"
+   ],
+   "how": ""
+  },
+  {
+   "set": "heritage-2-0",
+   "set_name": "Heritage 2.0",
+   "mat": "Blossom Pavilion Waterscape",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 6f4f6d21cc|heritage-2-0"
+   ],
+   "how": ""
+  },
+  {
+   "set": "heritage-2-0",
+   "set_name": "Heritage 2.0",
+   "mat": "Fern Berry Wreath",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 4a4ddcbcea|heritage-2-0"
+   ],
+   "how": ""
+  },
+  {
+   "set": "heritage-2-0",
+   "set_name": "Heritage 2.0",
+   "mat": "Herbal Drawing Butterfly Border",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 3e21c737b1|heritage-2-0"
+   ],
+   "how": ""
+  },
+  {
+   "set": "heritage-2-0",
+   "set_name": "Heritage 2.0",
+   "mat": "Terracotta Floral Tapestry",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 856b1960df|heritage-2-0"
+   ],
+   "how": ""
+  },
+  {
+   "set": "heritage-2-0",
+   "set_name": "Heritage 2.0",
+   "mat": "Bird & Pear Blossom",
+   "brand": "Mahj & Moon",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 7f51f5938f|heritage-2-0"
+   ],
+   "how": ""
+  },
+  {
+   "set": "holly-jolly-green",
+   "set_name": "Holly Jolly",
+   "mat": "Very Merry Mahj",
+   "brand": "Anders Ruff",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "holly-jolly-green",
+   "set_name": "Holly Jolly",
+   "mat": "Merry & Bright, Holiday Prism",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "holly-jolly-green",
+   "set_name": "Holly Jolly",
+   "mat": "Holly Jolly Christmas",
+   "brand": "Mahjong Register",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": "same mat name on the page from another brand: Bam! Let's Mahjong \"Holly Jolly Christmas\"",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "Holly Jolly Christmas",
+    "brand": "Bam! Let's Mahjong"
+   }
+  },
+  {
+   "set": "holly-jolly-green",
+   "set_name": "Holly Jolly",
+   "mat": "Merry & Striped",
+   "brand": "Peace Love Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "holly-jolly-green",
+   "set_name": "Holly Jolly",
+   "mat": "Color Me Merry",
+   "brand": "Soirée All Day",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "holly-jolly-pink",
+   "set_name": "Holly Jolly",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, hol-holly-jolly-pink]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "holly-jolly-red",
+   "set_name": "Holly Jolly",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, hol-holly-jolly-red]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "hummingbird",
+   "set_name": "Hummingbird",
+   "mat": "Twilight Waltz",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [twilight-waltz, hummingbird]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "hummingbird",
+   "set_name": "Hummingbird",
+   "mat": "Merry Mix",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-merry-mix, hummingbird]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "hummingbird",
+   "set_name": "Hummingbird",
+   "mat": "Nutcracker Noel - Red & Green",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-nutcracker-noel-red-green, hummingbird]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "hummingbird",
+   "set_name": "Hummingbird",
+   "mat": "Vintage Noel",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-vintage-noel, hummingbird]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "jasmine",
+   "set_name": "Jasmine",
+   "mat": "Twilight Waltz",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [twilight-waltz, jasmine]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "la-fete",
+   "set_name": "La Fete",
+   "mat": "Cheeky Cockatoo",
+   "brand": "Sophie Clima",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 1f7d6a0e86|la-fete"
+   ],
+   "how": ""
+  },
+  {
+   "set": "limoncello",
+   "set_name": "Limoncello",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, limoncello]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "lola",
+   "set_name": "Lola",
+   "mat": "Deep Blue Floral with Instructions",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 0755c26fab|lola"
+   ],
+   "how": ""
+  },
+  {
+   "set": "lola",
+   "set_name": "Lola",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, lola]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "malachite",
+   "set_name": "Malachite",
+   "mat": "Forest Bird Bloom",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart f427d69494|malachite"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nantucket",
+   "set_name": "Nantucket",
+   "mat": "Candy Cane Lane",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-candy-cane-lane, nantucket]"
+   ],
+   "how": "same mat name on the page from another brand: Anders Ruff \"Candy Cane Lane\"",
+   "live_card": {
+    "page": "/nantucket-mahjong-tile-matches",
+    "mat": "Candy Cane Lane",
+    "brand": "Anders Ruff"
+   }
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Blue & White Snowflake",
+   "brand": "Amazon",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Gray Malin Getaway Dogs (Side B: Ski Lift)",
+   "brand": "Bespoke Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Apres Skiing in Teal",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Apres Skiing in Teal with Skiers",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Fair Isle Pink Snowflakes",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Winter Jewel",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Snowflake Lodge Premium",
+   "brand": "Mahjong Register",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "The Alpine Mat",
+   "brand": "Maison Mahj",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "The Chalet",
+   "brand": "Maison Mahj",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": "same mat name on the page from another brand: Bespoke Mahjong \"The Chalet\"",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "The Chalet",
+    "brand": "Bespoke Mahjong"
+   }
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "The Winter Garland Mat",
+   "brand": "Maison Mahj",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Clara",
+   "brand": "Oh My Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Merriment",
+   "brand": "Oh My Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Sugarplum",
+   "brand": "Oh My Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Frosted Flowers",
+   "brand": "Peace Love Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Color Me Merry",
+   "brand": "Soirée All Day",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "Winter Ski Resort",
+   "brand": "YOLO Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": ""
+  },
+  {
+   "set": "nutcracker-ballet",
+   "set_name": "Nutcracker Ballet",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, hol-nutcracker-ballet]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "osler",
+   "set_name": "Osler",
+   "mat": "Miracle",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [miracle, osler]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "palm-royale",
+   "set_name": "Palm Royale",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, palm-royale]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "papaya-spritz",
+   "set_name": "Papaya Spritz",
+   "mat": "Spirit of Christmas",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-spirit-of-christmas, papaya-spritz]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "papaya-spritz",
+   "set_name": "Papaya Spritz",
+   "mat": "Cheeky Cockatoo",
+   "brand": "Sophie Clima",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 1f7d6a0e86|papaya-spritz"
+   ],
+   "how": ""
+  },
+  {
+   "set": "pearlescent",
+   "set_name": "Pearlescent",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, pearlescent]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "pearlescent",
+   "set_name": "Pearlescent",
+   "mat": "Cheeky Cockatoo",
+   "brand": "Sophie Clima",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 1f7d6a0e86|pearlescent"
+   ],
+   "how": ""
+  },
+  {
+   "set": "rackin-rudolph",
+   "set_name": "Rackin' Rudolph",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, hol-rackin-rudolph]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "shangri-la",
+   "set_name": "Shangri La",
+   "mat": "Festive Frost",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart fa53d06550|shangri-la"
+   ],
+   "how": ""
+  },
+  {
+   "set": "smith",
+   "set_name": "Smith",
+   "mat": "Vegan Leather (Chestnut)",
+   "brand": "Sunday Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round1-2026-11-07.txt"
+   ],
+   "details": [
+    "Smith"
+   ],
+   "how": ""
+  },
+  {
+   "set": "solara",
+   "set_name": "Solara",
+   "mat": "Pink Blooms",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 22bc81a9b7|solara"
+   ],
+   "how": ""
+  },
+  {
+   "set": "sorbet",
+   "set_name": "Sorbet",
+   "mat": "Miracle",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [miracle, sorbet]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "spring-love",
+   "set_name": "Spring Love",
+   "mat": "Pretty Little Christmas",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-pretty-little-christmas, vault-spring-love]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "sunday-blues",
+   "set_name": "Sunday Blues",
+   "mat": "Miracle",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [miracle, sunday-blues]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "sunday-blues",
+   "set_name": "Sunday Blues",
+   "mat": "Twilight Waltz",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [twilight-waltz, sunday-blues]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "sunday-tile-set",
+   "set_name": "Sunday Tile Set",
+   "mat": "Blossom Pavilion Waterscape",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 6f4f6d21cc|sunday-tile-set"
+   ],
+   "how": ""
+  },
+  {
+   "set": "sunday-tile-set",
+   "set_name": "Sunday Tile Set",
+   "mat": "Fern Berry Wreath",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 4a4ddcbcea|sunday-tile-set"
+   ],
+   "how": ""
+  },
+  {
+   "set": "sunday-tile-set",
+   "set_name": "Sunday Tile Set",
+   "mat": "Forest Bird Bloom",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart f427d69494|sunday-tile-set"
+   ],
+   "how": ""
+  },
+  {
+   "set": "sunday-tile-set",
+   "set_name": "Sunday Tile Set",
+   "mat": "Herbal Drawing Butterfly Border",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 3e21c737b1|sunday-tile-set"
+   ],
+   "how": ""
+  },
+  {
+   "set": "sunday-tile-set",
+   "set_name": "Sunday Tile Set",
+   "mat": "Terracotta Floral Tapestry",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 856b1960df|sunday-tile-set"
+   ],
+   "how": ""
+  },
+  {
+   "set": "sunday-tile-set",
+   "set_name": "Sunday Tile Set",
+   "mat": "Miracle",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [miracle, sunday]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "talulah",
+   "set_name": "Talulah",
+   "mat": "Miracle",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [miracle, talulah]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "tinselle-ruby",
+   "set_name": "Tinselle",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"tinselle\" yes [tinselle-ruby, omm-merry-mahjong]"
+   ],
+   "how": ""
+  },
+  {
+   "set": "willow",
+   "set_name": "Willow",
+   "mat": "Blossom Pavilion Waterscape",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 6f4f6d21cc|willow"
+   ],
+   "how": ""
+  },
+  {
+   "set": "willow",
+   "set_name": "Willow",
+   "mat": "Fern Berry Wreath",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 4a4ddcbcea|willow"
+   ],
+   "how": ""
+  },
+  {
+   "set": "willow",
+   "set_name": "Willow",
+   "mat": "Forest Bird Bloom",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart f427d69494|willow"
+   ],
+   "how": ""
+  },
+  {
+   "set": "willow",
+   "set_name": "Willow",
+   "mat": "Herbal Drawing Butterfly Border",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart 3e21c737b1|willow"
+   ],
+   "how": ""
+  }
+ ],
+ "not_live_yet": [
+  {
+   "set": "cypress-forest",
+   "set_name": "Cypress Forest",
+   "mat": "Twilight Waltz",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [twilight-waltz, cypress-forest]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "cypress-forest",
+   "set_name": "Cypress Forest",
+   "mat": "Nutcracker Noel - Red & Green",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-nutcracker-noel-red-green, cypress-forest]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Deco Dragon (Lagoon)",
+   "brand": "Bam Bird Boutique",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id bam-bird-boutique-deco-dragon-lagoon"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Deco Dragon (Mulberry)",
+   "brand": "Bam Bird Boutique",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id bam-bird-boutique-deco-dragon-mulberry"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Darjeeling Peacock (Navy Floral)",
+   "brand": "Bespoke Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id bespoke-mahjong-darjeeling-peacock-navy-floral"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Sapphire Blue Garden Mat",
+   "brand": "Bespoke Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id bespoke-mahjong-sapphire-blue-garden-mat"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Gilded Peacock",
+   "brand": "Bougie Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id bougie-mahjong-gilded-peacock"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Calista Leatherette",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id britt-mills-calista-leatherette"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Peacock Garden",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id britt-mills-peacock-garden"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Scarlett",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id britt-mills-scarlett"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Tilly Neoprene",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id britt-mills-tilly-neoprene"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Butterscotch Floral Simple Middle",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id lets-be-besties-butterscotch-floral-simple-middle"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Gatsby Glow",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id lets-be-besties-gatsby-glow"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Winter Jewel",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id lets-be-besties-winter-jewel"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Caroline in Navy",
+   "brand": "Mahj & Vine",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id mahj-and-vine-caroline-in-navy"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Caroline in Peacock",
+   "brand": "Mahj & Vine",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id mahj-and-vine-caroline-in-peacock"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "The Speakeasy",
+   "brand": "Mahj Squad",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id mahj-squad-the-speakeasy"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Pretty in Plum Premium",
+   "brand": "Mahjong Register",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id mahjong-register-pretty-in-plum-premium"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Snowflake Reindeer Lodge Double-Sided Leatherette",
+   "brand": "Mahjong Register",
+   "holiday": true,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id mahjong-register-snowflake-reindeer-lodge-double-sided-leatherette"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Garden Party – Mulberry",
+   "brand": "My Fair Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id my-fair-mahjong-garden-party-mulberry"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Astor",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id oh-my-mahjong-astor"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Elysium",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id oh-my-mahjong-elysium"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Hawthorne",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id oh-my-mahjong-hawthorne"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "SoHo",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id oh-my-mahjong-soho"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Vanderbilt",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id oh-my-mahjong-vanderbilt"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Yuletide",
+   "brand": "Oh My Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id oh-my-mahjong-yuletide"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Love & Light",
+   "brand": "Peace Love Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id peace-love-mahjong-love-and-light"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Crown Jewels",
+   "brand": "Royal Mahjong Society",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id royal-mahjong-society-crown-jewels"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-indigo",
+   "set_name": "Deco (Indigo) (Bam Bird Boutique)",
+   "mat": "Midnight Garden Club",
+   "brand": "Soirée All Day",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-indigo.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=False), card id soir-e-all-day-midnight-garden-club"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-28 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Burgundy Grove",
+   "brand": "Anders Ruff",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id anders-ruff-burgundy-grove"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Purple & Aqua Marble",
+   "brand": "Anders Ruff",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id anders-ruff-purple-and-aqua-marble"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Deco Dragon (Lagoon)",
+   "brand": "Bam Bird Boutique",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id bam-bird-boutique-deco-dragon-lagoon"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Deco Neoprene",
+   "brand": "Bam Bird Boutique",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id bam-bird-boutique-deco-neoprene"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "YOTD Raspberry",
+   "brand": "Bespoke Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id bespoke-mahjong-yotd-raspberry"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Gilded Peacock",
+   "brand": "Bougie Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id bougie-mahjong-gilded-peacock"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Flourish Neoprene",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id britt-mills-flourish-neoprene"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Regal Bloom Neoprene",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id britt-mills-regal-bloom-neoprene"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Viola",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id britt-mills-viola"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Wren",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id britt-mills-wren"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Ocean Florals",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id lets-be-besties-ocean-florals"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Peacock Flair",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id lets-be-besties-peacock-flair"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "The Mariner",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id lets-be-besties-the-mariner"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Winter Jewel",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id lets-be-besties-winter-jewel"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Caroline in Peacock",
+   "brand": "Mahj & Vine",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id mahj-and-vine-caroline-in-peacock"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Emerald Cove Mat",
+   "brand": "Mahj Mood",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id mahj-mood-emerald-cove-mat"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Fall Fling Mat",
+   "brand": "Mahj Mood",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id mahj-mood-fall-fling-mat"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Mahj In Bloom Mat",
+   "brand": "Mahj Mood",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id mahj-mood-mahj-in-bloom-mat"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Peony Sociale Premium",
+   "brand": "Mahjong Register",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id mahjong-register-peony-sociale-premium"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Pretty in Plum Premium",
+   "brand": "Mahjong Register",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id mahjong-register-pretty-in-plum-premium"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Garden Party – Mulberry",
+   "brand": "My Fair Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id my-fair-mahjong-garden-party-mulberry"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Hawthorne",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id oh-my-mahjong-hawthorne"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Jade",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id oh-my-mahjong-jade"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Yuletide",
+   "brand": "Oh My Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id oh-my-mahjong-yuletide"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Dark Teal Cocktail Hour",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id peace-love-mahjong-dark-teal-cocktail-hour"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Tiger Fans",
+   "brand": "Piper Chase Studios",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id piper-chase-studios-tiger-fans"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Crown Jewels",
+   "brand": "Royal Mahjong Society",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id royal-mahjong-society-crown-jewels"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Poinsettia Party",
+   "brand": "Soirée All Day",
+   "holiday": true,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id soir-e-all-day-poinsettia-party"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Spring Blooms Premium",
+   "brand": "Sunday Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id sunday-mahjong-spring-blooms-premium"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Evergreen",
+   "brand": "That Mahjong Moment",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id that-mahjong-moment-evergreen"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Mulberry and Sage",
+   "brand": "Wren Mats",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id wren-mats-mulberry-and-sage"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Year of the Snake",
+   "brand": "Wren Mats",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id wren-mats-year-of-the-snake"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "deco-mulberry",
+   "set_name": "Deco (Mulberry) (Bam Bird Boutique)",
+   "mat": "Plum Scallop",
+   "brand": "YOLO Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/deco-mulberry.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-17 (done=True), card id yolo-mahjong-plum-scallop"
+   ],
+   "how": "",
+   "why": "album queue, week of 2026-12-14 (proposed)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Bam Bird Boutique Vegan Leather Navy",
+   "brand": "",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id bam-bird-boutique-vegan-leather-navy"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Lets Be Besties Teal Dots And Stripes With Instructions",
+   "brand": "",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id lets-be-besties-teal-dots-and-stripes-with-instructions"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Mahjong Register Emerald Teal And Celadon Green Double Sided Leatherette Mahjong Mat 33",
+   "brand": "",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id mahjong-register-emerald-teal-and-celadon-green-double-sided-leatherette-mahjong-mat-33"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Sunday Mahjong Vegan Leather Chestnut",
+   "brand": "",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id sunday-mahjong-vegan-leather-chestnut"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Evergreen & Tartan",
+   "brand": "Anders Ruff",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id anders-ruff-evergreen-and-tartan"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Tartan Tidings",
+   "brand": "Anders Ruff",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id anders-ruff-tartan-tidings"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Bandana – Holiday Green/Pink accents",
+   "brand": "Bam Bird Boutique",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id bam-bird-boutique-bandana-holiday-green-pink-accents"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Blue Abstract Neoprene",
+   "brand": "Bam Bird Boutique",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id bam-bird-boutique-blue-abstract-neoprene"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Holiday Neoprene",
+   "brand": "Bam Bird Boutique",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id bam-bird-boutique-holiday-neoprene"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Plaid Neoprene – Green and Blue",
+   "brand": "Bam Bird Boutique",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id bam-bird-boutique-plaid-neoprene-green-and-blue"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Plaid Neoprene – Green with Pink",
+   "brand": "Bam Bird Boutique",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id bam-bird-boutique-plaid-neoprene-green-with-pink"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Vegan Leather – Caramel",
+   "brand": "Bam Bird Boutique",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id bam-bird-boutique-vegan-leather-caramel"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Jungle Turquoise",
+   "brand": "Bespoke Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id bespoke-mahjong-jungle-turquoise"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Emerald Society",
+   "brand": "Bougie Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id bougie-mahjong-emerald-society"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Imperial Koi Pond",
+   "brand": "Bougie Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id bougie-mahjong-imperial-koi-pond"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Dabney Leatherette",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id britt-mills-dabney-leatherette"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Eden Leatherette",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id britt-mills-eden-leatherette"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Enchanted Leatherette",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id britt-mills-enchanted-leatherette"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Huntley Leatherette",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id britt-mills-huntley-leatherette"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Merrywood",
+   "brand": "Britt Mills",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id britt-mills-merrywood"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Novella Leatherette",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id britt-mills-novella-leatherette"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Peacock Garden Leatherette",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id britt-mills-peacock-garden-leatherette"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Ruby",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id britt-mills-ruby"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "SOIRÉE Leatherette",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id britt-mills-soir-e-leatherette"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Savannah Leatherette",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id britt-mills-savannah-leatherette"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Winter Berry Leatherette",
+   "brand": "Britt Mills",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id britt-mills-winter-berry-leatherette"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Wren",
+   "brand": "Britt Mills",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id britt-mills-wren"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Brown Vegan Leather",
+   "brand": "Charleston Mahjong Club",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id charleston-mahjong-club-brown-vegan-leather"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "The Hunt Club",
+   "brand": "Charleston Mahjong Club",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id charleston-mahjong-club-the-hunt-club"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "L'Été Indien Studio Print No. 1",
+   "brand": "Fait à Main",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id fait-main-l-t-indien-studio-print-no-1"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Rackin' Rudolph !",
+   "brand": "Hip Hip Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id hip-hip-mahjong-rackin-rudolph"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Floral Scrolls",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id lets-be-besties-floral-scrolls"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Tartan Tweed",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id lets-be-besties-tartan-tweed"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Winter Jewel",
+   "brand": "Let's Be Besties",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id lets-be-besties-winter-jewel"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Cloud Crane Floral Frame",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id luna-ek-studio-cloud-crane-floral-frame"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Crane Lantern Pattern",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id luna-ek-studio-crane-lantern-pattern"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Lotus Breeze Koi",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id luna-ek-studio-lotus-breeze-koi"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Lotus Garden Koi",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id luna-ek-studio-lotus-garden-koi"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Terracotta Floral Tapestry",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id luna-ek-studio-terracotta-floral-tapestry"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Umbrella Koi Pond",
+   "brand": "Luna EK Studio",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id luna-ek-studio-umbrella-koi-pond"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "The Polo Club",
+   "brand": "Luxe Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id luxe-mahjong-the-polo-club"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Caroline in Peacock",
+   "brand": "Mahj & Vine",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id mahj-and-vine-caroline-in-peacock"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Duck Camp",
+   "brand": "Mahjong Moxie",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id mahjong-moxie-duck-camp"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Heron Landing",
+   "brand": "Mahjong Moxie",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id mahjong-moxie-heron-landing"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Emerald Teal & Celedon Green Double-Sided Leatherette",
+   "brand": "Mahjong Register",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id mahjong-register-emerald-teal-and-celedon-green-double-sided-leatherette"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Autumn Saffron",
+   "brand": "Mahjong Row & Co.",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id mahjong-row-and-co-autumn-saffron"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Ellington Navy",
+   "brand": "Mahjong Row & Co.",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id mahjong-row-and-co-ellington-navy"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Foxhill Plaid",
+   "brand": "Mahjong Row & Co.",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id mahjong-row-and-co-foxhill-plaid"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Marigold",
+   "brand": "Mahjong Row & Co.",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id mahjong-row-and-co-marigold"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Marlowe Green",
+   "brand": "Mahjong Row & Co.",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id mahjong-row-and-co-marlowe-green"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Midnight Garden",
+   "brand": "Mahjong Row & Co.",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id mahjong-row-and-co-midnight-garden"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Ralph",
+   "brand": "Mahjong by SI",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id mahjong-by-si-ralph"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Cherry Blossom Malachite",
+   "brand": "Miss Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id miss-mahjong-cherry-blossom-malachite"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Astor",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id oh-my-mahjong-astor"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Dapper 1 (retired)",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id oh-my-mahjong-dapper-1-retired"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Dapper 2 (retired)",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id oh-my-mahjong-dapper-2-retired"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Hawthorne",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id oh-my-mahjong-hawthorne"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Isla",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id oh-my-mahjong-isla"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Jade",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id oh-my-mahjong-jade"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "KY Derby (retired)",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id oh-my-mahjong-ky-derby-retired"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Palomino",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id oh-my-mahjong-palomino"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "SoHo (retired)",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id oh-my-mahjong-soho-retired"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Veranda",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id oh-my-mahjong-veranda"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Winterberry",
+   "brand": "Oh My Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id oh-my-mahjong-winterberry"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Yuletide",
+   "brand": "Oh My Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id oh-my-mahjong-yuletide"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Baker Traditional",
+   "brand": "Ozark Mahjongg",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id ozark-mahjongg-baker-traditional"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Carson Vintage",
+   "brand": "Ozark Mahjongg",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id ozark-mahjongg-carson-vintage"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Trent Celadon",
+   "brand": "Ozark Mahjongg",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id ozark-mahjongg-trent-celadon"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Trent Midnight",
+   "brand": "Ozark Mahjongg",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id ozark-mahjongg-trent-midnight"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Winslow 1920 Navy",
+   "brand": "Ozark Mahjongg",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id ozark-mahjongg-winslow-1920-navy"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Winslow 1920 Noir",
+   "brand": "Ozark Mahjongg",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id ozark-mahjongg-winslow-1920-noir"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Winslow 1920 Rouge",
+   "brand": "Ozark Mahjongg",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id ozark-mahjongg-winslow-1920-rouge"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Dark Teal Cocktail Hour",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id peace-love-mahjong-dark-teal-cocktail-hour"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Vegan Leather – Cognac",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id peace-love-mahjong-vegan-leather-cognac"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Festive Plaid Premium",
+   "brand": "Sunday Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id sunday-mahjong-festive-plaid-premium"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Golden Gingham Premium",
+   "brand": "Sunday Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id sunday-mahjong-golden-gingham-premium"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Rattan",
+   "brand": "Sunday Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id sunday-mahjong-rattan"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Retro Plaid Premium",
+   "brand": "Sunday Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id sunday-mahjong-retro-plaid-premium"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Boho Wildflower",
+   "brand": "Sweet Jojo Designs",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id sweet-jojo-designs-boho-wildflower"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Nantucket Basket, Rope",
+   "brand": "Tigre de Tartan",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id tigre-de-tartan-nantucket-basket-rope"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Nantucket Basket, Round",
+   "brand": "Tigre de Tartan",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id tigre-de-tartan-nantucket-basket-round"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Cottage Core",
+   "brand": "Wren Mats",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id wren-mats-cottage-core"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "origami-timber",
+   "set_name": "Origami Timber (Bam Bird Boutique)",
+   "mat": "Crane & Moon",
+   "brand": "YOLO Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/origami-timber.json"
+   ],
+   "details": [
+    "review round 5 applied 2026-11-17 (done=False), card id yolo-mahjong-crane-and-moon"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "plm-nutcracker",
+   "set_name": "Nutcracker (Peace Love Mahjong)",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, hol-plm-nutcracker]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "plm-nutcracker",
+   "set_name": "Nutcracker (Peace Love Mahjong)",
+   "mat": "Candy Cane Lane",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-candy-cane-lane, plm-nutcracker]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "plm-nutcracker",
+   "set_name": "Nutcracker (Peace Love Mahjong)",
+   "mat": "Merry & Striped",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-merry-striped, plm-nutcracker]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "plm-nutcracker",
+   "set_name": "Nutcracker (Peace Love Mahjong)",
+   "mat": "Merry Mix",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-merry-mix, plm-nutcracker]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "plm-nutcracker",
+   "set_name": "Nutcracker (Peace Love Mahjong)",
+   "mat": "Nutcracker Noel - Gold",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-nutcracker-noel-gold, plm-nutcracker]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "plm-nutcracker",
+   "set_name": "Nutcracker (Peace Love Mahjong)",
+   "mat": "Peace Love & Mistletoe",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-peace-love-mistletoe, plm-nutcracker]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "plm-nutcracker",
+   "set_name": "Nutcracker (Peace Love Mahjong)",
+   "mat": "Perfectly Wrapped",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-perfectly-wrapped, plm-nutcracker]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "plm-nutcracker",
+   "set_name": "Nutcracker (Peace Love Mahjong)",
+   "mat": "Pretty Little Christmas",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-pretty-little-christmas, plm-nutcracker]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "plm-nutcracker",
+   "set_name": "Nutcracker (Peace Love Mahjong)",
+   "mat": "Spirit of Christmas",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-spirit-of-christmas, plm-nutcracker]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "plm-nutcracker",
+   "set_name": "Nutcracker (Peace Love Mahjong)",
+   "mat": "Sugarplum Plaid",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-sugarplum-plaid, plm-nutcracker]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "plm-nutcracker",
+   "set_name": "Nutcracker (Peace Love Mahjong)",
+   "mat": "Tied With A Bow",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"plmmats\" yes [plm-tied-with-a-bow, plm-nutcracker]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "plum-panda",
+   "set_name": "Plum Panda (Sunday Mahjong)",
+   "mat": "Miracle",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [miracle, plum-panda]"
+   ],
+   "how": "",
+   "why": "album queue, week of 2027-02-22 (proposed)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Blue Willow",
+   "brand": "Amanda Toppe",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Blue & White Snowflake",
+   "brand": "Amazon",
+   "holiday": true,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id amazon-blue-and-white-snowflake"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Blue and Pink Floral",
+   "brand": "Amazon",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id amazon-blue-and-pink-floral"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Pink & Blue Christmas Village",
+   "brand": "Amazon",
+   "holiday": true,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id amazon-pink-and-blue-christmas-village"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Pink Blue Bow Floral",
+   "brand": "Amazon",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id amazon-pink-blue-bow-floral"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Botanical Garden",
+   "brand": "Anders Ruff",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id anders-ruff-botanical-garden"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Hamptons Hydrangea",
+   "brand": "Anders Ruff",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id anders-ruff-hamptons-hydrangea"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "The Pink Classic Neoprene",
+   "brand": "Bam Bird Boutique",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id bam-bird-boutique-the-pink-classic-neoprene"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Grandmillennial",
+   "brand": "Bam! Let's Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id bam-lets-mahjong-grandmillennial"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Gigi (Canvas Art)",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id betty-june-and-jeannette-gigi-canvas-art"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Grace Watercolor",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Julia (Blush)",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id betty-june-and-jeannette-julia-blush"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Livy",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Nichole",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "The Kerry",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Nutcracker",
+   "brand": "Britt Mills",
+   "holiday": true,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id britt-mills-nutcracker"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Ski Club Mat - Periwinkle Center",
+   "brand": "Charleston Mahjong Club",
+   "holiday": true,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id charleston-mahjong-club-ski-club-mat-periwinkle-center"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Blue and Pink Chinoiserie Trellis",
+   "brand": "CraftinMy",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id craftinmy-blue-and-pink-chinoiserie-trellis"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Plum Lotus",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id lets-be-besties-plum-lotus"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Rose Water Dots and Stripes",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id lets-be-besties-rose-water-dots-and-stripes"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Talulah Panda",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id lets-be-besties-talulah-panda"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Watercolor Lilies",
+   "brand": "Let's Be Besties",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id lets-be-besties-watercolor-lilies"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Let's Be Refined! – Refined Blue/Soft Blue Border",
+   "brand": "Let's Mahj On",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id lets-mahj-on-lets-be-refined-refined-blue-soft-blue-border"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id mahj-and-vine-chinoiserie-citrus-grove"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Pink Lemonade",
+   "brand": "Mahj Mood",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id mahj-mood-pink-lemonade"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Pink Hydrangea Preppy Floral",
+   "brand": "MahjAuraStudio",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id mahjaurastudio-pink-hydrangea-preppy-floral"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Butterfly Belle Premium",
+   "brand": "Mahjong Register",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id mahjong-register-butterfly-belle-premium"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Peppermint Patty Premium",
+   "brand": "Mahjong Register",
+   "holiday": true,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id mahjong-register-peppermint-patty-premium"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Sunday Sherbert Double-Sided Mahjong Mat – Leatherette 31.5\"",
+   "brand": "Mahjong Register",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id mahjong-register-sunday-sherbert-double-sided-mahjong-mat-leatherette-31-5"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Peony Keepsake",
+   "brand": "Mahjong by SI",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id mahjong-by-si-peony-keepsake"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Peony Reverie",
+   "brand": "Mahjong by SI",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id mahjong-by-si-peony-reverie"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "The Afternoon Tea",
+   "brand": "Maison Mahj",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id maison-mahj-the-afternoon-tea"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Anastasia",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Birdie Pink (retired)",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id oh-my-mahjong-birdie-pink-retired"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Camellia",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Chantilly",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id oh-my-mahjong-chantilly"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Citrus Songbird",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Elysium",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id oh-my-mahjong-elysium"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Garden Party",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Heron",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Imperial",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Jade",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "La Fete",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Lotus Cove",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Merriment",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Peri-twinkle (retired)",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id oh-my-mahjong-peri-twinkle-retired"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Serendipity",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id oh-my-mahjong-serendipity"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Vivara",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id oh-my-mahjong-vivara"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Year of the Horse",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id oh-my-mahjong-year-of-the-horse"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Love & Light",
+   "brand": "Peace Love Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id peace-love-mahjong-love-and-light"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Vegan Leather – Dusty Rose",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id peace-love-mahjong-vegan-leather-dusty-rose"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Christmas Tree Trellis",
+   "brand": "Piper Chase Studios",
+   "holiday": true,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id piper-chase-studios-christmas-tree-trellis"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Hydrangea",
+   "brand": "Royal Mahjong Society",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id royal-mahjong-society-hydrangea"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Chinoiserie Denim",
+   "brand": "Tigre de Tartan",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Parrotia",
+   "brand": "Virora Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), her add"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Petalwing",
+   "brand": "Virora Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id virora-mahjong-petalwing"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Vintage Twinkle Double Sided",
+   "brand": "Waiting On Martha",
+   "holiday": true,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id waiting-on-martha-vintage-twinkle-double-sided"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "sadie-jane",
+   "set_name": "Sadie Jane (Oh My Mahjong)",
+   "mat": "Christmas Cat",
+   "brand": "YOLO Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/sadie-jane.json"
+   ],
+   "details": [
+    "review round 1 applied 2026-11-22 (done=True), card id yolo-mahjong-christmas-cat"
+   ],
+   "how": "",
+   "why": "album record exists, no go-live slot yet (config/album-records)"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Classic Very Merry Mahj",
+   "brand": "Anders Ruff",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Watercolor Christmas Tree",
+   "brand": "Anders Ruff",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Holiday Neoprene",
+   "brand": "Bam Bird Boutique",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Merry Mahjong",
+   "brand": "Oh My Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"omm\" yes [merry-mahjong, hol-plm-spirit]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Candy Cane Lane",
+   "brand": "Peace Love Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Merry & Striped",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"spirit\" yes [plm-spirit, plm-merry-striped]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Merry Mix",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"spirit\" yes [plm-spirit, plm-merry-mix]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Nutcracker Noel - Gold",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"spirit\" yes [plm-spirit, plm-nutcracker-noel-gold]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Nutcracker Noel - Red & Green",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"spirit\" yes [plm-spirit, plm-nutcracker-noel-red-green]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Peace Love & Mistletoe",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"spirit\" yes [plm-spirit, plm-peace-love-mistletoe]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Perfectly Wrapped",
+   "brand": "Peace Love Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Poinsettia & Peace",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"spirit\" yes [plm-spirit, plm-poinsettia-peace]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Pretty Little Christmas",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"spirit\" yes [plm-spirit, plm-pretty-little-christmas]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Spirit of Christmas",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"spirit\" yes [plm-spirit, plm-spirit-of-christmas]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Tied With A Bow",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"spirit\" yes [plm-spirit, plm-tied-with-a-bow]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Vintage Noel",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"spirit\" yes [plm-spirit, plm-vintage-noel]"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  },
+  {
+   "set": "spirit-of-christmas",
+   "set_name": "Spirit of Christmas (Peace Love Mahjong)",
+   "mat": "Evergreen Christmas Plaid",
+   "brand": "YOLO Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": "",
+   "why": "no live album page or holiday section for this tile set"
+  }
+ ],
+ "live_loose": [
+  {
+   "set": "cmc-apres-ski",
+   "set_name": "Après Ski Club",
+   "mat": "Snowflake Reindeer Lodge Double-Sided Leatherette",
+   "brand": "Mahjong Register",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": "same brand, close name; live card is \"Snowflake Lodge\"",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "Snowflake Lodge",
+    "brand": "Mahjong Register"
+   }
+  },
+  {
+   "set": "gemma",
+   "set_name": "Gemma",
+   "mat": "Allie (Purple)",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, the live card has the short name (colour / side / variant not on the card); live card is \"Allie\"",
+   "live_card": {
+    "page": "/gemma-mahjong-tile-matches",
+    "mat": "Allie",
+    "brand": "Betty June & Jeannette"
+   }
+  },
+  {
+   "set": "holly-jolly-green",
+   "set_name": "Holly Jolly",
+   "mat": "Bespoke x Corey Paige - Holiday Love Mat - Red/Green (Side B: Heart Frame)",
+   "brand": "Bespoke Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": "same brand, close name; live card is \"Holiday Love Red & Green\"",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "Holiday Love Red & Green",
+    "brand": "Bespoke Mahjong"
+   }
+  },
+  {
+   "set": "jasmine",
+   "set_name": "Jasmine",
+   "mat": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same shop link (citrus-grove); live card is \"Citrus Grove\" by Mahj & Vine",
+   "live_card": {
+    "page": "/jasmine-mahjong-tile-matches",
+    "mat": "Citrus Grove",
+    "brand": "Mahj & Vine"
+   }
+  },
+  {
+   "set": "jasmine",
+   "set_name": "Jasmine",
+   "mat": "Cheetah in Chinoiserie",
+   "brand": "Sophie Clima",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, close name; live card is \"Chinoiserie Cheetah\"",
+   "live_card": {
+    "page": "/jasmine-mahjong-tile-matches",
+    "mat": "Chinoiserie Cheetah",
+    "brand": "Sophie Clima"
+   }
+  },
+  {
+   "set": "jasmine",
+   "set_name": "Jasmine",
+   "mat": "Whimsical Chinoiserie Meeting in the Pavilion",
+   "brand": "Sophie Clima",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, close name; live card is \"Whimsical Chinoiserie\"",
+   "live_card": {
+    "page": "/jasmine-mahjong-tile-matches",
+    "mat": "Whimsical Chinoiserie",
+    "brand": "Sophie Clima"
+   }
+  },
+  {
+   "set": "limoncello",
+   "set_name": "Limoncello",
+   "mat": "Chinoiserie Elephant with Pagodas",
+   "brand": "Sophie Clima",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, close name; live card is \"Chinoiserie Elephant\"",
+   "live_card": {
+    "page": "/limoncello-mahjong-tile-matches",
+    "mat": "Chinoiserie Elephant",
+    "brand": "Sophie Clima"
+   }
+  },
+  {
+   "set": "limoncello",
+   "set_name": "Limoncello",
+   "mat": "Cabana - Pink & Ivory with Citrus Fringe",
+   "brand": "Tala Mahj",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, close name; live card is \"Pink Cabana\"",
+   "live_card": {
+    "page": "/limoncello-mahjong-tile-matches",
+    "mat": "Pink Cabana",
+    "brand": "Tala Mahj"
+   }
+  },
+  {
+   "set": "limoncello",
+   "set_name": "Limoncello",
+   "mat": "Cabana - Seafoam Blue & Ivory with Citrus Fringe",
+   "brand": "Tala Mahj",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, close name; live card is \"Seafoam Cabana\"",
+   "live_card": {
+    "page": "/limoncello-mahjong-tile-matches",
+    "mat": "Seafoam Cabana",
+    "brand": "Tala Mahj"
+   }
+  },
+  {
+   "set": "luminaire",
+   "set_name": "Luminaire",
+   "mat": "Nutcracker Leatherette",
+   "brand": "Britt Mills",
+   "holiday": true,
+   "sources": [
+    "config/picks/missed-mats-round1-2026-11-07.txt"
+   ],
+   "details": [
+    "Luminaire (holiday)"
+   ],
+   "how": "same brand, close name; live card is \"Nutcracker\"",
+   "live_card": {
+    "page": "/luminaire-mahjong-tile-matches",
+    "mat": "Nutcracker",
+    "brand": "Britt Mills"
+   }
+  },
+  {
+   "set": "malachite",
+   "set_name": "Malachite",
+   "mat": "Merrywood Leatherette",
+   "brand": "Britt Mills",
+   "holiday": true,
+   "sources": [
+    "config/picks/missed-mats-round1-2026-11-07.txt"
+   ],
+   "details": [
+    "Malachite (holiday)"
+   ],
+   "how": "same brand, close name; live card is \"Merrywood\"",
+   "live_card": {
+    "page": "/malachite-mahjong-tile-matches",
+    "mat": "Merrywood",
+    "brand": "Britt Mills"
+   }
+  },
+  {
+   "set": "nivalee-blue",
+   "set_name": "Nivalee",
+   "mat": "The Chalet Mat (Side B: Ski Lift)",
+   "brand": "Bespoke Mahjong",
+   "holiday": true,
+   "sources": [
+    "config/album-records/holiday-nov18-picks.json"
+   ],
+   "details": [
+    "holiday pick sheet keep (answered 2026-11-22, done=True)"
+   ],
+   "how": "same brand, the live card has the short name (colour / side / variant not on the card); live card is \"The Chalet\"",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "The Chalet",
+    "brand": "Bespoke Mahjong"
+   }
+  },
+  {
+   "set": "osler",
+   "set_name": "Osler",
+   "mat": "Winslow 1920 Navy",
+   "brand": "Ozark Mahjongg",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same shop link (winslow-1920-original-navy-blue-mat); live card is \"Winslow Navy\" by Ozark Mahjongg",
+   "live_card": {
+    "page": "/osler-mahjong-tile-matches",
+    "mat": "Winslow Navy",
+    "brand": "Ozark Mahjongg"
+   }
+  },
+  {
+   "set": "osler",
+   "set_name": "Osler",
+   "mat": "Winslow 1920 Rouge",
+   "brand": "Ozark Mahjongg",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same shop link (winslow-1920-rouge-mat); live card is \"Winslow Rouge\" by Ozark Mahjongg",
+   "live_card": {
+    "page": "/osler-mahjong-tile-matches",
+    "mat": "Winslow Rouge",
+    "brand": "Ozark Mahjongg"
+   }
+  },
+  {
+   "set": "osler",
+   "set_name": "Osler",
+   "mat": "The Pavilion - Bamboo Neutral with Blue Fringe",
+   "brand": "Tala Mahj",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, the live card has the short name (colour / side / variant not on the card); live card is \"Pavilion\"",
+   "live_card": {
+    "page": "/osler-mahjong-tile-matches",
+    "mat": "Pavilion",
+    "brand": "Tala Mahj"
+   }
+  },
+  {
+   "set": "pippa",
+   "set_name": "Pippa",
+   "mat": "Caroline (Preppy)",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, the live card has the short name (colour / side / variant not on the card); live card is \"Caroline\"",
+   "live_card": {
+    "page": "/pippa-mahjong-tile-matches",
+    "mat": "Caroline",
+    "brand": "Betty June & Jeannette"
+   }
+  },
+  {
+   "set": "pippa",
+   "set_name": "Pippa",
+   "mat": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same shop link (citrus-grove); live card is \"Citrus Grove\" by Mahj & Vine",
+   "live_card": {
+    "page": "/pippa-mahjong-tile-matches",
+    "mat": "Citrus Grove",
+    "brand": "Mahj & Vine"
+   }
+  },
+  {
+   "set": "pippa",
+   "set_name": "Pippa",
+   "mat": "Cabana - Pink & Ivory with Citrus Fringe",
+   "brand": "Tala Mahj",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, close name; live card is \"Pink Cabana\"",
+   "live_card": {
+    "page": "/pippa-mahjong-tile-matches",
+    "mat": "Pink Cabana",
+    "brand": "Tala Mahj"
+   }
+  },
+  {
+   "set": "pippa",
+   "set_name": "Pippa",
+   "mat": "Colony - Chartreuse & Petal Pink",
+   "brand": "Tala Mahj",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, the live card has the short name (colour / side / variant not on the card); live card is \"Colony\"",
+   "live_card": {
+    "page": "/pippa-mahjong-tile-matches",
+    "mat": "Colony",
+    "brand": "Tala Mahj"
+   }
+  },
+  {
+   "set": "sierra",
+   "set_name": "Sierra",
+   "mat": "Blue Rattan Premium",
+   "brand": "Sunday Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round1-2026-11-07.txt"
+   ],
+   "details": [
+    "Sierra"
+   ],
+   "how": "same brand, close name; live card is \"Blue Rattan\"",
+   "live_card": {
+    "page": "/sierra-mahjong-tile-matches",
+    "mat": "Blue Rattan",
+    "brand": "Sunday Mahjong"
+   }
+  },
+  {
+   "set": "solara",
+   "set_name": "Solara",
+   "mat": "Betty (Floral Monogram Game Surface)",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/picks/missed-mats-round1-2026-11-07.txt"
+   ],
+   "details": [
+    "Solara"
+   ],
+   "how": "same brand, close name; live card is \"Betty Floral\"",
+   "live_card": {
+    "page": "/solara-mahjong-tile-matches",
+    "mat": "Betty Floral",
+    "brand": "Betty June & Jeannette"
+   }
+  },
+  {
+   "set": "sorbet",
+   "set_name": "Sorbet",
+   "mat": "Caroline (Preppy)",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, the live card has the short name (colour / side / variant not on the card); live card is \"Caroline\"",
+   "live_card": {
+    "page": "/sorbet-mahjong-tile-matches",
+    "mat": "Caroline",
+    "brand": "Betty June & Jeannette"
+   }
+  },
+  {
+   "set": "sorbet",
+   "set_name": "Sorbet",
+   "mat": "Katelyn (Yellow)",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, the live card has the short name (colour / side / variant not on the card); live card is \"Katelyn\"",
+   "live_card": {
+    "page": "/sorbet-mahjong-tile-matches",
+    "mat": "Katelyn",
+    "brand": "Betty June & Jeannette"
+   }
+  },
+  {
+   "set": "sorbet",
+   "set_name": "Sorbet",
+   "mat": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same shop link (citrus-grove); live card is \"Citrus Grove\" by Mahj & Vine",
+   "live_card": {
+    "page": "/sorbet-mahjong-tile-matches",
+    "mat": "Citrus Grove",
+    "brand": "Mahj & Vine"
+   }
+  },
+  {
+   "set": "sorbet",
+   "set_name": "Sorbet",
+   "mat": "Cabana - Pink & Ivory with Citrus Fringe",
+   "brand": "Tala Mahj",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, close name; live card is \"Pink Cabana\"",
+   "live_card": {
+    "page": "/sorbet-mahjong-tile-matches",
+    "mat": "Pink Cabana",
+    "brand": "Tala Mahj"
+   }
+  },
+  {
+   "set": "sorbet",
+   "set_name": "Sorbet",
+   "mat": "Cabana - Seafoam Blue & Ivory with Citrus Fringe",
+   "brand": "Tala Mahj",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, close name; live card is \"Seafoam Cabana\"",
+   "live_card": {
+    "page": "/sorbet-mahjong-tile-matches",
+    "mat": "Seafoam Cabana",
+    "brand": "Tala Mahj"
+   }
+  },
+  {
+   "set": "sorbet",
+   "set_name": "Sorbet",
+   "mat": "Colony - Chartreuse & Petal Pink",
+   "brand": "Tala Mahj",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, the live card has the short name (colour / side / variant not on the card); live card is \"Colony\"",
+   "live_card": {
+    "page": "/sorbet-mahjong-tile-matches",
+    "mat": "Colony",
+    "brand": "Tala Mahj"
+   }
+  },
+  {
+   "set": "sunset",
+   "set_name": "Sunset",
+   "mat": "Betty Floral (Monogrammed Neoprene)",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, close name; live card is \"Betty Floral\"",
+   "live_card": {
+    "page": "/sunset-mahjong-tile-matches",
+    "mat": "Betty Floral",
+    "brand": "Betty June & Jeannette"
+   }
+  },
+  {
+   "set": "taylor",
+   "set_name": "Taylor",
+   "mat": "Caroline (Preppy)",
+   "brand": "Betty June & Jeannette",
+   "holiday": false,
+   "sources": [
+    "config/fym-thin-picks-oct26.json"
+   ],
+   "details": [
+    "thin-album review heart"
+   ],
+   "how": "same brand, the live card has the short name (colour / side / variant not on the card); live card is \"Caroline\"",
+   "live_card": {
+    "page": "/taylor-mahjong-tile-matches",
+    "mat": "Caroline",
+    "brand": "Betty June & Jeannette"
+   }
+  },
+  {
+   "set": "tinselle-emerald",
+   "set_name": "Tinselle",
+   "mat": "Holiday Neoprene",
+   "brand": "Bam Bird Boutique",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"tinselle\" yes [tinselle-emerald, holiday-neoprene-mahjong-mat]"
+   ],
+   "how": "same shop link (holiday-neoprene-mahjong-mat); live card is \"Bam Bird Holiday\" by Bam Bird Boutique",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "Bam Bird Holiday",
+    "brand": "Bam Bird Boutique"
+   }
+  },
+  {
+   "set": "tinselle-emerald",
+   "set_name": "Tinselle",
+   "mat": "Bespoke x Corey Paige - Holiday Love Mat - Red/Green (Side A: All-Over Hearts)",
+   "brand": "Bespoke Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"tinselle\" yes [tinselle-emerald, holidayloveredgreen]"
+   ],
+   "how": "same shop link (holidayloveredgreen); live card is \"Holiday Love Red & Green\" by Bespoke Mahjong",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "Holiday Love Red & Green",
+    "brand": "Bespoke Mahjong"
+   }
+  },
+  {
+   "set": "tinselle-emerald",
+   "set_name": "Tinselle",
+   "mat": "Letters to Santa Premium",
+   "brand": "Mahjong Register",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"tinselle\" yes [tinselle-emerald, preorder-letters-to-santa-premium-mahjong-mat-33-estimated-s]"
+   ],
+   "how": "same shop link (preorder-letters-to-santa-premium-mahjong-mat-33-estimated-ship-oct-1st-2026); live card is \"Letters to Santa\" by Mahjong Register",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "Letters to Santa",
+    "brand": "Mahjong Register"
+   }
+  },
+  {
+   "set": "tinselle-emerald",
+   "set_name": "Tinselle",
+   "mat": "Peace Love Mahjong holiday mat, variant not recorded (listing mahjong-mats-holiday)",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"tinselle\" yes [tinselle-emerald, mahjong-mats-holiday]: one listing, 13 mats (Candy Cane Lane, Merry & Striped, Merry Mix, Nutcracker Noel - Gold, Nutcracker Noel - Red & Green, Peace Love & Mistletoe, Perfectly Wrapped, Poinsettia & Peace, Pretty Little Christmas, Spirit of Christmas, Sugarplum Plaid, Tied With A Bow, Vintage Noel)"
+   ],
+   "how": "same shop link (mahjong-mats-holiday); live card is \"Candy Cane Lane\" by Peace Love Mahjong",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "Candy Cane Lane",
+    "brand": "Peace Love Mahjong"
+   }
+  },
+  {
+   "set": "tinselle-ruby",
+   "set_name": "Tinselle",
+   "mat": "Holiday Neoprene",
+   "brand": "Bam Bird Boutique",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"tinselle\" yes [tinselle-ruby, holiday-neoprene-mahjong-mat]"
+   ],
+   "how": "same shop link (holiday-neoprene-mahjong-mat); live card is \"Bam Bird Holiday\" by Bam Bird Boutique",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "Bam Bird Holiday",
+    "brand": "Bam Bird Boutique"
+   }
+  },
+  {
+   "set": "tinselle-ruby",
+   "set_name": "Tinselle",
+   "mat": "Ski Club Red Sweater Border",
+   "brand": "Charleston Mahjong Club",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"tinselle\" yes [tinselle-ruby, cmc-ski-club-red-sweater]"
+   ],
+   "how": "same brand, close name; live card is \"Ski Club Red Sweater\"",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "Ski Club Red Sweater",
+    "brand": "Charleston Mahjong Club"
+   }
+  },
+  {
+   "set": "tinselle-ruby",
+   "set_name": "Tinselle",
+   "mat": "Holly Jolly Double-Sided Leatherette",
+   "brand": "Mahjong Register",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"tinselle\" yes [tinselle-ruby, pre-order-very-merry-wreath-double-sided-leatherette-mahjong]"
+   ],
+   "how": "same shop link (pre-order-very-merry-wreath-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy); live card is \"Holly Jolly Leatherette\" by Mahjong Register",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "Holly Jolly Leatherette",
+    "brand": "Mahjong Register"
+   }
+  },
+  {
+   "set": "tinselle-ruby",
+   "set_name": "Tinselle",
+   "mat": "Peace Love Mahjong holiday mat, variant not recorded (listing mahjong-mats-holiday)",
+   "brand": "Peace Love Mahjong",
+   "holiday": false,
+   "sources": [
+    "config/swipe-yeses/holiday-oct21.json"
+   ],
+   "details": [
+    "swipe book \"tinselle\" yes [tinselle-ruby, mahjong-mats-holiday]: one listing, 13 mats (Candy Cane Lane, Merry & Striped, Merry Mix, Nutcracker Noel - Gold, Nutcracker Noel - Red & Green, Peace Love & Mistletoe, Perfectly Wrapped, Poinsettia & Peace, Pretty Little Christmas, Spirit of Christmas, Sugarplum Plaid, Tied With A Bow, Vintage Noel)"
+   ],
+   "how": "same shop link (mahjong-mats-holiday); live card is \"Candy Cane Lane\" by Peace Love Mahjong",
+   "live_card": {
+    "page": "/holiday-mahjong-matches",
+    "mat": "Candy Cane Lane",
+    "brand": "Peace Love Mahjong"
+   }
+  },
+  {
+   "set": "willow",
+   "set_name": "Willow",
+   "mat": "Merrywood Leatherette",
+   "brand": "Britt Mills",
+   "holiday": true,
+   "sources": [
+    "config/picks/missed-mats-round2-partial-2026-11-07.json"
+   ],
+   "details": [
+    "round 2 heart aec16c2941|willow"
+   ],
+   "how": "same brand, close name; live card is \"Merrywood\"",
+   "live_card": {
+    "page": "/willow-mahjong-tile-matches",
+    "mat": "Merrywood",
+    "brand": "Britt Mills"
+   }
+  }
+ ]
+}

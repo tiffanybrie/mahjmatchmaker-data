@@ -1,0 +1,11 @@
+{
+ "_note": "Tiffany Nov 21 9:55pm: every place a code was switched to 'shop through our link' MUST be changed back when the code works again. One row per brand; a row is deleted only after the page is checked by curl with the code line back. The morning cleanup reads this file daily and puts any row whose revert_on is today or past at the top of OVERDUE.",
+ "rows": [
+  {"brand": "Virora", "page": "/virora-mahjong-discount-code", "changed": "2026-11-22", "what": "hero + mid perk say 'Shop Virora's Black Friday sale through our link (code paused)'; FAQ, schema and verified date untouched", "revert_on": "2026-12-01", "revert_to": "hero: '<strong>Virora Mahjong discount code:</strong> <span class=\"code\">MAHJMATCH</span> for 10% off. A thank-you for Mahj Matchmaker readers.' ; perk: 'use code <span class=\"code\">MAHJMATCH</span> for 10% off at Virora Mahjong.'"},
+  {"brand": "Averill Mahjong", "page": "/averill-mahjong-discount-code", "changed": "2026-11-22", "what": "hero, mid perk, first FAQ answer and its schema answer say shop through our link, MAHJMATCH not active yet", "revert_on": "when Averill activates MAHJMATCH (Duet is emailing them); check weekly", "revert_to": "hero: '<strong>Averill Mahjong discount code:</strong> <span class=\"code\">MAHJMATCH</span>. A thank-you for Mahj Matchmaker readers.' ; perk: 'use code <span class=\"code\">MAHJMATCH</span> at Averill Mahjong checkout.' ; FAQ + schema: 'Yes. Use code MAHJMATCH on eligible Averill Mahjong products. Enter it in the discount code box at checkout on AverillMahjong.com.'"},
+  {"brand": "Mac + Miller", "page": "/mac-and-miller-mahjong-discount-code", "changed": "NOT YET: change on Mon 2026-11-23 (codes paused Nov 23 to Dec 1; her yes Nov 21 9:55pm)", "revert_on": "2026-12-01"},
+  {"brand": "Noli June", "page": "Brand Watch card only (share the link, no code, through Nov 30)", "revert_on": "2026-12-01"},
+  {"brand": "Amanda Toppe", "page": "Brand Watch card only (BLACKFRIDAY20 does not stack, through Nov 30)", "revert_on": "2026-12-01"},
+  {"brand": "/mahjong-discount-codes hub", "page": "/mahjong-discount-codes", "changed": "NOT YET: Averill row still says 'Use MAHJMATCH at checkout', Virora row '10% off with MAHJMATCH'", "revert_on": "with each brand above"}
+ ]
+}
