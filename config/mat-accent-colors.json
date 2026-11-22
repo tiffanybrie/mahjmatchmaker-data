@@ -28910,9 +28910,9 @@
     "earthy": 49.0,
     "dark": 0.2,
     "green": 1.6,
-    "neutral": 21.6,
-    "orange": 13.4,
-    "yellow": 14.2
+    "neutral": 21.2,
+    "orange": 13.8,
+    "yellow": 14.1
    },
    "src": "pixel-families"
   },
@@ -28943,15 +28943,15 @@
     "green"
    ],
    "shares": {
-    "blue": 2.3,
-    "earthy": 12.8,
-    "green": 42.2,
-    "neutral": 38.9,
+    "blue": 2.1,
+    "earthy": 12.6,
+    "green": 42.6,
+    "neutral": 38.8,
     "orange": 1.4,
-    "pink": 2.1,
+    "pink": 2.0,
     "purple": 0.0,
-    "red": 0.2,
-    "yellow": 0.1
+    "red": 0.3,
+    "yellow": 0.2
    },
    "src": "pixel-families"
   },
@@ -29012,13 +29012,13 @@
    ],
    "major": [],
    "shares": {
-    "blue": 2.5,
-    "earthy": 30.1,
+    "blue": 2.6,
+    "earthy": 30.0,
     "dark": 5.2,
     "green": 0.5,
     "neutral": 55.8,
-    "orange": 2.7,
-    "red": 1.5,
+    "orange": 2.6,
+    "red": 1.6,
     "teal": 1.8
    },
    "src": "pixel-families"
@@ -29030,12 +29030,11 @@
    ],
    "major": [],
    "shares": {
-    "blue": 4.0,
-    "earthy": 13.1,
-    "dark": 0.0,
-    "green": 0.1,
-    "neutral": 82.7,
-    "orange": 0.2
+    "blue": 3.9,
+    "earthy": 12.8,
+    "green": 0.0,
+    "neutral": 83.1,
+    "orange": 0.1
    },
    "src": "pixel-families"
   },
@@ -29082,23 +29081,23 @@
   "luna-ek-studio--crane-lantern-pattern": {
    "accents": [
     "green",
-    "orange",
-    "earthy"
+    "earthy",
+    "orange"
    ],
    "major": [
     "green",
     "orange"
    ],
    "shares": {
-    "blue": 7.0,
-    "earthy": 18.0,
+    "blue": 6.9,
+    "earthy": 18.3,
     "dark": 2.6,
-    "green": 28.6,
-    "neutral": 13.6,
-    "orange": 18.4,
-    "pink": 0.7,
-    "red": 0.3,
-    "teal": 6.2,
+    "green": 28.8,
+    "neutral": 13.7,
+    "orange": 18.0,
+    "pink": 0.6,
+    "red": 0.2,
+    "teal": 6.1,
     "yellow": 4.7
    },
    "src": "pixel-families"
@@ -29219,10 +29218,10 @@
    ],
    "major": [],
    "shares": {
-    "earthy": 86.5,
-    "dark": 12.7,
+    "earthy": 86.7,
+    "dark": 12.6,
     "neutral": 0.3,
-    "orange": 0.5,
+    "orange": 0.4,
     "red": 0.0
    },
    "src": "pixel-families"
@@ -29264,12 +29263,12 @@
    ],
    "major": [],
    "shares": {
-    "earthy": 56.4,
+    "earthy": 56.7,
     "dark": 1.2,
-    "green": 11.0,
-    "neutral": 20.2,
-    "orange": 2.6,
-    "yellow": 8.6
+    "green": 11.3,
+    "neutral": 19.6,
+    "orange": 2.5,
+    "yellow": 8.7
    },
    "src": "pixel-families"
   },
@@ -29302,8 +29301,8 @@
    "shares": {
     "earthy": 61.4,
     "dark": 0.4,
-    "green": 0.3,
-    "neutral": 37.8,
+    "green": 0.4,
+    "neutral": 37.7,
     "orange": 0.2
    },
    "src": "pixel-families"
@@ -29329,13 +29328,13 @@
    ],
    "major": [],
    "shares": {
-    "blue": 10.3,
-    "earthy": 3.1,
-    "dark": 60.2,
-    "green": 6.2,
-    "neutral": 18.2,
+    "blue": 10.1,
+    "earthy": 3.2,
+    "dark": 60.5,
+    "green": 6.3,
+    "neutral": 17.9,
     "orange": 0.2,
-    "teal": 1.8
+    "teal": 1.7
    },
    "src": "pixel-families"
   },
@@ -35892,6 +35891,89 @@
     "neutral": 0.2,
     "purple": 0.0,
     "teal": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--bamboo-butterfly-garden": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 33.4,
+    "earthy": 10.5,
+    "dark": 0.1,
+    "green": 25.6,
+    "neutral": 13.6,
+    "orange": 0.7,
+    "pink": 5.3,
+    "purple": 1.9,
+    "red": 5.0,
+    "teal": 0.2,
+    "yellow": 3.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--wildly-starstruck": {
+   "accents": [
+    "pink",
+    "purple"
+   ],
+   "major": [
+    "pink",
+    "purple"
+   ],
+   "shares": {
+    "pink": 58.2,
+    "purple": 41.3,
+    "red": 0.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--midnight-jubilee": {
+   "accents": [
+    "dark",
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 16.9,
+    "dark": 62.7,
+    "green": 15.2,
+    "neutral": 0.4,
+    "pink": 0.0,
+    "purple": 4.7,
+    "teal": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--old-lady-funny-with-border": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 82.5,
+    "earthy": 3.9,
+    "dark": 0.3,
+    "green": 0.6,
+    "neutral": 5.6,
+    "orange": 0.7,
+    "pink": 3.2,
+    "purple": 0.9,
+    "red": 1.7,
+    "teal": 0.5,
+    "yellow": 0.2
    },
    "src": "pixel-families"
   }
