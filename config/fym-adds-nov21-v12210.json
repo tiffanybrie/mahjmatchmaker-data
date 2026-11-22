@@ -61,7 +61,7 @@
    "tc": "#2e6bb5",
    "group": "Blue",
    "back": {
-    "b": "#2e6bb5"
+    "b": "#dbe6e2"
    },
    "pt": [
     545.0,
@@ -69,7 +69,8 @@
     1
    ],
    "oos": 0,
-   "hol": false
+   "hol": false,
+   "back_note": "QA Nov 21: no blue back in any listing photo; tiles read white with a pale aqua cast (lifestyle photo 4 median #e4e9e2). Wall set to pale aqua-white. VERIFY on bespokemahjong.com in Chrome."
   },
   {
    "key": "www.bespokemahjong.com/bespoke-mahjong-x-gray-malin-beach-club-xl-mega-tiles-cabana-blue",
@@ -199,7 +200,8 @@
    "tc": "#9a6a1e",
    "group": "Yellow & Orange",
    "back": {
-    "b": "#b08a4a"
+    "b": "#a5672a",
+    "patch": "assets/table-view/backs/let-s-mahj-on-let-s-stir-things-up.webp"
    },
    "pt": [
     385.0,
@@ -207,7 +209,8 @@
     1
    ],
    "oos": 0,
-   "hol": false
+   "hol": false,
+   "slug_note": "gold glitter back: patch cut from a real back in LMO listing photo 2"
   },
   {
    "key": "www.letsmahj-on.com/lets-golf-celedon-mist",
