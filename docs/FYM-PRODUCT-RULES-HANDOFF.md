@@ -124,14 +124,24 @@ A grayed-out Table view is fine only after every listing photo was looked at, wi
 
 ---
 
-## 2. Ranking and order
+## 2. How Find Your Mat-ch suggests
+
+**Two different things, one word each (Tiffany Nov 21 6:17pm).** SUGGESTIONS = how the app decides which mats, tile sets or racks it shows for a pick and how it sorts them. This section covers only that. ALBUM ORDER = the order she puts match cards in when she builds an album (1st, 2nd, 3rd). That is her decision per album and lives in the Album Playbook, not here. They touch in one place: for a tile set that has an album, with "Tiffany's Picks" turned ON, her album picks are shown in her album order; everything else is sorted by the suggestion rules below. "Rank" is not used for album order anywhere in this document.
+
+**Her statement of how the app suggests (Nov 21 6:21pm), in order:**
+1. Suggestions are based on what MATCHES the tile set.
+2. Her picks appear ONLY when "Tiffany's Picks" is turned on; then they are included, in her album order. When it is off they do not lead.
+3. The brand's own coordinating mats for that tile set are suggested.
+4. Caps: a brand with a big catalog (Mahjong by SI, Splash, Besties, Maven) never gets more suggestions because it has more mats.
+5. Use colour theory (Nov 21 6:31pm). Two ways a mat matches: tone on tone (one shared colour), and coordination across dominant colours (two or more of the mat's dominant colours each matching a dominant part of the tiles: back, layer, or dominant face colour). Coordination across dominant colours is the stronger match and goes ahead of a run of single-colour matches. Only colours that are substantial in the mat count: visible from a distance, not a small detail. No hard quota or forced variety rule: "let it do its thing and not white knuckle it into breaking". Learn from the first few cards of her albums.
+6. Album order is separate and not covered here.
 
 ### Mats for a tile set (tiles first)
 - **Colour theory decides** [T]. Order of what feeds the score:
   - The tile back colour weighs heavily [T Oct 26 11:37am: "The back color is a dominant color"] (gate [76]).
   - Then layers.
   - Then face colours by how many tiles carry them [T, colour card protocol].
-- **"Tiffany's match"** comes only from her real picks (an album, or a swipe-book yes) [T Oct 20]. Catalog sets carry `m=[]`. Her picks lead, in her album order [T].
+- **"Tiffany's match"** comes only from her real picks (an album, or a swipe-book yes) [T Oct 20]. Catalog sets carry `m=[]`. Her picks are shown, in her album order, ONLY when "Tiffany's Picks" is on; with it off they do not lead [T Nov 21].
 - **A brand's coordinated mats come first** for its own tile set (config/fym-coordinated.json) [T Oct 25] (gate [57]).
 - **Partner brands keep priority over ShopMy-only items** [T Oct 26] (gate [74]).
 - **Per-brand cap:** at most 6 of the first 30, never back to back [T Nov 1] (gate [140]). See conflict 3.
@@ -148,7 +158,7 @@ A grayed-out Table view is fine only after every listing photo was looked at, wi
 - **Retired mats** stay in but never lead; they go toward the end [T].
 - **Holiday:**
   - Only Christmas, Hanukkah and winter snow or ski scenes count [T Oct 21 FINAL]. Fall, Halloween, Valentine's, patriotic and Derby are not holiday.
-  - Holiday mats appear only for holiday tile sets and never in single-colour chips.
+  - Holiday mats are left out of the DEFAULT results for a regular (non-holiday) tile set and never sit in single-colour chips. BUT whenever the person filters or searches for holiday mats, holiday mats are shown for ANY tile set, sorted by how well they match that set (e.g. Amara tiles + the holiday filter shows holiday mats matched to Amara). "We actually promote matching your own tiles to holiday mats" [T Nov 21 6:07pm].
   - Two exception lists, added only on her word: `also_year_round` and `works_for_holiday` (flags `ayr` and `wfh`) [T Oct 21].
 - **Luxe Polo Club:** whenever it's suggested, also suggest Mahjong by SI Ralph [T Nov 17].
 
@@ -169,7 +179,7 @@ A grayed-out Table view is fine only after every listing photo was looked at, wi
 - **Lower-left racks match the tiles; upper-right racks match the mat** [T].
 - **Among equally good racks, the best-photographed one leads** [T Oct 26] (gate [60]). A poorly photographed rack never leads [C, QA] (gate [81]).
 - **Rack length:** OMM and Mahjong Row racks are 18.5" and fit OMM-size tiles only. Never suggest them for oversized sets (Sunday, Miss Mahjong, Mahj Tile Haus). She recommends 20" racks generally [T].
-- **Never suggest OMM racks** in new work [T]. Use Peace Love Acrylic Burl, not OMM Burl [T Nov 17].
+- **Oh My Mahjong racks** are not recommended with other brands' tile sets. They ARE recommended for Oh My Mahjong's own work: an OMM tile release and above all an OMM album; with OMM mats they may be included. Outside OMM work, leave them out [T Nov 21 6:08pm, replaces "never suggest OMM racks in new work"]. Use Peace Love Acrylic Burl, not OMM Burl, outside OMM work [T Nov 17].
 - **Tortoise leads with Middle & Main Hawksbill Heritage** [T Oct 25] (gate [52]).
 - **Locked racks show their approved photo** [T Oct 26] (gate [94]).
 - **Album rack rules are separate** from FYM, but she expects them to agree:
@@ -255,8 +265,11 @@ A grayed-out Table view is fine only after every listing photo was looked at, wi
   - 1.23 private catalog build: 224 new mats and 7 tile sets.
   - 1.23 layout preview (her Nov 18 layout changes).
   - She hasn't approved either one.
-- **Known gaps** (Duet's Nov 18 inventory check):
-  - 59 Amazon mats set aside since Nov 8.
-  - This week's Let's Be Besties, Miss Mahjong and Maison Mahj releases.
-  - 9 Origami Timber mats.
-  - 4 stores that couldn't be read automatically (Amanda Toppe, Wren Mats, I Love Mahj, Soirée All Day).
+- **RULE (Tiffany Nov 21 6:09pm):** only the redesign is ever held for her. New mats, tiles and racks always go out in the next update on the live design. A redesign in progress never holds the catalog.
+- **What is still not in the app, as of Sun Nov 22 9:40am (live: 1.22.14).** The only allowed reasons for a missing product are: big-catalog brand caps, and Amazon pins she has not hand-picked. Everything else below is a miss with a next step (docs/OVERDUE.md, config/fym-prep-nov22/sync/report.md):
+  - Building now as 1.22.15: Noli June Martini, Sweetheart, Mazel, Chinoiserie Luxe Lilac, Riviera Jet Set Portofino Blue; Mahjong Studios Easter Morning; Yellow Mountain Koi (Watercolor), Qilin Kirin Bone & Bamboo; Let's Be Besties Bamboo Butterfly Garden, Wildly Starstruck, Midnight Jubilee, Old Lady Funny with Border.
+  - Album mats not in the app (15, all allowed because she matched them): Dreamframer Art Dark Blue Art Deco; Lemondrop Sapphire Blooms, Floral Affair; Ozark Baker Traditional, Trent Celadon, Trent Midnight; Mahjong by SI Ralph, Fall Lanterns; It's a Mahjong Life Lowcountry Horizon; Rack It! Kyoto Dreams; plus the rest listed in sync/gaps.json. (The Nov 18 "9 Origami Timber mats" line meant album mats like these; Duet has not confirmed its list.)
+  - ShopMy pins not in the app: 56 Amazon (her Nov 8 answer: "if it's in ShopMy, bring it in"; staged in config/fym-shopmy-catalog-refresh-nov08.json, never built), 4 Etsy for Sadie Jane.
+  - Stores the automatic read fails on (our check failing, not the store): Amanda Toppe, Wren Mats, I Love Mahj, Soirée All Day: read in Chrome on the laptop by the Partner watch.
+  - Big catalogs, by rule 10 per run: Let's Be Besties, Mah Jongg Maven, Mahjong by SI, Splash; Brewtifully and Spools (new partners).
+  - Mat Gallery: built from v120, about 286 visible app mats behind; being staged from 1.22.14.
