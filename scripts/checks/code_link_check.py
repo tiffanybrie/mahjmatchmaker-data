@@ -34,6 +34,9 @@ for g in ('mats', 'tiles', 'racks'):
         if not u: continue
         host = re.sub(r'^https?://(www\.)?', '', u).split('/')[0]
         if not any(norm(b) == c or (len(c) > 5 and (c in norm(b) or norm(b) in c)) for c in confirmed):
+            # Nov 21 2026 (Tiffany 6:35pm, Averill): a partner she has said is LINK ONLY until its code works may be visible, as long as
+            # every item makes NO code claim (nc true) and carries the affiliate link. config/link-routes.json brand row link_only_until_code.
+            if rt.get('link_only_until_code') and v.get('nc') and re.search(r'sca_ref|[?&]ref=|aff', u, re.I): continue
             held.setdefault(b, []).append(v.get('n')); continue
         if host in ok_hosts and not re.search(r'/discount/|sca_ref|[?&]ref=|ref%3D|aff', u, re.I):
             miss.setdefault(b, []).append(v.get('n'))
