@@ -20,7 +20,8 @@
     "virora-mahjong-lanisse": "#e9a6c6",
     "bespoke-mahjong-corey-paige-color-crush-bright-white": "#f3f1ea",
     "mahj-pit-merry-merry": "#b5172b",
-    "mahj-pit-commuter-skinny-midnights": "#16161d"
+    "mahj-pit-commuter-skinny-midnights": "#16161d",
+    "yellow-mountain-imports-koi-watercolor": "#dad0c5"
   },
   "themed": {
     "halloween": "hallowe|ween\\b|witch|spook|hocus|\\bboo\\b|pumpkin|ghoul|catrina|skull",
@@ -28,7 +29,10 @@
     "easter": "easter|bunny|east-hare|hoppy",
     "hanukkah": "hanukkah|menorah|dreidel"
   },
-  "not_themed": ["House Clovers", "I ❤️ Mahj"],
+  "not_themed": [
+    "House Clovers",
+    "I ❤️ Mahj"
+  ],
   "motifs": {
     "chinoiserie": "chinoiserie|pagoda|lotus|koi|ginger jar|journey to the west|plum panda|panda|imperial",
     "floral": "floral|flower|bloom|blossom|garden|peony|rose\\b|roses|hydrangea|petal|posy|wildflower",
