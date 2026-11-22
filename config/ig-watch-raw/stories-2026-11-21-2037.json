@@ -1,0 +1,57 @@
+{
+ "run": "2026-11-21 20:37 ET slot (started ~21:31 ET)",
+ "source": "Instagram stories via Claude in Chrome (@mahjmatchmaker)",
+ "handles_checked": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "missmahjongofficial",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "bird_and_bamboo",
+  "mahj_mood",
+  "minimahjer",
+  "charlestonmahjongclub",
+  "mahj_squad",
+  "fait.a.main"
+ ],
+ "extra_dated_partners": "Mahj Squad (Mint Nutcracker 11/22), Fait a Main (11/21) from curated; OMM 11/25 and Mahj Mood BF week already tier A.",
+ "with_stories": {
+  "ohmymahjong": 7,
+  "bambirdboutique": 3,
+  "missmahjongofficial": 5,
+  "myfairmahjong": 6,
+  "bespoke_mahjong": 13,
+  "andersruffdesignco": 7,
+  "peacelovemahjong": 9,
+  "bird_and_bamboo": 1,
+  "mahj_mood": 2,
+  "minimahjer": 6,
+  "mahj_squad": 1,
+  "fait.a.main": 3
+ },
+ "no_story": [
+  "charlestonmahjongclub"
+ ],
+ "frames_read": 63,
+ "finds": [
+  {
+   "brand": "Mahj Mood",
+   "what": "New tile sets teaser: 'A couple of new SNEAKS on this @brittmillsdesign stunner', gray marble backs with a green layer; no name or date",
+   "urgency": "LATER",
+   "section": "coming_soon",
+   "img": "assets/launches/mahj-mood-new-tiles-sneak-nov21/mahj-mood-new-tiles-sneak-ig-story-nov21.jpg",
+   "sheet_row": "Brand news A176"
+  }
+ ],
+ "already_logged": [
+  "Bam Bird BF 15% off through 11/22 + Dallas store hours (store news)",
+  "Bespoke BF sale ends 11/22 (in sales)",
+  "Mahj Mood Black Friday Week 11/23-25 (in sales)",
+  "Mahj Squad Mint Nutcracker drop 11/22 3pm ET (in coming_soon)",
+  "Fait a Main Fleurs de Fete mats (in curated)"
+ ],
+ "skipped": "OMM gift guides (under $50/$100/$500, IMC lover, book lover); Miss Mahjong customer reposts (malachite, Darling Lilac + Heirloom mat combo); My Fair customer reposts; Bespoke table videos, customer reposts, Santa reel; Anders Ruff MERRYGO code (another seller's), ornament, unboxing and event reposts; PLM giveaway winner + customer reposts; Bird & Bamboo setup repost; Mini Mahjer press/customer reposts (one mentions a BF sale: social-sourced, ignored).",
+ "notes": "No push (BRAND-WATCH-RULES 00000: catalog only). Old /home/claude checkout fetch hangs; used a blob-limited sparse clone in scratchpad. Preview image for the new item inlined by hand (raw CDN lag)."
+}
