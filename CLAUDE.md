@@ -78,6 +78,7 @@ Live app: claude.ai artifact 6epA9HuEdT32zUp79Qv3kd. Its published index.html (`
 9. **Link routes (Nov 8):** every shop link is paid the way config/link-routes.json says for its brand (code-site / shopmy-site / shopmy-etsy / shopmy-amazon / none); gate [172] + scripts/checks/link_route_check.py. Read docs/LINK-ROUTES.md before adding a brand, a link or an album bring-in.
 
 ## Working rules
+- **Getting this branch in a scheduled run (Nov 22 2026; Partner watch was blocked four runs because `git fetch origin partner-catalogs-sqsp` timed out on the 8 GB tree):** `git config remote.origin.promisor true && git config remote.origin.partialclonefilter blob:none && git fetch -q --depth 1 --filter=blob:none origin partner-catalogs-sqsp && git sparse-checkout set --no-cone '/*' '!/assets/' '!/site-app/' && git checkout -q -B partner-catalogs-sqsp FETCH_HEAD` (about 20 seconds; the same recipe is in CLAUDE.md on `main`, where scheduled runs start). A folder from assets/: `git sparse-checkout add assets/<folder>`; a new file there: `git add --sparse <path>`. Never report 'repo clone failed' without trying it.
 - Never sit idle; finish one task, start the next. Project docs (claude.ai Project "Mahj Matchmaker") doc 00 = top rules.
 - Commit trailer: `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>` + session line; push with `git pull -q --rebase && git push -q`.
 
