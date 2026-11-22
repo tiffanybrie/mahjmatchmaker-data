@@ -96,3 +96,5 @@ Rebuild: `python3 ../../../scripts/colors/build_accents.py` then `python3 build_
 - `build_v6.py --stage` (new) leaves uncommitted webps as PENDING for a pre-commit preview.
 - NOT in the gallery, waiting on her word (lists untouched): 11 Maison Mahj mats on the Oct 20 remove list (Rue de Paris, Signature House, Olive City, Afternoon Tea, Flower Market, London Icons, Mayfair Stripe, Stripe House, Tile House, Espresso City, Checkmate House); 6 Mahjong by SI mats on archive/mahjong-co-mats-hidden-2026-11-06.json (Vintage Oxblood Leather, Gatsby, Highland Heritage Plaid, The Hunt Club, Tracing the Tides, The Lodge).
 - Known check faults: gallery_sync_check.py reads the app version from the page block's fallback pin (v119), not live.json; a stray site-app/fym-v123 folder keeps gate [159b]/[104] red.
+
+Nov 22 2026 ~2:15pm: rebuilt from FYM 1.22.16: block @57dc529e095622cd6c717dd47d12b9aeceb6832a, rows @a542d39f4f73ef44f6079a82478cb77839c083e4, 1,749 cards (adds Mahjong by SI Ralph, Fall Lanterns; Ozark Baker Traditional, Trent Celadon, Trent Midnight). Pasted, read back: data-fym-build v122-16, 1749 mats, 0 broken images.
