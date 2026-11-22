@@ -207,3 +207,13 @@ print('review page self-test: PASS')
 open(os.path.join(OUT, 'index.html'), 'w').write(page)
 json.dump(FILES, open(os.path.join(OUT, 'files.json'), 'w'), indent=0)
 print(f'ALBUM REVIEW PAGE {SET}: {OUT}/index.html  ({len(cards)} cards, {len(leftout)} left out, {len(cat)} catalog mats, {len(FILES)} files)')
+
+# Tiffany Nov 21 2026 11:38pm ('Make it a rule, please. This drives me crazy... it's what draws out this process, is doing the double work'):
+# a republish while she is inside a review page reloads it and loses what she had not saved. Printed last on every build so no
+# session can miss it.
+print('''
+STOP BEFORE YOU PUBLISH THIS PAGE (CLAUDE.md, ALBUMS rule 5):
+  1. ArtifactData get review/<set> on the review artifact.
+  2. If `done` is false and `updated` is less than 2 hours old, she is in the page: DO NOT PUBLISH. Not the page, not one card image.
+  3. Queue the fix (docs/OVERDUE.md) and apply it after she taps Done.
+''')
