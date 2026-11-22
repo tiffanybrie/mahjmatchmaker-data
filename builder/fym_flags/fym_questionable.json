@@ -449,6 +449,20 @@
    "reason": "The photo (ShopMy pin + Etsy listing photo) shows a koi + bamboo pond mat, not the mint hummingbird frame in the name (different product). The Mat Gallery already holds it (config/mat-gallery-photo-holds.json). Hidden + Questionable until a photo of the right mat exists.",
    "photo": "assets/mats/shopmy-nov03/luna-ek-studio-hummingbird-floral-frame-mint.jpg",
    "added": "2026-11-07"
+  },
+  {
+   "key": "lemondropmahjongco.com/sapphire-blooms-mahjong-mat",
+   "name": "Sapphire Blooms",
+   "brand": "Lemondrop Mahjong Co",
+   "reason": "watermark: all 6 listing photos checked Nov 22 2026 carry a large 'Lemondrop Mahjong Co' watermark across the mat (flat, hanging, table and 3 close-ups); no clean photo exists on the listing. Her Deco Lagoon / Plum Panda album pick. Next: ask the brand for the flat file (affiliate application pending on UpPromote).",
+   "photo": "assets/albums/catalog-new/lemondrop-mahjong-co--sapphire-blooms.jpg"
+  },
+  {
+   "key": "lemondropmahjongco.com/floral-affair-mat",
+   "name": "Floral Affair",
+   "brand": "Lemondrop Mahjong Co",
+   "reason": "watermark: all 3 listing photos checked Nov 22 2026 carry the large 'Lemondrop Mahjong Co' watermark; no clean photo on the listing. Deco Lagoon album mat. Next: ask the brand for the flat file.",
+   "photo": "assets/albums/catalog-new/lemondrop-mahjong-co--floral-affair.jpg"
   }
  ]
 }
