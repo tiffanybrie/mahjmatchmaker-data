@@ -2625,11 +2625,82 @@
     "where": "Mahjong by SI store (products.json, 1,250 products)",
     "terms": "peony / bloom / cloud nine mats, 12 photos viewed",
     "hits": "3 fit by sight: Peony Reverie (periwinkle line peonies), Peony Keepsake (white with blue line peonies), Porch Blooms (blue hydrangeas on blue stripe). Not in Find Your Mat-ch yet."
+   },
+   {
+    "where": "Etsy (her Chrome, Sat Nov 21 night)",
+    "terms": "mahjong mat pink blue floral chinoiserie",
+    "hits": "73 listings read by sight; 4 fit the blush pink + powder blue florals"
+   },
+   {
+    "where": "Amazon (her Chrome, Sat Nov 21 night)",
+    "terms": "mahjong mat pink blue floral",
+    "hits": "first page read by sight; 2 fit"
    }
   ],
-  "new_finds": [],
+  "new_finds": [
+   {
+    "id": "etsy-craftinmy-chinoiserie",
+    "name": "Blue and Pink Chinoiserie Trellis",
+    "seller": "CraftinMy (Etsy)",
+    "url": "https://www.etsy.com/listing/4610389308",
+    "source": "Etsy search",
+    "img": "assets/albums/newfinds/sadie-jane/etsy-craftinmy-blue-pink-chinoiserie.jpg",
+    "why": "Powder blue border, pink peonies and blue-and-white jars around a quiet trellis center: the tiles' florals and denim blue.",
+    "note": "Etsy seller, not a partner; would link through ShopMy."
+   },
+   {
+    "id": "etsy-mahjandmoon-grandmillennial",
+    "name": "Pink & Blue Grandmillennial",
+    "seller": "Mahj & Moon (Etsy)",
+    "url": "https://www.etsy.com/listing/4527255793",
+    "source": "Etsy search",
+    "img": "assets/albums/newfinds/sadie-jane/etsy-mahjandmoon-pink-blue-grandmillennial.jpg",
+    "why": "Blush pink frame, blue gingham center and a blue floral border: both tile colors in one mat.",
+    "note": "Mahj & Moon is a your-picks-only brand."
+   },
+   {
+    "id": "etsy-luckytiles-carnation",
+    "name": "Pink Chinoiserie Carnation",
+    "seller": "LuckyTilesBoutique (Etsy)",
+    "url": "https://www.etsy.com/listing/4524472188",
+    "source": "Etsy search",
+    "img": "assets/albums/newfinds/sadie-jane/etsy-luckytiles-pink-chinoiserie-carnation.jpg",
+    "why": "Pink peonies and blue-and-white ginger jars on cream; shown with pink tiles.",
+    "note": "Photo has tiles and racks on the mat."
+   },
+   {
+    "id": "etsy-mahjaura-hydrangea",
+    "name": "Pink Hydrangea Preppy Floral",
+    "seller": "MahjAuraStudio (Etsy)",
+    "url": "https://www.etsy.com/listing/4587877778",
+    "source": "Etsy search",
+    "img": "assets/albums/newfinds/sadie-jane/etsy-mahjaura-pink-hydrangea.jpg",
+    "why": "Pink hydrangeas with blue and green: brighter than the tiles, a bolder option.",
+    "note": ""
+   },
+   {
+    "id": "amz-blue-pink-floral",
+    "name": "Blue and Pink Floral",
+    "seller": "Amazon (B0H8HDRX87)",
+    "url": "https://www.amazon.com/dp/B0H8HDRX87",
+    "source": "Amazon search",
+    "img": "assets/albums/newfinds/sadie-jane/amazon-blue-and-pink-floral.jpg",
+    "why": "Powder blue center with a blush scallop and soft blue, pink and sage flowers: very close to the tile palette.",
+    "note": "$34.99"
+   },
+   {
+    "id": "amz-pink-blue-bow",
+    "name": "Pink Blue Bow Floral",
+    "seller": "Amazon (B0H49Q8KMS)",
+    "url": "https://www.amazon.com/dp/B0H49Q8KMS",
+    "source": "Amazon search",
+    "img": "assets/albums/newfinds/sadie-jane/amazon-pink-blue-bow-floral.jpg",
+    "why": "Blush pink center with pink bows on blue and green florals.",
+    "note": "$24.99"
+   }
+  ],
   "misses_added": [],
-  "next": "3 Mahjong by SI mats are cards (added_after_review) and go into Find Your Mat-ch 1.22.11",
+  "next": "her Bring it in / Skip on the review page decides the 6 Etsy + Amazon finds",
   "added_as_cards": [
    {
     "mat": "Peony Reverie",

@@ -1600,3 +1600,5 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 
 - Nov 21 10:25pm (Main): Tiffany's writing rule, replaces all earlier reporting: no narration at all (no progress, gate/QA waiting, versions, product lists, wake notes); message her ONLY when (a) something is needed from her: starts 'Need from you:', one ask per line, tap or one word, same ask on HQ; or (b) something she was waiting for is finished: ONE line. Otherwise send nothing; a wake with nothing for her ends silently. Max one message an hour unless stopped on her. Detail goes in the HQ log. (CLAUDE.md 'MAIN CHAT IS NOT A CHANGE LOG' already carries it.)
 - Nov 21 10:21pm (Main): Tiffany asked how the Sadie Jane research was done: told her no direct Etsy/Amazon search had been run (FB groups + 3 Google searches + Mahjong by SI store). Etsy search run in her Chrome 10:30pm.
+
+- Nov 21 10:45pm (Main): Sadie Jane Etsy + Amazon discovery done in her Chrome: 4 Etsy + 2 Amazon finds on the review page as Bring it in / Skip (record discovery.new_finds); page republished v3.
