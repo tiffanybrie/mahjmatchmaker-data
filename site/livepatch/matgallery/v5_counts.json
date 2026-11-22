@@ -922,6 +922,12 @@
    ]
   },
   "works_for_holiday": {
+   "tigre-de-tartan--estate-sale": [
+    "red",
+    "green",
+    "florals",
+    "brights"
+   ],
    "luxe-mahjong--the-polo-club": [
     "dark",
     "yellow"
@@ -933,16 +939,17 @@
     "purple",
     "dark"
    ],
-   "bam-bird-boutique--plaid-neoprene-green-with-pink": "not in gallery",
+   "bam-bird-boutique--plaid-neoprene-green-and-blue": [
+    "green",
+    "dark",
+    "simple"
+   ],
    "sunday-mahjong--rattan": [
     "earthy"
    ],
-   "bam-bird-boutique--plaid-neoprene-green-and-blue": "not in gallery",
-   "tigre-de-tartan--estate-sale": [
-    "red",
+   "bam-bird-boutique--plaid-neoprene-green-with-pink": [
     "green",
-    "florals",
-    "brights"
+    "dark"
    ]
   }
  },
@@ -1750,62 +1757,62 @@
    ]
   }
  },
- "claude_also_added": 159,
+ "claude_also_added": 174,
  "section_tiers_active": {
   "pink": {
-   "primary": 144,
-   "also": 83,
-   "accent": 73
+   "primary": 296,
+   "also": 287,
+   "accent": 83
   },
   "red": {
-   "primary": 24,
-   "also": 35,
-   "accent": 20
+   "primary": 54,
+   "also": 123,
+   "accent": 22
   },
   "orange": {
-   "primary": 27,
-   "also": 38,
-   "accent": 16
+   "primary": 53,
+   "also": 129,
+   "accent": 18
   },
   "yellow": {
-   "primary": 18,
-   "also": 43,
+   "primary": 25,
+   "also": 84,
    "accent": 6
   },
   "green": {
-   "primary": 107,
-   "also": 102,
-   "accent": 67
+   "primary": 237,
+   "also": 346,
+   "accent": 70
   },
   "teal": {
-   "primary": 45,
-   "also": 35,
-   "accent": 18
+   "primary": 76,
+   "also": 58,
+   "accent": 30
   },
   "blue": {
-   "primary": 148,
-   "also": 91,
-   "accent": 60
+   "primary": 359,
+   "also": 250,
+   "accent": 77
   },
   "purple": {
-   "primary": 49,
-   "also": 23,
-   "accent": 13
+   "primary": 75,
+   "also": 81,
+   "accent": 14
   },
   "neutral": {
-   "primary": 66,
-   "also": 17,
-   "accent": 87
+   "primary": 142,
+   "also": 227,
+   "accent": 91
   },
   "earthy": {
-   "primary": 37,
-   "also": 48,
-   "accent": 111
+   "primary": 151,
+   "also": 203,
+   "accent": 133
   },
   "dark": {
-   "primary": 36,
-   "also": 53,
-   "accent": 25
+   "primary": 38,
+   "also": 174,
+   "accent": 35
   },
   "bw": {
    "primary": 13,
@@ -1814,17 +1821,17 @@
   },
   "simple": {
    "primary": 2,
-   "also": 166,
+   "also": 229,
    "accent": 0
   },
   "pastel": {
    "primary": 0,
-   "also": 154,
+   "also": 294,
    "accent": 0
   },
   "brights": {
    "primary": 11,
-   "also": 195,
+   "also": 383,
    "accent": 0
   },
   "florals": {
@@ -1838,7 +1845,7 @@
    "accent": 0
   },
   "holiday": {
-   "primary": 95,
+   "primary": 229,
    "also": 8,
    "accent": 0
   },
@@ -1849,49 +1856,49 @@
   }
  },
  "section_counts_active": {
-  "pink": 300,
-  "red": 79,
-  "orange": 81,
-  "yellow": 67,
-  "green": 276,
-  "teal": 98,
-  "blue": 299,
-  "purple": 85,
-  "neutral": 170,
-  "earthy": 196,
-  "dark": 114,
+  "pink": 666,
+  "red": 199,
+  "orange": 200,
+  "yellow": 115,
+  "green": 653,
+  "teal": 164,
+  "blue": 686,
+  "purple": 170,
+  "neutral": 460,
+  "earthy": 487,
+  "dark": 247,
   "bw": 13,
-  "simple": 168,
-  "pastel": 154,
-  "brights": 206,
+  "simple": 231,
+  "pastel": 294,
+  "brights": 394,
   "florals": 47,
   "animal": 35,
-  "holiday": 103,
+  "holiday": 237,
   "multi": 0,
   "retired": 29
  },
  "section_counts_if_retired_shown": {
-  "pink": 314,
-  "red": 82,
-  "orange": 84,
-  "yellow": 72,
-  "green": 289,
-  "teal": 104,
-  "blue": 310,
-  "purple": 88,
-  "neutral": 175,
-  "earthy": 200,
-  "dark": 116,
+  "pink": 680,
+  "red": 202,
+  "orange": 203,
+  "yellow": 120,
+  "green": 666,
+  "teal": 170,
+  "blue": 697,
+  "purple": 173,
+  "neutral": 465,
+  "earthy": 491,
+  "dark": 249,
   "bw": 13,
-  "simple": 170,
-  "pastel": 163,
-  "brights": 218,
+  "simple": 233,
+  "pastel": 303,
+  "brights": 406,
   "florals": 50,
   "animal": 35,
-  "holiday": 105,
+  "holiday": 239,
   "multi": 0
  },
- "unique_active_mats": 841,
+ "unique_active_mats": 1780,
  "retired": 29,
  "hidden": 18,
  "dedupe_groups": 12,
