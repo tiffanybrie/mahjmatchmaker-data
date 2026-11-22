@@ -71,3 +71,5 @@ Playwright on the curl'd live homepage + Mat Gallery with the snippet (390 px ph
 
 ## Found while building (not changed)
 - **Desktop nav overflows on the live site**: at 1024-1440 px wide the last nav items (Blog, Community, About at 1280) sit off the right edge and the page scrolls sideways (page width 1492 px at a 1280 px window). Pre-existing; search does not change it. Fix options: fewer top-level nav items, a smaller nav font/spacing in Site Styles, or moving Blog/Community/About into a folder.
+
+Nov 22 2026: index refreshed @fbe4e50a7836af17ad09143f35ea6f293781c17c against Mat Gallery v11 (FYM 1.22.15, 1,744 mats); Code Injection header re-pinned from @3afb680e (only the two jsDelivr lines changed; checked in Chrome: pins fbe4e50a, search "wildly starstruck" returns the mat with its thumb). pin.py warm was cut off at 10 minutes (3,344 URLs); thumbs load on demand.
