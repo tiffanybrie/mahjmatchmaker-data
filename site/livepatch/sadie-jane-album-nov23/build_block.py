@@ -97,7 +97,7 @@ body = (
  f'<div class="mm3" id="sadie-jane-album"><header class="mm3-hero mm3-hero-2"><div class="mm3-hero-img"><img src="{CDN}assets/covers/albums/00-sadie-jane-mahjong-tiles-cover.jpg" data-lb="" alt="Oh My Mahjong Sadie Jane mahjong tiles" fetchpriority="high"></div>'
  '<div class="mm3-hero-t"><p class="mm3-kicker">Oh My Mahjong</p><span class="mm3-launch">Launches Wed 11/25 · 11am ET</span><h1>Sadie Jane Mahjong Tile Matches</h1><div class="mm3-intro">'
  "<p>Oh My Mahjong's Sadie Jane tiles: blush-pink backs layered with denim blue and white, and faces of peonies, cranes, bamboo and panda jokers in pink, cornflower blue and green. "
- 'Sadie Jane and its pair mat, Serendipity, drop Wednesday 11/25 at 11am ET, so plan your mat now. My top Oh My Mahjong matches come first, then matches from across my favorite brands. '
+ 'Sadie Jane and its pair mat, Serendipity, drop Wednesday 11/25 at 11am ET, so plan your mat now. My top Oh My Mahjong matches come first, then matches from more brands. '
  'Tap any photo to see it bigger, and use code MAHJMATCH to save at our partner brands.</p></div>'
  f'<p class="mm3-cta"><a class="mm3-btn mm3-btn-l" href="{e(TILE_URL)}" target="_blank" rel="sponsored noopener">See Sadie Jane at Oh My Mahjong</a>'
  '<span>Save with <a href="/oh-my-mahjong-discount-code">Oh My Mahjong discount code</a> <strong>MAHJMATCH</strong></span></p></div></header>'
@@ -117,7 +117,7 @@ body = (
  '<style>.mm3-gg>.mm3-g.mm3-wheel{grid-column:1/-1;max-width:760px;width:100%;margin:6px auto 0}</style>'
  '</div></section>\n'
  f'<section id="top-omm-matches"><h2>Top Oh My Mahjong matches</h2><p class="mm3-sub">My favorite Oh My Mahjong mats for Sadie Jane, current and retired. More matches from other brands are below.</p><div class="mm3-grid">{ofigs}</div></section>'
- f'<section id="cross-brand-matches"><h2>Sadie Jane across my favorite brands</h2><p class="mm3-sub">Mats from other brands that match Sadie Jane, my top picks first. Tap any photo to see it bigger.</p><div class="mm3-grid">{cfigs}</div></section>'
+ f'<section id="cross-brand-matches"><h2>Sadie Jane across more brands</h2><p class="mm3-sub">More mat brands that match Sadie Jane, my top picks first. Tap any photo to see it bigger.</p><div class="mm3-grid">{cfigs}</div></section>'
  f'{HOLCSS}<section class="mm3-hol" id="holiday-matches"><h2>Holiday matches for Sadie Jane</h2><p class="mm3-sub">Christmas mats for Sadie Jane, with rack picks. '
  'See more holiday matches on the <a href="/holiday-mahjong-matches">Holiday Matches</a> page.</p>'
  f'<div class="mm3-grid">{hfigs}</div></section>'
