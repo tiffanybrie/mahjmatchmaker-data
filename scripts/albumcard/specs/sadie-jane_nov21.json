@@ -904,9 +904,9 @@
    "lowres": true,
    "mat_racks": [
     "Middle & Main Milk Glass Scalloped Acrylic",
-    "My Fair Mahjong Macaron Pink"
+    "Virora Pink"
    ],
-   "mat_racks_by": "Tiffany Nov 23 9:59am",
+   "mat_racks_by": "Tiffany Nov 23 9:59am (milk glass + light pink; a scalloped light pink now exists: Virora Pink)",
    "short": "Peppermint Patty"
   },
   {
@@ -964,19 +964,20 @@
    "short": "Color Wave Cobalt",
    "mat_racks": [
     "Bird & Bamboo Dark Blue",
-    "My Fair Mahjong Macaron Blue"
+    "Miss Mahjong Iridescent Opal Scalloped"
    ],
-   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
-   "new_mat": true,
+   "mat_racks_by": "Tiffany Nov 23 10:49am (Macaron Blue was the wrong blue; no rack matches the pale periwinkle border within tolerance, so cobalt + the cream scallop edge)",
    "added_after_review": true,
-   "caption_note": "New mat: racks never matched",
+   "caption_note": null,
    "box": [
-    163,
-    163,
-    917,
-    917
+    100,
+    100,
+    690,
+    766
    ],
-   "mat_racks_note": "Nov 23 10:35am: Middle & Main Milk Glass Scalloped Acrylic -> My Fair Mahjong Macaron Blue (same colour, another brand's real rack; her 'diversify every colour' note)"
+   "mat_racks_note": "Nov 23 10:35am: Middle & Main Milk Glass Scalloped Acrylic -> My Fair Mahjong Macaron Blue (same colour, another brand's real rack; her 'diversify every colour' note)",
+   "box_note": "Tiffany Nov 23 10:49am: a SCALLOPED mat shows its scalloped edge (corner view; the one exception to edge-to-edge)",
+   "scalloped_edge": true
   },
   {
    "group": "yours",
@@ -994,10 +995,9 @@
     "Bird & Bamboo Electric Blue",
     "Bird & Bamboo Gold Metallic"
    ],
-   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
-   "new_mat": true,
+   "mat_racks_by": "Tiffany Nov 23 10:49am (ok as is)",
    "added_after_review": true,
-   "caption_note": "New mat: racks never matched"
+   "caption_note": null
   },
   {
    "group": "yours",
@@ -1011,13 +1011,12 @@
    "holiday": false,
    "her_pick": true,
    "mat_racks": [
-    "Peace Love Mahjong Light Pink",
+    "My Fair Mahjong Macaron Pink",
     "Peace Love Mahjong Dark Green"
    ],
-   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
-   "new_mat": true,
+   "mat_racks_by": "Tiffany Nov 23 10:49am (peach, not pink; green kept)",
    "added_after_review": true,
-   "caption_note": "New mat: racks never matched"
+   "caption_note": null
   },
   {
    "group": "yours",
@@ -1034,10 +1033,9 @@
     "Miss Mahjong Iridescent Opal Scalloped",
     "Miss Mahjong Cornflower Blue Scalloped"
    ],
-   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
-   "new_mat": true,
+   "mat_racks_by": "Tiffany Nov 23 10:49am (ok as is)",
    "added_after_review": true,
-   "caption_note": "New mat: racks never matched",
+   "caption_note": null,
    "box": [
     28,
     28,
@@ -1080,16 +1078,16 @@
     "My Fair Mahjong Macaron Pink",
     "Middle & Main Milk Glass Scalloped Acrylic"
    ],
-   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
-   "new_mat": true,
+   "mat_racks_by": "Tiffany Nov 23 10:49am",
    "added_after_review": true,
-   "caption_note": "New mat: racks never matched",
+   "caption_note": null,
    "box": [
-    11,
-    11,
-    914,
-    914
-   ]
+    86,
+    86,
+    842,
+    850
+   ],
+   "box_note": "Tiffany Nov 23: Mahj & Moon photos have a bamboo background: mat cut out, edge to edge"
   },
   {
    "group": "yours",
@@ -1103,13 +1101,12 @@
    "holiday": false,
    "her_pick": true,
    "mat_racks": [
-    "Peace Love Mahjong Light Pink",
-    "Bird & Bamboo Seafoam"
+    "Miss Mahjong Iridescent Opal Scalloped",
+    "Bird & Bamboo Tiffany Dusk"
    ],
-   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
-   "new_mat": true,
+   "mat_racks_by": "Tiffany Nov 23 10:49am (opal scallop = the wing; blue-green of the head measured: Tiffany Dusk is nearest)",
    "added_after_review": true,
-   "caption_note": "New mat: racks never matched",
+   "caption_note": null,
    "box": [
     52,
     47,
@@ -1129,13 +1126,12 @@
    "holiday": false,
    "her_pick": true,
    "mat_racks": [
-    "Oh My Mahjong Hot Pink",
+    "Virora Hot Pink Hinged",
     "Virora Spring Jade"
    ],
-   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
-   "new_mat": true,
+   "mat_racks_by": "Tiffany Nov 23 10:50am (two Virora racks on a Virora mat)",
    "added_after_review": true,
-   "caption_note": "New mat: racks never matched",
+   "caption_note": null,
    "photo_note": "Nov 23: corner repair + cropped off the tube",
    "mat_racks_note": "Nov 23 10:35am: Bird & Bamboo Turks Blue -> Virora Spring Jade (same colour, another brand's real rack; her 'diversify every colour' note)"
   },

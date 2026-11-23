@@ -86,3 +86,16 @@ C. Bird & Bamboo library page: all colours rendered, with a place for notes and 
 - Bam Bird tile sets: think about Bam Bird's own racks (more colours now).
 - Britt Mills only makes mats: nothing to match.
 - She is "drawing from a shallow pool": she needs to SEE each brand's racks and colours -> the rack gallery page (OVERDUE) is the fix.
+
+## Part 6 (10:49am ET): the new put-ins
+- Color Wave (My Fair, scalloped mat): SHOW THE SCALLOPED EDGE: a scalloped mat is the one exception to 'mat covers the whole card'; show a corner / about the centre half so the light blue + dark blue combo reads. Macaron Blue is not the right blue: find a better match to the actual blue (maybe Cadet); no need to show her again. ORDER: Claude places it where the other solids are; Paradise Teal goes right behind it.
+- Paradise Teal: Gold Metallic + Electric Blue looks good.
+- Desert Blooms: really good match. Not the light pink: the mat's pink is a PEACH: match the light peach (My Fair Macaron Pink may be the one) or the blue of the other flower; keep the green. The mat maker's rack only when it is the best / a solid match.
+- PEACE LOVE LIGHT PINK RACK IMAGE IS CUT OFF (front edge missing; the green one is right): fix the image, it is on every card that uses it.
+- Pastel Opaline: opal scallop + cornflower: very good.
+- Pink Wildflower (Mahj & Moon): M&M photos have a vertical BAMBOO background: always cut the mat out and run it edge to edge. Racks good (Macaron Pink perfect, M&M white scallop looks much better). Site-wide check of all Mahj & Moon mats for the bamboo background = a job for the 'USE THE USAGE' list (spare-usage list).
+- ALL RACKS THE SAME SIZE / LINED UP on the card (every rack, also the 18.5in OMM ones): one standard width, cleaner layout.
+- Is Macaron Pink really that peachy? (check the colour)
+- Pink Hummingbird: Miss Mahjong iridescent opal scallop (the white of the wing) + the blue-green of the hummingbird's head/wing (Seafoam only if nothing closer); no pink rack (the background is already pink: don't just match the dominant colour). Jade would also work with the green border.
+- RACK LIBRARY: learn the newer brands' racks, incl. marble / two-tone / iridescent ones (Mahj Mood combos): 'we don't use them hardly ever'.
+- REVIEW PAGE: on her computer the cards are far too big (she zooms out to 33% to see a card): make cards smaller on desktop.

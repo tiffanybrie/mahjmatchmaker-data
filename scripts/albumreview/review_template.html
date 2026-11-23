@@ -59,6 +59,8 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{
 .sw input{width:44px;height:24px;accent-color:var(--pink)}
 .tally{font-size:14px;color:var(--muted)}
 .list{display:grid;gap:16px;margin-top:12px}
+/* Nov 23 (Tiffany: on her computer one card filled the screen, she zoomed out to 33%): on a wide screen the cards sit 3 across */
+@media(min-width:900px){.wrap{max-width:1180px}.list:not(.grid){grid-template-columns:repeat(3,minmax(0,1fr))}}
 .mc{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
 .mc .zoom{display:block;width:100%;padding:0;border:0;background:var(--dim);cursor:zoom-in}
 .mc .zoom img{display:block;width:100%;height:auto}

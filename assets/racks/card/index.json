@@ -59,9 +59,10 @@
   },
   "Peace Love Mahjong Light Pink": {
    "file": "assets/racks/card/peace-love-mahjong-light-pink.png",
-   "source": "/tmp/mb/plm/r_Light_Pink.png",
+   "source": "assets/racks/card/peace-love-mahjong-pink.png (shape) + the old light pink cut-out (colour)",
    "kind": "flat",
-   "rack_frac": 1.0
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: the light pink rack image is cut off at the front edge): rebuilt on the complete Peace Love Pink rack photo (same rack model, front ledge intact) with the Light Pink colour measured from the old cut-out. Old file kept as -cutoff-old.png. Replace with a clean Light Pink photo when one exists (their listing photo has tiles on the rack)."
   },
   "Peace Love Mahjong Red": {
    "file": "assets/racks/card/peace-love-mahjong-red.png",
@@ -350,6 +351,48 @@
    "kind": "flat",
    "rack_frac": 1.0,
    "note": "Nov 23 (Tiffany: diversify every colour, not only pinks; Virora racks are forgotten): FYM v99 single-rack cutout"
+  },
+  "Virora Pink Hinged": {
+   "file": "assets/racks/card/virora-pink-hinged.png",
+   "source": "viroramahjong.com hinged-mahjong-rack-pusher-set variant photo (4 racks straight on white): one rack cut out, Nov 23",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: 'does Virora have a hot pink rack?... pick two Virora racks' for Virora mats)"
+  },
+  "Virora Purple Hinged": {
+   "file": "assets/racks/card/virora-purple-hinged.png",
+   "source": "viroramahjong.com hinged-mahjong-rack-pusher-set variant photo (4 racks straight on white): one rack cut out, Nov 23",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: 'does Virora have a hot pink rack?... pick two Virora racks' for Virora mats)"
+  },
+  "Virora Hot Pink Hinged": {
+   "file": "assets/racks/card/virora-hot-pink-hinged.png",
+   "source": "viroramahjong.com hinged-mahjong-rack-pusher-set variant photo (4 racks straight on white): one rack cut out, Nov 23",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: 'does Virora have a hot pink rack?... pick two Virora racks' for Virora mats)"
+  },
+  "Virora Pink": {
+   "file": "assets/racks/card/virora-pink.png",
+   "source": "viroramahjong.com wooden-rack-pusher-set variant photo (4 racks straight on white): one rack cut out, Nov 23",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: 'does Virora have a hot pink rack?... pick two Virora racks' for Virora mats)"
+  },
+  "Virora Purple": {
+   "file": "assets/racks/card/virora-purple.png",
+   "source": "viroramahjong.com wooden-rack-pusher-set variant photo (4 racks straight on white): one rack cut out, Nov 23",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: 'does Virora have a hot pink rack?... pick two Virora racks' for Virora mats)"
+  },
+  "Virora Maldives Green": {
+   "file": "assets/racks/card/virora-maldives-green.png",
+   "source": "viroramahjong.com wooden-rack-pusher-set variant photo (4 racks straight on white): one rack cut out, Nov 23",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: 'does Virora have a hot pink rack?... pick two Virora racks' for Virora mats)"
   }
  },
  "missing": {
