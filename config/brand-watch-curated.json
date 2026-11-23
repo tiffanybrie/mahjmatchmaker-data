@@ -297,6 +297,20 @@
  "coming_soon": [
   {
    "partner": true,
+   "urgency": "LATER",
+   "found": "2026-11-23T18:35",
+   "day": "",
+   "date": "",
+   "source": "IG post",
+   "source_kind": "social",
+   "brand": "Let's Mahj On",
+   "what": "The next Let's Mahj On tile set is Let's Be Merry, a festive, sparkly set. No date or price yet.",
+   "tag": "tiles",
+   "new": true,
+   "url": "https://www.instagram.com/p/DgF2Sr-lTBD/"
+  },
+  {
+   "partner": true,
    "urgency": "SOON",
    "found": "2026-11-22T20:45",
    "day": "",
@@ -748,6 +762,22 @@
   }
  ],
  "just_dropped": [
+  {
+   "date": "2026-11-23",
+   "day": "Mon 11/23",
+   "time": "LIVE now",
+   "brand": "My Fair Mahjong",
+   "partner": true,
+   "what": "New Keepsake Collection: Keepsake Tiles in Optic White, Forest Green, Plum Purple, Pacific Blue and Crimson Red, each in a silk-lined gift box, plus gold Keepsake Frames with Green, Blue, Pink or Purple mats.",
+   "tag": "tiles",
+   "new": true,
+   "urgency": "NOW",
+   "buy": "https://myfairmahjong.com",
+   "url": "https://www.instagram.com/reel/DgGMEppy1z-/",
+   "found": "2026-11-23T18:35",
+   "source": "IG",
+   "source_kind": "social"
+  },
   {
    "date": "2026-11-22",
    "day": "Sun 11/22",
@@ -1829,6 +1859,25 @@
  ],
  "sales": [
   {
+   "date": "2026-11-23",
+   "day": "Mon 11/23",
+   "time": "Live now",
+   "brand": "Hutch & Nook",
+   "what": "Holiday thank-you sale: 15% off one mat or 25% off two or more.",
+   "tag": "sale",
+   "approved": null,
+   "hidden": false,
+   "nocode": true,
+   "urgency": "NOW",
+   "buy": "https://hutchandnook.com",
+   "url": "https://hutchandnook.com",
+   "source": "brand email Nov 23",
+   "source_kind": "email",
+   "affiliate_terms": "Brand email Nov 23 does not say whether MAHJMATCH stacks.",
+   "partner": true,
+   "found": "2026-11-23T18:35"
+  },
+  {
    "date": "2026-11-27",
    "day": "Fri 11/27",
    "time": "Fri 11/27 to Mon 11/30",
@@ -2530,7 +2579,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-23T09:50",
+ "updated": "2026-11-23T18:40",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",
