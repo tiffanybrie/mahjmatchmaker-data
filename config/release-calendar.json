@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-23T09:58",
  "updatedBy": "Partner watch Thu 1pm ET",
  "rules": {
   "timing": {
@@ -2300,6 +2300,51 @@
    "sourceUrl": "https://amandatoppe.com",
    "affiliate": false,
    "priority": 3,
+   "contentTiming": "Record only.",
+   "album": false
+  },
+  {
+   "id": "tilehaus-rosemary-coral-bundles",
+   "brand": "Mahj Tile Haus",
+   "product": "Rosemary Beach Tiles + Mat bundle; Coral & Coast Holiday Bundle",
+   "type": "launch",
+   "windowStart": "2026-11-24",
+   "windowEnd": "2026-11-24",
+   "status": "Launch Tue 11/24 1pm ET",
+   "source": "Tile Haus email",
+   "sourceUrl": "https://www.mahjtilehaus.com",
+   "affiliate": true,
+   "priority": 2,
+   "contentTiming": "Record only.",
+   "album": false
+  },
+  {
+   "id": "omm-bf-2026",
+   "brand": "Oh My Mahjong",
+   "product": "Black Friday: 15% off $250 / 20% off $500 / 25% off $750 + free tote",
+   "type": "sale",
+   "windowStart": "2026-11-25",
+   "windowEnd": "2026-11-30",
+   "status": "Starts Wed 11/25 10am CT",
+   "source": "OMM email",
+   "sourceUrl": "https://ohmymahjong.com",
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Record only.",
+   "album": false
+  },
+  {
+   "id": "sweetjojo-bf-2026",
+   "brand": "Sweet Jojo",
+   "product": "Black Friday 15% off sitewide",
+   "type": "sale",
+   "windowStart": "2026-11-23",
+   "windowEnd": "2026-11-30",
+   "status": "LIVE",
+   "source": "Sweet Jojo email",
+   "sourceUrl": "https://sweetjojo.com",
+   "affiliate": false,
+   "priority": 4,
    "contentTiming": "Record only.",
    "album": false
   }

@@ -1,7 +1,38 @@
 {
  "week_label": "Week of Sun Nov 22 – Sat Nov 28",
- "this_week": [],
+ "this_week": [
+  {
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "1pm ET",
+   "brand": "Mahj Tile Haus",
+   "partner": true,
+   "what": "Rosemary Beach Tiles + Mat bundle and Coral & Coast Holiday Bundle launch Tue 11/24 at 1pm ET. Product pages are published but not purchasable yet.",
+   "tag": "tiles",
+   "urgency": "NOW",
+   "buy": "https://www.mahjtilehaus.com/products/rosemary-beach-tiles-mat-bundle",
+   "url": "https://www.mahjtilehaus.com/products/coral-coast-holiday-bundle",
+   "source": "email + store feed",
+   "source_kind": "email",
+   "found": "2026-11-23T09:50",
+   "order": 50
+  }
+ ],
  "coming_soon": [
+  {
+   "partner": true,
+   "urgency": "SOON",
+   "found": "2026-11-22T20:45",
+   "day": "",
+   "date": "",
+   "source": "IG story",
+   "source_kind": "social",
+   "brand": "Miss Mahjong",
+   "what": "Hallmark x Miss Mahjong holiday mats: Joy To Your World is arriving any day (a snowy village print), and a Winter Berry holly mat in teal was shown too. No exact dates yet.",
+   "tag": "mat",
+   "new": true,
+   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/b6d5785ebc9ddb4ad47030019cb3f95ee3f97f63/assets/launches/miss-mahjong-hallmark-joy-to-your-world/story-2026-11-22-2040.jpg"
+  },
   {
    "date": "",
    "brand": "Mahj Mood",
@@ -249,10 +280,10 @@
   {
    "brand": "Middle & Main",
    "partner": true,
-   "what": "Summit to Sea, a new tile set, is on display in their store and coming online soon. No date yet.",
+   "what": "Summit to Sea ($325), a new tile set, is live on their store (since 11/17).",
    "tag": "tiles",
    "url": "https://www.instagram.com/reel/DfcJsTxyEiw/",
-   "urgency": "LATER",
+   "urgency": "NOW",
    "img": "https://www.middleandmainmahjong.com/cdn/shop/files/Untitled_design_1.png?v=1736279896&width=1200"
   },
   {
@@ -742,22 +773,6 @@
    "urgency": "NOW"
   },
   {
-   "date": "2026-11-15",
-   "day": "Sun 11/15",
-   "brand": "House of Hearts Studio",
-   "what": "NEW Folk Art Series mats: hand-painted, bright and whimsical designs, including the signature House of Hearts mat. They arrive in handmade Sunbrella mat bags.",
-   "tag": "mat",
-   "new": true,
-   "buy": "https://www.houseofheartsstudio.com",
-   "url": "https://www.houseofheartsstudio.com",
-   "img": "https://static.wixstatic.com/media/b0458a_43ab8845d6b141eda9b838bb28f32da2~mv2.jpg",
-   "found": "2026-11-15T09:50",
-   "source": "brand email Sun 11/15 8:29am ET",
-   "source_kind": "email",
-   "partner": true,
-   "urgency": "NOW"
-  },
-  {
    "brand": "Noli June",
    "partner": true,
    "what": "Sue Adores a Scallop: a hand-built folding mahjong table with a scalloped edge ($1,699; made to order, 6-8 weeks; 4 finishes). No promo codes on this one.",
@@ -858,29 +873,6 @@
    "found": "2026-11-21T13:40"
   },
   {
-   "date": "2026-11-12",
-   "brand": "Bespoke Mahjong",
-   "partner": true,
-   "what": "Black Friday sale: 25% off sitewide and 15% off tables, applied automatically at checkout (Nov 12-22). Discount codes can't be added on top.",
-   "tag": "sale",
-   "ends": "2026-11-22",
-   "urgency": "NOW",
-   "buy": "https://www.bespokemahjong.com",
-   "url": "https://www.instagram.com/stories/bespoke_mahjong/",
-   "found": "2026-11-12T22:40",
-   "source": "store banner + affiliate email Nov 13",
-   "source_kind": "email",
-   "approved": true,
-   "hidden": false,
-   "day": "Thu 11/12",
-   "time": "ends Sun 11/22",
-   "bf": true,
-   "nocode": true,
-   "affiliate_terms": "Sheri Wood (Bespoke) affiliate email Nov 13 10:03am: affiliate codes can't be combined with sale pricing and sale items earn NO affiliate commission Nov 12-22 (Glitter Glow included); commissions resume Nov 23.",
-   "updated": "2026-11-22T09:30",
-   "order": 90
-  },
-  {
    "date": "2026-11-10",
    "brand": "Mahj Mood",
    "partner": true,
@@ -929,28 +921,6 @@
    "affiliate_terms": "Codes STACK with the BF deals; commission paid.",
    "found": "2026-11-13T12:05",
    "order": 12
-  },
-  {
-   "date": "2026-11-20",
-   "day": "Fri 11/20",
-   "time": "ends today, Sun 11/22",
-   "brand": "Bam Bird Boutique",
-   "partner": true,
-   "what": "Black Friday: 15% off sitewide Fri 11/20 to Sun 11/22, including Tortoise Travel Standard tiles (some exclusions).",
-   "tag": "sale",
-   "bf": true,
-   "approved": true,
-   "urgency": "SOON",
-   "buy": "https://bambirdboutique.com/Mahjmatch",
-   "source": "brand email Nov 12 'Black Friday, Bam Bird Style!'",
-   "source_kind": "email",
-   "affiliate_terms": "Checkout test Fri 11/20 10:00am ET: MAHJMATCH is refused on top of the sale. Link only: https://bambirdboutique.com/Mahjmatch (no code wording). Sale ends Sun 11/22.",
-   "found": "2026-11-13T12:05",
-   "nocode": true,
-   "ends": "2026-11-22",
-   "updated": "2026-11-22T09:30",
-   "save_note": "The 15% comes off automatically at checkout. MAHJMATCH can't be added on top: Bam Bird's checkout refused it in our test Fri 11/20, 10:00am ET. Shop through our link.",
-   "order": 90
   },
   {
    "date": "2026-11-14",
@@ -1353,6 +1323,68 @@
    "bf": true,
    "tag": "sale",
    "order": 90
+  },
+  {
+   "tag": "sale",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "found": "2026-11-23T09:50",
+   "source_kind": "email",
+   "bf": true,
+   "date": "2026-11-25",
+   "day": "Wed 11/25",
+   "time": "Wed 11/25 10am CT to Mon 11/30 11:59pm CT",
+   "brand": "Oh My Mahjong",
+   "what": "Black Friday: 15% off $250, 20% off $500, 25% off $750, plus a free tote.",
+   "urgency": "SOON",
+   "ends": "2026-11-30",
+   "buy": "https://ohmymahjong.com",
+   "url": "https://ohmymahjong.com",
+   "source": "email",
+   "order": 90
+  },
+  {
+   "tag": "sale",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "found": "2026-11-23T09:50",
+   "source_kind": "email",
+   "bf": true,
+   "date": "2026-11-23",
+   "day": "Mon 11/23",
+   "time": "Live now",
+   "brand": "Sweet Jojo",
+   "what": "Black Friday: 15% off sitewide.",
+   "urgency": "NOW",
+   "ends": "",
+   "buy": "https://sweetjojo.com",
+   "url": "https://sweetjojo.com",
+   "source": "email",
+   "order": 90
+  },
+  {
+   "tag": "sale",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "found": "2026-11-23T09:50",
+   "source_kind": "store",
+   "bf": false,
+   "date": "2026-11-23",
+   "day": "Mon 11/23",
+   "time": "Live now",
+   "brand": "Bespoke Mahjong",
+   "what": "Grateful Dead mats are marked down on the store now.",
+   "urgency": "NOW",
+   "ends": "",
+   "buy": "https://bespokemahjong.com",
+   "url": "https://bespokemahjong.com",
+   "source": "store",
+   "nocode": true,
+   "affiliate_terms": "Bespoke affiliate terms: codes may not combine and sale items may earn no commission.",
+   "order": 90
   }
  ],
  "nonpartners": [
@@ -1454,7 +1486,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-22T18:45",
+ "updated": "2026-11-23T09:50",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",
@@ -1764,20 +1796,11 @@
    "what": "Mistletoe Christmas Mahjong Mat - Christmas Kiss - Meet me under the Mistletoe",
    "url": "https://mahjongstudios.com/products/mistletoe-christmas-mahjong-mat",
    "src": "store"
-  },
-  {
-   "date": "2026-11-15",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "what": "2 new listings: Spill The Mahj Modcentric Mahjong Mat Sleek Surface; I'd Rather Be Playing Mahjong Mat Sleek Surface",
-   "url": "https://splashofcolorco.com/products/spill-the-mahj-modcentric-mahjong-mat-sleek-surface",
-   "src": "store"
   }
  ],
- "updatedAt": "2026-11-22T23:28:30+00:00",
+ "updatedAt": "2026-11-23T14:28:44+00:00",
  "sources": {
-  "store_run": "2026-11-22T23:24:14+00:00",
+  "store_run": "2026-11-23T14:24:58+00:00",
   "ig_run": "2026-11-22T23:28:05.300549+00:00"
  }
 }
