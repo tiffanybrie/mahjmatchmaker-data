@@ -58,3 +58,12 @@ Method note: the favorites menu only updates after a reload, so each add was con
 - Sunday Mahjong read in Chrome: newest posts Nov 9 (December 1994 tiles packing/shipping reel) and Nov 4 (holiday game card). Non-partner, so not on the reshare list.
 
 - Nov 23 2026: Betty June & Jeannette @bettyjuneandjeannettemahjong followed + favorited (ShopMy/Etsy favourite brand; Tiffany 11:38am: ShopMy brands are favorited too).
+
+## Nov 23 (Monday brand watch, Chrome signed in as @mahjmatchmaker)
+- Averill (new partner, approved Nov 19): @averillmahjong, verified from the averillmahjong.com footer Instagram link. Added to ig-handles.json. FOLLOWED + ADDED TO FAVORITES, reload-confirmed ("Remove from favorites").
+- The Mahjong House (new ShopMy brand: 46 new shelf pins Nov 22): @themahjonghouse, from the link on themahjonghouse.com (not in the footer element; same link on the page). Added to ig-handles.json. Was already followed; ADDED TO FAVORITES, reload-confirmed.
+- Rebecca Illustrated (ShopMy brand, 3 new mats Nov 22): @rebecca.illustrated, verified from the rebeccaillustrated.com footer. Added to ig-handles.json. FOLLOWED + ADDED TO FAVORITES, reload-confirmed.
+- Brewtifully (partner, approved Nov 18): @brewtifully already in ig-handles.json and in the checklist as favorited; no change.
+- Spools (partner, approved Nov 18): spools.com footer still has no Instagram link; NOT followed (never guess a handle). Still open.
+- Sunday Mahjong read in Chrome (Planoly can't): newest unpinned posts are reels: velvet pouch unboxing, tartan acrylic racks, a shipping-delay reel, holiday game card, mini vs standard Hummingbird tiles. No dates shown on the grid. Non-partner, so not on the reshare list.
+- Favorites now about 44 of 50 (40 at Oct 21 + 8 later adds + Betty June + 3 today, minus none): room for partners still.
