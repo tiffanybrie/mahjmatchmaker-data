@@ -1423,7 +1423,7 @@ function fitP(){const p=$i('tvpanel');if(!p||innerWidth>=1280)return;const el=$i
   const side=innerWidth>=700&&room<130&&sw>=220;p.classList.toggle('side',side);if(side){p.style.width=sw+'px';p.style.maxHeight='';return}p.style.width='';
   p.style.maxHeight=Math.max(innerWidth>=700?130:200,room)+'px'}/* short wide screens: dock in the margin beside the card *//* QA Nov 1: the whole card, name row included, stays above the sheet (tablet/small desktop: no 200px floor) */
 addEventListener('resize',()=>{if(panelOpen()){fitP();pad()}});
-window.R2OPEN=function(tab,sec){if(sec)CTX=sec;openP('swap',tab)};window.R2CTX=c=>ctx(c);window.R2TAB=()=>SW.tab;function openP(mode,tab){const p=panel();fitP();p.dataset.tvmode=mode;if(tab&&tab!==SW.tab){SW.tab=tab;resetFilters()}p.classList.add('open');p.style.transform='';p.scrollTop=0;syncAdj();if(mode==='swap')tabSync();requestAnimationFrame(()=>{pad();land(CTX)})}
+window.R2OPEN=function(tab,sec){if(sec)CTX=sec;openP('swap',tab)};window.R2CTX=c=>ctx(c);window.R2TAB=()=>SW.tab;window.R2FACES=v=>{TV.faces=v;save();try{syncAdj()}catch(e){}pass(true)};window.R2GETFACES=()=>TV.faces;function openP(mode,tab){const p=panel();fitP();p.dataset.tvmode=mode;if(tab&&tab!==SW.tab){SW.tab=tab;resetFilters()}p.classList.add('open');p.style.transform='';p.scrollTop=0;syncAdj();if(mode==='swap')tabSync();requestAnimationFrame(()=>{pad();land(CTX)})}
 function closeP(){const p=$i('tvpanel');if(!p)return;p.classList.remove('open');p.style.transform='';pad()}
 function resetFilters(){SW.brand='';SW.color='';SW.fin='';SW.price=''}
 function setSw(el,on){if(el)el.setAttribute('aria-checked',on?'true':'false')}
@@ -1765,6 +1765,17 @@ body .deck .sbx .sb{width:40px;height:40px;font-size:18px;box-shadow:0 2px 8px r
 .r2chip.t{left:10px;top:54px}
 .r2yn{position:absolute;z-index:8;bottom:12px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.96);box-shadow:0 2px 8px rgba(0,0,0,.25);font:700 18px/1 var(--body);display:flex;align-items:center;justify-content:center;cursor:pointer}
 .r2yn.no{left:10px;color:#5e5368}.r2yn.yes{right:10px;color:#c8325f}.r2chip.r{left:50%;transform:translateX(-50%);bottom:12px}
+
+/* r2b (Tiffany 6:34pm): sheet results right under the search; filters behind one button */
+.tvswapsec{display:flex;flex-direction:column}
+.tvswapsec .tvtabs{order:1}.tvswapsec .tvsearch{order:2}.tvswapsec .r2fbtn{order:3}
+.tvswapsec .tvact{order:4}.tvswapsec .tvgrid{order:5}.tvswapsec #tvsh{order:6}
+.tvswapsec .tvbw,.tvswapsec #tvdots,.tvswapsec #tvfins,.tvswapsec #tvprices,.tvswapsec .tvtg{order:7}
+.tvp:not(.r2f) .tvswapsec .tvbw,.tvp:not(.r2f) .tvswapsec #tvdots,.tvp:not(.r2f) .tvswapsec #tvfins,.tvp:not(.r2f) .tvswapsec #tvprices,.tvp:not(.r2f) .tvswapsec .tvtg{display:none!important}
+.tvp.r2f .tvswapsec .tvbw,.tvp.r2f .tvswapsec #tvdots,.tvp.r2f .tvswapsec #tvfins,.tvp.r2f .tvswapsec #tvprices,.tvp.r2f .tvswapsec .tvtg{order:3}
+.r2fbtn{align-self:flex-start;border:1px solid #ecd5df;background:#fff;border-radius:999px;padding:7px 13px;font:700 12.5px/1 var(--body);color:var(--navy,#054689);cursor:pointer}
+.r2chip.f{left:10px;top:98px;font-size:11.5px;padding:7px 10px}
+.r2swh{position:absolute;z-index:7;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(5,70,137,.92);color:#fff;font:700 13px/1.35 var(--body);padding:9px 14px;border-radius:12px;text-align:center;pointer-events:none;transition:opacity .4s}
 body:not(.tvmode) .r2chip{display:none}
 .scard.back .r2yn,.scard.tvoff .r2chip{display:none}
 </style><script id="r2js">
@@ -1781,6 +1792,20 @@ body:not(.tvmode) .r2chip{display:none}
  window.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-r2yn]');if(!b)return;e.preventDefault();e.stopPropagation();const card=b.closest('.scard'),k=card.id.slice(4),yes=b.dataset.r2yn==='1';
    setTimeout(()=>{if(k==='m'||k==='r'){fly(k,yes)}else{const sec=card.closest('[id^="s-"]');const x=sec&&sec.querySelector(yes?'[data-tyes]':'[data-tno]');if(x)x.click()}},30)},true);
  window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2yn]')){e.preventDefault();e.stopPropagation()}},true);
+
+ function sheet(){const p=document.getElementById('tvpanel');if(!p||p.querySelector('.r2fbtn'))return;const sec=p.querySelector('.tvswapsec');if(!sec)return;
+   const b=document.createElement('button');b.type='button';b.className='r2fbtn';b.textContent='Filters ▾';
+   b.addEventListener('click',e=>{e.stopPropagation();p.classList.toggle('r2f');b.textContent=p.classList.contains('r2f')?'Hide filters ▴':'Filters ▾'});sec.appendChild(b);
+   const q=p.querySelector('#tvq');if(q)q.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();q.blur();const g=p.querySelector('#tvgrid');if(g)g.scrollIntoView({block:'nearest'})}});}
+ const FL={center:'Tiles: center',corner:'Tiles: corner',off:'Tiles: hidden'},NX={center:'corner',corner:'off',off:'center'};
+ function faces(){if(!document.body.classList.contains('tvmode')||typeof window.R2GETFACES!=='function')return;
+   document.querySelectorAll('.scard[id^="top-"] .ph').forEach(ph=>{const card=ph.closest('.scard');if(card.classList.contains('tvoff'))return;let f=ph.querySelector('.r2chip.f');
+    if(!f){f=document.createElement('button');f.type='button';f.className='r2chip f';f.dataset.r2faces='1';ph.appendChild(f)}const v=window.R2GETFACES()||'center';f.textContent=(FL[v]||FL.center)+' ▾';});}
+ window.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-r2faces]');if(!b)return;e.preventDefault();e.stopPropagation();const v=window.R2GETFACES()||'center';setTimeout(()=>window.R2FACES(NX[v]||'center'),30)},true);
+ window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2faces]')){e.preventDefault();e.stopPropagation()}},true);
+ let hinted=false;try{hinted=!!sessionStorage.getItem('r2swh')}catch(e){}
+ function swh(){if(hinted||!document.body.classList.contains('tvmode'))return;const ph=document.querySelector('#s-mats .scard[id^="top-"] .ph img.tvimg');if(!ph)return;hinted=true;try{sessionStorage.setItem('r2swh','1')}catch(e){}
+   const h=document.createElement('div');h.className='r2swh';h.innerHTML='Swipe right ♥ if you love it<br>Swipe left ✕ if it’s not the one';ph.parentElement.appendChild(h);setTimeout(()=>{h.style.opacity='0';setTimeout(()=>h.remove(),500)},3200);}
  function open(card,tab){const sec=card&&card.closest('[id^="s-"]');window.R2OPEN(tab,sec&&sec.id)}
  window.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-r2open]');if(!b)return;e.preventDefault();e.stopPropagation();const c=b.closest('.scard'),t=b.dataset.r2open;setTimeout(()=>open(c,t),30)},true);window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2open]')){e.preventDefault();e.stopPropagation()}},true);
  let dn=null;
@@ -1789,6 +1814,6 @@ body:not(.tvmode) .r2chip{display:none}
   const zz=S.zs&&S.zs.tvz;if(zz&&zz.s>1.05)return;const img=d.ph.querySelector('img.tvimg');if(!img)return;const r=img.getBoundingClientRect();
   const y=(e.clientY-r.top)/r.height,x=(e.clientX-r.left)/r.width;if(x<0||x>1||y<0||y>1)return;
   if(y<0.2||y>0.8||x<0.14||x>0.86)setTimeout(()=>open(d.ph.closest('.scard'),'racks'),60)},true);
- setInterval(()=>{chips();yn()},500);
+ setInterval(()=>{chips();yn();sheet();faces();swh()},500);
 })();
 </script></body></html>
