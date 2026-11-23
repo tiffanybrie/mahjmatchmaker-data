@@ -1,0 +1,13 @@
+{
+ "_about": "Tiffany Nov 23 2026 11:37am: favourite Etsy brands whose NEW mats are brought in regularly: ShopMy link (shopmy-etsy route) -> FYM (all-or-nothing gate) -> Mat Gallery -> search. LIGHT check only (her 11:38am: no heavy Etsy scraping): Mondays, in Chrome, open the shop sorted newest (?sort_order=date_desc), read page 1 only, compare listing ids with seen_ids; new MAT listings are brought in that day and added to seen_ids. Their Instagram is followed + favorited so launches are seen there too.",
+ "shops": {
+  "Betty June & Jeannette": {
+   "etsy_shop": "BettyJuneJeannette",
+   "url": "https://www.etsy.com/shop/BettyJuneJeannette?sort_order=date_desc",
+   "instagram": null,
+   "instagram_note": "Nov 23: Etsy shop page has no Instagram link; instagram.com/bettyjunejeannette does not exist. Asked Tiffany for the handle.",
+   "baseline": "2026-11-23: 176 listings on 5 pages, about 115 are mats/tablecloths (rest napkins, prints, ornaments). 26 mats are in her ShopMy collection and in FYM.",
+   "newest_ids_seen": ["4616101900","4616099683","4613766978","4613736620","4610845378","4610719014","4610692079","4610214652","4610206524","4610186154","4610177283","4610153737","4604593341","4602555407","4602554389"]
+  }
+ }
+}

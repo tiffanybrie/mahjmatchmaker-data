@@ -142,3 +142,8 @@ C. Bird & Bamboo library page: all colours rendered, with a place for notes and 
 
 ## Part 11 (11:35am ET)
 - JULIA stays low: "it doesn't have blue... the blue of the layer not having anything to hold on to is just pushing it down. It has to hit me." MATCH RULE for Sadie Jane (and any set with a strong layer colour): a mat needs something for the LAYER colour (the denim stripe) to hold on to; motif alone (cranes, lilies, the right green) does not make a top match.
+
+## Part 12 (11:37-11:40am)
+- Kerry (Glamourous) is IN. Julia stays low (layer colour not picked up).
+- Ranking: set colour category first. Sadie Jane = pink and blue. Pink+blue mats lead (Petal Wing). Lotus Cove = pink and green, lower, not out. Claude over-weighted faces/motif.
+- Heron: tile inset blocks the bluest part; move it. She may have Heron too high.
