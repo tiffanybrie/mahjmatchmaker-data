@@ -49,3 +49,5 @@ Never hold work to batch it. Holding only means Chrome drops or something gets b
 
 ## Album count line (Tiffany Nov 11 1:37pm)
 Every album post says WHICH number album it is for that brand ("our 31st Oh My Mahjong album"), not "every album ever made". Count = live albums for the brand on /mahjong-tile-matches (OMM: Juniper = 31st incl. retired sets + Coquette).
+
+- Nov 23 2026: REEL COVER RULES are locked in CLAUDE.md (REEL COVERS: ONE SIZE THAT WORKS IN EVERY GRID). Gate: scripts/checks/reel_cover_check.py. Wall-of-backs covers: scripts/social/covers/reel_tall_wall.py. Old barred files moved to assets/covers/albums/reel-tall/_retired-blur-bands/.

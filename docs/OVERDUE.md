@@ -186,3 +186,5 @@
 - Sadie Jane Heron card: move the tile inset off the bluest part of the mat (her 11:40am); apply with the next batch after her pass. Ordering rule: pink+blue mats above pink+green (Lotus Cove down) when Claude orders anything.
 
 - Betty June & Jeannette has its own Shopify store since ~Nov 17 (bettyjuneandjeannette.com, 36 mats): read /products.json for the backfill photos + new-mat watch; ask Tiffany once (with Sadie Jane's next message, not alone) whether to send the HQ affiliate inquiry email for the new site.
+- Reel covers: 40 sets only have the retired blur-band version (assets/covers/albums/reel-tall/_retired-blur-bands/). Rebuild each true 9:16 (TALL=1 album_cover_omm.py with the album's tile photo, or reel_tall_wall.py) and pass reel_cover_check.py; do a set's cover before its next reel, the rest from docs/USE-THE-USAGE.md.
+- Betty June & Jeannette affiliate inquiry sent Nov 23 (email): watch mahjmatchmaker@ inbox for the reply; log brands/betty-june-jeannette in HQ.
