@@ -35,7 +35,7 @@ def html(sp,cells,n):
     g=''.join(f'<div class="{"t" if c=="tiles" else ""}" style="width:{cell}px;height:{cell}px"><img src="{c}.jpg"></div>' for c in cells)
     code=f'<div class="code">Code MAHJMATCH at {sp["brand"]}</div>' if sp.get('code') else f'<div class="code">Shop {sp["brand"]}</div>'
     return f'''<html><head><style>{CSS.replace("{fs}",str(fs))}</style></head><body><div class="c">
-<h1>{sp["name"]}</h1><div class="k">BY {sp["brand"].upper()}</div><div class="s">{"Her top "+str(n)+" holiday matches" if n>1 else "Her holiday match"}</div>
+<h1>{sp["name"]}</h1><div class="k">BY {sp["brand"].upper()}</div><div class="s">{sp.get("sub") or ("Her top "+str(n)+" holiday matches" if n>1 else "Her holiday match")}</div>
 <div class="g" style="grid-template-columns:repeat({cols},{cell}px)">{g}</div>
 <div class="f"><div class="p">See all {sp["count"]} in the album · link in bio</div>{code}<img class="wm" src="{R}/assets/brand/mahjmatchmaker-wordmark-notag.png"></div></div></body></html>'''
 spec=json.load(open(sys.argv[1])); out=sys.argv[2]; os.makedirs(out,exist_ok=True)

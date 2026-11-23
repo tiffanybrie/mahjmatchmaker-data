@@ -28,7 +28,7 @@ body{{margin:0;background:#f6e9df}}.c{{width:1080px;height:1920px;position:relat
 .p{{display:inline-block;background:#c8325f;color:#fff;font:700 34px Bit;padding:16px 36px;border-radius:50px}}
 .code{{font:600 30px Bit;color:#062a55;margin-top:14px}}
 </style></head><body><div class="c"><div class="hd" id="hd"><h1>{sp["name"]}</h1><div class="k">BY {sp["brand"].upper()}</div>
-<div class="s">{"Her top "+str(n)+" holiday matches" if n>1 else ""}</div></div>
+<div class="s">{sp.get("sub") or ("Her top "+str(n)+" holiday matches" if n>1 else "")}</div></div>
 <div class="g" id="g">{g}</div><div class="ft" id="ft"><div class="p">See all {sp["count"]} in the album · link in bio</div><div class="code">{code}</div></div></div>
 <script>
 const order={json.dumps(order)};
