@@ -280,6 +280,20 @@
  ],
  "coming_soon": [
   {
+   "partner": true,
+   "urgency": "SOON",
+   "found": "2026-11-22T20:45",
+   "day": "",
+   "date": "",
+   "source": "IG story",
+   "source_kind": "social",
+   "brand": "Miss Mahjong",
+   "what": "Hallmark x Miss Mahjong holiday mats: Joy To Your World is arriving any day (a snowy village print), and a Winter Berry holly mat in teal was shown too. No exact dates yet.",
+   "tag": "mat",
+   "new": true,
+   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/b6d5785ebc9ddb4ad47030019cb3f95ee3f97f63/assets/launches/miss-mahjong-hallmark-joy-to-your-world/story-2026-11-22-2040.jpg"
+  },
+  {
    "date": "",
    "brand": "Mahj Mood",
    "partner": true,
@@ -2483,7 +2497,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-22T18:45",
+ "updated": "2026-11-22T20:45",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",
