@@ -100,6 +100,11 @@ try:
     r=subprocess.run(['python3','scripts/checks/partner_checklist.py','--front'],capture_output=True,text=True,timeout=30)
     out[0:0]=[l for l in r.stdout.splitlines() if l.startswith('NEW PARTNER')]
 except Exception: pass
+# Nov 23 2:38pm (Tiffany: Spools + Brewtifully approved Nov 18-19, no page Nov 23: "dropping money on the floor... we need a safety check").
+try:
+    r=subprocess.run(['python3','scripts/checks/new_brand_floor.py'],capture_output=True,text=True,timeout=60)
+    out[0:0]=[l for l in r.stdout.splitlines() if l.startswith('NEW BRAND NOT FINISHED')]
+except Exception: pass
 # Nov 11 2:19pm (Tiffany: Fait à Main + Maison Mahj half set up; "no gap between what we say and what happens"):
 # every partner, in ANY of our partner lists, checked against the codes page AND the app (tile sets + mats).
 try:
