@@ -196,3 +196,4 @@
 
 - since 2026-11-23 | AVERILL CODE IS ACTIVE (email Nov 22 8:25pm: MAHJMATCH 10% off, 10% commission). Code page put back Nov 23 2:40pm. STILL TO DO, same day: config/code-truth.json Averill = confirmed 10%; FYM small release switching the 5 Averill tile sets from link-only to code links (line 149 above has the steps; gate + QA + three places); Brand Watch card; ask her once whether the page says 'for 10% off'. | Main | Mon Nov 23
 - STANDING (Nov 23): Main reads HQ handoffs (open, to Main) at the START of every turn, before answering her. 9 were unread on Nov 23 incl. the Averill result.
+- since 2026-11-23 | TRAFFIC ANALYSIS (from Duet's ownership note): why visits spiked the week of Oct 26 (Oct 28 = 680) and why November levelled at about 1,300 uniques a week; set beside money and the code-page change log in 00p. | Main | Wed Nov 25
