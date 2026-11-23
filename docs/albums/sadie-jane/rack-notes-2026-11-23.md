@@ -64,3 +64,17 @@ C. Bird & Bamboo library page: all colours rendered, with a place for notes and 
 - Love & Light: the mat is pushed up: white space between the mat and the green code bar. Mats always cover corner to corner: pull it down.
 - OFF: Christmas Tree Trellis ("I hate that mat"), Ski Club Periwinkle (not a match).
 - LEFT-OUT SECTION: "just enormous, and it made no sense"; about half the page. (1) The reason text read as specific when it was a generalisation (Nantucket Manor: "red, orange, brown, purple fights the soft faces": none of those are in the mat). If it is a generalisation, word it as one: "the pattern or a strong extra colour (such as red, orange, brown or purple) fights the soft faces". Don't burn usage on a full analysis per mat. (2) Too many ruled-out mats from big catalogs (Let's Be Besties, Mahjong by SI...): cap them; she doesn't need all of that. Nantucket Manor could work by its centre (not a wow; she is not pushing it in).
+
+## Part 4 (10:20am ET): she finished her put-ins from Left out; final looks
+- Put-ins from Left out: add them at the VERY BACK so she can see them and order them in.
+- Any Mahj Mood scalloped clear acrylic still on a card must be replaced.
+- Nichole (#4) still looks LOW RES. Check.
+- TITLES too tiny on long names (e.g. "Sadie Jane + Blue and Pink Chinoiserie Trellis"): use "&" for "and", shorten the mat name when needed ("Blue & Pink Chinoiserie" is fine; the caption links the full name). Titles should not swing from huge to tiny between cards.
+- #8 Chantilly: likes Mahjong Register Peacock Teal (a new rack, diversifies). Peri-twinkle looks good.
+- Parrotia: Peace Love Mahjong Light Pink rack is COVERED by its name label: the rack must be visible.
+- Gigi (#13): Pink Quartz is too busy for the abstract: use something SOLID. Pull the lilac / purpley blues more than the pink, or pop the peachy pink / lightest peach tone against the mat.
+- After the new ones are in she wants a straight FLIP BOOK to flip through all cards for vibe + order.
+- Then the rest of the album: all assets, follow the album elements list.
+- The TILE SHOT on the cards still looks SOFT. Why?
+- TITLE FONT J: always use the ALTERNATE J (not the wobbly J) in "Jane" / "Sadie Jane" and anywhere this font is used. Put it in the brand notes.
+- OMM-ONLY PROMO version: Oh My Mahjong will not promote a piece with other brands' products. Top OMM matches: Serendipity, then good ones like Peri-twinkle (retired), Jade; Vivara may need to move up. (She was mid-thought: "hold on one second".)

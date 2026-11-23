@@ -2946,6 +2946,138 @@
      "oh-my-mahjong-darjeeling": "remove"
     }
    }
+  },
+  {
+   "round": 2,
+   "changes": [
+    "Order updated (60 positions changed); new top 3: Petalwing, Pink & Blue Grandmillennial, Serendipity",
+    "Taken out: Pink Blue Bow Floral, The Pink Classic Neoprene, Ski Club Mat - Periwinkle Center, Plum Lotus, Rose Water Dots and Stripes, Watercolor Lilies, The Afternoon Tea, Birdie Pink (retired), Camellia (retired), Vegan Leather – Dusty Rose, Christmas Tree Trellis",
+    "Put back in: Color Wave – Cobalt Center- Light Blue Scallop, The Paradise - Tropical Teal, Desert Blooms, Pastel Opaline, Blue Blooms, Pink Wildflower, Pink Hummingbird, Roseveil, Reversible Vegan Leather – Blush Pink & Cornflower Blue, Blushing Blooms, Soirée at Sue's, Pressed Flowers"
+   ],
+   "anything": "",
+   "done": false,
+   "answers": {
+    "adds": [],
+    "anything": "",
+    "cover": 0,
+    "done": false,
+    "faces": [
+     "joker-panda",
+     "bam-1-crane",
+     "flower-peony",
+     "wind-north",
+     "flower-blue",
+     "flower-orchid",
+     "flower-pink-peony",
+     "wind-east",
+     "wind-west",
+     "wind-south",
+     "crak-5"
+    ],
+    "finds": {},
+    "notes": {},
+    "order": {
+     "hol": [
+      "britt-mills-nutcracker",
+      "oh-my-mahjong-merriment",
+      "amazon-pink-and-blue-christmas-village",
+      "waiting-on-martha-vintage-twinkle-double-sided",
+      "mahjong-register-peppermint-patty-premium",
+      "yolo-mahjong-christmas-cat",
+      "peace-love-mahjong-love-and-light",
+      "amazon-blue-and-white-snowflake",
+      "piper-chase-studios-christmas-tree-trellis",
+      "charleston-mahjong-club-ski-club-mat-periwinkle-center"
+     ],
+     "main": [
+      "virora-mahjong-petalwing",
+      "mahj-and-moon-pink-and-blue-grandmillennial",
+      "oh-my-mahjong-serendipity",
+      "oh-my-mahjong-vivara",
+      "betty-june-and-jeannette-nichole",
+      "craftinmy-blue-and-pink-chinoiserie-trellis",
+      "amazon-blue-and-pink-floral",
+      "amanda-toppe-blue-willow",
+      "betty-june-and-jeannette-grace-watercolor",
+      "mahj-and-vine-chinoiserie-citrus-grove",
+      "tigre-de-tartan-chinoiserie-denim",
+      "oh-my-mahjong-peri-twinkle-retired",
+      "virora-mahjong-parrotia",
+      "betty-june-and-jeannette-gigi-canvas-art",
+      "miss-mahjong-lattice",
+      "oh-my-mahjong-year-of-the-horse",
+      "oh-my-mahjong-heron",
+      "mahj-and-moon-chinoiserie-pastel-floral",
+      "oh-my-mahjong-jade",
+      "anders-ruff-hamptons-hydrangea",
+      "oh-my-mahjong-chantilly",
+      "mahjong-by-si-peony-keepsake",
+      "mahjong-by-si-peony-reverie",
+      "lets-mahj-on-lets-be-refined-refined-blue-soft-blue-border",
+      "bam-lets-mahjong-grandmillennial",
+      "royal-mahjong-society-hydrangea",
+      "mahjong-register-butterfly-belle-premium",
+      "oh-my-mahjong-imperial-retired",
+      "oh-my-mahjong-lotus-cove",
+      "oh-my-mahjong-elysium",
+      "betty-june-and-jeannette-the-kerry",
+      "betty-june-and-jeannette-julia-blush",
+      "oh-my-mahjong-citrus-songbird-retired",
+      "betty-june-and-jeannette-livy",
+      "oh-my-mahjong-anastasia",
+      "oh-my-mahjong-la-fete-retired",
+      "oh-my-mahjong-garden-party-retired",
+      "lets-be-besties-talulah-panda",
+      "oh-my-mahjong-birdie-pink-retired",
+      "mahj-mood-pink-lemonade",
+      "mahjaurastudio-pink-hydrangea-preppy-floral",
+      "lets-be-besties-plum-lotus",
+      "mahjong-register-sunday-sherbert-double-sided-mahjong-mat-leatherette-31-5",
+      "anders-ruff-botanical-garden",
+      "oh-my-mahjong-camellia-retired",
+      "maison-mahj-the-afternoon-tea",
+      "lets-be-besties-rose-water-dots-and-stripes",
+      "peace-love-mahjong-vegan-leather-dusty-rose",
+      "bam-bird-boutique-the-pink-classic-neoprene",
+      "amazon-pink-blue-bow-floral",
+      "lets-be-besties-watercolor-lilies"
+     ]
+    },
+    "ordering_off": false,
+    "putin": [
+     "lo-my-fair-mahjong-color-wave-cobalt-center-light-blue-scallop",
+     "lo-bird-and-bamboo-the-paradise-tropical-teal",
+     "lo-peace-love-mahjong-desert-blooms",
+     "lo-bougie-mahjong-pastel-opaline",
+     "lo-peace-love-mahjong-blue-blooms",
+     "lo-mahj-and-moon-pink-wildflower",
+     "lo-aussiehannagift-pink-hummingbird",
+     "lo-virora-mahjong-roseveil",
+     "lo-charleston-mahjong-club-reversible-vegan-leather-blush-pink-and-cornflower-blue",
+     "lo-anders-ruff-blushing-blooms",
+     "lo-noli-june-soir-e-at-sues",
+     "lo-miss-mahjong-pressed-flowers"
+    ],
+    "round": 2,
+    "set": "sadie-jane",
+    "updated": "2026-11-23T15:20:24.574Z",
+    "v": {
+     "amazon-pink-blue-bow-floral": "remove",
+     "bam-bird-boutique-the-pink-classic-neoprene": "remove",
+     "charleston-mahjong-club-ski-club-mat-periwinkle-center": "remove",
+     "lets-be-besties-plum-lotus": "remove",
+     "lets-be-besties-rose-water-dots-and-stripes": "remove",
+     "lets-be-besties-watercolor-lilies": "remove",
+     "maison-mahj-the-afternoon-tea": "remove",
+     "oh-my-mahjong-birdie-pink-retired": "remove",
+     "oh-my-mahjong-camellia-retired": "remove",
+     "peace-love-mahjong-vegan-leather-dusty-rose": "remove",
+     "piper-chase-studios-christmas-tree-trellis": "remove",
+     "yolo-mahjong-christmas-cat": "remove"
+    }
+   },
+   "applied_at_was": "2026-11-23T10:20:53-05:00",
+   "partial": "Nov 23 10:20am: her put-ins + removes applied MID-ROUND on her word ('I finished the ones you should put in... You're free to edit'). The page stays on this round so her saved order (OMM mats first, set 10:25am) and taps are kept; the put-ins show as NEW at the back with Move to #. The round closes when she taps Done."
   }
  ],
  "when_released": [
@@ -2960,5 +3092,8 @@
   "https://www.etsy.com/listing/4599338148",
   "https://www.etsy.com/listing/4610389308",
   "https://www.etsy.com/listing/4497703295"
+ ],
+ "her_picks_ok": [
+  "Pastel Opaline"
  ]
 }

@@ -24,6 +24,30 @@
    "mat_racks_by": "Tiffany Nov 22 1:26am"
   },
   {
+   "group": "yours",
+   "name": "Pink & Blue Grandmillennial",
+   "brand": "Mahj & Moon",
+   "fym": null,
+   "why": "your Etsy link (review note)",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/sadie-jane/adds/mahj-and-moon-pink-blue-grandmillennial.jpg",
+   "box": [
+    143,
+    143,
+    1445,
+    1445
+   ],
+   "partner": false,
+   "store_url": "https://www.etsy.com/listing/4527255793",
+   "her_add": true,
+   "mat_racks": [
+    "Middle & Main Milk Glass Scalloped Acrylic",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
+  },
+  {
    "group": "pair",
    "name": "Serendipity",
    "brand": "Oh My Mahjong",
@@ -49,90 +73,65 @@
   },
   {
    "group": "picks",
-   "name": "Gigi (Canvas Art)",
-   "brand": "Betty June & Jeannette",
-   "fym": "www.etsy.com/listing/4571558388/the-gigi-katelyn-bruhn-and-bjj-collab",
-   "why": "blush + pale blue wash",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-gigi-canvas-art-table.jpg",
-   "lowres": true,
-   "box": [
-    585,
-    375,
-    2565,
-    2355
-   ],
-   "mat_racks": [
-    "Miss Mahjong Iridescent Opal Scalloped",
-    "Oh My Mahjong Pink Quartz"
-   ],
-   "mat_racks_by": "Tiffany Nov 22 1:26am",
-   "mat_racks_note": "Nov 23: drawn Mahj Mood clear scallop replaced by the real Miss Mahjong opal scallop (her 9:52am note)"
-  },
-  {
-   "group": "picks",
-   "name": "Chantilly",
+   "name": "Vivara",
    "brand": "Oh My Mahjong",
-   "fym": "www.ohmymahjong.com/chantilly-mat",
-   "why": "pale blue + blush frame",
+   "fym": "www.ohmymahjong.com/vivara-mat-w-tube",
+   "why": "pale blue + pink",
    "retired": false,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-chantilly.jpg",
-   "lowres": true,
-   "mat_racks": [
-    "Middle & Main White Lace Acrylic",
-    "Mahjong Register Peacock Teal"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am"
-  },
-  {
-   "group": "picks",
-   "name": "Chinoiserie Citrus Grove",
-   "brand": "Mahj & Vine",
-   "fym": "mahjandvine.com/citrus-grove",
-   "why": "blue chinoiserie + florals",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/albums/sadie-jane/adds/mahj-and-vine-chinoiserie-citrus-grove-full.png",
-   "box": [
-    192,
-    288,
-    1920,
-    2112
-   ]
-  },
-  {
-   "group": "picks",
-   "name": "Year of the Horse",
-   "brand": "Oh My Mahjong",
-   "fym": "www.ohmymahjong.com/year-of-the-horse-mat",
-   "why": "pink medallion on denim blue",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-year-of-the-horse.jpg",
+   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-vivara.jpg",
    "lowres": true,
    "mat_racks": [
     "Bird & Bamboo Ocean Slate",
     "Miss Mahjong Iridescent Opal Scalloped"
    ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am"
+   "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)"
+  },
+  {
+   "group": "yours",
+   "name": "Nichole",
+   "brand": "Betty June & Jeannette",
+   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-nichole-fullxfull.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.etsy.com/listing/4537970849/the-nichole-mahjong-mat",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true,
+   "box": [
+    180,
+    270,
+    2400,
+    2730
+   ],
+   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)",
+   "mat_racks": [
+    "Miss Mahjong Iridescent Opal Scalloped",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am",
+   "mat_racks_note": "Nov 23: drawn Mahj Mood clear scallop replaced by the real Miss Mahjong opal scallop (her 9:52am note)",
+   "photo_note": "Nov 23: Etsy fullxfull (3000px) is the listing's best; BJ&J mock-ups are soft at source (same as Livy)"
   },
   {
    "group": "picks",
-   "name": "Peri-twinkle (retired)",
-   "brand": "Oh My Mahjong",
-   "fym": "alb:coquette:Peri-twinkle",
-   "why": "retired OMM periwinkle + pink",
-   "retired": true,
+   "name": "Blue and Pink Chinoiserie Trellis",
+   "brand": "CraftinMy",
+   "fym": null,
+   "why": "powder blue border, pink peonies and blue-and-white jars around a quiet trellis center",
+   "retired": false,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-peri-twinkle-retired.jpg",
-   "lowres": true,
-   "mat_racks": [
-    "Miss Mahjong Cornflower Blue Scalloped",
-    "Miss Mahjong Iridescent Opal Scalloped"
+   "img": "assets/albums/newfinds/sadie-jane/etsy-craftinmy-blue-pink-chinoiserie-big.jpg",
+   "box": [
+    222,
+    286,
+    1350,
+    1382
    ],
-   "mat_racks_by": "Tiffany Nov 22 1:26am"
+   "partner": false,
+   "store_url": "https://www.etsy.com/listing/4610389308",
+   "found": "Etsy/Amazon discovery Nov 21",
+   "short": "Blue & Pink Chinoiserie"
   },
   {
    "group": "picks",
@@ -154,116 +153,319 @@
    "found": "Etsy/Amazon discovery Nov 21"
   },
   {
+   "group": "yours",
+   "name": "Blue Willow",
+   "brand": "Amanda Toppe",
+   "img": "assets/albums/sadie-jane/adds/amanda-toppe-blue-willow.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "alb:coquette:Blue Willow",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Powder Blue",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
+  },
+  {
+   "group": "yours",
+   "name": "Grace Watercolor",
+   "brand": "Betty June & Jeannette",
+   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-grace-watercolor-full.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.etsy.com/listing/4588582719/grace-watercolor-version",
+   "holiday": false,
+   "her_pick": true,
+   "box": [
+    60,
+    520,
+    930,
+    1390
+   ],
+   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)",
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Mahjong Register Peacock Teal"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
+  },
+  {
    "group": "picks",
-   "name": "Vivara",
-   "brand": "Oh My Mahjong",
-   "fym": "www.ohmymahjong.com/vivara-mat-w-tube",
-   "why": "pale blue + pink",
+   "name": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "fym": "mahjandvine.com/citrus-grove",
+   "why": "blue chinoiserie + florals",
    "retired": false,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-vivara.jpg",
+   "img": "assets/albums/sadie-jane/adds/mahj-and-vine-chinoiserie-citrus-grove-full.png",
+   "box": [
+    192,
+    288,
+    1920,
+    2112
+   ],
+   "short": "Citrus Grove"
+  },
+  {
+   "group": "yours",
+   "name": "Chinoiserie Denim",
+   "brand": "Tigre de Tartan",
+   "img": "assets/albums/sadie-jane/adds/tigre-de-tartan-chinoiserie-denim.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "tigredetartan.com/mahjong-mat-chinoiserie-denim",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Middle & Main Milk Glass Scalloped Acrylic",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
+  },
+  {
+   "group": "picks",
+   "name": "Peri-twinkle (retired)",
+   "brand": "Oh My Mahjong",
+   "fym": "alb:coquette:Peri-twinkle",
+   "why": "retired OMM periwinkle + pink",
+   "retired": true,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-peri-twinkle-retired.jpg",
+   "lowres": true,
+   "mat_racks": [
+    "Miss Mahjong Cornflower Blue Scalloped",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
+  },
+  {
+   "group": "yours",
+   "name": "Parrotia",
+   "brand": "Virora Mahjong",
+   "img": "assets/albums/sadie-jane/adds/virora-mahjong-parrotia-full.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.viroramahjong.com/parrotia",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "box": [
+    32,
+    480,
+    992,
+    1440
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Light Pink",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am",
+   "mat_racks_note": "Nov 23: drawn Mahj Mood clear scallop replaced by the real Miss Mahjong opal scallop (her 9:52am note)"
+  },
+  {
+   "group": "picks",
+   "name": "Gigi (Canvas Art)",
+   "brand": "Betty June & Jeannette",
+   "fym": "www.etsy.com/listing/4571558388/the-gigi-katelyn-bruhn-and-bjj-collab",
+   "why": "blush + pale blue wash",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-gigi-canvas-art-table.jpg",
+   "lowres": true,
+   "box": [
+    585,
+    375,
+    2565,
+    2355
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Lilac",
+    "Bird & Bamboo Peachy"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 10:20am (solid; lilac / purpley blue + the lightest peach; no Pink Quartz)",
+   "mat_racks_note": "Nov 23: drawn Mahj Mood clear scallop replaced by the real Miss Mahjong opal scallop (her 9:52am note)"
+  },
+  {
+   "group": "yours",
+   "name": "Lattice",
+   "brand": "Miss Mahjong",
+   "fym": "missmahjong.com/lattice-mahjong-playing-mat-pre-order",
+   "why": "your add (chat, Nov 22 1:12am): the Miss Darling tiles' mat",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/sadie-jane/adds/miss-mahjong-lattice-full.png",
+   "box": [
+    314,
+    27,
+    1606,
+    1330
+   ],
+   "partner": true,
+   "her_add": true,
+   "mat_racks": [
+    "Miss Mahjong Iridescent Opal Scalloped",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:59am"
+  },
+  {
+   "group": "picks",
+   "name": "Year of the Horse",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/year-of-the-horse-mat",
+   "why": "pink medallion on denim blue",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-year-of-the-horse.jpg",
    "lowres": true,
    "mat_racks": [
     "Bird & Bamboo Ocean Slate",
     "Miss Mahjong Iridescent Opal Scalloped"
    ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am"
+  },
+  {
+   "group": "yours",
+   "name": "Heron",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-heron.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/heron-mat-in-tube",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Oh My Mahjong Pink Quartz"
+   ],
    "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)"
   },
   {
-   "group": "picks",
-   "name": "Julia (Blush)",
-   "brand": "Betty June & Jeannette",
-   "fym": "www.etsy.com/listing/4493549424/blush-mahjong-mat-the-julia-mahjong-mat",
-   "why": "cranes + bamboo on blush: same garden as the faces",
+   "group": "yours",
+   "name": "Chinoiserie Pastel Floral",
+   "brand": "Mahj & Moon",
+   "fym": null,
+   "why": "your Etsy links (review note); also sold as Luxury Faux Leather, listing 4599338148",
    "retired": false,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-julia-blush.jpg",
+   "img": "assets/albums/sadie-jane/adds/mahj-and-moon-chinoiserie-pastel-floral.jpg",
+   "box": [
+    159,
+    238,
+    1413,
+    1461
+   ],
+   "partner": false,
+   "store_url": "https://www.etsy.com/listing/4497703295",
+   "her_add": true,
+   "mat_racks": [
+    "Bird & Bamboo Seafoam",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)",
+   "mat_racks_note": "Nov 23: drawn Mahj Mood clear scallop replaced by the real Miss Mahjong opal scallop (her 9:52am note)",
+   "short": "Pastel Floral"
+  },
+  {
+   "group": "yours",
+   "name": "Jade",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-jade.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/jade-mat-in-tube",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "My Fair Mahjong Macaron Pink",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am"
+  },
+  {
+   "group": "picks",
+   "name": "Hamptons Hydrangea",
+   "brand": "Anders Ruff",
+   "fym": "shop.andersruff.com/hamptons-hydrangea-mahjong-mat",
+   "why": "pale blue hydrangea",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/anders-ruff-hamptons-hydrangea.jpg",
    "lowres": true,
    "mat_racks": [
-    "Bird & Bamboo Peachy",
+    "Mahjong Register Cane Cabana",
+    "Bird & Bamboo Clear"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am"
+  },
+  {
+   "group": "picks",
+   "name": "Chantilly",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/chantilly-mat",
+   "why": "pale blue + blush frame",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-chantilly.jpg",
+   "lowres": true,
+   "mat_racks": [
+    "Middle & Main White Lace Acrylic",
+    "Mahjong Register Peacock Teal"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am"
+  },
+  {
+   "group": "picks",
+   "name": "Peony Keepsake",
+   "brand": "Mahjong by SI",
+   "fym": "www.mahjongbysi.com/peony-salon-keepsake-mahjong-mat",
+   "why": "white ground with blue line peonies: lets the blush backs stand out",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/catalog-new/mahjong-by-si-peony-salon-keepsake.jpg",
+   "partner": true,
+   "box": [
+    80,
+    72,
+    1110,
+    1130
+   ],
+   "box_note": "Tiffany review note Nov 21 night: reframed",
+   "her_note": "Mat has a white border, must be move to the edge so it takes up the whole space.  I shouldn't have to tell you this.",
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
     "Middle & Main Milk Glass Scalloped Acrylic"
    ],
    "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)"
   },
   {
    "group": "picks",
-   "name": "Talulah Panda",
-   "brand": "Let's Be Besties",
-   "fym": "letsbebesties.com/talulah-panda-neoprene-mahjong-mat",
-   "why": "pandas + bamboo on blush",
+   "name": "Peony Reverie",
+   "brand": "Mahjong by SI",
+   "fym": "www.mahjongbysi.com/peony-salon-reverie-mahjong-mat",
+   "why": "periwinkle line-drawn peonies: the tiles' peony flower and denim blue",
    "retired": false,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-talulah-panda.jpg",
-   "lowres": true,
+   "img": "assets/albums/catalog-new/mahjong-by-si-peony-salon-reverie.jpg",
+   "partner": true,
+   "box": [
+    80,
+    72,
+    1110,
+    1130
+   ],
+   "box_note": "Tiffany Nov 22 1:10am: white border; crop inside the mat edge",
    "mat_racks": [
-    "Bird & Bamboo Coral",
-    "Bird & Bamboo Mermaid"
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Pebble"
    ],
    "mat_racks_by": "Tiffany Nov 23 9:52am"
-  },
-  {
-   "group": "picks",
-   "name": "Watercolor Lilies",
-   "brand": "Let's Be Besties",
-   "fym": "letsbebesties.com/watercolor-lilies-leatherette",
-   "why": "lily pads + lotus on denim",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-watercolor-lilies.jpg",
-   "lowres": true,
-   "mat_racks": [
-    "Bird & Bamboo Dark Blue",
-    "Oh My Mahjong Pink Quartz"
-   ],
-   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
-  },
-  {
-   "group": "picks",
-   "name": "Plum Lotus",
-   "brand": "Let's Be Besties",
-   "fym": "letsbebesties.com/plum-lotus-mahjong-mat",
-   "why": "lotus",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-plum-lotus.jpg",
-   "lowres": true,
-   "mat_racks": [
-    "Bird & Bamboo Dark Blue",
-    "Miss Mahjong Iridescent Opal Scalloped"
-   ],
-   "mat_racks_by": "Claude Nov 23: peach sorbet was not in the mat (rack_colour_check)"
-  },
-  {
-   "group": "picks",
-   "name": "Grandmillennial",
-   "brand": "Bam! Let's Mahjong",
-   "fym": "www.bamletsmahjong.com/grandmillennial-mahjong-mat",
-   "why": "pink/green/blue stripes",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/bam-let-s-mahjong-grandmillennial.jpg",
-   "lowres": true,
-   "mat_racks": [
-    "Bird & Bamboo Dark Blue",
-    "Middle & Main White Lace Acrylic"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)"
-  },
-  {
-   "group": "picks",
-   "name": "Elysium",
-   "brand": "Oh My Mahjong",
-   "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
-   "why": "pagoda garden, navy + green",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-elysium.jpg",
-   "lowres": true,
-   "mat_racks": [
-    "Oh My Mahjong Hot Pink",
-    "Bird & Bamboo French Blue"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
   },
   {
    "group": "picks",
@@ -284,6 +486,22 @@
   },
   {
    "group": "picks",
+   "name": "Grandmillennial",
+   "brand": "Bam! Let's Mahjong",
+   "fym": "www.bamletsmahjong.com/grandmillennial-mahjong-mat",
+   "why": "pink/green/blue stripes",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/bam-let-s-mahjong-grandmillennial.jpg",
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Middle & Main White Lace Acrylic"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)"
+  },
+  {
+   "group": "picks",
    "name": "Hydrangea",
    "brand": "Royal Mahjong Society",
    "fym": "theroyalmahjongsociety.com/hydrangea-mahjong-mat",
@@ -300,19 +518,258 @@
   },
   {
    "group": "picks",
-   "name": "Hamptons Hydrangea",
-   "brand": "Anders Ruff",
-   "fym": "shop.andersruff.com/hamptons-hydrangea-mahjong-mat",
-   "why": "pale blue hydrangea",
+   "name": "Butterfly Belle Premium",
+   "brand": "Mahjong Register",
+   "fym": "mahjongregister.com/preorder-pretty-in-plum-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
+   "why": "denim + pink butterfly",
    "retired": false,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/anders-ruff-hamptons-hydrangea.jpg",
+   "img": "assets/colorcards/sadie-jane/mats/mahjong-register-butterfly-belle-premium.jpg",
    "lowres": true,
    "mat_racks": [
-    "Mahjong Register Cane Cabana",
-    "Bird & Bamboo Clear"
+    "My Fair Mahjong Macaron Pink",
+    "Bird & Bamboo Shell Pink"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)",
+   "short": "Butterfly Belle"
+  },
+  {
+   "group": "yours",
+   "name": "Imperial (retired)",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-imperial-retired.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "alb:amara:Imperial",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Butter",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)"
+  },
+  {
+   "group": "yours",
+   "name": "Lotus Cove",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-lotus-cove-full.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/lotus-cove-mat-in-tube",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true,
+   "box": [
+    181,
+    480,
+    2057,
+    2316
+   ],
+   "mat_racks": [
+    "Oh My Mahjong White Acrylic",
+    "Bird & Bamboo Peony"
    ],
    "mat_racks_by": "Tiffany Nov 23 9:52am"
+  },
+  {
+   "group": "picks",
+   "name": "Elysium",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
+   "why": "pagoda garden, navy + green",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-elysium.jpg",
+   "lowres": true,
+   "mat_racks": [
+    "Oh My Mahjong Hot Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
+  },
+  {
+   "group": "yours",
+   "name": "The Kerry",
+   "brand": "Betty June & Jeannette",
+   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-the-kerry.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Miss Mahjong Cornflower Blue Scalloped",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am"
+  },
+  {
+   "group": "picks",
+   "name": "Julia (Blush)",
+   "brand": "Betty June & Jeannette",
+   "fym": "www.etsy.com/listing/4493549424/blush-mahjong-mat-the-julia-mahjong-mat",
+   "why": "cranes + bamboo on blush: same garden as the faces",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-julia-blush.jpg",
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Peachy",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)"
+  },
+  {
+   "group": "yours",
+   "name": "Citrus Songbird (retired)",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-citrus-songbird-retired.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "alb:amara:Citrus Songbird",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Seafoam",
+    "My Fair Mahjong Macaron Pink"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
+  },
+  {
+   "group": "yours",
+   "name": "Livy",
+   "brand": "Betty June & Jeannette",
+   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-livy-fullxfull.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.etsy.com/listing/4544550775/the-livy-mahjong-mat",
+   "holiday": false,
+   "her_pick": true,
+   "box": [
+    121,
+    179,
+    2399,
+    2700
+   ],
+   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)",
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bam Bird Boutique Indigo"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am",
+   "photo_note": "Nov 23: checked all 8 Etsy listing photos (3000px): the art itself is soft/painterly in every one; this is the sharpest full view"
+  },
+  {
+   "group": "yours",
+   "name": "Anastasia",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-anastasia.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/anastasia-mat-in-tube",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Oh My Mahjong Hot Pink",
+    "Bird & Bamboo Turquoise Blue"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
+  },
+  {
+   "group": "yours",
+   "name": "La Fete (retired)",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-la-fete-retired.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "alb:la-fete:La Fete",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Peace Love Mahjong Light Pink",
+    "Bird & Bamboo Turquoise Blue"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
+  },
+  {
+   "group": "yours",
+   "name": "Garden Party (retired)",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-garden-party-retired.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "alb:limoncello:Garden Party",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Miss Mahjong Iridescent Opal Scalloped",
+    "My Fair Mahjong Macaron Pink"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
+  },
+  {
+   "group": "picks",
+   "name": "Talulah Panda",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/talulah-panda-neoprene-mahjong-mat",
+   "why": "pandas + bamboo on blush",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-talulah-panda.jpg",
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Mermaid"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am"
+  },
+  {
+   "group": "picks",
+   "name": "Pink Lemonade",
+   "brand": "Mahj Mood",
+   "fym": "mahjmood.com/pink-lemonade-mat",
+   "why": "blush plaid",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/mahj-mood-pink-lemonade-full.jpg",
+   "lowres": false,
+   "mat_racks": [
+    "Peace Love Mahjong Light Pink",
+    "Bird & Bamboo Peony"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
+  },
+  {
+   "group": "picks",
+   "name": "Pink Hydrangea Preppy Floral",
+   "brand": "MahjAuraStudio",
+   "fym": null,
+   "why": "pink hydrangeas with blue and green: the bolder option",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/newfinds/sadie-jane/etsy-mahjaura-pink-hydrangea-big.jpg",
+   "box": [
+    282,
+    268,
+    1318,
+    1326
+   ],
+   "partner": false,
+   "store_url": "https://www.etsy.com/listing/4587877778",
+   "found": "Etsy/Amazon discovery Nov 21",
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:59am",
+   "short": "Pink Hydrangea"
   },
   {
    "group": "picks",
@@ -359,242 +816,6 @@
    "mat_racks_by": "Tiffany Nov 23 9:59am"
   },
   {
-   "group": "picks",
-   "name": "Butterfly Belle Premium",
-   "brand": "Mahjong Register",
-   "fym": "mahjongregister.com/preorder-pretty-in-plum-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
-   "why": "denim + pink butterfly",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/mahjong-register-butterfly-belle-premium.jpg",
-   "lowres": true,
-   "mat_racks": [
-    "My Fair Mahjong Macaron Pink",
-    "Bird & Bamboo Shell Pink"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
-  },
-  {
-   "group": "picks",
-   "name": "Peony Reverie",
-   "brand": "Mahjong by SI",
-   "fym": "www.mahjongbysi.com/peony-salon-reverie-mahjong-mat",
-   "why": "periwinkle line-drawn peonies: the tiles' peony flower and denim blue",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/albums/catalog-new/mahjong-by-si-peony-salon-reverie.jpg",
-   "partner": true,
-   "box": [
-    80,
-    72,
-    1110,
-    1130
-   ],
-   "box_note": "Tiffany Nov 22 1:10am: white border; crop inside the mat edge",
-   "mat_racks": [
-    "Bird & Bamboo Periwinkle Blue",
-    "Bird & Bamboo Pebble"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am"
-  },
-  {
-   "group": "picks",
-   "name": "The Afternoon Tea",
-   "brand": "Maison Mahj",
-   "fym": "maisonmahj.com/the-afternoon-tea-mat",
-   "why": "blush with denim-blue stripes and line drawings: both tile colours",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/maison-mahj-the-afternoon-tea-full.jpg",
-   "lowres": false,
-   "box": [
-    92,
-    108,
-    1022,
-    1064
-   ],
-   "box_note": "Tiffany review note Nov 21 night: reframed",
-   "her_note": "Photoshop hack job on the edge of this mat.  And mat should extend the frame",
-   "mat_racks": [
-    "Bird & Bamboo Light Pink",
-    "Middle & Main Milk Glass Scalloped Acrylic"
-   ],
-   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
-  },
-  {
-   "group": "picks",
-   "name": "Peony Keepsake",
-   "brand": "Mahjong by SI",
-   "fym": "www.mahjongbysi.com/peony-salon-keepsake-mahjong-mat",
-   "why": "white ground with blue line peonies: lets the blush backs stand out",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/albums/catalog-new/mahjong-by-si-peony-salon-keepsake.jpg",
-   "partner": true,
-   "box": [
-    80,
-    72,
-    1110,
-    1130
-   ],
-   "box_note": "Tiffany review note Nov 21 night: reframed",
-   "her_note": "Mat has a white border, must be move to the edge so it takes up the whole space.  I shouldn't have to tell you this.",
-   "mat_racks": [
-    "Bird & Bamboo Cornflower Blue",
-    "Middle & Main Milk Glass Scalloped Acrylic"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)"
-  },
-  {
-   "group": "picks",
-   "name": "Blue and Pink Chinoiserie Trellis",
-   "brand": "CraftinMy",
-   "fym": null,
-   "why": "powder blue border, pink peonies and blue-and-white jars around a quiet trellis center",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/albums/newfinds/sadie-jane/etsy-craftinmy-blue-pink-chinoiserie-big.jpg",
-   "box": [
-    222,
-    286,
-    1350,
-    1382
-   ],
-   "partner": false,
-   "store_url": "https://www.etsy.com/listing/4610389308",
-   "found": "Etsy/Amazon discovery Nov 21"
-  },
-  {
-   "group": "picks",
-   "name": "Pink Blue Bow Floral",
-   "brand": "Amazon",
-   "fym": null,
-   "why": "blush center with pink bows on blue and green florals",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/albums/newfinds/sadie-jane/amazon-pink-blue-bow-floral-big.jpg",
-   "box": [
-    44,
-    278,
-    871,
-    1070
-   ],
-   "partner": false,
-   "store_url": "https://www.amazon.com/dp/B0H49Q8KMS",
-   "found": "Etsy/Amazon discovery Nov 21",
-   "mat_racks": [
-    "Bird & Bamboo Light Pink",
-    "Miss Mahjong Iridescent Opal Scalloped"
-   ],
-   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)",
-   "mat_racks_note": "Nov 23: drawn Mahj Mood clear scallop replaced by the real Miss Mahjong opal scallop (her 9:52am note)"
-  },
-  {
-   "group": "picks",
-   "name": "Pink Hydrangea Preppy Floral",
-   "brand": "MahjAuraStudio",
-   "fym": null,
-   "why": "pink hydrangeas with blue and green: the bolder option",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/albums/newfinds/sadie-jane/etsy-mahjaura-pink-hydrangea-big.jpg",
-   "box": [
-    282,
-    268,
-    1318,
-    1326
-   ],
-   "partner": false,
-   "store_url": "https://www.etsy.com/listing/4587877778",
-   "found": "Etsy/Amazon discovery Nov 21",
-   "mat_racks": [
-    "Bird & Bamboo Kelly Green",
-    "My Fair Mahjong Magenta"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:59am"
-  },
-  {
-   "group": "picks",
-   "name": "Vegan Leather – Dusty Rose",
-   "brand": "Peace Love Mahjong",
-   "fym": "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473745188",
-   "why": "dusty rose solid",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/peace-love-mahjong-vegan-leather-dusty-rose.jpg",
-   "lowres": true,
-   "mat_racks": [
-    "Bird & Bamboo Coral",
-    "Middle & Main Milk Glass Scalloped Acrylic"
-   ],
-   "mat_racks_by": "Claude Nov 23: cornflower was not in the mat (rack_colour_check)"
-  },
-  {
-   "group": "picks",
-   "name": "Rose Water Dots and Stripes",
-   "brand": "Let's Be Besties",
-   "fym": "letsbebesties.com/rose-water-dots-and-stripes-mahjong-mat",
-   "why": "blush with green + blue line",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-rose-water-dots-and-stripes.jpg",
-   "lowres": true,
-   "mat_racks": [
-    "Bird & Bamboo Coral",
-    "Middle & Main Milk Glass Scalloped Acrylic"
-   ],
-   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
-  },
-  {
-   "group": "picks",
-   "name": "Pink Lemonade",
-   "brand": "Mahj Mood",
-   "fym": "mahjmood.com/pink-lemonade-mat",
-   "why": "blush plaid",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/mahj-mood-pink-lemonade-full.jpg",
-   "lowres": false,
-   "mat_racks": [
-    "Peace Love Mahjong Light Pink",
-    "Bird & Bamboo Peony"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
-  },
-  {
-   "group": "picks",
-   "name": "Birdie Pink (retired)",
-   "brand": "Oh My Mahjong",
-   "fym": "alb:amara:Birdie Pink",
-   "why": "retired OMM pink",
-   "retired": true,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-birdie-pink-retired.jpg",
-   "lowres": true,
-   "mat_racks": [
-    "Bird & Bamboo Light Pink",
-    "Miss Mahjong Iridescent Opal Scalloped"
-   ],
-   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
-  },
-  {
-   "group": "picks",
-   "name": "The Pink Classic Neoprene",
-   "brand": "Bam Bird Boutique",
-   "fym": "www.bambirdboutique.com/classic-neoprene-mahjong-mat-copy",
-   "why": "blush solid",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/bam-bird-boutique-the-pink-classic-neoprene.jpg",
-   "lowres": true,
-   "her_note": "Very tonal, can be in but it's not this early in the album",
-   "mat_racks": [
-    "Bird & Bamboo Coral",
-    "Miss Mahjong Iridescent Opal Scalloped"
-   ],
-   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
-  },
-  {
    "group": "holiday",
    "name": "Nutcracker",
    "brand": "Britt Mills",
@@ -610,6 +831,28 @@
    ],
    "mat_racks_by": "Tiffany Nov 23 9:59am",
    "mat_racks_note": "Nov 23: drawn Mahj Mood clear scallop replaced by the real Miss Mahjong opal scallop (her 9:52am note)"
+  },
+  {
+   "group": "holiday",
+   "name": "Merriment",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-merriment-full.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/merriment-mat-in-tube",
+   "holiday": true,
+   "her_pick": true,
+   "box": [
+    230,
+    505,
+    2235,
+    2555
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Tiffany Nov 23 9:59am"
   },
   {
    "group": "holiday",
@@ -648,23 +891,6 @@
   },
   {
    "group": "holiday",
-   "name": "Ski Club Mat - Periwinkle Center",
-   "brand": "Charleston Mahjong Club",
-   "fym": "www.charlestonmahjongclub.com/the-ski-club-mat-in-toile-w-matching-bag",
-   "why": "periwinkle ski toile",
-   "retired": false,
-   "holiday": true,
-   "img": "assets/colorcards/sadie-jane/mats/charleston-mahjong-club-ski-club-mat-periwinkle-center.jpg",
-   "lowres": true,
-   "short": "Ski Club Periwinkle",
-   "mat_racks": [
-    "Bird & Bamboo Cornflower Blue",
-    "Miss Mahjong Iridescent Opal Scalloped"
-   ],
-   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
-  },
-  {
-   "group": "holiday",
    "name": "Peppermint Patty Premium",
    "brand": "Mahjong Register",
    "fym": "mahjongregister.com/pre-order-letters-to-santa-premium-mahjong-mat-33-estimated-ship-sep-25th-2026-copy",
@@ -677,23 +903,8 @@
     "Middle & Main Milk Glass Scalloped Acrylic",
     "My Fair Mahjong Macaron Pink"
    ],
-   "mat_racks_by": "Tiffany Nov 23 9:59am"
-  },
-  {
-   "group": "holiday",
-   "name": "Christmas Cat",
-   "brand": "YOLO Mahjong",
-   "fym": "www.yolomahjong.com/christmas-cat-square-mahjong-mat-ship-rolled-up",
-   "why": "blush painted Christmas",
-   "retired": false,
-   "holiday": true,
-   "img": "assets/colorcards/sadie-jane/mats/yolo-mahjong-christmas-cat.jpg",
-   "lowres": true,
-   "mat_racks": [
-    "Bird & Bamboo Peachy",
-    "Miss Mahjong Cornflower Blue Scalloped"
-   ],
-   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
+   "mat_racks_by": "Tiffany Nov 23 9:59am",
+   "short": "Peppermint Patty"
   },
   {
    "group": "holiday",
@@ -736,422 +947,284 @@
    "photo_note": "Nov 23: corner repair (scripts/albumcard/corner_repair.py), her 9:59am rule"
   },
   {
-   "group": "holiday",
-   "name": "Christmas Tree Trellis",
-   "brand": "Piper Chase Studios",
-   "fym": "www.etsy.com/listing/4567716075/christmas-tree-trellis",
-   "why": "pink + green tree trellis",
+   "group": "yours",
+   "name": "Color Wave – Cobalt Center- Light Blue Scallop",
+   "brand": "My Fair Mahjong",
+   "img": "assets/albums/sadie-jane/adds/my-fair-mahjong-color-wave-cobalt-light-blue-scallop-full.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: by sight: all blue and no blush; cobalt, royal or periwinkle reads harder than the denim stripe",
    "retired": false,
-   "holiday": true,
-   "img": "assets/colorcards/sadie-jane/mats/piper-chase-studios-christmas-tree-trellis.jpg",
-   "lowres": true,
+   "fym": "myfairmahjong.com/standard-mahjong-mats?v=49809801937207",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "short": "Color Wave Cobalt",
    "mat_racks": [
-    "Bird & Bamboo Magenta",
-    "Miss Mahjong Iridescent Opal Scalloped"
+    "Bird & Bamboo Dark Blue",
+    "Middle & Main Milk Glass Scalloped Acrylic"
    ],
-   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)",
-   "mat_racks_note": "Nov 23: drawn Mahj Mood clear scallop replaced by the real Miss Mahjong opal scallop (her 9:52am note)"
+   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
+   "new_mat": true,
+   "added_after_review": true,
+   "caption_note": "New mat: racks never matched",
+   "box": [
+    163,
+    163,
+    917,
+    917
+   ]
   },
   {
    "group": "yours",
-   "name": "The Kerry",
-   "brand": "Betty June & Jeannette",
-   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-the-kerry.jpg",
-   "why": "Your add from the catalog search (round 1).",
+   "name": "The Paradise - Tropical Teal",
+   "brand": "Bird & Bamboo",
+   "img": "assets/albums/leftout/sadie-jane/bird-bamboo-the-paradise-tropical-teal.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: by sight: all blue and no blush; cobalt, royal or periwinkle reads harder than the denim stripe",
    "retired": false,
-   "fym": "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink",
-   "lowres": true,
+   "fym": "birdandbamboo.com/the-paradise-mahjong-mat-tropical-teal",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "short": "The Paradise Teal",
+   "mat_racks": [
+    "Bird & Bamboo Electric Blue",
+    "Bird & Bamboo Gold Metallic"
+   ],
+   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
+   "new_mat": true,
+   "added_after_review": true,
+   "caption_note": "New mat: racks never matched"
+  },
+  {
+   "group": "yours",
+   "name": "Desert Blooms",
+   "brand": "Peace Love Mahjong",
+   "img": "assets/albums/leftout/sadie-jane/peace-love-mahjong-desert-blooms.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: by sight: colours are near but the pattern, or a strong extra colour (such as red, orange, brown or purple), fights the soft faces",
+   "retired": false,
+   "fym": "peacelovemahjong.com/mahjong-mats-flowers?v=52799162286372",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Peace Love Mahjong Light Pink",
+    "Peace Love Mahjong Dark Green"
+   ],
+   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
+   "new_mat": true,
+   "added_after_review": true,
+   "caption_note": "New mat: racks never matched"
+  },
+  {
+   "group": "yours",
+   "name": "Pastel Opaline",
+   "brand": "Bougie Mahjong",
+   "img": "assets/albums/sadie-jane/adds/bougie-mahjong-pastel-opaline-full.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: by sight: colours are near but the pattern, or a strong extra colour (such as red, orange, brown or purple), fights the soft faces",
+   "retired": false,
+   "fym": "bougiemahjong.com/pastel-opaline-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Miss Mahjong Iridescent Opal Scalloped",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
+   "new_mat": true,
+   "added_after_review": true,
+   "caption_note": "New mat: racks never matched",
+   "box": [
+    28,
+    28,
+    2371,
+    2371
+   ]
+  },
+  {
+   "group": "holiday",
+   "name": "Blue Blooms",
+   "brand": "Peace Love Mahjong",
+   "img": "assets/albums/leftout/sadie-jane/peace-love-mahjong-blue-blooms.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: holiday mat looked at; red, green or cobalt takes over next to blush + denim",
+   "retired": false,
+   "fym": "peacelovemahjong.com/mahjong-mats-hanukkah?v=67570489557284",
+   "lowres": false,
+   "holiday": true,
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Peace Love Mahjong White"
+   ],
+   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
+   "new_mat": true,
+   "added_after_review": true,
+   "caption_note": "New mat: racks never matched"
+  },
+  {
+   "group": "yours",
+   "name": "Pink Wildflower",
+   "brand": "Mahj & Moon",
+   "img": "assets/albums/sadie-jane/adds/mahj-and-moon-pink-wildflower-full.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: by sight: pink only, and the pink is warmer or hotter than the blush back; nothing picks up the denim or the green",
+   "retired": false,
+   "fym": "mahjandmoon.com/pink-wildflower-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "My Fair Mahjong Macaron Pink",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
+   "new_mat": true,
+   "added_after_review": true,
+   "caption_note": "New mat: racks never matched",
+   "box": [
+    11,
+    11,
+    914,
+    914
+   ]
+  },
+  {
+   "group": "yours",
+   "name": "Pink Hummingbird",
+   "brand": "AussieHannaGift",
+   "img": "assets/albums/sadie-jane/adds/aussiehannagift-pink-hummingbird-fullxfull.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: by sight: pink only, and the pink is warmer or hotter than the blush back; nothing picks up the denim or the green",
+   "retired": false,
+   "fym": "www.etsy.com/listing/4541531978/pink-hummingbird-mahjong-mat-with",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Peace Love Mahjong Light Pink",
+    "Bird & Bamboo Seafoam"
+   ],
+   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
+   "new_mat": true,
+   "added_after_review": true,
+   "caption_note": "New mat: racks never matched",
+   "box": [
+    52,
+    47,
+    2446,
+    2452
+   ]
+  },
+  {
+   "group": "yours",
+   "name": "Roseveil",
+   "brand": "Virora Mahjong",
+   "img": "assets/albums/sadie-jane/adds/virora-mahjong-roseveil-repaired.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: by sight: pink only, and the pink is warmer or hotter than the blush back; nothing picks up the denim or the green",
+   "retired": false,
+   "fym": "www.viroramahjong.com/roseveil",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Oh My Mahjong Hot Pink",
+    "Bird & Bamboo Turks Blue"
+   ],
+   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
+   "new_mat": true,
+   "added_after_review": true,
+   "caption_note": "New mat: racks never matched",
+   "photo_note": "Nov 23: corner repair + cropped off the tube"
+  },
+  {
+   "group": "yours",
+   "name": "Reversible Vegan Leather – Blush Pink & Cornflower Blue",
+   "brand": "Charleston Mahjong Club",
+   "img": "assets/albums/sadie-jane/adds/charleston-mahjong-club-reversible-blush-cornflower-corner.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: by sight: pink only, and the pink is warmer or hotter than the blush back; nothing picks up the denim or the green",
+   "retired": false,
+   "fym": "www.charlestonmahjongclub.com/vegan-leather-reversible-game-mat?v=50377156264241",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "short": "Blush & Cornflower Leather",
+   "mat_racks": [
+    "Peace Love Mahjong Light Pink",
+    "Bird & Bamboo Mermaid"
+   ],
+   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
+   "new_mat": true,
+   "added_after_review": true,
+   "caption_note": "New mat: racks never matched"
+  },
+  {
+   "group": "yours",
+   "name": "Blushing Blooms",
+   "brand": "Anders Ruff",
+   "img": "assets/albums/leftout/sadie-jane/anders-ruff-blushing-blooms.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: by sight: pink only, and the pink is warmer or hotter than the blush back; nothing picks up the denim or the green",
+   "retired": false,
+   "fym": "shop.andersruff.com/blushing-blooms-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Oh My Mahjong Hot Pink",
+    "My Fair Mahjong Macaron Pink"
+   ],
+   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
+   "new_mat": true,
+   "added_after_review": true,
+   "caption_note": "New mat: racks never matched"
+  },
+  {
+   "group": "yours",
+   "name": "Soirée at Sue's",
+   "brand": "Noli June",
+   "img": "assets/albums/sadie-jane/adds/noli-june-soiree-at-sues-full.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: by sight: pink only, and the pink is warmer or hotter than the blush back; nothing picks up the denim or the green",
+   "retired": false,
+   "fym": "nolijune.com/soiree-at-sues",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Peace Love Mahjong Light Pink",
+    "Bird & Bamboo Moss"
+   ],
+   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
+   "new_mat": true,
+   "added_after_review": true,
+   "caption_note": "New mat: racks never matched",
+   "box": [
+    69,
+    70,
+    1930,
+    1931
+   ]
+  },
+  {
+   "group": "yours",
+   "name": "Pressed Flowers",
+   "brand": "Miss Mahjong",
+   "img": "assets/albums/sadie-jane/adds/miss-mahjong-pressed-flowers-full.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: by sight: a novelty or theme mat (such as fish, shark, western or guest check), or a colour (such as cobalt, red or leopard) that fights blush + denim",
+   "retired": false,
+   "fym": "missmahjong.com/pressed-flowers-mahjong-playing-mat",
+   "lowres": false,
    "holiday": false,
    "her_pick": true,
    "mat_racks": [
     "Miss Mahjong Cornflower Blue Scalloped",
     "Miss Mahjong Iridescent Opal Scalloped"
    ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am"
-  },
-  {
-   "group": "yours",
-   "name": "Anastasia",
-   "brand": "Oh My Mahjong",
-   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-anastasia.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "www.ohmymahjong.com/anastasia-mat-in-tube",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
-   "mat_racks": [
-    "Oh My Mahjong Hot Pink",
-    "Bird & Bamboo Turquoise Blue"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
-  },
-  {
-   "group": "yours",
-   "name": "Jade",
-   "brand": "Oh My Mahjong",
-   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-jade.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "www.ohmymahjong.com/jade-mat-in-tube",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
-   "mat_racks": [
-    "My Fair Mahjong Macaron Pink",
-    "Bird & Bamboo Cornflower Blue"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am"
-  },
-  {
-   "group": "yours",
-   "name": "Chinoiserie Denim",
-   "brand": "Tigre de Tartan",
-   "img": "assets/albums/sadie-jane/adds/tigre-de-tartan-chinoiserie-denim.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "tigredetartan.com/mahjong-mat-chinoiserie-denim",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
-   "mat_racks": [
-    "Middle & Main Milk Glass Scalloped Acrylic",
-    "Bird & Bamboo Cornflower Blue"
-   ],
-   "mat_racks_by": "Tiffany Nov 22 1:26am"
-  },
-  {
-   "group": "yours",
-   "name": "Citrus Songbird (retired)",
-   "brand": "Oh My Mahjong",
-   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-citrus-songbird-retired.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "alb:amara:Citrus Songbird",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
-   "mat_racks": [
-    "Bird & Bamboo Seafoam",
-    "My Fair Mahjong Macaron Pink"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
-  },
-  {
-   "group": "yours",
-   "name": "Parrotia",
-   "brand": "Virora Mahjong",
-   "img": "assets/albums/sadie-jane/adds/virora-mahjong-parrotia-full.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "www.viroramahjong.com/parrotia",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
+   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
+   "new_mat": true,
+   "added_after_review": true,
+   "caption_note": "New mat: racks never matched",
    "box": [
-    32,
-    480,
-    992,
-    1440
-   ],
-   "mat_racks": [
-    "Peace Love Mahjong Light Pink",
-    "Miss Mahjong Iridescent Opal Scalloped"
-   ],
-   "mat_racks_by": "Tiffany Nov 22 1:26am",
-   "mat_racks_note": "Nov 23: drawn Mahj Mood clear scallop replaced by the real Miss Mahjong opal scallop (her 9:52am note)"
-  },
-  {
-   "group": "yours",
-   "name": "Lotus Cove",
-   "brand": "Oh My Mahjong",
-   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-lotus-cove-full.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "www.ohmymahjong.com/lotus-cove-mat-in-tube",
-   "lowres": true,
-   "holiday": false,
-   "her_pick": true,
-   "box": [
-    181,
-    480,
-    2057,
-    2316
-   ],
-   "mat_racks": [
-    "Oh My Mahjong White Acrylic",
-    "Bird & Bamboo Peony"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am"
-  },
-  {
-   "group": "yours",
-   "name": "Nichole",
-   "brand": "Betty June & Jeannette",
-   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-nichole-fullxfull.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "www.etsy.com/listing/4537970849/the-nichole-mahjong-mat",
-   "lowres": true,
-   "holiday": false,
-   "her_pick": true,
-   "box": [
-    180,
-    270,
-    2400,
-    2730
-   ],
-   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)",
-   "mat_racks": [
-    "Miss Mahjong Iridescent Opal Scalloped",
-    "Miss Mahjong Cornflower Blue Scalloped"
-   ],
-   "mat_racks_by": "Tiffany Nov 22 1:26am",
-   "mat_racks_note": "Nov 23: drawn Mahj Mood clear scallop replaced by the real Miss Mahjong opal scallop (her 9:52am note)"
-  },
-  {
-   "group": "yours",
-   "name": "Livy",
-   "brand": "Betty June & Jeannette",
-   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-livy-fullxfull.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "www.etsy.com/listing/4544550775/the-livy-mahjong-mat",
-   "holiday": false,
-   "her_pick": true,
-   "box": [
-    121,
-    179,
-    2399,
-    2700
-   ],
-   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)",
-   "mat_racks": [
-    "Bird & Bamboo Peony",
-    "Bam Bird Boutique Indigo"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am",
-   "photo_note": "Nov 23: checked all 8 Etsy listing photos (3000px): the art itself is soft/painterly in every one; this is the sharpest full view"
-  },
-  {
-   "group": "yours",
-   "name": "Grace Watercolor",
-   "brand": "Betty June & Jeannette",
-   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-grace-watercolor-full.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "www.etsy.com/listing/4588582719/grace-watercolor-version",
-   "holiday": false,
-   "her_pick": true,
-   "box": [
-    60,
-    520,
-    930,
-    1390
-   ],
-   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)",
-   "mat_racks": [
-    "Bird & Bamboo Coral",
-    "Mahjong Register Peacock Teal"
-   ],
-   "mat_racks_by": "Tiffany Nov 22 1:26am"
-  },
-  {
-   "group": "yours",
-   "name": "Camellia (retired)",
-   "brand": "Oh My Mahjong",
-   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-camellia-retired.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "alb:amara:Camellia",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
-   "mat_racks": [
-    "Bird & Bamboo Peony",
-    "Miss Mahjong Iridescent Opal Scalloped"
-   ],
-   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)",
-   "mat_racks_note": "Nov 23: drawn Mahj Mood clear scallop replaced by the real Miss Mahjong opal scallop (her 9:52am note)"
-  },
-  {
-   "group": "yours",
-   "name": "Garden Party (retired)",
-   "brand": "Oh My Mahjong",
-   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-garden-party-retired.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "alb:limoncello:Garden Party",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
-   "mat_racks": [
-    "Miss Mahjong Iridescent Opal Scalloped",
-    "My Fair Mahjong Macaron Pink"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
-  },
-  {
-   "group": "yours",
-   "name": "Heron",
-   "brand": "Oh My Mahjong",
-   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-heron.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "www.ohmymahjong.com/heron-mat-in-tube",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
-   "mat_racks": [
-    "Bird & Bamboo Coral",
-    "Oh My Mahjong Pink Quartz"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)"
-  },
-  {
-   "group": "yours",
-   "name": "Imperial (retired)",
-   "brand": "Oh My Mahjong",
-   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-imperial-retired.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "alb:amara:Imperial",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
-   "mat_racks": [
-    "Bird & Bamboo Butter",
-    "Miss Mahjong Cornflower Blue Scalloped"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)"
-  },
-  {
-   "group": "yours",
-   "name": "La Fete (retired)",
-   "brand": "Oh My Mahjong",
-   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-la-fete-retired.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "alb:la-fete:La Fete",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
-   "mat_racks": [
-    "Peace Love Mahjong Light Pink",
-    "Bird & Bamboo Turquoise Blue"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am; brand diversified per her 9:59am note (same colours)"
-  },
-  {
-   "group": "holiday",
-   "name": "Merriment",
-   "brand": "Oh My Mahjong",
-   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-merriment-full.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "www.ohmymahjong.com/merriment-mat-in-tube",
-   "holiday": true,
-   "her_pick": true,
-   "box": [
-    230,
-    505,
-    2235,
-    2555
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Light Pink",
-    "Middle & Main Milk Glass Scalloped Acrylic"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:59am"
-  },
-  {
-   "group": "yours",
-   "name": "Blue Willow",
-   "brand": "Amanda Toppe",
-   "img": "assets/albums/sadie-jane/adds/amanda-toppe-blue-willow.jpg",
-   "why": "Your add from the catalog search (round 1).",
-   "retired": false,
-   "fym": "alb:coquette:Blue Willow",
-   "lowres": true,
-   "holiday": false,
-   "her_pick": true,
-   "mat_racks": [
-    "Bird & Bamboo Powder Blue",
-    "Middle & Main Milk Glass Scalloped Acrylic"
-   ],
-   "mat_racks_by": "Tiffany Nov 22 1:26am"
-  },
-  {
-   "group": "yours",
-   "name": "Pink & Blue Grandmillennial",
-   "brand": "Mahj & Moon",
-   "fym": null,
-   "why": "your Etsy link (review note)",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/albums/sadie-jane/adds/mahj-and-moon-pink-blue-grandmillennial.jpg",
-   "box": [
-    143,
-    143,
-    1445,
-    1445
-   ],
-   "partner": false,
-   "store_url": "https://www.etsy.com/listing/4527255793",
-   "her_add": true,
-   "mat_racks": [
-    "Middle & Main Milk Glass Scalloped Acrylic",
-    "Miss Mahjong Cornflower Blue Scalloped"
-   ],
-   "mat_racks_by": "Tiffany Nov 22 1:26am"
-  },
-  {
-   "group": "yours",
-   "name": "Chinoiserie Pastel Floral",
-   "brand": "Mahj & Moon",
-   "fym": null,
-   "why": "your Etsy links (review note); also sold as Luxury Faux Leather, listing 4599338148",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/albums/sadie-jane/adds/mahj-and-moon-chinoiserie-pastel-floral.jpg",
-   "box": [
-    159,
-    238,
-    1413,
-    1461
-   ],
-   "partner": false,
-   "store_url": "https://www.etsy.com/listing/4497703295",
-   "her_add": true,
-   "mat_racks": [
-    "Bird & Bamboo Seafoam",
-    "Miss Mahjong Iridescent Opal Scalloped"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)",
-   "mat_racks_note": "Nov 23: drawn Mahj Mood clear scallop replaced by the real Miss Mahjong opal scallop (her 9:52am note)"
-  },
-  {
-   "group": "yours",
-   "name": "Lattice",
-   "brand": "Miss Mahjong",
-   "fym": "missmahjong.com/lattice-mahjong-playing-mat-pre-order",
-   "why": "your add (chat, Nov 22 1:12am): the Miss Darling tiles' mat",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/albums/sadie-jane/adds/miss-mahjong-lattice-full.png",
-   "box": [
-    314,
-    27,
-    1606,
-    1330
-   ],
-   "partner": true,
-   "her_add": true,
-   "mat_racks": [
-    "Miss Mahjong Iridescent Opal Scalloped",
-    "Miss Mahjong Cornflower Blue Scalloped"
-   ],
-   "mat_racks_by": "Tiffany Nov 23 9:59am"
+    221,
+    12,
+    1274,
+    1058
+   ]
   }
  ]
 }

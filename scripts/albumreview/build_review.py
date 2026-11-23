@@ -88,13 +88,15 @@ TP = rec['tile_photo']
 put('t/inset.jpg', src=TP['inset'], maxs=420)
 leftout = []
 # Nov 23 2026 (Tiffany: 'your left out section was just enormous... half of the page'): Left out is CAPPED. Big-catalog brands
-# (config/curated-brands.json) show at most 3 each, any other brand at most 5; her own removals always show. The full list
+# (config/curated-brands.json) show at most 2 each, any other brand at most 3, 36 in all; her own removals always show. The full list
 # stays in the leftout file (pull.py still uses it so nothing is re-suggested).
 _BIG = set(J('config/curated-brands.json')['brands']); _seen = {}; _shown = []
+_NEVER = {(x['brand'], x['name']) for x in J('config/album-never-show.json')['mats']}
 for m in lo_all:
+    if (m['brand'], m['name']) in _NEVER: continue  # 'don't ever show me Christmas Cat again'
     if m['why'].startswith('You took it out') or m['why'].startswith('Your '): _shown.append(m); continue
     _seen[m['brand']] = _seen.get(m['brand'], 0) + 1
-    if _seen[m['brand']] <= (3 if m['brand'] in _BIG else 5): _shown.append(m)
+    if _seen[m['brand']] <= (2 if m['brand'] in _BIG else 3) and sum(1 for x in _shown if not x['why'].startswith('You')) < 36: _shown.append(m)  # and 36 in all, plus her own removals
 print(f'Left out: showing {len(_shown)} of {len(lo_all)} (capped per brand)')
 lo_all = _shown
 for n, m in enumerate(lo_all):
