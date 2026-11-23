@@ -107,11 +107,38 @@ body .deck .sbx .sb{width:40px;height:40px;font-size:18px;box-shadow:0 2px 8px r
 .tvswapsec .tvtabs{order:1}.tvswapsec .tvsearch{order:2}.tvswapsec .r2fbtn{order:3}
 .tvswapsec .tvact{order:4}.tvswapsec .tvgrid{order:5}.tvswapsec #tvsh{order:6}
 .tvswapsec .tvbw,.tvswapsec #tvdots,.tvswapsec #tvfins,.tvswapsec #tvprices,.tvswapsec .tvtg{order:7}
-.tvp:not(.r2f) .tvswapsec .tvbw,.tvp:not(.r2f) .tvswapsec #tvdots,.tvp:not(.r2f) .tvswapsec #tvfins,.tvp:not(.r2f) .tvswapsec #tvprices,.tvp:not(.r2f) .tvswapsec .tvtg{display:none!important}
-.tvp.r2f .tvswapsec .tvbw,.tvp.r2f .tvswapsec #tvdots,.tvp.r2f .tvswapsec #tvfins,.tvp.r2f .tvswapsec #tvprices,.tvp.r2f .tvswapsec .tvtg{order:3}
 .r2fbtn{align-self:flex-start;border:1px solid #ecd5df;background:#fff;border-radius:999px;padding:7px 13px;font:700 12.5px/1 var(--body);color:var(--navy,#054689);cursor:pointer}
 .r2chip.f{left:10px;top:98px;font-size:11.5px;padding:7px 10px}
 .r2swh{position:absolute;z-index:7;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(5,70,137,.92);color:#fff;font:700 13px/1.35 var(--body);padding:9px 14px;border-radius:12px;text-align:center;pointer-events:none;transition:opacity .4s}
+
+/* r2c (Tiffany 6:53pm): nothing written over the table; small tap dots on the racks + tiles; one control bar under the table */
+body.tvmode .r2chip,body.tvmode .scard .hb,body .tvadj{display:none!important}
+.r2dot{position:absolute;z-index:8;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;border:0;padding:0;background:rgba(255,255,255,.88);box-shadow:0 0 0 2px rgba(200,50,95,.55),0 2px 8px rgba(0,0,0,.25);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.r2dot svg{width:15px;height:15px}
+.r2dot.pulse{animation:r2p 1.6s ease-out 3}
+@keyframes r2p{0%{box-shadow:0 0 0 2px rgba(200,50,95,.55),0 0 0 0 rgba(200,50,95,.45)}100%{box-shadow:0 0 0 2px rgba(200,50,95,.55),0 0 0 16px rgba(200,50,95,0)}}
+body:not(.tvmode) .r2dot,body:not(.tvmode) .r2bar{display:none!important}
+.r2bar{display:flex;align-items:stretch;gap:8px;margin:10px 0 4px;flex-wrap:wrap}
+.r2bar .r2b{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:4px;border:1.5px solid #ecd5df;background:#fff;border-radius:14px;padding:6px 4px 7px;cursor:pointer;font:700 12.5px/1 var(--body);color:var(--navy,#054689)}
+.r2bar .r2b img{width:100%;height:42px;object-fit:contain;border-radius:8px}
+.r2bar .r2b.on{border-color:#c8325f;box-shadow:0 0 0 2px rgba(200,50,95,.15)}
+.r2fc{flex:1 0 100%;display:flex;align-items:center;justify-content:center;gap:6px;font:600 12px var(--body);color:#5a6b85}
+.r2fc button{border:1px solid #ecd5df;background:#fff;border-radius:999px;padding:5px 10px;font:700 12px var(--body);color:var(--navy,#054689);cursor:pointer}
+.r2fc button.on{background:#054689;color:#fff;border-color:#054689}
+/* compact sheet: search + brands on one row, colours one row, price + toggles one row, pictures right after */
+.tvp .tvback,.tvp .r2fbtn,.tvp #tvsh{display:none!important}
+.tvp .tvswapsec{display:grid!important;grid-template-columns:repeat(12,minmax(0,1fr));gap:8px 6px;align-items:center}
+.tvp .tvswapsec .tvsearch{grid-column:1/9}.tvp .tvswapsec .tvbw{grid-column:9/-1}.tvp .tvswapsec .tvbw .tvbtn{width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tvp .tvswapsec #tvprices{grid-column:1/6}.tvp .tvswapsec .tvtg{grid-column:6/-1}
+.tvp .tvswapsec .tvtabs,.tvp .tvswapsec #tvdots,.tvp .tvswapsec #tvfins,.tvp .tvswapsec .tvact,.tvp .tvswapsec .tvgrid{grid-column:1/-1}
+.tvp .tvswapsec .tvbw,.tvp .tvswapsec #tvdots,.tvp .tvswapsec #tvfins,.tvp .tvswapsec #tvprices,.tvp .tvswapsec .tvtg{display:flex!important;order:0!important}
+.tvp .tvswapsec>*{order:0!important;min-width:0}
+.tvp .tvswapsec #tvdots,.tvp .tvswapsec #tvfins{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding:2px 2px 4px}
+.tvp .tvswapsec #tvdots>*,.tvp .tvswapsec #tvfins>*{flex:none}
+.tvp .tvswapsec .tvtg{gap:10px;font-size:12px;justify-content:flex-end;flex-wrap:nowrap}
+.tvp .tvswapsec .tvsearch{width:100%!important;max-width:none!important;justify-self:stretch;box-sizing:border-box;margin:0!important;display:flex!important}.tvp .tvswapsec .tvsearch input{width:100%;min-width:0}
+.tvp .tvswapsec #tvprices{gap:6px;flex-wrap:nowrap;align-items:center}.tvp .tvswapsec #tvprices select,.tvp .tvswapsec #tvprices button{max-width:118px;font-size:12px}
+.tvp .tvswapsec .tvtg label{font-size:11.5px;gap:4px;white-space:nowrap;display:flex;align-items:center}.tvp .tvswapsec .tvtg .tvsw{transform:scale(.78);transform-origin:right center;margin:0 -4px 0 0}
+.tvp{padding-left:max(14px,env(safe-area-inset-left));padding-right:max(14px,env(safe-area-inset-right));box-sizing:border-box;overflow-x:hidden}
 body:not(.tvmode) .r2chip{display:none}
 .scard.back .r2yn,.scard.tvoff .r2chip{display:none}
 </style>"""
@@ -143,15 +170,35 @@ js = r"""<script id="r2js">
  let hinted=false;try{hinted=!!sessionStorage.getItem('r2swh')}catch(e){}
  function swh(){if(hinted||!document.body.classList.contains('tvmode'))return;const ph=document.querySelector('#s-mats .scard[id^="top-"] .ph img.tvimg');if(!ph)return;hinted=true;try{sessionStorage.setItem('r2swh','1')}catch(e){}
    const h=document.createElement('div');h.className='r2swh';h.innerHTML='Swipe right ♥ if you love it<br>Swipe left ✕ if it’s not the one';ph.parentElement.appendChild(h);setTimeout(()=>{h.style.opacity='0';setTimeout(()=>h.remove(),500)},3200);}
- function open(card,tab){const sec=card&&card.closest('[id^="s-"]');window.R2OPEN(tab,sec&&sec.id)}
- window.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-r2open]');if(!b)return;e.preventDefault();e.stopPropagation();const c=b.closest('.scard'),t=b.dataset.r2open;setTimeout(()=>open(c,t),30)},true);window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2open]')){e.preventDefault();e.stopPropagation()}},true);
+
+ const PEN='<svg viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z" fill="none" stroke="#c8325f" stroke-width="2.4" stroke-linejoin="round"/></svg>';
+ let pulsed=false;
+ function dots(){if(!document.body.classList.contains('tvmode'))return;document.querySelectorAll('.scard[id^="top-"] .ph').forEach(ph=>{const card=ph.closest('.scard');const img=ph.querySelector('img.tvimg');
+   if(card.classList.contains('tvoff')||!img){ph.querySelectorAll('.r2dot').forEach(d=>d.remove());return}
+   const pr=ph.getBoundingClientRect(),ir=img.getBoundingClientRect();if(!ir.width)return;const fx=x=>((ir.left-pr.left)+ir.width*x)/pr.width*100+'%',fy=y=>((ir.top-pr.top)+ir.height*y)/pr.height*100+'%';
+   const fv=(window.R2GETFACES&&window.R2GETFACES())||'center';const pos={racks:[0.5,0.93]};if(fv==='center')pos.tiles=[0.62,0.40];else if(fv==='corner')pos.tiles=[0.86,0.70];
+   for(const k of ['racks','tiles']){let d=ph.querySelector('.r2dot[data-r2open="'+k+'"]');if(!pos[k]){if(d)d.remove();continue}
+    if(!d){d=document.createElement('button');d.type='button';d.className='r2dot'+(pulsed?'':' pulse');d.dataset.r2open=k;d.setAttribute('aria-label',k==='racks'?'Change the racks':'Change the tiles');d.innerHTML=PEN;ph.appendChild(d)}
+    d.style.left=fx(pos[k][0]);d.style.top=fy(pos[k][1]);}
+   });pulsed=true;}
+ function bar(){if(!document.body.classList.contains('tvmode'))return;for(const id of ['s-mats','s-tiles','s-racks']){const sec=document.getElementById(id);if(!sec)continue;const card=sec.querySelector('.deck .scard[id^="top-"]');if(!card){continue}
+   let b=sec.querySelector('.r2bar');const deck=card.closest('.deck');if(!b){b=document.createElement('div');b.className='r2bar';
+    b.innerHTML='<button type="button" class="r2b" data-r2open="tiles"><img alt="">Tiles</button><button type="button" class="r2b" data-r2open="mat"><img alt="">Mat</button><button type="button" class="r2b" data-r2open="racks"><img alt="">Racks</button><div class="r2fc">Tile photo:<button type="button" data-r2f="center">Center</button><button type="button" data-r2f="corner">Corner</button><button type="button" data-r2f="off">Off</button></div>';
+    deck.insertAdjacentElement('afterend',b)}
+   let x=null;try{x=window.R2CTX(card)}catch(e){}if(x){const im=b.querySelectorAll('.r2b img');try{im[0].src=pile(x.s);im[1].src=matTh(x.mat);if(x.rack)im[2].src=rackSrc(x.rack)}catch(e){}}
+   const fv=(window.R2GETFACES&&window.R2GETFACES())||'center';b.querySelectorAll('[data-r2f]').forEach(z=>z.classList.toggle('on',z.dataset.r2f===fv));
+   const tab=window.R2TAB&&window.R2TAB(),open=document.getElementById('tvpanel')&&document.getElementById('tvpanel').classList.contains('open');b.querySelectorAll('.r2b').forEach(z=>z.classList.toggle('on',!!open&&z.dataset.r2open===tab));}}
+ window.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-r2f]');if(!b)return;e.preventDefault();e.stopPropagation();const v=b.dataset.r2f;setTimeout(()=>window.R2FACES(v),30)},true);
+ window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2f]')){e.preventDefault();e.stopPropagation()}},true);
+ function open(card,tab){if(!card){const bb=document.activeElement;}const sec=card?card.closest('[id^="s-"]'):null;window.R2OPEN(tab,sec&&sec.id)}
+ window.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-r2open]');if(!b)return;e.preventDefault();e.stopPropagation();const c=b.closest('.scard')||b.closest('[id^="s-"]'),t=b.dataset.r2open;setTimeout(()=>open(c,t),30)},true);window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2open]')){e.preventDefault();e.stopPropagation()}},true);
  let dn=null;
  window.addEventListener('pointerdown',e=>{const ph=e.target.closest&&e.target.closest('.scard[id^="top-"] .ph');dn=(ph&&document.body.classList.contains('tvmode')&&!e.target.closest('button'))?{x:e.clientX,y:e.clientY,t:Date.now(),ph}:null},true);
  window.addEventListener('pointerup',e=>{if(!dn)return;const d=dn;dn=null;if(Math.hypot(e.clientX-d.x,e.clientY-d.y)>8||Date.now()-d.t>350)return;
   const zz=S.zs&&S.zs.tvz;if(zz&&zz.s>1.05)return;const img=d.ph.querySelector('img.tvimg');if(!img)return;const r=img.getBoundingClientRect();
   const y=(e.clientY-r.top)/r.height,x=(e.clientX-r.left)/r.width;if(x<0||x>1||y<0||y>1)return;
   if(y<0.2||y>0.8||x<0.14||x>0.86)setTimeout(()=>open(d.ph.closest('.scard'),'racks'),60)},true);
- setInterval(()=>{chips();yn();sheet();faces();swh()},500);
+ setInterval(()=>{yn();sheet();swh();dots();bar()},400);
 })();
 </script>"""
 k = h.rindex('</body>'); h = h[:k] + css + js + h[k:]
