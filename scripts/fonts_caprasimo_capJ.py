@@ -23,7 +23,7 @@ def draw(pen):
     pen.closePath()
 def patch(path, out=None):
     f = TTFont(path); pen = TTGlyphPen(f.getGlyphSet()); draw(pen); f['glyf']['J'] = pen.glyph()
-    adv, _ = f['hmtx']['J']; f['hmtx']['J'] = (adv - 60, 59)  # stem ends at 1034+ (was 1125 bulge): tighten the right side a touch
+    f['hmtx']['J'] = (1224, 59)  # stem ends at 1034+ (was 1125 bulge): tighten the right side a touch
     f.save(out or path); return f
 if __name__ == '__main__':
     import sys
