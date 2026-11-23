@@ -46,7 +46,7 @@ def rep(old, new, count=1):
 # label: the website copy (base 1.22) is 'Version 1.23 layout preview'; the artifact copy (base = live artifact 1.18 index,
 # --artifact) says which catalog it carries
 ART = '--artifact' in sys.argv
-m = re.search(r'<title>Find Your Mat-ch \(Version (1\.\d+)\)</title>', h); BASEV = m.group(1)
+m = re.search(r'<title>Find Your Mat-ch \(Version (1\.\d+(?:\.\d+)?)\)</title>', h); BASEV = m.group(1)
 LAB = f'Version 1.23 layout preview (catalog of {BASEV})' if ART else 'Version 1.23 layout preview'
 rep(f'<title>Find Your Mat-ch (Version {BASEV})</title>', '<title>Find Your Mat-ch 1.23 layout preview</title>' if ART else '<title>Find Your Mat-ch (Version 1.23 layout preview)</title>')
 rep(f'>Version {BASEV}</small>', f'>{LAB}</small>')
