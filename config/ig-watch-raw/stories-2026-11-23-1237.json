@@ -1,0 +1,17 @@
+{
+  "run": "2026-11-23 12:37 ET",
+  "note": "Chrome signed in as @mahjmatchmaker. Stories open at the first unseen frame, so each handle was read from there to the end. No new drop, restock, date or collab teaser beyond what config/brand-watch-curated.json already holds. Nothing added to curated, sheet or page; no push (catalog-only rule). Miss Mahjong frame 2 never loaded (video, spinner). Bam Bird's earlier frames were already seen in prior runs.",
+  "handles_checked": ["ohmymahjong","bambirdboutique","missmahjongofficial","myfairmahjong","bespoke_mahjong","andersruffdesignco","peacelovemahjong","bird_and_bamboo","mahj_mood","minimahjer","charlestonmahjongclub","mahjtilehaus"],
+  "with_stories": ["ohmymahjong","bambirdboutique","missmahjongofficial","myfairmahjong","bespoke_mahjong","andersruffdesignco","peacelovemahjong","mahj_mood","minimahjer","mahjtilehaus"],
+  "frames_read": 57,
+  "finds": [],
+  "seen_not_logged": [
+    {"brand": "Oh My Mahjong", "item": "Bauble Stockings x Oh My Mahjong 'Everyone Loves a Joker' stocking ($89.50, 10% of profit to Women's Alzheimer's Movement)", "why_not_a_find": "On baublestockings.com since 2026-10-22 (product oh-my-mahjong-everyone-loves-a-joker); OMM is promoting it in 7 story frames today. A gift item, not a tile set, mat or rack, and not new. Tiffany can say if she wants it on Brand Watch."},
+    {"brand": "Miss Mahjong", "item": "Hallmark x Miss Mahjong Joy To Your World + Winter Berry mats shown again", "why_not_a_find": "Already in coming_soon, no date given."},
+    {"brand": "Mahj Mood", "item": "Cyber-week Day 1 $10 off 4 mats; Midnight Bloom + Baby Blue wooden racks on sale this week", "why_not_a_find": "Sale, already logged last run, pending her yes."},
+    {"brand": "Bam Bird Boutique", "item": "Everything on sale repost; Holiday Tiles & Tea event Sat Dec 5 (Fleastyle, Harrison Hut)", "why_not_a_find": "Sale already logged; event is not product news."},
+    {"brand": "Bespoke Mahjong", "item": "25% off tiles, early Black Friday ended Sun night", "why_not_a_find": "Expired sale."},
+    {"brand": "Mahj Tile Haus", "item": "Rosemary Beach collection 'drops this week', VIP list", "why_not_a_find": "Already in this_week (Tue 11/24 1pm ET)."}
+  ],
+  "no_active_story": ["bird_and_bamboo","charlestonmahjongclub"]
+}
