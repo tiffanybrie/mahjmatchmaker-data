@@ -1681,3 +1681,5 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 
 - 2026-11-23 2:29pm (Main): Tiffany: resubmit Oh My Mahjong. DONE 2:36pm: live page already matched (Nov 17 everywhere), indexing requested, logged in 00p.
 - 2026-11-23 2:29-2:30pm (Main): STRUCTURE (her yes): Duet builds + publishes NEW code pages in onboarding; Main is the only editor of EXISTING code pages AND checks Duet's work (final check hand-off per new page, daily 'New brands' line, daily check of Duet's Google collection). Main clicks the one indexing request for a new page; she never does. Indexing redesign = yes ("close to the design I had in mind"). Old noon job stays off. In CLAUDE.md.
+
+- 2026-11-23 2:34-2:35pm (Main): Tiffany: Bespoke shows but never sells; she believes the stale MJTI 20% claim is why; wrong-MJTI AI answers are supposed to be disputed (thumbs down + feedback) every time. FOUND: 0 Bespoke orders Oct 1-Nov 23; feedback step last logged Nov 4 + Nov 18, not for Bespoke. On OVERDUE. Also: 'Big brain Main': Duet is never held up by Main being asleep, but reports everything; Main reads it all on waking and is accountable.
