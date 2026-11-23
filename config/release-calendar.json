@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-23",
  "updatedBy": "Partner watch Thu 1pm ET",
  "rules": {
   "timing": {
@@ -128,14 +128,14 @@
    "product": "Miss Darling Lilac tile set",
    "type": "launch",
    "window": "Wed Nov 18, 10am CT",
-   "status": "DATED: doors open Wed Nov 18 10am CT (IG Nov 12 + Nov 13); product page arrivalDate 2026-11-19; still coming-soon/unavailable Nov 16 scan",
+   "status": "LIVE 2026-11-18 (available in Nov 23 scan)",
    "source": "Miss Mahjong IG Nov 12 (Dfp1bxnGepO) + Nov 13 reel (DfsIMGsBwhI); product page Jedi arrivalDate 2026-11-19 (scan Nov 16)",
    "sourceUrl": "https://www.instagram.com/p/Dfp1bxnGepO/",
    "album": false,
    "affiliate": true,
    "priority": 2,
    "contentTiming": "No album (swipe book only). Launch-day story/mention Wed Nov 18 after 10am CT with MAHJMATCH; the hourly launch watch handles go-live.",
-   "date": "2026-11-18T10:00-06:00",
+   "date": "2026-11-18",
    "windowStart": "2026-11-18",
    "windowEnd": "2026-11-18",
    "contentWindowStart": "2026-11-18",
@@ -201,7 +201,8 @@
    "priority": 2,
    "contentTiming": "Hold Sunday Blues album content. Tease once Sunday emails the date (expect the week of Nov 16-23); 'pick your mat' post 1-2 days before; launch-day story. Limited + no preorder = short window. No code (non-partner): plug partner mats/racks from the album instead.",
    "contentWindowStart": "2026-11-16",
-   "contentWindowEnd": "2026-11-30"
+   "contentWindowEnd": "2026-11-30",
+   "notes": "Re-checked Nov 23 (Updated 23 Nov 2026; Next drop: Premium Mats, Now): still 'Coming Soon, restocking around Thanksgiving, limited, no preorder'; no exact date, scan sold out. Content HELD until Sunday announces date."
   },
   {
    "id": "sunday-cola-racks",
@@ -447,14 +448,15 @@
    "brand": "Bam Bird Boutique",
    "product": "East Meets West Tortoise Shell + Classic Tortoise Shell tile sets",
    "type": "restock",
-   "window": "'coming soon' (no date)",
-   "status": "sold out, in Coming Soon collection",
+   "window": "Classic: live Nov 20. East Meets West: coming soon (no date)",
+   "status": "LIVE 2026-11-20: Classic Tortoise Shell BACK IN STOCK (Nov 20 10am CT drop, IG Df7p3xiictq / Df-FN7ckQpX); East Meets West Tortoise Shell still sold out, coming soon, no date",
    "source": "bambirdboutique.com/collections/coming-soon",
    "sourceUrl": "https://www.bambirdboutique.com/products/east-meets-west-tortoise-shell-tile-set-copy",
    "album": "Classic Tortoise (album shop link = East Meets West Tortoise)",
    "affiliate": true,
    "priority": 1,
-   "contentTiming": "HOLD Tortoise album content until dated; tease 1 week before."
+   "contentTiming": "Classic Tortoise back in stock Nov 20: album post OK now while in stock (BBB 15% sitewide ended Nov 22; MAHJMATCH applies). East Meets West: HOLD until dated; tease 1 week before.",
+   "notes": "Nov 23 refresh: Classic Tortoise available=True in scan."
   },
   {
    "id": "mm-clear-racks-pushers",
@@ -648,7 +650,8 @@
    "priority": 2,
    "contentTiming": "In stock NOW: Petalée album post is timely this week (no reason to hold).",
    "contentWindowStart": "2026-10-21",
-   "contentWindowEnd": "2026-10-31"
+   "contentWindowEnd": "2026-10-31",
+   "notes": "Virora Black Friday 20% off Nov 19-30 PST (Petalee, Marivelle, Aveline tiles + all mats except Hiverelle/Hollivia); cannot be combined with other discounts, so MAHJMATCH does not stack. Sale window only, no restock. Affiliate links stay active."
   },
   {
    "id": "virora-nivalee",
@@ -773,13 +776,14 @@
    "product": "Summit to Sea tile set (North Carolina)",
    "type": "launch",
    "window": "'very soon', straight to website, no presale",
-   "status": "announced; in-store preview at the new flagship (IG Nov 7 DfcJsTxyEiw), not online yet; plus an unannounced set 'awaiting her online debut'",
+   "status": "LIVE 2026-11-17 (IG Df1xLA2loAy: available on website + in store); an unannounced new set still coming",
    "source": "IG Oct 26",
    "sourceUrl": "https://www.instagram.com/p/De9Ih_NBYeH/",
    "album": false,
    "affiliate": true,
    "priority": 2,
-   "contentTiming": "No album. Watch; post day-of if a pairing fits."
+   "contentTiming": "No album. Watch; post day-of if a pairing fits.",
+   "date": "2026-11-17"
   },
   {
    "id": "mrc-rosy-ellington",
@@ -925,7 +929,7 @@
    "product": "Lake Day tile set preorder $390 + Lake Day mat + transparent blue racks",
    "type": "preorder",
    "date": "2026-11-20T10:00-06:00",
-   "status": "PUBLIC (Mahj Mood IG Nov 12): Lake Day set launches Thu Nov 20 10am CST, preorder, February shipping; first of the new Watercolor Series",
+   "status": "LIVE Nov 20 (preorder; IG says February shipping, store says ships January)",
    "source": "Mahj Mood IG Nov 12 (DfpVD8lxO6G); earlier affiliate email Oct 28",
    "sourceUrl": "https://www.instagram.com/p/DfpVD8lxO6G/",
    "album": false,
@@ -1095,7 +1099,8 @@
    "affiliate": false,
    "priority": 4,
    "contentTiming": "Log only (non-partner except The Chalet).",
-   "url": "https://www.maisonmahj.com/products/house-line-no-1-tile-set"
+   "url": "https://www.maisonmahj.com/products/house-line-no-1-tile-set",
+   "notes": "Nov 22 email: House Line No. 1 preorder open, shipping begins Feb 2027."
   },
   {
    "id": "bambird-restock-teaser-oct30",
@@ -1795,7 +1800,7 @@
    "product": "Tide & Leather (teased, non-partner)",
    "type": "launch",
    "date": "",
-   "status": "coming soon (IG Nov 8 DfgJrlOR-lD)",
+   "status": "LIVE Thu Nov 19 1pm ET (non-partner, record only)",
    "sourceUrl": "https://www.instagram.com/reel/DfgJrlOR-lD/",
    "album": false,
    "affiliate": false,
@@ -2142,6 +2147,161 @@
    "album": false,
    "affiliate": true,
    "priority": 3
+  },
+  {
+   "id": "omm-sadie-jane-serendipity",
+   "brand": "Oh My Mahjong",
+   "product": "Sadie Jane tiles ($400) + Serendipity mat ($90)",
+   "type": "launch",
+   "date": "2026-11-25T10:00-06:00",
+   "window": "Wed Nov 25, 10am CT public launch",
+   "windowStart": "2026-11-25",
+   "windowEnd": "2026-11-25",
+   "status": "DATED",
+   "source": "OMM IG reel DgCwWY8yVKl + p/Df7CBwumjA0",
+   "sourceUrl": "https://ohmymahjong.com/collections/sadie-jane-collection",
+   "album": false,
+   "affiliate": true,
+   "priority": 1,
+   "contentTiming": "No album (Main decision, swipe books ended Nov 8). Tease now, launch-day story Nov 25. 5% of Sadie Jane tile sales go to The Womens Alzheimers Movement through Dec 31.",
+   "contentWindowStart": "2026-11-18",
+   "contentWindowEnd": "2026-11-27"
+  },
+  {
+   "id": "omm-black-friday-2026",
+   "brand": "Oh My Mahjong",
+   "product": "Black Friday sale",
+   "type": "sale",
+   "date": "2026-11-25T10:00-06:00",
+   "status": "DATED: starts Wed Nov 25 10am CT; spend $250=15% off, $500=20%, $750=25%, free tote while supplies last",
+   "source": "OMM IG reel DgFVJZEy4ZY",
+   "sourceUrl": "https://www.instagram.com/reel/DgFVJZEy4ZY/",
+   "affiliate": true,
+   "priority": 2,
+   "contentTiming": "Check whether MAHJMATCH stacks before posting any code mention.",
+   "album": false
+  },
+  {
+   "id": "omm-hawthorne-mat",
+   "brand": "Oh My Mahjong",
+   "product": "Hawthorne Mat in Tube $90",
+   "type": "restock",
+   "status": "available (OMM email Nov 22), record only",
+   "source": "OMM email Nov 22",
+   "sourceUrl": "https://ohmymahjong.com",
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Record only.",
+   "album": false
+  },
+  {
+   "id": "miss-hope-chest-mat",
+   "brand": "Miss Mahjong",
+   "product": "Hope Chest mat ($80)",
+   "type": "launch",
+   "date": "2026-12-03",
+   "window": "arrival Dec 3, 2026",
+   "windowStart": "2026-12-03",
+   "status": "coming soon, unavailable (product page arrivalDate 2026-12-03)",
+   "source": "missmahjong.com scan Nov 23",
+   "sourceUrl": "https://missmahjong.com",
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Hold; story on arrival.",
+   "album": false
+  },
+  {
+   "id": "miss-pressed-flowers-giverny",
+   "brand": "Miss Mahjong",
+   "product": "Pressed Flowers + Giverny mats",
+   "type": "launch",
+   "date": "2026-11-18",
+   "status": "LIVE 2026-11-18",
+   "source": "missmahjong.com scan Nov 23",
+   "sourceUrl": "https://missmahjong.com",
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Live now; optional mat spotlight.",
+   "album": false
+  },
+  {
+   "id": "tdt-scalamandre",
+   "brand": "Tigre de Tartán",
+   "product": "The House of Scalamandré x Tigre de Tartán collab (Leopardo, Zebras Chestnut x2 coming-soon mats)",
+   "type": "launch",
+   "date": "2026-12-08T16:00-06:00",
+   "window": "Tue Dec 8, 4pm CT",
+   "windowStart": "2026-12-08",
+   "windowEnd": "2026-12-08",
+   "status": "DATED (IG reel Df_3_OqBUeR Nov 21); previews until then",
+   "source": "TdT IG Nov 21",
+   "sourceUrl": "https://www.instagram.com/reel/Df_3_OqBUeR/",
+   "affiliate": true,
+   "priority": 2,
+   "contentTiming": "No album. Tease ~Nov 28-Dec 1, launch-day story Dec 8. Paige Spearin Apres Mahj ROUND is also coming soon: do NOT promote (no commission). TdT Black Friday giveaways Fri-Sun, no returns during promo.",
+   "contentWindowStart": "2026-11-28",
+   "contentWindowEnd": "2026-12-10",
+   "album": false
+  },
+  {
+   "id": "mm-black-friday-week",
+   "brand": "Mahj Mood",
+   "product": "Black Friday Week: Mon $10 off 4 mats, Tue $10 off 2 racks, Wed travel tiles (skip)",
+   "type": "sale",
+   "date": "2026-11-23",
+   "windowStart": "2026-11-23",
+   "windowEnd": "2026-11-25",
+   "status": "LIVE Mon Nov 23-Wed Nov 25, 8AM-11PM CST each day; code stacks",
+   "source": "Mahj Mood IG DgAa45okUPt",
+   "sourceUrl": "https://www.instagram.com/p/DgAa45okUPt/",
+   "affiliate": true,
+   "priority": 2,
+   "contentTiming": "Mat day Nov 23, rack day Nov 24. Travel tiles skipped.",
+   "album": false
+  },
+  {
+   "id": "plm-spirit-of-christmas",
+   "brand": "Peace Love Mahjong",
+   "product": "Spirit of Christmas tiles + mats",
+   "type": "restock",
+   "date": "2026-11-20",
+   "status": "BACK IN STOCK Nov 20 (IG Df-VLWMpadU)",
+   "source": "PLM IG",
+   "sourceUrl": "https://www.instagram.com/p/Df-VLWMpadU/",
+   "affiliate": true,
+   "priority": 2,
+   "contentTiming": "Holiday content OK while in stock.",
+   "album": false
+  },
+  {
+   "id": "virora-black-friday",
+   "brand": "Virora Mahjong",
+   "product": "Black Friday 20% off sitewide (see note)",
+   "type": "sale",
+   "windowStart": "2026-11-19",
+   "windowEnd": "2026-11-30",
+   "status": "LIVE Nov 19-30 PST; cannot combine with other discounts",
+   "source": "Virora affiliate email + IG",
+   "sourceUrl": "https://www.viroramahjong.com",
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Affiliate links stay active; MAHJMATCH will not stack. Four new bags launched Nov 17.",
+   "album": false
+  },
+  {
+   "id": "amanda-toppe-bf",
+   "brand": "Amanda Toppe",
+   "product": "Holiday sale 20% sitewide, code BLACKFRIDAY20",
+   "type": "sale",
+   "windowStart": "2026-11-23",
+   "windowEnd": "2026-11-30",
+   "status": "LIVE through Nov 30; full-size Lila preorder open",
+   "source": "Amanda Toppe email",
+   "sourceUrl": "https://amandatoppe.com",
+   "affiliate": false,
+   "priority": 3,
+   "contentTiming": "Record only.",
+   "album": false
   }
  ],
  "sources": {
@@ -2151,7 +2311,7 @@
   "gmail": "mahjmatchmaker@gmail.com (Gmail connector). tiffanybrie@ is not visible to the connector."
  },
  "newsletters": {
-  "checked": "2026-11-16, mahjmatchmaker@gmail.com",
+  "checked": "2026-11-23, mahjmatchmaker@gmail.com",
   "receiving": [
    {
     "brand": "Oh My Mahjong",
@@ -2265,7 +2425,7 @@
     "signup": "https://tigredetartan.com/ (footer newsletter; IG says 'sign up for notifications')"
    }
   ],
-  "note": "Not signed up to anything. Tiffany approves first. tiffanybrie@ may already get some of these (connector can't see it)."
+  "note": "Not signed up to anything. Tiffany approves first. tiffanybrie@ may already get some of these (connector can't see it). Nov 23: Virora, Tigre de Tartan, Bird & Bamboo and Middle & Main send AFFILIATE emails only (customer lists still gaps)."
  },
  "upcomingAlbums": {
   "about": "Albums we will build later, kept here so nothing gets forgotten. No action item on HQ. The daily HQ cleanup (docs/HQ-CLEANUP.md) moves any 'new release, not now' album here instead of leaving an HQ need.",
