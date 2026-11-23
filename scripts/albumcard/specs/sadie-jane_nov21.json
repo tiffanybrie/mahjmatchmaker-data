@@ -82,10 +82,10 @@
    "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-vivara.jpg",
    "lowres": true,
    "mat_racks": [
-    "Bird & Bamboo Ocean Slate",
-    "Miss Mahjong Iridescent Opal Scalloped"
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong White Acrylic"
    ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)"
+   "mat_racks_by": "Tiffany Nov 23 10:56am (OMM Hot Pink matches Vivara + their White; never Ocean Slate, not the pink swirl)"
   },
   {
    "group": "yours",
@@ -131,7 +131,12 @@
    "partner": false,
    "store_url": "https://www.etsy.com/listing/4610389308",
    "found": "Etsy/Amazon discovery Nov 21",
-   "short": "Blue & Pink Chinoiserie"
+   "short": "Blue & Pink Chinoiserie",
+   "mat_racks": [
+    "Bird & Bamboo Ocean Slate",
+    "Bird & Bamboo Peony"
+   ],
+   "mat_racks_by": "Claude Nov 23: colour-matched by the build, locked so it stops changing; she has not ruled on these"
   },
   {
    "group": "picks",
@@ -150,7 +155,12 @@
    ],
    "partner": false,
    "store_url": "https://www.amazon.com/dp/B0H8HDRX87",
-   "found": "Etsy/Amazon discovery Nov 21"
+   "found": "Etsy/Amazon discovery Nov 21",
+   "mat_racks": [
+    "Bird & Bamboo Powder Blue",
+    "Bird & Bamboo Pistachio"
+   ],
+   "mat_racks_by": "Claude Nov 23: colour-matched by the build, locked so it stops changing; she has not ruled on these"
   },
   {
    "group": "yours",
@@ -207,7 +217,12 @@
     1920,
     2112
    ],
-   "short": "Citrus Grove"
+   "short": "Citrus Grove",
+   "mat_racks": [
+    "Bird & Bamboo Powder Blue",
+    "Bird & Bamboo Forest Green"
+   ],
+   "mat_racks_by": "Claude Nov 23: colour-matched by the build, locked so it stops changing; she has not ruled on these"
   },
   {
    "group": "yours",
@@ -340,10 +355,10 @@
    "holiday": false,
    "her_pick": true,
    "mat_racks": [
-    "Bird & Bamboo Coral",
-    "Oh My Mahjong Pink Quartz"
+    "Miss Mahjong Iridescent Opal Scalloped",
+    "Miss Mahjong Peach Sorbet Scalloped"
    ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am (ok as is)"
+   "mat_racks_by": "Tiffany Nov 23 10:56am (Heron's racks from every earlier album: Miss Mahjong opal + peach sorbet scallops; never Pink Quartz)"
   },
   {
    "group": "yours",
@@ -595,7 +610,7 @@
    "group": "yours",
    "name": "The Kerry",
    "brand": "Betty June & Jeannette",
-   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-the-kerry.jpg",
+   "img": "assets/mats/etsy/bettyjunejeannette/kerry-2.jpg",
    "why": "Your add from the catalog search (round 1).",
    "retired": false,
    "fym": "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink",
@@ -606,7 +621,14 @@
     "Miss Mahjong Cornflower Blue Scalloped",
     "Miss Mahjong Iridescent Opal Scalloped"
    ],
-   "mat_racks_by": "Tiffany Nov 23 9:52am"
+   "mat_racks_by": "Tiffany Nov 23 9:52am",
+   "box": [
+    190,
+    560,
+    2000,
+    2420
+   ],
+   "photo_note": "Nov 23: the 3000px Etsy photo + crop used on the Juniper card (the 640px copy was soft)"
   },
   {
    "group": "picks",
@@ -1058,10 +1080,16 @@
     "Bird & Bamboo Dark Blue",
     "Peace Love Mahjong White"
    ],
-   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
-   "new_mat": true,
+   "mat_racks_by": "Tiffany Nov 23 10:56am (ok as is)",
    "added_after_review": true,
-   "caption_note": "New mat: racks never matched"
+   "caption_note": null,
+   "box": [
+    32,
+    6,
+    1106,
+    1080
+   ],
+   "box_note": "Tiffany Nov 23 10:56am: mat was raised too high; box = the mat itself"
   },
   {
    "group": "yours",
@@ -1104,7 +1132,7 @@
     "Miss Mahjong Iridescent Opal Scalloped",
     "Bird & Bamboo Tiffany Dusk"
    ],
-   "mat_racks_by": "Tiffany Nov 23 10:49am (opal scallop = the wing; blue-green of the head measured: Tiffany Dusk is nearest)",
+   "mat_racks_by": "Tiffany Nov 23 10:59am (opal scallop + Tiffany Dusk: \"really pretty and I like it\")",
    "added_after_review": true,
    "caption_note": null,
    "box": [
@@ -1148,13 +1176,12 @@
    "her_pick": true,
    "short": "Blush & Cornflower Leather",
    "mat_racks": [
-    "Peace Love Mahjong Light Pink",
-    "Virora Spring Jade"
+    "Virora Spring Jade",
+    "Bird & Bamboo Peach Metallic"
    ],
-   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
-   "new_mat": true,
+   "mat_racks_by": "Tiffany Nov 23 10:56am (Spring Jade + a metallic peach; no Peace Love needed on a Charleston mat)",
    "added_after_review": true,
-   "caption_note": "New mat: racks never matched",
+   "caption_note": null,
    "mat_racks_note": "Nov 23 10:35am: Bird & Bamboo Mermaid -> Virora Spring Jade (same colour, another brand's real rack; her 'diversify every colour' note)"
   },
   {
@@ -1169,65 +1196,12 @@
    "holiday": false,
    "her_pick": true,
    "mat_racks": [
-    "Oh My Mahjong Hot Pink",
-    "My Fair Mahjong Macaron Pink"
+    "Anders Ruff MAHJenta Pink Scalloped",
+    "Virora Pink"
    ],
-   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
-   "new_mat": true,
+   "mat_racks_by": "Tiffany Nov 23 10:56am (Anders Ruff rack on an Anders Ruff mat; Macaron Pink out)",
    "added_after_review": true,
-   "caption_note": "New mat: racks never matched"
-  },
-  {
-   "group": "yours",
-   "name": "Soirée at Sue's",
-   "brand": "Noli June",
-   "img": "assets/albums/sadie-jane/adds/noli-june-soiree-at-sues-full.jpg",
-   "why": "Your pick from Left out (round 2). Claude had said: by sight: pink only, and the pink is warmer or hotter than the blush back; nothing picks up the denim or the green",
-   "retired": false,
-   "fym": "nolijune.com/soiree-at-sues",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
-   "mat_racks": [
-    "Peace Love Mahjong Light Pink",
-    "Bird & Bamboo Moss"
-   ],
-   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
-   "new_mat": true,
-   "added_after_review": true,
-   "caption_note": "New mat: racks never matched",
-   "box": [
-    69,
-    70,
-    1930,
-    1931
-   ]
-  },
-  {
-   "group": "yours",
-   "name": "Pressed Flowers",
-   "brand": "Miss Mahjong",
-   "img": "assets/albums/sadie-jane/adds/miss-mahjong-pressed-flowers-full.jpg",
-   "why": "Your pick from Left out (round 2). Claude had said: by sight: a novelty or theme mat (such as fish, shark, western or guest check), or a colour (such as cobalt, red or leopard) that fights blush + denim",
-   "retired": false,
-   "fym": "missmahjong.com/pressed-flowers-mahjong-playing-mat",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
-   "mat_racks": [
-    "Miss Mahjong Cornflower Blue Scalloped",
-    "Miss Mahjong Iridescent Opal Scalloped"
-   ],
-   "mat_racks_by": "Claude Nov 23: NEW MAT, racks never matched before (she reviews)",
-   "new_mat": true,
-   "added_after_review": true,
-   "caption_note": "New mat: racks never matched",
-   "box": [
-    221,
-    12,
-    1274,
-    1058
-   ]
+   "caption_note": null
   }
  ]
 }

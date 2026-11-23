@@ -315,7 +315,7 @@
    "source": "assets/racks/v99/mfm-pink.webp",
    "kind": "flat",
    "rack_frac": 1.0,
-   "note": "Nov 23: MFM solid acrylic Macaron Pink, FYM v99 cutout (single rack, flat); Tiffany asked for it on Jade (Sadie Jane)"
+   "note": "Nov 23: MFM solid acrylic Macaron Pink, FYM v99 cutout (single rack, flat); Tiffany asked for it on Jade (Sadie Jane) | Nov 23 colour test (Tiffany: 'that pink looks peachier'): our cut-out measured #FECFCC (blue below green = peachy); My Fair's own swatch photo of Solid Macaron Pink measures about #FFCDD7 (blue above green = a true pastel pink). Cut-out corrected to #FECED8. Old file kept as -before-colour-test.png."
   },
   "My Fair Mahjong Macaron Blue": {
    "file": "assets/racks/card/my-fair-mahjong-macaron-blue.png",
@@ -393,6 +393,13 @@
    "kind": "flat",
    "rack_frac": 1.0,
    "note": "Nov 23 (Tiffany: 'does Virora have a hot pink rack?... pick two Virora racks' for Virora mats)"
+  },
+  "Anders Ruff MAHJenta Pink Scalloped": {
+   "file": "assets/racks/card/anders-ruff-mahjenta-pink-scalloped.png",
+   "source": "shop.andersruff.com mahjenta-pink-acrylic-mahjong-rack-set-scalloped-pushers image 1 (3/4 view), straightened by perspective (real photo, no drawing)",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: use Anders Ruff racks on Anders Ruff mats; 'maybe they could be straightened'). Rosé Pink Pearl, Pistachio, Jade, Tortoise still to straighten the same way."
   }
  },
  "missing": {

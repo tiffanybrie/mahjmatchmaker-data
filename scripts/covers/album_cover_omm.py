@@ -1,7 +1,7 @@
 """Oct 18 (Tiffany): logo + title block is vertically CENTERED in the panel above the wordmark (it sat too high, with a big gap above mahjmatchmaker).
 OMM-style album cover (the live Sorbet/Willow look), 1080x1350: photo full-bleed, translucent panel in the
 set's colour, chinoiserie frame, brand logo straight on the panel (or on a cream tag with --tag), Caprasimo
-"X Tiles" title, white mahjmatchmaker wordmark + pink tagline bar.
+"X Tiles" title (Nov 23 2026: font loads from the LOCAL Caprasimo MM file so the straight j / J is always the current one), white mahjmatchmaker wordmark + pink tagline bar.
 Nov 6 (Tiffany, Juniper round 3: "missing the white lines on the top portion"): FRAME=frame3.png = the live covers' frame with
 DOUBLE top/bottom lines (uniform_v2.py, Sierra, Talulah); frame2.png (default, single line + dash) kept for older callers.
 Usage: python3 album_cover_omm.py <bg> <logo png> <logo h px> "<Title<br>Tiles>" "<r,g,b>" <out.jpg> [bg pos] [--tag]"""
@@ -16,7 +16,7 @@ pos = args[6] if len(args) > 6 else '50% 50%'
 BAR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tagbar.png')
 fs = (96 if max(len(x) for x in title.split('<br>'))>10 else 112) if '<br>' in title else 124
 logo_html = f'<div class="tag"><img src="{os.path.abspath(logo)}"></div>' if tag else f'<img class="lg" src="{os.path.abspath(logo)}">'
-html = f'''<html><head><link href="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@17d40ae30cb59484162d4134b6fb9edd082b92a0/assets/fonts/css/mm-39787744.css" rel="stylesheet"><style>
+html = f'''<html><head><link href="file://{os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "assets", "fonts", "css", "mm-39787744.css"))}" rel="stylesheet"><style>
 body{{margin:0;width:1080px;height:{HH}px;overflow:hidden;background:#000;position:relative}}
 .bg{{position:absolute;inset:0;background:url("{os.path.abspath(bg)}") {pos}/cover no-repeat}}
 .p{{position:absolute;left:87px;top:{281+DY}px;width:906px;height:788px;background:rgba({rgb},.88)}}

@@ -99,3 +99,21 @@ C. Bird & Bamboo library page: all colours rendered, with a place for notes and 
 - Pink Hummingbird: Miss Mahjong iridescent opal scallop (the white of the wing) + the blue-green of the hummingbird's head/wing (Seafoam only if nothing closer); no pink rack (the background is already pink: don't just match the dominant colour). Jade would also work with the green border.
 - RACK LIBRARY: learn the newer brands' racks, incl. marble / two-tone / iridescent ones (Mahj Mood combos): 'we don't use them hardly ever'.
 - REVIEW PAGE: on her computer the cards are far too big (she zooms out to 33% to see a card): make cards smaller on desktop.
+
+## Part 7 (10:56am ET)
+- Charleston blush + cornflower leather: keep (the solid blush option); ORDER it with the solids. Racks: Virora Spring Jade good; not light pink: a metallic pink / metallic peach. (Charleston mat: no need for Peace Love.)
+- Blushing Blooms (Anders Ruff mat): Macaron Pink looks too peachy: DO A COLOUR TEST on Macaron Pink. Use ANDERS RUFF racks here if they match; if their photos are the problem, see if they can be straightened.
+- CANCEL: Soirée at Sue's (peachier/pinkier; blue and green fight) and Pressed Flowers (more purple than blue).
+- Blue Blooms (holiday): mat is raised too high: bring it down. Dark Blue + Peace Love White fine.
+- The J on the CARD title is still not corrected.
+- Heron: no Pink Quartz at all. Heron already has matches: look them up (maybe opal scallop / peach sorbet).
+- Serendipity: cornflower blue loved; Ballet Pink is the right pink (already the tile rack) so the mat needs another tone; Peace Love Light Pink might work once the rack image is fixed.
+- Vivara: not Ocean Slate. Use Oh My Mahjong HOT PINK (it does match Vivara) + their White; not the pink swirl.
+- PROCESS: "you started changing things... let me know when you're done because I don't like to have my view changed. It sets me back." -> batch all changes, publish ONCE, then tell her. She asks: tell me which cards I still need to look at for racks.
+
+## Part 8 (10:59-11:02am ET)
+- Pink Wildflower looks SOFT: pull high-resolution mat photos; several cards look soft zoomed in.
+- Pink Hummingbird: Tiffany Dusk + opal scallop approved ("really beautiful... gorgeous").
+- Virora hot pink approved ("so much better"). Virora's hinged rack looks the same style as Oh My Mahjong's (colour-test the two hot pinks); racks look better with the pusher CLOSED.
+- RACK LENGTH vs TILE SIZE (new rule): Virora's SCALLOPED racks are 19in, not 20in. Larger tiles (Miss Mahjong, Sunday Mahjong, others: read the listing) need a 20in rack; Oh My Mahjong and Bam Bird tiles are smaller (18.5in and up are fine). When doing a tile set, read the tile size on the listing and only recommend racks long enough for it.
+- Virora hinged colours that could stand in for OMM racks: only Ivory and Hot Pink: "forget it".
