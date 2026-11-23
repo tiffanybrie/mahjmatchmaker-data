@@ -1,0 +1,261 @@
+{
+  "_note": "Sadie Jane Tile Set Profile (doc 81), DRAFT Nov 23 2026 by Main for Tiffany's review (posts Tue Nov 24). Colours from config/colorcards.json sets.sadie-jane. Top 3 = her final album order (Serendipity = OMM pair, Petalwing, Pink & Blue Grandmillennial). Racks = her Nov 22 pick: Bird & Bamboo Ballet Pink + French Blue. Faces: same faces as Talulah, whose favourites she named (bird bam + panda jokers). Pronoun 'her' = draft default (brand guide s3).",
+  "key": "sadie-jane",
+  "name": "Sadie Jane",
+  "brand": "Oh My Mahjong",
+  "status": "New in town",
+  "launch_line": "Launching Wed 11/25 · Oh My Mahjong",
+  "matches": 60,
+  "album": "https://www.mahjmatchmaker.com/sadie-jane-mahjong-tile-matches",
+  "profile_line": [
+    "Seeking: blush, denim or sky blue.",
+    "Must love a lily pond."
+  ],
+  "swipe": {
+    "looking": "Blush and blue, nothing muddy",
+    "pills": [
+      "Lily ponds",
+      "Pandas",
+      "Peonies",
+      "Garden parties"
+    ],
+    "love": "Slow walks past the lotus pond",
+    "prompt_q": "The way to win me over",
+    "prompt_a": "Bring the blue. I'll bring the blush.",
+    "photo": "assets/launches/omm-sadie-jane-mahjong-tiles/06.jpg"
+  },
+  "her_colors": {
+    "backs": [
+      [
+        "Blush pink",
+        "#ead2d4",
+        "back"
+      ],
+      [
+        "Denim blue",
+        "#37709a",
+        "stripe layer"
+      ],
+      [
+        "Pale blue",
+        "#b3bbc8",
+        "stripe layer"
+      ]
+    ],
+    "faces": [
+      [
+        "Denim blue",
+        "#366ea3"
+      ],
+      [
+        "Navy",
+        "#103f67"
+      ],
+      [
+        "Lily green",
+        "#2d9763"
+      ],
+      [
+        "Lotus coral",
+        "#b76765"
+      ],
+      [
+        "Sky blue",
+        "#5b94c3"
+      ]
+    ],
+    "tone": "Soft, clean pastels: blush and denim, nothing earthy.",
+    "supporting": [
+      [
+        "Denim blue",
+        "#366ea3"
+      ],
+      [
+        "Navy",
+        "#103f67"
+      ],
+      [
+        "Lily green",
+        "#2d9763"
+      ],
+      [
+        "Lotus coral",
+        "#b76765"
+      ],
+      [
+        "Sky blue",
+        "#5b94c3"
+      ]
+    ],
+    "faces_photo": "assets/launches/omm-sadie-jane-mahjong-tiles/01.jpg",
+    "faces_crop": [
+      200,
+      820,
+      2235,
+      2080
+    ],
+    "source": "config/colorcards.json sets.sadie-jane (OMM pile 06 + flat lay 01)",
+    "main_labels": [
+      "Blush Pink",
+      "Denim Blue",
+      "Pale Blue"
+    ]
+  },
+  "layers": {
+    "img": "assets/tiles/backs/sadie-jane-layers-joker-cutout.png",
+    "labels": [
+      [
+        691.0,
+        390.0,
+        "Denim blue layer",
+        "#37709a"
+      ],
+      [
+        679.0,
+        430.0,
+        "Pale blue layer",
+        "#b3bbc8"
+      ],
+      [
+        640.0,
+        468.0,
+        "Blush pink back",
+        "#ead2d4"
+      ]
+    ],
+    "wheel_notes": [
+      [
+        "Blush pink",
+        "pale, warm pink (light)"
+      ],
+      [
+        "Denim blue",
+        "mid, cool blue"
+      ],
+      [
+        "Pale blue",
+        "soft grey-blue (light)"
+      ],
+      [
+        "Navy + lily green",
+        "her faces"
+      ]
+    ],
+    "label_y": [
+      380,
+      440,
+      500
+    ],
+    "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color."
+  },
+  "her_type": [
+    {
+      "label": "Her official pair",
+      "mat": "Serendipity",
+      "brand": "Oh My Mahjong",
+      "chips": [
+        "#a9c5f4",
+        "#f2c6d2"
+      ],
+      "why": "Oh My Mahjong designed it to go with her: sky blue, blush and chartreuse. Sold together in the starter kit."
+    },
+    {
+      "label": "Pink + denim",
+      "mat": "Petalwing",
+      "brand": "Virora Mahjong",
+      "chips": [
+        "#e9a9bd",
+        "#3e6e9e"
+      ],
+      "why": "Pink and denim florals with birds, her exact two colors."
+    },
+    {
+      "label": "Blush + blue grandmillennial",
+      "mat": "Pink & Blue Grandmillennial",
+      "brand": "Mahj & Moon",
+      "chips": [
+        "#f0bfcb",
+        "#7fa3cf"
+      ],
+      "why": "A grandmillennial print in blush and blue, as soft and gardeny as she is."
+    }
+  ],
+  "dealbreaker": "Earthy tan, mustard and olive. Next to her blush and denim they read muddy. Keep the mat clean and soft.",
+  "racks": [
+    {
+      "name": "Bird & Bamboo Ballet Pink",
+      "why": "A true blush, like her backs.",
+      "group": "color"
+    },
+    {
+      "name": "Bird & Bamboo French Blue",
+      "why": "A soft French blue for her denim stripe.",
+      "group": "color"
+    }
+  ],
+  "first_dates": [
+    "Serendipity",
+    "Petalwing",
+    "Pink & Blue Grandmillennial"
+  ],
+  "bio": "A lily pond in late spring: blush petals, blue water and a panda who knows how to make an entrance.",
+  "best_features": {
+    "_status": "DRAFT: Talulah favourites she named (bird bam, panda jokers); Sadie Jane shares Talulah's faces",
+    "top": [
+      "The pandas",
+      [
+        "joker-panda",
+        "joker-panda"
+      ],
+      "Her panda jokers"
+    ],
+    "singles": [
+      [
+        "The crane",
+        "bam-1-crane",
+        "Her red-crowned<br>crane bird bam"
+      ],
+      [
+        "The peony",
+        "flower-pink-peony",
+        "A pink peony<br>flower"
+      ],
+      [
+        "The lotus",
+        "dot-1",
+        "A pink lotus<br>on a lily pad"
+      ]
+    ]
+  },
+  "omm_launch": {
+    "pair": {
+      "mat": "Serendipity",
+      "brand": "Oh My Mahjong",
+      "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-serendipity-2400.jpg",
+      "together": "assets/launches/omm-serendipity-mat-in-tube/02-SadieJane_Serendipity-matcrop.jpg",
+      "together_fit": "cover",
+      "together_caption": "Sadie Jane on Serendipity, in Oh My Mahjong's own photo",
+      "why": "Sky blue, blush and chartreuse, made for her. Both drop Wed 11/25.",
+      "circle": "assets/tiles/album/sadie-jane.jpg"
+    },
+    "sisters": [],
+    "strong_label": "Strong match potential"
+  },
+  "launch_photos": {
+    "hero": "assets/launches/omm-sadie-jane-mahjong-tiles/06.jpg",
+    "single": "assets/launches/omm-sadie-jane-mahjong-tiles/07.jpg",
+    "all": "assets/launches/omm-sadie-jane-mahjong-tiles/01.jpg"
+  },
+  "album_peek": [
+    "oh-my-mahjong-serendipity",
+    "virora-mahjong-petalwing",
+    "mahj-and-moon-pink-and-blue-grandmillennial"
+  ],
+  "colors_line": "Blush pink backs with denim blue and pale blue stripe layers. Soft, clean pastels.",
+  "layers_hand": "see the layers?<br>denim + pale blue, over a blush back.",
+  "rack_natural": true,
+  "racks_hand": "both Bird & Bamboo, both picked for her",
+  "racks_hand_framed": "both Bird & Bamboo, both picked for her",
+  "racks_photo": "assets/launches/omm-sadie-jane-mahjong-tiles/04-rack-crop.jpg",
+  "racks_photo_caption": "Sadie Jane on a rack, in Oh My Mahjong’s own photo"
+}
