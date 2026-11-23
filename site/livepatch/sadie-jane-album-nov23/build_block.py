@@ -121,10 +121,17 @@ body = (
  f'{HOLCSS}<section class="mm3-hol" id="holiday-matches"><h2>Holiday matches for Sadie Jane</h2><p class="mm3-sub">Christmas mats for Sadie Jane, with rack picks. '
  'See more holiday matches on the <a href="/holiday-mahjong-matches">Holiday Matches</a> page.</p>'
  f'<div class="mm3-grid">{hfigs}</div></section>'
- '<p class="mm3-foot">Sadie Jane launches Wednesday 11/25 at 11am ET at Oh My Mahjong. Save with code <strong>MAHJMATCH</strong>. Try it in <a href="/find-your-match">Find Your Mat-ch</a>, browse more <a href="/mahjong-tile-matches">tile match albums</a> or see our <a href="/mahjong-discount-codes">mahjong discount codes</a>.</p>')
+ '<p class="mm3-foot">Sadie Jane launches Wednesday 11/25 at 11am ET at Oh My Mahjong. Save with code <strong>MAHJMATCH</strong>. Try it in <a href="/find-your-match">Find Your Mat-ch</a>, browse more <a href="/mahjong-tile-matches">tile match albums</a> or see our <a href="/mahjong-discount-codes">mahjong discount codes</a>.</p></div>')
 out = BG + css + body + lb
 bad = [m.start() for m in re.finditer(r'(?i)juniper', out)]
 assert not bad, out[bad[0] - 80:bad[0] + 80]
+from html.parser import HTMLParser as _HP
+class _P(_HP):
+    V={'img','br','hr','meta','link','input','source','wbr'}
+    def __init__(s): super().__init__(); s.n=0
+    def handle_starttag(s,t,a): s.n += t=='div'
+    def handle_endtag(s,t): s.n -= t=='div'
+_p=_P(); _p.feed(out); assert _p.n == 0, ('unbalanced divs', _p.n)  # Nov 23: a missing </div> swallowed the page's button block and hid the whole album
 open(HERE + 'sadie-jane-codeblock.html', 'w').write(out)
 urls = sorted(set(re.findall(r'https://cdn\.jsdelivr\.net/gh/[^"\s)]+', out)))
 open(HERE + 'urls.txt', 'w').write('\n'.join(urls) + '\n')
