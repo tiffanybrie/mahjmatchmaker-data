@@ -102,7 +102,7 @@ def rack_strip(S, name, w, h, maxh=None):
         nh = max(8, int(im.height * w / im.width))
         if maxh and nh > maxh: return im.resize((max(8, int(im.width * maxh / im.height)), maxh), Image.LANCZOS)
         return im.resize((w, nh), Image.LANCZOS)
-    col = BB_RGB.get(name.replace('Bird & Bamboo ', '')) or _bb_hex(name.replace('Bird & Bamboo ', '')) or (200, 200, 200)
+    col = _bb_hex(name.replace('Bird & Bamboo ', '')) or BB_RGB.get(name.replace('Bird & Bamboo ', '')) or (200, 200, 200)   # Nov 23 2026: work/bbracks.json first (Ballet Pink was drawing lavender from the old table)
     im = Image.new('RGBA', (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     d.rounded_rectangle((0, 0, w - 1, h - 1), radius=5, fill=col)
     dk = tuple(max(0, int(v * .82)) for v in col); lt = tuple(min(255, int(v * 1.12)) for v in col)
