@@ -315,6 +315,41 @@
    "kind": "flat",
    "rack_frac": 1.0,
    "note": "Nov 23: MFM solid acrylic Macaron Pink, FYM v99 cutout (single rack, flat); Tiffany asked for it on Jade (Sadie Jane)"
+  },
+  "My Fair Mahjong Macaron Blue": {
+   "file": "assets/racks/card/my-fair-mahjong-macaron-blue.png",
+   "source": "assets/racks/v99/mfm-macaron-blue.webp",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: diversify every colour, not only pinks; Virora racks are forgotten): FYM v99 single-rack cutout"
+  },
+  "My Fair Mahjong Macaron Green": {
+   "file": "assets/racks/card/my-fair-mahjong-macaron-green.png",
+   "source": "assets/racks/v99/mfm-macaron-green.webp",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: diversify every colour, not only pinks; Virora racks are forgotten): FYM v99 single-rack cutout"
+  },
+  "My Fair Mahjong Macaron Purple": {
+   "file": "assets/racks/card/my-fair-mahjong-macaron-purple.png",
+   "source": "assets/racks/v99/mfm-macaron-purple.webp",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: diversify every colour, not only pinks; Virora racks are forgotten): FYM v99 single-rack cutout"
+  },
+  "My Fair Mahjong Teal": {
+   "file": "assets/racks/card/my-fair-mahjong-teal.png",
+   "source": "assets/racks/v99/mfm-teal.webp",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: diversify every colour, not only pinks; Virora racks are forgotten): FYM v99 single-rack cutout"
+  },
+  "Virora Spring Jade": {
+   "file": "assets/racks/card/virora-spring-jade.png",
+   "source": "assets/racks/v99/virora-spring-jade.webp",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 23 (Tiffany: diversify every colour, not only pinks; Virora racks are forgotten): FYM v99 single-rack cutout"
   }
  },
  "missing": {

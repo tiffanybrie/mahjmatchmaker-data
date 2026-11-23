@@ -78,3 +78,11 @@ C. Bird & Bamboo library page: all colours rendered, with a place for notes and 
 - The TILE SHOT on the cards still looks SOFT. Why?
 - TITLE FONT J: always use the ALTERNATE J (not the wobbly J) in "Jane" / "Sadie Jane" and anywhere this font is used. Put it in the brand notes.
 - OMM-ONLY PROMO version: Oh My Mahjong will not promote a piece with other brands' products. Top OMM matches: Serendipity, then good ones like Peri-twinkle (retired), Jade; Vivara may need to move up. (She was mid-thought: "hold on one second".)
+
+## Part 5 (10:35am ET): RACK BRAND RULES, record set straight
+- Variety is for EVERY colour, not only pinks: My Fair Mahjong, Peace Love Mahjong and Bam Bird Boutique (expanded colour line) have blues too; Virora has a rack line we forget. Bird & Bamboo "doesn't have a monopoly": it is the FALLBACK (has every colour), used when all else is equal; all the more reason to diversify the mat racks when the two TILE racks are already Bird & Bamboo (Sadie Jane).
+- MAT RACKS: if the brand that MADE THE MAT has a rack that truly matches, use it ("that will make the most sense long term"). NEVER put the mat maker's rack on just because it is theirs when it does not match.
+- OH MY MAHJONG, record straight: OMM MATS do not need OMM racks (better racks exist; their line is limited). For an OMM TILE SET we normally try OMM racks as the go-to tile racks (as on Juniper), but which two is always HER call per set. Sadie Jane: no OMM tile racks (no solid light pink; Pink Quartz swirl with these tiles on these mats "would just be butt ugly").
+- Bam Bird tile sets: think about Bam Bird's own racks (more colours now).
+- Britt Mills only makes mats: nothing to match.
+- She is "drawing from a shallow pool": she needs to SEE each brand's racks and colours -> the rack gallery page (OVERDUE) is the fix.
