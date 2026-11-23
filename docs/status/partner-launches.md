@@ -1,28 +1,59 @@
-# Partner launches & restocks (2026-11-22 23:24 UTC)
+# Partner launches & restocks (2026-11-23 14:24 UTC)
 
-## Since last run: 18 to act on
-- **RESTOCK** Bespoke Mahjong · TRAVEL - The Ultimate Travel Racks (rack) · Default Title · https://www.bespokemahjong.com/products/the-ultimate-travel-racks
-- **RESTOCK** Bespoke Mahjong · The Ultimate Rack - MOJITO DREAM (rack) · Default Title · https://www.bespokemahjong.com/products/the-ultimate-rack-garden-green
-- **RESTOCK** Bespoke Mahjong · The Ultimate Rack - HIGHLIGHTER PINK (rack) · Default Title · https://www.bespokemahjong.com/products/the-ultimate-rack-hottie-pink
-- **RESTOCK** Mahj Squad · Mint and white Nutcracker Mahjong Tiles with tile bag- 15% off all Thanksgiving week! (tiles) · Default Title · https://mahjsquadshop.com/products/mint-nutcracker-tiles
-- **RESTOCK** Mahjong Studios · Mistletoe Christmas Mahjong Mat - Christmas Kiss - Meet me under the Mistletoe (mat) · Default Title · https://mahjongstudios.com/products/mistletoe-christmas-mahjong-mat
-- **RESTOCK** Mahjong Studios · Christmas Mahjong Set – Christmas Kiss | Mahjong Studios (tiles) · Christmas Kiss Mat w/Tiles / 18.5" Solid Red · https://mahjongstudios.com/products/christmas-kiss-american-mahjong-tile-set-160-tiles-red-bundle
-- **RESTOCK** Mahjong Studios · Mahjong Studios - Rack and Pusher Set of 4 (rack) · 17.5" Green Agate · https://mahjongstudios.com/products/mahjong-studios-rack-and-pusher-set-of-4
-- **RESTOCK** Mahjong Studios · American Mahjong Set 166 Tiles Bundle - Green Bag Pastel Mat 2-color blue tiles (mat) · No Rack · https://mahjongstudios.com/products/american-mahjong-set-166-tiles-bundle-green-bag-pastel-mat-2-color-blue-tiles
-- **RESTOCK** Mahjong Studios · American Mahjong Set 166 Tiles Bundle - Green Bag Pink Mat 2-color blue tiles (mat) · Multi (Green Blue Purple Red), Green, Blue, Purple, Red, No Rack, Tiles Only, Bright Blue, Pink, Yellow · https://mahjongstudios.com/products/american-mahjong-set-166-tiles-bundle-green-bag-pink-mat-2-color-blue-tiles
-- **RESTOCK** Mahjong Studios · All In One - Mahjong Bundle - American Mahjong Set 166 Tiles - Blue & Tan Bag Pink Mat (mat) · Purple · https://mahjongstudios.com/products/blue-tan-bag-pink-mat
-- **RESTOCK** Mahjong Studios · Mahjong Rack and Pusher Set of 4 - Multi Colors Blue Purple Red Green Clear (rack) · Green · https://mahjongstudios.com/products/mahjong-rack-and-pusher-set-of-4-multi-colors
-- **NEW** Sunday Mahjong · Georgia Mahjong Rack Set (rack) · https://sundaymahjong.com/products/georgia-mahjong-rack-set
-- **NEW** Sunday Mahjong · Sunday Cherry Cola Mahjong Rack Set (rack) · https://sundaymahjong.com/products/sunday-cherry-cola-mahjong-rack-set
-- **NEW** Let's Be Besties · Electric Petal Garden Mahjong Mat (mat) · https://letsbebesties.com/products/electric-petal-garden-mahjong-mat
-- **NEW** Let's Be Besties · Savannah Lillian Claire Designs Artist Mahjong Mat (mat) · https://letsbebesties.com/products/savannah-lillian-claire-designs-artist-mahjong-mat
-- **NEW** Let's Be Besties · Pine Valley Lillian Claire Designs Artist Mahjong Mat (mat) · https://letsbebesties.com/products/pine-valley-lillian-claire-designs-artist-mahjong-mat
-- **NEW** Let's Be Besties · Eat Pray Love Lillian Claire Designs Artist Mahjong Mat (mat) · https://letsbebesties.com/products/eat-pray-love-lillian-claire-designs-artist-mahjong-mat
-- **NEW** Splash of Color · Festive Frankenstein And Bride Modtastic Christmas Mahjong Mat Sleek Surface (mat) · https://splashofcolorco.com/products/festive-frankenstein-and-bride-modtastic-christmas-mahjong-mat-sleek-surface
+## Since last run: 39 to act on
+- **NEW** Let's Mahj On · Pagoda Tablecloth Turquise (mat) · https://www.letsmahj-on.com/products/pagoda-tablecloth-yellow-copy
+- **NEW** Let's Mahj On · Pagoda Tablecloth Lime (mat) · https://www.letsmahj-on.com/products/pagoda-tablecloth-coral-copy
+- **NEW** Let's Mahj On · Pagoda Tablecloth Coral (mat) · https://www.letsmahj-on.com/products/pagoda-tablecloth-coral
+- **NEW** Let's Mahj On · Pagoda Tablecloth Navy (mat) · https://www.letsmahj-on.com/products/pagoda-tablecloth-blue
+- **RESTOCK** Let's Mahj On · Dash Mahjong TableCloth ~ Green Tea (mat) · Default Title · https://www.letsmahj-on.com/products/green-tea-mahjong-game-tablecloth
+- **RESTOCK** Let's Mahj On · Dash Mahjong Tablecloth ~ Ocean (mat) · Default Title · https://www.letsmahj-on.com/products/ocean-mahjong-game-tablecloth
+- **RESTOCK** Mahjong Studios · Christmas Mahjong Rack and Pusher Set Red & Green (rack) · Red · https://mahjongstudios.com/products/christmas-mahjong-rack-and-pusher-set-red-green
+- **RESTOCK** Mahjong Studios · Christmas Mahjong Rack and Pusher Set Red & Green (rack) · Red · https://mahjongstudios.com/products/christmas-mahjong-rack-and-pusher-set-red-green-1
+- **NEW** Tigre de Tartán · The House of Scalamandré × Tigre de Tartán · Leopardo (mat) · https://tigredetartan.com/products/the-house-of-scalamandre-tigre-de-tartan-leopardo
+- **NEW** Tigre de Tartán · The House of Scalamandré × Tigre de Tartán · Chi'en Dragon, Persimmon (mat) · https://tigredetartan.com/products/the-house-of-scalamandre-tigre-de-tartan-chien-dragon-persimmon
+- **NEW** Tigre de Tartán · The House of Scalamandré × Tigre de Tartán · Zebras, Chestnut · With Rules (mat) · https://tigredetartan.com/products/the-house-of-scalamandre-tigre-de-tartan-zebras-chestnut-with-rules
+- **NEW** Tigre de Tartán · The House of Scalamandré × Tigre de Tartán · Zebras, Chestnut (mat) · https://tigredetartan.com/products/the-house-of-scalamandre-tigre-de-tartan-zebras-chestnut
+- **PREORDER** Tigre de Tartán · Paige Spearin Mahjong Mat, Après Mahj, ROUND (mat) · https://tigredetartan.com/products/paige-spearin-mahjong-mat
+- **NEW** Let's Be Besties · Prismatic Petals Mahjong Mat (mat) · https://letsbebesties.com/products/prismatic-petals-mahjong-mat
+- **NEW** Splash of Color · Spill The Mahj Mini Mahjong Travel Set Single Layer Tiles Including Racks (rack) · https://splashofcolorco.com/products/spill-the-mahj-mini-mahjong-travel-set-single-layer-tiles-including-racks
+- **NEW** Mahjong by SI · Pink With a Wink (mat) · https://www.mahjongbysi.com/products/pink-with-a-wink-mahjong-mat
+- **NEW** Mahjong by SI · Rose Love Letter (mat) · https://www.mahjongbysi.com/products/rose-love-letter-mahjong-mat
+- **NEW** Mahjong by SI · Merlot Love Letter (mat) · https://www.mahjongbysi.com/products/merlot-love-letter-mahjong-mat
+- **NEW** Mahjong by SI · Last Call at the Lodge (mat) · https://www.mahjongbysi.com/products/last-call-at-the-lodge-mahjong-mat
+- **NEW** Mahjong by SI · Teal Me You Love Me (mat) · https://www.mahjongbysi.com/products/teal-me-you-love-me-mahjong-mat
+- **NEW** Mahjong by SI · Frost at the Lodge (mat) · https://www.mahjongbysi.com/products/frost-at-the-lodge-mahjong-mat
+- **NEW** Mahjong by SI · Pecking Order (mat) · https://www.mahjongbysi.com/products/pecking-order-mahjong-mat
+- **NEW** Mahjong by SI · Miss Scarlet (mat) · https://www.mahjongbysi.com/products/miss-scarlet-mahjong-mat
+- **NEW** Mahjong by SI · Little Chickadee (mat) · https://www.mahjongbysi.com/products/little-chickadee-mahjong-mat
+- **NEW** Mahjong by SI · Girls Just Wanna Mahj (mat) · https://www.mahjongbysi.com/products/girls-just-wanna-mahj-mahjong-mat
+- **RESTOCK** Mahjong by SI · Berry and Bright Mahjong Mat (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/berry-and-bright-mahjong-mat
+- **RESTOCK** Mahjong by SI · Merry Menagerie Mahjong Mat (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/merry-menagerie-mahjong-mat
+- **RESTOCK** Mahjong by SI · Wildly Merry Mahjong Mat (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/wildly-merry-mahjong-mat
+- **RESTOCK** Mahjong by SI · Fall on the Wild Side  (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/fall-on-the-wild-side-mahjong-mat
+- **RESTOCK** Mahjong by SI · Glow Gardenista (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/glow-gardenista-mahjong-mat
+- **RESTOCK** Mahjong by SI · Books & Blooms Mahjong Mat (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/books-and-blooms-mahjong-mat
+- **RESTOCK** Mahjong by SI · Mahjong by SI™ Pining For Stardust Mahjong Mat (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/pining-for-stardust-mahjong-mat
+- **RESTOCK** Mahjong by SI · Apres All Day (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/apres-all-day-mahjong-mat
+- **RESTOCK** Mahjong by SI · Gatsby (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/gatsby-mahjong-mat
+- **RESTOCK** Mahjong by SI · The Lodge (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/the-lodge-mahjong-mat
+- **RESTOCK** Mahjong by SI · Snow Much Fun (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/snow-much-fun-mahjong-mat
+- **RESTOCK** Mahjong by SI · Mahjong by SI™ Cafe au Lait Tile Mahjong Mat (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/cafe-au-lait-tile-mahjong-mat
+- **RESTOCK** Mahjong by SI · Mahjong by SI™ Hydrangea Heaven Mahjong Mat (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/hydrangea-heaven-mahjong-mat
+- **RESTOCK** Mahjong by SI · Mahjong by SI™ Sweet Scallop Serenade Mahjong Mat (mat) · Neoprene — 31" x 31" · https://www.mahjongbysi.com/products/sweet-scallop-serenade-mahjong-mat
 
 ## Created/published in the last 7 days (tiles, mats, racks)
+- 2026-11-23 · Let's Mahj On · Pagoda Tablecloth Turquise (mat) · available · https://www.letsmahj-on.com/products/pagoda-tablecloth-yellow-copy
+- 2026-11-23 · Let's Mahj On · Pagoda Tablecloth Lime (mat) · available · https://www.letsmahj-on.com/products/pagoda-tablecloth-coral-copy
+- 2026-11-23 · Let's Mahj On · Pagoda Tablecloth Coral (mat) · available · https://www.letsmahj-on.com/products/pagoda-tablecloth-coral
+- 2026-11-23 · Let's Mahj On · Pagoda Tablecloth Navy (mat) · available · https://www.letsmahj-on.com/products/pagoda-tablecloth-blue
+- 2026-11-23 · Tigre de Tartán · The House of Scalamandré × Tigre de Tartán · Leopardo (mat) · NOT available · PREORDER/COMING SOON · https://tigredetartan.com/products/the-house-of-scalamandre-tigre-de-tartan-leopardo
+- 2026-11-23 · Tigre de Tartán · The House of Scalamandré × Tigre de Tartán · Chi'en Dragon, Persimmon (mat) · NOT available · PREORDER/COMING SOON · https://tigredetartan.com/products/the-house-of-scalamandre-tigre-de-tartan-chien-dragon-persimmon
+- 2026-11-23 · Tigre de Tartán · The House of Scalamandré × Tigre de Tartán · Zebras, Chestnut · With Rules (mat) · NOT available · PREORDER/COMING SOON · https://tigredetartan.com/products/the-house-of-scalamandre-tigre-de-tartan-zebras-chestnut-with-rules
+- 2026-11-23 · Tigre de Tartán · The House of Scalamandré × Tigre de Tartán · Zebras, Chestnut (mat) · NOT available · PREORDER/COMING SOON · https://tigredetartan.com/products/the-house-of-scalamandre-tigre-de-tartan-zebras-chestnut
+- 2026-11-23 · Splash of Color · Spill The Mahj Mini Mahjong Travel Set Single Layer Tiles Including Racks (rack) · available · https://splashofcolorco.com/products/spill-the-mahj-mini-mahjong-travel-set-single-layer-tiles-including-racks
 - 2026-11-22 · Sunday Mahjong · Georgia Mahjong Rack Set (rack) · available · https://sundaymahjong.com/products/georgia-mahjong-rack-set
 - 2026-11-22 · Sunday Mahjong · Sunday Cherry Cola Mahjong Rack Set (rack) · NOT available · https://sundaymahjong.com/products/sunday-cherry-cola-mahjong-rack-set
+- 2026-11-22 · Let's Be Besties · Prismatic Petals Mahjong Mat (mat) · available · https://letsbebesties.com/products/prismatic-petals-mahjong-mat
 - 2026-11-22 · Let's Be Besties · Electric Petal Garden Mahjong Mat (mat) · available · https://letsbebesties.com/products/electric-petal-garden-mahjong-mat
 - 2026-11-22 · Let's Be Besties · Savannah Lillian Claire Designs Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/savannah-lillian-claire-designs-artist-mahjong-mat
 - 2026-11-22 · Let's Be Besties · Pine Valley Lillian Claire Designs Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/pine-valley-lillian-claire-designs-artist-mahjong-mat
@@ -57,20 +88,20 @@
 - 2026-11-19 · Anders Ruff · Mahj Ever After Mahjong Mat | Anders Ruff x Trista Sutter, The Original Bachelorette (mat) · available · PREORDER/COMING SOON · https://shop.andersruff.com/products/mahj-ever-after-mahjong-mat
 - 2026-11-19 · Anders Ruff · Something Blue Mahjong Tile Set | Trista Sutter x Anders Ruff Design Co. (tiles) · available · PREORDER/COMING SOON · https://shop.andersruff.com/products/something-blue-mahjong-tile-set
 - 2026-11-19 · Mahj Squad · Mint and white Nutcracker Mahjong Tiles with tile bag- 15% off all Thanksgiving week! (tiles) · available · https://mahjsquadshop.com/products/mint-nutcracker-tiles
-- 2026-11-19 · Mahjong by SI · Bubblegum (mat) · available · https://www.mahjongbysi.com/products/bubblegum-mahjong-mat
-- 2026-11-19 · Mahjong by SI · Valentine Pink (mat) · available · https://www.mahjongbysi.com/products/valentine-pink-mahjong-mat
-- 2026-11-19 · Mahjong by SI · Valentine Red (mat) · available · https://www.mahjongbysi.com/products/valentine-red-mahjong-mat
-- 2026-11-19 · Mahjong by SI · Wilderness – Burgundy Antlers (mat) · available · https://www.mahjongbysi.com/products/wilderness-burgundy-antlers-mahjong-mat
-- 2026-11-19 · Mahjong by SI · Love Blue (mat) · available · https://www.mahjongbysi.com/products/love-blue-mahjong-mat
-- 2026-11-19 · Mahjong by SI · Wilderness – Silver Antlers (mat) · available · https://www.mahjongbysi.com/products/wilderness-silver-antlers-mahjong-mat
+- 2026-11-19 · Mahjong by SI · Pink With a Wink (mat) · available · https://www.mahjongbysi.com/products/pink-with-a-wink-mahjong-mat
+- 2026-11-19 · Mahjong by SI · Rose Love Letter (mat) · available · https://www.mahjongbysi.com/products/rose-love-letter-mahjong-mat
+- 2026-11-19 · Mahjong by SI · Merlot Love Letter (mat) · available · https://www.mahjongbysi.com/products/merlot-love-letter-mahjong-mat
+- 2026-11-19 · Mahjong by SI · Last Call at the Lodge (mat) · available · https://www.mahjongbysi.com/products/last-call-at-the-lodge-mahjong-mat
+- 2026-11-19 · Mahjong by SI · Teal Me You Love Me (mat) · available · https://www.mahjongbysi.com/products/teal-me-you-love-me-mahjong-mat
+- 2026-11-19 · Mahjong by SI · Frost at the Lodge (mat) · available · https://www.mahjongbysi.com/products/frost-at-the-lodge-mahjong-mat
 - 2026-11-19 · Mahjong by SI · Kickin’ Cowgirl (mat) · available · https://www.mahjongbysi.com/products/kickin-cowgirl-mahjong-mat
-- 2026-11-19 · Mahjong by SI · Birding Cowgirl (mat) · available · https://www.mahjongbysi.com/products/birding-cowgirl-mahjong-mat
+- 2026-11-19 · Mahjong by SI · Pecking Order (mat) · available · https://www.mahjongbysi.com/products/pecking-order-mahjong-mat
 - 2026-11-19 · Mahjong by SI · Snowday Cowgirl (mat) · available · https://www.mahjongbysi.com/products/snowday-cowgirl-mahjong-mat
-- 2026-11-19 · Mahjong by SI · Cowgirl Cardinal (mat) · available · https://www.mahjongbysi.com/products/cowgirl-cardinal-mahjong-mat
-- 2026-11-19 · Mahjong by SI · Chickadee (mat) · available · https://www.mahjongbysi.com/products/chickadee-mahjong-mat
+- 2026-11-19 · Mahjong by SI · Miss Scarlet (mat) · available · https://www.mahjongbysi.com/products/miss-scarlet-mahjong-mat
+- 2026-11-19 · Mahjong by SI · Little Chickadee (mat) · available · https://www.mahjongbysi.com/products/little-chickadee-mahjong-mat
 - 2026-11-19 · Mahjong by SI · Stitched Cowgirl (mat) · available · https://www.mahjongbysi.com/products/stitched-cowgirl-mahjong-mat
 - 2026-11-19 · Mahjong by SI · Alpine (mat) · available · https://www.mahjongbysi.com/products/alpine-mahjong-mat
-- 2026-11-19 · Mahjong by SI · Galentine’s (mat) · available · https://www.mahjongbysi.com/products/galentines-mahjong-mat
+- 2026-11-19 · Mahjong by SI · Girls Just Wanna Mahj (mat) · available · https://www.mahjongbysi.com/products/girls-just-wanna-mahj-mahjong-mat
 - 2026-11-19 · Mahjong by SI · Mahjong by SI™ Rangoli Royale Mahjong Mat (mat) · available · https://www.mahjongbysi.com/products/rangoli-royale-mahjong-mat
 - 2026-11-19 · Mahjong by SI · Mahjong by SI™ Lotus in Full Glow Mahjong Mat (mat) · available · https://www.mahjongbysi.com/products/lotus-in-full-glow-mahjong-mat
 - 2026-11-19 · Mahjong by SI · Mahjong by SI™ Midnight Diyas Mahjong Mat (mat) · available · https://www.mahjongbysi.com/products/midnight-diyas-mahjong-mat
@@ -116,16 +147,12 @@
 - 2026-11-16 · The Mahjong House · Western Dusty Rose Double-Sided Mahjong Mat (mat) · NOT available · https://themahjonghouse.com/products/western-dusty-rose-double-sided-mahjong-mat
 - 2026-11-16 · The Mahjong House · Western Desert Double-Sided Mahjong Mat (mat) · NOT available · https://themahjonghouse.com/products/western-dessert-double-sided-mahjong-mat
 - 2026-11-16 · The Mahjong House · Dusty Rose Western Tiles (tiles) · NOT available · https://themahjonghouse.com/products/western-tiles-copy
-- 2026-11-15 · Let's Be Besties · The Hamptons Lillian Claire Designs Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/the-hamptons-lillian-claire-designs-artist-mahjong-mat
-- 2026-11-15 · Let's Be Besties · The Gilded Lotus Lillian Claire Designs Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/lillian-claire-designs-artist-mahjong-mat
-- 2026-11-15 · Splash of Color · Spill The Mahj Modcentric Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/spill-the-mahj-modcentric-mahjong-mat-sleek-surface
-- 2026-11-15 · Splash of Color · I'd Rather Be Playing Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/id-rather-be-playing-mahjong-mat-sleek-surface
 
 ## Stores
 - amahjline.com: ok 33 products
 - birdandbamboo.com: ok 59 products
 - brittmillsdesign.com: ok 763 products
-- letsbebesties.com: ok 779 products
+- letsbebesties.com: ok 781 products
 - mahjandvine.com: ok 21 products
 - mahjmood.com: ok 51 products
 - mahjongco.com: ok 1 products
@@ -143,7 +170,7 @@
 - shop.andersruff.com: ok 165 products
 - shop.brewtifully.com: ok 616 products
 - soireeallday.co: not checkable (not Shopify or blocked)
-- splashofcolorco.com: ok 2222 products
+- splashofcolorco.com: ok 2226 products
 - spools.com: ok 100 products
 - sundaymahjong.com: ok 90 products
 - sweetjojomahjong.com: ok 93 products
@@ -151,7 +178,7 @@
 - themahjonghouse.com: ok 107 products
 - themahjongpress.com: ok 7 products
 - theroyalmahjongsociety.com: ok 57 products
-- tigredetartan.com: ok 131 products
+- tigredetartan.com: ok 140 products
 - www.averillmahjong.com: ok 6 products
 - www.bambirdboutique.com: ok 118 products
 - www.bamletsmahjong.com: ok 67 products
@@ -159,11 +186,11 @@
 - www.charlestonmahjongclub.com: ok 74 products
 - www.fait-a-main.com: ok 49 products
 - www.hiphipmahjong.com: ok 70 products
-- www.letsmahj-on.com: ok 88 products
+- www.letsmahj-on.com: ok 92 products
 - www.macandmillermahjong.com: ok 38 products
 - www.mahjongbysi.com: ok 2121 products
 - www.middleandmainmahjong.com: ok 109 products
 - www.ohmymahjong.com: ok 246 products
 - www.viroramahjong.com: ok 37 products
 - www.ymimports.com: ok 431 products
-- yolomahjong.com: ok 96 products
+- yolomahjong.com: ok 101 products
