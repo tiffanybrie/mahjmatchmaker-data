@@ -139,3 +139,6 @@ C. Bird & Bamboo library page: all colours rendered, with a place for notes and 
 - "Go ahead and make whatever changes you need, including Middle & Main": she takes Claude's recommendation on the M&M scallop (keep their real small scallops).
 - She asked Claude's top 10 wow matches (docs/albums/sadie-jane/claude-top-10-wow-matches.jpg).
 - IDEA (hers, asked 'is that a good idea?'): for Oh My Mahjong sets, split the album into "Oh My Mahjong matches for Sadie Jane" (OMM mats, retired ones included: buyers already own them) and "Cross-brand matches for Sadie Jane"; social shares the OMM section as its own piece (OMM-only, reshare-able; answers 'what mats go with this?' in groups like Mahji Mentor) and the cross-brand section separately; each section ordered on its own merits. She feels she needs two versions of the album.
+
+## Part 11 (11:35am ET)
+- JULIA stays low: "it doesn't have blue... the blue of the layer not having anything to hold on to is just pushing it down. It has to hit me." MATCH RULE for Sadie Jane (and any set with a strong layer colour): a mat needs something for the LAYER colour (the denim stripe) to hold on to; motif alone (cranes, lilies, the right green) does not make a top match.
