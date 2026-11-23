@@ -33,3 +33,26 @@ PER CARD:
 37 Talulah Panda: Coral fine; not clear acrylic -> the turquoise in the leaves.
 39 Pink Lemonade: not Coral: Light Pink + the next pink up on the border; else iridescent opal scallop.
 40 Pink Hydrangea Preppy Floral: (message ended here; note to come).
+
+## Part 2 (9:59am ET), cards 40 on + holiday + standing asks
+40 Pink Hydrangea Preppy Floral: the green of the inner border / better one of the BRIGHTER greens in the leaves + the brighter pink in the hydrangeas. "You're matching the mat."
+Sunday Sherbert: looks good.
+Botanical Garden: Cornflower Blue is not in the mat -> a WHITE (Middle & Main scallop) + Light Pink.
+Lattice (Miss Mahjong): looks good, she is moving it up (~14). Racks: definitely not Butter. Likes the opal; add a blue: Miss Mahjong Cornflower Blue (the brand's racks follow the brand's mat).
+HOLIDAY
+Nutcracker: no Mahj Mood clear scallop ("that rendering is awful"). Cornflower Blue fine + Middle & Main scalloped white.
+Merriment: Light Pink good; use Middle & Main scallop instead of opal (whiter; opal is an off-white: where the mat has bright white use milk glass).
+Pink & Blue Christmas Village: CORNER REPAIR needed. "You cannot do this on our mock-ups, and you know how to do this. So put that in your rules." Rack colours liked.
+Vintage Twinkle: colours of the centre: Bird & Bamboo Light Pink (not Coral) + the green on the outer edge of the light pink inner border (Kelly? may be too bright: look).
+Peppermint Patty: milk glass scallop for sure + light pink. Is there a SCALLOPED light pink by anybody? Work scallops into the cutesy/girly and holiday cards.
+Christmas Cat: OFF. "Don't ever show me Christmas Cat again. I hate Christmas Cat." (also had an unrepaired corner).
+Love & Light: wrong racks: a light blue + a GOLD. "You never suggest metallics."
+STANDING
+- DIVERSIFY: too heavy on Bird & Bamboo. Use My Fair Mahjong ("we don't promote enough"; Macaron Pink is another light pink), Mahjong Register, Peace Love Mahjong where there is an equivalent with a real photo.
+- Brand's racks follow the brand's mat (Miss Mahjong racks on a Miss Mahjong mat).
+- Corner repair on every card mat photo with a fold: a rule, never again.
+- NEW MAT flag: when a mat has never had its racks matched, mark the card "new mat, never matched" so she pays attention; matched mats keep their racks and need no re-check.
+PROJECTS SHE ASKED FOR (big; long-term speed-up)
+A. "Racks by mat" gallery page: every mat with its 2 racks, filter by brand + name, shows solidified (her picks) vs not; she can leave blanket and per-mat notes.
+B. Rack gallery: the racks she can choose from, with decent linear photos; more/better metallics; clean up more racks so there are more options.
+C. Bird & Bamboo library page: all colours rendered, with a place for notes and to send a phone photo of her real samples (she has the full sample set now) to colour-correct our renders.

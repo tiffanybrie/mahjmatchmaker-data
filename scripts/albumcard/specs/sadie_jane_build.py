@@ -11,6 +11,8 @@ A = json.load(open(R + f'scripts/albumcard/specs/{KEY}_nov21.json'))
 CC = json.load(open(R + 'config/colorcards.json'))['sets'][KEY]
 TRACKS = CC['racks']
 MEM = json.load(open(R + 'config/mat-rack-memory.json'))['mats']
+NEVER = {(x['brand'], x['name']) for x in json.load(open(R + 'config/album-never-show.json'))['mats']}
+A['mats'] = [m for m in A['mats'] if (m.get('brand'), m.get('name')) not in NEVER]  # Nov 23: e.g. YOLO Christmas Cat
 INSET = "assets/tiles/album/sadie-jane.jpg"  # Tiffany Nov 16 11:37pm: the card gets the CENTER crop of the FYM split photo
 BAMBIRD = {'Bam Bird Boutique Walnut': '#8c5529', 'Bam Bird Boutique Lagoon Wood': '#16494d', 'Bam Bird Boutique Indigo': '#39486a', 'Bam Bird Boutique Slate Blue': '#859fb1'}
 # Tiffany Nov 17 9:02am: Bam Bird INDIGO is their navy: use it everywhere instead of Mahjong Register Navy; Bam Bird Slate Blue for slate/light-blue tones.  # measured from assets/racks/card PNGs

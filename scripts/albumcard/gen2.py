@@ -160,8 +160,11 @@ print(len(jobs), 'cards ->', out)
 try:  # Nov 22 2026 (Tiffany, Sadie Jane): mat must fill the card to its corners; no white margin, no folded corner
     sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'checks')); import card_mat_edge_check as _ME
     _me = _ME.run([sys.argv[1]])
+    _fold = [x for x in _me if 'fold' in x]
     if _me: print('WARNING (mat photo: white margin or folded corner; LOOK and fix the box, or allow in config/card-mat-edge-ok.json):\n  ' + '\n  '.join(_me))
+    if _fold: _FOLD_FAIL = 'REFUSED (Tiffany Nov 23 2026: corner repair is a rule): a folded/curled corner is on these cards. Run scripts/albumcard/corner_repair.py on the mat photo and point the spec at the repaired file:\n  ' + '\n  '.join(_fold)
 except Exception as _e: print('card_mat_edge_check did not run:', _e)
+if globals().get('_FOLD_FAIL'): sys.exit(_FOLD_FAIL)
 if missing: print('NO REAL PHOTO (left off the card):', json.dumps(missing, ensure_ascii=False))
 if over: print('OVER THE 4-RACK CAPACITY (left off the card):', json.dumps(over, ensure_ascii=False))
 json.dump({'no_real_photo': missing, 'over_capacity': over} if over else missing, open(os.path.join(out, '_missing_racks.json'), 'w'), indent=1, ensure_ascii=False)
