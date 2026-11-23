@@ -10,6 +10,7 @@ KEY, W = sys.argv[1], sys.argv[2]; os.makedirs(W, exist_ok=True)
 A = json.load(open(R + f'scripts/albumcard/specs/{KEY}_nov21.json'))
 CC = json.load(open(R + 'config/colorcards.json'))['sets'][KEY]
 TRACKS = CC['racks']
+MEM = json.load(open(R + 'config/mat-rack-memory.json'))['mats']
 INSET = "assets/tiles/album/sadie-jane.jpg"  # Tiffany Nov 16 11:37pm: the card gets the CENTER crop of the FYM split photo
 BAMBIRD = {'Bam Bird Boutique Walnut': '#8c5529', 'Bam Bird Boutique Lagoon Wood': '#16494d', 'Bam Bird Boutique Indigo': '#39486a', 'Bam Bird Boutique Slate Blue': '#859fb1'}
 # Tiffany Nov 17 9:02am: Bam Bird INDIGO is their navy: use it everywhere instead of Mahjong Register Navy; Bam Bird Slate Blue for slate/light-blue tones.  # measured from assets/racks/card PNGs
@@ -71,6 +72,7 @@ for c in A['mats']:
     if sum(1 for l in mr if l in BURLS) > 1: mr = [l for i, l in enumerate(mr) if l not in BURLS or l == next(x for x in mr if x in BURLS)]
     # Mat-specific rack overrides (spec mat 'mat_racks'): e.g. brown leathers get CONTRAST racks, not same-tone burls (2:24am)
     if c.get('mat_racks'): mr = list(c['mat_racks'])
+    elif MEM.get(f"{c.get('brand')}|{c.get('name')}"): mr = list(MEM[f"{c.get('brand')}|{c.get('name')}"]['racks'])  # Nov 23: a mat keeps the racks she approved (config/mat-rack-memory.json): 'we should only have to match the mat once'
     pass  # 9:02am: anywhere MR Navy was, Bam Bird Indigo
     # ALWAYS TWO mat racks (Tiffany Nov 17 2:15am: 'You're supposed to pick two racks for the mat')
     if len(mr) < 2:
