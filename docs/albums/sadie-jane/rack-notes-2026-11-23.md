@@ -56,3 +56,11 @@ PROJECTS SHE ASKED FOR (big; long-term speed-up)
 A. "Racks by mat" gallery page: every mat with its 2 racks, filter by brand + name, shows solidified (her picks) vs not; she can leave blanket and per-mat notes.
 B. Rack gallery: the racks she can choose from, with decent linear photos; more/better metallics; clean up more racks so there are more options.
 C. Bird & Bamboo library page: all colours rendered, with a place for notes and to send a phone photo of her real samples (she has the full sample set now) to colour-correct our renders.
+
+## Part 3 (10:07am ET)
+- Blue & White Snowflake (holiday 8): corner correction. Peach Sorbet scallop "is just not anywhere in this mat... that's you erroring out... get to the bottom of it because that's untrustworthy... that would be an embarrassment to me". Racks: light blue / ICY blue, and/or the Middle & Main scalloped white.
+- MIDDLE & MAIN WHITE SCALLOP: re-render it STRAIGHT / linear (closed, like the Miss Mahjong Peach Sorbet card rack: "the real rack, and it shows"). The open pusher makes it tall, it interferes with the mat, and we use it a lot. She'd prefer ALL rack renders linear like that (OMM has to be open, but at least straight). It is acrylic, not milk glass.
+- LOGO FLAG (the tab beside the tile box with the tile brand logo): oversized: it used to hold two logos (tile + mat). Make it just big enough for the tile brand logo, on all cards, as the NEW TEMPLATE for every album. "We're trying to showcase the mat."
+- Love & Light: the mat is pushed up: white space between the mat and the green code bar. Mats always cover corner to corner: pull it down.
+- OFF: Christmas Tree Trellis ("I hate that mat"), Ski Club Periwinkle (not a match).
+- LEFT-OUT SECTION: "just enormous, and it made no sense"; about half the page. (1) The reason text read as specific when it was a generalisation (Nantucket Manor: "red, orange, brown, purple fights the soft faces": none of those are in the mat). If it is a generalisation, word it as one: "the pattern or a strong extra colour (such as red, orange, brown or purple) fights the soft faces". Don't burn usage on a full analysis per mat. (2) Too many ruled-out mats from big catalogs (Let's Be Besties, Mahjong by SI...): cap them; she doesn't need all of that. Nantucket Manor could work by its centre (not a wow; she is not pushing it in).

@@ -229,9 +229,9 @@
    "lowres": true,
    "mat_racks": [
     "Bird & Bamboo Dark Blue",
-    "Miss Mahjong Peach Sorbet Scalloped"
+    "Miss Mahjong Iridescent Opal Scalloped"
    ],
-   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
+   "mat_racks_by": "Claude Nov 23: peach sorbet was not in the mat (rack_colour_check)"
   },
   {
    "group": "picks",
@@ -525,9 +525,9 @@
    "lowres": true,
    "mat_racks": [
     "Bird & Bamboo Coral",
-    "Miss Mahjong Cornflower Blue Scalloped"
+    "Middle & Main Milk Glass Scalloped Acrylic"
    ],
-   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
+   "mat_racks_by": "Claude Nov 23: cornflower was not in the mat (rack_colour_check)"
   },
   {
    "group": "picks",
@@ -709,7 +709,14 @@
     "Bird & Bamboo Light Blue",
     "Bird & Bamboo Gold Metallic"
    ],
-   "mat_racks_by": "Tiffany Nov 23 9:59am"
+   "mat_racks_by": "Tiffany Nov 23 9:59am",
+   "box": [
+    34,
+    8,
+    1104,
+    1078
+   ],
+   "box_note": "Tiffany Nov 23 10:07am: mat was pushed up with white under it; box = the mat itself (no shadow/white), corner to corner"
   },
   {
    "group": "holiday",
@@ -722,10 +729,10 @@
    "img": "assets/colorcards/sadie-jane/mats/amazon-blue-and-white-snowflake-repaired.jpg",
    "lowres": true,
    "mat_racks": [
-    "Bird & Bamboo Harbor Blue",
+    "Bird & Bamboo Glacier Metallic",
     "Middle & Main Milk Glass Scalloped Acrylic"
    ],
-   "mat_racks_by": "Claude Nov 23: peach sorbet was not in the mat (her Butterfly Belle note); white snowflakes = milk glass. She reviews",
+   "mat_racks_by": "Tiffany Nov 23 10:07am (icy blue + Middle & Main white scallop)",
    "photo_note": "Nov 23: corner repair (scripts/albumcard/corner_repair.py), her 9:59am rule"
   },
   {

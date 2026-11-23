@@ -98,3 +98,6 @@ json.dump({'set': CC['name'], 'status': "DRAFT: Claude's own picks, pending Tiff
            'racks_note': 'tile racks = Bird & Bamboo Shell Pink + French Blue (draft); mat racks = matpick nearest Bird & Bamboo colours'},
           open(W + '/manifest.json', 'w'), indent=1, ensure_ascii=False)
 print(len(cards), 'cards')
+sys.path.insert(0, R + 'scripts/checks'); import rack_colour_check as _RC
+_b = _RC.run(R + f'scripts/albumcard/specs/{KEY}_nov21.json')
+if _b: sys.exit('REFUSED (rack colour check, Tiffany Nov 23): a mat rack colour is not in the mat:\n  ' + '\n  '.join(_b))

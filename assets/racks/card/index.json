@@ -82,10 +82,13 @@
    "rack_frac": 1.0
   },
   "Middle & Main Milk Glass Scalloped Acrylic": {
-   "file": "assets/racks/card/middle--main-milk-glass-scalloped-acrylic.png",
+   "file": "assets/racks/card/middle--main-milk-glass-scalloped-linear.png",
    "source": "assets/racks/cutouts/middle-and-main-milk-glass-2.png",
-   "kind": "cut",
-   "rack_frac": 0.62
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "open_file": "assets/racks/card/middle--main-milk-glass-scalloped-acrylic.png",
+   "built_by": "scripts/racks/mm_milk_glass_linear.py",
+   "note": "Nov 23 (Tiffany): linear + closed, straightened from the real brand photo (pusher set on the rack). Do not rebuild from real_racks.py SRC (that gives the open pose)."
   },
   "Bam Bird Boutique Walnut": {
    "file": "assets/racks/card/bam-bird-boutique-walnut.png",

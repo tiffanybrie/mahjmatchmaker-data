@@ -149,7 +149,7 @@ for c in spec['cards']:
 NP = subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True).stdout.strip()
 js = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'shot.js')
 for i in range(0, len(jobs), 40):
-    subprocess.run(['node', js] + [x for p in jobs[i:i+40] for x in p], check=True, env={**os.environ, 'NODE_PATH': NP}, stdout=subprocess.DEVNULL)
+    subprocess.run(['node', js] + [x for p in jobs[i:i+40] for x in p], check=True, env={'SHOT_SCALE': '2', **os.environ, 'NODE_PATH': NP}, stdout=subprocess.DEVNULL)  # Nov 23: 2x is the default (Tiffany Nov 22: sharp tile inset)
 _soft = []
 for _hf, _o in jobs:
     _m = _CS.measure(Image.open(_o))
