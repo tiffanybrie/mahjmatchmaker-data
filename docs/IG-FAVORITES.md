@@ -56,3 +56,5 @@ Method note: the favorites menu only updates after a reload, so each add was con
 - New partners this week: none approved (Sweet Jojo still not approved). New ShopMy brands: none (ShopMy check Nov 16 PASS).
 - Still no footer handle: Hip Hip Mahjong, Mahjong Register, Splash of Color (unchanged).
 - Sunday Mahjong read in Chrome: newest posts Nov 9 (December 1994 tiles packing/shipping reel) and Nov 4 (holiday game card). Non-partner, so not on the reshare list.
+
+- Nov 23 2026: Betty June & Jeannette @bettyjuneandjeannettemahjong followed + favorited (ShopMy/Etsy favourite brand; Tiffany 11:38am: ShopMy brands are favorited too).
