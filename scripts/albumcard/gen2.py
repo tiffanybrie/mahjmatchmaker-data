@@ -71,6 +71,7 @@ tpl = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'card2.html'
 logos = json.load(open(R + 'builder/logos/map.json'))
 BBLOGO = uri(R + 'builder/logos/' + logos['Bird & Bamboo'], 'PNG')
 NAVY = uri(R + spec.get('navy', 'assets/brand/card_navy_logo_v2.png'), 'PNG')  # Nov 6: spec 'navy' = another navy logo box (Juniper: current flame-heart wordmark)
+# Nov 23 2026 (Tiffany): SUPERSEDED for new albums: 'I just want all the racks to just be lined up' = every rack the SAME width on the card (true_len False); rack length vs tile size is handled by which racks we recommend, not by drawing them shorter.
 # Nov 6 (Tiffany, Juniper round 3): spec 'true_len' -> every rack with a known length (config/rack-lengths.json) is drawn at its
 # REAL relative length: the rack body (trough, measured by rack_body.py) = inches / 18.5 x the old body length.
 TL = json.load(open(R + 'config/rack-lengths.json'))['inches'] if spec.get('true_len') else {}

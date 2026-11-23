@@ -15,5 +15,8 @@ def warp(q, w, h): return src.transform((w, h), Image.PERSPECTIVE, coeffs([(0, 0
 W = 1400
 body = warp([(28, 212), (1345, 190), (1400, 358), (72, 477)], W, 240)
 push = warp([(0, 0), (1345, 138), (1345, 186), (0, 92)], W, 84)
-out = Image.new('RGBA', (W, 290), (0, 0, 0, 0)); out.alpha_composite(push, (0, 0)); out.alpha_composite(body, (0, 48))
+# Nov 23 11:09am (Tiffany: 'hard to see the scallop'): the pusher stands 66px above the rack (was 48) and is toned 4% so the scalloped strip separates from the body
+import numpy as _np
+_p = _np.asarray(push).astype(float); _p[..., :3] *= 0.955; push = Image.fromarray(_p.astype('uint8'), 'RGBA')
+out = Image.new('RGBA', (W, 308), (0, 0, 0, 0)); out.alpha_composite(push, (0, 0)); out.alpha_composite(body, (0, 66))
 out.save(R + 'assets/racks/card/middle--main-milk-glass-scalloped-linear.png', optimize=True)
