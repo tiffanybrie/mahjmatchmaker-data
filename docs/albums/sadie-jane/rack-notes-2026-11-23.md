@@ -117,3 +117,25 @@ C. Bird & Bamboo library page: all colours rendered, with a place for notes and 
 - Virora hot pink approved ("so much better"). Virora's hinged rack looks the same style as Oh My Mahjong's (colour-test the two hot pinks); racks look better with the pusher CLOSED.
 - RACK LENGTH vs TILE SIZE (new rule): Virora's SCALLOPED racks are 19in, not 20in. Larger tiles (Miss Mahjong, Sunday Mahjong, others: read the listing) need a 20in rack; Oh My Mahjong and Bam Bird tiles are smaller (18.5in and up are fine). When doing a tile set, read the tile size on the listing and only recommend racks long enough for it.
 - Virora hinged colours that could stand in for OMM racks: only Ivory and Hot Pink: "forget it".
+
+## Part 9 (11:08-11:21am ET)
+- M&Moon Pink & Blue Grandmillennial: opal scallop not milk glass (off-white background). RULE: bright white = milk glass; off-white / ivory / very light beige = iridescent opal.
+- Gigi: Peachy + a light blue (cornflower scallop or icy blue; Claude's call) -> Miss Mahjong Cornflower Blue Scalloped.
+- CANE RACK: Mahjong Register Cane Cabana is very orange; keep it on Hamptons Hydrangea for now, but FIND a partner with a natural / neutral cane (rattan) rack (Tala Mahj? anyone?). Long-term.
+- BIRD & BAMBOO WOOD RACKS (e.g. 'Clear') must LOOK LIKE WOOD like every other wood rack, never a flat tone bar: "that definitely needs a strong correction".
+- Pastel Floral: keep the opal scallop; pop the PINK from the centre instead of Seafoam (too tonal).
+- Year of the Horse: not Ocean Slate (not that blue; more a cornflower); the opal scallop does not really match; use colours that are IN the mat: Bird & Bamboo Wine is one.
+- Peony Reverie: drop Pebble (a grey): Periwinkle Blue + one more, darker blue (two dark blues).
+- Refined Blue ok. Peach Metallic on the Charleston leather good. Desert Blooms, Pastel Opaline, Pink Wildflower, Roseveil, Hummingbird good (moving Hummingbird and Garden Party up).
+- SHELL PINK renders wrong (reads grey): in real life it is almost white with the slightest pink ("a pink white", lighter than the Butterfly Belle butterfly background). Re-render the colour; Shell Pink is the right pick for Butterfly Belle.
+- Bam Bird Indigo (Livy) not the same length as the others: all uniform and lined up. Indigo on Livy is right.
+- Pink Hydrangea: My Fair Magenta is too dark: fix.
+- Virora Pink scallop image may have a cut-out error: check. Blushing Blooms: if Anders Ruff has a second (light pink) rack use it: follow the mat.
+- JULIA: did she place it too low? It also looks low resolution. Tell her about it.
+- THE KERRY (Betty June & Jeannette): do they sell other versions of that pattern (less bright / more muted)? If so bring them all in.
+
+## Part 10 (11:24-11:31am ET): album structure idea
+- Heron: opal scallop + Miss Mahjong cornflower blue scallop (peach sorbet fights it).
+- "Go ahead and make whatever changes you need, including Middle & Main": she takes Claude's recommendation on the M&M scallop (keep their real small scallops).
+- She asked Claude's top 10 wow matches (docs/albums/sadie-jane/claude-top-10-wow-matches.jpg).
+- IDEA (hers, asked 'is that a good idea?'): for Oh My Mahjong sets, split the album into "Oh My Mahjong matches for Sadie Jane" (OMM mats, retired ones included: buyers already own them) and "Cross-brand matches for Sadie Jane"; social shares the OMM section as its own piece (OMM-only, reshare-able; answers 'what mats go with this?' in groups like Mahji Mentor) and the cross-brand section separately; each section ordered on its own merits. She feels she needs two versions of the album.
