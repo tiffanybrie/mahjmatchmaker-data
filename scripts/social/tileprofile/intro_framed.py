@@ -46,7 +46,7 @@ labs = ''.join(f'{ab(M(798, 0)[0] + 12, M(0, y)[1] - 17, "display:flex;align-ite
 capy = M(0, 760)[1]
 LY = P.get('layers') or {}
 if LY.get('labels'):   # Juniper-style sets (Nov 10): layer arrows on OMM's own tile photo + wheel notes from the profile, no Papaya text
-    sc = 380 / 732; ox, oy = 110, 200
+    sc = 380 / LY.get('img_w', 732); ox, oy = 110, 200
     pts = [(ox + x * sc, oy + y * sc, t, c) for x, y, t, c in LY['labels']]
     lys = (LY.get('label_y') or [310, 390, 470])[:len(pts)]
     lx = 520 if LY.get('label_y') else 500   # Nov 10: short leaders off the right edge, text beside the layers
@@ -77,7 +77,7 @@ def chip(n, h, w, sw, fs, hs):
 mains = ''.join(chip(n, h, 236, 66, 27, 16) for n, h in ([(b[0].title() if b[0].islower() else b[0], b[1]) for b in hc['backs']][:3] if LY.get('labels') else [('Papaya', cpap), ('Lavender', clav), ('Light lime', clime)]))
 sw = (W - 3 * 16) // 4; sups = [chip(n, h, sw, 40, 23, 14) for n, h in hc['supporting']]
 s3 = (hdr(('Her faces', 84)) +
-      f'<div style="position:absolute;left:{L}px;top:192px;width:{W}px;height:470px;border-radius:20px;background:#fff url({url(H + "/faces-crop.jpg")}) center/cover;box-shadow:0 0 0 8px #fff,0 12px 26px rgba(6,40,90,.16)"></div>'
+      f'<div style="position:absolute;left:{L}px;top:192px;width:{W}px;height:470px;border-radius:20px;background:#fff url({url(P["faces_grid"]) if P.get("faces_grid") else url(H + "/faces-crop.jpg")}) center/{"contain no-repeat" if P.get("faces_grid") else "cover"};box-shadow:0 0 0 8px #fff,0 12px 26px rgba(6,40,90,.16)"></div>'
       + cl('Main colors', 700, '<span style="font:400 21px Bit;color:#5a6b85;margin-left:12px">her back + layers</span>') +
       f'{ab(L, 736, "display:flex;gap:20px", W)}{mains}</div>'
       + cl('Supporting colors', 900, '<span style="font:400 21px Bit;color:#5a6b85;margin-left:12px">from her faces</span>') +
@@ -159,9 +159,17 @@ if FL:
                  f'<div class="cap" style="position:absolute;left:{L}px;top:80px;font-size:66px;line-height:1">But she likes to<br>play the field</div>'
                  f'{ab(L, 228, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">Try {e(P["name"])} on {depth}+ mats in Find <span style="font-style:italic">Your</span> Mat-ch&trade;</div></div>'
                  f'{ab(L, 292, "display:grid;grid-template-columns:360px 360px;gap:22px 28px", W)}{tiles}</div>')
+    if FL.get('mats2'):   # Tiffany Nov 23 8:17pm: another round of her OMM mats
+        tiles2 = ''.join(f'<div><div style="width:360px;height:360px;border-radius:18px;background:url({url(f["img"])}) center/cover;box-shadow:0 8px 20px rgba(6,40,90,.16)"></div>'
+                         f'<div style="margin-top:10px;font:700 23px/1.1 Bit;color:var(--navy)">{e(f["mat"])}</div><div style="font:400 19px Bit;color:#5a6b85;margin-top:3px">{e(f["brand"])}</div></div>'
+                         for f in FL['mats2'][:4])
+        NATIVE[9] = (f'<div class="caps" style="position:absolute;left:{L}px;top:48px;font-size:17px;color:#5a6b85">{e(P["name"])} · her profile</div>'
+                     f'<div class="cap" style="position:absolute;left:{L}px;top:80px;font-size:66px;line-height:1">{FL.get("title2", "And she&rsquo;s still<br>playing the field")}</div>'
+                     f'{ab(L, 228, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">Match her up yourself in Find <span style="font-style:italic">Your</span> Mat-ch&trade;</div></div>'
+                     f'{ab(L, 292, "display:grid;grid-template-columns:360px 360px;gap:22px 28px", W)}{tiles2}</div>')
 
 def page(n):
-    bars = ''.join(f'<i style="background:{"#054689" if j == (7 if n == 8 else n) else "rgba(5,70,137,.16)"}"></i>' for j in range(1, 8))
+    bars = ''.join(f'<i style="background:{"#054689" if j == (7 if n in (8, 9) else n) else "rgba(5,70,137,.16)"}"></i>' for j in range(1, 8))
     if n == 1:
         inner = f'<img src="file://{CARD}" style="position:absolute;inset:0;width:100%;height:100%"><div style="position:absolute;left:0;right:0;bottom:0;height:60px;background:#fff"></div>'
     else:
@@ -248,6 +256,11 @@ async def main():
             await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
             png = f'{TMP}/framed-8@2x.png'; await pg.screenshot(path=png)
             Image.open(png).convert('RGB').resize((1080, 1350), Image.LANCZOS).save(f'{OUT}/6b-play-the-field.jpg', quality=93)
+        if 9 in NATIVE:
+            hp = f'{TMP}/framed-9.html'; open(hp, 'w').write(page(9))
+            await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
+            png = f'{TMP}/framed-9@2x.png'; await pg.screenshot(path=png)
+            Image.open(png).convert('RGB').resize((1080, 1350), Image.LANCZOS).save(f'{OUT}/6c-play-the-field-2.jpg', quality=93)
         await b.close()
     shutil.copy(f'{SRC}/7.jpg', f'{OUT}/7.jpg')
     if OPEN: shutil.copy(OUT.replace('-open', '') + '/1.jpg', f'{OUT}/1.jpg')   # slide 1 = the same profile card   # slide 7 = plain graphic, not in the card

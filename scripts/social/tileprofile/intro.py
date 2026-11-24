@@ -39,7 +39,7 @@ end = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, 
  <div class="cap" style="font-size:108px;margin-top:22px;line-height:.95">She&rsquo;s been<br><span style="color:var(--acc)">MAT-ched!</span></div>
  <div style="position:relative;margin-top:34px;width:900px;height:590px">{fan}</div>
  <div class="pf" style="font-size:46px;margin-top:46px">See all <b style="font-weight:600;color:var(--pink)">{P['matches']}</b> of her match cards</div>
- <div class="pill" style="margin-top:22px;background:var(--pink)">link in bio &rarr;</div>
+ {P.get('end_cta_html') or '<div class="pill" style="margin-top:22px;background:var(--pink)">link in bio &rarr;</div>'}
  <div style="margin-top:28px;font:700 30px Bit">Code <span style="color:var(--pink)">MAHJMATCH</span> at {e(P['brand'])}</div>
  <img src="{url('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="width:420px;margin-top:34px">
 </div></body></html>"""

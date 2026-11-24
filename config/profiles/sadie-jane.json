@@ -105,20 +105,20 @@
     "img": "assets/tiles/backs/sadie-jane-layers-joker-cutout.png",
     "labels": [
       [
-        691.0,
-        390.0,
+        628.0,
+        402.0,
         "Denim blue layer",
         "#37709a"
       ],
       [
-        679.0,
-        430.0,
+        626.0,
+        445.0,
         "Pale blue layer",
         "#b3bbc8"
       ],
       [
-        640.0,
-        468.0,
+        612.0,
+        478.0,
         "Blush pink back",
         "#ead2d4"
       ]
@@ -146,7 +146,8 @@
       440,
       500
     ],
-    "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color."
+    "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color.",
+    "img_w": 700
   },
   "her_type": [
     {
@@ -285,8 +286,33 @@
         "mat": "Peri-twinkle",
         "brand": "Oh My Mahjong"
       }
+    ],
+    "mats2": [
+      {
+        "img": "assets/social/sadie-jane-launch/fym-table/sadie-jane-table-jade.jpg",
+        "mat": "Jade",
+        "brand": "Oh My Mahjong"
+      },
+      {
+        "img": "assets/social/sadie-jane-launch/fym-table/sadie-jane-table-year-of-the-horse.jpg",
+        "mat": "Year of the Horse",
+        "brand": "Oh My Mahjong"
+      },
+      {
+        "img": "assets/social/sadie-jane-launch/fym-table/sadie-jane-table-anastasia.jpg",
+        "mat": "Anastasia",
+        "brand": "Oh My Mahjong"
+      },
+      {
+        "img": "assets/social/sadie-jane-launch/fym-table/sadie-jane-table-lotus-cove.jpg",
+        "mat": "Lotus Cove",
+        "brand": "Oh My Mahjong"
+      }
     ]
   },
   "rack_gap": 58,
-  "racks_sub": "Pick up her pink, or choose racks that go with everything."
+  "racks_sub": "Pick up her pink, or choose racks that go with everything.",
+  "faces_grid": "assets/social/sadie-jane-launch/html/faces-grid.jpg",
+  "_faces_note": "Tiffany Nov 23 8:17pm: one of each face (no 5 identical jokers, no blank tiles), winds N E W S shown, clean crop. Built from OMM photo 01.jpg cells.",
+  "end_cta_html": "<div class=\"pill\" style=\"margin-top:22px;background:var(--pink)\">Comment ALBUM</div><div class=\"pf\" style=\"font-size:32px;margin-top:16px;color:#3c4f73\">or match her up yourself in Find <i>Your</i> Mat-ch&trade;</div>"
 }
