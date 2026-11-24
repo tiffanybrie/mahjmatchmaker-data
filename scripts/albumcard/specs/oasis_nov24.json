@@ -1,0 +1,317 @@
+{
+ "_note": "Oasis album DRAFT (Nov 24 2026, Main scheduled run): Claude's by-sight candidates. OMM album rule: opens with a top Oh My Mahjong matches section; Starling is the pair mat. Facebook TNT/other-group recs owed (Chrome).",
+ "groups": {
+  "pair": "Made for Oasis",
+  "omm": "Top Oh My Mahjong matches",
+  "picks": "More mat brands that match Oasis",
+  "holiday": "Holiday",
+  "yours": "Your adds"
+ },
+ "mats": [
+  {
+   "group": "pair",
+   "name": "Starling",
+   "brand": "Oh My Mahjong",
+   "fym": null,
+   "partner": true,
+   "store_url": "https://ohmymahjong.com/products/starling-mat-in-tube",
+   "img": "assets/albums/oasis/adds/oh-my-mahjong-starling-2400.jpg",
+   "box": [
+    12,
+    249,
+    4371,
+    4371
+   ],
+   "why": "Oh My Mahjong's own mat for Oasis, dropping with it Mon Nov 30.",
+   "retired": false,
+   "holiday": false,
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Jade",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/jade-mat-in-tube",
+   "why": "deep teal and jade green garden: the stripe layer and the jade faces",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/oh-my-mahjong-jade.jpg",
+   "box": [
+    157,
+    391,
+    1865,
+    2099
+   ],
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Enchanted",
+   "brand": "Oh My Mahjong",
+   "fym": "alb:amara:Enchanted",
+   "why": "jade green and teal around orchid pink: the whole set in one mat",
+   "retired": true,
+   "holiday": false,
+   "img": "assets/mats/omm-retired/enchanted.jpg",
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Serengeti",
+   "brand": "Oh My Mahjong",
+   "fym": "alb:amara:Serengeti",
+   "why": "teal centre with pink blooms in a pink frame",
+   "retired": true,
+   "holiday": false,
+   "img": "assets/mats/omm-retired/serengeti.jpg",
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Lorelei",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/lorelei-mat",
+   "why": "aqua frame around pink pagodas",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/oh-my-mahjong-lorelei.jpg",
+   "box": [
+    144,
+    397,
+    1862,
+    2102
+   ],
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Birdie Green",
+   "brand": "Oh My Mahjong",
+   "fym": "alb:coquette:Birdie Green",
+   "why": "green with teal peacock fans",
+   "retired": true,
+   "holiday": false,
+   "img": "assets/mats/omm-retired/birdie-green.jpg",
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Larkspur",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/larkspur-mat-in-tube",
+   "why": "green border around a pink-coral centre",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/oh-my-mahjong-larkspur.jpg",
+   "box": [
+    145,
+    384,
+    1849,
+    2096
+   ],
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Heron",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/heron-mat-in-tube",
+   "why": "pink cranes: the orchid pink side",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/oh-my-mahjong-heron.jpg",
+   "box": [
+    130,
+    380,
+    1874,
+    2104
+   ],
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Elysium",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
+   "why": "green lattice, deep teal and pink blossoms",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/oh-my-mahjong-elysium.jpg",
+   "box": [
+    121,
+    373,
+    1862,
+    2116
+   ],
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Green Bamboo Blossoms",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/green-bamboo-blossoms-mahjong-mat",
+   "why": "sage green with pink blossoms and bamboo: the backs and the orchids",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/lets-be-besties-green-bamboo-blossoms.jpg",
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Playing For Keeps",
+   "brand": "Mahj Mood",
+   "fym": "mahjmood.com/playing-for-keeps-mat",
+   "why": "pink and sage ogee",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/mahj-mood-playing-for-keeps.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Mulberry and Sage",
+   "brand": "Wren Mats",
+   "fym": "www.wrenmats.com/3amygp8zy5kl2w9em6hb14uo0mkes6",
+   "why": "sage centre with a berry stripe border",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/leftout/sadie-jane/wren-mats-mulberry-and-sage.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Texas Mon Amour Green",
+   "brand": "Fait à Main",
+   "fym": "faitamainstudio.com/texas-mon-amour-mat-green",
+   "why": "jade green with pink paisley",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/fait-main-texas-mon-amour-green.jpg",
+   "box": [
+    37,
+    37,
+    1042,
+    1042
+   ],
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Hot Tips – Vintage Blooms",
+   "brand": "Peace Love Mahjong",
+   "fym": "peacelovemahjong.com/mahjong-mats-hot-tips?v=52799151112484",
+   "why": "deep teal with coral-pink blooms",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/peace-love-mahjong-hot-tips-vintage-blooms.jpg",
+   "box": [
+    180,
+    175,
+    1298,
+    1304
+   ],
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Midnight Peacock",
+   "brand": "Anders Ruff",
+   "fym": "shop.andersruff.com/midnight-peacock-mahjong-mat",
+   "why": "deep teal and sage with gold palms",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/anders-ruff-midnight-peacock.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Plaid Neoprene – Green with Pink",
+   "brand": "Bam Bird Boutique",
+   "fym": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963852194101",
+   "why": "green plaid with a pink line",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/bam-bird-boutique-plaid-neoprene-green-with-pink.jpg",
+   "box": [
+    107,
+    630,
+    1905,
+    2419
+   ],
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Garden Party – Mulberry",
+   "brand": "My Fair Mahjong",
+   "fym": "myfairmahjong.com/mat-garden-party-mulberry",
+   "why": "orchid-magenta centre in a teal scallop",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/my-fair-mahjong-garden-party-mulberry.jpg",
+   "box": [
+    118,
+    118,
+    961,
+    961
+   ],
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Evergreen Medallion",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/evergreen-medallion-ohbon-studios-artist-mahjong-mat",
+   "why": "sage medallions with pink ribbons",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/lets-be-besties-evergreen-medallion.jpg",
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Sunday Premium",
+   "brand": "Sunday Mahjong",
+   "fym": "sundaymahjong.com/sunday-premium-mahjong-mat",
+   "why": "deep teal with a crane",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/sunday-mahjong-sunday-premium.jpg",
+   "box": [
+    52,
+    53,
+    1143,
+    1145
+   ],
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Green Gingham Premium",
+   "brand": "Sunday Mahjong",
+   "fym": "sundaymahjong.com/green-gingham-premium-mahjong-mat",
+   "why": "jade gingham",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/sunday-mahjong-green-gingham-premium.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Border – Dark Green",
+   "brand": "Peace Love Mahjong",
+   "fym": "peacelovemahjong.com/mahjong-mats-solid-borders?v=52799171395876",
+   "why": "tonal deep green: rests the eye with pink racks",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/oasis/mats/peace-love-mahjong-border-dark-green.jpg",
+   "box": [
+    174,
+    191,
+    1337,
+    1382
+   ],
+   "lowres": false
+  }
+ ]
+}

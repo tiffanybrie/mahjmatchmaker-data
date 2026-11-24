@@ -1608,18 +1608,28 @@
      "#167a7a"
     ]
    ],
-   "racks": [],
-   "rack_imgs": {},
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "rack_imgs": {
+    "Oh My Mahjong Pink Quartz": "assets/racks/card/oh-my-mahjong-pink-quartz.png",
+    "Virora Spring Jade": "assets/racks/card/virora-spring-jade.png"
+   },
    "tile": "assets/tiles/album/oasis.jpg",
    "tag": [
     "Orchids, bamboo and lanterns",
     "marbled jade backs, teal + pink stripes"
    ],
    "mats": [
-    "Starling"
+    "Starling",
+    "Jade",
+    "Enchanted"
    ],
    "mat_imgs": {
-    "Starling": "assets/launches/starling-mat/01-Matt_Starling_a.jpg"
+    "Starling": "assets/albums/oasis/adds/oh-my-mahjong-starling-2400.jpg",
+    "Jade": "assets/albums/oasis/mats/oh-my-mahjong-jade.jpg",
+    "Enchanted": "assets/mats/omm-retired/enchanted.jpg"
    },
    "shop": "Shop Oasis · Oh My Mahjong",
    "shop_m": "Shop Oasis · Oh My Mahjong",
