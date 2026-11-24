@@ -1783,3 +1783,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-11-23 11:53pm Tiffany: 'These become great stickers too': new card size 'Sticker' = the whole phone on a see-through background (PNG), Phone view only (r2u).
 - 2026-11-23 11:55pm Tiffany: sticker bottom edges needed revision (screen ran over the bezel): screen now ends inside the bezel with rounded corners + home bar (r2u2). She likes the sticker option.
 - 2026-11-23 11:58pm Tiffany: APPROVED the FYM Phone view story card ('the output here is very good'): r2u2 = the reference (assets/social/approved/fym-phone-story-approved-2026-11-23.png). Future phone/story cards start from it.
+- 2026-11-23 11:58pm Tiffany: 'Make sure resolution is there': checked every image drawn on the phone card (2160x3840): only the Find Your Mat-ch lockup PNG was blown up (1.4x, soft); now drawn as live text, sharp. All photos are drawn at or below their own size.
