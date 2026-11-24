@@ -35,44 +35,44 @@ Sources: brand list = codes-page brands (google-codes-audit/brand-pages-verified
 | Mac + Miller | macandmillermahjong.com | Nov 7 | receiving |
 | Britt Mills | brittmillsdesign.com | Oct 28 | receiving |
 | Anders Ruff | andersruff.com | Oct 20 | receiving, but stale (only affiliate notices since). Nov 16: their AR Insiders Club signup form does not load on the site, so no re-signup possible; recheck |
-| Bam Bird | bambirdboutique.com | Aug 12 | STALE Nov 23 (nothing arrived since signup; needs Tiffany: hCaptcha): signed up 2026-11-16 ~11:30pm ET (site footer form in her Chrome; page showed "Thanks for subscribing", URL got ?customer_posted=true). Old row was wrong: the Nov 7 popup signup never took (no Bam Bird mail reached mahjmatchmaker@ after Aug 12, while tiffanybrie@ got 7 Bam Bird newsletters Oct 22 to Nov 12). Retried 2026-11-17 9:02am ET in the cloud browser: www.bambirdboutique.com/pages/newsletter-signup-form, "UNLOCK 10% OFF" popup with mahjmatchmaker@, showed "THANKS FOR SIGNING UP!" (no human check; SMS step declined). No welcome mail by 9:05am; weekly check confirms. |
+| Bam Bird | bambirdboutique.com | Aug 12 | signed up 2026-11-23 ~11:20pm by Tiffany (captcha); waiting for the first email, check Nov 24 |
 | Peace Love Mahjong | peacelovemahjong.com | Nov 10 | receiving |
 | Miss Mahjong | missmahjong.com | Nov 10 | receiving |
 | Royal Mahjong Society | theroyalmahjongsociety.com | Nov 14 | receiving |
-| Oh My Mahjong | ohmymahjong.com | Oct 23 | re-signed 2026-11-16 (popup took the email; SMS step declined). Was stale |
+| Oh My Mahjong | ohmymahjong.com | Oct 23 | signed up 2026-11-23 ~11:20pm by Tiffany (captcha); waiting for the first email, check Nov 24 |
 | Soirée All Day | soireeallday.co | Nov 9 | receiving |
 | Sweet Jojo | sweetjojomahjong.com | Nov 14 | receiving |
 | I Love Mahj | ilovemahj.com | - | no newsletter: online game platform, no email box without an account (rechecked Nov 16) |
 | Charleston Mahjong Club | charlestonmahjongclub.com | Nov 10 | receiving |
-| Amahj | amahjline.com | none | needs Tiffany: hCaptcha on the footer form (retried Nov 16) |
+| Amahj | amahjline.com | none | receiving (welcome arrived Nov 23 11:2xpm) |
 | Amanda Toppe | amandatoppeart.com | Nov 8 | receiving |
-| Bam! Let's Mahjong | bamletsmahjong.com | none | needs Tiffany: popup requires a phone number, footer form has hCaptcha (Nov 16) |
+| Bam! Let's Mahjong | bamletsmahjong.com | none | signed up 2026-11-23 ~11:20pm by Tiffany (captcha); waiting for the first email, check Nov 24 |
 | Bespoke | bespokemahjong.com | Nov 7 | receiving |
 | Bird & Bamboo | birdandbamboo.com | Nov 11 | receiving |
 | Fait à Main | fait-a-main.com | Nov 8 | receiving (welcome only so far) |
 | Hip Hip | hiphipmahjong.com | - | no newsletter: no signup form on the site (rechecked Nov 16) |
-| Let's Be Besties | letsbebesties.com | none | needs Tiffany: popup submit triggers an hCaptcha challenge (Nov 16) |
+| Let's Be Besties | letsbebesties.com | none | receiving (welcome arrived Nov 23 11:2xpm) |
 | Let's Mahj On | letsmahj-on.com | none | signed up 2026-11-16 (footer form, customer_posted=true "Thanks for subscribing"); the Nov 8 popup signup never delivered |
-| Mahj Mood | mahjmood.com | Oct 28 (affiliate only) | needs Tiffany: footer hCaptcha (Nov 16) |
-| Mahj Squad | mahjsquad.com | none | needs Tiffany: Nov 8 signup never delivered; footer now shows an hCaptcha challenge (Nov 16) |
+| Mahj Mood | mahjmood.com | Oct 28 (affiliate only) | receiving (welcome arrived Nov 23 11:2xpm) |
+| Mahj Squad | mahjsquad.com | none | signed up 2026-11-23 ~11:20pm by Tiffany (captcha); waiting for the first email, check Nov 24 |
 | Mahj & Vine | mahjandvine.com | Nov 8 | receiving (welcome) |
 | The Mahjong Co. | mahjongco.com | Nov 8 | receiving (confirmed) |
 | Mahjong Register | mahjongregister.com | - | no newsletter: no signup form on the site (rechecked Nov 16) |
 | Mahjong Studios | mahjongstudios.com | Nov 8 | receiving |
-| Middle & Main | www.middleandmainmahjong.com | none yet | signed up 2026-11-16 (10% popup, first name + email: "A Little Treat, Just for You!" code shown). Store is LIVE: use the www address; the bare domain without www shows Shopify's "store unavailable" page, which is NOT the store. |
+| Middle & Main | www.middleandmainmahjong.com | none yet | signed up 2026-11-23 ~11:20pm by Tiffany (captcha); waiting for the first email, check Nov 24 |
 | Mini Mahjer | minimahjer.com | Nov 16 | signed up 2026-11-16 (popup, first name + email; SMS step skipped); welcome email arrived 11:43pm ET |
-| My Fair | myfairmahjong.com | none | needs Tiffany: footer hCaptcha (Nov 16) |
-| The Mahjong Press | themahjongpress.com | none | needs Tiffany: footer hCaptcha (Nov 16) |
-| Tigre de Tartán | tigredetartan.com | affiliate only | needs Tiffany: footer hCaptcha (Nov 16) |
+| My Fair | myfairmahjong.com | none | signed up 2026-11-23 ~11:20pm by Tiffany (captcha); waiting for the first email, check Nov 24 |
+| The Mahjong Press | themahjongpress.com | none | signed up 2026-11-23 ~11:20pm by Tiffany (captcha); waiting for the first email, check Nov 24 |
+| Tigre de Tartán | tigredetartan.com | affiliate only | signed up 2026-11-23 ~11:20pm by Tiffany (captcha); waiting for the first email, check Nov 24 |
 | Virora | viroramahjong.com | affiliate only | needs Tiffany: Nov 8 popup signup never confirmed; site now shows no email box (popup suppressed, no footer form) |
 | Wren Mats | wrenmats.com | - | no newsletter: their own form says it "needs a storage option" (signup not connected), Nov 16 |
-| Splash of Color | splashofcolorco.com | none | signed up 2026-11-16 (15% popup, marketing-email box ticked; code shown) |
+| Splash of Color | splashofcolorco.com | none | signed up 2026-11-23 ~11:20pm by Tiffany (captcha); waiting for the first email, check Nov 24 |
 | Yellow Mountain Imports | ymimports.com | Nov 16 | confirmed 2026-11-16 (footer form, then Klaviyo confirm link clicked: "You're All Set") |
 | Mah Jongg Maven | mahjonggmaven.com | Nov 10 | receiving (confirmed) |
 | Mahjong by SI | mahjongbysi.com | Nov 16 | receiving |
 | Maison Mahj | maisonmahj.com | Nov 4 | receiving |
 | YOLO Mahjong | yolomahjong.com | Nov 16 | receiving (welcome) |
-| Mahj Pit | mahjpit.co | affiliate only | needs Tiffany: only form is hCaptcha-protected (Nov 16) |
+| Mahj Pit | mahjpit.co | affiliate only | signed up 2026-11-23 ~11:20pm by Tiffany (captcha); waiting for the first email, check Nov 24 |
 | Noli June | nolijune.com | Nov 15 | receiving |
 | Sunday Mahjong | sundaymahjong.com | Nov 8 | receiving |
 | Bird Bam Tiles | birdbamtiles.com | Nov 12 | receiving |
@@ -81,9 +81,9 @@ Sources: brand list = codes-page brands (google-codes-audit/brand-pages-verified
 | Hutch & Nook | hutchandnook.com | Nov 16 | signed up 2026-11-16 (popup, first name + email); welcome email arrived |
 | Lucky Bam | luckybam.com | Nov 8 | receiving |
 | Mahj Tile Haus | mahjtilehaus.com | Oct 26 | receiving |
-| Mahjong Moxie | mahjong-moxie.com | none | needs Tiffany: hCaptcha (Nov 16) |
+| Mahjong Moxie | mahjong-moxie.com | none | signed up 2026-11-23 ~11:20pm by Tiffany (captcha); waiting for the first email, check Nov 24 |
 | Ozark Mahjongg | ozarkmahjongg.com | none | signed up 2026-11-16 (Wix form, "Thanks for joining our mailing list") |
-| Rebecca Illustrated | rebeccaillustrated.com | none | needs Tiffany: hCaptcha (Nov 16) |
+| Rebecca Illustrated | rebeccaillustrated.com | none | signed up 2026-11-23 ~11:20pm by Tiffany (captcha); waiting for the first email, check Nov 24 |
 | Piper Chase Studios | etsy.com/shop/PiperChaseStudios | - | no newsletter: Etsy shop only |
 | LoveShackFancy | loveshackfancy.com | Nov 16 | receiving |
 | Brewtifully | shop.brewtifully.com | affiliate only | signed up 2026-11-19 ~12:50pm ET (footer form in her Chrome, no captcha; "Thanks for subscribing", URL got ?customer_posted=true). No double opt-in needed yet; weekly check confirms first newsletter |
