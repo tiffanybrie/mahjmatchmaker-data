@@ -1,0 +1,18 @@
+{
+ "_about": "Album record (Album Playbook). Started Nov 24 2026 1:25am by Main, step 0 only.",
+ "set": "beaumont",
+ "name": "Beaumont",
+ "brand": "Oh My Mahjong",
+ "status": "STEP 0 done (tile pile shot). Next: FYM set + colour card, TNT/other-groups research (Chrome), pool pull, by-sight pass, cards, review page.",
+ "slot_hint": "OMM drop Fri Nov 27 2026 (with the Lily mat); album staged hidden before then",
+ "pair_mat": "Lily (Oh My Mahjong, launches with Beaumont)",
+ "tile_photo": {
+  "file": "assets/tiles/album/beaumont.jpg",
+  "inset": "assets/tiles/album/beaumont.jpg",
+  "source": "assets/launches/beaumont-tiles/05-Tile_Beaumont_f.jpg (OMM listing tile pile shot, no bag)",
+  "pile_shot": true,
+  "basis": "Tile pile rule (Nov 19 3:27pm) + Tiffany Nov 24 1:13am: OMM albums need no tile pick",
+  "asked_at": null,
+  "approved_at": "2026-11-24T01:25:00-05:00"
+ }
+}
