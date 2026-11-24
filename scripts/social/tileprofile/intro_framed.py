@@ -75,13 +75,13 @@ def chip(n, h, w, sw, fs, hs):
     return (f'<div style="width:{w}px;background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(5,40,90,.13);overflow:hidden"><div style="height:{sw}px;background:{h}"></div>'
             f'<div style="padding:9px 6px 10px;text-align:center"><div style="font:700 {fs}px/1.1 Bit;color:var(--navy)">{e(n)}</div><div style="font:500 {hs}px Bit;letter-spacing:.06em;color:#7a879c;margin-top:4px">{h.upper()}</div></div></div>')
 mains = ''.join(chip(n, h, 236, 66, 27, 16) for n, h in ([(b[0].title() if b[0].islower() else b[0], b[1]) for b in hc['backs']][:3] if LY.get('labels') else [('Papaya', cpap), ('Lavender', clav), ('Light lime', clime)]))
-sw = (W - 3 * 16) // 4; sups = [chip(n, h, sw, 40, 23, 14) for n, h in hc['supporting']]
+_ns = max(4, len(hc["supporting"])) if len(hc["supporting"]) <= 5 else 4; sw = (W - (_ns - 1) * 16) // _ns; sups = [chip(n, h, sw, 40, 23, 14) for n, h in hc['supporting']]
 s3 = (hdr(('Her faces', 84)) +
       f'<div style="position:absolute;left:{L}px;top:192px;width:{W}px;height:470px;border-radius:20px;background:#fff url({url(P["faces_grid"]) if P.get("faces_grid") else url(H + "/faces-crop.jpg")}) center/{"contain no-repeat" if P.get("faces_grid") else "cover"};box-shadow:0 0 0 8px #fff,0 12px 26px rgba(6,40,90,.16)"></div>'
       + cl('Main colors', 700, '<span style="font:400 21px Bit;color:#5a6b85;margin-left:12px">her back + layers</span>') +
       f'{ab(L, 736, "display:flex;gap:20px", W)}{mains}</div>'
       + cl('Supporting colors', 900, '<span style="font:400 21px Bit;color:#5a6b85;margin-left:12px">from her faces</span>') +
-      f'{ab(L, 936, "display:flex;gap:16px", W)}{"".join(sups[:4])}</div>{ab(L, 1046, "display:flex;gap:16px", W)}{"".join(sups[4:8])}</div>')
+      f'{ab(L, 936, "display:flex;gap:16px", W)}{"".join(sups[:_ns])}</div>{ab(L, 1046, "display:flex;gap:16px", W)}{"".join(sups[_ns:2*_ns])}</div>')
 
 # ---- slide 4: her best features
 FT = R + (P.get('faces_dir') or f'assets/tiles/faces/{key}/clean/')   # Nov 11: shared faces dir (Deco)
@@ -145,6 +145,13 @@ s6 = (hdr(('Her soulmate', 84)) +   # Tiffany Nov 10 3:49pm: fits 'Her colors / 
       f'<div style="width:212px;height:212px;border-radius:18px;background:url({url(pr["img"])}) center/114%;box-shadow:0 8px 22px rgba(6,40,90,.16)"></div></div>'
       f'{ab(L, 984, "", W)}<div style="display:flex;align-items:center;gap:10px">{VER(34)}<span class="caps" style="font-size:20px;color:var(--pink)">Official pair</span></div>'
       f'<div style="font:400 29px/1.35 Bit;margin-top:10px;color:#2c3e63;text-wrap:balance">{e(pr["why"]).replace("light lime", "light&nbsp;lime")}</div></div>')
+if pr.get('big'):   # Tiffany Nov 23 8:25pm: one big photo of the tiles on the mat, no circle tile + mat thumbnails
+    s6 = (hdr(('Her soulmate', 84)) +
+          f'{ab(L, 166, "", W)}<div class="pf" style="font-size:{31 if len(pr["mat"]) < 16 else 26}px;color:#3c4f73;white-space:nowrap">Her official {e(pr["brand"])} mat pair: <b style="font-weight:600;color:var(--navy)">{e(pr["mat"])}</b></div></div>'
+          f'<div style="position:absolute;left:{L}px;top:226px;width:{W}px;height:740px;border-radius:22px;background:url({url(pr["together"])}) {pr.get("big_pos", "50% 45%")}/cover;box-shadow:0 10px 26px rgba(6,40,90,.16)">'
+          f'<div style="position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.93);border-radius:99px;padding:8px 18px;font:600 20px Bit;color:var(--navy)">{e(cap)}</div></div>'
+          f'{ab(L, 1000, "", W)}<div style="display:flex;align-items:center;gap:10px">{VER(34)}<span class="caps" style="font-size:20px;color:var(--pink)">Official pair</span></div>'
+          f'<div style="font:400 29px/1.35 Bit;margin-top:10px;color:#2c3e63;text-wrap:balance">{e(pr["why"])}</div></div>')
 NATIVE = {2: s2, 3: s3, 4: s4, 5: s5, 6: s6}
 # ---- card 8 (sits after 'Her soulmate'): "But she likes to play the field" (Tiffany Nov 10 3:56pm): her matches across brands,
 # shown in Find Your Mat-ch's own Table view, so the profile ends in the tool, not on one mat.
@@ -157,15 +164,15 @@ if FL:
                     for f in FL['mats'][:4])
     NATIVE[8] = (f'<div class="caps" style="position:absolute;left:{L}px;top:48px;font-size:17px;color:#5a6b85">{e(P["name"])} · her profile</div>'
                  f'<div class="cap" style="position:absolute;left:{L}px;top:80px;font-size:66px;line-height:1">But she likes to<br>play the field</div>'
-                 f'{ab(L, 228, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">Try {e(P["name"])} on {depth}+ mats in Find <span style="font-style:italic">Your</span> Mat-ch&trade;</div></div>'
+                 f'{ab(L, 228, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">{FL.get("sub") or f'Try {e(P["name"])} on {depth}+ mats in Find <span style="font-style:italic">Your</span> Mat-ch&trade;'}</div></div>'
                  f'{ab(L, 292, "display:grid;grid-template-columns:360px 360px;gap:22px 28px", W)}{tiles}</div>')
     if FL.get('mats2'):   # Tiffany Nov 23 8:17pm: another round of her OMM mats
         tiles2 = ''.join(f'<div><div style="width:360px;height:360px;border-radius:18px;background:url({url(f["img"])}) center/cover;box-shadow:0 8px 20px rgba(6,40,90,.16)"></div>'
                          f'<div style="margin-top:10px;font:700 23px/1.1 Bit;color:var(--navy)">{e(f["mat"])}</div><div style="font:400 19px Bit;color:#5a6b85;margin-top:3px">{e(f["brand"])}</div></div>'
                          for f in FL['mats2'][:4])
         NATIVE[9] = (f'<div class="caps" style="position:absolute;left:{L}px;top:48px;font-size:17px;color:#5a6b85">{e(P["name"])} · her profile</div>'
-                     f'<div class="cap" style="position:absolute;left:{L}px;top:80px;font-size:66px;line-height:1">{FL.get("title2", "And she&rsquo;s still<br>playing the field")}</div>'
-                     f'{ab(L, 228, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">Match her up yourself in Find <span style="font-style:italic">Your</span> Mat-ch&trade;</div></div>'
+                     f'<div class="cap" style="position:absolute;left:{L}px;top:80px;font-size:66px;line-height:1">But she likes to<br>play the field</div>'
+                     f'{ab(L, 228, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">{FL.get("sub", "")}</div></div>'
                      f'{ab(L, 292, "display:grid;grid-template-columns:360px 360px;gap:22px 28px", W)}{tiles2}</div>')
 
 def page(n):

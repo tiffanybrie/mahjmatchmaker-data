@@ -33,6 +33,13 @@ for (dx, dy, rot, z), c in sorted(zip(_pos, _peek), key=lambda t: t[0][3]):
             f'background-image:url({c});box-shadow:0 0 0 8px #fff,0 12px 28px rgba(6,40,90,.18);transform:rotate({rot}deg);z-index:{z}"></div>')
 fan += (f'<div class="ph" style="position:absolute;left:{450 - 220}px;top:10px;width:440px;height:550px;border-radius:22px;z-index:5;'
         f"background-image:url({url(next((c for c in [f'assets/covers/albums/v2/00-{key}-mahjong-tiles-cover-uniform.jpg'] if os.path.exists(R + c)), f'assets/covers/albums/w800/00-{key}-mahjong-tiles-cover.jpg'))});box-shadow:0 0 0 10px #fff,0 18px 40px rgba(6,40,90,.24)\"></div>")
+if P.get('end_fan'):   # Tiffany Nov 23 8:23pm: newest match card front and centre, cards fanned wide enough to read
+    _cv = url(f'assets/covers/albums/w800/00-{key}-mahjong-tiles-cover.jpg')
+    _items = [(_cv if x == 'cover' else _card(x)) for x in P['end_fan']]
+    _L = [(-300, 46, -10, 1), (300, 46, 10, 1), (0, 0, 0, 3)]
+    fan = ''.join(f'<div class="ph" style="position:absolute;left:{450 - 200 + dx}px;top:{dy + 20}px;width:400px;height:500px;border-radius:20px;'
+                  f'background-image:url({c});background-size:cover;background-position:center;box-shadow:0 0 0 9px #fff,0 16px 34px rgba(6,40,90,.22);transform:rotate({rot}deg);z-index:{z}"></div>'
+                  for (dx, dy, rot, z), c in zip(_L, _items) if c)
 end = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}</style></head><body>
 <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding:96px 80px 0">
  <div class="caps" style="font-size:20px;color:#5a6b85">{e(P['name'])} · {e(P['brand'])}</div>

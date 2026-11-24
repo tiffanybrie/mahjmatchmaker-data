@@ -67,10 +67,6 @@
     "tone": "Soft, clean pastels: blush and denim, nothing earthy.",
     "supporting": [
       [
-        "Denim blue",
-        "#366ea3"
-      ],
-      [
         "Navy",
         "#103f67"
       ],
@@ -238,11 +234,13 @@
       "mat": "Serendipity",
       "brand": "Oh My Mahjong",
       "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-serendipity-2400.jpg",
-      "together": "assets/launches/omm-serendipity-mat-in-tube/02-SadieJane_Serendipity-matcrop.jpg",
+      "together": "assets/social/sadie-jane-launch/fym-table/sadie-jane-table-serendipity.jpg",
       "together_fit": "cover",
-      "together_caption": "Sadie Jane on Serendipity, in Oh My Mahjong's own photo",
+      "together_caption": "Sadie Jane on Serendipity, set up in Find Your Mat-ch",
       "why": "Sky blue, blush and chartreuse, made for her. Both drop Wed 11/25.",
-      "circle": "assets/tiles/album/sadie-jane.jpg"
+      "circle": "assets/tiles/album/sadie-jane.jpg",
+      "big": true,
+      "big_pos": "50% 50%"
     },
     "sisters": [],
     "strong_label": "Strong match potential"
@@ -308,11 +306,17 @@
         "mat": "Lotus Cove",
         "brand": "Oh My Mahjong"
       }
-    ]
+    ],
+    "sub": "Her top 8 Oh My Mahjong matches"
   },
   "rack_gap": 58,
   "racks_sub": "Pick up her pink, or choose racks that go with everything.",
   "faces_grid": "assets/social/sadie-jane-launch/html/faces-grid.jpg",
   "_faces_note": "Tiffany Nov 23 8:17pm: one of each face (no 5 identical jokers, no blank tiles), winds N E W S shown, clean crop. Built from OMM photo 01.jpg cells.",
-  "end_cta_html": "<div class=\"pill\" style=\"margin-top:22px;background:var(--pink)\">Comment ALBUM</div><div class=\"pf\" style=\"font-size:32px;margin-top:16px;color:#3c4f73\">or match her up yourself in Find <i>Your</i> Mat-ch&trade;</div>"
+  "end_cta_html": "<div class=\"pill\" style=\"margin-top:22px;background:var(--pink)\">Comment ALBUM</div><div class=\"pf\" style=\"font-size:32px;margin-top:16px;color:#3c4f73\">or match her up yourself in Find <i>Your</i> Mat-ch&trade;</div>",
+  "end_fan": [
+    "cover",
+    "oh-my-mahjong-vivara",
+    "oh-my-mahjong-serendipity"
+  ]
 }
