@@ -4,19 +4,25 @@
   {
    "date": "2026-11-24",
    "day": "Tue 11/24",
-   "time": "1pm ET",
+   "time": "LIVE since 1pm ET",
    "brand": "Mahj Tile Haus",
    "partner": true,
-   "what": "Rosemary Beach Tiles + Mat bundle and Coral & Coast Holiday Bundle launch Tue 11/24 at 1pm ET. Product pages are published but not purchasable yet.",
+   "what": "Rosemary Beach Tiles + Mat bundle and Coral & Coast Holiday Bundle are live now (launched Tue 11/24 at 1pm ET), with the 45-piece Holiday Supplement tiles.",
    "tag": "tiles",
    "urgency": "NOW",
    "buy": "https://www.mahjtilehaus.com/products/rosemary-beach-tiles-mat-bundle",
    "url": "https://www.mahjtilehaus.com/products/coral-coast-holiday-bundle",
    "source": "email + store feed",
    "source_kind": "email",
-   "found": "2026-11-23T09:50",
+   "found": "2026-11-24T13:35",
    "order": 50,
-   "hidden": true
+   "hidden": true,
+   "history": [
+    {
+     "found": "2026-11-23T09:50",
+     "what": "Rosemary Beach Tiles + Mat bundle and Coral & Coast Holiday Bundle launch Tue 11/24 at 1pm ET. Product pages are published but not purchasable yet."
+    }
+   ]
   },
   {
    "partner": true,
@@ -33,7 +39,7 @@
    "new": true,
    "buy": "https://www.ohmymahjong.com/products/sadie-jane-mahjong-tiles",
    "url": "https://www.ohmymahjong.com/products/sadie-jane-mahjong-tiles",
-   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Tile_SadieJane_a.jpg?v=1784046943"
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/sadie-jane-mahjong-tiles-5846734.jpg?v=1795098315"
   },
   {
    "partner": true,
@@ -50,7 +56,7 @@
    "new": true,
    "buy": "https://www.ohmymahjong.com/products/serendipity-mat-in-tube",
    "url": "https://www.ohmymahjong.com/products/serendipity-mat-in-tube",
-   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Mat_Serendipity_a.jpg?v=1784046007"
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/serendipity-mat-in-tube-7756305.jpg?v=1795098311"
   },
   {
    "partner": true,
@@ -66,7 +72,7 @@
    "tag": "tiles",
    "buy": "https://www.ohmymahjong.com/products/beaumont-mahjong-tiles",
    "url": "https://www.ohmymahjong.com/products/beaumont-mahjong-tiles",
-   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Tile_Beaumont_a.jpg?v=1791310819"
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/beaumont-mahjong-tiles-8492408.jpg?v=1795512429"
   },
   {
    "partner": true,
@@ -82,10 +88,56 @@
    "tag": "mat",
    "buy": "https://www.ohmymahjong.com/products/lily-mat-in-tube",
    "url": "https://www.ohmymahjong.com/products/lily-mat-in-tube",
-   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Matt_Lily_a.jpg?v=1795196472"
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/beaumont-ultimate-starter-kit-6430028.jpg?v=1795512431"
   }
  ],
  "coming_soon": [
+  {
+   "partner": true,
+   "urgency": "SOON",
+   "found": "2026-11-24T13:35",
+   "date": null,
+   "day": null,
+   "time": "Pre-order open",
+   "brand": "Sweet Jojo",
+   "what": "Celestial Pearl Collection American mahjong tile set (160 pieces) is open for pre-order. Ship date not stated.",
+   "tag": "tiles",
+   "buy": "https://sweetjojomahjong.com/products/celestial-pearl-collection-american-mahjong-tile-set-160pc",
+   "url": "https://sweetjojomahjong.com/products/celestial-pearl-collection-american-mahjong-tile-set-160pc",
+   "source_kind": "store",
+   "new": true
+  },
+  {
+   "partner": true,
+   "urgency": "LATER",
+   "found": "2026-11-24T13:35",
+   "date": null,
+   "day": null,
+   "time": "No date yet",
+   "brand": "Mac + Miller Mahjong",
+   "what": "New Golden Heirloom Mahjong Tile Set (full size), Heirloom Collection Fire + Fortune, is listed on their site. No date yet.",
+   "tag": "tiles",
+   "buy": "https://www.macandmillermahjong.com/products/golden-heirloom-tile-set-full-size",
+   "url": "https://www.macandmillermahjong.com/products/golden-heirloom-tile-set-full-size",
+   "source_kind": "store",
+   "new": true
+  },
+  {
+   "partner": true,
+   "urgency": "LATER",
+   "found": "2026-11-24T12:45",
+   "date": "",
+   "day": "",
+   "source": "IG story",
+   "source_kind": "social",
+   "brand": "My Fair Mahjong",
+   "what": "My Fair Mahjong is teasing something new. No name or date yet.",
+   "tag": "teaser",
+   "new": true,
+   "hidden": true,
+   "url": "https://www.instagram.com/stories/myfairmahjong/",
+   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/my-fair-something-new-baking-nov24/my-fair-something-new-baking-ig-story-nov24.jpg"
+  },
   {
    "partner": true,
    "urgency": "LATER",
@@ -467,7 +519,7 @@
    "tag": "tiles",
    "buy": "https://www.ohmymahjong.com/products/oasis-mahjong-tiles",
    "url": "https://www.ohmymahjong.com/products/oasis-mahjong-tiles",
-   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Tile_Oasis_24MP_Shopify.jpg?v=1795188216"
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/oasis-mahjong-tiles-2477834.jpg?v=1795512429"
   },
   {
    "partner": true,
@@ -483,10 +535,46 @@
    "tag": "mat",
    "buy": "https://www.ohmymahjong.com/products/starling-mat-in-tube",
    "url": "https://www.ohmymahjong.com/products/starling-mat-in-tube",
-   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Matt_Starling_a.jpg?v=1795193124"
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/oasis-ultimate-starter-kit-9268281.jpg?v=1795512434"
   }
  ],
  "just_dropped": [
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-24T13:35",
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "LIVE now",
+   "brand": "Bespoke Mahjong",
+   "what": "Back in stock: Bespoke x Corey Paige Color Crush XL Mega Tiles in Hottie Pink.",
+   "tag": "tiles",
+   "buy": "https://www.bespokemahjong.com/products/bespoke-x-corey-paige-color-crush-xl-mega-tiles-hottie-pink-1",
+   "url": "https://www.bespokemahjong.com/products/bespoke-x-corey-paige-color-crush-xl-mega-tiles-hottie-pink-1",
+   "source_kind": "store",
+   "restock": true
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-24T13:25",
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "LIVE now",
+   "brand": "Let's Be Besties",
+   "what": "New on their site: Tipsy Cristmas Mat.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://letsbebesties.com/products/tipsy-cristmas-mahjong-mat",
+   "url": "https://letsbebesties.com/products/tipsy-cristmas-mahjong-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0717/6178/9088/files/MerryMahjongsmallfiles.png?v=1795540504",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "tipsy-cristmas-mahjong-mat"
+   ]
+  },
   {
    "partner": true,
    "urgency": "NOW",
@@ -847,7 +935,7 @@
    "urgency": "NOW",
    "url": "https://www.ohmymahjong.com/products/tennis-shufflers",
    "buy": "https://www.ohmymahjong.com/products/tennis-shufflers",
-   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/TennisShuffler_b.jpg?v=1793583642",
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/tennis-shufflers-1195378.jpg?v=1795098309",
    "found": "2026-11-18T23:39",
    "source": "IG story",
    "source_kind": "social",
@@ -1744,7 +1832,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-24T09:50",
+ "updated": "2026-11-24T13:35",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",
@@ -2038,33 +2126,6 @@
    "kind": "sale"
   },
   {
-   "date": "2026-11-24",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "what": "Bells Of Ireland 4 Layer American Engraved Mahjong Tiles  Blue  Green",
-   "url": "https://splashofcolorco.com/products/bells-of-ireland-4-layer-american-engraved-mahjong-tiles-blue-green",
-   "src": "store"
-  },
-  {
-   "date": "2026-11-23",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "what": "5 new listings: Danny Boy Irish Mahjong Mat Sleek Surface; When Irish Eyes Are Smiling Saint Patrick's  Mahjong Mat Sleek Surface; Monkey Kisses And Peonies Chinoiserie Mahjong Mat Sleek Surface; Peonies & Monkey Kisses Chinoiserie Chic American Mahjong Tiles …",
-   "url": "https://splashofcolorco.com/products/danny-boy-irish-mahjong-mat-sleek-surface",
-   "src": "store"
-  },
-  {
-   "date": "2026-11-22",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "what": "Festive Frankenstein And Bride Modtastic Christmas Mahjong Mat Sleek Surface",
-   "url": "https://splashofcolorco.com/products/festive-frankenstein-and-bride-modtastic-christmas-mahjong-mat-sleek-surface",
-   "src": "store"
-  },
-  {
    "date": "2026-11-20",
    "brand": "Mahjong Studios",
    "partner": true,
@@ -2074,9 +2135,9 @@
    "src": "store"
   }
  ],
- "updatedAt": "2026-11-24T14:28:03+00:00",
+ "updatedAt": "2026-11-24T18:28:18+00:00",
  "sources": {
-  "store_run": "2026-11-24T14:24:19+00:00",
-  "ig_run": "2026-11-24T14:27:42.753061+00:00"
+  "store_run": "2026-11-24T18:24:58+00:00",
+  "ig_run": "2026-11-24T18:27:29.800613+00:00"
  }
 }

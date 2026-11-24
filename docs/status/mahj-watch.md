@@ -1,4 +1,4 @@
-# Mahj Watch: what's new across brands (last 10 days, run Nov 24 14:27 UTC)
+# Mahj Watch: what's new across brands (last 10 days, run Nov 24 18:27 UTC)
 
 Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 
@@ -36,11 +36,11 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Let's Mahj On** [partner] · 2026-11-23 · Drumroll! Next on our catwalk of launches: Let's Be Merry! Whimsical festive sparkly set. Stay tuned for the details! · https://www.instagram.com/p/DgF2Sr-lTBD/
 - **Let's Mahj On** [partner] · 2026-11-23 · Drumroll, please! Next on our little catwalk of launches? Let's Be Merry! We cannot wait to show you this set - think whimsical and festive and everything spark · https://www.instagram.com/p/DgF2Sr-lTBD/
 - **Oh My Mahjong** [partner] · 2026-11-24 · dates: tomorrow · Let's talk pink. Sadie Jane compares to pink tile sets. Sadie Jane launches tomorrow at 10 AM CST. · https://www.instagram.com/reel/DgH5_EMSXwo/
+- **Oh My Mahjong** [partner] · 2026-11-24 · dates: tomorrow · Let's talk pink. A closer look at how Sadie Jane compares to some of our favorite pink tile sets. Sadie Jane launches tomorrow at 10 AM CST. · https://www.instagram.com/reel/DgH5_EMSXwo/
 - **Mahj Tile Haus** [non-partner] · 2026-11-16 · The reveal is almost here. TIDE & LEATHER Coming soon. · https://www.instagram.com/reel/DfybB6vxanu/
+- **Mahj Tile Haus** [non-partner] · 2026-11-23 · dates: tomorrow · Coral & Coast and Rosemary Beach Holiday Supplement Tiles plus return of Aqua Pearl tile. Launching tomorrow at 12 PM CST! · https://www.instagram.com/reel/DgGR4R0JqQ2/
 
 ## Launch
-- **My Fair Mahjong** [partner] · 2026-11-14 · Introducing NEW Mini Mahjong Mats! Six colors: Garden Party (Meadow, Bluebell, Mulberry), Brightside (Pink, Green, Blue). Shop now. · https://www.instagram.com/reel/DfucIYehYFR/
-- **My Fair Mahjong** [partner] · 2026-11-14 · The mini moment we’ve been waiting for!🩵 Introducing our NEW Mini Mahjong Mats!    Small in size, BIG on style and the perfect match for our Mini Travel Mahjong · https://www.instagram.com/reel/DfucIYehYFR/
 - **hiphipmahjong** [partner] · 2026-11-15 · 🍂🀄 Introducing our new series, HOSTESS WITH THE MOSTEST! Submit your HHM tablescapes & Mahj parties for a chance to be featured! Ana is serving up autumn sophis · https://www.instagram.com/p/Dfw9PgLm1gj/
 - **YOLO Mahjong** [partner] · 2026-11-15 · Introducing two newest mats: Winter Ski and Green Christmas. 33-inch surface, 3mm neoprene. Expected delivery early December. yolomahjong.com · https://www.instagram.com/p/DfvgqF7z1Ov/
 - **YOLO Mahjong** [partner] · 2026-11-15 · Two new looks for Christmas Mahjong nights! 🎄🀄  Are you dreaming of snowy slopes or feeling the classic Christmas plaid?  Introducing our two newest Mahjong mat · https://www.instagram.com/p/DfvgqF7z1Ov/
@@ -75,6 +75,8 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Middle & Main Mahjong** [partner] · 2026-11-20 · Wedding Registry Open! {kidding} ... mahjong china plates, four iconic tiles per set, now available on the website. Which category do you fall under? [trimmed] · https://www.instagram.com/p/Df-PsFISDVD/
 - **Middle & Main Mahjong** [partner] · 2026-11-20 · Wedding Registry Open! {kidding, obviously} Who would register for mahjong china for their wedding? These plates are a whimsical homage to our beloved china, bo · https://www.instagram.com/p/Df-PsFISDVD/
 - **My Fair Mahjong** [partner] · 2026-11-23 · For the friendships made and the memories shared. Introducing our NEW Keepsake Collection! Individually designed Keepsake Tiles in five colors: Optic White, For · https://www.instagram.com/reel/DgGMEppy1z-/
+- **My Fair Mahjong** [partner] · 2026-11-23 · Introducing our NEW Keepsake Collection. Shop the NEW Keepsake Collection now! · https://www.instagram.com/reel/DgGMEppy1z-/
+- **Oh My Mahjong** [partner] · 2026-11-24 · PLAY MAHJONG BY OMM IS LIVE IN THE APP STORE! · https://www.instagram.com/reel/DgIhEUVDWVr/
 - **LoveShackFancy** [non-partner] · 2026-11-19 · It’s officially live! Shop the LoveShackFancy x Roller Rabbit Holiday Collaboration of your dreams before it goes to bed 🛌🤍 · https://www.instagram.com/p/Df7WiyXlrqb/
 - **Mahj Tile Haus** [non-partner] · 2026-11-19 · A little wild. Entirely refined.  Introducing Tide & Leather. Where coastal elegance meets equestrian charm.  The collection has arrived.  #mahjtilehaus #mahjon · https://www.instagram.com/reel/Df7rPs0pzdv/
 - **Mahj Tile Haus** [non-partner] · 2026-11-19 · A little wild. Entirely refined.  Introducing Tide & Leather. Where coastal elegance meets equestrian charm.  The collection has arrived.  #mahjtilehaus #mahjon · https://www.instagram.com/reel/Df7rPs0pzdv/
@@ -84,6 +86,7 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Mahj Tile Haus** [non-partner] · 2026-11-22 · There’s something especially magical about Christmas in Rosemary Beach®. The glow of the beautifully lit trees, the festive wreaths adorning familiar doorways,  · https://www.instagram.com/reel/DgDedDrJXuF/
 - **LoveShackFancy** [non-partner] · 2026-11-23 · Snow cute❄️🎀 BOGNER FIRE + ICE x LoveShackFancy is LIVE!!🎿💖✨ · https://www.instagram.com/p/DgF_FQKFhdO/
 - **LoveShackFancy** [non-partner] · 2026-11-23 · First chair, best dressed❄️🎿🎀 BOGNER FIRE + ICE x LoveShackFancy is officially here with the prettiest ski looks for your best-dressed winter yet💖 · https://www.instagram.com/p/DgFcFUAlskd/
+- **Mahj Tile Haus** [non-partner] · 2026-11-24 · Introducing Mahj Tile Haus x Rosemary Beach. The Rosemary Beach Collection is now available. · https://www.instagram.com/reel/DgIjFt0R_TC/
 
 ## Restock
 - **Mahj Pit** [partner] · 2026-11-19 · These beauties are back in stock! · https://www.instagram.com/p/Df5_1lAOiYV/
@@ -98,6 +101,7 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Peace Love Mahjong** [partner] · 2026-11-20 · Spirit of Christmas Tiles BACK IN STOCK; Spirit of Christmas Mats back, limited quantities. · https://www.instagram.com/p/Df-VLWMpadU/
 - **Bam Bird Boutique** [partner] · 2026-11-23 · More in your cart, less at checkout! Enjoy FREE SHIPPING on orders over $300 from Thanksgiving through Cyber Monday. With plenty of tiles in stock, including ou · https://www.instagram.com/p/DgGNxJXg-rp/
 - **Bam Bird Boutique** [partner] · 2026-11-23 · FREE SHIPPING on orders over $300 from Thanksgiving through Cyber Monday. Newly restocked Classic Tortoise. · https://www.instagram.com/p/DgGNxJXg-rp/
+- **Bam Bird Boutique** [partner] · 2026-11-23 · FREE SHIPPING over $300 from Thanksgiving through Cyber Monday. Newly restocked Classic Tortoise. · https://www.instagram.com/p/DgGNxJXg-rp/
 - **LoveShackFancy** [non-partner] · 2026-11-17 · The sweetest holiday sleepover is back. LoveShackFancy x rollerrabbitofficial is back for the holidays with the prettiest prints, coziest PJs and matching momen · https://www.instagram.com/reel/Df2NiQsC6nP/
 
 ## Preorder
@@ -245,6 +249,9 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Oh My Mahjong** [partner] · 2026-11-23 · dates: Nov 30 · Black Friday sale starts Wednesday 10 AM CT until Mon Nov 30 11:59PM CT. $250 15%, $500 20%, $750 25%, free tote while supplies last. · https://www.instagram.com/reel/DgFVJZEy4ZY/
 - **Bird & Bamboo** [partner] · 2026-11-23 · dates: this Wednesday · We WILL be having a Black Friday sale, a BIG one. Details drop this Wednesday. · https://www.instagram.com/p/DgF_3Rsxfgh/
 - **Charleston Mahjong Club** [partner] · 2026-11-23 · Biggest sale of the year, code BLACKFRIDAY; Black Friday through Cyber Monday; Country Club, Yacht Club, Cocktail Club bundles extra discounts. · https://www.instagram.com/p/DgFzXhXREUY/
+- **Oh My Mahjong** [partner] · 2026-11-23 · dates: Nov 30 · Black Friday sale starts Wednesday 10 AM CT until Monday Nov 30 11:59PM CT. Spend $250 15% off, $500 20%, $750 25%, free tote while supplies last. · https://www.instagram.com/reel/DgFVJZEy4ZY/
+- **Bird & Bamboo** [partner] · 2026-11-23 · dates: this Wednesday · We WILL be having a Black Friday sale, a BIG one. All details drop this Wednesday. · https://www.instagram.com/p/DgF_3Rsxfgh/
+- **Charleston Mahjong Club** [partner] · 2026-11-23 · Biggest sale of the year. Use code BLACKFRIDAY. Black Friday through Cyber Monday. Country Club, Yacht Club, Cocktail Club bundles extra discounts. · https://www.instagram.com/p/DgFzXhXREUY/
 - **Mac + Miller Mahjong** [partner] · 2026-11-23 · Thank you to our return customers for making our year Jolly and Bright! Check your emails for the link to purchase our Black Friday sales. If you're worried abo · https://www.instagram.com/p/DgFp0VyTY3U/
 - **The Royal Mahjong Society** [partner] · 2026-11-23 · In stock and ready to ship! Take advantage of our BFCM sale with code: ROYAL20 for 20% off! Which set is your favorite? · https://www.instagram.com/reel/DgF9m3zTezz/
 - **Noli June** [partner] · 2026-11-23 · dates: Nov 30 · Shopping our Black Friday sale is basically wellness. Save up to $376. Now thru Nov 30. Comment FRIDAY for the link. Table: Our Sue Adores a Scallop Mahjong Tab · https://www.instagram.com/reel/DgFqhLJzASg/
@@ -256,8 +263,9 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 ## Collab
 - **Tigre de Tartán** [partner] (image-only brand: never type its name) · 2026-11-21 · dates: December 8 · Might we suggest some scalamandre on your wish list? This exclusive collaboration with The House of Scalamandré is on the top of ours by a mile 🫰. Previews will · https://www.instagram.com/reel/Df_3_OqBUeR/
 - **Tigre de Tartán** [partner] (image-only brand: never type its name) · 2026-11-21 · dates: Dec 8 · Scalamandre exclusive collab with The House of Scalamandre. Previews through launch Tuesday Dec 8 at 4pm CT. · https://www.instagram.com/reel/Df_3_OqBUeR/
+- **Bespoke Mahjong** [partner] · 2026-11-24 · dates: Nov 29 · GRATEFUL FOR YOU GIVEAWAY Grateful Dead x Bespoke Travel Kit; winner announced Sunday Nov 29. · https://www.instagram.com/p/DgIKRTnxwMN/
 - **LoveShackFancy** [non-partner] · 2026-11-17 · dates: November 18th, tomorrow · Shop the limited-edition collaboration tomorrow, one day before the official launch! Custom Embroidery on site and other surprises. Wednesday, November 18th, 3: · https://www.instagram.com/p/Df2b6llC7QT/
 - **LoveShackFancy** [non-partner] · 2026-11-18 · Pajama party on Madison Ave🎀❄️Celebrating the LoveShackFancy x Roller Rabbit holiday collection with the sweetest hot chocolate cart💗 #loveshackfancy #rollerrab · https://www.instagram.com/reel/Df5rl6LsKo0/
 - **LoveShackFancy** [non-partner] · 2026-11-23 · The best dressed on the slopes❄️🩷 BOGNER FIRE+ICE x LoveShackFancy is finally here🫶🏼 · https://www.instagram.com/reel/DgFrlcLiI4S/
 
-Store watcher items in window: 116
+Store watcher items in window: 107

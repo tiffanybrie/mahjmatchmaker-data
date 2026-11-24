@@ -280,20 +280,26 @@
   {
    "date": "2026-11-24",
    "day": "Tue 11/24",
-   "time": "1pm ET",
+   "time": "LIVE since 1pm ET",
    "brand": "Mahj Tile Haus",
    "partner": true,
-   "what": "Rosemary Beach Tiles + Mat bundle and Coral & Coast Holiday Bundle launch Tue 11/24 at 1pm ET. Product pages are published but not purchasable yet.",
+   "what": "Rosemary Beach Tiles + Mat bundle and Coral & Coast Holiday Bundle are live now (launched Tue 11/24 at 1pm ET), with the 45-piece Holiday Supplement tiles.",
    "tag": "tiles",
    "urgency": "NOW",
    "buy": "https://www.mahjtilehaus.com/products/rosemary-beach-tiles-mat-bundle",
    "url": "https://www.mahjtilehaus.com/products/coral-coast-holiday-bundle",
    "source": "email + store feed",
    "source_kind": "email",
-   "found": "2026-11-23T09:50",
+   "found": "2026-11-24T13:35",
    "order": 50,
    "hidden": true,
-   "action": "HIDDEN Nov 23 11pm (Main review of Duet): non-partner (only her matched mats)"
+   "action": "HIDDEN Nov 23 11pm (Main review of Duet): non-partner (only her matched mats)",
+   "history": [
+    {
+     "found": "2026-11-23T09:50",
+     "what": "Rosemary Beach Tiles + Mat bundle and Coral & Coast Holiday Bundle launch Tue 11/24 at 1pm ET. Product pages are published but not purchasable yet."
+    }
+   ]
   },
   {
    "partner": true,
@@ -363,6 +369,36 @@
   }
  ],
  "coming_soon": [
+  {
+   "partner": true,
+   "urgency": "SOON",
+   "found": "2026-11-24T13:35",
+   "date": null,
+   "day": null,
+   "time": "Pre-order open",
+   "brand": "Sweet Jojo",
+   "what": "Celestial Pearl Collection American mahjong tile set (160 pieces) is open for pre-order. Ship date not stated.",
+   "tag": "tiles",
+   "buy": "https://sweetjojomahjong.com/products/celestial-pearl-collection-american-mahjong-tile-set-160pc",
+   "url": "https://sweetjojomahjong.com/products/celestial-pearl-collection-american-mahjong-tile-set-160pc",
+   "source_kind": "store",
+   "new": true
+  },
+  {
+   "partner": true,
+   "urgency": "LATER",
+   "found": "2026-11-24T13:35",
+   "date": null,
+   "day": null,
+   "time": "No date yet",
+   "brand": "Mac + Miller Mahjong",
+   "what": "New Golden Heirloom Mahjong Tile Set (full size), Heirloom Collection Fire + Fortune, is listed on their site. No date yet.",
+   "tag": "tiles",
+   "buy": "https://www.macandmillermahjong.com/products/golden-heirloom-tile-set-full-size",
+   "url": "https://www.macandmillermahjong.com/products/golden-heirloom-tile-set-full-size",
+   "source_kind": "store",
+   "new": true
+  },
   {
    "partner": true,
    "urgency": "LATER",
@@ -803,6 +839,42 @@
   }
  ],
  "just_dropped": [
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-24T13:35",
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "LIVE now",
+   "brand": "Bespoke Mahjong",
+   "what": "Back in stock: Bespoke x Corey Paige Color Crush XL Mega Tiles in Hottie Pink.",
+   "tag": "tiles",
+   "buy": "https://www.bespokemahjong.com/products/bespoke-x-corey-paige-color-crush-xl-mega-tiles-hottie-pink-1",
+   "url": "https://www.bespokemahjong.com/products/bespoke-x-corey-paige-color-crush-xl-mega-tiles-hottie-pink-1",
+   "source_kind": "store",
+   "restock": true
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-24T13:25",
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "LIVE now",
+   "brand": "Let's Be Besties",
+   "what": "New on their site: Tipsy Cristmas Mat.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://letsbebesties.com/products/tipsy-cristmas-mahjong-mat",
+   "url": "https://letsbebesties.com/products/tipsy-cristmas-mahjong-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0717/6178/9088/files/MerryMahjongsmallfiles.png?v=1795540504",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "tipsy-cristmas-mahjong-mat"
+   ]
+  },
   {
    "partner": true,
    "urgency": "NOW",
@@ -2856,7 +2928,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-24T12:45",
+ "updated": "2026-11-24T13:35",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",

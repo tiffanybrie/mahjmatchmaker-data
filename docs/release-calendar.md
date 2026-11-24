@@ -4,7 +4,7 @@ Updated 2026-11-23T09:58 from brand sites, the Sunday release schedule, brand In
 
 **Rule (Tiffany, Oct 21):** save restock content for the buying window. Don't spend a set's content before you can buy it; post 1-2 weeks before a dated restock so people pick their mat and have the code ready when it drops.
 
-## Next 8 weeks (Nov 23 - Jan 18)
+## Next 8 weeks (Nov 24 - Jan 19)
 
 | Post window | Brand | Product | Drop date / window | Album | Affiliate | What to post |
 |---|---|---|---|---|---|---|
