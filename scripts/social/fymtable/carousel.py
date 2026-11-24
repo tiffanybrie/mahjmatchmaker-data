@@ -22,7 +22,7 @@ with sync_playwright() as p:
     for i,s in enumerate(S):
         head=sp['head'] if i==0 else sp.get('head2',sp['head'])
         body=(f'<div class="k">{sp["kicker"]}</div><h1>{head}</h1><div class="n">{i+1}/{N}</div>'
-              f'<div class="t"><img src="file://{R}/{s["img"]}"></div><div class="cap">{s["cap"]}</div>')
+              + (f'<img src="file://{R}/{s["phone"]}" style="position:absolute;left:50%;top:238px;height:1010px;transform:translateX(-50%);filter:drop-shadow(0 18px 30px rgba(6,42,85,.28))"><div class="cap" style="top:1268px">{s["cap"]}</div>' if s.get('phone') else f'<div class="t"><img src="file://{R}/{s["img"]}"></div><div class="cap">{s["cap"]}</div>'))
         h=f'{OUT}/s{i+1}.html';open(h,'w').write(page(body));pg.goto('file://'+h);pg.wait_for_timeout(700)
         pg.screenshot(path=f'{OUT}/{i+1}.jpg',type='jpeg',quality=92)
     e=sp['end'];body=(f'<div class="k">{sp["kicker"]}</div><div class="n">{N}/{N}</div>'
