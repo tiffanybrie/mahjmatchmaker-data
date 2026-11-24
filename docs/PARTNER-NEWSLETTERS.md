@@ -107,8 +107,11 @@ The tiffanybrie@ forward note below has not shown up in practice: as of Nov 16 n
 
 ## Nov 19 scheduled run
 - No TODO rows were left. Brewtifully (approved Nov 18) had no row: added and signed up (footer form, Chrome). Scheduled newsletter task retired: from now on, new partners are signed up by the onboarding step (CLAUDE.md) and the weekly 30-day recheck.
-| Averill Mahjong | averillmahjong.com | none | TODO: never signed up at onboarding (found Nov 23 11:07pm). Next Chrome turn |
-| Spools | spools.com | none | TODO: never signed up at onboarding (found Nov 23 11:07pm). Next Chrome turn |
+| Averill Mahjong | averillmahjong.com | none | signed up 2026-11-24 (Chrome, Spin-to-Win popup email only, "Thanks for subscribing"); waiting for first marketing email (only affiliate mail so far) |
+| Spools | spools.com | none | signed up 2026-11-24 (Chrome, popup email step; SMS step skipped/closed); waiting for first marketing email (only affiliate mail so far) |
 
 ## Nov 23 11:07pm audit (Tiffany: "why haven't those brands been signed up")
 Marketing mail to mahjmatchmaker@ since Nov 12: My Fair, Mahj Mood, CMC, Let's Mahj On, Splash, Sweet Jojo, Amanda Toppe, Noli June, Mac + Miller, Virora, Royal, Anders Ruff, Tigre, Miss Mahjong (1), OMM (2, not launch mail). NOTHING from Bam Bird (signed up Nov 16), Bespoke (last Nov 7), Peace Love (last Nov 10). 'needs Tiffany' hCaptcha rows were never put in front of her: that was the miss. Sent her the tap list Nov 23 11:10pm.
+
+## Nov 24 scheduled run
+- Averill + Spools signed up (rows above); no TODO rows left. Gmail Nov 24: first marketing mail now in mahjmatchmaker@ from Let's Be Besties (welcome), Amahj, Mahj Mood (welcome), Sweet Jojo, Hutch & Nook, Noli June, LoveShackFancy. Still nothing seen yet from the other Nov 23 hCaptcha signups (check Nov 26 per OVERDUE).
