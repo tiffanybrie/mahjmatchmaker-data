@@ -3,7 +3,6 @@
 # Rules: one line per item, "- since YYYY-MM-DD | what | exact next step". Overdue has NO owner: the first chat
 # that can do it does it, then DELETES the line in the same commit. Anything past its day goes here (desk cleanup
 # moves it nightly). Never park, reword or "carry forward" a line here; do it or say exactly what blocks it.
-- [Tue 11/24 BEFORE 9am] Make Sadie Jane album page public (Squarespace, needs Chrome): the group post links it at 9am. Then /links card.
 - since 2026-11-07 | Mahjong Register: code is LIVE since Nov 8 (MAHJMATCH + MAHJMATCHMAKER, 10% excl racks; code-truth + site + codes posts done; follow-up email no longer needed, Nov 9 morning report). REMAINING ONLY: FYM + Mat Gallery pick up the restored /discount/MAHJMATCH auto-apply links at the next release rebuild (commit 42a6ee5e) | Matches & Catalog, next FYM/gallery publish
 - since 2026-11-06 | ManyChat: build the first comment-for-links automation as a DRAFT (not live) in app.manychat.com/fb5908370 (any comment, no keyword; DM per doc 80: thank-you, partner links + MAHJMATCH, button "Shop the rest of the table" = ShopMy collection). Polo table first (blog /blog/holiday-mahjong-table is live). Rudolph + Rattan need a ShopMy collection for the non-partner pieces | Main, in Chrome; live only on her yes
 - since 2026-11-06 | ManyChat trial reminder: day 12 of the Essential trial (started ~Nov 6): tell her how many contacts used it + keep/downgrade/annual | Main (set a scheduled task once the trial start date is confirmed in ManyChat billing)
