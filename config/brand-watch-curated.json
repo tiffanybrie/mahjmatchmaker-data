@@ -789,6 +789,78 @@
   {
    "partner": true,
    "urgency": "NOW",
+   "found": "2026-11-24T09:50",
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "LIVE now",
+   "brand": "Charleston Mahjong Club",
+   "what": "The Cabana Club Edition tiles are back in stock.",
+   "tag": "tiles",
+   "restock": true,
+   "buy": "https://www.charlestonmahjongclub.com/products/the-hunt-club-edition™-copy",
+   "url": "https://www.charlestonmahjongclub.com/products/the-hunt-club-edition™-copy",
+   "img": "https://cdn.shopify.com/s/files/1/0880/7160/2481/files/CabannaFieldGuideSquare-02.jpg?v=1782409145",
+   "source": "store",
+   "source_kind": "store"
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-24T09:50",
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "LIVE now",
+   "brand": "Hip Hip Mahjong",
+   "what": "Freedom Isn't Free mat is back in stock.",
+   "tag": "mat",
+   "restock": true,
+   "buy": "https://www.hiphipmahjong.com/products/freedom-isnt-free-mahjong-mat",
+   "url": "https://www.hiphipmahjong.com/products/freedom-isnt-free-mahjong-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0708/4222/0785/files/MATS_AMERICA.jpg?v=1787338623",
+   "source": "store",
+   "source_kind": "store"
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-24T09:50",
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "LIVE now",
+   "brand": "Hip Hip Mahjong",
+   "what": "Trust Fund Racks are back in stock.",
+   "tag": "rack",
+   "restock": true,
+   "buy": "https://www.hiphipmahjong.com/products/trust-fund-racks",
+   "url": "https://www.hiphipmahjong.com/products/trust-fund-racks",
+   "img": "https://cdn.shopify.com/s/files/1/0708/4222/0785/files/tfrackbag2HiphipMahjong.jpg?v=1790475417",
+   "source": "store",
+   "source_kind": "store"
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-24T09:24",
+   "date": "2026-11-23",
+   "day": "Mon 11/23",
+   "time": "LIVE now",
+   "brand": "Spools",
+   "what": "New on their site: Travel Tiles - Easy to Read.",
+   "tag": "tiles",
+   "new": true,
+   "buy": "https://spools.com/products/easy-to-read-mahjong-tiles",
+   "url": "https://spools.com/products/easy-to-read-mahjong-tiles",
+   "img": "https://cdn.shopify.com/s/files/1/0635/1323/1443/files/easy-to-read-mahjong-tiles-full-layout.webp?v=1795494857",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "easy-to-read-mahjong-tiles"
+   ]
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
    "found": "2026-11-23T23:12",
    "date": "2026-11-20",
    "day": "Fri 11/20",
@@ -2767,7 +2839,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-23T23:12",
+ "updated": "2026-11-24T09:50",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",

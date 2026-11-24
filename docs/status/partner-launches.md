@@ -1,29 +1,30 @@
-# Partner launches & restocks (2026-11-23 23:24 UTC)
+# Partner launches & restocks (2026-11-24 14:24 UTC)
 
-## Since last run: 17 to act on
-- **RESTOCK** Mahjong Register · Mahjong Mat Strap – Silicone Roll-Up Band (mat) · White · https://mahjongregister.com/products/mahjong-mat-strap-silicone-slap-bracelet-mat-holder-roll-up-mahjong-mat-band-travel-storage-strap-american-mahjong-gift
-- **NEW** Sweet Jojo Mahjong · Mint Green Royal Palm Collection Mahjong Mat for Table - Shipped Rolled (mat) · https://sweetjojomahjong.com/products/mint-green-royal-palm-collection-mahjong-mat-for-table-shipped-rolled-copy
-- **NEW** The Mahjong House · Harbor Coastal Tiles (tiles) · https://themahjonghouse.com/products/harbor-coastal-tiles
-- **NEW** The Mahjong House · Sea Glass Coastal Tiles (tiles) · https://themahjonghouse.com/products/sea-glass-coastal-tiles
-- **NEW** The Mahjong House · Coastal Sunshine Double-Sided Travel Mahjong Mat (travel mat) · https://themahjonghouse.com/products/coastal-sunshine-double-sided-travel-mahjong-mat
-- **NEW** The Mahjong House · Coastal Multi Double-Sided Mahjong Mat (mat) · https://themahjonghouse.com/products/coastal-multi-double-sided-mahjong-mat
-- **NEW** The Mahjong House · Coastal Sunshine Double-Sided Mahjong Mat (mat) · https://themahjonghouse.com/products/coastal-sunshine-double-sided-mahjong-mat
-- **NEW** The Mahjong House · Coastal Pink Sand Double-Sided Mahjong Mat (mat) · https://themahjonghouse.com/products/coastal-pink-sand-double-sided-mahjong-mat
-- **NEW** The Mahjong House · Coastal Sea Glass Double-Sided Mahjong Mat (mat) · https://themahjonghouse.com/products/coastal-sea-glass-double-sided-mahjong-mat
-- **NEW** The Mahjong House · Coastal Harbor Double-Sided Mahjong Mat (mat) · https://themahjonghouse.com/products/western-neutral-double-sided-travel-mahjong-mat-copy
-- **NEW** The Mahjong House · Pink Sand Coastal Tiles (tiles) · https://themahjonghouse.com/products/sunshine-coastal-tiles-copy
-- **NEW** The Mahjong House · Sunshine Coastal Tiles (tiles) · https://themahjonghouse.com/products/coastal-tiles
-- **RESTOCK** The Mahjong House · Western Neutral Double-Sided Mahjong Mat (mat) · Default Title · https://themahjonghouse.com/products/western-neutral-double-sided-mahjong-mat
-- **RESTOCK** The Mahjong House · Western Dusty Rose Double-Sided Mahjong Mat (mat) · Default Title · https://themahjonghouse.com/products/western-dusty-rose-double-sided-mahjong-mat
-- **RESTOCK** The Mahjong House · Western Desert Double-Sided Mahjong Mat (mat) · Default Title · https://themahjonghouse.com/products/western-dessert-double-sided-mahjong-mat
-- **RESTOCK** The Mahjong House · Set of 4 Tortoise Mahjong Racks (rack) · Default Title · https://themahjonghouse.com/products/set-of-4-tortoise-mahjong-racks
-- **RESTOCK** The Mahjong House · Set of 4 White Mother of Pearl Mahjong Racks (rack) · Default Title · https://themahjonghouse.com/products/set-of-4-tortoise-mahjong-racks-copy
+## Since last run: 14 to act on
+- **NEW** Anders Ruff · Ivy League - Pistachio Plaid Mahjong Mat (mat) · https://shop.andersruff.com/products/ivy-league-pistachio-plaid-mahjong-ma
+- **NEW** Anders Ruff · Boho Thanksgiving Table Printable Bundle (tiles) · https://shop.andersruff.com/products/boho-thanksgiving-table-printable-bundle
+- **NEW** Anders Ruff · Fall & Holiday Category Game Printable (tiles) · https://shop.andersruff.com/products/fall-holiday-scattegory-game-printable
+- **RESTOCK** Charleston Mahjong Club · The Cabana Club Edition™ (tiles) · Default Title · https://www.charlestonmahjongclub.com/products/the-hunt-club-edition™-copy
+- **RESTOCK** Hip Hip Mahjong · Trust Fund Racks (rack) · Default Title · https://www.hiphipmahjong.com/products/trust-fund-racks
+- **RESTOCK** Hip Hip Mahjong · Freedom Isn't Free Mahjong Mat (mat) · Default Title · https://www.hiphipmahjong.com/products/freedom-isnt-free-mahjong-mat
+- **RESTOCK** Mahjong Studios · Christmas Mahjong Set – Christmas Kiss | Mahjong Studios (tiles) · Christmas Kiss Mat w/Tiles / No Racks · https://mahjongstudios.com/products/christmas-kiss-american-mahjong-tile-set-160-tiles-red-bundle
+- **RESTOCK** Mahjong Studios · Royal Sparkle - Mahjong Tiles – American Mahjong Tile Set (166 Tiles) Royal Blue Sparkle (tiles) · Default Title · https://mahjongstudios.com/products/royal-sparkle-mahjong-tiles-american-mahjong-tile-set-166-tiles-royal-blue-sparkle
+- **RESTOCK** Mahjong Studios · Mahjong Studios - Tile Sets (tiles) · Forest Silk, Lilac Bloom · https://mahjongstudios.com/products/mahjong-studios-tiles-only
+- **RESTOCK** Mahjong Studios · American Mahjong Set 166 Tiles Bundle - Green Bag Pink Mat 2-color blue tiles (mat) · Bright Multi · https://mahjongstudios.com/products/american-mahjong-set-166-tiles-bundle-green-bag-pink-mat-2-color-blue-tiles
+- **NEW** Splash of Color · Bells Of Ireland 4 Layer American Engraved Mahjong Tiles  Blue  Green (tiles) · https://splashofcolorco.com/products/bells-of-ireland-4-layer-american-engraved-mahjong-tiles-blue-green
+- **NEW** Splash of Color · Danny Boy Irish Mahjong Mat Sleek Surface (mat) · https://splashofcolorco.com/products/danny-boy-irish-mahjong-mat-sleek-surface
+- **NEW** Splash of Color · When Irish Eyes Are Smiling Saint Patrick's  Mahjong Mat Sleek Surface (mat) · https://splashofcolorco.com/products/when-irish-eyes-are-smiling-saint-patricks-mahjong-mat-sleek-surface
+- **NEW** Spools · Travel Mahjong Tiles - Easy to Read (travel tiles) · https://spools.com/products/easy-to-read-mahjong-tiles
 
 ## Created/published in the last 7 days (tiles, mats, racks)
+- 2026-11-24 · Splash of Color · Bells Of Ireland 4 Layer American Engraved Mahjong Tiles  Blue  Green (tiles) · available · https://splashofcolorco.com/products/bells-of-ireland-4-layer-american-engraved-mahjong-tiles-blue-green
 - 2026-11-23 · Oh My Mahjong · Starling Mat in Tube (mat) · NOT available · https://www.ohmymahjong.com/products/starling-mat-in-tube
 - 2026-11-23 · Oh My Mahjong · Oasis Mahjong Tiles (tiles) · NOT available · https://www.ohmymahjong.com/products/oasis-mahjong-tiles
 - 2026-11-23 · Oh My Mahjong · Lily Mat in Tube (mat) · NOT available · https://www.ohmymahjong.com/products/lily-mat-in-tube
 - 2026-11-23 · Oh My Mahjong · Beaumont Mahjong Tiles (tiles) · NOT available · https://www.ohmymahjong.com/products/beaumont-mahjong-tiles
+- 2026-11-23 · Anders Ruff · Ivy League - Pistachio Plaid Mahjong Mat (mat) · available · PREORDER/COMING SOON · https://shop.andersruff.com/products/ivy-league-pistachio-plaid-mahjong-ma
+- 2026-11-23 · Anders Ruff · Boho Thanksgiving Table Printable Bundle (tiles) · available · https://shop.andersruff.com/products/boho-thanksgiving-table-printable-bundle
+- 2026-11-23 · Anders Ruff · Fall & Holiday Category Game Printable (tiles) · available · https://shop.andersruff.com/products/fall-holiday-scattegory-game-printable
 - 2026-11-23 · Britt Mills · Plumage II Neoprene Mahjong Mat (mat) · NOT available · https://brittmillsdesign.com/products/plumage-ii-neoprene-mahjong-mat
 - 2026-11-23 · Let's Mahj On · Let's Be Merry! (tiles) · available · https://www.letsmahj-on.com/products/lets-be-merry
 - 2026-11-23 · Let's Mahj On · Pagoda Tablecloth Yellow (mat) · available · https://www.letsmahj-on.com/products/pagoda-tablecloth-yellow
@@ -35,6 +36,8 @@
 - 2026-11-23 · Tigre de Tartán · Scalamandré × Tigre de Tartán · Chi'en Dragon, Persimmon (mat) · NOT available · PREORDER/COMING SOON · https://tigredetartan.com/products/the-house-of-scalamandre-tigre-de-tartan-chien-dragon-persimmon
 - 2026-11-23 · Tigre de Tartán · Scalamandré × Tigre de Tartán · Zebras, Chestnut · With Rules (mat) · NOT available · PREORDER/COMING SOON · https://tigredetartan.com/products/the-house-of-scalamandre-tigre-de-tartan-zebras-chestnut-with-rules
 - 2026-11-23 · Tigre de Tartán · Scalamandré × Tigre de Tartán · Zebras, Chestnut (mat) · NOT available · PREORDER/COMING SOON · https://tigredetartan.com/products/the-house-of-scalamandre-tigre-de-tartan-zebras-chestnut
+- 2026-11-23 · Splash of Color · Danny Boy Irish Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/danny-boy-irish-mahjong-mat-sleek-surface
+- 2026-11-23 · Splash of Color · When Irish Eyes Are Smiling Saint Patrick's  Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/when-irish-eyes-are-smiling-saint-patricks-mahjong-mat-sleek-surface
 - 2026-11-23 · Splash of Color · Monkey Kisses And Peonies Chinoiserie Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/monkey-kisses-and-peonies-chinoiserie-mahjong-mat-sleek-surface
 - 2026-11-23 · Splash of Color · Peonies & Monkey Kisses Chinoiserie Chic American Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/peonies-monkey-kisses-chinoiserie-chic-american-mahjong-tiles
 - 2026-11-23 · Splash of Color · Spill The Mahj Mini Mahjong Travel Set Single Layer Tiles Including Racks (rack) · available · https://splashofcolorco.com/products/spill-the-mahj-mini-mahjong-travel-set-single-layer-tiles-including-racks
@@ -48,6 +51,7 @@
 - 2026-11-23 · The Mahjong House · Coastal Harbor Double-Sided Mahjong Mat (mat) · available · https://themahjonghouse.com/products/western-neutral-double-sided-travel-mahjong-mat-copy
 - 2026-11-23 · The Mahjong House · Pink Sand Coastal Tiles (tiles) · NOT available · https://themahjonghouse.com/products/sunshine-coastal-tiles-copy
 - 2026-11-23 · The Mahjong House · Sunshine Coastal Tiles (tiles) · NOT available · https://themahjonghouse.com/products/coastal-tiles
+- 2026-11-23 · Spools · Travel Mahjong Tiles - Easy to Read (travel tiles) · available · https://spools.com/products/easy-to-read-mahjong-tiles
 - 2026-11-22 · Sunday Mahjong · Georgia Mahjong Rack Set (rack) · available · https://sundaymahjong.com/products/georgia-mahjong-rack-set
 - 2026-11-22 · Sunday Mahjong · Sunday Cherry Cola Mahjong Rack Set (rack) · available · https://sundaymahjong.com/products/sunday-cherry-cola-mahjong-rack-set
 - 2026-11-22 · Let's Be Besties · Prism Petals Mahjong Mat (mat) · available · https://letsbebesties.com/products/prismatic-petals-mahjong-mat
@@ -129,10 +133,6 @@
 - 2026-11-17 · Let's Be Besties · Wildly Starstruck Mahjong Mat (mat) · available · https://letsbebesties.com/products/wildly-starstruck-mahjong-mat
 - 2026-11-17 · Let's Be Besties · Midnight Jubilee Mahjong Mat (mat) · available · https://letsbebesties.com/products/midnight-jubilee-mahjong-mat
 - 2026-11-17 · Middle & Main Mahjong · Summit to Sea Tiles- A North Carolina Inspired Mahjong Set (tiles) · available · https://www.middleandmainmahjong.com/products/summit-sea-tiles-a-north-carolina-inspired-mahjong-set
-- 2026-11-17 · Brewtifully · 3 Layer Mini American Mahjong Set (Back Printing) Folk water color florals (travel tiles) · available · https://shop.brewtifully.com/products/3layer-mini-american-mahjong-setback-printing-folk-water-color-florals
-- 2026-11-17 · Brewtifully · Mini Mahjong Travel Set- Single Layer Tiles - Folk water color florals (travel tiles) · available · https://shop.brewtifully.com/products/mini-mahjong-travel-setsinglelayer-tiles-folk-water-color-florals
-- 2026-11-17 · Averill · The Averill Mahjong Set — Christmas Gift Edition (tiles) · available · https://www.averillmahjong.com/products/monets-garden-pearl-christmas-gift-edition
-- 2026-11-16 · Anders Ruff · Merry Mahjong Auction Printable Bundle (tiles) · available · https://shop.andersruff.com/products/merry-mahjong-auction-holiday-party-printable-christmas-game
 
 ## Stores
 - amahjline.com: ok 33 products
@@ -153,11 +153,11 @@
 - nolijune.com: ok 58 products
 - peacelovemahjong.com: ok 102 products
 - rebeccaillustrated.com: ok 1032 products
-- shop.andersruff.com: ok 165 products
+- shop.andersruff.com: ok 168 products
 - shop.brewtifully.com: ok 616 products
 - soireeallday.co: not checkable (not Shopify or blocked)
-- splashofcolorco.com: ok 2228 products
-- spools.com: ok 100 products
+- splashofcolorco.com: ok 2232 products
+- spools.com: ok 101 products
 - sundaymahjong.com: ok 90 products
 - sweetjojomahjong.com: ok 97 products
 - talamahj.com: ok 37 products
@@ -174,9 +174,9 @@
 - www.hiphipmahjong.com: ok 70 products
 - www.letsmahj-on.com: ok 94 products
 - www.macandmillermahjong.com: ok 38 products
-- www.mahjongbysi.com: ok 2123 products
+- www.mahjongbysi.com: ok 2085 products
 - www.middleandmainmahjong.com: ok 109 products
 - www.ohmymahjong.com: ok 246 products
 - www.viroramahjong.com: ok 37 products
 - www.ymimports.com: ok 431 products
-- yolomahjong.com: ok 103 products
+- yolomahjong.com: ok 104 products

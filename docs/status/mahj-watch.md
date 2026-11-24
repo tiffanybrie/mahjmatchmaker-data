@@ -1,4 +1,4 @@
-# Mahj Watch: what's new across brands (last 10 days, run Nov 23 23:28 UTC)
+# Mahj Watch: what's new across brands (last 10 days, run Nov 24 14:27 UTC)
 
 Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 
@@ -10,6 +10,7 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Virora Mahjong** [partner] · 2026-11-16 · dates: November 17 · A new color for your next game night. Our Mahjong bags are coming in Blue, Mint Green, Rose Red, and Cognac Brown. Clear windows and gold-tone zippers, with a s · https://www.instagram.com/p/Dfz8xbRmpXV/
 - **Virora Mahjong** [partner] · 2026-11-16 · dates: November 17 · A new color for your next game night. Our Mahjong bags are coming in Blue, Mint Green, Rose Red, and Cognac Brown. Clear windows and gold-tone zippers, with a s · https://www.instagram.com/p/Dfz8xbRmpXV/
 - **Virora Mahjong** [partner] · 2026-11-16 · dates: November 17 · Mahjong bags coming in Blue, Mint Green, Rose Red, Cognac Brown. Launching November 17 at 5 PM PST. Comment 'Mahjong Bag'. · https://www.instagram.com/p/Dfz8xbRmpXV/
+- **Virora Mahjong** [partner] · 2026-11-16 · dates: November 17 · A new color for your next game night. Our Mahjong bags are coming in Blue, Mint Green, Rose Red, and Cognac Brown. Clear windows and gold-tone zippers. Launchin · https://www.instagram.com/p/Dfz8xbRmpXV/
 - **Mahj Mood** [partner] · 2026-11-18 · dates: 11/20, this Friday · We’re already dreaming of warmer weather and Lake Days over here at Mahj Mood!   The Lake Day set launches this Friday, 11/20 at 10AM CST and is truly the perfe · https://www.instagram.com/reel/Df3NAMRMQKx/
 - **Mac + Miller Mahjong** [partner] · 2026-11-18 · dates: February 2027 · My husband spent YEARS trying to get me to play golf with him. In 2020, I finally caved… and it turned out to be exactly what I needed in that season of life. W · https://www.instagram.com/reel/Df4iOFxTk85/
 - **Mah Jongg Maven** [partner] · 2026-11-18 · Your Mah Jongg Maven Holiday Gift Guide is HERE!☕️🎁🍁🤎🍂  We've got something special for every player AND every budget! From fun little accessories to beautiful  · https://www.instagram.com/p/Df5QnGYo15T/
@@ -17,6 +18,7 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Mac + Miller Mahjong** [partner] · 2026-11-18 · dates: February 2027 · My husband spent YEARS trying to get me to play golf with him. In 2020, I finally caved… and it turned out to be exactly what I needed in that season of life. W · https://www.instagram.com/reel/Df4iOFxTk85/
 - **Mahj Mood** [partner] · 2026-11-18 · dates: 11/20, this Friday · We’re already dreaming of warmer weather and Lake Days over here at Mahj Mood!   The Lake Day set launches this Friday, 11/20 at 10AM CST and is truly the perfe · https://www.instagram.com/reel/Df3NAMRMQKx/
 - **Mac + Miller Mahjong** [partner] · 2026-11-18 · dates: February 2027 · Sneak peek The Clubhouse travel set (golf theme). Aiming February 2027 release; listing coming for in-stock notifications. · https://www.instagram.com/reel/Df4iOFxTk85/
+- **Mac + Miller Mahjong** [partner] · 2026-11-18 · dates: February 2027 · My husband spent YEARS trying to get me to play golf with him... Here's your sneak peek at The Clubhouse travel set. We're aiming for a February 2027 release! A · https://www.instagram.com/reel/Df4iOFxTk85/
 - **Oh My Mahjong** [partner] · 2026-11-19 · dates: November 25th · The reveal you’ve all been waiting for. Swipe to meet Sadie Jane. 🩷✨  The details are too good to keep hidden.   Say hello to your newest obsession. 🩷  She’s al · https://www.instagram.com/p/Df7CBwumjA0/
 - **The Royal Mahjong Society** [partner] · 2026-11-19 · What’s more intense than a Bond movie? Opening a Mahjong store in time for Black Friday! We’re getting so close!! Stay tuned! · https://www.instagram.com/reel/Df7MRimBbKt/
 - **Oh My Mahjong** [partner] · 2026-11-19 · dates: November 25th · Sadie Jane reveal. Launching November 25th at 10:00AM CT · https://www.instagram.com/p/Df7CBwumjA0/
@@ -26,18 +28,19 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **The Royal Mahjong Society** [partner] · 2026-11-19 · What’s more intense than a Bond movie? Opening a Mahjong store in time for Black Friday! We’re getting so close!! Stay tuned! · https://www.instagram.com/reel/Df7MRimBbKt/
 - **Oh My Mahjong** [partner] · 2026-11-19 · dates: November 25th · Swipe to meet Sadie Jane... She's almost yours! Launching November 25th at 10:00AM CT · https://www.instagram.com/p/Df7CBwumjA0/
 - **The Royal Mahjong Society** [partner] · 2026-11-19 · Opening a Mahjong store in time for Black Friday! Stay tuned! · https://www.instagram.com/reel/Df7MRimBbKt/
+- **The Royal Mahjong Society** [partner] · 2026-11-19 · What's more intense than a Bond movie? Opening a Mahjong store in time for Black Friday! We're getting so close!! Stay tuned! · https://www.instagram.com/reel/Df7MRimBbKt/
 - **Oh My Mahjong** [partner] · 2026-11-22 · dates: November 25 · Some things are too special not to share. Named in honor of Megan's grandmother, this collection is a personal tribute... Launching November 25 at 10 AM CT. · https://www.instagram.com/reel/DgCwWY8yVKl/
 - **Oh My Mahjong** [partner] · 2026-11-22 · dates: November 25 · Some things are too special not to share. 🩷 Named in honor of Megan’s grandmother, this collection is a personal tribute to the woman who inspired her love for  · https://www.instagram.com/reel/DgCwWY8yVKl/
 - **Oh My Mahjong** [partner] · 2026-11-22 · dates: November 25 · Named in honor of Megan's grandmother, this collection is a personal tribute. Launching November 25 at 10 AM CT. · https://www.instagram.com/reel/DgCwWY8yVKl/
 - **Oh My Mahjong** [partner] · 2026-11-22 · dates: November 25 · Named in honor of Megan's grandmother, this collection is a personal tribute... Launching November 25 at 10 AM CT. · https://www.instagram.com/reel/DgCwWY8yVKl/
 - **Let's Mahj On** [partner] · 2026-11-23 · Drumroll! Next on our catwalk of launches: Let's Be Merry! Whimsical festive sparkly set. Stay tuned for the details! · https://www.instagram.com/p/DgF2Sr-lTBD/
+- **Let's Mahj On** [partner] · 2026-11-23 · Drumroll, please! Next on our little catwalk of launches? Let's Be Merry! We cannot wait to show you this set - think whimsical and festive and everything spark · https://www.instagram.com/p/DgF2Sr-lTBD/
+- **Oh My Mahjong** [partner] · 2026-11-24 · dates: tomorrow · Let's talk pink. Sadie Jane compares to pink tile sets. Sadie Jane launches tomorrow at 10 AM CST. · https://www.instagram.com/reel/DgH5_EMSXwo/
 - **Mahj Tile Haus** [non-partner] · 2026-11-16 · The reveal is almost here. TIDE & LEATHER Coming soon. · https://www.instagram.com/reel/DfybB6vxanu/
 
 ## Launch
 - **My Fair Mahjong** [partner] · 2026-11-14 · Introducing NEW Mini Mahjong Mats! Six colors: Garden Party (Meadow, Bluebell, Mulberry), Brightside (Pink, Green, Blue). Shop now. · https://www.instagram.com/reel/DfucIYehYFR/
-- **Anders Ruff** [partner] · 2026-11-14 · STOCKING STUFFERS: keychains, shufflers, passports, dice, card covers & MORE! IN STOCK & READY TO SHIP! · https://www.instagram.com/reel/DfuXt0tHF0n/
 - **My Fair Mahjong** [partner] · 2026-11-14 · The mini moment we’ve been waiting for!🩵 Introducing our NEW Mini Mahjong Mats!    Small in size, BIG on style and the perfect match for our Mini Travel Mahjong · https://www.instagram.com/reel/DfucIYehYFR/
-- **Anders Ruff** [partner] · 2026-11-14 · 🎄 STOCKING STUFFERS FOR MAHJ LOVERS!   Keychains, shufflers, passports, dice, card covers & MORE!  IN STOCK & READY TO SHIP! Shop now before they're gone!   #An · https://www.instagram.com/reel/DfuXt0tHF0n/
 - **hiphipmahjong** [partner] · 2026-11-15 · 🍂🀄 Introducing our new series, HOSTESS WITH THE MOSTEST! Submit your HHM tablescapes & Mahj parties for a chance to be featured! Ana is serving up autumn sophis · https://www.instagram.com/p/Dfw9PgLm1gj/
 - **YOLO Mahjong** [partner] · 2026-11-15 · Introducing two newest mats: Winter Ski and Green Christmas. 33-inch surface, 3mm neoprene. Expected delivery early December. yolomahjong.com · https://www.instagram.com/p/DfvgqF7z1Ov/
 - **YOLO Mahjong** [partner] · 2026-11-15 · Two new looks for Christmas Mahjong nights! 🎄🀄  Are you dreaming of snowy slopes or feeling the classic Christmas plaid?  Introducing our two newest Mahjong mat · https://www.instagram.com/p/DfvgqF7z1Ov/
@@ -47,6 +50,7 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Maison Mahj** [partner] · 2026-11-16 · Your holiday table awaits. 🎄✨  Introducing four festive mats to complement any Maison Mahj collection. Swipe to find your favorite, then shop at the link in bio · https://www.instagram.com/p/Dfz5NpbDLVM/
 - **Maison Mahj** [partner] · 2026-11-16 · Your holiday table awaits. 🎄✨  Introducing four festive mats to complement any Maison Mahj collection. Swipe to find your favorite, then shop at the link in bio · https://www.instagram.com/p/Dfz5NpbDLVM/
 - **Maison Mahj** [partner] · 2026-11-16 · Introducing four festive mats; ship early December; holiday tile expansion sold out. · https://www.instagram.com/p/Dfz5NpbDLVM/
+- **Maison Mahj** [partner] · 2026-11-16 · Your holiday table awaits. Introducing four festive mats to complement any Maison Mahj collection. Shop at the link in bio. Expected to ship in early December.  · https://www.instagram.com/p/Dfz5NpbDLVM/
 - **Anders Ruff** [partner] · 2026-11-17 · Dear Santa Mahjong Tiles are IN STOCK & READY TO SHIP! Shop now while supplies last! https://shop.andersruff.com/products/dear-santa-mahjong-tile-set?variant=50 · https://www.instagram.com/reel/Df0mE7TSIOE/
 - **Mahjong by SI** [partner] · 2026-11-17 · Introducing The Hunt Club - forest green tartan, cognac details mahjong mat/accessories. · https://www.instagram.com/p/Df2hkM2jtGi/
 - **Anders Ruff** [partner] · 2026-11-17 · 🎅🎄 Dear Santa Mahjong Tiles are IN STOCK & READY TO SHIP! 🎁 Shop now while supplies last!  https://shop.andersruff.com/products/dear-santa-mahjong-tile-set?vari · https://www.instagram.com/reel/Df0mE7TSIOE/
@@ -58,6 +62,7 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Virora Mahjong** [partner] · 2026-11-18 · The Wait Is Over. They're Finally Here!  Our four new Mahjong Carrying Bags have officially arrived!  Blue, Mint Green, Rose Red & Cognac Brown — four beautiful · https://www.instagram.com/p/Df3RnueBKJD/
 - **Virora Mahjong** [partner] · 2026-11-18 · The Wait Is Over. They're Finally Here!  Our four new Mahjong Carrying Bags have officially arrived!  Blue, Mint Green, Rose Red & Cognac Brown — four beautiful · https://www.instagram.com/p/Df3RnueBKJD/
 - **Virora Mahjong** [partner] · 2026-11-18 · The Wait Is Over. Four new Mahjong Carrying Bags arrived: Blue, Mint Green, Rose Red, Cognac Brown. Now Available. Comment 'Mahjong Bag' for link. · https://www.instagram.com/p/Df3RnueBKJD/
+- **Virora Mahjong** [partner] · 2026-11-18 · The Wait Is Over. They're Finally Here! Our four new Mahjong Carrying Bags have officially arrived! Blue, Mint Green, Rose Red & Cognac Brown. Now Available | S · https://www.instagram.com/p/Df3RnueBKJD/
 - **Anders Ruff** [partner] · 2026-11-19 · Something old, something new, something borrowed… Something Blue. 💍💙🀄  We had a little surprise up our sleeves! ✨ Real brides, one unforgettable reveal, and the · https://www.instagram.com/reel/Df7fmlzS4tt/
 - **Anders Ruff** [partner] · 2026-11-19 · Introducing Something Blue, our exclusive bridal mahjong collection in collaboration with Trista Sutter! 12.2.26 Comment BLUE for Insider List. · https://www.instagram.com/reel/Df7fmlzS4tt/
 - **Anders Ruff** [partner] · 2026-11-19 · Something old, something new, something borrowed… Something Blue. 💍💙🀄  We had a little surprise up our sleeves! ✨ Real brides, one unforgettable reveal, and the · https://www.instagram.com/reel/Df7fmlzS4tt/
@@ -68,6 +73,7 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Mah Jongg Maven** [partner] · 2026-11-20 · All I want is NEW TILES for the Holidays!☕️🎁🤎😍✨  Swipe to see them ALL! All hand painted and engraved with the highest quality! All available on our website now · https://www.instagram.com/p/Df-d9qUo5WF/
 - **Fait à Main** [partner] · 2026-11-20 · Les Fêtes de Noël chez Fait à Main. 🎄  New mats for the season of gathering, and a few extras we love for the table and beyond: lamps, books and gifts ready to  · https://www.instagram.com/reel/Df88S9osyfo/
 - **Middle & Main Mahjong** [partner] · 2026-11-20 · Wedding Registry Open! {kidding} ... mahjong china plates, four iconic tiles per set, now available on the website. Which category do you fall under? [trimmed] · https://www.instagram.com/p/Df-PsFISDVD/
+- **Middle & Main Mahjong** [partner] · 2026-11-20 · Wedding Registry Open! {kidding, obviously} Who would register for mahjong china for their wedding? These plates are a whimsical homage to our beloved china, bo · https://www.instagram.com/p/Df-PsFISDVD/
 - **My Fair Mahjong** [partner] · 2026-11-23 · For the friendships made and the memories shared. Introducing our NEW Keepsake Collection! Individually designed Keepsake Tiles in five colors: Optic White, For · https://www.instagram.com/reel/DgGMEppy1z-/
 - **LoveShackFancy** [non-partner] · 2026-11-19 · It’s officially live! Shop the LoveShackFancy x Roller Rabbit Holiday Collaboration of your dreams before it goes to bed 🛌🤍 · https://www.instagram.com/p/Df7WiyXlrqb/
 - **Mahj Tile Haus** [non-partner] · 2026-11-19 · A little wild. Entirely refined.  Introducing Tide & Leather. Where coastal elegance meets equestrian charm.  The collection has arrived.  #mahjtilehaus #mahjon · https://www.instagram.com/reel/Df7rPs0pzdv/
@@ -84,12 +90,14 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Mahj Pit** [partner] · 2026-11-19 · These beauties are back in stock! · https://www.instagram.com/p/Df5_1lAOiYV/
 - **Mahj Pit** [partner] · 2026-11-19 · These beauties are back in stock! · https://www.instagram.com/p/Df5_1lAOiYV/
 - **Mahj Pit** [partner] · 2026-11-19 · These beauties are back in stock! · https://www.instagram.com/p/Df5_1lAOiYV/
+- **Mahj Pit** [partner] · 2026-11-19 · These beauties are back in stock! · https://www.instagram.com/p/Df5_1lAOiYV/
 - **Bam Bird Boutique** [partner] · 2026-11-20 · Classic Tortoise tile set BACK IN STOCK · https://www.instagram.com/p/Df-FN7ckQpX/
 - **Peace Love Mahjong** [partner] · 2026-11-20 · SPIRIT OF CHRISTMAS TILES ARE BACK IN STOCK; mats back in limited quantities · https://www.instagram.com/p/Df-VLWMpadU/
 - **Peace Love Mahjong** [partner] · 2026-11-20 · 🐿️🎄 We’re just as excited as this squirrel to share some VERY merry news!!!  SPIRIT OF CHRISTMAS TILES ARE BACK IN STOCK! ❤️  And that’s not all… our Spirit of  · https://www.instagram.com/p/Df-VLWMpadU/
 - **Peace Love Mahjong** [partner] · 2026-11-20 · 🐿️🎄 We’re just as excited as this squirrel to share some VERY merry news!!!  SPIRIT OF CHRISTMAS TILES ARE BACK IN STOCK! ❤️  And that’s not all… our Spirit of  · https://www.instagram.com/p/Df-VLWMpadU/
 - **Peace Love Mahjong** [partner] · 2026-11-20 · Spirit of Christmas Tiles BACK IN STOCK; Spirit of Christmas Mats back, limited quantities. · https://www.instagram.com/p/Df-VLWMpadU/
 - **Bam Bird Boutique** [partner] · 2026-11-23 · More in your cart, less at checkout! Enjoy FREE SHIPPING on orders over $300 from Thanksgiving through Cyber Monday. With plenty of tiles in stock, including ou · https://www.instagram.com/p/DgGNxJXg-rp/
+- **Bam Bird Boutique** [partner] · 2026-11-23 · FREE SHIPPING on orders over $300 from Thanksgiving through Cyber Monday. Newly restocked Classic Tortoise. · https://www.instagram.com/p/DgGNxJXg-rp/
 - **LoveShackFancy** [non-partner] · 2026-11-17 · The sweetest holiday sleepover is back. LoveShackFancy x rollerrabbitofficial is back for the holidays with the prettiest prints, coziest PJs and matching momen · https://www.instagram.com/reel/Df2NiQsC6nP/
 
 ## Preorder
@@ -101,8 +109,10 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Amanda Toppe** [partner] · 2026-11-20 · The Lila full-size mahjong mat is now available for pre-order! Visit www.amandatoppeliving.com  It is on track to be here by mid-December 🎁 · https://www.instagram.com/p/Df-LXGtBLfr/
 - **Amanda Toppe** [partner] · 2026-11-20 · The Lila full-size mahjong mat is now available for pre-order! Visit www.amandatoppeliving.com  It is on track to be here by mid-December 🎁 · https://www.instagram.com/p/Df-LXGtBLfr/
 - **Amanda Toppe** [partner] · 2026-11-20 · The Lila full-size mahjong mat is now available for pre-order! On track for mid-December. · https://www.instagram.com/p/Df-LXGtBLfr/
+- **Amanda Toppe** [partner] · 2026-11-20 · The Lila full-size mahjong mat is now available for pre-order! Visit www.amandatoppeliving.com It is on track to be here by mid-December · https://www.instagram.com/p/Df-LXGtBLfr/
 - **Fait à Main** [partner] · 2026-11-21 · Fleurs de Fête is here. A garden in full bloom for the season of gathering, in Bleu and in Vert. For every table that celebrates: Christmas, Hanukkah, or simply · https://www.instagram.com/p/Df_iYaFlkpd/
 - **Maison Mahj** [partner] · 2026-11-23 · dates: February 2027 · House Line No. 1 in lavender book box. Preorder at link in bio. Expected to begin shipping in February 2027. · https://www.instagram.com/p/DgFffgbl2Kd/
+- **Maison Mahj** [partner] · 2026-11-23 · dates: February 2027 · Flowers on the table, gold dice in hand... House Line No. 1 has a home in our signature book box in lavender. Preorder House Line No. 1 at the link in bio. Expe · https://www.instagram.com/p/DgFffgbl2Kd/
 
 ## Sale
 - **The Royal Mahjong Society** [partner] · 2026-11-15 · It’s happening! Since our new tiles came in so close to Black Friday, we thought we would treat everyone and start early! Get 20% off your order with code ROYAL · https://www.instagram.com/p/Dfx1xlnIetx/
@@ -140,6 +150,7 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Bespoke Mahjong** [partner] · 2026-11-18 · Christmas tiles Mahjong It's a Vibe, Glitter Glow pearl Red and Green; tiles and mat 25% off through Sunday. · https://www.instagram.com/reel/Df5eYhKJAgX/
 - **Bespoke Mahjong** [partner] · 2026-11-18 · Automatic mahjong tables 15% off through Sunday. · https://www.instagram.com/reel/Df5OrUVJWuI/
 - **Virora Mahjong** [partner] · 2026-11-18 · dates: Nov 19, Nov 30 · BLACK FRIDAY SALE | 20% OFF! Nov 19-30 (PST). Tile sets Petalee, Marivelle, Aveline; all mats except Hiverelle and Hollivia; pushers and bags. Nov 19 12:00AM -  · https://www.instagram.com/p/Df4_gVOlJ-0/
+- **Virora Mahjong** [partner] · 2026-11-18 · dates: November 19, November 30 · BLACK FRIDAY SALE | 20% OFF! Enjoy 20% OFF selected Virora Mahjong products from November 19-30 (PST)! Included: Mahjong Tile Sets: Petalee, Marivelle, Aveline. · https://www.instagram.com/p/Df4_gVOlJ-0/
 - **My Fair Mahjong** [partner] · 2026-11-19 · dates: November 27 · We’re really bad at keeping secrets… especially when they’re THIS good. 🤭 MY FAIR HOLIDAY is coming, and we’re making your holiday shopping a whole lot more fun · https://www.instagram.com/reel/Df7udvySa6x/
 - **Peace Love Mahjong** [partner] · 2026-11-19 · dates: 11/16, 11/20, TODAY, Today · TODAY’S DEAL: 30% OFF Borders Light Pink Mat! 🎁 Use code LIGHT30 at checkout. Today only!  🎁SURPRISE! We’re kicking off Black Friday EARLY!🎁  From 11/16–11/20,  · https://www.instagram.com/p/DfsbA_fTsOh/
 - **Amanda Toppe** [partner] · 2026-11-19 · dates: November 30th, TOMORROW · IT’S HERE! My Black Friday sale starts TOMORROW! Enjoy 20% OFF EVERYTHING on the website through November 30th with code BLACKFRIDAY20!  And yes… PREORDERS ARE  · https://www.instagram.com/p/Df7Sn3YFbJM/
@@ -164,6 +175,10 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Mac + Miller Mahjong** [partner] · 2026-11-19 · dates: Nov 23, Nov 26, Nov 30 · Holiday bundles. VIP repeat customers shop first Mon Nov 23 9 AM CST. Public sale opens Thanksgiving night Nov 26 7 PM CST through Nov 30. Free US shipping over · https://www.instagram.com/p/Df7zdDwTi0p/
 - **Bam! Let's Mahjong** [partner] · 2026-11-19 · dates: Nov 19 · BLACK FRIDAY STARTS EARLY AT BAM! 15% OFF STOREWIDE starting Thursday Nov 19 on tiles, mats, racks, accessories. · https://www.instagram.com/p/Df7Mq2Txe3f/
 - **Noli June** [partner] · 2026-11-19 · Comment TUESDAY for 10% off first heirloom leatherette NOLI JUNE mat. [trimmed] · https://www.instagram.com/reel/Df77GJGvpHe/
+- **Mahj Squad** [partner] · 2026-11-19 · dates: Nov 22 · The Mint Nutcracker mahjong set drops Sunday, Nov 22 at 3PM EST. 15% off + free shipping through Cyber Monday! Want to be first in line? Head to the Mint Nutcra · https://www.instagram.com/reel/Df7fG1Sp97V/
+- **Mac + Miller Mahjong** [partner] · 2026-11-19 · dates: November 23, November 26, November 30 · Dreamers, it's almost time to untie the bow! We've wrapped up some of our favorite mahjong pairings into holiday bundles. VIP repeat customers shop first starti · https://www.instagram.com/p/Df7zdDwTi0p/
+- **Bam! Let's Mahjong** [partner] · 2026-11-19 · dates: November 19 · BLACK FRIDAY STARTS EARLY AT BAM! 15% OFF STOREWIDE! Starting Thursday, November 19, enjoy 15% off your favorite BAM! Let's Mahjong tiles, mats, racks, accessor · https://www.instagram.com/p/Df7Mq2Txe3f/
+- **Noli June** [partner] · 2026-11-19 · Comment TUESDAY and we'll send you 10% off your first heirloom leatherette NOLI JUNE mahjong mat. · https://www.instagram.com/reel/Df77GJGvpHe/
 - **Bam Bird Boutique** [partner] · 2026-11-20 · dates: 11/22 · Black Friday Sale 15% OFF sitewide through Sunday 11/22 midnight · https://www.instagram.com/p/Df-yH-7H1yD/
 - **Anders Ruff** [partner] · 2026-11-20 · Pink Friday 30% OFF select pink, 24 hours only, comment PINK for code · https://www.instagram.com/reel/Df97aphIX7t/
 - **Mini Mahjer** [partner] · 2026-11-20 · Ski Edition Complete Travel Bundle is 15% off all holiday season · https://www.instagram.com/reel/DfzaeOUhh1i/
@@ -187,6 +202,7 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Peace Love Mahjong** [partner] · 2026-11-20 · dates: 11/16, 11/20, TODAY · TODAY'S DEAL 30% off Lilac Splash Mat code LILAC30; daily mat deals 11/16-11/20. · https://www.instagram.com/p/DfsbJtuT6mY/
 - **Mini Mahjer** [partner] · 2026-11-20 · Ski Edition Complete Travel Bundle 15% off all holiday season, every bundle. · https://www.instagram.com/reel/DfzaeOUhh1i/
 - **Let's Mahj On** [partner] · 2026-11-20 · Black Friday: 20% off all things mahjong with code HOLIDAY20 (tiles, accessories, racks, tablecloths, mats). · https://www.instagram.com/reel/Df9tW-wCacc/
+- **Let's Mahj On** [partner] · 2026-11-20 · Black Friday is here - take 20% off all things mahjong with code HOLIDAY20! Tiles, Accessories, Racks, Tablecloths, Mats. Let's Mahj-On! · https://www.instagram.com/reel/Df9tW-wCacc/
 - **Bam Bird Boutique** [partner] · 2026-11-21 · Sitewide Black Friday Sale NOW! 15% off sitewide · https://www.instagram.com/reel/DgAeawIRH3R/
 - **Bam Bird Boutique** [partner] · 2026-11-21 · Our sitewide Black Friday Sale is happening NOW!! Take 15% off sitewide. · https://www.instagram.com/reel/DgAeawIRH3R/
 - **Mahj Squad** [partner] · 2026-11-21 · dates: NOV 22, November 22, November 30, TODAY, tomorrow · Your mahjong table called… she has NOTHING to wear for Christmas.  And while everyone else is planning their Thanksgiving menu, we’re busy planning her holiday  · https://www.instagram.com/p/DgA5ZfUG4sJ/
@@ -201,12 +217,17 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **Mahj Squad** [partner] · 2026-11-21 · dates: Nov 22, Nov 30 · Mint Nutcracker tile set; Thanksgiving Week Sale starts Nov 22 3pm EST through Nov 30; 15% OFF; Notify Me at mahjsquadshop.com; Shop mahjsquadshop.com. [trimmed · https://www.instagram.com/p/DgA5ZfUG4sJ/
 - **Bam! Let's Mahjong** [partner] · 2026-11-21 · Playing a little Mahj and watching a little football! Black Friday 15% off storewide · https://www.instagram.com/p/DgBKKJjBll1/
 - **Amanda Toppe** [partner] · 2026-11-21 · 20% off everything! Code BLACKFRIDAY20, amandatoppeliving.com. · https://www.instagram.com/p/DgAoxZlhkDw/
+- **Mahj Squad** [partner] · 2026-11-21 · dates: NOV 22, November 22, November 30, TODAY · Your mahjong table called... she has NOTHING to wear for Christmas. ... Your outfit.. the new Mint Nutcracker tile set. She's about to be 15% OFF! Our Thanksgiv · https://www.instagram.com/p/DgA5ZfUG4sJ/
+- **Bam! Let's Mahjong** [partner] · 2026-11-21 · Playing a little Mahj and watching a little football! Black Friday 15% off storewide · https://www.instagram.com/p/DgBKKJjBll1/
+- **Amanda Toppe** [partner] · 2026-11-21 · A little something for your mahjong table. 20% off everything! Shop your favorites now at www.amandatoppeliving.com! Use code BLACKFRIDAY20 · https://www.instagram.com/p/DgAoxZlhkDw/
+- **hiphipmahjong** [partner] · 2026-11-21 · Don't miss it!!! Some items will be sold out by the end of this sale! link in bio · https://www.instagram.com/reel/DgAr2Odubtv/
 - **Bam Bird Boutique** [partner] · 2026-11-22 · dates: TODAY · The #1 thing on your wishlist this year is 15% off through the end of TODAY! Classic Tote, genuine pebbled leather, 5 colors. · https://www.instagram.com/reel/DgDSC9xR8rA/
 - **Mahj Squad** [partner] · 2026-11-22 · dates: Today · Today's the day!!! The Mint Nutcracker tiles are now 15% off with free shipping all week!  #mahjong #mahjongtiles #blackfriday #mahjongtable · https://www.instagram.com/p/DgDTH-3Bp14/
 - **Bam Bird Boutique** [partner] · 2026-11-22 · dates: TODAY, today · The #1 thing on your wishlist this year is 15% off through the end of TODAY! 🎁  Our Classic Tote is roomy enough for all of your mahjong accessories (and then s · https://www.instagram.com/reel/DgDSC9xR8rA/
 - **Mahj Squad** [partner] · 2026-11-22 · dates: Today · Today's the day!!! The Mint Nutcracker tiles are now 15% off with free shipping all week!   #mahjong #mahjongtiles #blackfriday #mahjongtable · https://www.instagram.com/p/DgDTH-3Bp14/
 - **Bam Bird Boutique** [partner] · 2026-11-22 · dates: TODAY · Classic Tote 15% off through the end of TODAY. · https://www.instagram.com/reel/DgDSC9xR8rA/
 - **Bam Bird Boutique** [partner] · 2026-11-22 · dates: TODAY · 15% off through end of TODAY: Classic Tote, pebbled leather, 5 colors, embroidery available. · https://www.instagram.com/reel/DgDSC9xR8rA/
+- **Mahj Squad** [partner] · 2026-11-22 · dates: Today · Today's the day!!! The Mint Nutcracker tiles are now 15% off with free shipping all week! · https://www.instagram.com/p/DgDTH-3Bp14/
 - **Mahj Squad** [partner] · 2026-11-22 · dates: Today · Today's the day!!! The Mint Nutcracker tiles are now 15% off with free shipping all week! · https://www.instagram.com/p/DgDTH-3Bp14/
 - **Oh My Mahjong** [partner] · 2026-11-23 · Make your mahj list, check it twice. 🎁 Our Black Friday sale starts Wednesday at 10 AM CT until Monday at 11:59PM CT!  ✨ Spend $250 and get 15% off ✨ Spend $500 · https://www.instagram.com/reel/DgFVJZEy4ZY/
 - **Bam Bird Boutique** [partner] · 2026-11-23 · Shop smarter, not harder, and get your favorites before the sale ends! 🎁   It’s your last chance to save 15% on holiday accessories and game essentials. Our Bla · https://www.instagram.com/p/DgEXX0UEaXZ/
@@ -221,6 +242,15 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **The Royal Mahjong Society** [partner] · 2026-11-23 · In stock and ready to ship! Take advantage of our BFCM sale with code: ROYAL20 for 20% off! Which set is your favorite? · https://www.instagram.com/reel/DgF9m3zTezz/
 - **Noli June** [partner] · 2026-11-23 · dates: Nov 30 · Black Friday sale: save up to $376, now thru Nov 30. Comment FRIDAY for link. Sue Adores a Scallop Mahjong Table now taking orders. NOLIJUNE.COM. [hashtags trim · https://www.instagram.com/reel/DgFqhLJzASg/
 - **Noli June** [partner] · 2026-11-23 · Girl to girl, pull up a chair. Mat: Harriet Got Lost in the Corn Maze; Racks Moro; Tiles Jade Garden. Comment TUESDAY for 10% off next purchase. [trimmed] · https://www.instagram.com/reel/DgEN8BgtRaq/
+- **Oh My Mahjong** [partner] · 2026-11-23 · dates: Nov 30 · Black Friday sale starts Wednesday 10 AM CT until Mon Nov 30 11:59PM CT. $250 15%, $500 20%, $750 25%, free tote while supplies last. · https://www.instagram.com/reel/DgFVJZEy4ZY/
+- **Bird & Bamboo** [partner] · 2026-11-23 · dates: this Wednesday · We WILL be having a Black Friday sale, a BIG one. Details drop this Wednesday. · https://www.instagram.com/p/DgF_3Rsxfgh/
+- **Charleston Mahjong Club** [partner] · 2026-11-23 · Biggest sale of the year, code BLACKFRIDAY; Black Friday through Cyber Monday; Country Club, Yacht Club, Cocktail Club bundles extra discounts. · https://www.instagram.com/p/DgFzXhXREUY/
+- **Mac + Miller Mahjong** [partner] · 2026-11-23 · Thank you to our return customers for making our year Jolly and Bright! Check your emails for the link to purchase our Black Friday sales. If you're worried abo · https://www.instagram.com/p/DgFp0VyTY3U/
+- **The Royal Mahjong Society** [partner] · 2026-11-23 · In stock and ready to ship! Take advantage of our BFCM sale with code: ROYAL20 for 20% off! Which set is your favorite? · https://www.instagram.com/reel/DgF9m3zTezz/
+- **Noli June** [partner] · 2026-11-23 · dates: Nov 30 · Shopping our Black Friday sale is basically wellness. Save up to $376. Now thru Nov 30. Comment FRIDAY for the link. Table: Our Sue Adores a Scallop Mahjong Tab · https://www.instagram.com/reel/DgFqhLJzASg/
+- **Noli June** [partner] · 2026-11-23 · Girl to girl, pull up a chair. Tag the friend who taught you to play. Mat: Harriet Got Lost in the Corn Maze. Racks: Moro from haus_of_charleston. Tiles: Jade G · https://www.instagram.com/reel/DgEN8BgtRaq/
+- **Peace Love Mahjong** [partner] · 2026-11-24 · dates: 11/24, 11/29 · Black Friday BUY MORE SAVE MORE live 11/24 6AM CST: $150+ 10%, $300+ 15%, $500+ 20%+free ship, $750+ 25%+free ship. No code. Sale runs 11/24-11/29. · https://www.instagram.com/reel/DgGosTVTnA6/
+- **hiphipmahjong** [partner] · 2026-11-24 · 20% off Black Friday Sale! Use Code: SoBamGrateful · https://www.instagram.com/reel/DgGzodJPvEa/
 - **Bougie Mahjong** [non-partner] · 2026-11-23 · 🛍️ THE BLACK FRIDAY EDIT IS HERE.  She's been eyeing that mat. She's been thinking about that tile bag. She's been adding things to her cart and telling herself · https://www.instagram.com/p/DgE9fSBHcyg/
 
 ## Collab
@@ -230,4 +260,4 @@ Instagram (partner first). Store-watcher lines: docs/status/partner-launches.md.
 - **LoveShackFancy** [non-partner] · 2026-11-18 · Pajama party on Madison Ave🎀❄️Celebrating the LoveShackFancy x Roller Rabbit holiday collection with the sweetest hot chocolate cart💗 #loveshackfancy #rollerrab · https://www.instagram.com/reel/Df5rl6LsKo0/
 - **LoveShackFancy** [non-partner] · 2026-11-23 · The best dressed on the slopes❄️🩷 BOGNER FIRE+ICE x LoveShackFancy is finally here🫶🏼 · https://www.instagram.com/reel/DgFrlcLiI4S/
 
-Store watcher items in window: 113
+Store watcher items in window: 116
