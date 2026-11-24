@@ -59,6 +59,8 @@ for key, name, img in [('www.ohmymahjong.com/lily-mat-in-tube', 'Lily', 'assets/
 d1 = 'alb:cypress-forest:Dapper 1'
 TV['mo'][d1] = durl(Image.open(REPO + 'assets/mats/omm-retired/tableview/dapper-1-clean.png').convert('RGB'), 84, 800)
 TV['cls'][d1] = 'A'; TV['why'].pop(d1, None)
+# Nichole (Betty June & Jeannette): sharp 2790px photo for Table view (Tiffany 7:14pm 'still looks low resolution'); right edge mirrored where the bag covered it (sits under the rack)
+TV['mo']['www.etsy.com/listing/4537970849/the-nichole-mahjong-mat'] = durl(Image.open(REPO + 'assets/mats/gallery-new/full/betty-june-jeannette--nichole-square-tv.jpg').convert('RGB'), 84, 1000)
 
 # --- Sadie Jane: her album picks become Tiffany's matches ---
 spec = json.load(open(REPO + 'scripts/albumcard/specs/sadie-jane_nov21.json'))
@@ -122,6 +124,7 @@ body:not(.tvmode) .r2dot,body:not(.tvmode) .r2bar{display:none!important}
 .r2bar .r2b{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:4px;border:1.5px solid #ecd5df;background:#fff;border-radius:14px;padding:6px 4px 7px;cursor:pointer;font:700 12.5px/1 var(--body);color:var(--navy,#054689)}
 .r2bar .r2b img{width:100%;height:42px;object-fit:contain;border-radius:8px}
 .r2bar .r2b.on{border-color:#c8325f;box-shadow:0 0 0 2px rgba(200,50,95,.15)}
+.r2make{flex:1 0 100%;border:0;border-radius:999px;background:#c8325f;color:#fff;font:700 16px/1 var(--body);padding:13px 16px;cursor:pointer;box-shadow:0 4px 12px rgba(200,50,95,.3)}
 .r2fc{flex:1 0 100%;display:flex;align-items:center;justify-content:center;gap:6px;font:600 12px var(--body);color:#5a6b85}
 .r2fc button{border:1px solid #ecd5df;background:#fff;border-radius:999px;padding:5px 10px;font:700 12px var(--body);color:var(--navy,#054689);cursor:pointer}
 .r2fc button.on{background:#054689;color:#fff;border-color:#054689}
@@ -183,13 +186,19 @@ js = r"""<script id="r2js">
    });pulsed=true;}
  function bar(){if(!document.body.classList.contains('tvmode'))return;for(const id of ['s-mats','s-tiles','s-racks']){const sec=document.getElementById(id);if(!sec)continue;const card=sec.querySelector('.deck .scard[id^="top-"]');if(!card){continue}
    let b=sec.querySelector('.r2bar');const deck=card.closest('.deck');if(!b){b=document.createElement('div');b.className='r2bar';
-    b.innerHTML='<button type="button" class="r2b" data-r2open="tiles"><img alt="">Tiles</button><button type="button" class="r2b" data-r2open="mat"><img alt="">Mat</button><button type="button" class="r2b" data-r2open="racks"><img alt="">Racks</button><div class="r2fc">Tile photo:<button type="button" data-r2f="center">Center</button><button type="button" data-r2f="corner">Corner</button><button type="button" data-r2f="off">Off</button></div>';
+    b.innerHTML='<button type="button" class="r2b" data-r2open="tiles"><img alt="">Tiles</button><button type="button" class="r2b" data-r2open="mat"><img alt="">Mat</button><button type="button" class="r2b" data-r2open="racks"><img alt="">Racks</button><button type="button" class="r2make" data-r2make="1">Make my match card \u2665</button><div class="r2fc">Tile photo:<button type="button" data-r2f="center">Center</button><button type="button" data-r2f="corner">Corner</button><button type="button" data-r2f="off">Off</button></div>';
     deck.insertAdjacentElement('afterend',b)}
    let x=null;try{x=window.R2CTX(card)}catch(e){}if(x){const im=b.querySelectorAll('.r2b img');try{im[0].src=pile(x.s);im[1].src=matTh(x.mat);if(x.rack)im[2].src=rackSrc(x.rack)}catch(e){}}
    const fv=(window.R2GETFACES&&window.R2GETFACES())||'center';b.querySelectorAll('[data-r2f]').forEach(z=>z.classList.toggle('on',z.dataset.r2f===fv));
    const tab=window.R2TAB&&window.R2TAB(),open=document.getElementById('tvpanel')&&document.getElementById('tvpanel').classList.contains('open');b.querySelectorAll('.r2b').forEach(z=>z.classList.toggle('on',!!open&&z.dataset.r2open===tab));}}
  window.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-r2f]');if(!b)return;e.preventDefault();e.stopPropagation();const v=b.dataset.r2f;setTimeout(()=>window.R2FACES(v),30)},true);
  window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2f]')){e.preventDefault();e.stopPropagation()}},true);
+
+ window.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-r2make]');if(!b)return;e.preventDefault();e.stopPropagation();
+  const sec=b.closest('[id^="s-"]');const card=sec&&sec.querySelector('.deck .scard[id^="top-"]');if(!card)return;let x=null;try{x=window.R2CTX(card)}catch(err){}if(!x||!x.mat)return;
+  setTimeout(()=>{try{const i=D.sets.indexOf(x.s);if(i>=0)S.set=i;S.fav=x.mat;if(!S.liked.includes(x.mat))S.liked.push(x.mat);const rk=[x.rack,x.rack2].filter(Boolean);S.rpick=rk.slice(0,2);rk.forEach(r=>{if(!S.rliked.includes(r))S.rliked.push(r)});
+   S.peek=null;S.made=true;try{trk('card',{mat:S.fav,rack:S.rpick.join(' + '),via:'table'})}catch(e){}try{acctSaveMatch()}catch(e){}renderAll();jump('s-card')}catch(err){console.error(err)}},30)},true);
+ window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2make]')){e.preventDefault();e.stopPropagation()}},true);
  function open(card,tab){if(!card){const bb=document.activeElement;}const sec=card?card.closest('[id^="s-"]'):null;window.R2OPEN(tab,sec&&sec.id)}
  window.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-r2open]');if(!b)return;e.preventDefault();e.stopPropagation();const c=b.closest('.scard')||b.closest('[id^="s-"]'),t=b.dataset.r2open;setTimeout(()=>open(c,t),30)},true);window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2open]')){e.preventDefault();e.stopPropagation()}},true);
  let dn=null;
