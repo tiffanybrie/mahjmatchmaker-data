@@ -47,3 +47,6 @@ Run this list top to bottom the day an album goes live. Every item is Claude's j
 - [ ] (2) "It's a mat-ch!" single-brand share card: tiles + one partner mat, made for that brand to reshare (Britt Mills reshared one). REDESIGN it: no circle-in-circle. Record launch_kit.share_card_planoly_id.
 - [ ] (3) Reel built in Canva as far as Claude can take it: every image in its own Canva folder (like Juniper), slides in order, several music suggestions. Record launch_kit.canva_reel_id, canva_folder_id, music_ideas[].
 - [ ] LAST: message Tiffany "the <album> reel is ready to finish" only when everything above is done. She finishes the reel while Duet Claude checks every other step before go-live. Record launch_kit.reel_finished_at + duet_checked_at. The Album Calendar shows each of these as its own step.
+
+## OMM albums: no tile pick (Tiffany Nov 24 1:13am)
+Oh My Mahjong albums use the OMM tile pile photo as the tile image. Never send her a tile-pick sheet for an OMM set: start the album the moment the set is announced.

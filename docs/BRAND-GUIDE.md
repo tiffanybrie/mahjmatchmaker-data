@@ -553,3 +553,5 @@ Each is asked once. Until she answers, follow the default given here.
 - 2026-11-23 10:49pm (Tiffany, with screenshot of the Glitterville/Vivara story card): the CURRENT FYM story match-card layout (header from y=200, footer 210 up: the r2f/r2g geometry) is the approved story layout and "works GREAT": do not move it. The r2h "push everything inside the zones" change was reverted. CORRECTED 10:57pm: Phone view IS offered in Story size (the whole point is sharing it to stories): in Story size the phone starts at y=262 (below the top zone) and all its text ends above y=1580.
 
 - 2026-11-24 12:16am (Tiffany): never call her/us 'The Mahj Matchmaker' in copy; say 'we'. CTAs on posts use 'Comment MATCH' (drives engagement + the DM automation), not 'head to the site'.
+
+- 2026-11-24 (Tiffany): FYM match cards: the card title must use Caprasimo MM (straight J); the app card currently draws the wonky Caprasimo J (MATCH-INBOX). Reel phone frames: one-colour headline, phone 1.2x pushed up under the 180 line; flashes need no headline.

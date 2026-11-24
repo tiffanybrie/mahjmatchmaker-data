@@ -5,7 +5,8 @@ import sys
 from PIL import Image,ImageDraw,ImageFont
 R='/home/claude/mahjmatchmaker-data/'
 tpl,raw,out,l1,l2=sys.argv[1:6]
-K=1.2; TOP=356
+import os
+K=1.2; TOP=int(os.environ.get('TOP',356))
 t=Image.open(tpl).convert('RGB')
 r=Image.open(raw).convert('RGB'); w=758; r=r.resize((w,int(r.height*w/r.width)),Image.LANCZOS)
 t.paste(r.crop((0,0,w,1310)),(161,610))
@@ -14,7 +15,7 @@ x0=(ph.width-1080)//2; ph=ph.crop((x0,0,x0+1080,min(ph.height,1920-TOP)))
 bgrow=t.crop((0,262,1080,263))
 im=bgrow.resize((1080,1920))
 # vertical gradient like template
-top=t.crop((0,0,1080,452)).resize((1080,TOP)); im.paste(top,(0,0))
+top=t.crop((0,0,1080,452)).resize((1080,TOP)) if TOP>300 else t.crop((0,0,1080,10)).resize((1080,TOP)); im.paste(top,(0,0))
 im.paste(ph,(0,TOP))
 # sharp screen: paste the raw again at full scale (not upscaled from 758)
 W2=int(round(758*K)); r2=Image.open(raw).convert('RGB'); r2=r2.resize((W2,int(r2.height*W2/r2.width)),Image.LANCZOS)
@@ -30,6 +31,7 @@ def line(tx,y):
     for s,f,dy in segs:
         d.text((x,y+dy),s,font=f,fill=NAVY); x+=d.textlength(s,font=f)+8
 # clean headline area
-d.rectangle((0,170,1080,TOP-8),fill=t.getpixel((20,300)))
-line(l1,186); line(l2,266)
+if TOP>300:
+    d.rectangle((0,170,1080,TOP-8),fill=t.getpixel((20,300)))
+    line(l1,186); line(l2,266)
 im.save(out)
