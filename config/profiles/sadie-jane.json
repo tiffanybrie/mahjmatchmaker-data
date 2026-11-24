@@ -12,16 +12,16 @@
     "Must love a lily pond."
   ],
   "swipe": {
-    "looking": "Blush and blue, nothing muddy",
+    "looking": "A blue that knows how to make me blush.",
     "pills": [
       "Lily ponds",
       "Pandas",
       "Peonies",
       "Garden parties"
     ],
-    "love": "Slow walks past the lotus pond",
-    "prompt_q": "The way to win me over",
-    "prompt_a": "Bring the blue. I'll bring the blush.",
+    "love": "Long walks by the lily pond.",
+    "prompt_q": "Non-negotiable",
+    "prompt_a": "Must love pandas. 🐼",
     "photo": "assets/launches/omm-sadie-jane-mahjong-tiles/06.jpg"
   },
   "her_colors": {
@@ -225,9 +225,12 @@
         "Her red-crowned<br>crane bird bam"
       ],
       [
-        "The 5 crak",
-        "crak-5",
-        "Her 5 crak"
+        "The craks",
+        [
+          "crak-1",
+          "crak-9"
+        ],
+        "Her embellished<br>craks"
       ]
     ],
     "flowers": [
