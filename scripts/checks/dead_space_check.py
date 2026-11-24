@@ -8,7 +8,7 @@ from PIL import Image
 bad = 0
 for p in sys.argv[1:]:
     im = Image.open(p).convert('L'); W, H = im.size; s = H / 1920
-    top, bot = int(180 * s), int(H - 150 * s); x0, x1 = int(W * .15), int(W * .85)
+    top, bot = int(180 * s), H - 2   # Nov 23 11:35pm: the bottom zone may not be blank either (no text there, but imagery); x0, x1 = int(W * .15), int(W * .85)
     px = im.load(); run = best = 0; at = 0
     for y in range(top, bot):
         row = [px[x, y] for x in range(x0, x1, max(1, W // 200))]
