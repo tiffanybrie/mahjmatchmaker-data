@@ -107,3 +107,8 @@ The tiffanybrie@ forward note below has not shown up in practice: as of Nov 16 n
 
 ## Nov 19 scheduled run
 - No TODO rows were left. Brewtifully (approved Nov 18) had no row: added and signed up (footer form, Chrome). Scheduled newsletter task retired: from now on, new partners are signed up by the onboarding step (CLAUDE.md) and the weekly 30-day recheck.
+| Averill Mahjong | averillmahjong.com | none | TODO: never signed up at onboarding (found Nov 23 11:07pm). Next Chrome turn |
+| Spools | spools.com | none | TODO: never signed up at onboarding (found Nov 23 11:07pm). Next Chrome turn |
+
+## Nov 23 11:07pm audit (Tiffany: "why haven't those brands been signed up")
+Marketing mail to mahjmatchmaker@ since Nov 12: My Fair, Mahj Mood, CMC, Let's Mahj On, Splash, Sweet Jojo, Amanda Toppe, Noli June, Mac + Miller, Virora, Royal, Anders Ruff, Tigre, Miss Mahjong (1), OMM (2, not launch mail). NOTHING from Bam Bird (signed up Nov 16), Bespoke (last Nov 7), Peace Love (last Nov 10). 'needs Tiffany' hCaptcha rows were never put in front of her: that was the miss. Sent her the tap list Nov 23 11:10pm.
