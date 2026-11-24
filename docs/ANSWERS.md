@@ -1781,3 +1781,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-11-23 11:50pm Tiffany: no white box around logos: logos now drawn on their own (r2s). Mahj Mood's logo FILE has its own pale-green background: needs a transparent Mahj Mood logo (OVERDUE).
 - 2026-11-23 11:51pm Tiffany: less space between the code button and the logos, logos larger (r2t).
 - 2026-11-23 11:53pm Tiffany: 'These become great stickers too': new card size 'Sticker' = the whole phone on a see-through background (PNG), Phone view only (r2u).
+- 2026-11-23 11:55pm Tiffany: sticker bottom edges needed revision (screen ran over the bezel): screen now ends inside the bezel with rounded corners + home bar (r2u2). She likes the sticker option.
