@@ -1,0 +1,20 @@
+{
+  "run": "2026-11-24 01:00 ET (the 8:37pm ET Nov 23 slot, fired late)",
+  "note": "Chrome signed in as @mahjmatchmaker. 12 handles: the 11 A_every_run brands plus Mahj Tile Haus (dated launch Tue 11/24). Stories open behind a 'View story' confirm; each was read to the last frame. No new product find. One new sale-type item (Bam Bird free shipping) logged to the Brand news sheet as NOT POSTED, not on the page (social-sourced). No curated change, no page publish, no push (catalog-only rule).",
+  "handles_checked": ["ohmymahjong","bambirdboutique","missmahjongofficial","myfairmahjong","bespoke_mahjong","andersruffdesignco","peacelovemahjong","bird_and_bamboo","mahj_mood","minimahjer","charlestonmahjongclub","mahjtilehaus"],
+  "with_stories": ["ohmymahjong","bambirdboutique","myfairmahjong","bespoke_mahjong","andersruffdesignco","peacelovemahjong","bird_and_bamboo","mahj_mood","minimahjer","mahjtilehaus"],
+  "frames_read": 47,
+  "finds": [
+    {"brand": "Bam Bird Boutique", "item": "Free shipping on orders over $300, Thanksgiving Day through Cyber Monday (Nov 26-29)", "kind": "sale (social)", "action": "Sheet row appended (NOT POSTED). Not added to curated or the page: sale from a story waits for her yes."}
+  ],
+  "seen_not_logged": [
+    {"brand": "Oh My Mahjong", "item": "Bauble Stockings Everyone Loves a Joker stocking ($89.50), NYT feature, gift guide mention, tile wall video", "why_not_a_find": "Stocking on baublestockings.com since Oct 22 and judged not a find last run; the rest is press and reposts."},
+    {"brand": "My Fair Mahjong", "item": "Keepsake Collection", "why_not_a_find": "Already logged Nov 23 6:35pm."},
+    {"brand": "Bird & Bamboo", "item": "Big Black Friday sale, details Wed 11/25", "why_not_a_find": "Already in the sheet Nov 23 1:45pm."},
+    {"brand": "Mahj Mood", "item": "Day 1 $10 off 4 mats (Mon 11/23), Bow & Bloom mat today, Baby Blue wooden racks on sale Tue 11/24", "why_not_a_find": "Black Friday Week sale already in curated, pending her yes."},
+    {"brand": "Peace Love Mahjong", "item": "Black Friday all week long reel", "why_not_a_find": "Black Friday sale already in curated."},
+    {"brand": "Mahj Tile Haus", "item": "Rosemary Beach collection launching Tue 11/24, in-person event 12pm", "why_not_a_find": "Already in this_week (1pm ET)."},
+    {"brand": "Anders Ruff, Bespoke, Mini Mahjer", "item": "Customer reposts, teaching clip", "why_not_a_find": "No product news."}
+  ],
+  "no_active_story": ["missmahjongofficial","charlestonmahjongclub"]
+}
