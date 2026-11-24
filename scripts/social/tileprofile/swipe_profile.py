@@ -92,7 +92,7 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
 .box{{background:#fdf4ee;border-radius:26px;padding:22px 30px;margin-bottom:20px}}
 .q{{font:700 22px Bit;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:8px;display:flex;align-items:center;gap:12px}}
 .a{{font-family:Capra;font-size:43px;line-height:1.05;color:var(--navy);white-space:nowrap}}
-.pa{{font-family:PF;font-style:italic;font-size:42px;line-height:1.1;color:var(--navy)}}
+.pa{{font-family:Capra;font-size:43px;line-height:1.05;color:var(--navy);white-space:nowrap}}/* Nov 24 (Tiffany): the third answer matches the other two, no italic */
 .basics{{display:flex;flex-wrap:nowrap;gap:9px}}
 .basic{{display:inline-flex;align-items:center;gap:10px;font:600 23px Bit;color:var(--navy);background:#fff;border:2.5px solid #ecdcd0;border-radius:999px;padding:8px 16px 8px 10px}}
 .dot{{width:26px;height:26px;border-radius:50%;box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.2)}}
