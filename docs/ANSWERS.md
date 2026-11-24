@@ -1752,3 +1752,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-11-23 7:45pm Tiffany: launch-day /links + homepage refresh (Table view FYM card, Sadie Jane newest album, new order FYM > Holiday > code > partners > tile albums > ShopMy, ShopMy collage -> Merry Mahjong). In OVERDUE for Tue 11/24 + NEW-ALBUM-CHECKLIST.
 - 2026-11-23 7:46pm Tiffany: racks slide: wall photo off (too small/too much text); third rack = OMM Clear Acrylic (real OMM photo rotated to the same template); more breathing room (profile rack_gap). She is checking whether OMM has another rack.
 - 2026-11-23 7:51pm Tiffany: racks slide subtitle = 'Pick up her pink, or choose racks that go with everything.' (profile racks_sub); white rack left end cleaned.
+- 2026-11-23 7:52pm Tiffany: FYM showcase (links + homepage) = Table view must be in it, Close up too, probably not Aerial; show her options to pick.
