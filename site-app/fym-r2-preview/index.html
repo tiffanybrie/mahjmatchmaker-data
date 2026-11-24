@@ -1169,7 +1169,15 @@ let y=STORY?200:40;
    ln(`on the ${mName} mat`+(mb?` · ${mb}`:''),`italic 500 ${f(32)}px "Playfair Display", Georgia, serif`,'#4a3d58');yy+=f(44);
    if(rn.length){ln('with '+rn.join(' + ')+' racks',`500 ${f(28)}px Bitter, Georgia, serif`,MUTE);yy+=f(52);}
    if(icon){const ih=f(40),iw=icon.width*ih/icon.height;g.font=`700 ${f(28)}px Bitter, Georgia, serif`;const t1='Matched with Find Your Mat-ch™';const tw=g.measureText(t1).width;const x0=sx+(sw-(iw+f(12)+tw))/2;g.drawImage(icon,x0,yy-ih+f(8),iw,ih);g.textAlign='left';g.fillStyle=NAVY;g.fillText(t1,x0+iw+f(12),yy);g.textAlign='center';yy+=f(30);}
-   const ct=codeLine();if(ct&&yy+f(70)<H){g.fillStyle=NAVY;const bw=Math.min(sw-f(80),f(620));g.beginPath();g.roundRect(sx+(sw-bw)/2,yy,bw,f(62),f(31));g.fill();g.fillStyle='#fff';g.font=`700 ${f(30)}px Bitter, Georgia, serif`;g.fillText(clip(ct,bw-f(40)),sx+sw/2,yy+f(41));}
+   const ct=codeLine();if(ct&&yy+f(70)<H){g.fillStyle=NAVY;const bw=Math.min(sw-f(80),f(620));g.beginPath();g.roundRect(sx+(sw-bw)/2,yy,bw,f(62),f(31));g.fill();g.fillStyle='#fff';g.font=`700 ${f(30)}px Bitter, Georgia, serif`;g.fillText(clip(ct,bw-f(40)),sx+sw/2,yy+f(41));yy+=f(62);}
+   {/*R2L Tiffany Nov 23 11:27pm: 'Yellow is wasted space, USE IT': fill the rest of the visible screen with the three pieces*/
+    const lim=(STORY?H-215:H-30),gap=f(16),top2=yy+f(28),hh=Math.min(lim-top2,f(330));
+    if(hh>f(150)){const cw=(sw-f(56)-2*gap)/3;let cx=sx+f(28);
+     const lab=(t,x)=>{g.fillStyle='rgba(255,255,255,.94)';g.font=`700 ${f(20)}px Bitter, Georgia, serif`;const tw=g.measureText(t).width+f(22);g.beginPath();g.roundRect(x+f(10),top2+hh-f(44),tw,f(34),f(17));g.fill();g.fillStyle=NAVY;g.textAlign='left';g.fillText(t,x+f(21),top2+hh-f(20));g.textAlign='center';};
+     g.save();g.beginPath();g.roundRect(cx,top2,cw,hh,f(20));g.clip();g.fillStyle='#f3eee8';g.fillRect(cx,top2,cw,hh);if(tile)cover(tile,cx,top2,cw,hh,f(20),1.05,...((T[s.tile]&&T[s.tile].bf)||[.5,.45]));g.restore();lab('TILES',cx);cx+=cw+gap;
+     g.save();g.beginPath();g.roundRect(cx,top2,cw,hh,f(20));g.clip();g.fillStyle='#f3eee8';g.fillRect(cx,top2,cw,hh);if(mat)cover(mat,cx,top2,cw,hh,f(20));g.restore();lab('MAT',cx);cx+=cw+gap;
+     g.save();g.beginPath();g.roundRect(cx,top2,cw,hh,f(20));g.clip();g.fillStyle='#f3eee8';g.fillRect(cx,top2,cw,hh);g.restore();try{racks(cx+f(10),top2+f(10),cw-f(20),hh-f(20),{fs:f(15),maxRow:f(120)});}catch(e){}
+    }}
    g.restore();}
  }else if(S.view==='stack'){ // Mood board: stacked close-ups (tiles / mat / racks)
   const top=y+26,bot=fby-10,x=36,w=W-72,gap=14,avail=bot-top-2*gap;const hT=avail*.3,hM=avail*.4,hR=avail-hT-hM;
