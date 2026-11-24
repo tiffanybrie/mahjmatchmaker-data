@@ -191,6 +191,11 @@
       "name": "Oh My Mahjong White Acrylic",
       "why": "Crisp white, like her face layer: lets the mat and the faces lead.",
       "group": "color"
+    },
+    {
+      "name": "Oh My Mahjong Clear Acrylic",
+      "why": "Clear: goes with every mat (Tiffany Nov 23 7:46pm, social slide).",
+      "group": "color"
     }
   ],
   "first_dates": [
@@ -255,7 +260,7 @@
   "layers_hand": "see the layers?<br>denim + pale blue, over a blush back.",
   "rack_natural": true,
   "racks_hand": "both Oh My Mahjong, both picked for her",
-  "racks_hand_framed": "both Oh My Mahjong, both picked for her",
+  "racks_hand_framed": "all Oh My Mahjong, all picked for her",
   "_racks_note": "Tiffany Nov 23 7:19pm: social profile uses OMM racks (brand-share play); her real pick on the album/match cards stays Bird & Bamboo Ballet Pink + French Blue.",
   "field": {
     "_note": "Find Your Mat-ch Table-view renders (r2 build), Sadie Jane + OMM Pink Quartz/White racks on OMM mats.",
@@ -282,7 +287,5 @@
       }
     ]
   },
-  "racks_photo": "assets/launches/omm-sadie-jane-mahjong-tiles/04-wall-cutout.png",
-  "racks_photo_head": "Clear and natural racks are always an option",
-  "racks_photo_caption": "Photo: Oh My Mahjong"
+  "rack_gap": 58
 }

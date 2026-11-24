@@ -101,7 +101,7 @@ s4 = (hdr(('Her best features', 72)) +
       f'{ab(L, 676, "display:flex;justify-content:space-between", W)}{sing}</div>')
 
 # ---- slide 5: racks she's into
-RACK = {'Oh My Mahjong White Acrylic': 'assets/racks/card/oh-my-mahjong-white-acrylic-matched.png', 'Bird & Bamboo Ballet Pink': 'assets/racks/card/bird-and-bamboo-ballet-pink.png', 'Bird & Bamboo French Blue': 'assets/racks/card/bird-and-bamboo-french-blue.png', 'Oh My Mahjong Pink Quartz': 'assets/racks/card/oh-my-mahjong-pink-quartz-matched.png', 'Oh My Mahjong Hot Pink': 'assets/racks/card/oh-my-mahjong-hot-pink.png', 'Oh My Mahjong Agate': 'assets/racks/card/oh-my-mahjong-agate.png', 'Bird & Bamboo Lavender': 'assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Peace Love Mahjong Chartreuse': 'assets/racks/card/peace-love-mahjong-chartreuse.png',
+RACK = {'Oh My Mahjong White Acrylic': 'assets/racks/card/oh-my-mahjong-white-acrylic-matched.png', 'Oh My Mahjong Clear Acrylic': 'assets/racks/card/oh-my-mahjong-clear-acrylic-matched.png', 'Bird & Bamboo Ballet Pink': 'assets/racks/card/bird-and-bamboo-ballet-pink.png', 'Bird & Bamboo French Blue': 'assets/racks/card/bird-and-bamboo-french-blue.png', 'Oh My Mahjong Pink Quartz': 'assets/racks/card/oh-my-mahjong-pink-quartz-matched.png', 'Oh My Mahjong Hot Pink': 'assets/racks/card/oh-my-mahjong-hot-pink.png', 'Oh My Mahjong Agate': 'assets/racks/card/oh-my-mahjong-agate.png', 'Bird & Bamboo Lavender': 'assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Peace Love Mahjong Chartreuse': 'assets/racks/card/peace-love-mahjong-chartreuse.png',
         'Peace Love Mahjong Oak': 'assets/racks/card/peace-love-mahjong-oak.png', 'Middle & Main Scalloped Beechwood': 'assets/racks/card/middle--main-scalloped-beechwood.png',
         'Mahjong Row & Co. Scalloped Tortoise': 'assets/racks/card/mahjong-row--co-scalloped-tortoise.png'}
 RACK.update({k: v for k, v in S.get('rack_imgs', {}).items() if k not in RACK})   # Nov 11: colour-card rack photos (as carousel.py)
@@ -111,7 +111,7 @@ for _r in P['racks'] + P.get('racks_social_extra', []):   # Nov 11 (Deco): fall 
 BRANDS = ('Oh My Mahjong', 'Bird & Bamboo', 'Peace Love Mahjong', 'Middle & Main', 'Miss Mahjong', 'Mahjong Row & Co.', 'Bam Bird Boutique')
 def rrow(r):   # same as the APPROVED carousel slide (carousel.py): brand + name on one line, racks at real proportions
     b = next((x for x in BRANDS if r['name'].startswith(x)), r['name'].split()[0]); c = r['name'][len(b) + 1:]
-    return (f'<div style="margin-top:32px"><div style="display:flex;align-items:baseline;gap:14px"><span class="caps" style="font-size:17px;color:#8a6a80">{e(b)}</span><span class="pf" style="font-size:40px;font-weight:600">{e(c)}</span></div>'
+    return (f'<div style="margin-top:{P.get("rack_gap", 32)}px"><div style="display:flex;align-items:baseline;gap:14px"><span class="caps" style="font-size:17px;color:#8a6a80">{e(b)}</span><span class="pf" style="font-size:40px;font-weight:600">{e(c)}</span></div>'
             f'<img src="{url(RACK[r["name"]])}" style="display:block;width:{W}px;height:{"auto" if P.get("rack_natural") else "84px"};object-fit:fill;margin-top:8px;filter:drop-shadow(0 8px 10px rgba(6,40,90,.18))"></div>')
 grp = lambda g: ''.join(rrow(r) for r in P['racks'] + P.get('racks_social_extra', []) if r.get('group', 'color') == g)  # extra = social-only racks (Nov 10 3:47pm)
 # Nov 10 3:46pm (Tiffany): the framed version is the APPROVED slide put in the frame. Same text, same racks, same
