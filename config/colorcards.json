@@ -1482,6 +1482,82 @@
    "shop_m": "Shop Sadie Jane · Oh My Mahjong",
    "draft": "Nov 23 2026: racks = her Ballet Pink + French Blue; top 3 mats = the first three for-sale mats in her review order at 1pm (Serendipity, Heron, Vivara; Peri-twinkle is retired so it is skipped). Re-check against her FINAL order after she taps Done. | Nov 23 6:55pm: top 3 = her FINAL album order (Serendipity, Petalwing, Pink & Blue Grandmillennial).",
    "racks_by": "Tiffany Nov 22 2026 1:10am: 'My rack choice is ballet pink with the French blue.' (Ballet Pink colour reset to blush #F5D6E0 the same night)"
+  },
+  "beaumont": {
+   "name": "Beaumont",
+   "col": "#27498f",
+   "brand": "Oh My Mahjong",
+   "sub": "Tortoiseshell backs with cobalt and chartreuse stripe layers",
+   "backs": [
+    [
+     "TORTOISESHELL",
+     "#633314",
+     "back"
+    ],
+    [
+     "COBALT BLUE",
+     "#27498f",
+     "stripe layer"
+    ],
+    [
+     "CHARTREUSE",
+     "#898310",
+     "stripe layer"
+    ],
+    [
+     "WHITE",
+     "#ebecec",
+     "face layer"
+    ]
+   ],
+   "faces": [
+    [
+     "BAMBOO GREEN",
+     "#7aaf6f"
+    ],
+    [
+     "CORAL PINK",
+     "#d9838a"
+    ],
+    [
+     "TEAL",
+     "#4594a7"
+    ],
+    [
+     "BLUSH",
+     "#e5b2af"
+    ],
+    [
+     "POWDER BLUE",
+     "#a2c9d7"
+    ]
+   ],
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "rack_imgs": {
+    "Oh My Mahjong Tortoise Shell": "assets/racks/card/oh-my-mahjong-tortoise-shell.png",
+    "My Fair Mahjong Indigo Blue": "assets/racks/card/my-fair-mahjong-indigo-blue.png"
+   },
+   "tile": "assets/tiles/album/beaumont.jpg",
+   "tag": [
+    "Lotus ponds, bamboo and turtles",
+    "tortoiseshell backs, cobalt + chartreuse stripes"
+   ],
+   "mats": [
+    "Lily",
+    "Elysium",
+    "Larkspur"
+   ],
+   "mat_imgs": {
+    "Lily": "assets/albums/beaumont/adds/oh-my-mahjong-lily-2400.jpg",
+    "Elysium": "assets/albums/beaumont/mats/oh-my-mahjong-elysium.jpg",
+    "Larkspur": "assets/albums/beaumont/mats/oh-my-mahjong-larkspur.jpg"
+   },
+   "shop": "Shop Beaumont · Oh My Mahjong",
+   "shop_m": "Shop Beaumont · Oh My Mahjong",
+   "draft": "Nov 24 2026 (Main, scheduled run): measured by k-means on the OMM pile shot (backs) and the OMM laid-out faces image 01 (faces), nothing recoloured. Top 3 mats + racks filled after the by-sight pass; final after her review."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."

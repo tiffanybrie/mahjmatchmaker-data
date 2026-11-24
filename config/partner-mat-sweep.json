@@ -1,13 +1,23 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-21T23:38:26+00:00",
- "fym_ref": "origin/fym-site-preview:site-app/fym-v123",
+ "swept_at": "2026-11-24T06:51:01+00:00",
+ "fym_ref": "live.json 1.22.16 site-app/fym-v122-16",
  "stores": {
   "ohmymahjong.com": {
    "brand": "Oh My Mahjong",
    "status": "ok",
    "products": 246,
    "mats": [
+    [
+     "2026-11-23T12:01:59-06:00",
+     "Starling Mat in Tube",
+     "starling-mat-in-tube"
+    ],
+    [
+     "2026-11-23T12:01:24-06:00",
+     "Lily Mat in Tube",
+     "lily-mat-in-tube"
+    ],
     [
      "2026-11-18T08:14:25-06:00",
      "Serendipity Mat in Tube",
@@ -151,9 +161,14 @@
    ],
    "missing": [
     [
-     "2026-11-18T08:14:25-06:00",
-     "Serendipity Mat in Tube",
-     "serendipity-mat-in-tube"
+     "2026-11-23T12:01:59-06:00",
+     "Starling Mat in Tube",
+     "starling-mat-in-tube"
+    ],
+    [
+     "2026-11-23T12:01:24-06:00",
+     "Lily Mat in Tube",
+     "lily-mat-in-tube"
     ]
    ]
   },
@@ -208,8 +223,13 @@
   "shop.andersruff.com": {
    "brand": "Anders Ruff",
    "status": "ok",
-   "products": 165,
+   "products": 168,
    "mats": [
+    [
+     "2026-11-23T22:14:01-05:00",
+     "Ivy League - Pistachio Plaid Mahjong Mat",
+     "ivy-league-pistachio-plaid-mahjong-ma"
+    ],
     [
      "2026-11-19T15:55:37-05:00",
      "Mahj Ever After Mahjong Mat | Anders Ruff x Trista Sutter, The Original Bachelorette",
@@ -513,9 +533,9 @@
    ],
    "missing": [
     [
-     "2026-11-19T15:55:37-05:00",
-     "Mahj Ever After Mahjong Mat | Anders Ruff x Trista Sutter, The Original Bachelorette",
-     "mahj-ever-after-mahjong-mat"
+     "2026-11-23T22:14:01-05:00",
+     "Ivy League - Pistachio Plaid Mahjong Mat",
+     "ivy-league-pistachio-plaid-mahjong-ma"
     ]
    ]
   },
@@ -688,7 +708,7 @@
   "bespokemahjong.com": {
    "brand": "Bespoke Mahjong",
    "status": "ok",
-   "products": 320,
+   "products": 319,
    "mats": [
     [
      "2026-10-22T12:17:12-05:00",
@@ -754,11 +774,6 @@
      "2026-07-13T13:34:13-05:00",
      "YEAR OF THE DRAGON MAT - PERIWINKLE",
      "year-of-the-dragon-mat-periwinkle"
-    ],
-    [
-     "2026-07-01T17:21:33-05:00",
-     "VINTAGE FLORAL MAT",
-     "cheetah-couture-instructional-mat-copy"
     ],
     [
      "2026-06-15T10:27:41-05:00",
@@ -1009,8 +1024,13 @@
   "brittmillsdesign.com": {
    "brand": "Britt Mills",
    "status": "ok",
-   "products": 761,
+   "products": 764,
    "mats": [
+    [
+     "2026-11-23T13:00:11-05:00",
+     "Plumage II Neoprene Mahjong Mat",
+     "plumage-ii-neoprene-mahjong-mat"
+    ],
     [
      "2026-11-16T14:57:08-05:00",
      "Plumage Neoprene Mahjong Mat",
@@ -1399,9 +1419,9 @@
    ],
    "missing": [
     [
-     "2026-11-02T10:05:36-05:00",
-     "Isla Leatherette Mahjong Mat",
-     "isla-leatherette-mahjong-mat"
+     "2026-11-23T13:00:11-05:00",
+     "Plumage II Neoprene Mahjong Mat",
+     "plumage-ii-neoprene-mahjong-mat"
     ]
    ]
   },
@@ -1549,7 +1569,7 @@
   "letsmahj-on.com": {
    "brand": "Let's Mahj On",
    "status": "ok",
-   "products": 88,
+   "products": 94,
    "mats": [
     [
      "2026-09-20T12:00:24-04:00",
@@ -1657,16 +1677,6 @@
    ],
    "missing": [
     [
-     "2026-11-15T22:12:41-06:00",
-     "Heirloom Collection: Gilded Ginkgo Classic Mahjong Mat",
-     "heirloom-collection-gilded-ginkgo-classic-mahjong-mat"
-    ],
-    [
-     "2026-11-15T22:12:25-06:00",
-     "Heirloom Collection: Chinoiserie Classic Square Mahjong Mat",
-     "heirloom-collection-chinoiserie-scalloped-mahjong-mat-copy"
-    ],
-    [
      "2026-11-05T13:49:57-06:00",
      "Perfectly Imperfect Laissez Les Bons Temps Rouler Collection Mahjong Mat",
      "laissez-les-bons-temps-rouler-collection-mahjong-mat-perfectly-imperfect"
@@ -1688,7 +1698,7 @@
   "mahjmood.com": {
    "brand": "Mahj Mood",
    "status": "ok",
-   "products": 52,
+   "products": 51,
    "mats": [
     [
      "2026-11-20T09:57:19-06:00",
@@ -1761,13 +1771,7 @@
      "90s-girl-mat"
     ]
    ],
-   "missing": [
-    [
-     "2026-11-20T09:57:19-06:00",
-     "Lake Day Mahjong Mat | Pre-Order, Ships January",
-     "lake-day-mahjong-mat-pre-order-ships-january"
-    ]
-   ]
+   "missing": []
   },
   "mahjsquadshop.com": {
    "brand": "Mahj Squad",
@@ -2036,23 +2040,7 @@
      "cowgirl-gingham-mahjong-playing-mat"
     ]
    ],
-   "missing": [
-    [
-     "2026-11-17T21:28:34-06:00",
-     "Hope Chest Mahjong Playing Mat",
-     "hope-chest-mahjong-playing-mat"
-    ],
-    [
-     "2026-11-17T17:26:16-06:00",
-     "Pressed Flowers Mahjong Playing Mat",
-     "pressed-flowers-mahjong-playing-mat"
-    ],
-    [
-     "2026-11-17T15:09:51-06:00",
-     "Giverny Mahjong Playing Mat",
-     "giverny-mahjong-playing-mat"
-    ]
-   ]
+   "missing": []
   },
   "myfairmahjong.com": {
    "brand": "My Fair Mahjong",
@@ -2196,7 +2184,7 @@
   "tigredetartan.com": {
    "brand": "Tigre de Tartan",
    "status": "ok",
-   "products": 131,
+   "products": 139,
    "mats": [
     [
      "2026-10-22T15:40:28-05:00",
@@ -2390,7 +2378,7 @@
   "mahjongregister.com": {
    "brand": "Mahjong Register",
    "status": "ok",
-   "products": 80,
+   "products": 81,
    "mats": [
     [
      "2026-11-10T18:34:11-06:00",
@@ -2578,138 +2566,7 @@
      "peach-spotted-cheetah-in-bloom-premium-mahjong-mat-33"
     ]
    ],
-   "missing": [
-    [
-     "2026-10-08T14:39:42-05:00",
-     "Lovely Lavender Double-Sided Mahjong Mat – Leatherette 31.5\"",
-     "lovely-lavender-double-sided-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-10-08T14:33:50-05:00",
-     "Colette's Kaleidoscope Double-Sided Mahjong Mat – Leatherette 31.5\"",
-     "colette-s-kaleidoscope-double-sided-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-10-08T14:10:01-05:00",
-     "Sunday Sherbert Double-Sided Mahjong Mat – Leatherette 31.5\"",
-     "sunday-sherbert-double-sided-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-09-10T12:37:05-05:00",
-     "Snowflake Reindeer Lodge Double-Sided Mahjong Mat – Leatherette 31.5\"",
-     "snowflake-reindeer-lodge-double-sided-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-09-10T12:24:57-05:00",
-     "Letters to Santa Double-Sided Mahjong Mat – Leatherette 31.5\"",
-     "letters-to-santa-double-sided-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-09-10T12:19:53-05:00",
-     "Holly Jolly Double-Sided Mahjong Mat – Leatherette 31.5\"",
-     "holly-jolly-double-sided-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-09-10T12:14:30-05:00",
-     "Very Merry Wreath Double-Sided Mahjong Mat – Leatherette 31.5\"",
-     "very-merry-wreath-double-sided-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-09-03T07:50:55-05:00",
-     "Gold Leatherette Mahjong Mat – 33\"",
-     "gold-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-09-02T13:18:06-05:00",
-     "Purple & Coral Pink Double-Sided Leatherette Mahjong Mat – 33\"",
-     "purple-coral-pink-double-sided-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-09-02T12:58:27-05:00",
-     "Hunter Green & Navy Double-Sided Leatherette Mahjong Mat – 33\"",
-     "hunter-green-navy-double-sided-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-09-02T12:39:26-05:00",
-     "Seafoam Green & Slate Blue Double-Sided Leatherette Mahjong Mat – 33\"",
-     "seafoam-green-slate-blue-double-sided-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-09-02T06:59:52-05:00",
-     "Navy Leatherette Mahjong Mat – 33\"",
-     "navy-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-09-02T06:59:52-05:00",
-     "Emerald Teal & Celadon Green Double-Sided Leatherette Mahjong Mat – 33\"",
-     "emerald-teal-celadon-green-double-sided-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-09-02T06:59:51-05:00",
-     "Coral & Aqua Double-Sided Leatherette Mahjong Mat – 33\"",
-     "coral-aqua-double-sided-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-09-01T13:16:48-05:00",
-     "Butterfly Belle Mahjong Mat – Neoprene 33\"",
-     "butterfly-belle-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-09-01T13:02:08-05:00",
-     "Pretty in Plum Mahjong Mat – Neoprene 33\"",
-     "pretty-in-plum-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-09-01T13:00:14-05:00",
-     "Buttercup Cherie Mahjong Mat – Neoprene 33\"",
-     "buttercup-cherie-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-09-01T12:53:49-05:00",
-     "Snowflake Lodge Mahjong Mat – Neoprene 33\"",
-     "snowflake-lodge-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-09-01T12:48:13-05:00",
-     "Peppermint Patty Mahjong Mat – Neoprene 33\"",
-     "peppermint-patty-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-09-01T12:46:50-05:00",
-     "Letters to Santa Mahjong Mat – Neoprene 33\"",
-     "letters-to-santa-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-09-01T12:44:43-05:00",
-     "Very Merry Wreath Mahjong Mat – Neoprene 33\"",
-     "very-merry-wreath-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-08-03T17:49:53-05:00",
-     "Holly Jolly Mahjong Mat – Neoprene 33\"",
-     "holly-jolly-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-07-20T18:15:21-05:00",
-     "Paisley Jubilee Mahjong Mat – Neoprene 33\"",
-     "paisley-jubilee-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-07-20T18:15:12-05:00",
-     "Moonlit Crane Mahjong Mat – Neoprene 33\"",
-     "moonlit-crane-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-07-20T18:15:03-05:00",
-     "Peony Sociale Mahjong Mat – Neoprene 33\"",
-     "peony-sociale-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-07-07T06:17:01-05:00",
-     "Palm Beach Pink Leopard Mahjong Mat – Neoprene 33\"",
-     "palm-beach-pink-leopard-neoprene-mahjong-mat"
-    ]
-   ]
+   "missing": []
   },
   "theroyalmahjongsociety.com": {
    "brand": "The Royal Mahjong Society",
@@ -2766,8 +2623,38 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 770,
+   "products": 780,
    "mats": [
+    [
+     "2026-11-22T21:15:35-05:00",
+     "Prism Petals Mahjong Mat",
+     "prismatic-petals-mahjong-mat"
+    ],
+    [
+     "2026-11-22T15:08:42-05:00",
+     "Electric Petal Garden Mahjong Mat",
+     "electric-petal-garden-mahjong-mat"
+    ],
+    [
+     "2026-11-22T12:59:59-05:00",
+     "Savannah Lillian Claire Designs Artist Mahjong Mat",
+     "savannah-lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-22T12:59:01-05:00",
+     "Pine Valley Lillian Claire Designs Artist Mahjong Mat",
+     "pine-valley-lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-22T12:49:56-05:00",
+     "Eat Pray Love Lillian Claire Designs Artist Mahjong Mat",
+     "eat-pray-love-lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-21T20:19:45-05:00",
+     "Bamboo Butterfly Garden Mahjong Mat",
+     "bamboo-butterfly-garden-mahjong-mat"
+    ],
     [
      "2026-11-17T15:12:30-05:00",
      "Ducking Away AC Studios Artist Mahjong Mat",
@@ -5571,24 +5458,29 @@
    ],
    "missing": [
     [
-     "2026-11-17T15:12:30-05:00",
-     "Ducking Away AC Studios Artist Mahjong Mat",
-     "ducking-away-ac-studios-artist-mahjong-mat"
+     "2026-11-22T21:15:35-05:00",
+     "Prism Petals Mahjong Mat",
+     "prismatic-petals-mahjong-mat"
     ],
     [
-     "2026-11-17T15:01:10-05:00",
-     "Peacock in the Hydrangeas Mahjong Mat",
-     "peacock-in-the-hydrangeas-mahjong-mat"
+     "2026-11-22T15:08:42-05:00",
+     "Electric Petal Garden Mahjong Mat",
+     "electric-petal-garden-mahjong-mat"
     ],
     [
-     "2026-11-17T14:47:31-05:00",
-     "Wildly Starstruck Mahjong Mat",
-     "wildly-starstruck-mahjong-mat"
+     "2026-11-22T12:59:59-05:00",
+     "Savannah Lillian Claire Designs Artist Mahjong Mat",
+     "savannah-lillian-claire-designs-artist-mahjong-mat"
     ],
     [
-     "2026-11-17T14:07:57-05:00",
-     "Midnight Jubilee Mahjong Mat",
-     "midnight-jubilee-mahjong-mat"
+     "2026-11-22T12:59:01-05:00",
+     "Pine Valley Lillian Claire Designs Artist Mahjong Mat",
+     "pine-valley-lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-22T12:49:56-05:00",
+     "Eat Pray Love Lillian Claire Designs Artist Mahjong Mat",
+     "eat-pray-love-lillian-claire-designs-artist-mahjong-mat"
     ],
     [
      "2026-11-09T13:55:57-05:00",
@@ -5606,24 +5498,9 @@
      "tidal-glass-with-simple-middle-mahjong-mat"
     ],
     [
-     "2026-11-01T16:29:11-05:00",
-     "Camellia Kaleidoscope OHBoN Studios Artist Mahjong Mat",
-     "camellia-kaleidoscope-artist-collab-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-10-25T13:04:44-04:00",
-     "Pop Bloom with Instructions Mahjong Mat",
-     "pop-bloom-with-instructions-mahjong-mat"
-    ],
-    [
      "2026-10-01T16:06:09-04:00",
      "Fall Flowers Mahjong Mat",
      "fall-flowers-mahjong-mat"
-    ],
-    [
-     "2026-09-30T21:24:34-04:00",
-     "Zebra Pattern OHBoN Studios Artist Mahjong Mat",
-     "zebra-pattern-artist-collab-neoprene-mahjong-mat"
     ],
     [
      "2026-09-25T14:29:38-04:00",
@@ -5651,11 +5528,6 @@
      "safari-garden-with-instructions-neoprene-mahjong-mat"
     ],
     [
-     "2026-08-30T21:36:12-04:00",
-     "Hydrangea Haven Mahjong Mat",
-     "hydrangea-haven-neoprene-mahjong-mat"
-    ],
-    [
      "2026-08-16T14:58:37-04:00",
      "Fall Flowers with Instructions Mahjong Mat",
      "fall-flowers-with-directions-neoprene-mahjong-mat"
@@ -5681,59 +5553,14 @@
      "year-of-the-horse-ohbon-studios-artist-mahjong-mat"
     ],
     [
-     "2026-08-03T18:23:02-04:00",
-     "White Bulldog Game Day Mahjong Mat",
-     "white-bulldog-game-day-mahjong-mat"
-    ],
-    [
      "2026-08-01T11:34:49-04:00",
      "Sage Mosaic Custom Mahjong Mat",
      "sage-mosaic-personalized-neoprene-mahjong-mat"
     ],
     [
-     "2026-08-01T10:16:32-04:00",
-     "Garden Lilies OHBoN Studios Artist Mahjong Mat",
-     "garden-lilies-artist-collab-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-07-28T14:57:19-04:00",
-     "Painted Bulldog OHBoN Studios Artist Game Day Mahjong Mat",
-     "painted-bulldog-ohbon-studios-artist-game-day-mahjong-mat"
-    ],
-    [
-     "2026-07-27T14:45:42-04:00",
-     "Halloween Happy Hour Mahjong Mat",
-     "halloween-happy-hour-mahjong-mat"
-    ],
-    [
-     "2026-07-19T13:04:43-04:00",
-     "Cheaper Than Christmas Tiles OHBoN Studios Artist Mahjong Mat",
-     "cheaper-than-christmas-tiles-ohbon-studios-artist-mahjong-mat"
-    ],
-    [
-     "2026-07-13T16:49:02-04:00",
-     "Winter Wonderland Mahjong Mat",
-     "winter-wonderland-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-07-09T19:42:29-04:00",
-     "Tossing Tiles OHBoN Studios Artist Mahjong Mat",
-     "tossing-tiles-artist-collab-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-07-08T13:07:12-04:00",
-     "Pineapple Pattern OHBoN Studios Artist Mahjong Mat",
-     "pineapple-pattern-ohbon-studios-artist-mahjong-mat"
-    ],
-    [
      "2026-07-03T21:07:51-04:00",
      "Orange Splatter Star OHBoN Studios Artist Mahjong Mat",
      "orange-splatter-star-artist-collab-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-07-03T21:04:11-04:00",
-     "Garden Glass with Instructions OHBoN Studios Artist Mahjong Mat",
-     "garden-glass-leatherette-with-instructions-ohbon-studios-artist-mahjong-mat"
     ],
     [
      "2026-06-30T08:09:40-04:00",
@@ -5756,26 +5583,6 @@
      "custom-monogram-mahjong-mat"
     ],
     [
-     "2026-06-26T16:28:43-04:00",
-     "Pink Bam Bird Toile Mahjong Mat",
-     "pink-bam-bird-toile-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-06-22T14:22:09-04:00",
-     "Summer Wash Mahjong Mat",
-     "summer-wash-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-06-22T12:59:24-04:00",
-     "Ocean Palms Mahjong Mat",
-     "ocean-palms-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-06-22T10:58:16-04:00",
-     "Sanford Stadium OHBoN Studios Artist Game Day Mahjong Mat",
-     "sanford-stadium-artist-collab-mahjong-mat"
-    ],
-    [
      "2026-06-22T10:50:46-04:00",
      "Year of the Horse Medallion OHBoN Studios Artist Mahjong Mat",
      "year-of-the-horse-medallion-ohbon-studios-artist-mahjong-mat"
@@ -5791,11 +5598,6 @@
      "golfing-ohbon-studios-artist-mahjong-mat"
     ],
     [
-     "2026-06-19T21:16:51-04:00",
-     "Floral Kaleidoscope Mahjong Mat",
-     "floral-kaleidoscope-neoprene-mahjong-mat"
-    ],
-    [
      "2026-04-22T21:49:45-04:00",
      "London Calling with Instructions Mahjong Mat",
      "london-calling-with-instructions-neoprene-mahjong-mat"
@@ -5804,11 +5606,6 @@
      "2026-04-19T16:42:38-04:00",
      "Tobacco Leaves Mahjong Mat",
      "tobacco-leaves-mahjong-mat"
-    ],
-    [
-     "2026-02-18T15:32:22-05:00",
-     "Black Bulldog Game Day Mahjong Mat",
-     "black-bulldog-game-day-mahjong-mat"
     ],
     [
      "2026-02-18T15:32:11-05:00",
@@ -5859,11 +5656,6 @@
      "2026-02-18T15:18:03-05:00",
      "Pet Plays Custom Mahjong Mat",
      "doodle-plays-mahj-custom-mahjong-mat"
-    ],
-    [
-     "2026-02-18T15:17:39-05:00",
-     "Old Lady Funny with Border Mahjong Mat",
-     "old-lady-funny-mahjong-mat-with-border"
     ]
    ]
   },

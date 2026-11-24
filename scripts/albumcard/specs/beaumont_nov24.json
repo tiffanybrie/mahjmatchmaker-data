@@ -1,0 +1,351 @@
+{
+ "_note": "Beaumont album DRAFT (Nov 24 2026, Main scheduled run): Claude's by-sight candidates from the catalog pull (Playbook: Claude picks, Tiffany reviews). OMM album rule: opens with a top Oh My Mahjong matches section; Lily is the pair mat. Facebook TNT/other-group recs owed (Chrome).",
+ "groups": {
+  "pair": "Made for Beaumont",
+  "omm": "Top Oh My Mahjong matches",
+  "picks": "More mat brands that match Beaumont",
+  "holiday": "Holiday",
+  "yours": "Your adds"
+ },
+ "mats": [
+  {
+   "group": "pair",
+   "name": "Lily",
+   "brand": "Oh My Mahjong",
+   "fym": null,
+   "store_url": "https://ohmymahjong.com/products/lily-mat-in-tube",
+   "img": "assets/albums/beaumont/adds/oh-my-mahjong-lily-2400.jpg",
+   "box": [
+    198,
+    475,
+    2161,
+    2393
+   ],
+   "why": "Oh My Mahjong's own mat for Beaumont, dropping with it Fri Nov 27: green cane border, cobalt and turquoise parasols, herons and lotus.",
+   "retired": false,
+   "holiday": false,
+   "lowres": false,
+   "partner": true
+  },
+  {
+   "group": "omm",
+   "name": "Elysium",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
+   "why": "cobalt frame, chartreuse lattice and a pagoda garden: the stripe layers, mat-sized",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/oh-my-mahjong-elysium.jpg",
+   "box": [
+    121,
+    373,
+    1862,
+    2116
+   ],
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Larkspur",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/larkspur-mat-in-tube",
+   "why": "chartreuse border around a coral cane centre: the coral craks and the chartreuse stripe",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/oh-my-mahjong-larkspur.jpg",
+   "box": [
+    145,
+    384,
+    1849,
+    2096
+   ],
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Palomino",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/palomino-mat-in-tube",
+   "why": "tortoise-brown cane with cobalt peonies: the back and the stripe together",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/oh-my-mahjong-palomino.jpg",
+   "box": [
+    123,
+    417,
+    1851,
+    2143
+   ],
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Jade",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/jade-mat-in-tube",
+   "why": "deep teal and green garden: the turtle jokers and bamboo",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/oh-my-mahjong-jade.jpg",
+   "box": [
+    157,
+    391,
+    1865,
+    2099
+   ],
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Birdie Green",
+   "brand": "Oh My Mahjong",
+   "fym": "alb:coquette:Birdie Green",
+   "why": "green with cobalt peacock fans",
+   "retired": true,
+   "holiday": false,
+   "img": "assets/mats/omm-retired/birdie-green.jpg",
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Serendipity",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/serendipity-mat-in-tube",
+   "why": "chartreuse lattice, powder blue and blush lotus",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/oh-my-mahjong-serendipity.jpg",
+   "box": [
+    139,
+    388,
+    1845,
+    2107
+   ],
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Isla",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/isla-mat-in-tube",
+   "why": "pale green and powder blue birds and leaves",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/oh-my-mahjong-isla.jpg",
+   "box": [
+    184,
+    393,
+    1816,
+    2028
+   ],
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Hampton",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/hampton-mat-in-tube",
+   "why": "chartreuse, aqua and coral cranes with pagoda lanterns",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/oh-my-mahjong-hampton.jpg",
+   "box": [
+    132,
+    388,
+    1879,
+    2128
+   ],
+   "lowres": false
+  },
+  {
+   "group": "omm",
+   "name": "Cognac",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/cognac-mat",
+   "why": "solid tortoise-tone leather: tonal with the backs",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/leftout/sadie-jane/oh-my-mahjong-cognac.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Blooming Lotus",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/blooming-lotus-mahjong-mat",
+   "why": "cobalt with a lime bamboo frame and lotus",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/lets-be-besties-blooming-lotus.jpg",
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Bamboo Lotus",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/bamboo-lotus-neoprene-mahjong-mat",
+   "why": "bamboo green with cobalt lotus",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/lets-be-besties-bamboo-lotus.jpg",
+   "lowres": false,
+   "box": [
+    28,
+    28,
+    2371,
+    2371
+   ]
+  },
+  {
+   "group": "picks",
+   "name": "Heron Landing",
+   "brand": "Mahjong Moxie",
+   "fym": "www.mahjong-moxie.com/heron-landing-mat",
+   "why": "herons and bamboo, powder blue: Lily's herons in another brand",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/mahjong-moxie-heron-landing.jpg",
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Peacock Garden",
+   "brand": "Britt Mills",
+   "fym": "brittmillsdesign.com/peacock-garden-neoprene-mahjong-mat-arriving-late-october",
+   "why": "navy and olive chinoiserie: cobalt + chartreuse",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/britt-mills-peacock-garden.jpg",
+   "lowres": false,
+   "box": [
+    530,
+    470,
+    1963,
+    1903
+   ]
+  },
+  {
+   "group": "picks",
+   "name": "Blue Me Away",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/blue-me-away-mahjong-mat",
+   "why": "cobalt florals on a tortoise-brown ground",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/lets-be-besties-blue-me-away.jpg",
+   "lowres": false,
+   "box": [
+    45,
+    44,
+    2371,
+    2371
+   ]
+  },
+  {
+   "group": "picks",
+   "name": "Garden Party – Meadow",
+   "brand": "My Fair Mahjong",
+   "fym": "myfairmahjong.com/mat-garden-party-meadow",
+   "why": "chartreuse scallop around a coral pink centre",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/my-fair-mahjong-garden-party-meadow.jpg",
+   "box": [
+    118,
+    118,
+    961,
+    961
+   ],
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Cherry Blossom Jade",
+   "brand": "Miss Mahjong",
+   "fym": "missmahjong.com/cherry-blossom-mahjong-playing-mat-jade",
+   "why": "pink and green blossoms",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/miss-mahjong-cherry-blossom-jade.jpg",
+   "box": [
+    222,
+    12,
+    1266,
+    1050
+   ],
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Chartreuse Garden",
+   "brand": "Bespoke Mahjong",
+   "fym": "www.bespokemahjong.com/preorder-sapphire-blue-garden-mat-copy",
+   "why": "chartreuse centre in a garden of pinks and blues",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/bespoke-mahjong-chartreuse-garden.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Sapphire Blue Garden Mat",
+   "brand": "Bespoke Mahjong",
+   "fym": "www.bespokemahjong.com/sapphireblue-garden-mat-copy",
+   "why": "cobalt-navy centre with a flower border",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/bespoke-mahjong-sapphire-blue-garden-mat.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Citrus Chinoiserie",
+   "brand": "Mahj & Moon",
+   "fym": "mahjandmoon.com/citrus-chinoiserie-mahjong-mat",
+   "why": "navy and green chinoiserie with a gingham centre",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/mats/clean/bamboo-cut/mahj-and-moon-citrus-chinoiserie.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Rattan",
+   "brand": "Sunday Mahjong",
+   "fym": "sundaymahjong.com/rattan-premium-mahjong-mat",
+   "why": "rattan cane in olive and brown: tortoise + chartreuse",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/sunday-mahjong-rattan.jpg",
+   "box": [
+    58,
+    62,
+    1040,
+    1034
+   ],
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Secret Garden",
+   "brand": "Anders Ruff",
+   "fym": "shop.andersruff.com/secret-garden-mahjong-mat",
+   "why": "green chinoiserie frame, powder blue centre",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/anders-ruff-secret-garden.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Mountain Green",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/mountain-green-mahjong-mat",
+   "why": "green stripes in a navy and coral border",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/beaumont/mats/lets-be-besties-mountain-green.jpg",
+   "lowres": false
+  }
+ ]
+}

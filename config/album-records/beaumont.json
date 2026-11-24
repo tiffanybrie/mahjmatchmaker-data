@@ -3,7 +3,7 @@
  "set": "beaumont",
  "name": "Beaumont",
  "brand": "Oh My Mahjong",
- "status": "STEP 0 done (tile pile shot). Next: FYM set + colour card, TNT/other-groups research (Chrome), pool pull, by-sight pass, cards, review page.",
+ "status": "STOPPED AT CARDS Nov 24 7:35am: steps 0-2, 3c (light), 4a, 4, 5, 6, 7 done; 23-card spec built (tile racks OMM Tortoise Shell + My Fair Indigo Blue). Card render + review page blocked only by [3]/[3b] Facebook research (Chrome).",
  "slot_hint": "OMM drop Fri Nov 27 2026 (with the Lily mat); album staged hidden before then",
  "pair_mat": "Lily (Oh My Mahjong, launches with Beaumont)",
  "tile_photo": {
@@ -14,5 +14,1312 @@
   "basis": "Tile pile rule (Nov 19 3:27pm) + Tiffany Nov 24 1:13am: OMM albums need no tile pick",
   "asked_at": null,
   "approved_at": "2026-11-24T01:25:00-05:00"
+ },
+ "colorcard_img": "assets/colorcards/beaumont/00-beaumont-mahjong-tiles-color-guide-mobile.jpg",
+ "colorcard_draft": {
+  "at": "2026-11-24T07:00:00-05:00",
+  "by": "Main",
+  "source": "k-means on assets/tiles/album/beaumont.jpg (OMM pile shot) for backs; k-means on OMM listing image 01 (all faces laid out) for faces; nothing recoloured",
+  "note": "Back = tortoiseshell (amber #633314, dark side #2f1c12); side layers cobalt + chartreuse; faces bamboo green, coral pink, teal, blush, powder blue (turtle jokers blue-green, lotus pinks).",
+  "pairing_note": "Coordinated OMM mat: Lily (drops with Beaumont Fri Nov 27): green cane border, cobalt + turquoise parasols, herons on pale grey."
+ },
+ "pull": {
+  "contrast": [
+   "CORAL PINK",
+   "BLUSH",
+   "BAMBOO GREEN",
+   "TEAL"
+  ]
+ },
+ "pool": {
+  "new_candidates": [
+   {
+    "name": "THE MAHJONG HOUSE - Coastal Multi Double-Sided Mahjong Mat",
+    "brand": "The Mahjong House",
+    "img": "assets/albums/catalog-new/the-mahjong-house--the-mahjong-house-coastal-multi-double-sided-mahjong-mat.jpg",
+    "colours": {
+     "blue": 61.1,
+     "pink": 9.5,
+     "neutral": 7.6,
+     "green": 6.4,
+     "brown": 5.3,
+     "yellow": 4.1,
+     "purple": 2.4,
+     "red": 2.2,
+     "teal": 0.8,
+     "earthy": 0.6
+    },
+    "holiday_guess": false,
+    "source": "ShopMy · The Mahjong House",
+    "link": "https://go.shopmy.us/p-109987133",
+    "product_url": "https://themahjonghouse.com/products/coastal-multi-double-sided-mahjong-mat",
+    "lowres": true
+   },
+   {
+    "name": "THE MAHJONG HOUSE - Coastal Sunshine Double-Sided Mahjong Mat",
+    "brand": "The Mahjong House",
+    "img": "assets/albums/catalog-new/the-mahjong-house--the-mahjong-house-coastal-sunshine-double-sided-mahjong-mat.jpg",
+    "colours": {
+     "brown": 53.8,
+     "pink": 19.7,
+     "earthy": 7.4,
+     "neutral": 6.0,
+     "yellow": 5.5,
+     "red": 4.7,
+     "green": 1.1,
+     "blue": 0.7,
+     "teal": 0.6,
+     "orange": 0.5
+    },
+    "holiday_guess": false,
+    "source": "ShopMy · The Mahjong House",
+    "link": "https://go.shopmy.us/p-109987972",
+    "product_url": "https://themahjonghouse.com/products/coastal-sunshine-double-sided-mahjong-mat",
+    "lowres": true
+   },
+   {
+    "name": "THE MAHJONG HOUSE - Coastal Pink Sand Double-Sided Mahjong Mat",
+    "brand": "The Mahjong House",
+    "img": "assets/albums/catalog-new/the-mahjong-house--the-mahjong-house-coastal-pink-sand-double-sided-mahjong-mat.jpg",
+    "colours": {
+     "pink": 53.5,
+     "purple": 16.8,
+     "green": 14.4,
+     "neutral": 8.4,
+     "dark": 2.3,
+     "teal": 1.9,
+     "yellow": 1.3,
+     "blue": 0.9,
+     "red": 0.4,
+     "brown": 0.0
+    },
+    "holiday_guess": false,
+    "source": "ShopMy · The Mahjong House",
+    "link": "https://go.shopmy.us/p-109988862",
+    "product_url": "https://themahjonghouse.com/products/coastal-pink-sand-double-sided-mahjong-mat",
+    "lowres": true
+   },
+   {
+    "name": "THE MAHJONG HOUSE - Coastal Sea Glass Double-Sided Mahjong Mat",
+    "brand": "The Mahjong House",
+    "img": "assets/albums/catalog-new/the-mahjong-house--the-mahjong-house-coastal-sea-glass-double-sided-mahjong-mat.jpg",
+    "colours": {
+     "blue": 50.8,
+     "neutral": 20.5,
+     "orange": 16.0,
+     "brown": 6.9,
+     "yellow": 2.1,
+     "dark": 1.0,
+     "earthy": 0.9,
+     "red": 0.8,
+     "green": 0.6,
+     "teal": 0.3,
+     "pink": 0.1
+    },
+    "holiday_guess": false,
+    "source": "ShopMy · The Mahjong House",
+    "link": "https://go.shopmy.us/p-109989583",
+    "product_url": "https://themahjonghouse.com/products/coastal-sea-glass-double-sided-mahjong-mat",
+    "lowres": true
+   },
+   {
+    "name": "THE MAHJONG HOUSE - Coastal Harbor Double-Sided Mahjong Mat",
+    "brand": "The Mahjong House",
+    "img": "assets/albums/catalog-new/the-mahjong-house--the-mahjong-house-coastal-harbor-double-sided-mahjong-mat.jpg",
+    "colours": {
+     "blue": 72.4,
+     "green": 23.9,
+     "yellow": 1.9,
+     "teal": 1.2,
+     "dark": 0.5,
+     "pink": 0.2
+    },
+    "holiday_guess": false,
+    "source": "ShopMy · The Mahjong House",
+    "link": "https://go.shopmy.us/p-109990206",
+    "product_url": "https://themahjonghouse.com/products/western-neutral-double-sided-travel-mahjong-mat-copy",
+    "lowres": true
+   },
+   {
+    "name": "THE MAHJONG HOUSE - Western Neutral Double-Sided Mahjong Mat",
+    "brand": "The Mahjong House",
+    "img": "assets/albums/catalog-new/the-mahjong-house--the-mahjong-house-western-neutral-double-sided-mahjong-mat.jpg",
+    "colours": {
+     "blue": 83.5,
+     "purple": 7.9,
+     "pink": 3.3,
+     "yellow": 2.5,
+     "neutral": 2.0,
+     "green": 0.5,
+     "teal": 0.3,
+     "dark": 0.0
+    },
+    "holiday_guess": false,
+    "source": "ShopMy · The Mahjong House",
+    "link": "https://go.shopmy.us/p-109990953",
+    "product_url": "https://themahjonghouse.com/products/western-neutral-double-sided-mahjong-mat",
+    "lowres": true
+   },
+   {
+    "name": "Starling Mat in Tube",
+    "brand": "Oh My Mahjong",
+    "img": "assets/albums/catalog-new/oh-my-mahjong--starling-mat-in-tube.jpg",
+    "colours": {
+     "green": 38.8,
+     "blue": 29.5,
+     "pink": 15.5,
+     "orange": 7.5,
+     "teal": 4.9,
+     "neutral": 1.3,
+     "brown": 1.2,
+     "earthy": 0.5,
+     "purple": 0.4,
+     "red": 0.4,
+     "yellow": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Oh My Mahjong",
+    "link": "https://ohmymahjong.com/products/starling-mat-in-tube",
+    "product_url": "https://ohmymahjong.com/products/starling-mat-in-tube",
+    "lowres": false
+   },
+   {
+    "name": "Lily Mat in Tube",
+    "brand": "Oh My Mahjong",
+    "img": "assets/albums/catalog-new/oh-my-mahjong--lily-mat-in-tube.jpg",
+    "colours": {
+     "green": 42.1,
+     "blue": 36.2,
+     "teal": 10.1,
+     "neutral": 8.5,
+     "dark": 1.3,
+     "earthy": 1.1,
+     "purple": 0.4,
+     "brown": 0.3,
+     "orange": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Oh My Mahjong",
+    "link": "https://ohmymahjong.com/products/lily-mat-in-tube",
+    "product_url": "https://ohmymahjong.com/products/lily-mat-in-tube",
+    "lowres": false
+   },
+   {
+    "name": "Ivy League - Pistachio Plaid Mahjong Mat",
+    "brand": "Anders Ruff",
+    "img": "assets/albums/catalog-new/anders-ruff--ivy-league-pistachio-plaid-mahjong-mat.jpg",
+    "colours": {
+     "green": 54.3,
+     "pink": 41.7,
+     "brown": 2.9,
+     "earthy": 0.7,
+     "teal": 0.4,
+     "neutral": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Anders Ruff",
+    "link": "https://shop.andersruff.com/products/ivy-league-pistachio-plaid-mahjong-ma",
+    "product_url": "https://shop.andersruff.com/products/ivy-league-pistachio-plaid-mahjong-ma",
+    "lowres": false
+   },
+   {
+    "name": "Plumage II Neoprene Mahjong Mat",
+    "brand": "Britt Mills",
+    "img": "assets/albums/catalog-new/britt-mills--plumage-ii-neoprene-mahjong-mat.jpg",
+    "colours": {
+     "brown": 41.2,
+     "orange": 18.8,
+     "earthy": 18.3,
+     "neutral": 13.1,
+     "dark": 3.2,
+     "pink": 2.7,
+     "red": 1.5,
+     "yellow": 0.8,
+     "green": 0.3,
+     "blue": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Britt Mills",
+    "link": "https://brittmillsdesign.com/products/plumage-ii-neoprene-mahjong-mat",
+    "product_url": "https://brittmillsdesign.com/products/plumage-ii-neoprene-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "THREE-TILE FRAME  |  4 Mat Color Options  |  Keepsake Collection",
+    "brand": "My Fair Mahjong",
+    "img": "assets/albums/catalog-new/my-fair-mahjong--three-tile-frame-4-mat-color-options-keepsake-collection.jpg",
+    "colours": {
+     "brown": 33.0,
+     "neutral": 28.5,
+     "yellow": 15.2,
+     "orange": 11.0,
+     "earthy": 4.6,
+     "green": 3.7,
+     "pink": 1.6,
+     "blue": 1.2,
+     "purple": 1.0,
+     "teal": 0.2
+    },
+    "holiday_guess": false,
+    "source": "Partner store · My Fair Mahjong",
+    "link": "https://myfairmahjong.com/products/keepsake-triple-frame",
+    "product_url": "https://myfairmahjong.com/products/keepsake-triple-frame",
+    "lowres": false
+   },
+   {
+    "name": "Prism Petals Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--prism-petals-mahjong-mat.jpg",
+    "colours": {
+     "blue": 59.9,
+     "purple": 16.3,
+     "pink": 13.8,
+     "teal": 9.5,
+     "green": 0.5
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/prismatic-petals-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/prismatic-petals-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Electric Petal Garden Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--electric-petal-garden-mahjong-mat.jpg",
+    "colours": {
+     "pink": 27.3,
+     "purple": 18.3,
+     "red": 16.0,
+     "blue": 15.2,
+     "neutral": 14.2,
+     "green": 4.2,
+     "brown": 2.5,
+     "orange": 1.2,
+     "earthy": 0.9,
+     "teal": 0.0,
+     "yellow": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/electric-petal-garden-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/electric-petal-garden-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Savannah Lillian Claire Designs Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--savannah-lillian-claire-designs-artist-mahjong-mat.jpg",
+    "colours": {
+     "earthy": 53.2,
+     "neutral": 28.7,
+     "pink": 8.3,
+     "yellow": 5.9,
+     "orange": 3.2,
+     "brown": 0.7,
+     "red": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/savannah-lillian-claire-designs-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/savannah-lillian-claire-designs-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Pine Valley Lillian Claire Designs Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--pine-valley-lillian-claire-designs-artist-mahjong-mat.jpg",
+    "colours": {
+     "neutral": 38.2,
+     "earthy": 30.5,
+     "brown": 11.0,
+     "green": 10.5,
+     "pink": 5.3,
+     "orange": 2.7,
+     "dark": 1.6,
+     "yellow": 0.2,
+     "red": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/pine-valley-lillian-claire-designs-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/pine-valley-lillian-claire-designs-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Eat Pray Love Lillian Claire Designs Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--eat-pray-love-lillian-claire-designs-artist-mahjong-mat.jpg",
+    "colours": {
+     "green": 37.5,
+     "brown": 17.8,
+     "earthy": 14.9,
+     "orange": 10.6,
+     "yellow": 7.0,
+     "neutral": 6.0,
+     "blue": 2.9,
+     "red": 1.6,
+     "pink": 1.4,
+     "purple": 0.1,
+     "teal": 0.1,
+     "dark": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/eat-pray-love-lillian-claire-designs-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/eat-pray-love-lillian-claire-designs-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Orange Blossoms Lillian Claire Designs Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--orange-blossoms-lillian-claire-designs-artist-mahjong-mat.jpg",
+    "colours": {
+     "green": 30.5,
+     "orange": 19.1,
+     "pink": 16.4,
+     "neutral": 9.7,
+     "earthy": 7.9,
+     "brown": 7.0,
+     "yellow": 6.7,
+     "dark": 1.3,
+     "red": 1.3,
+     "purple": 0.1,
+     "blue": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/orange-blossoms-lillian-claire-designs-artist-mahjong-mat-1",
+    "product_url": "https://letsbebesties.com/products/orange-blossoms-lillian-claire-designs-artist-mahjong-mat-1",
+    "lowres": false
+   },
+   {
+    "name": "Tropical Travels with Simple Middle Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--tropical-travels-with-simple-middle-mahjong-mat.jpg",
+    "colours": {
+     "green": 42.0,
+     "pink": 34.2,
+     "blue": 10.0,
+     "teal": 8.2,
+     "neutral": 1.7,
+     "yellow": 0.9,
+     "brown": 0.8,
+     "earthy": 0.8,
+     "purple": 0.8,
+     "orange": 0.4,
+     "red": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/tropical-travels-with-simple-middle-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/tropical-travels-with-simple-middle-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Tidal Glass with Simple Middle Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--tidal-glass-with-simple-middle-mahjong-mat.jpg",
+    "colours": {
+     "blue": 96.5,
+     "teal": 3.5
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/tidal-glass-with-simple-middle-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/tidal-glass-with-simple-middle-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Fall Flowers Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--fall-flowers-mahjong-mat.jpg",
+    "colours": {
+     "brown": 45.2,
+     "orange": 27.7,
+     "yellow": 13.0,
+     "neutral": 4.7,
+     "red": 3.3,
+     "pink": 3.1,
+     "dark": 2.0,
+     "earthy": 0.9
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/fall-flowers-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/fall-flowers-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Tobacco Leaves with Spanish Instructions Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--tobacco-leaves-with-spanish-instructions-mahjong-mat.jpg",
+    "colours": {
+     "blue": 47.5,
+     "pink": 15.6,
+     "green": 15.2,
+     "neutral": 7.1,
+     "purple": 6.1,
+     "red": 2.1,
+     "dark": 1.7,
+     "brown": 1.5,
+     "teal": 1.4,
+     "earthy": 1.0,
+     "orange": 0.6,
+     "yellow": 0.2
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/tobacco-leaves-with-spanish-directions-neoprene-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/tobacco-leaves-with-spanish-directions-neoprene-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Day of the Dead with Spanish Instructions Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--day-of-the-dead-with-spanish-instructions-mahjong-mat.jpg",
+    "colours": {
+     "dark": 34.2,
+     "brown": 17.3,
+     "purple": 15.0,
+     "neutral": 7.2,
+     "blue": 6.2,
+     "green": 6.1,
+     "teal": 4.3,
+     "pink": 3.0,
+     "red": 2.4,
+     "yellow": 1.8,
+     "orange": 1.6,
+     "earthy": 0.8
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/day-of-the-dead-with-spanish-instructions-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/day-of-the-dead-with-spanish-instructions-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Fall Pop Garden with Instructions Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--fall-pop-garden-with-instructions-mahjong-mat.jpg",
+    "colours": {
+     "orange": 40.9,
+     "pink": 14.7,
+     "brown": 12.7,
+     "purple": 8.6,
+     "green": 7.9,
+     "red": 5.8,
+     "yellow": 3.7,
+     "earthy": 2.1,
+     "neutral": 1.2,
+     "blue": 1.0,
+     "dark": 0.8,
+     "teal": 0.7
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/fall-pop-garden-with-instructions-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/fall-pop-garden-with-instructions-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "A Few of My Favorite Things Custom Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--a-few-of-my-favorite-things-custom-mahjong-mat.jpg",
+    "colours": {
+     "green": 43.7,
+     "blue": 30.3,
+     "brown": 4.9,
+     "teal": 4.7,
+     "neutral": 4.6,
+     "yellow": 3.1,
+     "red": 2.3,
+     "pink": 2.1,
+     "orange": 2.0,
+     "earthy": 1.8,
+     "dark": 0.4
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/a-few-of-my-favorite-things-custom-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/a-few-of-my-favorite-things-custom-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Safari Garden with Instructions Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--safari-garden-with-instructions-mahjong-mat.jpg",
+    "colours": {
+     "pink": 51.1,
+     "blue": 22.0,
+     "purple": 9.5,
+     "green": 9.0,
+     "teal": 7.4,
+     "neutral": 0.9,
+     "yellow": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/safari-garden-with-instructions-neoprene-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/safari-garden-with-instructions-neoprene-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Fall Flowers with Instructions Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--fall-flowers-with-instructions-mahjong-mat.jpg",
+    "colours": {
+     "brown": 38.5,
+     "dark": 18.2,
+     "orange": 14.4,
+     "red": 9.2,
+     "neutral": 8.1,
+     "yellow": 6.8,
+     "pink": 3.4,
+     "earthy": 1.6,
+     "blue": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/fall-flowers-with-directions-neoprene-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/fall-flowers-with-directions-neoprene-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Tropical Travels Monogram Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--tropical-travels-monogram-mahjong-mat.jpg",
+    "colours": {
+     "green": 42.5,
+     "pink": 33.1,
+     "blue": 10.3,
+     "teal": 8.2,
+     "neutral": 1.9,
+     "brown": 1.1,
+     "earthy": 0.9,
+     "purple": 0.8,
+     "yellow": 0.8,
+     "orange": 0.4,
+     "red": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/tropical-travels-personalized-neoprene-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/tropical-travels-personalized-neoprene-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Tobacco Leaves with Instructions Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--tobacco-leaves-with-instructions-mahjong-mat.jpg",
+    "colours": {
+     "brown": 22.3,
+     "dark": 18.6,
+     "blue": 12.3,
+     "pink": 11.3,
+     "neutral": 10.9,
+     "green": 10.5,
+     "red": 7.9,
+     "earthy": 2.2,
+     "orange": 2.0,
+     "teal": 1.2,
+     "purple": 0.8,
+     "yellow": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/tobacco-leaves-with-directions-neoprene-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/tobacco-leaves-with-directions-neoprene-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Amalfi Fish with Instructions Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--amalfi-fish-with-instructions-mahjong-mat.jpg",
+    "colours": {
+     "blue": 56.3,
+     "yellow": 31.0,
+     "neutral": 7.3,
+     "green": 4.6,
+     "earthy": 0.5,
+     "pink": 0.3,
+     "teal": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/amalfi-fish-with-directions-neoprene-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/amalfi-fish-with-directions-neoprene-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Year of the Horse OHBoN Studios Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--year-of-the-horse-ohbon-studios-artist-mahjong-mat.jpg",
+    "colours": {
+     "brown": 33.6,
+     "pink": 19.5,
+     "neutral": 18.3,
+     "earthy": 11.3,
+     "red": 10.3,
+     "blue": 4.2,
+     "purple": 1.4,
+     "green": 1.2,
+     "dark": 0.2,
+     "teal": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/year-of-the-horse-ohbon-studios-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/year-of-the-horse-ohbon-studios-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Sage Mosaic Custom Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--sage-mosaic-custom-mahjong-mat.jpg",
+    "colours": {
+     "blue": 51.9,
+     "neutral": 21.1,
+     "purple": 15.8,
+     "pink": 9.4,
+     "green": 1.7
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/sage-mosaic-personalized-neoprene-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/sage-mosaic-personalized-neoprene-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Orange Splatter Star OHBoN Studios Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--orange-splatter-star-ohbon-studios-artist-mahjong-mat.jpg",
+    "colours": {
+     "brown": 31.5,
+     "orange": 23.3,
+     "pink": 13.4,
+     "neutral": 12.4,
+     "red": 10.9,
+     "earthy": 5.1,
+     "yellow": 1.2,
+     "blue": 0.9,
+     "green": 0.7,
+     "dark": 0.6,
+     "purple": 0.0,
+     "teal": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/orange-splatter-star-artist-collab-leatherette-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/orange-splatter-star-artist-collab-leatherette-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Porcelain Garden with Instructions OHBoN Studios Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--porcelain-garden-with-instructions-ohbon-studios-artist-mahjong-mat.jpg",
+    "colours": {
+     "neutral": 66.5,
+     "brown": 14.6,
+     "pink": 9.2,
+     "dark": 5.8,
+     "earthy": 2.8,
+     "red": 0.9,
+     "green": 0.3
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/porcelain-garden-with-instructions-ohbon-studios-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/porcelain-garden-with-instructions-ohbon-studios-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Ocean Jewel with Instructions OHBoN Studios Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--ocean-jewel-with-instructions-ohbon-studios-artist-mahjong-mat.jpg",
+    "colours": {
+     "blue": 72.1,
+     "green": 15.0,
+     "teal": 5.4,
+     "neutral": 4.4,
+     "purple": 2.5,
+     "pink": 0.4,
+     "red": 0.3
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/ocean-jewel-with-instructions-ohbon-studios-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/ocean-jewel-with-instructions-ohbon-studios-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Pink Trellis with Instructions OHBoN Studios Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--pink-trellis-with-instructions-ohbon-studios-artist-mahjong-mat.jpg",
+    "colours": {
+     "pink": 46.0,
+     "neutral": 21.3,
+     "green": 19.7,
+     "red": 7.2,
+     "brown": 3.9,
+     "earthy": 1.4,
+     "purple": 0.3,
+     "yellow": 0.2,
+     "orange": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/pink-trellis-with-instructions-ohbon-studios-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/pink-trellis-with-instructions-ohbon-studios-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Monogram Custom Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--monogram-custom-mahjong-mat.jpg",
+    "colours": {
+     "pink": 43.9,
+     "neutral": 19.4,
+     "brown": 18.5,
+     "dark": 4.3,
+     "purple": 4.1,
+     "blue": 3.8,
+     "teal": 3.5,
+     "green": 1.6,
+     "red": 0.6,
+     "earthy": 0.2,
+     "orange": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/custom-monogram-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/custom-monogram-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Year of the Horse Medallion OHBoN Studios Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--year-of-the-horse-medallion-ohbon-studios-artist-mahjong-mat.jpg",
+    "colours": {
+     "brown": 26.6,
+     "pink": 19.4,
+     "neutral": 18.4,
+     "red": 16.7,
+     "earthy": 10.1,
+     "blue": 5.3,
+     "purple": 1.8,
+     "green": 1.1,
+     "dark": 0.5
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/year-of-the-horse-medallion-ohbon-studios-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/year-of-the-horse-medallion-ohbon-studios-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Triple Crown with Instructions OHBoN Studios Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--triple-crown-with-instructions-ohbon-studios-artist-mahjong-mat.jpg",
+    "colours": {
+     "green": 73.6,
+     "neutral": 14.3,
+     "brown": 5.2,
+     "yellow": 3.2,
+     "orange": 1.0,
+     "blue": 0.7,
+     "earthy": 0.6,
+     "pink": 0.5,
+     "red": 0.5,
+     "dark": 0.3,
+     "purple": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/triple-crown-with-instructions-ohbon-studios-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/triple-crown-with-instructions-ohbon-studios-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Golfing OHBoN Studios Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--golfing-ohbon-studios-artist-mahjong-mat.jpg",
+    "colours": {
+     "green": 42.4,
+     "neutral": 23.7,
+     "dark": 16.9,
+     "brown": 13.7,
+     "pink": 0.9,
+     "yellow": 0.9,
+     "earthy": 0.6,
+     "orange": 0.4,
+     "blue": 0.2,
+     "red": 0.1,
+     "teal": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/golfing-ohbon-studios-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/golfing-ohbon-studios-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "London Calling with Instructions Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--london-calling-with-instructions-mahjong-mat.jpg",
+    "colours": {
+     "red": 45.8,
+     "blue": 45.0,
+     "dark": 3.6,
+     "purple": 3.6,
+     "neutral": 1.0,
+     "pink": 0.9,
+     "teal": 0.0,
+     "yellow": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/london-calling-with-instructions-neoprene-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/london-calling-with-instructions-neoprene-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Tobacco Leaves Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--tobacco-leaves-mahjong-mat.jpg",
+    "colours": {
+     "brown": 31.0,
+     "blue": 18.8,
+     "pink": 13.2,
+     "neutral": 12.5,
+     "green": 8.0,
+     "dark": 7.2,
+     "red": 4.5,
+     "earthy": 1.3,
+     "teal": 1.2,
+     "orange": 1.1,
+     "purple": 1.1,
+     "yellow": 0.2
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/tobacco-leaves-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/tobacco-leaves-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "College Custom Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--college-custom-mahjong-mat.jpg",
+    "colours": {
+     "red": 24.6,
+     "neutral": 17.7,
+     "blue": 13.0,
+     "dark": 12.3,
+     "purple": 11.4,
+     "brown": 9.1,
+     "yellow": 6.7,
+     "orange": 3.1,
+     "pink": 1.9,
+     "teal": 0.1,
+     "earthy": 0.0,
+     "green": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/custom-mahjong-mat-college-personalized",
+    "product_url": "https://letsbebesties.com/products/custom-mahjong-mat-college-personalized",
+    "lowres": false
+   },
+   {
+    "name": "Tripoley Game Mat Tabletop (31.5-inch)",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--tripoley-game-mat-tabletop-31-5-inch.jpg",
+    "colours": {
+     "green": 66.1,
+     "brown": 20.7,
+     "neutral": 5.3,
+     "dark": 4.6,
+     "pink": 1.6,
+     "red": 1.6,
+     "earthy": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/tripoley-game-mat-tabletop-31-5-inch",
+    "product_url": "https://letsbebesties.com/products/tripoley-game-mat-tabletop-31-5-inch",
+    "lowres": false
+   },
+   {
+    "name": "Custom Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--custom-mahjong-mat.jpg",
+    "colours": {
+     "green": 43.8,
+     "pink": 25.3,
+     "blue": 17.3,
+     "teal": 5.7,
+     "purple": 4.9,
+     "neutral": 1.4,
+     "yellow": 0.8,
+     "brown": 0.3,
+     "dark": 0.2,
+     "earthy": 0.2,
+     "orange": 0.2,
+     "red": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/custom-mahjong-mat-personalized-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/custom-mahjong-mat-personalized-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Canasta Game Mat Tabletop",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--canasta-game-mat-tabletop.jpg",
+    "colours": {
+     "green": 47.5,
+     "brown": 33.8,
+     "dark": 10.4,
+     "red": 2.7,
+     "earthy": 1.8,
+     "neutral": 1.8,
+     "pink": 1.6,
+     "blue": 0.4,
+     "teal": 0.0,
+     "yellow": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/canasta-game-mat-tabletop-31-5-inch",
+    "product_url": "https://letsbebesties.com/products/canasta-game-mat-tabletop-31-5-inch",
+    "lowres": false
+   },
+   {
+    "name": "Canasta Suits Game Mat Tabletop",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--canasta-suits-game-mat-tabletop.jpg",
+    "colours": {
+     "green": 75.2,
+     "dark": 11.6,
+     "neutral": 5.0,
+     "red": 4.3,
+     "brown": 2.7,
+     "earthy": 1.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/canasta-suits-game-mat-tabletop-31-5-inch",
+    "product_url": "https://letsbebesties.com/products/canasta-suits-game-mat-tabletop-31-5-inch",
+    "lowres": false
+   },
+   {
+    "name": "Champagne Toast with Instructions Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--champagne-toast-with-instructions-mahjong-mat.jpg",
+    "colours": {
+     "pink": 89.5,
+     "green": 4.9,
+     "neutral": 3.1,
+     "blue": 1.2,
+     "yellow": 0.4,
+     "brown": 0.3,
+     "red": 0.3,
+     "earthy": 0.2,
+     "orange": 0.2,
+     "purple": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/champagne-toast-with-instructions-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/champagne-toast-with-instructions-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Floral Monogram Custom Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--floral-monogram-custom-mahjong-mat.jpg",
+    "colours": {
+     "blue": 54.2,
+     "neutral": 22.0,
+     "brown": 18.8,
+     "dark": 4.1,
+     "purple": 0.5,
+     "pink": 0.4,
+     "earthy": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/custom-monogram-mat-personalized-with-monogram-and-colors",
+    "product_url": "https://letsbebesties.com/products/custom-monogram-mat-personalized-with-monogram-and-colors",
+    "lowres": false
+   },
+   {
+    "name": "Pet Plays with Instructions Custom Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--pet-plays-with-instructions-custom-mahjong-mat.jpg",
+    "colours": {
+     "blue": 72.5,
+     "brown": 13.1,
+     "dark": 11.7,
+     "neutral": 1.9,
+     "earthy": 0.5,
+     "green": 0.3,
+     "purple": 0.0,
+     "red": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/doodle-plays-mahj-custom-with-directions-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/doodle-plays-mahj-custom-with-directions-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Ocean Florals with Instructions Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--ocean-florals-with-instructions-mahjong-mat.jpg",
+    "colours": {
+     "blue": 54.9,
+     "teal": 16.2,
+     "green": 7.7,
+     "red": 5.4,
+     "pink": 3.9,
+     "dark": 3.6,
+     "neutral": 3.6,
+     "orange": 1.8,
+     "brown": 1.6,
+     "purple": 1.2,
+     "earthy": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/ocean-florals-with-directions-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/ocean-florals-with-directions-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Pet Plays Custom Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--pet-plays-custom-mahjong-mat.jpg",
+    "colours": {
+     "neutral": 55.7,
+     "dark": 24.1,
+     "brown": 14.2,
+     "green": 4.8,
+     "blue": 0.6,
+     "earthy": 0.5,
+     "red": 0.1,
+     "orange": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/doodle-plays-mahj-custom-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/doodle-plays-mahj-custom-mahjong-mat",
+    "lowres": false
+   }
+  ],
+  "pulled_at": "2026-11-24T06:56:42+00:00",
+  "size_fym": 1862,
+  "size": 51,
+  "sources": [
+   "New since the last FYM build: ShopMy (every collection, incl. her Amazon pins) + partner-store sweep"
+  ],
+  "pulled_by": "scripts/albumreview/pull.py",
+  "no_photo": 0,
+  "shortlist": 123,
+  "contrast_colours": [
+   "BAMBOO GREEN",
+   "CORAL PINK",
+   "TEAL",
+   "BLUSH",
+   "POWDER BLUE"
+  ]
+ },
+ "catalog_checked": {
+  "at": "2026-11-24T06:48:59+00:00",
+  "shopmy_new": 6,
+  "partner_new": 45,
+  "added": [
+   "The Mahjong House · THE MAHJONG HOUSE - Coastal Multi Double-Sided Mahjong Mat",
+   "The Mahjong House · THE MAHJONG HOUSE - Coastal Sunshine Double-Sided Mahjong Mat",
+   "The Mahjong House · THE MAHJONG HOUSE - Coastal Pink Sand Double-Sided Mahjong Mat",
+   "The Mahjong House · THE MAHJONG HOUSE - Coastal Sea Glass Double-Sided Mahjong Mat",
+   "The Mahjong House · THE MAHJONG HOUSE - Coastal Harbor Double-Sided Mahjong Mat",
+   "The Mahjong House · THE MAHJONG HOUSE - Western Neutral Double-Sided Mahjong Mat",
+   "Oh My Mahjong · Starling Mat in Tube",
+   "Oh My Mahjong · Lily Mat in Tube",
+   "Anders Ruff · Ivy League - Pistachio Plaid Mahjong Mat",
+   "Britt Mills · Plumage II Neoprene Mahjong Mat",
+   "My Fair Mahjong · THREE-TILE FRAME  |  4 Mat Color Options  |  Keepsake Collection",
+   "Let's Be Besties · Prism Petals Mahjong Mat",
+   "Let's Be Besties · Electric Petal Garden Mahjong Mat",
+   "Let's Be Besties · Savannah Lillian Claire Designs Artist Mahjong Mat",
+   "Let's Be Besties · Pine Valley Lillian Claire Designs Artist Mahjong Mat",
+   "Let's Be Besties · Eat Pray Love Lillian Claire Designs Artist Mahjong Mat",
+   "Let's Be Besties · Orange Blossoms Lillian Claire Designs Artist Mahjong Mat",
+   "Let's Be Besties · Tropical Travels with Simple Middle Mahjong Mat",
+   "Let's Be Besties · Tidal Glass with Simple Middle Mahjong Mat",
+   "Let's Be Besties · Fall Flowers Mahjong Mat",
+   "Let's Be Besties · Tobacco Leaves with Spanish Instructions Mahjong Mat",
+   "Let's Be Besties · Day of the Dead with Spanish Instructions Mahjong Mat",
+   "Let's Be Besties · Fall Pop Garden with Instructions Mahjong Mat",
+   "Let's Be Besties · A Few of My Favorite Things Custom Mahjong Mat",
+   "Let's Be Besties · Safari Garden with Instructions Mahjong Mat",
+   "Let's Be Besties · Fall Flowers with Instructions Mahjong Mat",
+   "Let's Be Besties · Tropical Travels Monogram Mahjong Mat",
+   "Let's Be Besties · Tobacco Leaves with Instructions Mahjong Mat",
+   "Let's Be Besties · Amalfi Fish with Instructions Mahjong Mat",
+   "Let's Be Besties · Year of the Horse OHBoN Studios Artist Mahjong Mat",
+   "Let's Be Besties · Sage Mosaic Custom Mahjong Mat",
+   "Let's Be Besties · Orange Splatter Star OHBoN Studios Artist Mahjong Mat",
+   "Let's Be Besties · Porcelain Garden with Instructions OHBoN Studios Artist Mahjong Mat",
+   "Let's Be Besties · Ocean Jewel with Instructions OHBoN Studios Artist Mahjong Mat",
+   "Let's Be Besties · Pink Trellis with Instructions OHBoN Studios Artist Mahjong Mat",
+   "Let's Be Besties · Monogram Custom Mahjong Mat",
+   "Let's Be Besties · Year of the Horse Medallion OHBoN Studios Artist Mahjong Mat",
+   "Let's Be Besties · Triple Crown with Instructions OHBoN Studios Artist Mahjong Mat",
+   "Let's Be Besties · Golfing OHBoN Studios Artist Mahjong Mat",
+   "Let's Be Besties · London Calling with Instructions Mahjong Mat",
+   "Let's Be Besties · Tobacco Leaves Mahjong Mat",
+   "Let's Be Besties · College Custom Mahjong Mat",
+   "Let's Be Besties · Tripoley Game Mat Tabletop (31.5-inch)",
+   "Let's Be Besties · Custom Mahjong Mat",
+   "Let's Be Besties · Canasta Game Mat Tabletop",
+   "Let's Be Besties · Canasta Suits Game Mat Tabletop",
+   "Let's Be Besties · Champagne Toast with Instructions Mahjong Mat",
+   "Let's Be Besties · Floral Monogram Custom Mahjong Mat",
+   "Let's Be Besties · Pet Plays with Instructions Custom Mahjong Mat",
+   "Let's Be Besties · Ocean Florals with Instructions Mahjong Mat",
+   "Let's Be Besties · Pet Plays Custom Mahjong Mat"
+  ],
+  "problems": [],
+  "reports": [
+   "config/shopmy-crosscheck-nov24.json",
+   "config/partner-mat-sweep.json"
+  ],
+  "partner_swept_at": "2026-11-24T06:51:01+00:00"
+ },
+ "spec": "scripts/albumcard/specs/beaumont_nov24.json",
+ "leftout": {
+  "file": "scripts/albumcard/specs/beaumont_leftout.json",
+  "key": "beaumont"
+ },
+ "cards_dir": "assets/cards/beaumont",
+ "bysight": {
+  "done": "2026-11-24",
+  "note": "Pull shortlist (123, 5 contact sheets) + a motif/OMM sheet (71 mats: every visible OMM mat and the catalog's lotus/heron/bamboo/turtle/chinoiserie/garden mats in green or blue) looked at next to the pile shot. 25 cards (9 OMM + Lily), 120 in Left out. Main finding: the set wants cobalt with chartreuse/bamboo green, garden chinoiserie, or tortoise-brown with cobalt; red-led and brown-only mats fall flat. The pull's tonal score ranks brown and red mats high because the back is tortoise, so the motif sheet carried most picks."
+ },
+ "holiday": {
+  "considered": "2026-11-24",
+  "note": "Holiday rows of the pull (about 20) looked at next to the tiles: all red-led Christmas (tartans, bows, candy canes); none carries cobalt or chartreuse. No holiday section for the draft; a cobalt/green winter mat can go in on her review."
+ },
+ "faces": {
+  "dir": "assets/tiles/faces/beaumont/clean/",
+  "source": "Cut from OMM listing image 01-Tile_Beaumont_a.jpg (all faces laid out), Nov 24 2026. Nothing recoloured.",
+  "groups": [
+   {
+    "title": "Lotus + garden",
+    "items": [
+     {
+      "key": "flower-lotus",
+      "label": "Flower: blue lotus on a lily pad with a heron"
+     },
+     {
+      "key": "dot-5",
+      "label": "5 Dot: green lanterns with pink lotus"
+     },
+     {
+      "key": "soap-pagoda",
+      "label": "White Dragon: cobalt pagoda"
+     }
+    ]
+   },
+   {
+    "title": "Bamboo + birds",
+    "items": [
+     {
+      "key": "bam-1-bird",
+      "label": "1 Bam: green-and-coral parrot"
+     },
+     {
+      "key": "bam-9",
+      "label": "9 Bam: green bamboo"
+     }
+    ]
+   },
+   {
+    "title": "Dragons, jokers, craks",
+    "items": [
+     {
+      "key": "dragon-green",
+      "label": "Green Dragon"
+     },
+     {
+      "key": "dragon-red",
+      "label": "Red Dragon: coral"
+     },
+     {
+      "key": "joker-turtle",
+      "label": "Joker: turquoise turtle"
+     },
+     {
+      "key": "crak-5",
+      "label": "5 Crak: coral character in a blue frame"
+     },
+     {
+      "key": "wind-w",
+      "label": "West wind with a teal flower"
+     }
+    ]
+   }
+  ],
+  "picks": [
+   "flower-lotus",
+   "joker-turtle",
+   "bam-1-bird",
+   "dragon-green",
+   "soap-pagoda"
+  ]
+ },
+ "discovery": {
+  "at": "2026-11-24T07:20:00-05:00",
+  "by": "Main (scheduled run, no Chrome)",
+  "searches": [
+   {
+    "where": "Google",
+    "terms": "tortoiseshell mahjong mat",
+    "hits": "The Mahjong House double-sided (Anthropologie), Mahjong by SI Island Veranda (Target), untitled Etsy listings"
+   },
+   {
+    "where": "Google",
+    "terms": "cobalt blue and chartreuse mahjong mat",
+    "hits": "Mahjong by SI blue lines at Target (Indigo Garden, Bloom Service Blue), My Fair Garden Party Bluebell (already in the catalog), Love of Character mini cobalt"
+   },
+   {
+    "where": "Google",
+    "terms": "heron lotus pond mahjong mat green blue",
+    "hits": "OMM Heron (already in), Mahjong by SI Indigo Garden, many untitled Etsy listings"
+   },
+   {
+    "where": "Google + Etsy",
+    "terms": "sea turtle bamboo mahjong mat etsy",
+    "hits": "untitled Etsy listings only"
+   }
+  ],
+  "new_finds": [],
+  "misses_added": [],
+  "note": "Light pass on usage (Tiffany Nov 24 1:13am: work light). Etsy results come back untitled and Etsy pages cannot be opened from the cloud, so no Etsy find is confirmed; to finish in her Chrome with the Facebook research. Mahjong by SI Indigo Garden (Target) to look at then."
+ },
+ "owed_chrome": [
+  "[3] Tiles & Tablescapes search (beaumont, Lily)",
+  "[3b] other big Facebook groups",
+  "[3c] finish discovery: open the Etsy results + Mahjong by SI Indigo Garden"
+ ],
+ "cards_ready": {
+  "at": "2026-11-24T07:35:00-05:00",
+  "builder": "scripts/albumcard/specs/beaumont_build.py beaumont <workdir> && scripts/albumcard/gen2.py <workdir>/spec.json assets/cards/beaumont",
+  "n": 23,
+  "blocked": "gen2.py refuses (tnt_check): no Tiles & Tablescapes search on record. Render the moment config/tnt-recs.json sets.beaumont is complete (Chrome), or if Tiffany says to build without the Facebook research (record research_deferred with her words, as Sadie Jane Nov 21)."
  }
 }
