@@ -84,7 +84,7 @@ seed_js = ''.join(f"IMG[{json.dumps(k[4:])}]={json.dumps(v)};" if k.startswith('
 rep("const matFull=id=>", seed_js + "\nconst matFull=id=>")
 # Lotus Cove clean photo everywhere
 rep("const matSrc=id=>{const f=M[id].f;", "const R2MO=new Set(['www.ohmymahjong.com/lotus-cove-mat-in-tube']);const matSrc=id=>{if(R2MO.has(id)&&D.tv.mo[id])return D.tv.mo[id];const f=M[id].f;")
-rep('function openP(mode,tab){', "window.R2OPEN=function(tab,sec){if(sec)CTX=sec;openP('swap',tab)};window.R2CTX=c=>ctx(c);window.R2TAB=()=>SW.tab;window.R2FACES=v=>{TV.faces=v;save();try{syncAdj()}catch(e){}pass(true)};window.R2GETFACES=()=>TV.faces;function openP(mode,tab){")
+rep('function openP(mode,tab){', "window.R2OPEN=function(tab,sec){if(sec)CTX=sec;openP('swap',tab)};window.R2CTX=c=>ctx(c);window.R2TAB=()=>SW.tab;window.R2FACES=v=>{TV.faces=v;save();try{syncAdj()}catch(e){}pass(true)};window.R2GETFACES=()=>TV.faces;window.R2SETRACK=k=>{if(k&&!rackOK(k,curSet()))return;TV.rack=k||null;save();try{syncAdj()}catch(e){}pass(true)};function openP(mode,tab){")
 # Table view first
 rep("S.mode='close';S.tilesOpen=true;", "S.mode='table';S.tilesOpen=true;")
 rep('''<div class="seg mode" role="group" aria-label="View"><button type="button" data-mode="close" aria-pressed="${S.mode==='close'}">Up close</button><button type="button" data-mode="table" aria-pressed="${S.mode==='table'}">Table <b style="color:#c8325f;font-size:9px;letter-spacing:.06em">NEW</b></button>''',
@@ -199,6 +199,10 @@ js = r"""<script id="r2js">
   setTimeout(()=>{try{const i=D.sets.indexOf(x.s);if(i>=0)S.set=i;S.fav=x.mat;if(!S.liked.includes(x.mat))S.liked.push(x.mat);const rk=[x.rack,x.rack2].filter(Boolean);S.rpick=rk.slice(0,2);rk.forEach(r=>{if(!S.rliked.includes(r))S.rliked.push(r)});
    S.peek=null;S.made=true;try{trk('card',{mat:S.fav,rack:S.rpick.join(' + '),via:'table'})}catch(e){}try{acctSaveMatch()}catch(e){}renderAll();jump('s-card')}catch(err){console.error(err)}},30)},true);
  window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2make]')){e.preventDefault();e.stopPropagation()}},true);
+
+ /* r2e (Tiffany 7:20pm): a mat hearted in Table view keeps the racks it had; bringing it back from the shortlist shows those racks again */
+ if(typeof window.fly==='function'&&!window.__r2fly){const of=window.fly;window.__r2fly=1;window.fly=function(k,yes){try{if(k==='m'&&yes&&document.body.classList.contains('tvmode')){const c=document.getElementById('top-m');const x=c&&window.R2CTX(c);if(x&&x.mat){S.r2rk=S.r2rk||{};S.r2rk[x.mat]=[x.rack,x.rack2].filter(Boolean)}}}catch(e){}return of.apply(this,arguments)}}
+ let lastPeek=null;function peekRacks(){if(S.peek!==lastPeek){lastPeek=S.peek;const r=S.peek&&S.r2rk&&S.r2rk[S.peek];if(r&&r[0]&&window.R2SETRACK)window.R2SETRACK(r[0])}}
  function open(card,tab){if(!card){const bb=document.activeElement;}const sec=card?card.closest('[id^="s-"]'):null;window.R2OPEN(tab,sec&&sec.id)}
  window.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-r2open]');if(!b)return;e.preventDefault();e.stopPropagation();const c=b.closest('.scard')||b.closest('[id^="s-"]'),t=b.dataset.r2open;setTimeout(()=>open(c,t),30)},true);window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2open]')){e.preventDefault();e.stopPropagation()}},true);
  let dn=null;
@@ -207,7 +211,7 @@ js = r"""<script id="r2js">
   const zz=S.zs&&S.zs.tvz;if(zz&&zz.s>1.05)return;const img=d.ph.querySelector('img.tvimg');if(!img)return;const r=img.getBoundingClientRect();
   const y=(e.clientY-r.top)/r.height,x=(e.clientX-r.left)/r.width;if(x<0||x>1||y<0||y>1)return;
   if(y<0.2||y>0.8||x<0.14||x>0.86)setTimeout(()=>open(d.ph.closest('.scard'),'racks'),60)},true);
- setInterval(()=>{yn();sheet();swh();dots();bar()},400);
+ setInterval(()=>{yn();sheet();swh();dots();bar();peekRacks()},400);
 })();
 </script>"""
 k = h.rindex('</body>'); h = h[:k] + css + js + h[k:]

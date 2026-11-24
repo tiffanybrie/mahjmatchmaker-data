@@ -183,13 +183,13 @@
   "dealbreaker": "Earthy tan, mustard and olive. Next to her blush and denim they read muddy. Keep the mat clean and soft.",
   "racks": [
     {
-      "name": "Bird & Bamboo Ballet Pink",
-      "why": "A true blush, like her backs.",
+      "name": "Oh My Mahjong Pink Quartz",
+      "why": "A pink swirl stone, like her blush backs.",
       "group": "color"
     },
     {
-      "name": "Bird & Bamboo French Blue",
-      "why": "A soft French blue for her denim stripe.",
+      "name": "Oh My Mahjong White Acrylic",
+      "why": "Crisp white, like her face layer: lets the mat and the faces lead.",
       "group": "color"
     }
   ],
@@ -248,14 +248,40 @@
   },
   "album_peek": [
     "oh-my-mahjong-serendipity",
-    "virora-mahjong-petalwing",
-    "mahj-and-moon-pink-and-blue-grandmillennial"
+    "oh-my-mahjong-heron",
+    "oh-my-mahjong-vivara"
   ],
   "colors_line": "Blush pink backs with denim blue and pale blue stripe layers. Soft, clean pastels.",
   "layers_hand": "see the layers?<br>denim + pale blue, over a blush back.",
   "rack_natural": true,
-  "racks_hand": "both Bird & Bamboo, both picked for her",
-  "racks_hand_framed": "both Bird & Bamboo, both picked for her",
+  "racks_hand": "both Oh My Mahjong, both picked for her",
+  "racks_hand_framed": "both Oh My Mahjong, both picked for her",
   "racks_photo": "assets/launches/omm-sadie-jane-mahjong-tiles/04-rack-crop.jpg",
-  "racks_photo_caption": "Sadie Jane on a rack, in Oh My Mahjong’s own photo"
+  "racks_photo_caption": "Sadie Jane on a rack, in Oh My Mahjong’s own photo",
+  "_racks_note": "Tiffany Nov 23 7:19pm: social profile uses OMM racks (brand-share play); her real pick on the album/match cards stays Bird & Bamboo Ballet Pink + French Blue.",
+  "field": {
+    "_note": "Find Your Mat-ch Table-view renders (r2 build), Sadie Jane + OMM Pink Quartz/White racks on OMM mats.",
+    "mats": [
+      {
+        "img": "assets/social/sadie-jane-launch/fym-table/sadie-jane-table-heron.jpg",
+        "mat": "Heron",
+        "brand": "Oh My Mahjong"
+      },
+      {
+        "img": "assets/social/sadie-jane-launch/fym-table/sadie-jane-table-vivara.jpg",
+        "mat": "Vivara",
+        "brand": "Oh My Mahjong"
+      },
+      {
+        "img": "assets/social/sadie-jane-launch/fym-table/sadie-jane-table-chantilly.jpg",
+        "mat": "Chantilly",
+        "brand": "Oh My Mahjong"
+      },
+      {
+        "img": "assets/social/sadie-jane-launch/fym-table/sadie-jane-table-peri-twinkle.jpg",
+        "mat": "Peri-twinkle",
+        "brand": "Oh My Mahjong"
+      }
+    ]
+  }
 }
