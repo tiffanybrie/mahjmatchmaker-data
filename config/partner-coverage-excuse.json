@@ -38,6 +38,28 @@
     "reason": "Tiffany Nov 11 5:13pm EXECUTIVE DECISION: no Splash of Color tile sets in the app, ever (~300 sets, AI artwork, would swamp shop-by-colour). Only if the brand or a shopper asks. Their MATS still come in (big-catalog pace, half weight).",
     "review_by": "2027-11-11"
    }
+  },
+  "Noli June": {
+   "fym_tiles": {
+    "reason": "Coordinator decision Nov 22 (ANSWERS Oct 31): the 5 open sets are Shopify Collective resales of other makers' designs (margo.rebecca, Southern Sparrow), store tag no-discount; never show another maker's product under a brand. Re-read at review.",
+    "review_by": "2026-12-08"
+   }
+  },
+  "Yellow Mountain Imports": {
+   "fym_tiles": {
+    "reason": "Coordinator decision Nov 22: Qilin Kirin is a discontinued Chinese-style bone set, skipped on purpose (v122-15 notes).",
+    "review_by": "2026-12-08"
+   }
+  },
+  "Mahjong Studios": {
+   "fym_tiles": {
+    "reason": "Tiffany Oct 26 9:23am: every Mahjong Studios tile set is hidden in the app (gate [67] fails on a visible one); Easter Morning + Some Bunny stay out until the brand's sets come back.",
+    "review_by": "2026-12-08"
+   },
+   "fym_mat": {
+    "reason": "Tiffany Oct 20 22:31: no Mahjong Studios mats anywhere (gate [12]).",
+    "review_by": "2026-12-08"
+   }
   }
  },
  "products": {

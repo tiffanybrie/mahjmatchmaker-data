@@ -842,6 +842,51 @@
   {
    "partner": true,
    "urgency": "NOW",
+   "found": "2026-11-24T13:48",
+   "date": "2026-11-14",
+   "day": "Sat 11/14",
+   "time": "LIVE now",
+   "brand": "Mahjong by SI",
+   "what": "New mats on their site: Pretty Plume Mat, The Heiress Mat, Flutter Mat, The Sanctuary Mat.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://www.mahjongbysi.com/products/pretty-plume-mahjong-mat",
+   "url": "https://www.mahjongbysi.com/products/pretty-plume-mahjong-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_9c09732a-2e53-457e-a42d-03379317bb75.png?v=1794453492",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "pretty-plume-mahjong-mat",
+    "the-heiress-mahjong-mat",
+    "flutter-mahjong-mat",
+    "the-sanctuary-mahjong-mat"
+   ]
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-24T13:48",
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "LIVE now",
+   "brand": "Miss Mahjong",
+   "what": "New on their site: China Cabinet Playing Mat.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://missmahjong.com/products/china-cabinet-mahjong-playing-mat",
+   "url": "https://missmahjong.com/products/china-cabinet-mahjong-playing-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/China-Cabinet-Mat-grandmillenial-mahjong-neoprene-mat.png?v=1795543678",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "china-cabinet-mahjong-playing-mat"
+   ]
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
    "found": "2026-11-24T13:35",
    "date": "2026-11-24",
    "day": "Tue 11/24",
@@ -2928,7 +2973,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-24T13:35",
+ "updated": "2026-11-24T13:48",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",
