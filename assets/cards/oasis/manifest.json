@@ -1,0 +1,541 @@
+{
+ "set": "Oasis",
+ "status": "DRAFT: Claude's own picks, pending Tiffany's review",
+ "groups": {
+  "pair": "Made for Oasis",
+  "omm": "Top Oh My Mahjong matches",
+  "picks": "More mat brands that match Oasis",
+  "holiday": "Holiday",
+  "yours": "Your adds"
+ },
+ "cards": [
+  {
+   "order": 1,
+   "group": "pair",
+   "mat": "Starling",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-oh-my-mahjong-starling-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/adds/oh-my-mahjong-starling-2400.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "My Fair Mahjong Macaron Green",
+    "My Fair Mahjong Macaron Blue"
+   ],
+   "why": "Oh My Mahjong's own mat for Oasis, dropping with it Mon Nov 30.",
+   "fym": null,
+   "lowres": false,
+   "caption_note": "Sister mat",
+   "rack_notes": []
+  },
+  {
+   "order": 2,
+   "group": "omm",
+   "mat": "Jade",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-oh-my-mahjong-jade-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/oh-my-mahjong-jade.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "My Fair Mahjong Macaron Pink",
+    "Bam Bird Boutique Slate Blue"
+   ],
+   "why": "deep teal and jade green garden: the stripe layer and the jade faces",
+   "fym": "www.ohmymahjong.com/jade-mat-in-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 3,
+   "group": "omm",
+   "mat": "Enchanted",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "partner": false,
+   "file": "oasis-mahjong-tiles-oh-my-mahjong-enchanted-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/mats/omm-retired/enchanted.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "why": "jade green and teal around orchid pink: the whole set in one mat",
+   "fym": "alb:amara:Enchanted",
+   "lowres": false,
+   "caption_note": "Retired",
+   "rack_notes": []
+  },
+  {
+   "order": 4,
+   "group": "omm",
+   "mat": "Serengeti",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "partner": false,
+   "file": "oasis-mahjong-tiles-oh-my-mahjong-serengeti-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/mats/omm-retired/serengeti.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Turks Blue",
+    "Peace Love Mahjong Pink"
+   ],
+   "why": "teal centre with pink blooms in a pink frame",
+   "fym": "alb:amara:Serengeti",
+   "lowres": false,
+   "caption_note": "Retired",
+   "rack_notes": []
+  },
+  {
+   "order": 5,
+   "group": "omm",
+   "mat": "Lorelei",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-oh-my-mahjong-lorelei-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/oh-my-mahjong-lorelei.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "My Fair Mahjong Macaron Blue",
+    "My Fair Mahjong Macaron Pink"
+   ],
+   "why": "aqua frame around pink pagodas",
+   "fym": "www.ohmymahjong.com/lorelei-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 6,
+   "group": "omm",
+   "mat": "Birdie Green",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "partner": false,
+   "file": "oasis-mahjong-tiles-oh-my-mahjong-birdie-green-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/mats/omm-retired/birdie-green.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "why": "green with teal peacock fans",
+   "fym": "alb:coquette:Birdie Green",
+   "lowres": false,
+   "caption_note": "Retired",
+   "rack_notes": []
+  },
+  {
+   "order": 7,
+   "group": "omm",
+   "mat": "Larkspur",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/oh-my-mahjong-larkspur.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Avocado",
+    "Bird & Bamboo Peony"
+   ],
+   "why": "green border around a pink-coral centre",
+   "fym": "www.ohmymahjong.com/larkspur-mat-in-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 8,
+   "group": "omm",
+   "mat": "Heron",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-oh-my-mahjong-heron-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/oh-my-mahjong-heron.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Miss Mahjong Iridescent Opal Scalloped",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "why": "pink cranes: the orchid pink side",
+   "fym": "www.ohmymahjong.com/heron-mat-in-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 9,
+   "group": "omm",
+   "mat": "Elysium",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-oh-my-mahjong-elysium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/oh-my-mahjong-elysium.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Oh My Mahjong Hot Pink",
+    "Bam Bird Boutique Indigo"
+   ],
+   "why": "green lattice, deep teal and pink blossoms",
+   "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 10,
+   "group": "picks",
+   "mat": "Green Bamboo Blossoms",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-lets-be-besties-green-bamboo-blossoms-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/lets-be-besties-green-bamboo-blossoms.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Moss",
+    "Bam Bird Boutique Olive"
+   ],
+   "why": "sage green with pink blossoms and bamboo: the backs and the orchids",
+   "fym": "letsbebesties.com/green-bamboo-blossoms-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 11,
+   "group": "picks",
+   "mat": "Playing For Keeps",
+   "brand": "Mahj Mood",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-mahj-mood-playing-for-keeps-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/mahj-mood-playing-for-keeps.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Pink",
+    "Bird & Bamboo Mulberry"
+   ],
+   "why": "pink and sage ogee",
+   "fym": "mahjmood.com/playing-for-keeps-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 12,
+   "group": "picks",
+   "mat": "Mulberry and Sage",
+   "brand": "Wren Mats",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "oasis-mahjong-tiles-wren-mats-mulberry-and-sage-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/leftout/sadie-jane/wren-mats-mulberry-and-sage.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Radish",
+    "Bird & Bamboo Moss"
+   ],
+   "why": "sage centre with a berry stripe border",
+   "fym": "www.wrenmats.com/3amygp8zy5kl2w9em6hb14uo0mkes6",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 13,
+   "group": "picks",
+   "mat": "Texas Mon Amour Green",
+   "brand": "Fait à Main",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "oasis-mahjong-tiles-fait-main-texas-mon-amour-green-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/fait-main-texas-mon-amour-green.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "My Fair Mahjong Teal",
+    "Bird & Bamboo Jade"
+   ],
+   "why": "jade green with pink paisley",
+   "fym": "faitamainstudio.com/texas-mon-amour-mat-green",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 14,
+   "group": "picks",
+   "mat": "Hot Tips – Vintage Blooms",
+   "brand": "Peace Love Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-peace-love-mahjong-hot-tips-vintage-blooms-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/peace-love-mahjong-hot-tips-vintage-blooms.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Basil",
+    "Bird & Bamboo Flamingo"
+   ],
+   "why": "deep teal with coral-pink blooms",
+   "fym": "peacelovemahjong.com/mahjong-mats-hot-tips?v=52799151112484",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 15,
+   "group": "picks",
+   "mat": "Midnight Peacock",
+   "brand": "Anders Ruff",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-anders-ruff-midnight-peacock-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/anders-ruff-midnight-peacock.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Jade"
+   ],
+   "why": "deep teal and sage with gold palms",
+   "fym": "shop.andersruff.com/midnight-peacock-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 16,
+   "group": "picks",
+   "mat": "Plaid Neoprene – Green with Pink",
+   "brand": "Bam Bird Boutique",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-bam-bird-boutique-plaid-neoprene-green-with-pink-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/bam-bird-boutique-plaid-neoprene-green-with-pink.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Evergreen"
+   ],
+   "why": "green plaid with a pink line",
+   "fym": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963852194101",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 17,
+   "group": "picks",
+   "mat": "Garden Party – Mulberry",
+   "brand": "My Fair Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-my-fair-mahjong-garden-party-mulberry-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/my-fair-mahjong-garden-party-mulberry.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Eggplant",
+    "Mahjong Register Peacock Teal"
+   ],
+   "why": "orchid-magenta centre in a teal scallop",
+   "fym": "myfairmahjong.com/mat-garden-party-mulberry",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 18,
+   "group": "picks",
+   "mat": "Evergreen Medallion",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-lets-be-besties-evergreen-medallion-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/lets-be-besties-evergreen-medallion.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Moss",
+    "Bird & Bamboo Jade"
+   ],
+   "why": "sage medallions with pink ribbons",
+   "fym": "letsbebesties.com/evergreen-medallion-ohbon-studios-artist-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 19,
+   "group": "picks",
+   "mat": "Sunday Premium",
+   "brand": "Sunday Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "oasis-mahjong-tiles-sunday-mahjong-sunday-premium-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/sunday-mahjong-sunday-premium.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "My Fair Mahjong Teal",
+    "My Fair Mahjong Macaron Green"
+   ],
+   "why": "deep teal with a crane",
+   "fym": "sundaymahjong.com/sunday-premium-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 20,
+   "group": "picks",
+   "mat": "Green Gingham Premium",
+   "brand": "Sunday Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "oasis-mahjong-tiles-sunday-mahjong-green-gingham-premium-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/sunday-mahjong-green-gingham-premium.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Seafoam",
+    "My Fair Mahjong Teal"
+   ],
+   "why": "jade gingham",
+   "fym": "sundaymahjong.com/green-gingham-premium-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 21,
+   "group": "picks",
+   "mat": "Border – Dark Green",
+   "brand": "Peace Love Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "oasis-mahjong-tiles-peace-love-mahjong-border-dark-green-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/oasis/mats/peace-love-mahjong-border-dark-green.jpg",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Virora Spring Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Basil"
+   ],
+   "why": "tonal deep green: rests the eye with pink racks",
+   "fym": "peacelovemahjong.com/mahjong-mats-solid-borders?v=52799171395876",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  }
+ ],
+ "title_color": "#104344",
+ "tile": "assets/tiles/album/oasis.jpg",
+ "racks_note": "tile racks = OMM Pink Quartz + Virora Spring Jade (draft); mat racks = partner racks first, else nearest Bird & Bamboo"
+}

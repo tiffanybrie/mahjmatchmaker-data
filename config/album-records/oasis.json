@@ -3,7 +3,7 @@
  "set": "oasis",
  "name": "Oasis",
  "brand": "Oh My Mahjong",
- "status": "Steps 0-2, 4a, 4, 5, 6, 7 done Nov 24 ~3:20am ET; 21-card spec next to render. OWED: [3]/[3b] Facebook research (Chrome), [3c] discovery searches.",
+ "status": "REVIEW PAGE SENT Tue Nov 24 ~8:31am (21 cards): https://claude.ai/artifact/P4kGbWbP8yx4BdtfMGLgyk",
  "slot_hint": "OMM drop Mon Nov 30 2026 10am CT (with the Starling mat); album staged hidden before then",
  "pair_mat": "Starling (Oh My Mahjong, launches with Oasis)",
  "tile_photo": {
@@ -1140,10 +1140,16 @@
   ]
  },
  "discovery": {
-  "at": "2026-11-24T03:20:00-05:00",
-  "by": "Main (scheduled run, no Chrome)",
-  "searches": [],
-  "note": "NOT DONE yet: light usage; do with the Facebook research in Chrome (jade green and pink mahjong mat, orchid mahjong mat, koi mahjong mat, sage and pink chinoiserie)."
+  "at": "2026-11-24T08:35:00-05:00",
+  "searches": [
+   {
+    "where": "Google",
+    "terms": "mahjong mat jade teal orchid pink marble"
+   }
+  ],
+  "new_finds": [],
+  "misses_added": [],
+  "note": "Light search (usage-light week): results were catalog brands already in FYM or non-partner Etsy prints; nothing new to bring in."
  },
  "racks_draft": [
   "Oh My Mahjong Pink Quartz",
@@ -1153,5 +1159,22 @@
   "[3] Tiles & Tablescapes search (oasis, starling)",
   "[3b] other big Facebook groups",
   "[3c] discovery searches"
- ]
+ ],
+ "wheel_img": "assets/colorwheels/oasis-color-wheel.jpg",
+ "covers": {
+  "options": [
+   {
+    "img": "assets/covers/albums/00-oasis-mahjong-tiles-cover.jpg",
+    "label": "Tile pile, deep jade panel",
+    "note": "Nov 24: OMM pile shot, jade panel, OMM logo, frame3."
+   }
+  ],
+  "default": 0,
+  "chosen": 0
+ },
+ "review": {
+  "url": "https://claude.ai/artifact/P4kGbWbP8yx4BdtfMGLgyk",
+  "slug": "b2aef27d-479b-43ec-8c4c-206306b6e3bf",
+  "sent": "2026-11-24T08:31:00-05:00"
+ }
 }
