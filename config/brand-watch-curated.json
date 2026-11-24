@@ -759,9 +759,84 @@
    "source_kind": "email",
    "partner": true,
    "found": "2026-11-21T13:40"
+  },
+  {
+   "partner": true,
+   "urgency": "SOON",
+   "found": "2026-11-23T12:01",
+   "source": "store",
+   "source_kind": "store",
+   "brand": "Oh My Mahjong",
+   "new": true,
+   "day": "Fri 11/27",
+   "date": "2026-11-27",
+   "what": "Beaumont Mahjong Tiles ($475), a new tile set, launch Friday 11/27.",
+   "tag": "tiles",
+   "buy": "https://www.ohmymahjong.com/products/beaumont-mahjong-tiles",
+   "url": "https://www.ohmymahjong.com/products/beaumont-mahjong-tiles",
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Tile_Beaumont_a.jpg?v=1791310819"
+  },
+  {
+   "partner": true,
+   "urgency": "SOON",
+   "found": "2026-11-23T12:01",
+   "source": "store",
+   "source_kind": "store",
+   "brand": "Oh My Mahjong",
+   "new": true,
+   "day": "Fri 11/27",
+   "date": "2026-11-27",
+   "what": "Lily Mat ($90), a new mat, launches with the Beaumont tiles Friday 11/27.",
+   "tag": "mat",
+   "buy": "https://www.ohmymahjong.com/products/lily-mat-in-tube",
+   "url": "https://www.ohmymahjong.com/products/lily-mat-in-tube",
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Matt_Lily_a.jpg?v=1795196472"
+  },
+  {
+   "partner": true,
+   "urgency": "SOON",
+   "found": "2026-11-23T12:01",
+   "source": "store",
+   "source_kind": "store",
+   "brand": "Oh My Mahjong",
+   "new": true,
+   "day": "Mon 11/30",
+   "date": "2026-11-30",
+   "what": "Oasis Mahjong Tiles ($475), a new tile set, launch Monday 11/30.",
+   "tag": "tiles",
+   "buy": "https://www.ohmymahjong.com/products/oasis-mahjong-tiles",
+   "url": "https://www.ohmymahjong.com/products/oasis-mahjong-tiles",
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Tile_Oasis_24MP_Shopify.jpg?v=1795188216"
+  },
+  {
+   "partner": true,
+   "urgency": "SOON",
+   "found": "2026-11-23T12:01",
+   "source": "store",
+   "source_kind": "store",
+   "brand": "Oh My Mahjong",
+   "new": true,
+   "day": "Mon 11/30",
+   "date": "2026-11-30",
+   "what": "Starling Mat ($90), a new mat, launches with the Oasis tiles Monday 11/30.",
+   "tag": "mat",
+   "buy": "https://www.ohmymahjong.com/products/starling-mat-in-tube",
+   "url": "https://www.ohmymahjong.com/products/starling-mat-in-tube",
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Matt_Starling_a.jpg?v=1795193124"
   }
  ],
  "just_dropped": [
+  {
+   "partner": true,
+   "brand": "My Fair Mahjong",
+   "day": "Mon 11/23",
+   "found": "2026-11-23T18:23",
+   "source": "IG post",
+   "source_kind": "social",
+   "tag": "tiles",
+   "new": true,
+   "what": "The new Keepsake Collection is live: tile sets in 5 colors, in silk-lined gift boxes with gold frames."
+  },
   {
    "date": "2026-11-23",
    "day": "Mon 11/23",
@@ -2579,7 +2654,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-23T18:40",
+ "updated": "2026-11-23T22:40",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",
