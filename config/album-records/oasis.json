@@ -1,0 +1,31 @@
+{
+ "_about": "Album record (Album Playbook). Started Nov 24 2026 ~7:50am by Main (scheduled run), steps 0-2 only.",
+ "set": "oasis",
+ "name": "Oasis",
+ "brand": "Oh My Mahjong",
+ "status": "Steps 0-2 done Nov 24 (tile pile shot, colour card, FYM set mapping + walls). Next: catalog check, pull, by-sight, cards; Facebook research needs Chrome.",
+ "slot_hint": "OMM drop Mon Nov 30 2026 10am CT (with the Starling mat); album staged hidden before then",
+ "pair_mat": "Starling (Oh My Mahjong, launches with Oasis)",
+ "tile_photo": {
+  "file": "assets/tiles/album/oasis.jpg",
+  "inset": "assets/tiles/album/oasis.jpg",
+  "source": "assets/launches/oasis-tiles/05-Tile_Oasis_f.jpg (OMM listing tile pile shot, no bag)",
+  "pile_shot": true,
+  "basis": "Tile pile rule (Nov 19 3:27pm) + Tiffany Nov 24 1:13am: OMM albums need no tile pick",
+  "asked_at": null,
+  "approved_at": "2026-11-24T07:50:00-05:00"
+ },
+ "colorcard_img": "assets/colorcards/oasis/00-oasis-mahjong-tiles-color-guide-mobile.jpg",
+ "colorcard_draft": {
+  "at": "2026-11-24T07:50:00-05:00",
+  "by": "Main",
+  "source": "k-means on assets/tiles/album/oasis.jpg (OMM pile shot); faces by sight on the same photo; nothing recoloured",
+  "note": "Back = marbled jade/sage green (#5d6655, light #7a7870); side layers deep teal-green + orchid pink; faces orchid pink/magenta, jade green, teal."
+ },
+ "pull": {
+  "contrast": [
+   "ORCHID PINK",
+   "MAGENTA"
+  ]
+ }
+}

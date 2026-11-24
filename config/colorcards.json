@@ -1558,6 +1558,72 @@
    "shop": "Shop Beaumont · Oh My Mahjong",
    "shop_m": "Shop Beaumont · Oh My Mahjong",
    "draft": "Nov 24 2026 (Main, scheduled run): measured by k-means on the OMM pile shot (backs) and the OMM laid-out faces image 01 (faces), nothing recoloured. Top 3 mats + racks filled after the by-sight pass; final after her review."
+  },
+  "oasis": {
+   "name": "Oasis",
+   "col": "#104344",
+   "brand": "Oh My Mahjong",
+   "sub": "Marbled jade backs with deep teal and orchid pink stripe layers",
+   "backs": [
+    [
+     "MARBLED JADE",
+     "#5d6655",
+     "back"
+    ],
+    [
+     "DEEP TEAL",
+     "#104344",
+     "stripe layer"
+    ],
+    [
+     "ORCHID PINK",
+     "#de98b8",
+     "stripe layer"
+    ],
+    [
+     "WHITE",
+     "#e2ddda",
+     "face layer"
+    ]
+   ],
+   "faces": [
+    [
+     "ORCHID PINK",
+     "#de98b8"
+    ],
+    [
+     "MAGENTA",
+     "#d63c8c"
+    ],
+    [
+     "JADE GREEN",
+     "#1fa981"
+    ],
+    [
+     "MINT",
+     "#6ec29e"
+    ],
+    [
+     "TEAL",
+     "#167a7a"
+    ]
+   ],
+   "racks": [],
+   "rack_imgs": {},
+   "tile": "assets/tiles/album/oasis.jpg",
+   "tag": [
+    "Orchids, bamboo and lanterns",
+    "marbled jade backs, teal + pink stripes"
+   ],
+   "mats": [
+    "Starling"
+   ],
+   "mat_imgs": {
+    "Starling": "assets/launches/starling-mat/01-Matt_Starling_a.jpg"
+   },
+   "shop": "Shop Oasis · Oh My Mahjong",
+   "shop_m": "Shop Oasis · Oh My Mahjong",
+   "draft": "Nov 24 2026 (Main, scheduled run): backs measured by k-means on the OMM pile shot; magenta + teal faces read by sight (small on the pile). Racks + top 3 after the by-sight pass."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."
