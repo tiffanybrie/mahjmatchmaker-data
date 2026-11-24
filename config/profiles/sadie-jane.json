@@ -202,32 +202,47 @@
   ],
   "bio": "A lily pond in late spring: blush petals, blue water and a panda who knows how to make an entrance.",
   "best_features": {
-    "_status": "DRAFT: Talulah favourites she named (bird bam, panda jokers); Sadie Jane shares Talulah's faces",
+    "_status": "Her face picks from the Sadie Jane review page (Nov 21-23): panda joker, crane bam, N E W S, 5 crak, peony, pink peony, orchid, blue flower",
     "top": [
-      "The pandas",
+      "The winds",
       [
-        "joker-panda",
-        "joker-panda"
+        "wind-north",
+        "wind-east",
+        "wind-west",
+        "wind-south"
       ],
-      "Her panda jokers"
+      "N, E, W, S: all her news"
     ],
     "singles": [
+      [
+        "The panda",
+        "joker-panda",
+        "Her panda<br>joker"
+      ],
       [
         "The crane",
         "bam-1-crane",
         "Her red-crowned<br>crane bird bam"
       ],
       [
-        "The peony",
-        "flower-pink-peony",
-        "A pink peony<br>flower"
-      ],
-      [
-        "The lotus",
-        "dot-1",
-        "A pink lotus<br>on a lily pad"
+        "The 5 crak",
+        "crak-5",
+        "Her 5 crak"
       ]
-    ]
+    ],
+    "flowers": [
+      "Her flowers",
+      [
+        "flower-peony",
+        "flower-pink-peony",
+        "flower-orchid",
+        "flower-blue"
+      ],
+      "Peonies, an orchid and a blue bloom"
+    ],
+    "top_w": 150,
+    "singles_w": 150,
+    "flowers_w": 120
   },
   "omm_launch": {
     "pair": {
@@ -318,5 +333,6 @@
     "cover",
     "oh-my-mahjong-vivara",
     "oh-my-mahjong-serendipity"
-  ]
+  ],
+  "faces_dir": "assets/tiles/faces/sadie-jane/cells/"
 }
