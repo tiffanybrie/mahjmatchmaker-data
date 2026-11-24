@@ -1773,3 +1773,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-11-23 11:22pm Tiffany: the tiffanybrie@ -> mahjmatchmaker@ Gmail forward is NOT needed any more (the idea was to forward the newsletters, and they are now signed up directly). CLOSED: forward lines removed from OVERDUE; never re-raise.
 - 2026-11-23 11:23pm Tiffany: story red zones 'WAY too conservative' -> 180 top / 210 bottom (brand guide corrected); 'what color is our phone?' = WHITE: phone bezel made white (r2k).
 - 2026-11-23 11:29pm Tiffany: the band I treated as bottom red zone is usable ('It is not'): bottom zone = 150px (brand guide, dead_space_check, phone view r2m).
+- 2026-11-23 11:32pm Tiffany: shared cards must link back to us. Phone view now shows a browser address bar 'mahjmatchmaker.com' with the flame heart (r2n). Other views already carry 'mahjmatchmaker.com' in their footer.
