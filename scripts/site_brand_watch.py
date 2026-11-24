@@ -130,6 +130,7 @@ def live_img(x):
 _NOPH = {b.lower() for b in d.get('no_photo_brands') or []}
 NOPHOTO = lambda x: bool(x.get('noimg')) or clean(x['brand']).lower() in _NOPH
 COPYPAGE = re.compile(r'/products/[^/?#]*-copy(?:-\d+)?(?:[/?#]|$)', re.I)
+_NEWCUT = (datetime.datetime.now() - datetime.timedelta(days=7)).strftime('%Y-%m-%d')   # Nov 23: NEW only on items from the last 7 days
 def line(x):
     # Nov 13 (Tiffany 11:22am): CMC built the Cabana Club page by copying Hunt Club ('the-hunt-club-edition-copy'); the page
     # pulled the HUNT CLUB photo. A copied product page carries the old product's photos, so it needs its own `img`.
@@ -143,7 +144,7 @@ def line(x):
         btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">{_lab}{" · use code MAHJMATCH" if code and 'tigre' not in x['brand'].lower() else ""}</a>' + (save_line(x['brand']) if code and not x.get('save_note') else '')
         if x.get('save_note'): btn += '<div class="bw-save">' + e(x['save_note']).replace('MAHJMATCH', '<b>MAHJMATCH</b>') + '</div>'   # Nov 21: a hand-written note under the button (e.g. 'Whether MAHJMATCH works on top of this sale is not confirmed yet.')
     st = stamp(x.get('found'))
-    return img, (f'<div class="bw-item">' + (f'<div class="bw-stamp">Added {e(st)}</div>' if st else '') + f'<div class="bw-what">' + ('<span class="bw-kind bw-k-new">New</span>' if not RESTOCK(x) and x.get('_sec') != 'sales' else '<span class="bw-kind bw-k-re">Restock</span>' if RESTOCK(x) else '') + f'{e(re.sub(r"^NEW:\s*", "", x["what"]))}</div>' + (f'<div class="bw-when">When: {e(when)}</div>' if when else '') + ''.join(f'<div class="bw-hist">Earlier{(" · " + e(stamp(h.get("found")))) if h.get("found") else ""}: {e(h["what"])}</div>' for h in (x.get('history') or [])) + btn + '</div>')
+    return img, (f'<div class="bw-item">' + (f'<div class="bw-stamp">Added {e(st)}</div>' if st else '') + f'<div class="bw-what">' + ('<span class="bw-kind bw-k-new">New</span>' if not RESTOCK(x) and x.get('_sec') != 'sales' and (x.get('found') or x.get('date') or '')[:10] >= _NEWCUT else '<span class="bw-kind bw-k-re">Restock</span>' if RESTOCK(x) else '') + f'{e(re.sub(r"^NEW:\s*", "", x["what"]))}</div>' + (f'<div class="bw-when">When: {e(when)}</div>' if when else '') + ''.join(f'<div class="bw-hist">Earlier{(" · " + e(stamp(h.get("found")))) if h.get("found") else ""}: {e(h["what"])}</div>' for h in (x.get('history') or [])) + btn + '</div>')
 # NEWS RANK (Tiffany Nov 11 10:29am): a tile set (travel too: big ticket) > new racks > rack restocks > mat restocks.
 # Brand-new beats a restock of something everyone has seen; brands known for something get their own order (config/brand-known-for.json).
 def KIND(x):   # the item's tag decides first ("mat ... pair with Catrina tiles" is a mat), then the words
@@ -181,12 +182,21 @@ def save_line(brand):
 CAP = 2   # Tiffany Nov 11 10:17am: big-inventory brands (Let's Be Besties: 175 new mats) can't dominate; 2 per brand per section, then "See all"
 bslug = lambda b: re.sub(r'[^a-z0-9]+', '-', clean(b).lower()).strip('-')
 def card(group, cap=CAP, label=''):
-    rank = sorted(group, key=RANK)   # Nov 11 10:29am news rank inside a brand
+    rank = sorted(group, key=(lambda x: (x.get('date') or '9999', RANK(x))) if label == 'Coming soon' else RANK)   # Nov 11 10:29am news rank inside a brand
     shown = rank[:cap] if cap else rank
     parts = [line(x) for x in shown]; img = next((i for i, _ in parts if i), None)
     pic = f'<img class="bw-img" src="{e(img)}" alt="" loading="lazy">' if img else ''
     more = (f'<a class="bw-more" href="#{bslug(group[0]["brand"])}">+{len(group) - cap} more · see everything from {e(clean(group[0]["brand"]))} &rarr;</a>' if cap and len(group) > cap else '')
     return f'<article class="bw-card">{pic}<div class="bw-body"><div class="bw-brand">{e(clean(group[0]["brand"]))}' + (f'<span class="bw-tag bw-t-{bslug(label)}">{e(label)}</span>' if label else '') + f'</div>{"".join(h for _, h in parts)}{more}</div></article>'
+try:
+    _TW = json.load(open(R + 'config/ig-watch-tiers.json'))
+    _TA = [b.lower() for b in _TW.get('A_every_run', [])]; _TB = [b.lower() for b in _TW.get('B_morning_and_evening', [])]
+except Exception: _TA, _TB = [], []
+def TIER(x):   # Tiffany Nov 23 10:51pm: top-tier brands lead every section (ig-watch-tiers A in her order, then B)
+    b = clean(x['brand']).lower().replace('virora mahjong', 'virora')
+    for i, t in enumerate(_TA):
+        if t in b or b in t: return i
+    return 100 + (min([i for i, t in enumerate(_TB) if t in b or b in t] or [99]))
 def grouped(L):
     order, G = [], {}
     for x in L:
@@ -194,7 +204,7 @@ def grouped(L):
     gs = [G[k] for k in order]
     # Nov 22 2026: `order` on an item (low first, default 50) places its brand card ahead of the usual sort: the Black Friday groups
     # (code works 11-19, not confirmed 21-29, no code yet 31-39, no-stack sales 90) and Splash of Color at the bottom (99).
-    return sorted(gs, key=lambda g: (min(x.get('order', 50) for x in g), min(BIG(x) for x in g) if 'BIG' in globals() else 1, min(RANK(x)[:1] for x in g)))   # stable: tile news first, then the rest in date order
+    return sorted(gs, key=lambda g: (min(x.get('order', 50) for x in g), min(BIG(x) for x in g) if 'BIG' in globals() else 1, min(TIER(x) for x in g), min(RANK(x)[:1] for x in g)))   # stable: tile news first, then the rest in date order
 # Nov 22 2026: permanent exclusions live in the data (`never_show`: brand + pattern), e.g. Royal's Heirloom Crown Jewels. A visible
 # item of that brand whose text or link matches is dropped here on every build, so a re-added item can never reach the page.
 _NEVER = [(norm(n['brand']), re.compile(n['pattern'], re.I)) for n in d.get('never_show') or []]
@@ -235,7 +245,7 @@ sec = [('Black Friday deals', uniq(P(BF))),
        ('Launching now', uniq(P(sorted(launch, key=lambda x: (BIG(x), x.get('date') or '', x.get('time') or ''))))),
        ('Just dropped', uniq(P(newest([x for x in dropped if not x.get('bf') and (x.get('found') or x.get('date') or '9') >= cut])))),
        ('Sale', uniq(P(newest([x for x in SALE if not x.get('big')])))),
-       ('Coming soon', uniq(P(newest([x for x in d['coming_soon'] if not x.get('bf')]))))]
+       ('Coming soon', uniq(P(newest([x for x in d['coming_soon'] if not x.get('bf') and not ((x.get('date') or '9999') < TODAY and print('BRAND WATCH: past-dated Coming soon item skipped (move it to Just dropped): ' + x['brand'] + ' | ' + x['what'][:60], file=sys.stderr) is None)]))))]
 _pend = [x['brand'] for x in d['sales'] if x.get('partner') and not x.get('hidden') and not x.get('bf') and x.get('approved') is None]
 if _pend: print('BRAND WATCH: sales waiting on her yes (hidden until then): ' + ', '.join(_pend), file=sys.stderr)
 body = ''.join(f'<section class="bw-sec"><h2>{t}</h2><div class="bw-grid">{"".join(card(g, label=t) for g in grouped(L))}</div></section>' for t, L in sec if L)
@@ -306,7 +316,7 @@ _main = body[body.index('<div id="bw-main">') + len('<div id="bw-main">'):]
 _secs = re.findall(r'<section class="bw-sec">.*?</section>', body, re.S)
 _rest = body[body.index(_secs[-1]) + len(_secs[-1]):] if _secs else ''
 _chips = []; _out = []
-_order = ['Black Friday deals', 'Sales', 'This week', 'Coming soon', 'Just dropped']
+_order = ['Black Friday deals', 'Big sale', 'Launching now', 'Just dropped', 'Sale', 'Sales', 'This week', 'Coming soon']   # Tiffany Nov 11 10:04am order (launches, just dropped, sales, coming soon); Black Friday on top
 def _h2(x): return html.unescape(re.search(r'<h2[^>]*>(.*?)</h2>', x, re.S).group(1))
 for x in sorted(_secs, key=lambda x: _order.index(_h2(x)) if _h2(x) in _order else 99):
     name = _h2(x); sid = _sid.get(name) or re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')
