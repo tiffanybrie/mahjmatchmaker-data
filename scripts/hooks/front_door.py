@@ -115,6 +115,11 @@ try:
         out += ['  - '+a for a in _asks[:6]]
         if _nl: out.append(f"  - newsletters only she can tap (captcha): {', '.join(_nl)}: send her the tap list with links, or do them in her Chrome when she is there to tap")
 except Exception: pass
+# Nov 23 11:24pm (Tiffany: 'why do I keep having to give this correction?' = the white phone): unverified phone builders
+try:
+    r=subprocess.run(['python3','scripts/checks/phone_white_check.py','--front'],capture_output=True,text=True,timeout=20)
+    if r.stdout.strip(): out.append(r.stdout.strip())
+except Exception: pass
 # Nov 23 11:10pm (Tiffany: Brand Watch errors, Duet's work unchecked): the Brand Watch gate (no store read here; publish runs --stores)
 try:
     r=subprocess.run(['python3','scripts/checks/brand_watch_gate.py','--front'],capture_output=True,text=True,timeout=20)

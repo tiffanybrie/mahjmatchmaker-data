@@ -1155,7 +1155,7 @@ let y=STORY?200:40;
    g.save();shadow('rgba(30,30,50,.28)',36,14);g.fillStyle='#ececef';g.beginPath();g.roundRect(px,py,pw,ph,R0);g.fill();g.restore();
    const gr=g.createLinearGradient(px,py,px+pw,py);gr.addColorStop(0,'#d9dade');gr.addColorStop(.12,'#f4f4f6');gr.addColorStop(.88,'#f4f4f6');gr.addColorStop(1,'#d4d5da');g.fillStyle=gr;g.beginPath();g.roundRect(px,py,pw,ph,R0);g.fill();
    g.fillStyle='#cdced2';[[-1,.15,.05],[-1,.22,.08],[-1,.32,.08],[1,.25,.12]].forEach(([sd,t,h])=>{g.beginPath();g.roundRect(sd<0?px-4:px+pw-2,py+ph*t,6,ph*h,3);g.fill();});
-   g.fillStyle='#fbfbfc';g.beginPath();g.roundRect(px+fr,py+fr,pw-2*fr,ph-2*fr,R0-fr);g.fill();g.strokeStyle='#d6d7dc';g.lineWidth=2;g.stroke();/*R2K WHITE phone (Tiffany Nov 23: 'We're supposed to use a white phone'): white bezel, not black*/
+   g.fillStyle='#fbfbfc';g.beginPath();g.roundRect(px+fr,py+fr,pw-2*fr,ph-2*fr,R0-fr);g.fill();g.strokeStyle='#d6d7dc';g.lineWidth=2;g.stroke();/*WHITE-PHONE-OK R2K WHITE phone (rendered + looked at Nov 23 11:24pm) (Tiffany Nov 23: 'We're supposed to use a white phone'): white bezel, not black*/
    const sx=px+fr+bz,sy=py+fr+bz,sw=pw-2*(fr+bz),sr=R0-fr-bz,sh=H-sy+40;
    g.save();g.beginPath();g.roundRect(sx,sy,sw,ph,sr);g.clip();g.fillStyle='#fff';g.fillRect(sx,sy,sw,sh);
    const f=n=>Math.round(n*sw/880);g.fillStyle='#111';g.textAlign='center';g.font=`600 ${f(30)}px -apple-system, Helvetica, Arial, sans-serif`;g.fillText('9:41',sx+f(110),sy+f(58));
