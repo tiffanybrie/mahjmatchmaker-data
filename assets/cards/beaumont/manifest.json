@@ -1,0 +1,591 @@
+{
+ "set": "Beaumont",
+ "status": "DRAFT: Claude's own picks, pending Tiffany's review",
+ "groups": {
+  "pair": "Made for Beaumont",
+  "omm": "Top Oh My Mahjong matches",
+  "picks": "More mat brands that match Beaumont",
+  "holiday": "Holiday",
+  "yours": "Your adds"
+ },
+ "cards": [
+  {
+   "order": 1,
+   "group": "pair",
+   "mat": "Lily",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-oh-my-mahjong-lily-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/adds/oh-my-mahjong-lily-2400.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Avocado",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "why": "Oh My Mahjong's own mat for Beaumont, dropping with it Fri Nov 27: green cane border, cobalt and turquoise parasols, herons and lotus.",
+   "fym": null,
+   "lowres": false,
+   "caption_note": "Sister mat",
+   "rack_notes": []
+  },
+  {
+   "order": 2,
+   "group": "omm",
+   "mat": "Elysium",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-oh-my-mahjong-elysium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/oh-my-mahjong-elysium.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Oh My Mahjong Hot Pink",
+    "Bam Bird Boutique Indigo"
+   ],
+   "why": "cobalt frame, chartreuse lattice and a pagoda garden: the stripe layers, mat-sized",
+   "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 3,
+   "group": "omm",
+   "mat": "Larkspur",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/oh-my-mahjong-larkspur.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Avocado",
+    "Bird & Bamboo Peony"
+   ],
+   "why": "chartreuse border around a coral cane centre: the coral craks and the chartreuse stripe",
+   "fym": "www.ohmymahjong.com/larkspur-mat-in-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 4,
+   "group": "omm",
+   "mat": "Palomino",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-oh-my-mahjong-palomino-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/oh-my-mahjong-palomino.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Wine"
+   ],
+   "why": "tortoise-brown cane with cobalt peonies: the back and the stripe together",
+   "fym": "www.ohmymahjong.com/palomino-mat-in-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 5,
+   "group": "omm",
+   "mat": "Jade",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-oh-my-mahjong-jade-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/oh-my-mahjong-jade.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "My Fair Mahjong Macaron Pink",
+    "Bam Bird Boutique Slate Blue"
+   ],
+   "why": "deep teal and green garden: the turtle jokers and bamboo",
+   "fym": "www.ohmymahjong.com/jade-mat-in-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 6,
+   "group": "omm",
+   "mat": "Birdie Green",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "partner": false,
+   "file": "beaumont-mahjong-tiles-oh-my-mahjong-birdie-green-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/mats/omm-retired/birdie-green.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "why": "green with cobalt peacock fans",
+   "fym": "alb:coquette:Birdie Green",
+   "lowres": false,
+   "caption_note": "Retired",
+   "rack_notes": []
+  },
+  {
+   "order": 7,
+   "group": "omm",
+   "mat": "Serendipity",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-oh-my-mahjong-serendipity-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/oh-my-mahjong-serendipity.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Light Pink",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "why": "chartreuse lattice, powder blue and blush lotus",
+   "fym": "www.ohmymahjong.com/serendipity-mat-in-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 8,
+   "group": "omm",
+   "mat": "Isla",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-oh-my-mahjong-isla-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/oh-my-mahjong-isla.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "My Fair Mahjong Macaron Blue",
+    "Bird & Bamboo Tiffany Dusk"
+   ],
+   "why": "pale green and powder blue birds and leaves",
+   "fym": "www.ohmymahjong.com/isla-mat-in-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 9,
+   "group": "omm",
+   "mat": "Hampton",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-oh-my-mahjong-hampton-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/oh-my-mahjong-hampton.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Chartreuse",
+    "Bird & Bamboo Pistachio"
+   ],
+   "why": "chartreuse, aqua and coral cranes with pagoda lanterns",
+   "fym": "www.ohmymahjong.com/hampton-mat-in-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 10,
+   "group": "omm",
+   "mat": "Cognac",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-oh-my-mahjong-cognac-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/leftout/sadie-jane/oh-my-mahjong-cognac.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Radish",
+    "Bird & Bamboo Red"
+   ],
+   "why": "solid tortoise-tone leather: tonal with the backs",
+   "fym": "www.ohmymahjong.com/cognac-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 11,
+   "group": "picks",
+   "mat": "Blooming Lotus",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-lets-be-besties-blooming-lotus-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/lets-be-besties-blooming-lotus.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "why": "cobalt with a lime bamboo frame and lotus",
+   "fym": "letsbebesties.com/blooming-lotus-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 12,
+   "group": "picks",
+   "mat": "Bamboo Lotus",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-lets-be-besties-bamboo-lotus-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/lets-be-besties-bamboo-lotus.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Lime Green"
+   ],
+   "why": "bamboo green with cobalt lotus",
+   "fym": "letsbebesties.com/bamboo-lotus-neoprene-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 13,
+   "group": "picks",
+   "mat": "Heron Landing",
+   "brand": "Mahjong Moxie",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "beaumont-mahjong-tiles-mahjong-moxie-heron-landing-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/mahjong-moxie-heron-landing.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Bam Bird Boutique Indigo",
+    "Bird & Bamboo Carrot"
+   ],
+   "why": "herons and bamboo, powder blue: Lily's herons in another brand",
+   "fym": "www.mahjong-moxie.com/heron-landing-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 14,
+   "group": "picks",
+   "mat": "Peacock Garden",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-britt-mills-peacock-garden-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/britt-mills-peacock-garden.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Avocado",
+    "Mahjong Register Admiral Navy"
+   ],
+   "why": "navy and olive chinoiserie: cobalt + chartreuse",
+   "fym": "brittmillsdesign.com/peacock-garden-neoprene-mahjong-mat-arriving-late-october",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 15,
+   "group": "picks",
+   "mat": "Blue Me Away",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-lets-be-besties-blue-me-away-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/lets-be-besties-blue-me-away.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Wine"
+   ],
+   "why": "cobalt florals on a tortoise-brown ground",
+   "fym": "letsbebesties.com/blue-me-away-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 16,
+   "group": "picks",
+   "mat": "Garden Party – Meadow",
+   "brand": "My Fair Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-my-fair-mahjong-garden-party-meadow-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/my-fair-mahjong-garden-party-meadow.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Pink",
+    "Bird & Bamboo Avocado"
+   ],
+   "why": "chartreuse scallop around a coral pink centre",
+   "fym": "myfairmahjong.com/mat-garden-party-meadow",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 17,
+   "group": "picks",
+   "mat": "Cherry Blossom Jade",
+   "brand": "Miss Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-miss-mahjong-cherry-blossom-jade-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/miss-mahjong-cherry-blossom-jade.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Lime Green",
+    "Peace Love Mahjong Pink"
+   ],
+   "why": "pink and green blossoms",
+   "fym": "missmahjong.com/cherry-blossom-mahjong-playing-mat-jade",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 18,
+   "group": "picks",
+   "mat": "Chartreuse Garden",
+   "brand": "Bespoke Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-bespoke-mahjong-chartreuse-garden-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/bespoke-mahjong-chartreuse-garden.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Chartreuse",
+    "Bird & Bamboo Pistachio"
+   ],
+   "why": "chartreuse centre in a garden of pinks and blues",
+   "fym": "www.bespokemahjong.com/preorder-sapphire-blue-garden-mat-copy",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 19,
+   "group": "picks",
+   "mat": "Sapphire Blue Garden Mat",
+   "brand": "Bespoke Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-bespoke-mahjong-sapphire-blue-garden-mat-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/bespoke-mahjong-sapphire-blue-garden-mat.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Mahjong Register Admiral Navy",
+    "Bird & Bamboo Basil"
+   ],
+   "why": "cobalt-navy centre with a flower border",
+   "fym": "www.bespokemahjong.com/sapphireblue-garden-mat-copy",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 20,
+   "group": "picks",
+   "mat": "Citrus Chinoiserie",
+   "brand": "Mahj & Moon",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "beaumont-mahjong-tiles-mahj-and-moon-citrus-chinoiserie-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/mats/clean/bamboo-cut/mahj-and-moon-citrus-chinoiserie.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Mahjong Register Admiral Navy",
+    "Bird & Bamboo Carrot"
+   ],
+   "why": "navy and green chinoiserie with a gingham centre",
+   "fym": "mahjandmoon.com/citrus-chinoiserie-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 21,
+   "group": "picks",
+   "mat": "Rattan",
+   "brand": "Sunday Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "beaumont-mahjong-tiles-sunday-mahjong-rattan-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/sunday-mahjong-rattan.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bam Bird Boutique Walnut"
+   ],
+   "why": "rattan cane in olive and brown: tortoise + chartreuse",
+   "fym": "sundaymahjong.com/rattan-premium-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 22,
+   "group": "picks",
+   "mat": "Secret Garden",
+   "brand": "Anders Ruff",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-anders-ruff-secret-garden-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/anders-ruff-secret-garden.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Forest Green"
+   ],
+   "why": "green chinoiserie frame, powder blue centre",
+   "fym": "shop.andersruff.com/secret-garden-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 23,
+   "group": "picks",
+   "mat": "Mountain Green",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "beaumont-mahjong-tiles-lets-be-besties-mountain-green-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/beaumont/mats/lets-be-besties-mountain-green.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "My Fair Mahjong Indigo Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Matcha",
+    "Bird & Bamboo Blackboard Black"
+   ],
+   "why": "green stripes in a navy and coral border",
+   "fym": "letsbebesties.com/mountain-green-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  }
+ ],
+ "title_color": "#27498f",
+ "tile": "assets/tiles/album/beaumont.jpg",
+ "racks_note": "tile racks = OMM Tortoise Shell + My Fair Indigo Blue (draft); mat racks = partner racks first, else nearest Bird & Bamboo"
+}

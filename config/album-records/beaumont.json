@@ -3,7 +3,7 @@
  "set": "beaumont",
  "name": "Beaumont",
  "brand": "Oh My Mahjong",
- "status": "STOPPED AT CARDS Nov 24 ~1:55am ET: steps 0-2, 3c (light), 4a, 4, 5, 6, 7 done; 23-card spec built (tile racks OMM Tortoise Shell + My Fair Indigo Blue). Card render + review page blocked only by [3]/[3b] Facebook research (Chrome).",
+ "status": "REVIEW PAGE SENT Tue Nov 24 ~8:30am (23 cards): https://claude.ai/artifact/LuNqD4N6YFHqqCKi5emnNC",
  "slot_hint": "OMM drop Fri Nov 27 2026 (with the Lily mat); album staged hidden before then",
  "pair_mat": "Lily (Oh My Mahjong, launches with Beaumont)",
  "tile_photo": {
@@ -1321,5 +1321,22 @@
   "builder": "scripts/albumcard/specs/beaumont_build.py beaumont <workdir> && scripts/albumcard/gen2.py <workdir>/spec.json assets/cards/beaumont",
   "n": 23,
   "blocked": "gen2.py refuses (tnt_check): no Tiles & Tablescapes search on record. Render the moment config/tnt-recs.json sets.beaumont is complete (Chrome), or if Tiffany says to build without the Facebook research (record research_deferred with her words, as Sadie Jane Nov 21)."
+ },
+ "wheel_img": "assets/colorwheels/beaumont-color-wheel.jpg",
+ "covers": {
+  "options": [
+   {
+    "img": "assets/covers/albums/00-beaumont-mahjong-tiles-cover.jpg",
+    "label": "Tile pile, cobalt panel",
+    "note": "Nov 24: OMM pile shot, cobalt panel, OMM logo, frame3."
+   }
+  ],
+  "default": 0,
+  "chosen": 0
+ },
+ "review": {
+  "url": "https://claude.ai/artifact/LuNqD4N6YFHqqCKi5emnNC",
+  "slug": "a12dc3b7-5e06-4845-9eda-e8bccec05511",
+  "sent": "2026-11-24T08:30:00-05:00"
  }
 }
