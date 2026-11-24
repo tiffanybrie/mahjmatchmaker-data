@@ -237,6 +237,8 @@ def main():
         for k, v in old.items(): new_snap.setdefault(k, v)   # --only must never wipe the other stores' snapshot
         json.dump(new_snap, open(SNAP, 'w'), separators=(',', ':'), ensure_ascii=False)
     print(f"events {len(events)} (act {len(act)}), recent {len(recent)}, stores ok {sum(1 for s in status.values() if s.startswith('ok'))}/{len(status)}")
+    if not a.no_save:   # Nov 23 (Tiffany): every find goes onto Brand Watch mechanically; the run polishes wording, it can't forget
+        subprocess.run([sys.executable, REPO + 'scripts/watch/brand_watch_autoadd.py'])
 
 
 if __name__ == '__main__':

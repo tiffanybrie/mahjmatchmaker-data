@@ -19,6 +19,9 @@ if 'class="bw"' not in h or 'bw-updated' not in h or len(h) < 20000: bad.append(
 if re.search(r'claude\.ai|sca_ref=[^"&]*["&][^>]*>Shop[^<]*</a>\s*<div class="bw-save">[^<]*Tested at checkout', h) and 'claude.ai' in h: bad.append('claude.ai link')
 if re.search(r'Yellow Mountain', h): bad.append('Yellow Mountain Imports is never featured')
 if bad: sys.exit('NOT PUBLISHED: ' + '; '.join(bad))
+# Nov 23 11:10pm (Tiffany: "You are not checking Duet's work"): every publish, by any chat or task, passes the Brand Watch gate first
+_g = subprocess.run([sys.executable, 'scripts/checks/brand_watch_gate.py', '--stores'], capture_output=True, text=True)
+if _g.returncode != 0 and '--force-review' not in sys.argv: sys.exit('NOT PUBLISHED, Brand Watch gate failed:\n' + _g.stdout)
 run = lambda *a: subprocess.run(a, check=True, capture_output=True, text=True).stdout.strip()
 subprocess.run('git stash -q -- %s; git pull -q --rebase origin partner-catalogs-sqsp; git stash pop -q' % B, shell=True)   # be current BEFORE committing, so the pinned commit is never rewritten
 run('git', 'add', B)

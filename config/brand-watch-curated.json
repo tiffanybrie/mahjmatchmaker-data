@@ -521,11 +521,12 @@
    "what": "The Coca-Cola Classic tile set ($450) is on preorder now with a $100 deposit and ships in early December. The full bundle with tote and racks is sold out (waitlist open).",
    "tag": "tiles",
    "url": "https://www.instagram.com/p/DfaPJWblBLi/",
-   "action": "Add to Monday codes post (5% off with code MAHJMATCH)",
+   "action": "HIDDEN Nov 23 (gate [2]): preorder open since Nov 6, not news",
    "urgency": "LATER",
    "found": "2026-11-06",
    "img": "https://mahjonggmaven.com/wp-content/uploads/2026/08/tile-set--scaled.jpg",
-   "buy": "https://mahjonggmaven.com/product/coca-cola-classic-mah-jongg-set-tile-set/"
+   "buy": "https://mahjonggmaven.com/product/coca-cola-classic-mah-jongg-set-tile-set/",
+   "hidden": true
   },
   {
    "brand": "Peace Love Mahjong",
@@ -785,6 +786,33 @@
   }
  ],
  "just_dropped": [
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-23T23:12",
+   "date": "2026-11-20",
+   "day": "Fri 11/20",
+   "time": "LIVE now",
+   "brand": "Mahjong by SI",
+   "what": "New mats on their site: The Gathering Circle Mat, Wildflower Waltz Mat, Merlot Love Letter, Frost at the Lodge, and 3 more.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://www.mahjongbysi.com/products/the-gathering-circle-mahjong-mat",
+   "url": "https://www.mahjongbysi.com/products/the-gathering-circle-mahjong-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_b49f75fd-cf2e-416a-b9b5-8e473ebfe78b.png?v=1795154158",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "the-gathering-circle-mahjong-mat",
+    "wildflower-waltz-mahjong-mat",
+    "merlot-love-letter-mahjong-mat",
+    "frost-at-the-lodge-mahjong-mat",
+    "pecking-order-mahjong-mat",
+    "alpine-mahjong-mat",
+    "girls-just-wanna-mahj-mahjong-mat"
+   ]
+  },
   {
    "partner": true,
    "urgency": "NOW",
@@ -2173,7 +2201,7 @@
    "hidden": true,
    "bf": true,
    "embargo": "2026-11-21",
-   "action": "Noli June asks affiliates to HOLD posts until Sat 11/21; full kit (graphics, dates, share-link change that protects commission) arrives Thu 11/19. Do not show before 11/21.",
+   "action": "CLOSED Nov 23 (gate [3]): the hold ended Sat 11/21; the live Noli June Black Friday sale row covers it",
    "affiliate_terms": "Elyse (Noli June) email 11/15: tiered bundle pricing; code stacking not stated, kit Thu 11/19 explains the share-link change."
   },
   {
@@ -2739,7 +2767,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-23T22:40",
+ "updated": "2026-11-23T23:12",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",

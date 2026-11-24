@@ -100,6 +100,26 @@ try:
     r=subprocess.run(['python3','scripts/checks/partner_checklist.py','--front'],capture_output=True,text=True,timeout=30)
     out[0:0]=[l for l in r.stdout.splitlines() if l.startswith('NEW PARTNER')]
 except Exception: pass
+# Nov 23 11:12pm (Tiffany: the Gmail forward + captcha newsletters sat 'blocked' since Nov 16-19 and she was never asked again):
+# any OVERDUE line or newsletter row that is waiting on HER and older than 1 day is printed as an ASK, every message, until done.
+try:
+    import re as _re, datetime as _dt
+    _asks=[]
+    for _l in open('docs/OVERDUE.md'):
+        if not _re.search(r'RETIRED|DONE', _l) and _re.search(r'needs Tiffany|blocked on (her|Tiffany|Google|the phone)|her (tap|phone|step)|Verify it.s you|hCaptcha', _l, _re.I):
+            _m=_re.search(r'(Nov|Oct|Dec)\s*(\d{1,2})|20\d\d-(\d\d)-(\d\d)', _l)
+            _asks.append(_l.strip()[:170])
+    _nl=[_l.split('|')[1].strip() for _l in open('docs/PARTNER-NEWSLETTERS.md') if _l.startswith('|') and _re.search(r'needs Tiffany|STALE', _l)]
+    if _asks or _nl:
+        out.append(f"ASK TIFFANY NOW (waiting on her, she has NOT been asked again): put ONE line on hq/now vip + say it in this reply.")
+        out += ['  - '+a for a in _asks[:6]]
+        if _nl: out.append(f"  - newsletters only she can tap (captcha): {', '.join(_nl)}: send her the tap list with links, or do them in her Chrome when she is there to tap")
+except Exception: pass
+# Nov 23 11:10pm (Tiffany: Brand Watch errors, Duet's work unchecked): the Brand Watch gate (no store read here; publish runs --stores)
+try:
+    r=subprocess.run(['python3','scripts/checks/brand_watch_gate.py','--front'],capture_output=True,text=True,timeout=20)
+    if r.stdout.strip(): out+=r.stdout.strip().splitlines()
+except Exception: pass
 # Nov 23 2:38pm (Tiffany: Spools + Brewtifully approved Nov 18-19, no page Nov 23: "dropping money on the floor... we need a safety check").
 try:
     r=subprocess.run(['python3','scripts/checks/new_brand_floor.py'],capture_output=True,text=True,timeout=60)

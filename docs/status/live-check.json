@@ -1,10 +1,10 @@
 {
- "at": "2026-11-23T15:18:32",
+ "at": "2026-11-23T23:14:33",
  "date": "2026-11-23",
- "pages": 42,
+ "pages": 44,
  "hub_brands": 41,
  "fails": [
-  "/averill-mahjong-discount-code: live brand code page with NO entry in config/code-truth.json (add the brand, or page_brand if the slug differs)"
+  "hub: Spools says \"code is coming soon\" but code-truth has MAHJMATCH 10% confirmed"
  ],
  "warns": [],
  "unconfirmed": [

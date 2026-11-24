@@ -78,6 +78,18 @@ for href,nm,rest in rows:
     t=T.get(b,{})
     if t.get('hub_must') and not re.search(t['hub_must'],row_all): fails.append(f'hub row {b}: offer should say /{t["hub_must"]}/ (truth: {t.get("perk") or t.get("scope") or t.get("code")}) but says "{row_txt[:80]}"')
     if t.get('code_visible')=='image_only' and t.get('code') and t['code'] in row_txt: fails.append(f'hub row {b}: code {t["code"]} shows as TEXT (must be the image only, Tiffany Oct 30)')
+# Nov 23 11:05pm (Tiffany: 'Why does it say we don't have a Spools code?'): the hub's brand CARDS (not only the list rows) said
+# 'Our MAHJMATCH code is coming soon' for Spools 4 days after the code was confirmed, and this check PASSED because it only read
+# the list rows. Now: any 'coming soon' on the hub whose nearest preceding brand name has a confirmed % in code-truth FAILS.
+_ht=body_text(hub)
+for _m in re.finditer(r'code is coming soon|code coming soon|coming soon', _ht, re.I):
+    _pre=_ht[max(0,_m.start()-400):_m.start()]
+    _best=None
+    for _b in list(truth.get('pct',{}).keys())+[k for k in (truth.get('terms') or {}) if not k.startswith('_')]+['Fait à Main','Fait a Main']:
+        _i=_pre.rfind(_b.split(' Mahjong')[0])
+        if _i>=0 and (_best is None or _i>_best[1]): _best=(_b,_i)
+    if _best and pct_of(_best[0]) is not None and len(_pre)-_best[1]<300:
+        fails.append(f'hub: {_best[0]} says "{_m.group(0)}" but code-truth has MAHJMATCH {pct_of(_best[0])}% confirmed')
 # hub count claims
 m=re.search(r'All (\d+) mahjong discount codes',body_text(hub))
 if m and int(m.group(1))!=len(rows): fails.append(f'hub: heading says "All {m.group(1)}" but lists {len(rows)} brands')

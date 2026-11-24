@@ -28,7 +28,7 @@ favtxt = open(R + 'docs/IG-FAVORITES.md').read()
 nl = {}
 for line in open(R + 'docs/PARTNER-NEWSLETTERS.md'):
     c = [x.strip() for x in line.strip().strip('|').split('|')]
-    if len(c) == 3 and c[0] not in ('Brand', '---'): nl[norm(c[0])] = (c[0], c[1], c[2])
+    if len(c) in (3, 4) and c[0] not in ('Brand', '---') and not c[0].startswith('-'): nl[norm(c[0])] = (c[0], c[1], c[-1])   # Nov 23: the table has 4 columns since Nov 16; reading only 3-column rows made EVERY partner show 'newsletter' as a gap, so the real gaps were lost in noise
 snap = json.load(open(R + 'config/partner-products-snapshot.json'))
 snaphosts = {h.replace('www.', '') for h in snap}
 ALIAS = {}  # Nov 11: Mah Jongg Maven now has its own route; the MahjjMaven (Etsy) alias hid that it was never onboarded
@@ -49,7 +49,7 @@ for b, url, stage, pstore in names:
     nk = next((k for k in nl if k == norm(b) or (len(k) > 3 and (k.startswith(norm(b)) or norm(b).startswith(k)))), None)
     st = nl[nk][2] if nk else 'MISSING (not in list)'
     r['newsletter'] = st
-    r['newsletter_ok'] = bool(re.match(r'(seen|confirmed|signed up)', st, re.I))
+    r['newsletter_ok'] = bool(re.match(r'(seen|confirmed|signed up|re-signed|receiving|no newsletter)', st, re.I) and not re.search(r'needs Tiffany|TODO|stale', st, re.I))
     ik = find(ig, b); h = ig.get(ik) if ik else None
     r['ig'] = '@' + h if h else 'MISSING'
     r['favorited'] = 'yes' if h and re.search(r'\b' + re.escape(h) + r'\b', favtxt.split('## Handle verified')[0]) else ('no handle' if not h else 'NO')
