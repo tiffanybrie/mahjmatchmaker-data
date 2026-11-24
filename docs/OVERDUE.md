@@ -235,3 +235,4 @@
 - since 2026-11-24 | FYM card QA: add a check that every card view x size render contains 'mahjmatchmaker.com' (OCR-free: assert the draw code path for each view calls the site line/URL bar). Tiffany Nov 23 11:32pm.
 - since 2026-11-24 | Mahj Mood logo used in FYM cards has a baked-in mint background box: get a transparent version (their site header/footer SVG/PNG, Chrome) and swap it in the FYM logo set; also check every partner logo in that set for baked-in boxes (Tiffany Nov 23 11:50pm 'No white box around logos').
 - since 2026-11-24 | FYM card QA: resolution check = patch drawImage in the QA run, fail any image drawn >1.15x its natural size on the 2x canvas, every view x size (Tiffany Nov 23 11:58pm 'Make sure resolution is there').
+- [ ] scripts/checks/story_size_check.py: refuse any Planoly story whose media isn't 1080x1920 (from 2026-11-24 stories miss). Owner: first chat able. Due Wed 11/25.

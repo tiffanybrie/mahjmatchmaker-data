@@ -64,6 +64,24 @@ if '--stores' in sys.argv:   # [6] = what scripts/watch/brand_watch_autoadd.py w
         if l.startswith('  + '): fails.append('[6] not on Brand Watch: ' + l[4:] + ' (run scripts/watch/brand_watch_autoadd.py)')
     age = (datetime.datetime.now(datetime.timezone.utc) - datetime.datetime.fromisoformat(json.load(open(R + 'docs/status/partner-launches.json'))['run_at'])).total_seconds() / 3600
     if age > 12: fails.append(f'[6] store read is {age:.0f}h old: run python3 scripts/watch/partner_launch_watch.py first')
+if '--stores' in sys.argv or '--images' in sys.argv:   # [7] Nov 24 (Tiffany 10:45am: broken Sadie Jane photo on the live page). Brands (OMM)
+    # RENAME their Shopify image files when a listing goes live; the old file then breaks in shoppers' browsers, though a cloud fetch and a
+    # cloud headless Chrome still get it from cache (checked Nov 24: both said fine). So: every card photo on a Shopify CDN must be one of the
+    # linked product's CURRENT images (/products/<handle>.json). This also catches the pre-launch photos that will break on launch day.
+    import urllib.request
+    B = open(R + 'site/livepatch/brand-watch/block.html').read()
+    cards = re.findall(r'<img class="bw-img" src="(https://cdn\.shopify\.com/[^"]+)"(?:(?!<img class="bw-img").)*?href="(https://[^"]+)"', B, re.S)
+    def chk(c):
+        img, href = c; m = re.search(r'https://([^/]+)/(?:discount/[^?]+\?redirect=)?/?products/([^/?#"&]+)', href.replace('%2F', '/'))
+        if not m: return None
+        try:
+            j = json.load(urllib.request.urlopen(urllib.request.Request(f'https://{m.group(1)}/products/{m.group(2)}.json', headers={'User-Agent': 'Mozilla/5.0'}), timeout=20))
+        except Exception: return None
+        cur = {i['src'].split('?')[0].rsplit('/', 1)[-1] for i in j['product'].get('images', [])}
+        return None if not cur or img.split('?')[0].rsplit('/', 1)[-1] in cur else f'[7] card photo is not one of {m.group(2)}\'s current images (renamed files break in browsers): {img}'
+    with cf.ThreadPoolExecutor(8) as ex:
+        for r in ex.map(chk, set(cards)):
+            if r: fails.append(r)
 if '--front' in sys.argv:
     if fails: print(f'BRAND WATCH GATE FAILS ({len(fails)}): fix in config/brand-watch-curated.json, rebuild, publish:'); [print('  - ' + f) for f in fails[:10]]
     sys.exit(0)

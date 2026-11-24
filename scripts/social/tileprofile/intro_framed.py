@@ -242,7 +242,7 @@ async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': 1080, 'height': 1920 if STORY else 1350}, device_scale_factor=2)
         if STORY:
-            for n in range(1, 7):
+            for n in [*range(1, 7), *[k for k in (8, 9) if k in NATIVE]]:   # Nov 24: play-the-field cards get story frames too
                 hp = f'{TMP}/story-{n}.html'; open(hp, 'w').write(page(n))
                 await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
                 png = f'{TMP}/story-{n}@2x.png'; await pg.screenshot(path=png)
