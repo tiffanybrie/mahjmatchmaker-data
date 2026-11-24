@@ -17,3 +17,5 @@ Tiffany 11:10pm: "knowing WHY there is a mistake... and MOST importantly knowing
 1. Steps that depend on a chat/task remembering to do them (act on finds, release a hold, re-check a note) get skipped. Fix pattern: make the step a script that runs every time, and a gate that refuses the publish.
 2. Checks that cry wolf (newsletter gap on every partner) or pass when wrong (codes page) are worse than none: everyone learns to ignore them. Fix pattern: a check is only kept if its FAIL list is the real list.
 3. Things blocked on Tiffany sit silently. Fix pattern: blocked-on-her = an ask on every message until done.
+| Story safe zones too big (250/340) | I set the numbers from generic guidance, not from her approved story card. | Brand guide zones = top 180 / bottom 210 (her Glitterville card + IG screenshot). |
+| Phone view phone was BLACK | The phone drawing painted a black screen bezel inside a white body; the "white phone" rule was in chat, not in the code. | Bezel painted white in the card code (R2K comment names her rule). |
