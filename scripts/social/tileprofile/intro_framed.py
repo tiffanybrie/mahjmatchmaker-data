@@ -166,21 +166,21 @@ FL = P.get('field')
 if FL:
     import json as _j
     _m = _j.load(open(R + 'config/fym-mats-snapshot.json'))['mats']; depth = f"{(sum(1 for v in _m.values() if not v.get('hid')) // 100) * 100:,}"
-    tiles = ''.join(f'<div><div style="width:360px;height:360px;border-radius:18px;background:url({url(f["img"])}) center/cover;box-shadow:0 8px 20px rgba(6,40,90,.16)"></div>'
+    tiles = ''.join(f'<div><div style="width:330px;height:330px;border-radius:18px;background:url({url(f["img"])}) center/cover;box-shadow:0 8px 20px rgba(6,40,90,.16)"></div>'
                     f'<div style="margin-top:10px;font:700 23px/1.1 Bit;color:var(--navy)">{e(f["mat"])}</div><div style="font:400 19px Bit;color:#5a6b85;margin-top:3px">{e(f["brand"])}</div></div>'
                     for f in FL['mats'][:4])
     NATIVE[8] = (f'<div class="caps" style="position:absolute;left:{L}px;top:48px;font-size:17px;color:#5a6b85">{e(P["name"])} · her profile</div>'
                  f'<div class="cap" style="position:absolute;left:{L}px;top:80px;font-size:66px;line-height:1">But she likes to<br>play the field</div>'
                  f'{ab(L, 228, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">{FL.get("sub") or f'Try {e(P["name"])} on {depth}+ mats in Find <span style="font-style:italic">Your</span> Mat-ch&trade;'}</div></div>'
-                 f'{ab(L, 292, "display:grid;grid-template-columns:360px 360px;gap:22px 28px", W)}{tiles}</div>')
+                 f'{ab(L, 292, "display:grid;grid-template-columns:330px 330px;gap:18px 40px;justify-content:center", W)}{tiles}</div>')
     if FL.get('mats2'):   # Tiffany Nov 23 8:17pm: another round of her OMM mats
-        tiles2 = ''.join(f'<div><div style="width:360px;height:360px;border-radius:18px;background:url({url(f["img"])}) center/cover;box-shadow:0 8px 20px rgba(6,40,90,.16)"></div>'
+        tiles2 = ''.join(f'<div><div style="width:330px;height:330px;border-radius:18px;background:url({url(f["img"])}) center/cover;box-shadow:0 8px 20px rgba(6,40,90,.16)"></div>'
                          f'<div style="margin-top:10px;font:700 23px/1.1 Bit;color:var(--navy)">{e(f["mat"])}</div><div style="font:400 19px Bit;color:#5a6b85;margin-top:3px">{e(f["brand"])}</div></div>'
                          for f in FL['mats2'][:4])
         NATIVE[9] = (f'<div class="caps" style="position:absolute;left:{L}px;top:48px;font-size:17px;color:#5a6b85">{e(P["name"])} · her profile</div>'
                      f'<div class="cap" style="position:absolute;left:{L}px;top:80px;font-size:66px;line-height:1">But she likes to<br>play the field</div>'
                      f'{ab(L, 228, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">{FL.get("sub", "")}</div></div>'
-                     f'{ab(L, 292, "display:grid;grid-template-columns:360px 360px;gap:22px 28px", W)}{tiles2}</div>')
+                     f'{ab(L, 292, "display:grid;grid-template-columns:330px 330px;gap:18px 40px;justify-content:center", W)}{tiles2}</div>')
 
 def page(n):
     bars = ''.join(f'<i style="background:{"#054689" if j == (7 if n in (8, 9) else n) else "rgba(5,70,137,.16)"}"></i>' for j in range(1, 8))
@@ -195,21 +195,24 @@ html,body{{background:{'var(--cream)' if OPEN else '#f6e9df'}}}
   box-shadow:{'none' if OPEN else '0 26px 60px rgba(5,40,90,.18),0 4px 12px rgba(5,40,90,.09)'}}}
 .bars{{position:absolute;left:24px;right:24px;top:20px;display:flex;gap:9px;z-index:3}}
 .bars i{{flex:1;height:7px;border-radius:4px}}
-.sign{{position:absolute;left:0;right:0;bottom:78px;display:flex;justify-content:center;align-items:center;gap:12px}}
+/* Nov 24 12:30am (Tiffany: X + heart kept landing half off the card and getting cut off, Juniper too): the X, the heart and the
+   wordmark sit together INSIDE the card, on one row at its bottom edge: X left, Mahj Matchmaker + 'Dating profile' centre, heart right */
+.btns{{position:absolute;left:34px;right:34px;bottom:26px;height:112px;z-index:4}}
+.b1{{position:absolute;inset:0;display:flex;justify-content:space-between;align-items:center}}
+.sign{{position:absolute;left:0;right:0;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px}}
 .sign img{{width:200px}}
-.sign span{{font:700 16px Bit;letter-spacing:.22em;text-transform:uppercase;color:#c8325f;padding-top:4px}}
-.btns{{position:absolute;left:0;right:0;top:{CY + CH - 56}px;display:flex;justify-content:center;align-items:center;gap:120px}}
+.sign span{{font:700 15px Bit;letter-spacing:.22em;text-transform:uppercase;color:#c8325f}}
 </style></head><body>
 {'' if OPEN else '''<div style="position:absolute;right:-190px;top:-170px;width:650px;height:650px;border-radius:50%;background:#f9dccf"></div>
 <div style="position:absolute;left:-170px;bottom:-200px;width:530px;height:530px;border-radius:50%;background:#efdccd"></div>'''}
 <div class="card">{inner}
- <div class="sign"><img src="{url('assets/brand/mahjmatchmaker-wordmark-notag.png')}"><span>Dating profile</span></div>
+ <div class="btns"><div class="b1">{SP.buttons(112, 50, 54)}</div><div class="sign"><img src="{url('assets/brand/mahjmatchmaker-wordmark-notag.png')}"><span>Dating profile</span></div></div>
 </div>
-<div class="btns">{SP.buttons(112, 50, 54)}</div>
 </body></html>"""
 
 # STORY: group = card (y 22..1303) + X/heart row (centre on the card's bottom edge, 112px) = y 22..1359 in slide px.
-SK = 0.975; GH = (CY + CH + 56) - CY; GTOP = round(915 - GH * SK / 2)   # centre of the safe band 250..1580 is y 915
+SK = 0.975; GH = CH;   # Nov 24: buttons now sit inside the card
+GTOP = round(915 - GH * SK / 2)   # centre of the safe band 250..1580 is y 915
 def story_page(n, inner):
     tx = 540 - 540 * SK; ty = GTOP - CY * SK
     return f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1920, S['col'])}
@@ -218,18 +221,20 @@ html,body{{background:#f6e9df}}
   box-shadow:0 26px 60px rgba(5,40,90,.18),0 4px 12px rgba(5,40,90,.09)}}
 .bars{{position:absolute;left:24px;right:24px;top:20px;display:flex;gap:9px;z-index:3}}
 .bars i{{flex:1;height:7px;border-radius:4px}}
-.sign{{position:absolute;left:0;right:0;bottom:78px;display:flex;justify-content:center;align-items:center;gap:12px}}
+/* Nov 24 12:30am (Tiffany: X + heart kept landing half off the card and getting cut off, Juniper too): the X, the heart and the
+   wordmark sit together INSIDE the card, on one row at its bottom edge: X left, Mahj Matchmaker + 'Dating profile' centre, heart right */
+.btns{{position:absolute;left:34px;right:34px;bottom:26px;height:112px;z-index:4}}
+.b1{{position:absolute;inset:0;display:flex;justify-content:space-between;align-items:center}}
+.sign{{position:absolute;left:0;right:0;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px}}
 .sign img{{width:200px}}
-.sign span{{font:700 16px Bit;letter-spacing:.22em;text-transform:uppercase;color:#c8325f;padding-top:4px}}
-.btns{{position:absolute;left:0;right:0;top:{CY + CH - 56}px;display:flex;justify-content:center;align-items:center;gap:120px}}
+.sign span{{font:700 15px Bit;letter-spacing:.22em;text-transform:uppercase;color:#c8325f}}
 </style></head><body>
 <div style="position:absolute;right:-230px;top:-250px;width:720px;height:720px;border-radius:50%;background:#f9dccf"></div>
 <div style="position:absolute;left:-220px;bottom:-260px;width:640px;height:640px;border-radius:50%;background:#efdccd"></div>
 <div id=grp style="position:absolute;left:0;top:0;width:1080px;height:1350px;transform:translate({tx}px,{ty}px) scale({SK});transform-origin:0 0">
 <div class="card">{inner}
- <div class="sign"><img src="{url('assets/brand/mahjmatchmaker-wordmark-notag.png')}"><span>Dating profile</span></div>
+ <div class="btns"><div class="b1">{SP.buttons(112, 50, 54)}</div><div class="sign"><img src="{url('assets/brand/mahjmatchmaker-wordmark-notag.png')}"><span>Dating profile</span></div></div>
 </div>
-<div class="btns">{SP.buttons(112, 50, 54)}</div>
 </div>
 </body></html>"""
 
