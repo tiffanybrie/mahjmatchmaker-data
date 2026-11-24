@@ -130,7 +130,7 @@ else:
     _body = (grp("color") + _photo + f'<div class="hand" style="font-size:44px;margin-top:8px;color:var(--navy)">{P.get("racks_hand_framed") or P.get("racks_hand", "all three picked for her, not just any rack")} &hearts;</div>'
              f'<div class="hand" style="font-size:40px;margin-top:6px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div>')
 s5 = (hdr(("Racks she's into", 80)) +
-      f'{ab(L, 180, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">A color from her layers, or a rack that goes with everything.</div>'
+      f'{ab(L, 180, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">{e(P.get("racks_sub", "A color from her layers, or a rack that goes with everything."))}</div>'
       + _body + '</div>')
 
 # ---- slide 6: made for each other (text UNDER the photo row, Tiffany Oct 20)
