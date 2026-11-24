@@ -22,9 +22,9 @@ old_tbl = "logoChip(ml,mb,sx+sq-14,sy+14,56,{right:true,maxW:220});if(tb!==mb)lo
 rep(old_tbl, "logoChip(ml,mb,sx+sq-14,sy+14,56,{right:true,maxW:220});if(tb!==mb)logoChip(tl,tb,sx+14,sy+14,56,{maxW:220});"
     "const rn=rp.map(r=>R[r]?(R[r].bn+' '+String(R[r].n).replace(new RegExp('^'+R[r].bn+'\\\\s*'),'')):'').filter(Boolean);"
     "if(rn.length&&!(H/W>1.3)){pill(sx+sq-16,sy+sq-14,'RACKS',rn.join(' + '),{up:true,right:true,maxW:sq*.42,fsN:18,fsK:12});}"
-    "if(H/W>1.3){let ly=sy+sq+44;g.textAlign='left';g.fillStyle=PINK;g.font='700 22px Bitter, Georgia, serif';ls(3);g.fillText('ON THE TABLE',sx+6,ly);ls(0);ly+=46;"
+    "if(H/W>1.3){let ly=sy+sq+44;g.textAlign='left';g.fillStyle=PINK;g.font='700 22px Bitter, Georgia, serif';ls(3);g.fillText('ON THE TABLE',60,ly);ls(0);ly+=46;"
     "const rows=[['Tiles',s.name+(tb?' · '+tb:'')],['Mat',mName+(mb?' · '+mb:'')]].concat(rn.map((r,i)=>[rn.length>1?(i?'Racks (sides)':'Racks (ends)'):'Racks',r]));"
-    "rows.forEach(([k,v])=>{if(ly>fby-8)return;g.fillStyle=MUTE;g.font='700 24px Bitter, Georgia, serif';g.fillText(k,sx+6,ly);g.fillStyle=INK;g.font='600 28px Bitter, Georgia, serif';g.fillText(clip(v,sq-190),sx+180,ly);ly+=44;});}}")
+    "rows.forEach(([k,v])=>{if(ly>fby-8)return;g.fillStyle=MUTE;g.font='700 24px Bitter, Georgia, serif';g.fillText(k,60,ly);g.fillStyle=INK;g.font='600 28px Bitter, Georgia, serif';g.fillText(clip(v,W-300),230,ly);ly+=44;});}}")
 # make the table square smaller on story so the list fits
 rep("if(S.view==='table'){const sq=Math.min(W-72,ah),sx=(W-sq)/2,sy=top+(ah-sq)/2;", "if(S.view==='table'){const sq=Math.min(W-72,H/W>1.3?ah-250:ah),sx=(W-sq)/2,sy=H/W>1.3?top+10:top+(ah-sq)/2;")
 
@@ -32,7 +32,7 @@ rep("if(S.view==='table'){const sq=Math.min(W-72,ah),sx=(W-sq)/2,sy=top+(ah-sq)/
 i = s.find("  else{const ph=ah,pw="); j = s.find("}\n }else if(S.view==='stack')", i)
 assert i > 0 and j > 0
 PHONE = r"""  else{/* R2GV1 phone (Tiffany 8:32pm): a real white iPhone, big, running off the bottom; inside: FYM logo, the table, what is on it, matched-with + code */
-   const pw=Math.min(W*.86,W-96),px=(W-pw)/2,py=STORY?150:44,ph=pw*2.06,fr=pw*.018,bz=pw*.028,R0=pw*.16;
+   const pw=Math.min(W*.86,W-96),px=(W-pw)/2,py=STORY?290:44,ph=pw*2.06,fr=pw*.018,bz=pw*.028,R0=pw*.16;
    g.fillStyle=CREAM;g.fillRect(0,0,W,H);/* the phone IS the card: header + footer move inside it */
    g.save();shadow('rgba(30,30,50,.28)',36,14);g.fillStyle='#ececef';g.beginPath();g.roundRect(px,py,pw,ph,R0);g.fill();g.restore();
    const gr=g.createLinearGradient(px,py,px+pw,py);gr.addColorStop(0,'#d9dade');gr.addColorStop(.12,'#f4f4f6');gr.addColorStop(.88,'#f4f4f6');gr.addColorStop(1,'#d4d5da');g.fillStyle=gr;g.beginPath();g.roundRect(px,py,pw,ph,R0);g.fill();
@@ -44,7 +44,7 @@ PHONE = r"""  else{/* R2GV1 phone (Tiffany 8:32pm): a real white iPhone, big, ru
    [[0,14],[1,20],[2,26],[3,32]].forEach(([i,h])=>g.fillRect(sx+sw-f(190)+i*f(12),sy+f(62)-f(h),f(8),f(h)));g.strokeStyle='#111';g.lineWidth=f(3);g.beginPath();g.roundRect(sx+sw-f(120),sy+f(36),f(50),f(26),f(7));g.stroke();g.fillRect(sx+sw-f(115),sy+f(41),f(38),f(16));
    g.fillStyle='#050506';g.beginPath();g.roundRect(sx+sw/2-f(125),sy+f(22),f(250),f(66),f(33));g.fill();
    let yy=sy+f(108);if(lockup){const lh=f(64),lw=lockup.width*lh/lockup.height;g.drawImage(lockup,sx+(sw-lw)/2,yy,lw,lh);yy+=lh+f(26);}else{g.fillStyle=NAVY;g.font=`${f(54)}px Caprasimo, Georgia, serif`;g.fillText('Find Your Mat-ch™',sx+sw/2,yy+f(52));yy+=f(84);}
-   const textH=f(300),tq=Math.max(f(500),Math.min(sw-f(36),H-yy-textH));cover(tvim,sx+(sw-tq)/2,yy,tq,tq,f(26));yy+=tq+f(46);
+   const textH=f(300),tq=Math.max(f(420),Math.min(sw-f(36),(STORY?H-400:H)-yy-textH));cover(tvim,sx+(sw-tq)/2,yy,tq,tq,f(26));yy+=tq+f(46);
    const rn=rp.map(r=>R[r]?(R[r].bn+' '+String(R[r].n).replace(new RegExp('^'+R[r].bn+'\\s*'),'')):'').filter(Boolean);
    const ln=(t,fnt,col)=>{g.font=fnt;g.fillStyle=col;g.fillText(clip(t,sw-f(70)),sx+sw/2,yy);};
    ln(`${s.name} tiles`+(tb?` · ${tb}`:''),`700 ${f(36)}px Bitter, Georgia, serif`,INK);yy+=f(46);
