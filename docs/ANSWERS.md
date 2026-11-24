@@ -1779,3 +1779,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-11-23 11:40-11:43pm Tiffany: rack box must work for EVERY rack (tested 41 racks by contact sheet: single isolated rack = x4 stack; group cut-out = once, big; lifestyle photo = fills box; no photo = rack name); brand logos top-right of each box; brand lock (all one brand) = ONE logo centered above the row (r2o6/r2p/r2q).
 - 2026-11-23 11:49pm Tiffany: per-box logos too small: each brand logo now sits above its box, box-wide (r2r).
 - 2026-11-23 11:50pm Tiffany: no white box around logos: logos now drawn on their own (r2s). Mahj Mood's logo FILE has its own pale-green background: needs a transparent Mahj Mood logo (OVERDUE).
+- 2026-11-23 11:51pm Tiffany: less space between the code button and the logos, logos larger (r2t).
