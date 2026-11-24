@@ -94,6 +94,26 @@
  "coming_soon": [
   {
    "partner": true,
+   "urgency": "LATER",
+   "found": "2026-11-24T18:35",
+   "date": "",
+   "day": "",
+   "time": "No date yet",
+   "brand": "Sunday Mahjong",
+   "what": "December 1994 Tile Set is listed on their site and not yet available to order. No date yet.",
+   "tag": "tiles",
+   "new": true,
+   "buy": "https://sundaymahjong.com/products/december-1994-tile-set",
+   "url": "https://sundaymahjong.com/products/december-1994-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/0946/7458/3873/files/December-1994.2.jpg?v=1786744763",
+   "source": "store",
+   "source_kind": "store",
+   "handles": [
+    "december-1994-tile-set"
+   ]
+  },
+  {
+   "partner": true,
    "urgency": "SOON",
    "found": "2026-11-24T13:35",
    "date": null,
@@ -125,18 +145,24 @@
   {
    "partner": true,
    "urgency": "LATER",
-   "found": "2026-11-24T12:45",
-   "date": "",
-   "day": "",
-   "source": "IG story",
-   "source_kind": "social",
+   "found": "2026-11-24T18:35",
+   "date": "2026-12-08",
+   "day": "Tue 12/8",
+   "source": "brand email + IG post Tue 11/24",
+   "source_kind": "email",
    "brand": "My Fair Mahjong",
-   "what": "My Fair Mahjong is teasing something new. No name or date yet.",
+   "what": "My Fair Mahjong has a collaboration coming. Partnership announcement Mon 12/7; product reveal and preorder Tue 12/8.",
    "tag": "teaser",
    "new": true,
-   "hidden": true,
-   "url": "https://www.instagram.com/stories/myfairmahjong/",
-   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/my-fair-something-new-baking-nov24/my-fair-something-new-baking-ig-story-nov24.jpg"
+   "hidden": false,
+   "url": "https://www.instagram.com/p/DgIP_GdBDG7/",
+   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/my-fair-something-new-baking-nov24/my-fair-something-new-baking-ig-story-nov24.jpg",
+   "history": [
+    {
+     "found": "2026-11-24T12:45",
+     "what": "My Fair Mahjong is teasing something new. No name or date yet."
+    }
+   ]
   },
   {
    "partner": true,
@@ -539,6 +565,47 @@
   }
  ],
  "just_dropped": [
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-24T18:35",
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "LIVE now",
+   "brand": "Let's Be Besties",
+   "what": "New on their site: Pink Paloma Mat.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://letsbebesties.com/products/pink-paloma-mahjong-mat",
+   "url": "https://letsbebesties.com/products/pink-paloma-mahjong-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0717/6178/9088/files/PinkPalomasmallfile.png?v=1795558433",
+   "source": "store",
+   "source_kind": "store",
+   "handles": [
+    "pink-paloma-mahjong-mat"
+   ]
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-24T13:48",
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "LIVE now",
+   "brand": "Miss Mahjong",
+   "what": "New on their site: China Cabinet Playing Mat.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://missmahjong.com/products/china-cabinet-mahjong-playing-mat",
+   "url": "https://missmahjong.com/products/china-cabinet-mahjong-playing-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/China-Cabinet-Mat-grandmillenial-mahjong-neoprene-mat.png?v=1795543678",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "china-cabinet-mahjong-playing-mat"
+   ]
+  },
   {
    "partner": true,
    "urgency": "NOW",
@@ -1832,7 +1899,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-24T13:35",
+ "updated": "2026-11-24T18:36",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",
@@ -2135,9 +2202,9 @@
    "src": "store"
   }
  ],
- "updatedAt": "2026-11-24T18:28:18+00:00",
+ "updatedAt": "2026-11-24T23:25:49+00:00",
  "sources": {
-  "store_run": "2026-11-24T18:24:58+00:00",
+  "store_run": "2026-11-24T23:24:13+00:00",
   "ig_run": "2026-11-24T18:27:29.800613+00:00"
  }
 }

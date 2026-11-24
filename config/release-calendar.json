@@ -2347,6 +2347,21 @@
    "priority": 4,
    "contentTiming": "Record only.",
    "album": false
+  },
+  {
+   "id": "myfair-collab-2026-12",
+   "brand": "My Fair Mahjong",
+   "product": "Collaboration (partner not named): announcement Mon 12/7, reveal + preorder Tue 12/8",
+   "type": "tiles",
+   "windowStart": "2026-12-07",
+   "windowEnd": "2026-12-08",
+   "status": "COMING",
+   "source": "My Fair Mahjong affiliate email Tue 11/24",
+   "sourceUrl": "https://www.instagram.com/p/DgIP_GdBDG7/",
+   "affiliate": true,
+   "priority": 2,
+   "contentTiming": "Record only.",
+   "album": false
   }
  ],
  "sources": {
