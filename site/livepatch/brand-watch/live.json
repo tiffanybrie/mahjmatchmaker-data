@@ -1,6 +1,6 @@
 {
-  "version": "2026-11-23T22:28",
-  "block": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@88ad26b24a99112733945d7ee0f3d15fa264e124/site/livepatch/brand-watch/block.html",
-  "published": "2026-11-23T22:28:53-05:00",
+  "version": "2026-11-23T22:29",
+  "block": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@719301673311214201dd5e9a9618edc65a29e78b/site/livepatch/brand-watch/block.html",
+  "published": "2026-11-23T22:29:18-05:00",
   "note": "Read by the /brand-watch page block (since Nov 20). To publish: commit a new site/livepatch/brand-watch/block.html, then set block to its pinned jsDelivr URL (40-char commit) and change version. Use scripts/site_brand_watch_publish.py."
 }
