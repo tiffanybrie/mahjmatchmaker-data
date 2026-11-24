@@ -1176,7 +1176,7 @@ let y=STORY?200:40;
      const lab=(t,x)=>{g.fillStyle='rgba(255,255,255,.94)';g.font=`700 ${f(20)}px Bitter, Georgia, serif`;const tw=g.measureText(t).width+f(22);g.beginPath();g.roundRect(x+f(10),top2+hh-f(44),tw,f(34),f(17));g.fill();g.fillStyle=NAVY;g.textAlign='left';g.fillText(t,x+f(21),top2+hh-f(20));g.textAlign='center';};
      g.save();g.beginPath();g.roundRect(cx,top2,cw,hh,f(20));g.clip();g.fillStyle='#f3eee8';g.fillRect(cx,top2,cw,hh);if(tile)cover(tile,cx,top2,cw,hh,f(20),1.05,...((T[s.tile]&&T[s.tile].bf)||[.5,.45]));g.restore();lab('TILES',cx);cx+=cw+gap;
      g.save();g.beginPath();g.roundRect(cx,top2,cw,hh,f(20));g.clip();g.fillStyle='#f3eee8';g.fillRect(cx,top2,cw,hh);if(mat)cover(mat,cx,top2,cw,hh,f(20));g.restore();lab('MAT',cx);cx+=cw+gap;
-     g.save();g.beginPath();g.roundRect(cx,top2,cw,hh,f(20));g.clip();g.fillStyle='#f3eee8';g.fillRect(cx,top2,cw,hh);g.restore();try{racks(cx+f(10),top2+f(10),cw-f(20),hh-f(20),{fs:f(15),maxRow:f(120)});}catch(e){}
+     g.save();g.beginPath();g.roundRect(cx,top2,cw,hh,f(20));g.clip();g.fillStyle='#f3eee8';g.fillRect(cx,top2,cw,hh);g.restore();try{const rr=(rkt||[]).filter(Boolean),ah2=hh-f(64),eh=rr.length?(ah2-f(8)*(rr.length-1))/rr.length:0;rr.forEach((im,i)=>{fit(im,cx+f(12),top2+f(12)+i*(eh+f(8)),cw-f(24),eh);});}catch(e){}lab('RACKS',cx);/*R2L2 racks label in the same spot as TILES and MAT*/
     }}
    g.restore();}
  }else if(S.view==='stack'){ // Mood board: stacked close-ups (tiles / mat / racks)
