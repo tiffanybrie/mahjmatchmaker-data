@@ -17,7 +17,7 @@ Run this list top to bottom the day an album goes live. Every item is Claude's j
 - [ ] Album page published on Squarespace; curl 200; title/SEO set.
 - [ ] /mahjong-tile-matches: album tile added at the top (newest first).
 - [ ] Its color pages (e.g. /brown-mahjong-tile-matches) list it.
-- [ ] **/links "latest album" card:** scripts/covers/holiday/links_build.py → `NEWSET=(slug, name, brand, 'Our latest album, now available · code MAHJMATCH')`, add `assets/links/v2/feature-<slug>.jpg` (896x492) + `album-<slug>.jpg`, put the album first in links_pop.json, rebuild, pin + warm jsDelivr, paste the /links code block (Squarespace page "Mahj Squad Discount Code (Copy)", url /links). Find Your Mat-ch stays FIRST, the album card second.
+- [ ] **/links "latest album" card:** scripts/covers/holiday/links_build.py → `NEWSET=(slug, name, brand, 'Our latest album, now available · code MAHJMATCH')`, add `assets/links/v2/feature-<slug>.jpg` (896x492) + `album-<slug>.jpg`, put the album first in links_pop.json, rebuild, pin + warm jsDelivr, paste the /links code block (Squarespace page "Mahj Squad Discount Code (Copy)", url /links). Find Your Mat-ch stays FIRST, the album card second. (Tiffany Nov 23 7:45pm: on every album launch day also re-check the IG bio, the homepage FYM showcase and the /links order: FYM > Holiday/seasonal > discount code > partner brands > tile albums > ShopMy last.)
 - [ ] Find Your Mat-ch: the set's `album` link points to the new page; tile photo = album photo (canon_tiles.py); gate + QA; publish to artifact AND website copy.
 - [ ] The brand's guide page (/<brand>-discount-code): album link added to its albums section.
 - [ ] Google: request indexing for the album page (+ the brand page if changed).
