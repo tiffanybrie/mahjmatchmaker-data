@@ -1775,3 +1775,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-11-23 11:29pm Tiffany: the band I treated as bottom red zone is usable ('It is not'): bottom zone = 150px (brand guide, dead_space_check, phone view r2m).
 - 2026-11-23 11:32pm Tiffany: shared cards must link back to us. Phone view now shows a browser address bar 'mahjmatchmaker.com' with the flame heart (r2n). Other views already carry 'mahjmatchmaker.com' in their footer.
 - 2026-11-23 11:35pm Tiffany: bottom of the phone must not be blank (no text there, but not empty): tiles/mat/racks boxes now run past the bottom edge like a scrolling screen, labels moved to the top of each box, racks shown as a close-up (r2o).
+- 2026-11-23 11:38pm Tiffany: 'The rack photo is whack' (cropped marble close-up). Racks box now shows the whole rack as a set of 4, evenly spaced down the box (r2o4); never a crop of a rack.
