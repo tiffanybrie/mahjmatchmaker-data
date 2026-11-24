@@ -555,3 +555,4 @@ Each is asked once. Until she answers, follow the default given here.
 - 2026-11-24 12:16am (Tiffany): never call her/us 'The Mahj Matchmaker' in copy; say 'we'. CTAs on posts use 'Comment MATCH' (drives engagement + the DM automation), not 'head to the site'.
 
 - 2026-11-24 (Tiffany): FYM match cards: the card title must use Caprasimo MM (straight J); the app card currently draws the wonky Caprasimo J (MATCH-INBOX). Reel phone frames: one-colour headline, phone 1.2x pushed up under the 180 line; flashes need no headline.
+- 2026-11-24 8:30-8:41am (Tiffany): FYM reel order = intro, CTA at 1s, fast flashes, Choose your view, "Swap racks: <colour>" on ONE line (lower, out of the logo zone), "Make stickers & match cards" (one card per style, sticker look, header stays), "Shop your selections" (Shop buttons tapped, turning Shopped ✓; scripts/social/reels/fym_shop_shots.py), "It's your turn to be the matchmaker", end card. Length set to her song (Sadie Jane: 37.0s).
