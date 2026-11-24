@@ -1,0 +1,91 @@
+{
+ "run": "2026-11-24 12:37 ET Stories check",
+ "note": "Chrome signed in as @mahjmatchmaker. 12 handles: the 11 A_every_run brands plus Mahj Tile Haus (dated launch Tue 11/24). Stories open behind a 'View story' confirm; each story was read frame by frame. One new find: My Fair 'Something new is baking' teaser (also a feed post), logged hidden (vague teaser). No push (undated, catalog-only rule).",
+ "handles_checked": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "missmahjongofficial",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "bird_and_bamboo",
+  "mahj_mood",
+  "minimahjer",
+  "charlestonmahjongclub",
+  "mahjtilehaus"
+ ],
+ "with_stories": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "bird_and_bamboo",
+  "mahj_mood",
+  "minimahjer",
+  "mahjtilehaus"
+ ],
+ "frames_read": 58,
+ "finds": [
+  {
+   "brand": "My Fair Mahjong",
+   "item": "'Something new is baking' teaser, no name/date",
+   "kind": "collab/new-product teaser",
+   "action": "Sheet row appended (NOT POSTED); curated coming_soon (hidden, vague teaser); frame saved to assets/launches/my-fair-something-new-baking-nov24/; page rebuilt, published v54, published.json stamped."
+  }
+ ],
+ "seen_not_logged": [
+  {
+   "brand": "Oh My Mahjong",
+   "item": "Sadie Jane colour pairings, Sneak a peek launching tomorrow 10am CT, Beaumont tiles + Lily mat Fri 11/27 10am CT, Oasis tiles + Starling mat Mon 11/30 10am CT",
+   "why_not_a_find": "all already in curated"
+  },
+  {
+   "brand": "Mahj Tile Haus",
+   "item": "Rosemary Beach collection launch today (event noon CT, launch frames)",
+   "why_not_a_find": "already in curated"
+  },
+  {
+   "brand": "Mahj Mood",
+   "item": "Black Friday Week daily deals Mon/Tue/Wed, sale mats and racks on New Arrivals page",
+   "why_not_a_find": "already in curated sales (approved, email-sourced)"
+  },
+  {
+   "brand": "Bird & Bamboo",
+   "item": "Big Black Friday sale, details Wed 11/25",
+   "why_not_a_find": "already on the Brand news sheet Nov 23 1:45pm"
+  },
+  {
+   "brand": "Peace Love Mahjong",
+   "item": "Black Friday all week long reel",
+   "why_not_a_find": "BF already logged"
+  },
+  {
+   "brand": "Anders Ruff",
+   "item": "Holiday must-haves frames (Tartan Tidings mat, Holly Christmas dice set with pouch), giveaway days, customer reposts, BBB10 repost code",
+   "why_not_a_find": "existing items promoted, no new/restock wording; repost code is social code"
+  },
+  {
+   "brand": "Bam Bird Boutique",
+   "item": "A Very Merry Open Play, Mon 12/14 6-8:30pm, $40 ticket",
+   "why_not_a_find": "event, not product news"
+  },
+  {
+   "brand": "Bespoke Mahjong",
+   "item": "Reels, customer reposts, Grateful Dead giveaway",
+   "why_not_a_find": "no product news"
+  },
+  {
+   "brand": "Mini Mahjer",
+   "item": "Customer repost",
+   "why_not_a_find": "no product news"
+  },
+  {
+   "brand": "Miss Mahjong, Charleston Mahjong Club",
+   "item": "No active story",
+   "why_not_a_find": "none"
+  }
+ ]
+}

@@ -366,6 +366,23 @@
   {
    "partner": true,
    "urgency": "LATER",
+   "found": "2026-11-24T12:45",
+   "date": "",
+   "day": "",
+   "source": "IG story",
+   "source_kind": "social",
+   "brand": "My Fair Mahjong",
+   "what": "My Fair Mahjong is teasing something new. No name or date yet.",
+   "tag": "teaser",
+   "new": true,
+   "hidden": true,
+   "url": "https://www.instagram.com/stories/myfairmahjong/",
+   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/my-fair-something-new-baking-nov24/my-fair-something-new-baking-ig-story-nov24.jpg",
+   "action": "IG story + feed post Tue 11/24 ~10:40am ET: 'Something new is baking' (bread photo, no product shown). HIDDEN like other vague teasers (Main review Nov 23); unhide when named/dated. Follows the Keepsake Collection launch Nov 23."
+  },
+  {
+   "partner": true,
+   "urgency": "LATER",
    "found": "2026-11-23T18:35",
    "day": "",
    "date": "",
@@ -2839,7 +2856,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-24T09:50",
+ "updated": "2026-11-24T12:45",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",
