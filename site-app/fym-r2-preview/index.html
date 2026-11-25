@@ -869,7 +869,7 @@ document.addEventListener('click',e=>{const q=s=>e.target.closest(s);let b;
  if(q('#logo')||q('[data-startover]')){startOver();return;}
  if(q('[data-so-yes]')){const d=$('sosheet');if(d)d.remove();doStartOver();return;}
  if(q('[data-so-no]')){const d=$('sosheet');if(d)d.remove();return;}
- if(q('[data-make]')){if(!S.rpick.length)return;trk('card',{mat:S.fav,rack:S.rpick.join(' + ')});S.made=true;acctSaveMatch();renderCard();steps();jump('s-card');return;}
+ if(q('[data-make]')){if(!S.rpick.length)return;trk('card',{mat:S.fav,rack:S.rpick.join(' + ')});S.made=true;acctSaveMatch();S.view=({table:'table',close:'stack',aerial:'tri'})[S.mode]||S.view;if(S.fmt==='sticker')S.fmt='post';/*R2W Tiffany 2:32am: the match card opens in the view she was swiping in*/renderCard();steps();jump('s-card');return;}
  if(b=q('[data-view]')){S.view=b.dataset.view;if(S.view!=='phone'&&S.fmt==='sticker')S.fmt='post';renderCard();return;}
  if(b=q('[data-fmt]')){S.fmt=b.dataset.fmt;if(S.fmt==='sticker')S.view='phone';/*R2W Nov 25: Sticker is the phone cut out on a see-through background, so it switches to Phone view*/renderCard();return;}
  if(q('[data-share]')){share();return;}
@@ -1902,7 +1902,7 @@ body:not(.tvmode) .r2chip{display:none}
  window.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-r2make]');if(!b)return;e.preventDefault();e.stopPropagation();
   const sec=b.closest('[id^="s-"]');const card=sec&&sec.querySelector('.deck .scard[id^="top-"]');if(!card)return;let x=null;try{x=window.R2CTX(card)}catch(err){}if(!x||!x.mat)return;
   setTimeout(()=>{try{const i=D.sets.indexOf(x.s);if(i>=0)S.set=i;S.fav=x.mat;if(!S.liked.includes(x.mat))S.liked.push(x.mat);const rk=[x.rack,x.rack2].filter(Boolean);S.rpick=rk.slice(0,2);rk.forEach(r=>{if(!S.rliked.includes(r))S.rliked.push(r)});
-   S.peek=null;S.made=true;try{trk('card',{mat:S.fav,rack:S.rpick.join(' + '),via:'table'})}catch(e){}try{acctSaveMatch()}catch(e){}renderAll();jump('s-card')}catch(err){console.error(err)}},30)},true);
+   S.peek=null;S.made=true;try{trk('card',{mat:S.fav,rack:S.rpick.join(' + '),via:'table'})}catch(e){}try{acctSaveMatch()}catch(e){}S.view=({table:'table',close:'stack',aerial:'tri'})[S.mode]||S.view;if(S.fmt==='sticker')S.fmt='post';/*R2W Tiffany 2:32am: the match card opens in the view she was swiping in*/renderAll();jump('s-card')}catch(err){console.error(err)}},30)},true);
  window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2make]')){e.preventDefault();e.stopPropagation()}},true);
 
  /* r2e (Tiffany 7:20pm): a mat hearted in Table view keeps the racks it had; bringing it back from the shortlist shows those racks again */
