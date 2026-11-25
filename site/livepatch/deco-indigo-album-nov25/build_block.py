@@ -28,10 +28,10 @@ def walk(o):
     elif isinstance(o, list):
         for x in o: walk(x)
 walk(rec)
-NEWURL.update({'Pink & Blue Grandmillennial': 'https://www.etsy.com/listing/4527255793',
+NEWURL.update({'Dark Blue Art Deco, Gold Geometric Fans': 'https://go.shopmy.us/p-102728926', 'Vegan Leather – Hunter Green': 'https://www.bambirdboutique.com/discount/MAHJMATCH?redirect=%2Fproducts%2Forigami-leather-mat%3Fvariant%3D67732658880821%26sca_ref%3D10069575.cf1ZUJEgbaOpCDgy', 'Pink & Blue Grandmillennial': 'https://www.etsy.com/listing/4527255793',
                'Chinoiserie Pastel Floral': 'https://www.etsy.com/listing/4497703295',
                'The Kerry (Glamourous)': 'https://www.etsy.com/listing/4610692079'})
-FIXKEY = {'Sunday Sherbert Double-Sided Mahjong Mat – Leatherette 31.5"': 'mahjongregister.com/snowflake-reindeer-lodge-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy'}
+FIXKEY = {'Deco Dragon (Indigo)': 'www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293', 'Deco Dragon (Lagoon)': 'www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061', 'Deco Dragon (Mulberry)': 'www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829', 'Sunday Sherbert Double-Sided Mahjong Mat – Leatherette 31.5"': 'mahjongregister.com/snowflake-reindeer-lodge-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy'}
 PARTNERS = set(json.load(open(R + 'builder/fym_flags/nonpartner_allow.json'))['partners'])
 RN = {v['n']: v for v in D['racks'].values()}
 TILE_URL = D['tiles']['www.bambirdboutique.com/deco-tile-set?v=53195200004405']['u']
@@ -43,24 +43,28 @@ def brandpg(m):
     p = U.urlparse((m or {}).get('dc') or '').path
     return p if p.endswith('-discount-code') else None
 MISSR = []
+RALIAS = {'Bam Bird Boutique Indigo': 'Bam Bird Boutique Indigo Wood', 'Bam Bird Boutique Olive': 'Bam Bird Boutique Olive Green Wood', 'Peace Love Mahjong Acrylic Burl': 'Peace Love Mahjong Acrylic Burlwood'}
 def rack(n):
-    v = RN.get(n)
+    v = RN.get(n) or RN.get(RALIAS.get(n, ''))
     if not v: MISSR.append(n); return e(n)
     return f'<a href="{e(v["u"])}" target="_blank" rel="sponsored noopener">{e(n)}</a>'
 def figure(n, s, hol):
     c = man[s['name']]
-    m = D['mats'].get(c.get('fym') or s.get('fym') or FIXKEY.get(s['name']) or '')
+    m = D['mats'].get(c.get('fym') or s.get('fym') or '') or D['mats'].get(FIXKEY.get(s['name']) or '') or next((v for v in D['mats'].values() if v.get('n') == s['name'] and v.get('bn') == s['brand']), None)
     brand, mat, retired = s['brand'], s['name'], bool(s.get('retired') or c.get('retired_mat'))
     u = (m.get('u') if m else None) or NEWURL.get(mat)
     
+    if not u and m and brand == 'Oh My Mahjong': retired = True; u = 'x'
     if not u: raise SystemExit(f'NO LINK for {mat}')
-    partner = brand in PARTNERS or (m and m.get('pa'))
+    partner = brand in PARTNERS or (m and m.get('pa')) or brand == 'Bam Bird Boutique'
     pg = brandpg(m) if (m and partner) else None
     by = f'<a href="{pg}">{e(brand)}</a>' if pg else e(brand)
     ret = '<span class="mm3-ret">Retired</span>' if retired else ''
     label = mat if mat.lower().endswith(' mat') else mat + ' Mat'
     if brand == 'Mahjong Register': u = plain(u)
-    if True:
+    if retired and brand == 'Oh My Mahjong':
+        btn = f'<a class="mm3-btn" href="{e(D["mats"]["www.ohmymahjong.com/serendipity-mat-in-tube"]["u"].split("?")[0])}?redirect=%2Fcollections%2Fmats" target="_blank" rel="sponsored noopener">Shop Current OMM Mats</a>'
+    else:
         btn = f'<a class="mm3-btn" href="{e(u)}" target="_blank" rel="sponsored noopener">Shop the {e(label)}</a>'
     if not partner: code = f'<span class="mm3-code" style="color:#8a8a8a">No code for {e(brand)}</span>'
     elif brand == 'Mahjong Register': code = '<span class="mm3-code">10% off at Mahjong Register with MAHJMATCH (excludes racks and other brands\' products)</span>'
@@ -134,5 +138,5 @@ _p=_P(); _p.feed(out); assert _p.n == 0, ('unbalanced divs', _p.n)  # Nov 23: a 
 open(HERE + 'deco-indigo-codeblock.html', 'w').write(out)
 urls = sorted(set(re.findall(r'https://cdn\.jsdelivr\.net/gh/[^"\s)]+', out)))
 open(HERE + 'urls.txt', 'w').write('\n'.join(urls) + '\n')
-print(len(re.findall(r'<figure class="mm3-c', out)), 'cards:', len(omm), 'OMM +', len(cross), 'cross-brand +', len(hol), 'holiday;', nb, 'brands;', len(urls), 'cdn urls;', len(out), 'bytes')
+print(len(re.findall(r'<figure class="mm3-c', out)), 'cards:', len(omm), 'Bam Bird +', len(cross), 'cross-brand +', len(hol), 'holiday;', nb, 'brands;', len(urls), 'cdn urls;', len(out), 'bytes')
 print('racks with no link:', sorted(set(MISSR)))
