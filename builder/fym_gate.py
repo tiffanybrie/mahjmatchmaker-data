@@ -445,7 +445,8 @@ if '<h1 class="ttl">Find Your Mat-ch\u2122</h1>' not in UI: F.append("[17] start
 if re.search(r'<h[12][^>]*>[^<]*<i>', UI) or re.search(r'\.lock \.ttl i\{[^}]*font-style:italic', UI): F.append("[17] italic in a headline (display type is never italic; italics only in running body text)")
 _cardtm = TXT.count('Matched with Find Your Mat-ch\u2122')  # v80: the match card image is its own piece; its one full-name use carries the TM (brand guide)
 if _cardtm > 1: F.append('[17] the match card carries the TM more than once')
-if TXT.count('\u2122') - _cardtm != TXT.count('Find Your Mat-ch\u2122</h1>') or TXT.count('Find Your Mat-ch\u2122</h1>') < 2: F.append(f"[17] \u2122 must sit only on each door's title (both doors), found {TXT.count(chr(8482))}")
+_tmx = TXT.count("g.fillText('Find Your Mat-ch\u2122'") + TXT.count("g.fillText('\u2122'") + TXT.count('edition\u2122-copy')  # Nov 25: the phone-view card title (its one TM) and a product-handle key in the data are not UI
+if TXT.count('\u2122') - _cardtm - _tmx != TXT.count('Find Your Mat-ch\u2122</h1>') or TXT.count('Find Your Mat-ch\u2122</h1>') < 2: F.append(f"[17] \u2122 must sit only on each door's title (both doors), found {TXT.count(chr(8482))}")
 if re.search(r'(?i)find\s+(<i>)?your(</i>)?\s+match\b', TXT): F.append("[17] old name 'Find Your Match' still in the UI")
 if re.search(r'\.lock \.ttl\{[^}]*text-transform:uppercase', UI): F.append("[17] .lock .ttl is ALL CAPS (brand guide: Title Case)")
 
@@ -600,7 +601,7 @@ if "return kk==='m'&&herUseful(kk)?`<button type=\"button\" class=\"hb\"" not in
 if 'data-back="r"' not in UI: F.append("[37] Back button on the rack deck missing")
 if 'class="slots"' in UI or 'function rSuitors(' in UI: F.append("[37] old empty rack slots / separate suitors tray still in the app")
 # 38 card format names (Tiffany Oct 22 desktop note 6): the spread is "Mood board", the stacked close-ups are "Close up"
-if "const VIEWS=[['tri','Mood board'],['stack','Close up']];" not in UI: F.append("[38] card formats must read Mood board / Close up (was Love triangle / Mood board)")
+if "const VIEWS=[['tri','Mood board'],['stack','Close up']];" not in UI and "const VIEWS=[['table','Table view'],['tri','Aerial'],['stack','Close up'],['phone','Phone view']];" not in UI: F.append("[38] card formats must read Table view / Aerial / Close up / Phone view (round 2, Nov 23) or the old Mood board / Close up")
 
 # 40 mat search on the mat screen (Tiffany Oct 23 3:21pm): a searched mat goes to the top of the MAT swiper, never straight to racks
 _ms = UI[UI.find("if(e.target.id!=='msq')"):]
