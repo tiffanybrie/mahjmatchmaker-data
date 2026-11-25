@@ -1813,3 +1813,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-11-24 08:44 Tiffany didn't understand '/links A or B'; re-sent both pictures with a plain question (top card of the link-in-bio page).
 - 2026-11-24 09:06 Group post live (facebook.com/groups/mahjmatchmaker/permalink/1491274732852063, 16 photos: 4 + 12); first comment posted with live links (docs/social/group-post-2026-11-24.comment.txt).
 - 2026-11-24 10:45-10:48 Tiffany: stories didn't fit the frame -> taken down (IG 9 + FB Page 9) and re-posted as native 9:16 frames 11:05-11:13am. Brand Watch photo errors fixed + gate [7]. @everyone wasn't live: Facebook won't add @everyone on an edit; future group posts go out live, not scheduled.
+- 2026-11-24 19:51 Tiffany: no repost of the Nov 24 group post ('It's over'). @everyone rule written in scripts/social/fbgroup/doc82.md: check the dropdown first, Tuesday post only, post live, verify after.

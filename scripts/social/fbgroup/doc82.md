@@ -54,3 +54,10 @@ Use the `d-fbpublic` NEW ERA post as the model:
 - Never put "I may earn a commission" on a visual or card.
 - Disclosure goes in the caption only, as the least in-your-face option: #affiliate (or #ad) with the hashtags.
 - Visuals can show "Code MAHJMATCH" like everyone else does.
+
+## @everyone: the hard rule (Tiffany Nov 24 7:51pm: "why do you keep saying that you can and then not tagging people?")
+What happened Nov 24: the post went out with "@everyone" as plain text. Checked 7:55pm in a brand-new draft: Facebook shows @everyone greyed out, "Mentioning disabled". Facebook gives a group a limited @everyone allowance per week, shared by all admins; once it is used, the tag can be typed but does not notify anyone. Claude said "real @everyone" from how the scheduler looked and never checked the published post.
+1. Before writing "@everyone" into a post, type it in the composer and LOOK at the dropdown. If it says "Mentioning disabled", stop and tell her in the same hour: "@everyone is used up this week; post without it, or wait until <day>?" Never post plain-text @everyone.
+2. The weekly allowance is saved for the Tuesday group post. No other post or comment uses @everyone.
+3. Post it LIVE at its time and pick @everyone from the dropdown. Never schedule a post that needs @everyone (Facebook drops the live tag on scheduled and edited posts).
+4. After publishing, open the post and confirm @everyone is a live tag (a link, not plain text). Only then may anyone say "tagged". If it is not live: tell her right away, never claim it was.
