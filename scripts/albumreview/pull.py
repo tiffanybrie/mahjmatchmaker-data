@@ -152,6 +152,6 @@ print(f"PULL {SET}: pool {len(pool)} (0 without a photo; {len(gal_fallback)} fro
 if '--record' in a:
     import datetime
     rp = R + f'config/album-records/{SET}.json'; r2 = json.load(open(rp))
-    r2['pool'].update({'pulled_at': datetime.datetime.now().astimezone().isoformat(timespec='seconds'), 'pulled_by': 'scripts/albumreview/pull.py',
+    r2.setdefault('pool', {}).update({'pulled_at': datetime.datetime.now().astimezone().isoformat(timespec='seconds'), 'pulled_by': 'scripts/albumreview/pull.py',
                        'no_photo': 0, 'shortlist': len(short), 'contrast_colours': res['comp_colours'], 'size_fym': sum(1 for p in pool.values() if p['src'] == 'fym')})
     json.dump(r2, open(rp, 'w'), indent=1, ensure_ascii=False)

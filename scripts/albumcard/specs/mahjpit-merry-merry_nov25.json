@@ -1,0 +1,98 @@
+{
+ "_note": "Mahj Pit Merry Merry album DRAFT (Nov 25 2026): Claude's by-sight candidates from the catalog pull (Playbook: Claude picks, Tiffany reviews). TNT scan done, nothing to carry in (config/tnt-recs.json sets.mahjpit-merry-merry).",
+ "groups": {
+  "picks": "Claude's candidates",
+  "holiday": "Holiday",
+  "yours": "Your adds"
+ },
+ "mats": [
+  {
+   "group": "picks",
+   "name": "Cardinal Evergreen Wreath",
+   "brand": "Amazon",
+   "fym": "www.amazon.com/dp/B0HDZ9G4RN",
+   "img": "assets/mats/gallery/amazon--cardinal-evergreen-wreath.webp",
+   "why": "cream/gold ground, pine wreath + cardinals -- the Christmas colour story on the nose.",
+   "retired": false,
+   "holiday": true,
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Vintage Boho Reindeer",
+   "brand": "Amazon",
+   "fym": "www.amazon.com/dp/B0HG532FPS",
+   "img": "assets/mats/gallery/amazon--vintage-boho-reindeer.webp",
+   "why": "cream ground, red + green reindeer print.",
+   "retired": false,
+   "holiday": true,
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Merrywood",
+   "brand": "Britt Mills",
+   "fym": "brittmillsdesign.com/merrywood-neoprene-mahjong-mat-arriving-late-october",
+   "img": "assets/colorcards/deco/mats/britt-mills-merrywood.jpg",
+   "why": "forest green with a red evergreen-tree border -- her tree tiles' own forest green + cherry.",
+   "retired": false,
+   "holiday": true,
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Gilded Pearl",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/gilded-pearl-stm-artist-mahjong-mat",
+   "img": "assets/mats/gallery/let-s-be-besties--gilded-pearl.webp",
+   "why": "gold pearl pattern -- the gold confetti backs' own sparkle, party not holiday.",
+   "retired": false,
+   "holiday": false,
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Scarlett",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/scarlett-mat-in-tube",
+   "img": "assets/mats/gallery/oh-my-mahjong--scarlett.webp",
+   "why": "deep cherry red, the face resin colour as a mat.",
+   "retired": false,
+   "holiday": false,
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Tartan Tidings",
+   "brand": "Anders Ruff",
+   "fym": "shop.andersruff.com/tartan-tidings-mahjong-mat",
+   "img": "assets/colorcards/origami/mats/anders-ruff-tartan-tidings.jpg",
+   "why": "red tartan plaid, also year-round (CLAUDE.md also_year_round list).",
+   "retired": false,
+   "holiday": true,
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Merry Mix",
+   "brand": "Peace Love Mahjong",
+   "fym": "peacelovemahjong.com/mahjong-mats-holiday",
+   "img": "assets/mats/gallery/peace-love-mahjong--merry-mix.webp",
+   "why": "red/pink/green stripe, also year-round (CLAUDE.md also_year_round list).",
+   "retired": false,
+   "holiday": true,
+   "lowres": false
+  },
+  {
+   "group": "picks",
+   "name": "Jean Always Chose Cranberry From a Can",
+   "brand": "Noli June",
+   "fym": "nolijune.com/jean-always-chose-cranberry-from-a-can",
+   "img": "assets/mats/v106/noli-june-jean-always-chose-cranberry-from-a-can.jpg",
+   "why": "cranberry red, neutral -- the NYE mat she asked to include Nov 11 1:08pm.",
+   "retired": false,
+   "holiday": false,
+   "lowres": false
+  }
+ ]
+}

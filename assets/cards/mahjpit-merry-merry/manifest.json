@@ -1,0 +1,214 @@
+{
+ "set": "Merry Merry",
+ "status": "DRAFT: Claude's own picks, pending Tiffany's review",
+ "groups": {
+  "picks": "Claude's candidates",
+  "holiday": "Holiday",
+  "yours": "Your adds"
+ },
+ "cards": [
+  {
+   "order": 1,
+   "group": "picks",
+   "mat": "Cardinal Evergreen Wreath",
+   "brand": "Amazon",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": false,
+   "file": "mahjpit-merry-merry-mahjong-tiles-amazon-cardinal-evergreen-wreath-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/amazon--cardinal-evergreen-wreath.webp",
+   "racks": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Gold Metallic"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Yellow",
+    "Bird & Bamboo Evergreen"
+   ],
+   "why": "cream/gold ground, pine wreath + cardinals -- the Christmas colour story on the nose.",
+   "fym": "www.amazon.com/dp/B0HDZ9G4RN",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 2,
+   "group": "picks",
+   "mat": "Vintage Boho Reindeer",
+   "brand": "Amazon",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": false,
+   "file": "mahjpit-merry-merry-mahjong-tiles-amazon-vintage-boho-reindeer-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/amazon--vintage-boho-reindeer.webp",
+   "racks": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Gold Metallic"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cream",
+    "Bird & Bamboo Red"
+   ],
+   "why": "cream ground, red + green reindeer print.",
+   "fym": "www.amazon.com/dp/B0HG532FPS",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 3,
+   "group": "picks",
+   "mat": "Merrywood",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "mahjpit-merry-merry-mahjong-tiles-britt-mills-merrywood-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/britt-mills-merrywood.jpg",
+   "racks": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Gold Metallic"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Basil",
+    "Bird & Bamboo Red"
+   ],
+   "why": "forest green with a red evergreen-tree border -- her tree tiles' own forest green + cherry.",
+   "fym": "brittmillsdesign.com/merrywood-neoprene-mahjong-mat-arriving-late-october",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 4,
+   "group": "picks",
+   "mat": "Gilded Pearl",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "mahjpit-merry-merry-mahjong-tiles-lets-be-besties-gilded-pearl-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/let-s-be-besties--gilded-pearl.webp",
+   "racks": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Gold Metallic"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dijon",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "why": "gold pearl pattern -- the gold confetti backs' own sparkle, party not holiday.",
+   "fym": "letsbebesties.com/gilded-pearl-stm-artist-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 5,
+   "group": "picks",
+   "mat": "Scarlett",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "mahjpit-merry-merry-mahjong-tiles-oh-my-mahjong-scarlett-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/oh-my-mahjong--scarlett.webp",
+   "racks": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Gold Metallic"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Dark Blue"
+   ],
+   "why": "deep cherry red, the face resin colour as a mat.",
+   "fym": "www.ohmymahjong.com/scarlett-mat-in-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 6,
+   "group": "picks",
+   "mat": "Tartan Tidings",
+   "brand": "Anders Ruff",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "mahjpit-merry-merry-mahjong-tiles-anders-ruff-tartan-tidings-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/anders-ruff-tartan-tidings.jpg",
+   "racks": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Gold Metallic"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Evergreen"
+   ],
+   "why": "red tartan plaid, also year-round (CLAUDE.md also_year_round list).",
+   "fym": "shop.andersruff.com/tartan-tidings-mahjong-mat",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 7,
+   "group": "picks",
+   "mat": "Merry Mix",
+   "brand": "Peace Love Mahjong",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": false,
+   "file": "mahjpit-merry-merry-mahjong-tiles-peace-love-mahjong-merry-mix-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/peace-love-mahjong--merry-mix.webp",
+   "racks": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Gold Metallic"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Peony"
+   ],
+   "why": "red/pink/green stripe, also year-round (CLAUDE.md also_year_round list).",
+   "fym": "peacelovemahjong.com/mahjong-mats-holiday",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 8,
+   "group": "picks",
+   "mat": "Jean Always Chose Cranberry From a Can",
+   "brand": "Noli June",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "mahjpit-merry-merry-mahjong-tiles-noli-june-jean-always-chose-cranberry-from-a-can-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/v106/noli-june-jean-always-chose-cranberry-from-a-can.jpg",
+   "racks": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Gold Metallic"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Radish",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "why": "cranberry red, neutral -- the NYE mat she asked to include Nov 11 1:08pm.",
+   "fym": "nolijune.com/jean-always-chose-cranberry-from-a-can",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  }
+ ],
+ "title_color": "#b3122e",
+ "tile": "assets/tiles/album/mahjpit-merry-merry.jpg",
+ "racks_note": "tile racks = Bird & Bamboo Cherry Red + Gold Metallic (no Mahj Pit racks in the catalog); mat racks = matpick nearest Bird & Bamboo colours"
+}
