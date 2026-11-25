@@ -230,7 +230,7 @@ textarea{width:100%;min-height:140px;font:16px/1.45 var(--body);border:2px solid
   <button class="done" id="done" aria-pressed="false">Done</button>
   <p class="donenote" id="donenote" hidden>Done never locks the page. Keep ordering any time; tap again to reopen.</p>
 </div>
-<div class="gsel" id="gsel" hidden><b id="gselt"></b><span class="mv"><label for="gmv">Move to #</label><input id="gmv" data-mv="" data-sec="" inputmode="numeric" pattern="[0-9]*" enterkeyhint="go" autocomplete="off"><button data-go="gmv">Go</button></span><button class="x2" id="gselx">Cancel</button></div>
+<div class="gsel" id="gsel" hidden><b id="gselt"></b><button class="ic h" id="gselh" aria-label="Keep this one">♥</button><button class="ic x" id="gselrm" aria-label="Take this one out">✕</button><span class="mv"><label for="gmv">Move to #</label><input id="gmv" data-mv="" data-sec="" inputmode="numeric" pattern="[0-9]*" enterkeyhint="go" autocomplete="off"><button data-go="gmv">Go</button></span><button class="x2" id="gselx">Cancel</button></div>
 <div class="save" role="status" aria-live="polite"><span class="st" id="st">Connecting…</span><a href="#else">Done ↓</a></div>
 <div id="lb" hidden><button id="lbx">Close</button><img alt=""></div>
 
@@ -314,8 +314,9 @@ let VIEW={main:'grid',hol:'grid'},SEL=null;const VKEY='albumreview-view2-'+D.set
 try{const v=JSON.parse(localStorage.getItem(VKEY)||'null');if(v)for(const k of['main','hol'])if(v[k]==='grid'||v[k]==='cards')VIEW[k]=v[k]}catch(e){}
 function setView(sec,v){VIEW[sec]=v;if(SEL&&SEL.sec===sec)SEL=null;try{localStorage.setItem(VKEY,JSON.stringify(VIEW))}catch(e){}renderList(sec);renderSel()}
 function renderSel(){const b=$('#gsel');document.querySelectorAll('.gc').forEach(x=>x.setAttribute('aria-pressed',!!SEL&&x.dataset.gid===SEL.id));
-  if(!SEL){b.hidden=true;return}const n=S.order[SEL.sec].indexOf(SEL.id)+1;
-  $('#gselt').textContent=`#${n} ${byId[SEL.id].mat} picked up. Tap the spot it should take.`;const inp=$('#gmv');inp.dataset.mv=SEL.id;inp.dataset.sec=SEL.sec;inp.value='';b.hidden=false}
+  if(!SEL){b.hidden=true;return}const n=S.order[SEL.sec].indexOf(SEL.id)+1,v=S.v[SEL.id]||'';
+  $('#gselt').textContent=`#${n} ${byId[SEL.id].mat}. Keep, take out, or tap the spot it should take.`;const inp=$('#gmv');inp.dataset.mv=SEL.id;inp.dataset.sec=SEL.sec;inp.value='';
+  $('#gselh').setAttribute('aria-pressed',v==='keep');$('#gselrm').setAttribute('aria-pressed',v==='remove');b.hidden=false}
 /* Move to # keeps her place (Tiffany Nov 8 6:06pm: she works top to bottom and doesn't want to jump to where the card went).
    The moved card's node moves in place (no re-render, so the box she tapped next keeps focus), every number is redone, and the
    card she is heading to (or the one right after the spot she left) stays put on screen; a small note flashes on that spot. */
@@ -386,6 +387,8 @@ document.addEventListener('click',e=>{const t=e.target;
     if(SEL&&SEL.sec===sec&&SEL.id!==id){moveTo(sec,SEL.id,S.order[sec].indexOf(id)+1);return}
     SEL=SEL&&SEL.id===id?null:{sec,id};renderSel();return}
   const go=t.closest('[data-go]');if(go){applyMv(document.getElementById(go.dataset.go));return}
+  if(t.id==='gselh'||t.id==='gselrm'){if(!SEL)return;const act=t.id==='gselh'?'keep':'remove';
+    S.v[SEL.id]===act?delete S.v[SEL.id]:S.v[SEL.id]=act;renderList(SEL.sec);renderSel();renderTally();save();return}
   if(t.id==='gselx'){SEL=null;renderSel();return}
   const z=t.closest('[data-z]');if(z){const lb=$('#lb');lb.querySelector('img').src=z.dataset.z;lb.classList.remove('big');lb.hidden=false;$('#lbx').focus();return}
   const cv=t.closest('[data-cover]');if(cv){S.cover=+cv.dataset.cover;renderCovers();save();return}

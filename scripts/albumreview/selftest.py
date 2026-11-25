@@ -103,6 +103,22 @@ def run(path, doc=None):
             got = ids('#main .gc', 'gid')
             if got != expect['main']:
                 bad.append(f'grid view main: shows {len(got)} of {len(expect["main"])}')
+            # Tiffany Nov 25 2:51am: round 2 (grid, the default) lost her way to take a card out. Picking up a card
+            # must offer Keep/Remove, not just Move to #, and it must stick.
+            gid0 = expect['main'][0]
+            pg.locator(f'.gc[data-gid="{gid0}"]').click()
+            if pg.locator('#gsel').is_hidden(): bad.append('grid view: no selection bar after tapping a card')
+            elif pg.locator('#gselrm').count() == 0 or pg.locator('#gselh').count() == 0:
+                bad.append('grid view: no way to keep/remove a picked-up card (only Move to #)')
+            else:
+                pg.locator('#gselrm').click()
+                cls = pg.locator(f'.gc[data-gid="{gid0}"]').get_attribute('class') or ''
+                if 'rm' not in cls.split(): bad.append('grid view: Remove did not mark the card taken out')
+                if pg.locator('#gselrm').get_attribute('aria-pressed') != 'true': bad.append('grid view: Remove button did not show pressed')
+                pg.locator('#gselh').click()
+                cls = pg.locator(f'.gc[data-gid="{gid0}"]').get_attribute('class') or ''
+                if 'rm' in cls.split(): bad.append('grid view: Keep did not clear the taken-out mark')
+                pg.locator('#gselh').click()  # back to neutral so order checks below aren't thrown off
             pg.locator('.topview .vt button[data-view="cards"]').click()
         newids = [i for i in expect['main'] if next(c for c in D['cards'] if c['id'] == i)['new']]
         targets = newids or expect['main'][-1:]
