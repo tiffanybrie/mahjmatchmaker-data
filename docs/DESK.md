@@ -50,6 +50,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1, then the newest docs/ANS
 - **Tiffany's approved matches** (config/tiffany-matches.json): social picks come from this list FIRST.
 
 ## Handoffs (do first)
+- Nov 25 · FYM next release: 2 ShopMy mats staged (config/fym-shopmy-nov25.json)
 - Nov 22 · FYM next release: 49 ShopMy mats staged (config/fym-shopmy-nov22.json; 46 The Mahjong House + 3 Rebecca Illustrated, 0 Amazon; photos assets/mats/shopmy-nov22/, sheet assets/qa/shopmy-nov22/adds.jpg). Owner: Main (was Matches & Catalog, retired) = top 5 item 4a
 - OPS: follow + favorite @brewtifully from @mahjmatchmaker (partner, verified from shop.brewtifully.com footer; log docs/IG-FAVORITES.md) (newsletter signup DONE Nov 19). Chrome was offline for the Nov 18 2:52pm onboarding run. Publish steps: docs/OVERDUE.md Brewtifully line.
 - Nov 17 · Deco (Indigo) album · BRING-IN Dark Blue Art Deco, Gold Geometric Fans (Dreamframer Art, etsy.com, route shopmy-etsy): close the loop in config/album-records/deco-indigo.json bringins[navy-fans] (paid link + catalog staging; album_gate --golive fails until done). Owner: Main (was Matches & Catalog, retired)

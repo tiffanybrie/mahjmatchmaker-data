@@ -1,0 +1,60 @@
+{
+ "_note": "Nov 25 ShopMy daily check (report config/shopmy-crosscheck-2026-11-25.json): 2 new ShopMy mats, both The Mahjong House (Western Dusty Rose + Western Desert Double-Sided; 0 from Amazon). Brand flat renders (image #0) trimmed to the mat; photo #2 lifestyle ignored. Colours by eye on the contact sheet LOOKED at. Not holiday (judged from full-size photos). Link = go.shopmy.us, no code claim. 0 dead pins. Goes into the next FYM release + Mat Gallery sync. Not published.",
+ "mats": [
+  {
+   "key": "themahjonghouse.com/western-dusty-rose-double-sided-mahjong-mat",
+   "name": "Western Dusty Rose Double-Sided Mahjong Mat",
+   "brand": "The Mahjong House",
+   "b": "The Mahjong House",
+   "u": "https://go.shopmy.us/p-110598112",
+   "product_url": "https://themahjonghouse.com/products/western-dusty-rose-double-sided-mahjong-mat",
+   "img": "assets/mats/shopmy-nov25/the-mahjong-house-western-dusty-rose-double-sided-mahjong-mat-110598112.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0711/9247/7915/files/WesternDustyRoseDouble-SidedMahjongMat.png?v=1794842485",
+   "crop": "trim",
+   "hol": false,
+   "hid": false,
+   "reason": "",
+   "shopmy_id": 110598112,
+   "shelf": "The Mahjong House",
+   "measured": [
+    "pink"
+   ],
+   "note": "brand flat render",
+   "mf": [
+    "pink",
+    "purple"
+   ],
+   "eye_why": "by eye on the Nov 25 contact sheet (assets/qa/shopmy-nov25/adds.jpg)"
+  },
+  {
+   "key": "themahjonghouse.com/western-dessert-double-sided-mahjong-mat",
+   "name": "Western Desert Double-Sided Mahjong Mat",
+   "brand": "The Mahjong House",
+   "b": "The Mahjong House",
+   "u": "https://go.shopmy.us/p-110598413",
+   "product_url": "https://themahjonghouse.com/products/western-dessert-double-sided-mahjong-mat",
+   "img": "assets/mats/shopmy-nov25/the-mahjong-house-western-desert-double-sided-mahjong-mat-110598413.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0711/9247/7915/files/WesternDesertDouble-SidedMahjongMat.png?v=1794842449",
+   "crop": "trim",
+   "hol": false,
+   "hid": false,
+   "reason": "",
+   "shopmy_id": 110598413,
+   "shelf": "The Mahjong House",
+   "measured": [
+    "blue",
+    "neutral",
+    "pink",
+    "purple"
+   ],
+   "note": "brand flat render",
+   "mf": [
+    "dark",
+    "blue",
+    "purple"
+   ],
+   "eye_why": "by eye on the Nov 25 contact sheet (assets/qa/shopmy-nov25/adds.jpg)"
+  }
+ ],
+ "fixes": {}
+}
