@@ -38,7 +38,12 @@ try:
     want=now.date() if now.hour>=13 else now.date()-datetime.timedelta(days=1)
     ds=sorted(f[:10] for f in os.listdir('docs/reports/google-revenue') if re.match(r'\d{4}-\d\d-\d\d\.md$',f))
     last=ds[-1] if ds else 'never'
-    if last<str(want):
+    _paused_until=None
+    try: _paused_until=json.load(open('config/google-report-paused-until.json')).get('until')
+    except Exception: pass
+    if _paused_until and str(want)<=_paused_until:
+        pass  # Tiffany asked to skip the report through this date (Black Friday weekend); see config/google-report-paused-until.json
+    elif last<str(want):
         out.insert(0,f"GOOGLE REPORT DIDN'T RUN (last full report {last}, expected {want}). SAY THIS FIRST to Tiffany, before anything else: 'The Google report didn't run (last one {last}). Want me to run it now?' and IN THE SAME REPLY call mcp__claude-code-remote__fire_trigger trig_01LZjGfVneN3vKwweVXwbzub so she only has to tap Approve (if it is disabled, update_trigger enabled:true first). Never wait for her to notice.")
 except Exception: pass
 # Coverage gaps (Tiffany Nov 7: "where do we have other gaps"): read docs/status/coverage.json ONLY (no network, no rebuild here).
