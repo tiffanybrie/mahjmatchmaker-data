@@ -1,0 +1,29 @@
+{
+  "_about": "Local snapshot of HQ artifact (Cor6pKtesou4mFRQ41P6Ye) db doc hq/social, field 'plan' only -- the live schedule the hand-post gate (scripts/checks/handpost_wake_check.py) checks against config/handpost-wakes.json. Refresh this file (re-fetch hq/social via db_get, overwrite) whenever the plan changes; a stale snapshot just means the gate checks old dates, which the dates in the snapshot make visible.",
+  "snapshotOf": "hq/social.updatedAt 2026-11-25T01:10:00Z, planNote 'Updated Tue Nov 24 8:10pm by Main'",
+  "fetchedAt": "2026-11-25T17:55:00Z",
+  "plan": [
+    {
+      "day": "Today · Tue Nov 24 (Sadie Jane launch eve)",
+      "posts": [
+        {"status": "posted", "time": "9am", "what": "Weekly group post (Three OMM tile sets launching, Black Friday + Brand Watch)", "where": "Facebook group"},
+        {"status": "posted", "time": "9:30am", "what": "Sadie Jane profile carousel + every slide as stories", "where": "IG grid + FB Page + stories"},
+        {"status": "needs-you", "time": "Tonight or Wed morning", "what": "Sadie Jane countdown story", "where": "IG story"}
+      ],
+      "today": true
+    },
+    {
+      "day": "Wed Nov 25 (Sadie Jane launch day)",
+      "posts": [
+        {"status": "needs-you", "time": "11am ET (10am CT)", "what": "Sadie Jane reel (37s, collab @ohmymahjong)", "where": "IG reel + FB"},
+        {"status": "scheduled", "time": "7:15pm ET", "what": "What's your Christmas style? reel (Deck the Halls)", "where": "IG Reels + FB reel"}
+      ]
+    },
+    {
+      "day": "This week",
+      "posts": [
+        {"status": "scheduled", "time": "Nov 24-30", "what": "12 pins already scheduled", "where": "Pinterest"}
+      ]
+    }
+  ]
+}

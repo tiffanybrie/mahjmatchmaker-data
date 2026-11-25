@@ -130,6 +130,11 @@ try:
     r=subprocess.run(['python3','scripts/checks/brand_watch_gate.py','--front'],capture_output=True,text=True,timeout=20)
     if r.stdout.strip(): out+=r.stdout.strip().splitlines()
 except Exception: pass
+# Nov 24 8:05pm (Tiffany: Sadie Jane countdown story only a Planoly reminder, never reached her): hand-post wake gate
+try:
+    r=subprocess.run(['python3','scripts/checks/handpost_wake_check.py','--front'],capture_output=True,text=True,timeout=20)
+    if r.stdout.strip(): out+=r.stdout.strip().splitlines()
+except Exception: pass
 # Nov 23 2:38pm (Tiffany: Spools + Brewtifully approved Nov 18-19, no page Nov 23: "dropping money on the floor... we need a safety check").
 try:
     r=subprocess.run(['python3','scripts/checks/new_brand_floor.py'],capture_output=True,text=True,timeout=60)

@@ -1,0 +1,21 @@
+{
+  "_about": "Logged every time a send_later/create_trigger wake is set for an hq/social 'needs-you' item with a time (the hand-post gate, OVERDUE line 243, from the Nov 24 8:05pm Sadie Jane countdown-story miss: a Planoly reminder alone is not enough once she stopped using Planoly). Key = '<day>|<what>' matching the hq/social plan item. scripts/checks/handpost_wake_check.py fails any needs-you item with a time that has no entry here.",
+  "wakes": [
+    {
+      "day": "Today · Tue Nov 24 (Sadie Jane launch eve)",
+      "what": "Sadie Jane countdown story",
+      "time": "Tonight or Wed morning",
+      "trigger_id": "none -- backfilled: sent ad hoc in chat 2026-11-24T20:10:00-05:00 (the miss itself; no wake was set, this is the historical record, not a model to repeat)",
+      "setAt": "2026-11-24T20:10:00-05:00",
+      "by": "Main"
+    },
+    {
+      "day": "Wed Nov 25 (Sadie Jane launch day)",
+      "what": "Sadie Jane reel (37s, collab @ohmymahjong)",
+      "time": "11am ET (10am CT)",
+      "trigger_id": "trig_013KCwZZhk32AHjysd7GL8ca",
+      "setAt": "2026-11-24T20:10:00-05:00",
+      "by": "Main"
+    }
+  ]
+}
