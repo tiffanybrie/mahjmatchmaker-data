@@ -288,7 +288,7 @@
   }
  },
  "pool": {
-  "size": 1686,
+  "size": 1705,
   "year_round": 1353,
   "holiday": 221,
   "colour_weighted": 990,
@@ -2779,9 +2779,407 @@
     "product_url": "https://www.amazon.com/dp/B0HC6748QK",
     "lowres": true,
     "amazon_her_pick": true
+   },
+   {
+    "name": "Starling Mat in Tube",
+    "brand": "Oh My Mahjong",
+    "img": "assets/albums/catalog-new/oh-my-mahjong--starling-mat-in-tube.jpg",
+    "colours": {
+     "green": 38.8,
+     "blue": 29.5,
+     "pink": 15.5,
+     "orange": 7.5,
+     "teal": 4.9,
+     "neutral": 1.3,
+     "brown": 1.2,
+     "earthy": 0.5,
+     "purple": 0.4,
+     "red": 0.4,
+     "yellow": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Oh My Mahjong",
+    "link": "https://ohmymahjong.com/products/starling-mat-in-tube",
+    "product_url": "https://ohmymahjong.com/products/starling-mat-in-tube",
+    "lowres": false
+   },
+   {
+    "name": "Lily Mat in Tube",
+    "brand": "Oh My Mahjong",
+    "img": "assets/albums/catalog-new/oh-my-mahjong--lily-mat-in-tube.jpg",
+    "colours": {
+     "green": 42.1,
+     "blue": 36.2,
+     "teal": 10.1,
+     "neutral": 8.5,
+     "dark": 1.3,
+     "earthy": 1.1,
+     "purple": 0.4,
+     "brown": 0.3,
+     "orange": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Oh My Mahjong",
+    "link": "https://ohmymahjong.com/products/lily-mat-in-tube",
+    "product_url": "https://ohmymahjong.com/products/lily-mat-in-tube",
+    "lowres": false
+   },
+   {
+    "name": "Ivy League - Pistachio Plaid Mahjong Mat",
+    "brand": "Anders Ruff",
+    "img": "assets/albums/catalog-new/anders-ruff--ivy-league-pistachio-plaid-mahjong-mat.jpg",
+    "colours": {
+     "green": 54.3,
+     "pink": 41.7,
+     "brown": 2.9,
+     "earthy": 0.7,
+     "teal": 0.4,
+     "neutral": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Anders Ruff",
+    "link": "https://shop.andersruff.com/products/ivy-league-pistachio-plaid-mahjong-ma",
+    "product_url": "https://shop.andersruff.com/products/ivy-league-pistachio-plaid-mahjong-ma",
+    "lowres": false
+   },
+   {
+    "name": "Plumage II Neoprene Mahjong Mat",
+    "brand": "Britt Mills",
+    "img": "assets/albums/catalog-new/britt-mills--plumage-ii-neoprene-mahjong-mat.jpg",
+    "colours": {
+     "brown": 41.2,
+     "orange": 18.8,
+     "earthy": 18.3,
+     "neutral": 13.1,
+     "dark": 3.2,
+     "pink": 2.7,
+     "red": 1.5,
+     "yellow": 0.8,
+     "green": 0.3,
+     "blue": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Britt Mills",
+    "link": "https://brittmillsdesign.com/products/plumage-ii-neoprene-mahjong-mat",
+    "product_url": "https://brittmillsdesign.com/products/plumage-ii-neoprene-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Marigold Mahjong Playing Mat",
+    "brand": "Miss Mahjong",
+    "img": "assets/albums/catalog-new/miss-mahjong--marigold-mahjong-playing-mat.jpg",
+    "colours": {
+     "brown": 55.5,
+     "orange": 28.2,
+     "dark": 12.8,
+     "neutral": 2.6,
+     "green": 0.3,
+     "red": 0.3,
+     "earthy": 0.1,
+     "pink": 0.1,
+     "yellow": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Miss Mahjong",
+    "link": "https://missmahjong.com/products/marigold-mahjong-playing-mat",
+    "product_url": "https://missmahjong.com/products/marigold-mahjong-playing-mat",
+    "lowres": false
+   },
+   {
+    "name": "China Cabinet Mahjong Playing Mat",
+    "brand": "Miss Mahjong",
+    "img": "assets/albums/catalog-new/miss-mahjong--china-cabinet-mahjong-playing-mat.jpg",
+    "colours": {
+     "green": 41.0,
+     "blue": 31.0,
+     "pink": 11.1,
+     "neutral": 10.0,
+     "brown": 4.1,
+     "red": 1.5,
+     "teal": 0.9,
+     "earthy": 0.4,
+     "purple": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Miss Mahjong",
+    "link": "https://missmahjong.com/products/china-cabinet-mahjong-playing-mat",
+    "product_url": "https://missmahjong.com/products/china-cabinet-mahjong-playing-mat",
+    "lowres": false
+   },
+   {
+    "name": "THREE-TILE FRAME  |  4 Mat Color Options  |  Keepsake Collection",
+    "brand": "My Fair Mahjong",
+    "img": "assets/albums/catalog-new/my-fair-mahjong--three-tile-frame-4-mat-color-options-keepsake-collection.jpg",
+    "colours": {
+     "brown": 33.4,
+     "neutral": 28.6,
+     "yellow": 16.4,
+     "orange": 9.1,
+     "earthy": 4.5,
+     "green": 3.8,
+     "pink": 1.6,
+     "blue": 1.2,
+     "purple": 1.0,
+     "teal": 0.3
+    },
+    "holiday_guess": false,
+    "source": "Partner store · My Fair Mahjong",
+    "link": "https://myfairmahjong.com/products/keepsake-triple-frame",
+    "product_url": "https://myfairmahjong.com/products/keepsake-triple-frame",
+    "lowres": false
+   },
+   {
+    "name": "Pink Paloma Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--pink-paloma-mahjong-mat.jpg",
+    "colours": {
+     "purple": 69.1,
+     "green": 17.1,
+     "teal": 6.0,
+     "blue": 5.5,
+     "neutral": 1.6,
+     "dark": 0.2,
+     "pink": 0.2,
+     "red": 0.2,
+     "brown": 0.1,
+     "earthy": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/pink-paloma-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/pink-paloma-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Primary Stained Glass with Simple Middle Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--primary-stained-glass-with-simple-middle-mahjong-mat.jpg",
+    "colours": {
+     "blue": 72.3,
+     "green": 13.3,
+     "red": 7.4,
+     "pink": 2.4,
+     "brown": 1.5,
+     "orange": 1.3,
+     "neutral": 1.1,
+     "purple": 0.3,
+     "teal": 0.2,
+     "dark": 0.1,
+     "earthy": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/primary-stained-glass-with-simple-middle-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/primary-stained-glass-with-simple-middle-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Merlot Stained Glass Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--merlot-stained-glass-mahjong-mat.jpg",
+    "colours": {
+     "blue": 64.7,
+     "green": 19.6,
+     "purple": 12.3,
+     "dark": 1.2,
+     "teal": 0.6,
+     "neutral": 0.5,
+     "pink": 0.5,
+     "red": 0.5
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/merlot-stained-glass-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/merlot-stained-glass-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Tipsy Cristmas Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--tipsy-cristmas-mahjong-mat.jpg",
+    "colours": {
+     "green": 63.7,
+     "red": 26.2,
+     "brown": 7.8,
+     "earthy": 1.5,
+     "orange": 0.7,
+     "dark": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/tipsy-cristmas-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/tipsy-cristmas-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Blue and Cranberry Tie Dye Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--blue-and-cranberry-tie-dye-mahjong-mat.jpg",
+    "colours": {
+     "blue": 39.0,
+     "pink": 36.1,
+     "purple": 13.0,
+     "neutral": 7.3,
+     "red": 4.6
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/blue-and-cranberry-tie-dye-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/blue-and-cranberry-tie-dye-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Prism Petals Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--prism-petals-mahjong-mat.jpg",
+    "colours": {
+     "blue": 59.9,
+     "purple": 16.3,
+     "pink": 13.8,
+     "teal": 9.5,
+     "green": 0.5
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/prismatic-petals-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/prismatic-petals-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Electric Petal Garden Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--electric-petal-garden-mahjong-mat.jpg",
+    "colours": {
+     "pink": 27.3,
+     "purple": 18.3,
+     "red": 16.0,
+     "blue": 15.2,
+     "neutral": 14.2,
+     "green": 4.2,
+     "brown": 2.5,
+     "orange": 1.2,
+     "earthy": 0.9,
+     "teal": 0.0,
+     "yellow": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/electric-petal-garden-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/electric-petal-garden-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Savannah Lillian Claire Designs Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--savannah-lillian-claire-designs-artist-mahjong-mat.jpg",
+    "colours": {
+     "earthy": 53.2,
+     "neutral": 28.7,
+     "pink": 8.3,
+     "yellow": 5.9,
+     "orange": 3.2,
+     "brown": 0.7,
+     "red": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/savannah-lillian-claire-designs-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/savannah-lillian-claire-designs-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Pine Valley Lillian Claire Designs Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--pine-valley-lillian-claire-designs-artist-mahjong-mat.jpg",
+    "colours": {
+     "neutral": 38.2,
+     "earthy": 30.5,
+     "brown": 11.0,
+     "green": 10.5,
+     "pink": 5.3,
+     "orange": 2.7,
+     "dark": 1.6,
+     "yellow": 0.2,
+     "red": 0.1
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/pine-valley-lillian-claire-designs-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/pine-valley-lillian-claire-designs-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Eat Pray Love Lillian Claire Designs Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--eat-pray-love-lillian-claire-designs-artist-mahjong-mat.jpg",
+    "colours": {
+     "green": 37.5,
+     "brown": 17.8,
+     "earthy": 14.9,
+     "orange": 10.6,
+     "yellow": 7.0,
+     "neutral": 6.0,
+     "blue": 2.9,
+     "red": 1.6,
+     "pink": 1.4,
+     "purple": 0.1,
+     "teal": 0.1,
+     "dark": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/eat-pray-love-lillian-claire-designs-artist-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/eat-pray-love-lillian-claire-designs-artist-mahjong-mat",
+    "lowres": false
+   },
+   {
+    "name": "Orange Blossoms Lillian Claire Designs Artist Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--orange-blossoms-lillian-claire-designs-artist-mahjong-mat.jpg",
+    "colours": {
+     "green": 30.5,
+     "orange": 19.1,
+     "pink": 16.4,
+     "neutral": 9.7,
+     "earthy": 7.9,
+     "brown": 7.0,
+     "yellow": 6.7,
+     "dark": 1.3,
+     "red": 1.3,
+     "purple": 0.1,
+     "blue": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/orange-blossoms-lillian-claire-designs-artist-mahjong-mat-1",
+    "product_url": "https://letsbebesties.com/products/orange-blossoms-lillian-claire-designs-artist-mahjong-mat-1",
+    "lowres": false
+   },
+   {
+    "name": "Tropical Travels with Simple Middle Mahjong Mat",
+    "brand": "Let's Be Besties",
+    "img": "assets/albums/catalog-new/lets-be-besties--tropical-travels-with-simple-middle-mahjong-mat.jpg",
+    "colours": {
+     "green": 42.0,
+     "pink": 34.2,
+     "blue": 10.0,
+     "teal": 8.2,
+     "neutral": 1.7,
+     "yellow": 0.9,
+     "brown": 0.8,
+     "earthy": 0.8,
+     "purple": 0.8,
+     "orange": 0.4,
+     "red": 0.0
+    },
+    "holiday_guess": false,
+    "source": "Partner store · Let's Be Besties",
+    "link": "https://letsbebesties.com/products/tropical-travels-with-simple-middle-mahjong-mat",
+    "product_url": "https://letsbebesties.com/products/tropical-travels-with-simple-middle-mahjong-mat",
+    "lowres": false
    }
   ],
-  "pulled_at": "2026-11-08T14:53:05-05:00",
+  "pulled_at": "2026-11-25T10:01:33-05:00",
   "size_fym": 1574,
   "pulled_by": "scripts/albumreview/pull.py",
   "no_photo": 0,
@@ -2886,12 +3284,18 @@
     "updated": "2026-11-17T08:25:04.536Z",
     "v": {}
    }
+  },
+  {
+   "round": 2,
+   "sent": "2026-11-25T15:11:07Z",
+   "url": "https://claude.ai/artifact/FAiTL4JE8X4sjekeK8VJuE",
+   "note": "Catalog refresh (scripts/albumreview/catalog_refresh.py) since the Nov 8 pool build: 52 partner-store hits, 13 new mats after dedup, 8 that read as mulberry/berry/teal by sight kept in the 'More matches' group for her to keep/remove (Tilly Neoprene, Caroline in Navy, Darjeeling Peacock Navy Floral, Astor, Deco Dragon Indigo, Enchanted Leatherette, Haven Leatherette, Vegan Leather Hunter Green); 5 navy-forward misses left for her to see too (Peacock Garden, Elysium, SoHo, Calista Leatherette, Dark Blue Art Deco/Gold Geometric Fans). Page republished with the Nov 25 grid-view keep/remove fix."
   }
  ],
  "catalog_checked": {
-  "at": "2026-11-08T13:41:05-05:00",
-  "shopmy_new": 58,
-  "partner_new": 54,
+  "at": "2026-11-25T10:01:33-05:00",
+  "shopmy_new": 0,
+  "partner_new": 52,
   "added": [
    "Let's Be Besties · Tidal Glass with Simple Middle Mahjong Mat",
    "Let's Be Besties · Pink Christmas Mahjong Mat",
@@ -3004,14 +3408,33 @@
    "Amazon · Christmas Mahjong Mat For Table 31.5in",
    "Amazon · Green And Red Christmas Mahjong Mat 31.5x31.5in",
    "Amazon · Drydiet American Mahjong Mat For Table With Bag",
-   "Amazon · Jolov 31.5\" Christmas Mahjong Mat With Carrying Bag"
+   "Amazon · Jolov 31.5\" Christmas Mahjong Mat With Carrying Bag",
+   "Oh My Mahjong · Starling Mat in Tube",
+   "Oh My Mahjong · Lily Mat in Tube",
+   "Anders Ruff · Ivy League - Pistachio Plaid Mahjong Mat",
+   "Britt Mills · Plumage II Neoprene Mahjong Mat",
+   "Miss Mahjong · Marigold Mahjong Playing Mat",
+   "Miss Mahjong · China Cabinet Mahjong Playing Mat",
+   "My Fair Mahjong · THREE-TILE FRAME  |  4 Mat Color Options  |  Keepsake Collection",
+   "Let's Be Besties · Pink Paloma Mahjong Mat",
+   "Let's Be Besties · Primary Stained Glass with Simple Middle Mahjong Mat",
+   "Let's Be Besties · Merlot Stained Glass Mahjong Mat",
+   "Let's Be Besties · Tipsy Cristmas Mahjong Mat",
+   "Let's Be Besties · Blue and Cranberry Tie Dye Mahjong Mat",
+   "Let's Be Besties · Prism Petals Mahjong Mat",
+   "Let's Be Besties · Electric Petal Garden Mahjong Mat",
+   "Let's Be Besties · Savannah Lillian Claire Designs Artist Mahjong Mat",
+   "Let's Be Besties · Pine Valley Lillian Claire Designs Artist Mahjong Mat",
+   "Let's Be Besties · Eat Pray Love Lillian Claire Designs Artist Mahjong Mat",
+   "Let's Be Besties · Orange Blossoms Lillian Claire Designs Artist Mahjong Mat",
+   "Let's Be Besties · Tropical Travels with Simple Middle Mahjong Mat"
   ],
   "problems": [],
   "reports": [
-   "config/shopmy-crosscheck-nov08.json",
+   "config/shopmy-crosscheck-nov25.json",
    "config/partner-mat-sweep.json"
   ],
-  "partner_swept_at": "2026-11-08T18:43:05+00:00"
+  "partner_swept_at": "2026-11-25T15:03:50+00:00"
  },
  "review_url": "https://claude.ai/artifact/FAiTL4JE8X4sjekeK8VJuE",
  "discovery": {

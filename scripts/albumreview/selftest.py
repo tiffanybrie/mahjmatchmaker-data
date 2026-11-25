@@ -76,6 +76,14 @@ def run(path, doc=None):
     D = page_data(path)
     doc = doc or synth_doc(D)
     bad = []
+    # Nov 25: publish_files sniffs content-type and refuses an index.html with no
+    # leading <!DOCTYPE html> (caught live on a Deco Mulberry round-2 publish,
+    # which failed with "must be HTML (detected text/plain)"). Gate it here so a
+    # template edit that drops the doctype again fails the build, not the publish.
+    with open(path, encoding='utf-8') as f:
+        head = f.read(100).lstrip()
+    if not head.lower().startswith('<!doctype html>'):
+        bad.append('page has no leading <!DOCTYPE html> (publish_files will refuse it as not HTML)')
     want = {s: [i for i in (doc.get('order') or {}).get(s, []) if any(c['id'] == i for c in D['cards'])] for s in ('main', 'hol')}
     allids = {s: [c['id'] for c in D['cards'] if c['hol'] == (s == 'hol')] for s in ('main', 'hol')}
     expect = {s: want[s] + [i for i in allids[s] if i not in want[s]] for s in ('main', 'hol')}
