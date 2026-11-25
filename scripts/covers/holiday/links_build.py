@@ -12,7 +12,7 @@ S='https://www.mahjmatchmaker.com'
 FYM=S+'/find-your-match'  # planned page: goes live on launch day (Nov 3 proposed, doc 54)
 FAN=['talulah','gatsby','emerald']
 FYM_LIVE=False  # flip to True on 10/27 when /find-your-match goes live (then the card links)
-NEWSET=('brownstone-bloom','Brownstone Bloom','Anders Ruff','Our latest album, now available · code MAHJMATCH')  # Oct 26 12:46pm (Tiffany): Find Your Mat-ch FIRST, latest album card SECOND. Swap this tuple on every new album (docs/NEW-ALBUM-CHECKLIST.md).
+NEWSET=('sadie-jane','Sadie Jane','Oh My Mahjong','Our latest album, now available · code MAHJMATCH')  # Nov 25 2026 11:45am: the live block had drifted to Juniper (older than even the prior Brownstone Bloom builder value -- this had not been rebuilt+pasted in a while, see docs/audits/system-failures-2026-11-25.md). Swap this tuple on every new album (docs/NEW-ALBUM-CHECKLIST.md).
 # NOTE Nov 1: the LIVE /links block has drifted from this builder (Oct 31 hand edits: FYM trio phones, no 'Coming 10.27' card). Nov 1 Brownstone swap was done IN PLACE on the live block (nw card + strip first item, images @54e2fb68). Diff the live block before rebuilding from here.
 # was: ('papaya-spritz','Papaya Spritz','Oh My Mahjong','Our latest album, now available · code MAHJMATCH')  # launch-week feature card (doc 86 step 11)  # album covers fanned on the Find Your Match card (left, right, center)
 def build(img,tgt):
