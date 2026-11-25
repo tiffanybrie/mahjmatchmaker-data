@@ -108,7 +108,7 @@ for c in A['mats']:
                 'code': code, 'src': c['img'], 'racks': TRACKS, 'mat_racks': mr, 'why': c['why'], 'fym': c.get('fym'), 'lowres': c.get('lowres'),
                 'caption_note': note, 'rack_notes': rnotes})
 json.dump({'_note': f'{KEY} album DRAFT (Nov 24)', 'cards': cards, 'max_racks': 4, 'tile_brand': 'Oh My Mahjong',
-           'navy': 'assets/brand/card_navy_logo_v3.png', 'true_len': False}, open(W + '/spec.json', 'w'))
+           'navy': 'assets/brand/card_navy_logo_v4.png', 'true_len': False}, open(W + '/spec.json', 'w'))
 json.dump({'set': CC['name'], 'status': "DRAFT: Claude's own picks, pending Tiffany's review", 'groups': A['groups'], 'cards': man,
            'title_color': CC['col'], 'tile': CC['tile'],
            'racks_note': 'tile racks = OMM Tortoise Shell + My Fair Indigo Blue (draft); mat racks = partner racks first, else nearest Bird & Bamboo'},

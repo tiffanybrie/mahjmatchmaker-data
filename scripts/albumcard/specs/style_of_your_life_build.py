@@ -50,7 +50,7 @@ for c in A['mats']:
                 'file': fn, 'code': CODE, 'src': c['img'], 'racks': TRACKS, 'mat_racks': mr, 'mat_reg': rk, 'why': c['why'],
                 'caption_note': 'Pair mat' if nm == 'Parquet Petal' else ('Also in Juniper' if c['group'] == 'shared' else None)})
 json.dump({'_note': 'Style of Your Life album DRAFT (Nov 7 round 1)', 'cards': cards, 'max_racks': 4, 'tile_brand': 'My Fair Mahjong',
-           'navy': 'assets/brand/card_navy_logo_v3.png', 'true_len': True}, open(W + '/spec.json', 'w'))
+           'navy': 'assets/brand/card_navy_logo_v4.png', 'true_len': True}, open(W + '/spec.json', 'w'))
 json.dump({'set': 'The Style of Your Life Series (Pearl Green)', 'brand': 'My Fair Mahjong', 'status': "DRAFT: round 1 = Claude's picks, pending her order",
            'cards': man, 'title_color': CC['col'], 'tile': CC['tile'],
            'racks_note': 'tile racks = colorcards style-of-your-life racks (My Fair Mahjong Indigo Blue + Magenta); mat racks = registry or matpick'},

@@ -70,7 +70,9 @@ def lum(h):
 tpl = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'card2.html')).read()
 logos = json.load(open(R + 'builder/logos/map.json'))
 BBLOGO = uri(R + 'builder/logos/' + logos['Bird & Bamboo'], 'PNG')
-NAVY = uri(R + spec.get('navy', 'assets/brand/card_navy_logo_v2.png'), 'PNG')  # Nov 6: spec 'navy' = another navy logo box (Juniper: current flame-heart wordmark)
+_nv = spec.get('navy', 'assets/brand/card_navy_logo_v4.png')
+if any(x in _nv for x in ('card_navy_logo.png', 'card_navy_logo_v2.png', 'card_navy_logo_v3.png')): sys.exit('REFUSED (Tiffany Nov 25 2:42am): the card logo box carries the unreadable ribbon tagline. Use assets/brand/card_navy_logo_v4.png (Find Your Mat-ch).')
+NAVY = uri(R + _nv, 'PNG')  # Nov 6: spec 'navy' = another navy logo box (Juniper: current flame-heart wordmark)
 # Nov 23 2026 (Tiffany): SUPERSEDED for new albums: 'I just want all the racks to just be lined up' = every rack the SAME width on the card (true_len False); rack length vs tile size is handled by which racks we recommend, not by drawing them shorter.
 # Nov 6 (Tiffany, Juniper round 3): spec 'true_len' -> every rack with a known length (config/rack-lengths.json) is drawn at its
 # REAL relative length: the rack body (trough, measured by rack_body.py) = inches / 18.5 x the old body length.
@@ -141,7 +143,8 @@ for c in spec['cards']:
             n = l[len('Bird & Bamboo '):]
             if l in dl or n in [x['name'] for x in chart] or n not in RK.BBHEX: continue
             chart.append({'name': n, 'hex': RK.BBHEX[n], 'light': lum(RK.BBHEX[n]) > 185})
-    data = {'title': c['title'], 'col': c['col'], 'mat': c.get('mat') or MAT, 'tile': (uri(R + c['tile_file'], 'PNG', maxs=900) if (c.get('tile_mode') == 'loose' or c['tile_file'] in LOOSE_FILES) else uri(R + c['tile_file'], q=92, maxs=(1800 if os.environ.get('SHOT_SCALE','1')!='1' else 900))) if not c['tile_file'].startswith('data:') else c['tile_file'], 'loose': c.get('tile_mode') == 'loose' or c['tile_file'] in LOOSE_FILES,
+    from shortname import short_title  # Nov 25 (Tiffany): long mat names shrank the title until unreadable
+    data = {'title': short_title(c['title']), 'col': c['col'], 'mat': c.get('mat') or MAT, 'tile': (uri(R + c['tile_file'], 'PNG', maxs=900) if (c.get('tile_mode') == 'loose' or c['tile_file'] in LOOSE_FILES) else uri(R + c['tile_file'], q=92, maxs=(1800 if os.environ.get('SHOT_SCALE','1')!='1' else 900))) if not c['tile_file'].startswith('data:') else c['tile_file'], 'loose': c.get('tile_mode') == 'loose' or c['tile_file'] in LOOSE_FILES,
             'racks': drawn, 'bb': chart[:3], 'mr': other[:3 if not chart else 2], 'bblogo': BBLOGO, 'navy': NAVY,
             'code': c.get('code', spec.get('code', '10% OFF  USE CODE : MAHJMATCH')), 'hol': c.get('hol', False), 'flame': c.get('flame'),
             'tlogo': tlogo(c.get('tile_brand', spec.get('tile_brand', 'Oh My Mahjong'))), 'true_len': bool(spec.get('true_len'))}

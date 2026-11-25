@@ -1,7 +1,7 @@
 {
  "brand": "Bam Bird Boutique",
  "status": "The jazz-age girl",
- "launch_line": "Sold out · restocking soon · Bam Bird Boutique",
+ "launch_line": "Preorder Thu 11/26 · Bam Bird Boutique",
  "rack_natural": true,
  "racks_hand": "both Bam Bird Boutique, same shape, picked for her",
  "launch_photos": {
@@ -11,8 +11,8 @@
  },
  "_note": "Deco (Indigo) Tile Set Profile (doc 81), DRAFT Nov 7 late, built by Claude (coordinator 11:38pm: Tiffany asked for the third colourway). Top 3: Peacock Garden, Savannah (both her Oct 27 Indigo pairings), Deco Dragon (Mulberry) = sister mat #3, never the Indigo Dragon. Racks Bam Bird Lagoon Wood + Mulberry Wood. Indigo sold out at Bam Bird Nov 7. best_features = Claude's 4 PROPOSALS. PRONOUN: ask Tiffany; 'her' is the draft default.",
  "key": "deco-indigo",
- "name": "Deco (Indigo)",
- "matches": 35,
+ "name": "Deco Indigo",
+ "matches": 52,
  "album": "https://www.mahjmatchmaker.com/deco-indigo-mahjong-tile-matches",
  "profile_line": [
   "Seeking: berry, teal or a little gold.",
@@ -184,26 +184,6 @@
  },
  "her_type": [
   {
-   "label": "Navy + olive green",
-   "mat": "Peacock Garden",
-   "brand": "Britt Mills",
-   "chips": [
-    "#16274a",
-    "#7b8a2c"
-   ],
-   "why": "Your October Indigo pick: a navy center that holds her backs, inside an olive frame and a blue-and-cream paisley border. Navy plus a second color."
-  },
-  {
-   "label": "Deep green + berry",
-   "mat": "Savannah",
-   "brand": "Britt Mills",
-   "chips": [
-    "#1d4a33",
-    "#d98fb6"
-   ],
-   "why": "You put Indigo on the green mat in October: deep green with pink and plum florals, so the navy backs have something to stand against."
-  },
-  {
    "label": "Her sister mat",
    "mat": "Deco Dragon (Mulberry)",
    "brand": "Bam Bird Boutique",
@@ -211,7 +191,27 @@
     "#6e1640",
     "#c9a24a"
    ],
-   "why": "Bam Bird Boutique made the Deco Dragon mats for these tiles. Indigo looks best on a sister color, Mulberry."
+   "why": "Bam Bird made the Deco Dragon mats for these tiles. Mulberry picks up her berry faces and lets the navy backs stand out."
+  },
+  {
+   "label": "Teal + gold",
+   "mat": "Deco Neoprene",
+   "brand": "Bam Bird Boutique",
+   "chips": [
+    "#1d6f73",
+    "#c9a24a"
+   ],
+   "why": "Deep teal with a gold deco border: her teal bams and gold palms, all the way around the table."
+  },
+  {
+   "label": "Her other sister",
+   "mat": "Deco Dragon (Lagoon)",
+   "brand": "Bam Bird Boutique",
+   "chips": [
+    "#16494d",
+    "#c9a24a"
+   ],
+   "why": "The Lagoon Deco Dragon: teal dragons and gold, so the indigo backs read crisp."
   }
  ],
  "dealbreaker": "Navy on navy and plain royal blue. Next to her deep indigo they just disappear. Give her berry, green or gold to play against.",
@@ -228,13 +228,13 @@
   }
  ],
  "first_dates": [
-  "Peacock Garden",
-  "Savannah",
-  "Deco Dragon (Mulberry)"
+  "Deco Dragon (Mulberry)",
+  "Deco Neoprene",
+  "Deco Dragon (Lagoon)"
  ],
  "bio": "Midnight and gold. Navy backs, a mulberry heart and a lion on the joker.",
  "best_features": {
-  "_status": "CLAUDE'S PROPOSAL, pending Tiffany's picks (never swap her picks later)",
+  "_status": "Her face picks from the Deco Indigo review page (round 2, Nov 25): green + red dragon, crane bam, navy iris, rose lion joker",
   "shop": "Shop Deco at Bam Bird Boutique",
   "top": [
    "The dragons",
@@ -267,10 +267,13 @@
    "mat": "Deco Dragon (Mulberry)",
    "brand": "Bam Bird Boutique",
    "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg",
-   "together": "assets/launches/bambird-deco-tile-set/13-deco-indigo-variant-photo.jpg",
+   "together": "assets/social/deco-indigo-launch/fym-table/deco-indigo-table-deco-dragon-mulberry.jpg",
    "together_fit": "cover",
-   "together_caption": "Indigo tiles in Bam Bird Boutique's own photo (Indigo / Lucite Display Box)",
-   "why": "Bam Bird Boutique made the Deco Dragon mats to go with these tiles. Indigo shines on a sister color: Mulberry or Lagoon, never navy on navy."
+   "together_caption": "Deco Indigo on Deco Dragon (Mulberry), in Find Your Mat-ch",
+   "why": "Bam Bird made the Deco Dragon mats to go with these tiles. Indigo shines on a sister color, never navy on navy.",
+   "circle": "assets/tiles/album/inset/deco-indigo-flowers.jpg",
+   "big": true,
+   "big_pos": "50% 50%"
   },
   "sisters": [],
   "strong_label": "Strong match potential"
@@ -293,5 +296,40 @@
   ],
   "round": 1,
   "_note": "Tiffany's face picks from the review page; rebuild best_features from these"
- }
+ },
+ "field": {
+  "_note": "Find Your Mat-ch Table-view renders (round 2 build, Nov 25), Deco Indigo + Bam Bird wood racks on Bam Bird mats.",
+  "mats": [
+   {
+    "img": "assets/social/deco-indigo-launch/fym-table/deco-indigo-table-deco-dragon-mulberry.jpg",
+    "mat": "Deco Dragon (Mulberry)",
+    "brand": "Bam Bird Boutique"
+   },
+   {
+    "img": "assets/social/deco-indigo-launch/fym-table/deco-indigo-table-deco-dragon-lagoon.jpg",
+    "mat": "Deco Dragon (Lagoon)",
+    "brand": "Bam Bird Boutique"
+   },
+   {
+    "img": "assets/social/deco-indigo-launch/fym-table/deco-indigo-table-deco-neoprene.jpg",
+    "mat": "Deco Neoprene",
+    "brand": "Bam Bird Boutique"
+   },
+   {
+    "img": "assets/social/deco-indigo-launch/fym-table/deco-indigo-table-navy.jpg",
+    "mat": "Vegan Leather Navy",
+    "brand": "Bam Bird Boutique"
+   }
+  ],
+  "sub": "Her Bam Bird Boutique matches"
+ },
+ "end_fan": [
+  "cover",
+  "bam-bird-boutique-deco-dragon-mulberry",
+  "bam-bird-boutique-deco-neoprene"
+ ],
+ "end_cta_html": "<div class=\"pill\" style=\"margin-top:22px;background:var(--pink)\">Comment ALBUM</div><div class=\"pf\" style=\"font-size:32px;margin-top:16px;color:#3c4f73\">or match her up yourself in Find <i>Your</i> Mat-ch&trade;</div>",
+ "racks_sub": "Pick up her berry or her teal, both in Bam Bird's own wood.",
+ "rack_gap": 58,
+ "racks_hand_framed": "all Bam Bird Boutique, all picked for her"
 }

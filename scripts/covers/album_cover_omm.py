@@ -13,7 +13,7 @@ bg, logo, lh, title, rgb, out = args[:6]
 # (no blur bands, no mirrored tiles). Everything sits 285px lower so the 4:5 grid crop matches the album cover.
 TALL = os.environ.get('TALL') == '1'; HH = 1920 if TALL else 1350; DY = 285 if TALL else 0
 pos = args[6] if len(args) > 6 else '50% 50%'
-BAR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tagbar.png')
+BAR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tagbar_fym.png')  # Nov 25 (Tiffany 2:42am): the ribbon tagline was unreadable; the bar reads Find Your Mat-ch
 fs = (96 if max(len(x) for x in title.split('<br>'))>10 else 112) if '<br>' in title else 124
 logo_html = f'<div class="tag"><img src="{os.path.abspath(logo)}"></div>' if tag else f'<img class="lg" src="{os.path.abspath(logo)}">'
 html = f'''<html><head><link href="file://{os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "assets", "fonts", "css", "mm-39787744.css"))}" rel="stylesheet"><style>

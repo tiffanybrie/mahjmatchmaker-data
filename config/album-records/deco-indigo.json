@@ -370,6 +370,107 @@
      "yolo-mahjong-crane-and-moon": "remove"
     }
    }
+  },
+  {
+   "round": 2,
+   "applied_at": "2026-11-25T03:00:20-05:00",
+   "changes": [
+    "Order updated (45 positions changed); new top 3: Gilded Peacock, Deco Dragon (Mulberry), Deco Neoprene",
+    "Taken out: Winter Jewel",
+    "Added from the catalog: Blue Blooms, Blue Stripes",
+    "Your note: “Holiday (chat 2:51-2:58am): keep Yuletide, Love and Light, Merrywood; add PLM Blue Blooms + Blue Stripes; Snowflake Reindeer Lodge last; Winter Jewel out.”"
+   ],
+   "anything": "Holiday (chat 2:51-2:58am): keep Yuletide, Love and Light, Merrywood; add PLM Blue Blooms + Blue Stripes; Snowflake Reindeer Lodge last; Winter Jewel out.",
+   "done": true,
+   "answers": {
+    "adds": [
+     {
+      "k": "peacelovemahjong.com/mahjong-mats-hanukkah?v=67570489557284",
+      "n": "Blue Blooms",
+      "b": "Peace Love Mahjong"
+     },
+     {
+      "k": "peacelovemahjong.com/mahjong-mats-hanukkah?v=67570489458980",
+      "n": "Blue Stripes",
+      "b": "Peace Love Mahjong"
+     }
+    ],
+    "anything": "Holiday (chat 2:51-2:58am): keep Yuletide, Love and Light, Merrywood; add PLM Blue Blooms + Blue Stripes; Snowflake Reindeer Lodge last; Winter Jewel out.",
+    "cover": 0,
+    "done": true,
+    "faces": [
+     "dragon-green",
+     "dragon-red",
+     "bam-1-crane",
+     "flower-iris-navy",
+     "joker-rose-lion"
+    ],
+    "finds": {},
+    "notes": {},
+    "order": {
+     "hol": [
+      "oh-my-mahjong-yuletide",
+      "peace-love-mahjong-love-and-light",
+      "britt-mills-merrywood",
+      "mahjong-register-snowflake-reindeer-lodge-double-sided-leatherette"
+     ],
+     "main": [
+      "bougie-mahjong-gilded-peacock",
+      "bam-bird-boutique-deco-dragon-mulberry",
+      "bam-bird-boutique-deco-neoprene",
+      "dreamframer-art-dark-blue-art-deco-gold-geometric-fans",
+      "oh-my-mahjong-soho",
+      "bam-bird-boutique-deco-dragon-lagoon",
+      "lets-be-besties-gatsby-glow",
+      "bam-bird-boutique-deco-dragon-indigo",
+      "britt-mills-tilly-neoprene",
+      "oh-my-mahjong-jade",
+      "lets-be-besties-the-mariner",
+      "oh-my-mahjong-hawthorne",
+      "bam-bird-boutique-vegan-leather-hunter-green",
+      "bespoke-mahjong-sapphire-blue-garden-mat",
+      "lets-be-besties-butterscotch-floral-simple-middle",
+      "bam-bird-boutique-vegan-leather-navy",
+      "oh-my-mahjong-elysium",
+      "britt-mills-flourish-neoprene",
+      "bespoke-mahjong-darjeeling-peacock-navy-floral",
+      "britt-mills-scarlett",
+      "mahj-and-vine-caroline-in-peacock",
+      "mahj-and-vine-caroline-in-navy",
+      "piper-chase-studios-tiger-fans",
+      "mahjong-register-pretty-in-plum-premium",
+      "amanda-toppe-city-queen",
+      "royal-mahjong-society-crown-jewels",
+      "my-fair-mahjong-garden-party-mulberry",
+      "britt-mills-peacock-garden",
+      "oh-my-mahjong-astor",
+      "oh-my-mahjong-vanderbilt",
+      "mahj-squad-the-speakeasy",
+      "soir-e-all-day-midnight-garden-club",
+      "britt-mills-calista-leatherette",
+      "bespoke-mahjong-darjeeling-peacock-mat-side-a-blue-scales",
+      "britt-mills-viola",
+      "britt-mills-wren",
+      "mahj-mood-fall-fling-mat",
+      "britt-mills-regal-bloom-neoprene",
+      "britt-mills-ruby",
+      "britt-mills-huntley-leatherette",
+      "britt-mills-dabney-leatherette",
+      "britt-mills-enchanted-leatherette",
+      "britt-mills-haven-leatherette",
+      "mahjong-register-peony-sociale-premium",
+      "that-mahjong-moment-evergreen",
+      "oh-my-mahjong-amethyst"
+     ]
+    },
+    "ordering_off": false,
+    "putin": [],
+    "round": 2,
+    "set": "deco-indigo",
+    "v": {
+     "lets-be-besties-winter-jewel": "remove"
+    }
+   }
   }
  ],
  "pool": {
