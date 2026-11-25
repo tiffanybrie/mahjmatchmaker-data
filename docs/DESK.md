@@ -114,7 +114,6 @@ Standing order: RESTOCK FIRST (rule c), then Google #1, then the newest docs/ANS
 | Mahjong by SI onboarding | Main (+ Ops) | Code-truth, page, hub, FYM, IG, newsletter. | Tue Nov 24 (slipped from Mon Nov 23) |
 | Mah Jongg Maven onboarding (page live; code-truth done tonight) | Ops / Main (was Matches & Catalog) | Hub logo, IG follow/favorite, FYM. | Tue Nov 24 (slipped from Mon Nov 23) |
 | FB group week (Thu table thread, Sat help-me-match) | Tiffany yes → Main (Chrome) | Thu passed with no yes (rolls to Thu Nov 19); Sat 9:30am on her yes (HQ Today #4). | Tue Nov 24 (slipped from Mon Nov 23) |
-| New arrivals carousel (Thu 11/12) | Tiffany yes → Main | Draft 01a1c214 in Planoly; schedule on yes. | Tue Nov 24 (slipped from Mon Nov 23) |
 | Work With v3 + Brands form | Main | HELD by her Nov 12 11:04am: revise after Brand Watch is fully set up (see top Main line), then show her. | Brand Watch done (target Mon Nov 23) |
 | Planoly roll-forward + story-caption fixes | Main (attended) | Sat night: 4 past-dated groups (8 posts) rolled forward to Sun 11/15 by caption stamp; story-caption fixes + the Wed reel FB caption still need an attended chat. | Tue Nov 24 (slipped from Mon Nov 23) |
 | ManyChat comment-for-links draft + trial reminder (OVERDUE) | Main (Chrome) | Low priority. | Tue Nov 24 (slipped from Mon Nov 23) |
@@ -160,7 +159,6 @@ Standing order: RESTOCK FIRST (rule c), then Google #1, then the newest docs/ANS
 - **Sadie Jane profile carousel: OK the full set** (sent 8:14pm, v7 after her notes) so Main can schedule it for Tue 9:30am. Owner Main. Date: Tue Nov 24 morning.
 - **/links + homepage: pick FYM showcase option A or B** (Table view + Close up; options shown as pictures, commit 1a2944d). Default if no answer by 8am Tue: option A. Owner Main. Date: Tue Nov 24.
 - **UpPromote Marketplace sign-in** (on HQ Today, since Sun morning) so the Money tab can read Sunday + Monday amounts. Owner Main reads after. Date: Tue Nov 24.
-- **New arrivals carousel yes** (HQ This week; Planoly draft 01a20a26 for Tue 11/24). Default: stays a draft. Owner Main.
 
 **New Sun Nov 22 night:**
 - **Planoly Instagram + Facebook Page: schedule the week of Nov 24?** 0 IG groups are scheduled for the next 7 days (rule d wants 4+). Nothing is scheduled by default (her Nov 19 words). One yes from her: OK for Main to schedule the Sadie Jane launch kit (Wed Nov 25) once its drafts are final and lint passes. Owner: Main. Date: Mon Nov 23.

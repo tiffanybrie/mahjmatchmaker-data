@@ -7,3 +7,12 @@
 
 ## HQ Now showed Claude's own jobs as "Needs you now" (Tiffany 7:53pm: "what does this have to do with me?")
 Miss: vip held 3 hand-offs waiting on the main chat (High Tide reply, Google 0-of-10 correction, Oct 26 traffic analysis) plus a finished Sadie Jane review. Why: whatever writes stale hand-offs into hq/now vip/ten had no rule that the item must be HERS; the page showed anything in the list. Fix: hq/now cleared; HQ page v90 has notHers(): a hand-off id, or anything "waiting on main/Duet/Claude", "main chat", "needs a laptop job", is never shown on Now, whoever writes it. The Claude jobs moved to OVERDUE.
+
+## Sadie Jane countdown story never reached her phone (Tiffany 8:05pm)
+Miss: the story was set as a Planoly reminder for 9:45am. She stopped using Planoly Nov 19, so the reminder went nowhere and nothing else told her. Why: hand-post items were still routed through Planoly reminders. Fix: every item she posts by hand gets a send_later wake at its time that sends the file + steps in chat AND a PushNotification (first: Sadie Jane reel, Wed 10:45am ET, trig_013KCwZZhk32AHjysd7GL8ca). Countdown story sent in chat 8:10pm. OVERDUE line: gate that refuses an hq/social 'needs-you' item with a time and no matching wake.
+
+## "New arrivals" post on her list (Tiffany 8:05pm: "When did we start doing those?")
+Miss: a weekly 'New this week' carousel from Claude's own Oct 28 social-system doc kept rolling forward on HQ for two weeks as a yes/no for her. She never asked for it. Fix: retired in docs/SOCIAL-SYSTEM.md, removed from HQ Social plan and DESK. Rule: a new recurring post type exists only after she says yes to the type.
+
+## Stale "Oh My Mahjong not named" on Now (Tiffany 8:04pm)
+Miss: the 10:25am read said the cloud didn't name OMM; the 2:20pm and 4:20pm checks named it 1st, and Now still showed the morning line. Why: the daily read was written once and never refreshed when new checks landed. Fix: read rewritten with the whole day; the new Google tab card (next) computes per-day counts live from every check, so the numbers can't go stale; the read gets a timestamp in its first line.

@@ -12,7 +12,7 @@ Social doesn't pay directly. It buys VISIBILITY in the mahj community so people 
 Content comes TOP DOWN from what already exists:
 1. **Album of the week** is the engine. Back to steady matching: one album a week. Her picks + card order ARE the taste decisions; Claude never re-picks.
 2. Each album yields a kit with no new taste calls: album cover reel (TEMPLATE), "It's a match" (her #1 card), profile, story frames, FB Page copy, Pinterest pins, and a "match up even more mats for <set> in Find Your Mat-ch" reel/frame. Holiday albums already made → build their kits now, not later.
-3. **Weekly drop-ins (templates):** mats of the week / new arrivals / partner restocks via Find Your Mat-ch.
+3. ~~Weekly drop-ins (mats of the week / new arrivals)~~ RETIRED Nov 24 (Tiffany 8:05pm: "What is a new arrivals post? When did we start doing those?"). Claude's Oct 28 idea, never approved by her; never put on HQ or her list again.
 4. **Reposts:** her "Save for repost" collection, 1-2 a day (morning + before leaving work), partners only, MAHJMATCH note where it works.
 5. Reels = templates fed by existing album images + match cards. No bespoke reel builds.
 
