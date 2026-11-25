@@ -1,0 +1,82 @@
+{
+ "run": "2026-11-24 20:37 ET Stories check",
+ "note": "Chrome signed in as @mahjmatchmaker. 12 handles: the 11 A_every_run brands plus Mahj Tile Haus (dated launch Tue 11/24). Stories open behind a 'View story' confirm; each frame read. One new find: Mahj Mood 'Upcoming restocks' frame, logged catalog-only (undated, LATER), no push.",
+ "handles_checked": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "missmahjongofficial",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "bird_and_bamboo",
+  "mahj_mood",
+  "minimahjer",
+  "charlestonmahjongclub",
+  "mahjtilehaus"
+ ],
+ "with_stories": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "bird_and_bamboo",
+  "mahj_mood",
+  "minimahjer",
+  "charlestonmahjongclub",
+  "mahjtilehaus"
+ ],
+ "frames_read": 62,
+ "finds": [
+  {
+   "brand": "Mahj Mood",
+   "item": "Upcoming restocks: Palm Beach Green + Chocolate Brown wooden racks (2-4 wks), Amethyst Luxe racks (3-4 wks), Spring Fling + Mahj in Bloom mats (3-4 wks)",
+   "kind": "restock announcement",
+   "action": "Sheet row appended (NOT POSTED); curated coming_soon (LATER); frame saved to assets/launches/mahj-mood-upcoming-restocks-nov24/; page rebuilt, published v57, published.json stamped."
+  }
+ ],
+ "seen_not_logged": [
+  {
+   "brand": "Oh My Mahjong",
+   "item": "Sadie Jane colour pairings, Oasis/Starling Mon 11/30 10am CT, Sneak a peek tomorrow, Black Friday tiers (15/20/25% + tote) Wed-Mon, Play Mahjong app promo",
+   "why_not_a_find": "all already in curated"
+  },
+  {
+   "brand": "Mahj Tile Haus",
+   "item": "Rosemary Beach launch event Tue 11/24",
+   "why_not_a_find": "already in curated"
+  },
+  {
+   "brand": "Mahj Mood",
+   "item": "Wed 11/25 free travel mat with White Pearl travel tiles; Color Splash + Baby Blue racks sale",
+   "why_not_a_find": "BF week deals already in curated sales"
+  },
+  {
+   "brand": "Peace Love Mahjong / Charleston Mahjong Club",
+   "item": "Black Friday sale frames",
+   "why_not_a_find": "already in curated sales"
+  },
+  {
+   "brand": "Bam Bird Boutique",
+   "item": "Open Play Mon 12/14 6pm event, brand-education frames, gift card guess",
+   "why_not_a_find": "event/no product news"
+  },
+  {
+   "brand": "Bird & Bamboo",
+   "item": "Black Fri-yay giveaway",
+   "why_not_a_find": "giveaway"
+  },
+  {
+   "brand": "My Fair, Bespoke, Anders Ruff, Mini Mahjer",
+   "item": "store hours, customer reposts, holiday teasers",
+   "why_not_a_find": "no product news"
+  },
+  {
+   "brand": "Miss Mahjong",
+   "item": "no active story",
+   "why_not_a_find": "n/a"
+  }
+ ]
+}
