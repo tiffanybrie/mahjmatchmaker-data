@@ -3,6 +3,22 @@
  "week_label": "Week of Sun Nov 22 – Sat Nov 28",
  "this_week": [
   {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-25T09:40",
+   "day": "Thu 11/26",
+   "date": "2026-11-26",
+   "brand": "Bam Bird Boutique",
+   "new": true,
+   "what": "Deco Indigo goes on sale Thursday 11/26 as a very short preorder. Orders are expected to ship Dec 10-15.",
+   "tag": "tiles",
+   "buy": "https://www.bambirdboutique.com",
+   "url": "https://www.bambirdboutique.com",
+   "source": "IG reel Tue 11/24 7:09pm ET",
+   "source_link": "https://www.instagram.com/reel/DgJNALCRrDM/",
+   "source_kind": "social"
+  },
+  {
    "date": "2026-11-18",
    "brand": "Miss Mahjong",
    "partner": true,
@@ -881,6 +897,21 @@
   }
  ],
  "just_dropped": [
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-25T09:40",
+   "day": "Wed 11/25",
+   "date": "2026-11-25",
+   "brand": "Virora",
+   "restock": true,
+   "what": "Lilacée Yellow is back in stock.",
+   "tag": "tiles",
+   "buy": "https://www.viroramahjong.com/?ref=Mahjmatchmaker",
+   "url": "https://www.viroramahjong.com",
+   "source": "brand email Wed 11/25 1:48am ET",
+   "source_kind": "email"
+  },
   {
    "partner": true,
    "urgency": "NOW",
@@ -2934,6 +2965,21 @@
    "nocode": true,
    "affiliate_terms": "Bespoke affiliate terms: codes may not combine and sale items may earn no commission.",
    "order": 90
+  },
+  {
+   "brand": "Virora",
+   "what": "20% off Lilacée Yellow and the new Florielle set, starting Wed 11/25 at 5pm PT. Can't be combined with other codes.",
+   "partner": true,
+   "approved": null,
+   "hidden": true,
+   "source": "brand email Wed 11/25 1:48am ET",
+   "source_kind": "email",
+   "day": "Wed 11/25 5pm PT",
+   "date": "2026-11-25",
+   "found": "2026-11-25T09:40",
+   "nocode": true,
+   "tag": "sale",
+   "buy": "https://www.viroramahjong.com/?ref=Mahjmatchmaker"
   }
  ],
  "nonpartners": [
@@ -3035,7 +3081,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-24T20:45",
+ "updated": "2026-11-25T09:40",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",

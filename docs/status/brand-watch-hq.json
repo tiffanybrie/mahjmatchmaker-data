@@ -3,6 +3,22 @@
  "this_week": [
   {
    "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-25T09:40",
+   "day": "Thu 11/26",
+   "date": "2026-11-26",
+   "brand": "Bam Bird Boutique",
+   "new": true,
+   "what": "Deco Indigo goes on sale Thursday 11/26 as a very short preorder. Orders are expected to ship Dec 10-15.",
+   "tag": "tiles",
+   "buy": "https://www.bambirdboutique.com",
+   "url": "https://www.bambirdboutique.com",
+   "source": "IG reel Tue 11/24 7:09pm ET",
+   "source_link": "https://www.instagram.com/reel/DgJNALCRrDM/",
+   "source_kind": "social"
+  },
+  {
+   "partner": true,
    "urgency": "SOON",
    "found": "2026-11-18T13:45",
    "day": "Wed 11/25",
@@ -368,9 +384,39 @@
    "buy": "https://www.ohmymahjong.com/products/starling-mat-in-tube",
    "url": "https://www.ohmymahjong.com/products/starling-mat-in-tube",
    "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/oasis-ultimate-starter-kit-9268281.jpg?v=1795512434"
+  },
+  {
+   "date": "",
+   "brand": "Mahj Mood",
+   "partner": true,
+   "what": "Highly requested restocks are coming: Palm Beach Green and Chocolate Brown wooden racks in 2 to 4 weeks, and Amethyst Luxe racks plus the Spring Fling and Mahj in Bloom mats in 3 to 4 weeks. No exact dates yet.",
+   "tag": "racks + mats",
+   "restock": true,
+   "urgency": "LATER",
+   "url": "https://mahjmood.com",
+   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/mahj-mood-upcoming-restocks-nov24/mahj-mood-upcoming-restocks-ig-story-nov24.jpg",
+   "found": "2026-11-24T20:45",
+   "source": "IG story",
+   "source_kind": "social",
+   "source_link": "https://www.instagram.com/stories/mahj_mood/"
   }
  ],
  "just_dropped": [
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-25T09:40",
+   "day": "Wed 11/25",
+   "date": "2026-11-25",
+   "brand": "Virora",
+   "restock": true,
+   "what": "Lilacée Yellow is back in stock.",
+   "tag": "tiles",
+   "buy": "https://www.viroramahjong.com/?ref=Mahjmatchmaker",
+   "url": "https://www.viroramahjong.com",
+   "source": "brand email Wed 11/25 1:48am ET",
+   "source_kind": "email"
+  },
   {
    "partner": true,
    "urgency": "NOW",
@@ -831,81 +877,6 @@
    "source_link": "https://www.instagram.com/stories/mahj_mood/"
   },
   {
-   "partner": true,
-   "urgency": "NOW",
-   "found": "2026-11-17T13:35",
-   "day": "Tue 11/17",
-   "date": "2026-11-17",
-   "brand": "Bam Bird Boutique",
-   "what": "NEW pre-orders open for two collections: The Grandmillennial Collection and The Heritage Collection.",
-   "tag": "tiles",
-   "new": true,
-   "buy": "https://www.bambirdboutique.com",
-   "url": "https://www.bambirdboutique.com",
-   "source": "brand email Tue 11/17 11:06am ET",
-   "source_kind": "email"
-  },
-  {
-   "partner": true,
-   "urgency": "NOW",
-   "found": "2026-11-17T13:35",
-   "day": "Tue 11/17",
-   "date": "2026-11-17",
-   "brand": "Miss Mahjong",
-   "what": "Lasso mat is back in stock.",
-   "tag": "mat",
-   "restock": true,
-   "buy": "https://missmahjong.com/products/miss-cowgirl-lasso-mahjong-mat",
-   "url": "https://missmahjong.com/products/miss-cowgirl-lasso-mahjong-mat",
-   "source": "store",
-   "source_kind": "store"
-  },
-  {
-   "partner": true,
-   "urgency": "NOW",
-   "found": "2026-11-17T13:35",
-   "day": "Tue 11/17",
-   "date": "2026-11-17",
-   "brand": "Bespoke Mahjong",
-   "what": "NEW pink colorways: Year of the Horse (Saddle Pink), Springtime Safari (Petal Pink and Wild Pink) tiles, and The Ultimate Rack in Highlighter Pink.",
-   "tag": "tiles",
-   "new": true,
-   "buy": "https://www.bespokemahjong.com/products/springtimesafaripetalpink",
-   "url": "https://www.bespokemahjong.com/products/springtimesafaripetalpink",
-   "source": "store",
-   "source_kind": "store"
-  },
-  {
-   "partner": true,
-   "urgency": "NOW",
-   "found": "2026-11-17T13:35",
-   "day": "Tue 11/17",
-   "date": "2026-11-17",
-   "brand": "Hip Hip Mahjong",
-   "what": "NEW Freedom Isn't Free mat.",
-   "tag": "mat",
-   "new": true,
-   "buy": "https://www.hiphipmahjong.com/products/freedom-isnt-free-mahjong-mat",
-   "url": "https://www.hiphipmahjong.com/products/freedom-isnt-free-mahjong-mat",
-   "source": "store",
-   "source_kind": "store"
-  },
-  {
-   "partner": true,
-   "urgency": "NOW",
-   "found": "2026-11-17T13:35",
-   "day": "Tue 11/17",
-   "date": "2026-11-17",
-   "brand": "Mahjong by SI",
-   "what": "The Hunt Club, a forest-green tartan design with cognac details, was introduced. See their site for the pieces.",
-   "tag": "mat",
-   "new": true,
-   "buy": "https://www.mahjongbysi.com",
-   "url": "https://www.instagram.com/p/Df2hkM2jtGi/",
-   "source": "IG post Tue 11/17 1pm ET",
-   "source_kind": "social"
-  },
-  {
    "date": "2026-11-19",
    "day": "Thu 11/19",
    "brand": "Virora",
@@ -989,18 +960,6 @@
    "day": "Sun 11/22",
    "time": "LIVE now",
    "history": []
-  },
-  {
-   "brand": "Middle & Main",
-   "partner": true,
-   "what": "Summit to Sea ($325), a new tile set, is on their store now.",
-   "tag": "tiles",
-   "url": "https://www.instagram.com/reel/DfcJsTxyEiw/",
-   "urgency": "NOW",
-   "img": "https://www.middleandmainmahjong.com/cdn/shop/files/Untitled_design_1.png?v=1736279896&width=1200",
-   "date": "2026-11-17",
-   "day": "Tue 11/17",
-   "found": "2026-11-17T12:00"
   }
  ],
  "sales": [
@@ -1407,29 +1366,6 @@
  ],
  "nonpartners": [
   {
-   "date": "2026-11-24",
-   "day": "Tue 11/24",
-   "time": "LIVE since 1pm ET",
-   "brand": "Mahj Tile Haus",
-   "partner": false,
-   "what": "Rosemary Beach Tiles + Mat bundle and Coral & Coast Holiday Bundle are live now (launched Tue 11/24 at 1pm ET), with the 45-piece Holiday Supplement tiles.",
-   "tag": "tiles",
-   "urgency": "NOW",
-   "buy": "https://www.mahjtilehaus.com/products/rosemary-beach-tiles-mat-bundle",
-   "url": "https://www.mahjtilehaus.com/products/coral-coast-holiday-bundle",
-   "source": "email + store feed",
-   "source_kind": "email",
-   "found": "2026-11-24T13:35",
-   "order": 50,
-   "hidden": true,
-   "history": [
-    {
-     "found": "2026-11-23T09:50",
-     "what": "Rosemary Beach Tiles + Mat bundle and Coral & Coast Holiday Bundle launch Tue 11/24 at 1pm ET. Product pages are published but not purchasable yet."
-    }
-   ]
-  },
-  {
    "date": "2026-11-23",
    "day": "Mon 11/23",
    "time": "Live now",
@@ -1546,7 +1482,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-24T18:36",
+ "updated": "2026-11-25T09:40",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",
@@ -1887,7 +1823,7 @@
   "Bougie Mahjong",
   "Piper Chase Studios"
  ],
- "updatedAt": "2026-11-25T01:43:48+00:00",
+ "updatedAt": "2026-11-25T14:28:22+00:00",
  "sources": {
   "store_run": "2026-11-24T23:24:13+00:00",
   "ig_run": "2026-11-24T23:26:56.395720+00:00"
