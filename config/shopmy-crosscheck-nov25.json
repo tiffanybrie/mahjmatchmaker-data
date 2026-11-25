@@ -61,10 +61,9 @@
    "mats": 14,
    "in_gallery": 11,
    "in_fym": 11,
-   "fym_hidden": 1,
-   "ok": 10,
-   "skip": 3,
-   "ok-hidden": 1
+   "fym_hidden": 0,
+   "ok": 11,
+   "skip": 3
   },
   "Collab Mats": {
    "mats": 1,
@@ -281,8 +280,8 @@
   {
    "collection": "More Mahjong Mats",
    "brand": "Case-Mate",
-   "name": "Classic Tortoiseshell",
-   "fym_key": "case-mate.com/mahjong-mats?v=67665869209736"
+   "name": "Classic Cabana Stripe",
+   "fym_key": "case-mate.com/mahjong-mats?v=67665869406344"
   },
   {
    "collection": "More Mahjong Mats",
@@ -3197,7 +3196,7 @@
    "collection_id": 8398013,
    "private": false,
    "pin_id": 95958610,
-   "name": "The Hunt Club Mat",
+   "name": "The Hunt Club",
    "brand": "Charleston Mahjong Club",
    "shopmy_title": "CHARLESTON MAHJONG CLUB | Pre Order The Hunt Club Neoprene Mat Toile With Carrying Bag",
    "shopmy_link": "https://go.shopmy.us/p-95958610",
@@ -3206,14 +3205,14 @@
    "gallery_img": "charleston-mahjong-club--the-hunt-club",
    "gallery_held": null,
    "in_fym": true,
-   "fym_key": "www.charlestonmahjongclub.com/the-hunt-club-neoprene-mat-toile-w-carrying-bag",
-   "fym_hidden": true,
-   "fym_hidden_reason": "hidden in build (no photo flag entry)",
+   "fym_key": "charlestonmahjongclub.com/the-hunt-club-neoprene-mat-toile-w-carrying-bag",
+   "fym_hidden": false,
+   "fym_hidden_reason": "",
    "staged": null,
    "skip": null,
    "match": "id",
    "amazon": false,
-   "status": "ok-hidden"
+   "status": "ok"
   },
   {
    "collection": "Charleston Mahjong Club",
@@ -5273,7 +5272,7 @@
    "collection_id": 8478595,
    "private": true,
    "pin_id": 96620523,
-   "name": "Classic Tortoiseshell",
+   "name": "Classic Cabana Stripe",
    "brand": "Case-Mate",
    "shopmy_title": "CASE-MATE | Mahjong Mat",
    "shopmy_link": "https://go.shopmy.us/p-96620523",
@@ -5282,7 +5281,7 @@
    "gallery_img": null,
    "gallery_held": null,
    "in_fym": true,
-   "fym_key": "case-mate.com/mahjong-mats?v=67665869209736",
+   "fym_key": "case-mate.com/mahjong-mats?v=67665869406344",
    "fym_hidden": false,
    "fym_hidden_reason": "",
    "staged": "fym-shopmy-nov07.json",
