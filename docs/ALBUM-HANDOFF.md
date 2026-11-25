@@ -109,6 +109,7 @@ The Playbook steps are in brackets. Code-enforced steps name their check.
 - Claude looks at every candidate next to the tiles.
 - Cuts go on the Left out list (in the record's `leftout`), each with a reason [T Oct 24].
 - Big catalogs (Let's Be Besties, YOLO, Bougie): put only the best few in the album. The rest go in a collapsed "More from <brand>" list [T Nov 7–8]. Bougie is used only through her picks [T].
+- STANDING CAP: a Let's Be Besties mats album holds at most 6 mats; a bigger set is split into albums of 6 [T Nov 24 8:03pm, answer "6" on HQ card 'Max Let's Be Besties mats in one album?'].
 - Never in an album: Mahjong Studios mats, Mahjong Row (a removed partner), Paige Spearin x Tigre de Tartán in Holiday [T].
 - A non-partner mat that truly matches goes in ("if it matches, it matches"). Partners don't score higher, but prefer a partner in the top 3 when it's close [T Nov 8].
 - **Tonal rule** [T Nov 17]: navy-on-navy (tonal) is allowed. Diversify beyond tonal, but never ignore it, especially the brand's own pair mat.
