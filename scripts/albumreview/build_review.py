@@ -102,7 +102,7 @@ lo_all = _shown
 for n, m in enumerate(lo_all):
     i = f"lo-{slug(m['brand'])}-{slug(m['name'])}"
     put(f'lo/{i}.jpg', src=m['img'], maxs=900, q=82)
-    leftout.append({'id': i, 'name': m['name'], 'brand': m['brand'], 'why': m['why'], 'retired': m.get('retired', False), 'hol': bool(m.get('holiday')), 'more': m.get('more_from')})
+    leftout.append({'id': i, 'name': m['name'], 'brand': m['brand'], 'why': m['why'], 'retired': m.get('retired', False), 'hol': bool(m.get('holiday')), 'more': None})  # Nov 24 (Tiffany): never a 'More from <brand>' group
 # ---- new finds (Playbook step 3b discovery): mats not in our catalog, Bring it in / Skip
 disc = rec.get('discovery') or {}
 finds = []

@@ -140,8 +140,9 @@ def check(s):
     _bc = J('config/album-big-catalogs.json', {}) or {}
     _max, _ok = _bc.get('max_per_album', 4), set(rec.get('her_picks_ok') or [])
     for _b in _bc.get('brands', ["Let's Be Besties", 'YOLO Mahjong', 'Bougie Mahjong']):
+        _mx = (_bc.get('max_by_brand') or {}).get(_b, _max)
         _n = [m['name'] for m in spec.get('mats', []) if m.get('brand') == _b and m.get('group') != 'holiday' and not m.get('holiday') and m['name'] not in _ok]
-        if len(_n) > _max: bad.append(f"[5b] {len(_n)} {_b} mats in the album (max {_max}; her picks in record her_picks_ok don't count): move the weakest to the left-out list with more_from: " + ', '.join(_n))
+        if len(_n) > _mx: bad.append(f"[5b] {len(_n)} {_b} mats in the album (max {_mx}; her picks in record her_picks_ok don't count): take the weakest out (no 'More from' section, Tiffany Nov 24): " + ', '.join(_n))
     _bg = [m['name'] for m in spec.get('mats', []) if m.get('brand') in _bc.get('her_picks_only', ['Bougie Mahjong']) and m['name'] not in _ok]
     if _bg: bad.append('[5b] Bougie Mahjong only through her picks; not on record her_picks_ok: ' + ', '.join(_bg))
     nh = sum(1 for m in spec.get('mats', []) if m.get('holiday'))
