@@ -3,7 +3,12 @@
  "slots": {
   "deco-lagoon": "2026-11-08",
   "juniper": "2026-11-09",
-  "cmc-cabana-apres-ski": "2026-12-07"
+  "cmc-cabana-apres-ski": "2026-12-07",
+  "deco-indigo": "2026-11-26",
+  "deco-mulberry": "2026-11-26"
  },
- "_note": "Deco Lagoon (Nov 8) and Juniper (album live ~Nov 7-9) both went live in the week of Nov 9 by mistake: grandfathered. From here on, one per week."
+ "_note": "Deco Lagoon (Nov 8) and Juniper (album live ~Nov 7-9) both went live in the week of Nov 9 by mistake: grandfathered. From here on, one per week.",
+ "overrides": {
+  "2026-11-26": "Tiffany Nov 24 8:24-8:26pm: Deco Indigo + Mulberry launch together Thu 11/26 with Bam Bird's Indigo preorder (same week as Sadie Jane, her call). Beaumont + Oasis move to next week (OMM's Black Friday sale locks our code out on tile sets)."
+ }
 }
