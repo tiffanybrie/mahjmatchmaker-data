@@ -19,3 +19,6 @@ Miss: the 10:25am read said the cloud didn't name OMM; the 2:20pm and 4:20pm che
 
 ## Google tab unreadable, undated, counted blocked checks as misses (Tiffany 8:02pm)
 Fix: HQ v91-92: new top card computed live from every signed-out check: dated header (as-of time), every check today and yesterday on its own line (blocked = 'not checked'), per brand Today/Yesterday 'N of M', latest answered check with place, codes, sources and our regular-results spot, 'one look' flag, Black Friday per brand (hq/bfcm), Claude's read underneath. notChecked() now treats 'can't generate' / unusual traffic / captcha as not checked everywhere (the old OMM '1 of 6' counted them as misses). Old scorecard folded. FYM tab: status card on top (hq/fymStatus), catalog folded.
+
+## FYM status written from the live version, not the rebuild we were working on (Tiffany 8:19pm)
+Miss: hq/fymStatus said '1.22.16 live, next 1.22.17' and ignored the round 2 Table view rebuild (r2a-r2v, Nov 23-24, preview page). Why: I read live.json and partner_coverage instead of the last 24h of git log and ANSWERS for FYM. Fix: hq/fymStatus rewritten around r2 (preview r2v -> live Thu 11/26 with Beaumont); the release wake now builds from the r2 preview. Rule: before stating where any project is, read the last 48h of git log + ANSWERS for it.
