@@ -86,8 +86,8 @@ def build(img,tgt):
 <div class="code"><div><small>Partner brand discount</small><b>MAHJMATCH</b></div><button type="button" onclick="(navigator.clipboard?navigator.clipboard.writeText('MAHJMATCH'):Promise.reject()).then(()=>{{this.textContent='Copied ✓'}}).catch(()=>{{this.textContent='MAHJMATCH'}})">Copy code</button></div>
 <a class="where" href="{S}/mahjong-discount-codes"{tgt(S)}>See all our partner brands ›</a>
 <a class="where" href="{S}/mahjong-mats"{tgt(S)}>Browse every mat by color in the Mat Gallery ›</a>
-<a class="nw sm" href="https://shopmy.us/shop/mahjmatchmaker" target="_blank" rel="noopener sponsored"><img src="{img('v2/shopmy-finds.jpg')}" alt="Mahjong tables, tablecloths and lamps I love on ShopMy" width="448" height="246"><div><b>Shop My Finds<small>Tables, tablecloths, lamps &amp; more I love · on ShopMy</small></b><span style="font-size:26px">›</span></div></a>
 <a class="feat" href="{S}/holiday-mahjong-matches"{tgt(S)}><div class="hol">{hol}</div><div><b>Holiday Matches 🎄<small>Christmas tiles, mats &amp; racks, matched</small></b><span style="font-size:26px">›</span></div></a>
+<a class="nw sm" href="https://shopmy.us/shop/mahjmatchmaker" target="_blank" rel="noopener sponsored"><img src="{img('v2/shopmy-finds.jpg')}" alt="Mahjong tables, tablecloths and lamps I love on ShopMy" width="448" height="246"><div><b>Shop My Finds<small>Tables, tablecloths, lamps &amp; more I love · on ShopMy</small></b><span style="font-size:26px">›</span></div></a>
 <h2>Tile album matches</h2>
 <!-- newest live albums first (see pop.json / build script comment) -->
 <div class="row">{strip}</div>
