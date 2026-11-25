@@ -25,3 +25,8 @@ Miss: hq/fymStatus said '1.22.16 live, next 1.22.17' and ignored the round 2 Tab
 
 ## Miss Mahjong had no Black Friday line at all (Tiffany 8:21pm: "an absolute top brand")
 Miss: hq/bfcm (built from Brand Watch) only lists brands that announced something; a top brand with no announcement had no row, so 'nothing known' looked like 'nothing going on'. Checked 8:30pm: site banner (cards only), IG (last post Nov 13), emails (last Nov 18) = nothing announced; Google cites a creator reel from LAST year's Black Friday saying 20% off the entire site. Orders through us: steady to Sat 11/21, none Sun-Tue. Fix: Miss Mahjong row added; rule: every top-10 brand always has a Black Friday row (even 'nothing announced, checked <date>'), and a top-10 brand named by Google with 0 orders 2 days running gets an investigation line in the daily read.
+
+## HQ Albums / Brand Watch / FYM links (fixed Nov 24 8:45pm)
+- Miss: Albums tab was a grouped menu with ↑ ↓ Top she can't answer; Brand Watch led with Mahj Tile Haus (non-partner written with partner:true, hidden:true, and the page ignored `hidden`); FYM Docs & Links still said 1.16/1.17.
+- Why: the Brand Watch builder trusted each item's partner flag; the page never filtered hidden; the links doc had no owner refreshing version text.
+- Fix (mechanical): scripts/watch/brand_watch_hq.py moves any brand on config/watch-major-nonpartners.json that is not on code-truth/partners-pipeline into `nonpartners`, drops hidden items from top lists, writes `np_brands`; HQ page (v94) folds np_brands + hidden the same way. Albums tab renders hq/albums `rows` (album · needs you / Claude's job · date) and folds Later + Live; docs/HQ-CLEANUP.md now has the morning cleanup refresh `rows`. FYM link note carries no version number.

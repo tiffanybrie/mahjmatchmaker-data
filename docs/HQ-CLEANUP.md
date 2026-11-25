@@ -156,3 +156,5 @@ The Nov 7 rewrite deleted "| Fait à Main code | Main | MAHJMATCH still not appl
 
 ## HQ layout (Tiffany Nov 12 10:48-10:50am, v59)
 Tabs in her order: **Now** (always opens first) → Money → Google → Affiliates → Brand Watch → Albums → Social → Find Your Match → ShopMy → SEO → Launch → Partner feedback → My notes → Done → Parking lot. The old "Needs you" tab is gone: everything that needs her is the FIRST thing on Now, money items (needs/amounts-*, screenshots, commission) always on top, then red / yellow / green. "Don't make me check every tab." Never add a tab that holds her to-dos anywhere but Now.
+
+- Albums tab (Nov 24): hq/albums `rows` [{name, you, need, date, link}] + `later` [names] drive the Albums tab. Refresh them every morning from album-launch-slots + hq/now albumFocus; a row whose date passed is updated or removed. No groups, no ordering buttons.

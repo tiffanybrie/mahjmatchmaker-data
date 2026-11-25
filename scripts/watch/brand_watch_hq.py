@@ -79,9 +79,24 @@ for sec in ('this_week','coming_soon','just_dropped','sales'):
             except Exception: pass
         (buried if BURY.search(x.get('brand','') or '') else keep).append(x)
     out[sec] = keep
-out['nonpartners'] = [{k: v for k, v in x.items() if k != 'action'} for x in out.get('nonpartners', []) or []]
+# Tiffany Nov 24 8:02pm: a non-partner (Mahj Tile Haus) led the tab. A brand on the watch-major-nonpartners list
+# that is NOT on the partner list (code-truth + partners-pipeline) never sits in a partner section, whatever its
+# partner flag says: it moves to 'nonpartners' (folded at the bottom of the tab). Hidden items leave the top lists.
+_pl = (json.dumps(json.load(open(R/'config/code-truth.json'))) + json.dumps(json.load(open(R/'config/partners-pipeline.json')))).lower()
+_np = [b['brand'] for b in json.load(open(R/'config/watch-major-nonpartners.json'))['brands'] if re.sub(r' mahj(ong)?g?$','',b['brand'].lower()) not in _pl]  # 'Sweet Jojo Mahjong' is the partner 'Sweet Jojo': never fold a partner
+def _isnp(x): return any(n.lower() in (x.get('brand') or '').lower() for n in _np)
+_moved = []
+for sec in ('this_week','coming_soon','just_dropped','sales'):
+    keep = []
+    for x in out.get(sec, []) or []:
+        if _isnp(x): _moved.append(dict(x, partner=False))
+        elif not x.get('hidden'): keep.append(x)
+    out[sec] = keep
+out['nonpartners'] = [{k: v for k, v in x.items() if k != 'action'} for x in _moved + (out.get('nonpartners', []) or [])]
+auto = [dict(a, partner=False) if _isnp(a) else a for a in auto]; auto.sort(key=lambda a: not a['partner'])
 auto = [a for a in auto if not BURY.search(a.get('brand','') or '')] + [a for a in auto if BURY.search(a.get('brand','') or '')]
 out['auto'] = [a for a in auto if not BURY.search(a.get('brand','') or '')][:25] + [dict(b, kind=b.get('tag','')) for b in buried] + [a for a in auto if BURY.search(a.get('brand','') or '')]
+out['np_brands'] = _np  # the HQ page also folds these (belt and braces)
 out['updatedAt'] = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')
 out['sources'] = {'store_run': launch.get('run_at'), 'ig_run': watch.get('run_at')}
 p = R/'docs/status/brand-watch-hq.json'
