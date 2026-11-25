@@ -900,6 +900,73 @@
   {
    "partner": true,
    "urgency": "NOW",
+   "found": "2026-11-25T13:24",
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "LIVE now",
+   "brand": "Noli June",
+   "what": "New on their site: Parisian Tile Set.",
+   "tag": "tiles",
+   "new": true,
+   "buy": "https://nolijune.com/products/parisian-mahjong-tile-set",
+   "url": "https://nolijune.com/products/parisian-mahjong-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/1035/9898/1201/files/parisian-mahjong-tile-set-726.webp?v=1795567701",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "parisian-mahjong-tile-set"
+   ]
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-25T13:24",
+   "date": "2026-11-25",
+   "day": "Wed 11/25",
+   "time": "LIVE now",
+   "brand": "Brewtifully",
+   "what": "New mat: Island Breeze, a Brewtifully mat collaboration.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://shop.brewtifully.com/products/brewtifully-affiliate-mahj-mat-collaboration-island-breeze",
+   "url": "https://shop.brewtifully.com/products/brewtifully-affiliate-mahj-mat-collaboration-island-breeze",
+   "img": "https://cdn.shopify.com/s/files/1/0558/4850/1302/files/IMG_2752.jpg?v=1794626162",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "brewtifully-affiliate-mahj-mat-collaboration-island-breeze"
+   ]
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-25T13:24",
+   "date": "2026-11-25",
+   "day": "Wed 11/25",
+   "time": "LIVE now",
+   "brand": "Mahjong by SI",
+   "what": "New mats on their site: Apricot Hour Mat, The Posy Parlor Mat, Coastal Craks Mat, Dear Dot Mat, and 1 more.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://www.mahjongbysi.com/products/apricot-hour-mahjong-mat",
+   "url": "https://www.mahjongbysi.com/products/apricot-hour-mahjong-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_b03f725d-f39a-4346-86a9-def4e7e5e238.png?v=1795153432",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "apricot-hour-mahjong-mat",
+    "the-posy-parlor-mahjong-mat",
+    "coastal-craks-mahjong-mat",
+    "dear-dot-mahjong-mat",
+    "lemon-grove-social-mahjong-mat"
+   ]
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
    "found": "2026-11-25T09:40",
    "day": "Wed 11/25",
    "date": "2026-11-25",
@@ -2980,6 +3047,60 @@
    "nocode": true,
    "tag": "sale",
    "buy": "https://www.viroramahjong.com/?ref=Mahjmatchmaker"
+  },
+  {
+   "date": "2026-11-27",
+   "day": "Fri 11/27",
+   "time": "Fri 11/27 to Mon 11/30",
+   "brand": "Anders Ruff",
+   "partner": true,
+   "what": "Black Friday weekend: 30% off all Christmas mats, buy a tile set and get a mat free, mat caddy and solo mat deals.",
+   "tag": "sale",
+   "bf": true,
+   "approved": true,
+   "hidden": false,
+   "nocode": true,
+   "urgency": "SOON",
+   "ends": "2026-11-30",
+   "buy": "https://shop.andersruff.com/collections/mahjong",
+   "url": "https://shop.andersruff.com/collections/mahjong",
+   "source": "affiliate email Nov 25",
+   "source_kind": "email",
+   "affiliate_terms": "Anders Ruff BF guide email Nov 25: deals use their own codes; stacking with MAHJMATCH not stated.",
+   "save_note": "Use the codes in their email; shop through our link.",
+   "found": "2026-11-25T13:45"
+  },
+  {
+   "date": "2026-11-27",
+   "day": "Fri 11/27",
+   "brand": "Let's Be Besties",
+   "partner": true,
+   "what": "Black Friday: 20% off all mats, Nov 27 to Dec 2.",
+   "tag": "sale",
+   "ends": "2026-12-02",
+   "urgency": "SOON",
+   "buy": "https://letsbebesties.com",
+   "url": "https://www.instagram.com/reel/DgK8bJGxt-4/",
+   "source": "Instagram",
+   "source_kind": "social",
+   "hidden": true,
+   "found": "2026-11-25T13:45"
+  },
+  {
+   "date": "2026-11-27",
+   "day": "Fri 11/27",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "what": "Black Friday mat sale, Nov 27 8am ET to Nov 30 11:59pm ET, site only.",
+   "tag": "sale",
+   "ends": "2026-11-30",
+   "urgency": "SOON",
+   "buy": "https://www.mahjongbysi.com",
+   "url": "https://www.instagram.com/reel/DgI0SkwBgAf/",
+   "source": "Instagram",
+   "source_kind": "social",
+   "hidden": true,
+   "found": "2026-11-25T13:45"
   }
  ],
  "nonpartners": [
@@ -3081,7 +3202,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-25T09:40",
+ "updated": "2026-11-25T13:45",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",

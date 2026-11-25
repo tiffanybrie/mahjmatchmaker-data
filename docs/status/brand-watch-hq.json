@@ -405,6 +405,73 @@
   {
    "partner": true,
    "urgency": "NOW",
+   "found": "2026-11-25T13:24",
+   "date": "2026-11-24",
+   "day": "Tue 11/24",
+   "time": "LIVE now",
+   "brand": "Noli June",
+   "what": "New on their site: Parisian Tile Set.",
+   "tag": "tiles",
+   "new": true,
+   "buy": "https://nolijune.com/products/parisian-mahjong-tile-set",
+   "url": "https://nolijune.com/products/parisian-mahjong-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/1035/9898/1201/files/parisian-mahjong-tile-set-726.webp?v=1795567701",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "parisian-mahjong-tile-set"
+   ]
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-25T13:24",
+   "date": "2026-11-25",
+   "day": "Wed 11/25",
+   "time": "LIVE now",
+   "brand": "Brewtifully",
+   "what": "New mat: Island Breeze, a Brewtifully mat collaboration.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://shop.brewtifully.com/products/brewtifully-affiliate-mahj-mat-collaboration-island-breeze",
+   "url": "https://shop.brewtifully.com/products/brewtifully-affiliate-mahj-mat-collaboration-island-breeze",
+   "img": "https://cdn.shopify.com/s/files/1/0558/4850/1302/files/IMG_2752.jpg?v=1794626162",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "brewtifully-affiliate-mahj-mat-collaboration-island-breeze"
+   ]
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-25T13:24",
+   "date": "2026-11-25",
+   "day": "Wed 11/25",
+   "time": "LIVE now",
+   "brand": "Mahjong by SI",
+   "what": "New mats on their site: Apricot Hour Mat, The Posy Parlor Mat, Coastal Craks Mat, Dear Dot Mat, and 1 more.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://www.mahjongbysi.com/products/apricot-hour-mahjong-mat",
+   "url": "https://www.mahjongbysi.com/products/apricot-hour-mahjong-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_b03f725d-f39a-4346-86a9-def4e7e5e238.png?v=1795153432",
+   "source": "store",
+   "source_kind": "store",
+   "added_by": "brand_watch_autoadd (store read, no judgement step)",
+   "handles": [
+    "apricot-hour-mahjong-mat",
+    "the-posy-parlor-mahjong-mat",
+    "coastal-craks-mahjong-mat",
+    "dear-dot-mahjong-mat",
+    "lemon-grove-social-mahjong-mat"
+   ]
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
    "found": "2026-11-25T09:40",
    "day": "Wed 11/25",
    "date": "2026-11-25",
@@ -1362,6 +1429,28 @@
    "nocode": true,
    "affiliate_terms": "Bespoke affiliate terms: codes may not combine and sale items may earn no commission.",
    "order": 90
+  },
+  {
+   "date": "2026-11-27",
+   "day": "Fri 11/27",
+   "time": "Fri 11/27 to Mon 11/30",
+   "brand": "Anders Ruff",
+   "partner": true,
+   "what": "Black Friday weekend: 30% off all Christmas mats, buy a tile set and get a mat free, mat caddy and solo mat deals.",
+   "tag": "sale",
+   "bf": true,
+   "approved": true,
+   "hidden": false,
+   "nocode": true,
+   "urgency": "SOON",
+   "ends": "2026-11-30",
+   "buy": "https://shop.andersruff.com/collections/mahjong",
+   "url": "https://shop.andersruff.com/collections/mahjong",
+   "source": "affiliate email Nov 25",
+   "source_kind": "email",
+   "affiliate_terms": "Anders Ruff BF guide email Nov 25: deals use their own codes; stacking with MAHJMATCH not stated.",
+   "save_note": "Use the codes in their email; shop through our link.",
+   "found": "2026-11-25T13:45"
   }
  ],
  "nonpartners": [
@@ -1482,7 +1571,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-25T09:40",
+ "updated": "2026-11-25T13:45",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",
@@ -1495,6 +1584,33 @@
  ],
  "_order_note": "`order` (Nov 22 2026) sorts brand cards inside a section, low first; items without it are 50 and keep the builder's usual order. Black Friday: 11-19 = MAHJMATCH works on top of the sale, 21-29 = not confirmed yet, 31-39 = the brand has no working MAHJMATCH code yet, 90 = the sale does not stack with MAHJMATCH (bottom). Give every new Black Friday item one of these.",
  "auto": [
+  {
+   "date": "2026-11-25",
+   "brand": "YOLO Mahjong",
+   "partner": true,
+   "kind": "launch",
+   "what": "🌟 🌟 🌟 🌟 🌟 5 star review from Beau: \n\nWe absolutely love our Journey to the West mahjong tiles!  We couldn’t wait to receive our tiles and the finished product e",
+   "url": "https://www.instagram.com/p/DgJjO9zDZaK/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-25",
+   "brand": "The Mahjong House",
+   "partner": true,
+   "kind": "sale",
+   "what": "The Thankful Sale is ON. 30% off site-wide* with the code THANKS30. \n\n*While supplies last. Some exclusions apply. Code cannot be combined with other offers or ",
+   "url": "https://www.instagram.com/p/DgKmD9IxaXQ/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-25",
+   "brand": "Britt Mills",
+   "partner": true,
+   "kind": "launch",
+   "what": "Good Taste. Better Tiles. Britt Mills Magnet",
+   "url": "https://brittmillsdesign.com/products/good-taste-better-tiles-britt-mills-magnet",
+   "src": "store"
+  },
   {
    "date": "2026-11-24",
    "brand": "Peace Love Mahjong",
@@ -1551,15 +1667,6 @@
   },
   {
    "date": "2026-11-23",
-   "brand": "Noli June",
-   "partner": true,
-   "kind": "sale",
-   "what": "Girl to girl, pull up a chair 🀄💕 Every table needs someone who says “come sit, I’ll show you.” \nTag the friend who taught you to play 🤍\n\nMat: Harriet Got Lost i",
-   "url": "https://www.instagram.com/reel/DgEN8BgtRaq/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-23",
    "brand": "Bird & Bamboo",
    "partner": true,
    "kind": "sale",
@@ -1605,11 +1712,20 @@
   },
   {
    "date": "2026-11-23",
-   "brand": "Noli June",
+   "brand": "Mah Jongg Maven",
+   "partner": true,
+   "kind": "drop date",
+   "what": "🎄🎁 20K FOLLOWERS = 12 DAYS OF CHRISTMAS GIVEAWAYS! ✨🀄❤️\nAs a HUGE thank you for helping us reach 20,000 followers, we're celebrating with 12 DAYS OF CHRISTMAS G",
+   "url": "https://www.instagram.com/reel/DgGTE4sMgXu/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-23",
+   "brand": "Rebecca Illustrated",
    "partner": true,
    "kind": "sale",
-   "what": "Black Friday sale: save up to $376, now thru Nov 30. Comment FRIDAY for link. Sue Adores a Scallop Mahjong Table now taking orders. NOLIJUNE.COM. [hashtags trim",
-   "url": "https://www.instagram.com/reel/DgFqhLJzASg/",
+   "what": "The frost is melting… and the deals are HOT! 💗\nOur BIGGEST SALE OF THE YEAR is almost here, and trust us, we never do this! \n\nPlus, shop, sip & snack with Hampt",
+   "url": "https://www.instagram.com/p/DgGhAX2DWNf/",
    "src": "instagram"
   },
   {
@@ -1667,6 +1783,15 @@
    "src": "instagram"
   },
   {
+   "date": "2026-11-22",
+   "brand": "Rebecca Illustrated",
+   "partner": true,
+   "kind": "preorder",
+   "what": "The Charleston Collection Mahjong Tiles 🀄️ are officially open for pre-order! A little Lowcountry charm for your next game night, illustrated by Rebecca.\n\nSend ",
+   "url": "https://www.instagram.com/reel/DgDdBobpZbQ/",
+   "src": "instagram"
+  },
+  {
    "date": "2026-11-21",
    "brand": "Bam! Let's Mahjong",
    "partner": true,
@@ -1682,42 +1807,6 @@
    "kind": "sale",
    "what": "A little something for your mahjong table. 20% off everything! Shop your favorites now at www.amandatoppeliving.com! Use code BLACKFRIDAY20 💕 Which one is your ",
    "url": "https://www.instagram.com/p/DgAoxZlhkDw/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-21",
-   "brand": "Mahj & Vine",
-   "partner": true,
-   "kind": "sale",
-   "what": "A little something for Black Friday ✨\nAll Mahj & Vine mats are on sale for a limited time. Thoughtfully designed, beautifully made, and ready for your next game",
-   "url": "https://www.instagram.com/p/DgAjBvtFval/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-21",
-   "brand": "Tigre de Tartán",
-   "partner": true,
-   "kind": "collab",
-   "what": "Might we suggest some scalamandre on your wish list? This exclusive collaboration with The House of Scalamandré is on the top of ours by a mile 🫰. Previews will",
-   "url": "https://www.instagram.com/reel/Df_3_OqBUeR/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-21",
-   "brand": "hiphipmahjong",
-   "partner": true,
-   "kind": "sale",
-   "what": "Don't miss it!!! Some items will be sold out by the end of this sale! link in bio",
-   "url": "https://www.instagram.com/reel/DgAr2Odubtv/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-20",
-   "brand": "Mini Mahjer",
-   "partner": true,
-   "kind": "sale",
-   "what": "Ski Edition Complete Travel Bundle is 15% off all holiday season",
-   "url": "https://www.instagram.com/reel/DfzaeOUhh1i/",
    "src": "instagram"
   },
   {
@@ -1776,6 +1865,15 @@
    "kind": "sale"
   },
   {
+   "date": "2026-11-25",
+   "brand": "Splash of Color",
+   "partner": true,
+   "kind": "launch",
+   "what": "5 new listings: Polish Pride Modern Folk N Floral American Mahjong Tiles  4Layer Engraved; Polish Modern Folk Art Dancing Pierogi  American Mahjong Tiles  4 Layer Engraved; Polish Folk Art Pierogi Mahjong Mat Sleek Surface; Funny Polish Pierogi, Don't Be A Dupa Mahjong Mat Sleek Surface …",
+   "url": "https://splashofcolorco.com/products/polish-pride-modern-folk-n-floral-american-mahjong-tiles-4layer-engraved",
+   "src": "store"
+  },
+  {
    "date": "2026-11-24",
    "brand": "Splash of Color",
    "partner": true,
@@ -1801,15 +1899,6 @@
    "what": "Festive Frankenstein And Bride Modtastic Christmas Mahjong Mat Sleek Surface",
    "url": "https://splashofcolorco.com/products/festive-frankenstein-and-bride-modtastic-christmas-mahjong-mat-sleek-surface",
    "src": "store"
-  },
-  {
-   "date": "2026-11-20",
-   "brand": "Mahjong Studios",
-   "partner": true,
-   "kind": "launch",
-   "what": "Mistletoe Christmas Mahjong Mat - Christmas Kiss - Meet me under the Mistletoe",
-   "url": "https://mahjongstudios.com/products/mistletoe-christmas-mahjong-mat",
-   "src": "store"
   }
  ],
  "np_brands": [
@@ -1823,9 +1912,9 @@
   "Bougie Mahjong",
   "Piper Chase Studios"
  ],
- "updatedAt": "2026-11-25T14:28:22+00:00",
+ "updatedAt": "2026-11-25T18:28:44+00:00",
  "sources": {
-  "store_run": "2026-11-24T23:24:13+00:00",
-  "ig_run": "2026-11-24T23:26:56.395720+00:00"
+  "store_run": "2026-11-25T18:24:33+00:00",
+  "ig_run": "2026-11-25T18:28:12.817225+00:00"
  }
 }
