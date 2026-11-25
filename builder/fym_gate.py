@@ -1119,7 +1119,7 @@ if not _pre98:
     # [91] Tiffany 6:19pm: match card racks sat too high on the mat (covered the Heirloom Fire + Fortune horse) with a big gap
     # between two racks. Mood board card rack block = Main's partner-graphics layout (low, tight, equal length, off the mat's left).
     # Tiffany 7:20pm + Main 7:22pm: every rack the same length (rw = W*.40), stack photos (Bespoke) drawn big, x = max(48, mat left - 8.5% W)
-    for _need91 in ("const lch=56,rw=W*.40,rx=Math.max(48,mbx.x-W*.085);/*v98 racks low equal*/", "eq:true,stk:W*.26,bottom:bot+8}", "/*v98 equal-length racks*/"):
+    for _need91 in ("const lch=56,rw=W*.40,rx=Math.max(48,mbx.x-W*.085);/*v98 racks low equal*/", "eq:true,stk:W*.26,bottom:", "/*v98 equal-length racks*/"):  # Nov 25: bottom may lift one rack on a Story (Tiffany 2:26am)
         if _need91 not in UI: F.append(f"[91] match card rack layout missing: {_need91[:60]}")
     if "Math.max(2*r+40,n*170)" in UI: F.append("[91] old high rack block (n*170, centred on the tile circle) still in drawCard")
     # [92] Tiffany 6:04pm + Main 6:01pm: no Mahjong Register rack image shows a stack / infographic of several racks; Mahj Mood
