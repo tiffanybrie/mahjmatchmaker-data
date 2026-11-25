@@ -116,7 +116,7 @@ def build(img,tgt):
 prev=build(lambda f:'img/'+f, lambda u:' target="_blank" rel="noopener"')
 open('index.html','w').write('<title>Mahj Matchmaker Links</title><link href="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@17d40ae30cb59484162d4134b6fb9edd082b92a0/assets/fonts/css/mm-544dbe8d.css" rel="stylesheet"><style>:root{color-scheme:light}body{margin:0;background:#fdf0e6}</style>'+prev)
 # live squarespace code block (images via repo CDN)
-CDN='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@fe734b3a05ca6d08fe2d96db7554c9a769eb3a09/assets/links/'
+CDN='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8fa039b1999ec62b1a4b58e6fb50700719ca4a20/assets/links/'
 # on the live site, own pages open in the same tab; outside sites (Facebook) open a new tab
 open('squarespace_code_block.html','w').write('<link href="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@17d40ae30cb59484162d4134b6fb9edd082b92a0/assets/fonts/css/mm-544dbe8d.css" rel="stylesheet">'+build(lambda f:CDN+f, lambda u:'' if u.startswith(S) else ' target="_blank" rel="noopener"'))
 print('ok')

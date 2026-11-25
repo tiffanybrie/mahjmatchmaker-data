@@ -1,0 +1,30 @@
+{
+ "_about": "Album record (Album Playbook). Peace Love Mahjong Christmas tiles, next in the holiday pivot queue after Mahj Pit Merry Merry (Tiffany Nov 24 8:30pm). Started Nov 25 2026 ~11:55am by Main after the peacelovemahjong.com WebFetch block cleared.",
+ "set": "plm-merry-nutcracker",
+ "name": "Merry Nutcracker",
+ "brand": "Peace Love Mahjong",
+ "status": "Steps 0-2 DONE (tile photo, colour card, wheel). Next: catalog_refresh.py + per-album card spec build + by-sight pass (same pattern as mahjpit-merry-merry).",
+ "product_url": "https://peacelovemahjong.com/products/nutcracker-mahjong-tiles",
+ "price": "$300.00",
+ "tile_photo": {
+  "file": "assets/tiles/album/plm-merry-nutcracker.jpg",
+  "inset": "assets/tiles/album/plm-merry-nutcracker.jpg",
+  "source": "peacelovemahjong.com product photo IMG_5996-Edit_1.jpg (1946x2919): a real pile shot, tiles scattered across the brand's own pine-tree table runner, a hand reaching in -- sharpest and most colourful of the 6 listing photos (others: box flat-lay, 3 flat-lay renders, one more pile shot slightly softer focus). No bag/pouch in frame.",
+  "pile_shot": true,
+  "basis": "Tile pile rule (Nov 19 3:27pm): brand's own pile shot preferred, no bag. Not an OMM set so no pre-existing approval; this is Claude's pick of the best available listing photo, same as the Mahj Pit Merry Merry precedent (her approval was for that specific sample card, not a blanket non-OMM rule) -- flag to her with the review page.",
+  "asked_at": null,
+  "approved_at": null
+ },
+ "colorcard_img": "assets/colorcards/plm-merry-nutcracker/00-plm-merry-nutcracker-mahjong-tiles-color-guide-mobile.jpg",
+ "colorcard_draft": {
+  "at": "2026-11-25T11:58:00-05:00",
+  "by": "Main",
+  "source": "By eye from the product photos (box flat-lay + pile shot): white tile body, pine-green box + tree runner, ballet-pink scallop trim/ribbon, nutcracker ballet ink in candy pink / forest green / seafoam teal / cherry red / gold.",
+  "note": "Back = ivory white (tile body); box/background layer colours pine green + ballet pink. Racks: Claude's own Bird & Bamboo picks (Ballet Pink + Gold Metallic), no PLM racks in the catalog."
+ },
+ "notes": [
+  "WebFetch for peacelovemahjong.com was blocked earlier (PROVENANCE_REQUIRED); cleared this session -- confirmed both PLM holiday sets (Merry Nutcracker + Spirit of Christmas). Building Merry Nutcracker first per the Nov 17 pick-sheet starting pool naming it.",
+  "Next: wheel image, scripts/albumreview/pull.py mat pool (no Chrome needed), by-sight pass, card spec + build, album_gate.py, review page."
+ ],
+ "wheel_img": "assets/colorwheels/plm-merry-nutcracker-color-wheel.jpg"
+}
