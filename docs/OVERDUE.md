@@ -241,3 +241,6 @@
 - since 2026-11-23 | WHY SITE TRAFFIC SPIKED OCT 26: Claude's analysis (Squarespace analytics + Search Console in Chrome). Never her item. | Main
 FYM, imperative first (Nov 24 8pm): (1) OMM Beaumont tiles + Lily mat into FYM before Fri 11/27 drop; (2) OMM Oasis tiles + Starling mat before Mon 11/30; (3) Miss Mahjong Marigold + China Cabinet mats; (4) Tigre Scalamandré 4 mats; (5) Spools 1 set + 15 mats; then the backlog lines above. | Main
 - since 2026-11-24 | HAND-POST GATE: scripts/checks/handpost_wake_check.py: every hq/social plan item status needs-you with a time must have a send_later wake (log it in config/handpost-wakes.json when set); the front door shows any without one. | Main | due Wed 11/25
+- since 2026-11-24 | HQ ALBUMS TAB (Tiffany 8:02pm): the album calendar menu can't be replied to ('Open / send to top / stalled / started' is useless to her). Replace with plain rows: album, what's needed from her (one tap) or 'Claude's job', date. | Main | Wed 11/25
+- since 2026-11-24 | HQ BRAND WATCH TAB (Tiffany 8:02pm): a non-partner (Mahj Tile Haus, Rosemary Beach) leads the tab. Partners first; non-partners folded at the bottom. | Main | Wed 11/25
+- since 2026-11-24 | HQ FYM tab Docs & Links box still says 'Version 1.16 ... 1.17 in QA': update to 1.22.16 or drop the version text. | Main | Wed 11/25

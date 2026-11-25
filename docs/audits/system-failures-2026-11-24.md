@@ -16,3 +16,6 @@ Miss: a weekly 'New this week' carousel from Claude's own Oct 28 social-system d
 
 ## Stale "Oh My Mahjong not named" on Now (Tiffany 8:04pm)
 Miss: the 10:25am read said the cloud didn't name OMM; the 2:20pm and 4:20pm checks named it 1st, and Now still showed the morning line. Why: the daily read was written once and never refreshed when new checks landed. Fix: read rewritten with the whole day; the new Google tab card (next) computes per-day counts live from every check, so the numbers can't go stale; the read gets a timestamp in its first line.
+
+## Google tab unreadable, undated, counted blocked checks as misses (Tiffany 8:02pm)
+Fix: HQ v91-92: new top card computed live from every signed-out check: dated header (as-of time), every check today and yesterday on its own line (blocked = 'not checked'), per brand Today/Yesterday 'N of M', latest answered check with place, codes, sources and our regular-results spot, 'one look' flag, Black Friday per brand (hq/bfcm), Claude's read underneath. notChecked() now treats 'can't generate' / unusual traffic / captcha as not checked everywhere (the old OMM '1 of 6' counted them as misses). Old scorecard folded. FYM tab: status card on top (hq/fymStatus), catalog folded.
