@@ -72,7 +72,7 @@ def main(key, pins, title, sub, note=None, value=False):
         d.ellipse([x+14,cyc+14,x+54,cyc+54],fill=(255,255,255)); d.text((x+34,cyc+34),str(i+1),font=mono,fill=(5,70,137),anchor='mm')
         d.text((x+18,cyc+188),p['name'],font=chipname,fill=(5,70,137),anchor='ls')
         d.text((x+18,cyc+222),f"#{hexc.upper()} · {round(h*360)}°",font=chipsm,fill=(90,107,133),anchor='ls')
-    d.text((W/2,H-88),'Sampled from Oh My Mahjong’s tile back photo. Angle = hue · distance from center = how vivid.',font=mono,fill=(90,107,133),anchor='mm')
+    d.text((W/2,H-88),note or 'Angle = hue · distance from center = how vivid.',font=mono,fill=(90,107,133),anchor='mm')
     logo=Image.open(R+'assets/brand/mahjmatchmaker-wordmark-notag.png').convert('RGBA'); logo.thumbnail((260,80)); bg.paste(logo,(W//2-logo.width//2,H-62),logo)
     out=R+f'assets/colorwheels/{key}-color-wheel.jpg'; bg.save(out,quality=93); print(out)
 def _rest_many(bg,d,key,pins,cx,cy,ws,mono,num,chipname,chipsm,note,value=False):

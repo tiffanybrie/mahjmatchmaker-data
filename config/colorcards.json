@@ -1,6 +1,38 @@
 {
  "_note": "Album color cards (The Tile Edit). Built by scripts/colorcards/build.py (Oct 18). Backs/faces read from each set's approved tile photo (doc 34: backs + layers, not faces). Racks = config/tile-racks-picks.json final_lists; sets with no approved list use her universal racks and say so in Ready to Ship. Taglines use only facts she has stated.",
  "sets": {
+  "mahjpit-merry-merry": {
+   "name": "Merry Merry",
+   "col": "#b3122e",
+   "brand": "Mahj Pit",
+   "sub": "Gold confetti backs, cherry-red faces, tiny Christmas trees",
+   "backs": [
+    ["GOLD CONFETTI", "#c9a24a", "glitter resin back"],
+    ["CHERRY RED", "#b3122e", "face resin"],
+    ["IVORY", "#f4efe6", "card frame"]
+   ],
+   "faces": [
+    ["SEAFOAM", "#7fcdb8"],
+    ["FOREST GREEN", "#1f4d3e"],
+    ["MUSTARD GOLD", "#d9a94a"],
+    ["DUSTY CORAL", "#c47e68"],
+    ["CREAM", "#f4efe6"]
+   ],
+   "racks": ["Bird & Bamboo Cherry Red", "Bird & Bamboo Gold Metallic"],
+   "tile": "assets/tiles/album/mahjpit-merry-merry.jpg",
+   "tag": ["Travel-size tiles, full-size party energy", "gold confetti, cherry red & tiny trees"],
+   "mats": ["Tartan Tidings", "Merry Mix", "Jean Always Chose Cranberry From a Can"],
+   "mat_imgs": {
+    "Tartan Tidings": "assets/colorcards/origami/mats/anders-ruff-tartan-tidings.jpg",
+    "Merry Mix": "assets/mats/gallery/peace-love-mahjong--merry-mix.webp",
+    "Jean Always Chose Cranberry From a Can": "assets/mats/v106/noli-june-jean-always-chose-cranberry-from-a-can.jpg"
+   },
+   "shop": "Shop Merry Merry · Mahj Pit",
+   "shop_m": "Shop Merry Merry · Mahj Pit",
+   "mats_source": "Claude's own picks, by colour (gold/red/cranberry): not her yeses. Jean Always Chose Cranberry From a Can is the Noli June mat she asked to include Nov 11 1:08pm.",
+   "racks_source": "Claude's own picks from the Bird & Bamboo paint table (builder/bbracks.json): Cherry Red + Gold Metallic, no Mahj Pit racks of its own in the catalog.",
+   "_nov25": "Backs/faces measured by eye from assets/tiles/album/mahjpit-merry-merry.jpg (straightened, Tiffany-approved Nov 11 3:18pm): gold multicolour confetti resin backs, cherry-red face resin with a white-bordered frame holding 3-4 small Christmas trees per tile in seafoam/forest green/mustard/dusty coral/cream."
+  },
   "shangri-la": {
    "name": "Shangri La",
    "brand": "Oh My Mahjong",

@@ -13,7 +13,15 @@
   "approved_at": "2026-11-11T15:18:00-05:00",
   "approval_note": "Tiffany 3:18pm: \"Yes Merry Merry photo will work but please make it straight, it's currently crooked.\" Straightened: full-res listing image 2 rotated 1.0 deg clockwise (measured from the red face row edges), re-cropped 1253x1562 at the card box ratio."
  },
+ "colorcard_img": "assets/colorcards/mahjpit-merry-merry/00-mahjpit-merry-merry-mahjong-tiles-color-guide-mobile.jpg",
+ "wheel_img": "assets/colorwheels/mahjpit-merry-merry-color-wheel.jpg",
+ "tnt": {
+  "scanned": "2026-11-25",
+  "ref": "config/tnt-recs.json sets.mahjpit-merry-merry",
+  "result": "no post in Tiles & Tablescapes names Merry Merry or Mahj Pit; nothing to carry in"
+ },
  "notes": [
-  "Earlier picks page https://claude.ai/artifact/JGzFgUR5xx6Y3mnQWzLLnx is a quick-look page, NOT the playbook review page; rebuild as the review page after the tile photo yes."
+  "Earlier picks page https://claude.ai/artifact/JGzFgUR5xx6Y3mnQWzLLnx is a quick-look page, NOT the playbook review page; rebuild as the review page after the tile photo yes.",
+  "Nov 25: colour card + wheel built (config/colorcards.json sets.mahjpit-merry-merry; colours measured by eye from the approved tile photo: gold confetti backs, cherry-red faces, trees in seafoam/forest green/mustard gold/dusty coral/cream). Racks are Claude's own pick from the Bird & Bamboo paint table (no Mahj Pit racks in the catalog): Cherry Red + Gold Metallic. The 3 card mat matches are Claude's own colour picks, not her yeses: Tartan Tidings (Anders Ruff), Merry Mix (Peace Love Mahjong), Jean Always Chose Cranberry From a Can (Noli June -- the NYE mat she asked for Nov 11 1:08pm). Next: mat-pool spec (scripts/albumcard/specs), by-sight pass, review page build."
  ]
 }
