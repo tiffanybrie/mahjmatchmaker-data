@@ -870,8 +870,8 @@ document.addEventListener('click',e=>{const q=s=>e.target.closest(s);let b;
  if(q('[data-so-yes]')){const d=$('sosheet');if(d)d.remove();doStartOver();return;}
  if(q('[data-so-no]')){const d=$('sosheet');if(d)d.remove();return;}
  if(q('[data-make]')){if(!S.rpick.length)return;trk('card',{mat:S.fav,rack:S.rpick.join(' + ')});S.made=true;acctSaveMatch();renderCard();steps();jump('s-card');return;}
- if(b=q('[data-view]')){S.view=b.dataset.view;renderCard();return;}
- if(b=q('[data-fmt]')){S.fmt=b.dataset.fmt;renderCard();return;}
+ if(b=q('[data-view]')){S.view=b.dataset.view;if(S.view!=='phone'&&S.fmt==='sticker')S.fmt='post';renderCard();return;}
+ if(b=q('[data-fmt]')){S.fmt=b.dataset.fmt;if(S.fmt==='sticker')S.view='phone';/*R2W Nov 25: Sticker is the phone cut out on a see-through background, so it switches to Phone view*/renderCard();return;}
  if(q('[data-share]')){share();return;}
   if(q('[data-restart]')){S.tilesOpen=true;renderTiles();window.scrollTo({top:0,behavior:'smooth'});return;}
 });
@@ -917,9 +917,9 @@ const TSTEPS=[/*v114 tour*/
  {k:'mats',t:'Swipe the mats',p:'Tap ♥ if you love it, ✕ if it’s not the one; Tiffany’s own matches come first.',b:'#top-m',hand:'m',done:()=>S.liked.length>0||!!S.fav,skip:()=>matLocked()},
  {k:'view',t:'Pick your view',p:'Table, Up close or Aerial: tap one, or Next to stay.',b:'#s-mats .vrow .seg',ring:true,next:'Next',done:()=>!!TOUR.f.view},
  {k:'tv1',t:'Table view',p:'Your tiles, mat and racks set at a table, seen from above.',b:'#s-mats .scard[id^="top-"] .ph',ring:true,next:'Next',skip:()=>S.mode!=='table'},
- {k:'tv2',t:'Make my match card',p:'Love what’s on the table? Tap Make my match card to finish, or keep swiping.',b:'#s-mats [data-r2make]',next:'Next',skip:()=>S.mode!=='table'||!document.querySelector('#s-mats [data-r2make]')},
+ {k:'tv2',t:'Shop + make my match card',p:'Love what’s on the table? Tap Shop + make my match card for the shop links and your card, or keep swiping.',b:'#s-mats [data-r2make]',next:'Next',skip:()=>S.mode!=='table'||!document.querySelector('#s-mats [data-r2make]')},
  {k:'tv3',t:'Not in Table view yet',p:'A grayed mat has no top-down photo yet; its note says why, so swipe on or try another view.',b:'#s-mats .scard.tvoff .tvna',ring:true,next:'Got it',skip:()=>S.mode!=='table'||!document.querySelector('#s-mats .scard.tvoff .tvna')},
- {k:'pick',t:'Pick your mat',p:'Tap a mat in your shortlist to see it with your tiles.',b:'.sgrid button',done:()=>!!S.peek||!!S.fav,skip:()=>matLocked()},
+ {k:'pick',t:'Your shortlist',p:'Tap a mat in your shortlist to see it with your tiles.',b:'.sgrid button',done:()=>!!S.peek||!!S.fav,skip:()=>matLocked()},
  {k:'add',t:'Choose your racks',p:'Tap Choose your racks.',b:'.acts.pk [data-mock],.dacts [data-mock],.sgrid button',done:()=>!!S.fav&&!!S.rstage},
  {k:'racks',t:'Choose your racks',p:'Tap Choose your racks to see the rack choices.',b:'[data-rchoose]',done:()=>!!S.rch||S.rpick.length>0},
  {k:'rmenu',t:'Narrow the racks',p:'The menu below the racks shows one color or one type at a time.',b:'#rch .rfil',ring:true,next:'Next',skip:()=>!S.rch},
@@ -1029,7 +1029,7 @@ function renderCard(){const st=$('s-card');const s=set();
  st.innerHTML=`<div class="sh"><span class="num">4</span><div><h2>Your match card</h2></div></div><div class="hello" style="padding-top:0"><h1 style="font-size:clamp(26px,7.4vw,34px)">It’s a match!</h1><p>${esc(s.name)} + ${esc(M[S.fav].n.replace(/\s*\(retired\)/i,''))}. Pick your view, then save it or share it.</p></div>
  <div class="seg" role="group" aria-label="View">${VIEWS.filter(v=>!(/^(table|phone)$/.test(v[0])&&window.R2TVCLS&&window.R2TVCLS(S.fav)==='C')).map(v=>`<button type="button" data-view="${v[0]}" aria-pressed="${S.view===v[0]}">${v[1]}</button>`).join('')}</div>
  <div class="seg nv" role="group" aria-label="Size">${Object.entries(CARD_SIZES).map(([k,v])=>`<button type="button" data-fmt="${k}" aria-pressed="${S.fmt===k}">${v.l} ${v.s}</button>`).join('')}</div>
- <div class="prev" id="prev"><div class="ld">Dressing up your match…</div></div>
+ <div class="prev${S.fmt==='sticker'?' stk':''}" id="prev"><div class="ld">Dressing up your match…</div></div>
  <button type="button" class="big" data-share>Save image / Share</button><p class="hint sharep">Share your match! Tag #mahjmatch, we love to see your matches!</p>
  <div class="shop"><h3>Shop your match</h3><p class="shp">Each <b>Shop</b> button opens that store in a new tab. Come back here to check off the rest.</p><p class="shc" id="shc"></p>${pieces().map(id=>{const o=M[id]||R[id]||T[id];const im=M[id]?matTh(id):R[id]?rackSrc(id):pile(set());const nm=String(T[id]?set().name:o.n).replace(/\s*\(retired\)/i,'')/*v107 no (retired) on the card screen*/;
   return `<div class="si" data-sid="${esc(id)}"><img src="${im}" alt="" class="${T[id]?'tcv':''}"><div class="tx"><b>${esc(nm)}</b><small>${esc(BDN(o.bn))}</small>${M[id]&&o.alt?(o.altu?`<a class="alt altl" href="${esc(o.altu)}" target="_blank" rel="noopener">${esc(o.alt)} ›</a>`:`<em class="alt">${esc(o.alt)}</em>`):''}${M[id]&&o.dfq&&DFQ?`<a class="dc" href="${esc(DFQ)}" target="_blank" rel="noopener">Not sure which Dapper? See the difference ›</a>`:''}${o.dc?`<a class="dc" href="${esc(o.dc)}" target="_blank" rel="noopener">Discount code ›</a>`:''}${BMIN[o.bn]?`<em class="alt">${BMIN[o.bn]} with code MAHJMATCH</em>`:''}${o.ncn&&!o.dc?'<em class="ncn">No code available at this time</em>':''}</div>${T[id]?STB('t',set().slug):STB(M[id]?'m':'r',id)}${o.u?`<a class="go" href="${esc(o.u)}" target="_blank" rel="noopener">${o.rt?'Retired':((o.oos||(o.so&&!Array.isArray(o.so)))?'Sold out ›':'Shop ›')/*v101 sold out*/}</a>`:(o.rt?'<span class="go">Retired</span>':'')}</div>`;}).join('')}<button type="button" class="big gh shl" data-shoplist>Text or email me this list</button><div class="acp">${ACPH()}</div></div>
@@ -1210,7 +1210,7 @@ let y=STORY?200:40;
   if(tile){g.save();shadow('rgba(40,20,30,.32)',24,10);g.fillStyle=CREAM;g.beginPath();g.arc(cx,cy,r+10,0,Math.PI*2);g.fill();g.restore();g.save();g.beginPath();g.arc(cx,cy,r,0,Math.PI*2);g.clip();const k=Math.max(2*r/tile.width,2*r/tile.height)*1.08;g.drawImage(tile,cx-tile.width*k/2,cy-tile.height*k/2,tile.width*k,tile.height*k);g.restore();}
   // v80: racks on the mat at left, stacked, no white box; brand logos on each piece
   const lch=56,rw=W*.40,rx=Math.max(48,mbx.x-W*.085);/*v98 racks low equal*/
-  racks(rx,top+110,rw,bot-top-110,{fs:STORY?23:19,rows:true,back:true,below:true,eq:true,stk:W*.26,bottom:bot+8});
+  racks(rx,top+110,rw,bot-top-110,{fs:STORY?23:19,rows:true,back:true,below:true,eq:true,stk:W*.26,bottom:(STORY&&rkt.length===1)?Math.min(bot+8,mbx.y+mbx.h+120):bot+8});/*R2W Tiffany Nov 25 2:26am: one rack on a Story sits up against the mat, not at the bottom*/
   pill(mbx.x+14,mbx.y+14,'MAT',mName,{maxW:mbx.w*.6,fsN:20,fsK:12});logoChip(ml,mb,mbx.x+mbx.w-14,mbx.y+14,60,{right:true,maxW:230});
   pill(cx+r*.15,cy-r-6,'TILES',s.name,{up:true,right:true,maxW:r*1.5,fsN:20,fsK:12});logoChip(tl,tb,cx-r*.8,Math.min(cy+r-30,fby-66),58,{maxW:220});
  }
@@ -1296,9 +1296,9 @@ body.tvmode .swh.cue{display:none}/* QA Nov 1: first-time swipe hint would cover
    centered, tight against the rack, wall depth 1.55 x tile width). Uses the app's globals (D, S, M, R, T, ...). */
 (function(){
 const SZ=TVD.sz||{mat:33,edge:1.0,wallDepth:1.55,gap:0};
-const TV={walls:true,faces:'center',rack:null};
-try{const o=JSON.parse(localStorage.getItem('fymTV')||'{}');TV.walls=o.walls!==false;if(['center','corner','off'].includes(o.faces))TV.faces=o.faces}catch(e){}
-const save=()=>{try{localStorage.setItem('fymTV',JSON.stringify({walls:TV.walls,faces:TV.faces}))}catch(e){}};
+const TV={walls:true,faces:'corner',rack:null};
+try{const o=JSON.parse(localStorage.getItem('fymTV2')||'{}');TV.walls=o.walls!==false;if(['center','corner','off'].includes(o.faces))TV.faces=o.faces}catch(e){}
+const save=()=>{try{localStorage.setItem('fymTV2',JSON.stringify({walls:TV.walls,faces:TV.faces}))}catch(e){}};
 const SW={tab:'mat',qs:{tiles:'',mat:'',racks:''},brand:'',color:'',fin:'',price:'',instock:false,picks:false};
 let CTX='s-mats';
 const $i=id=>document.getElementById(id);
@@ -1341,7 +1341,7 @@ async function rackImg(k){if(SHV.has(k))return SHV.get(k);const p=load(TRS(k)).t
 async function render(mat,s,rack,corner,N,rack2){
   const cv=corner&&TVD.cv&&TVD.cv[mat],pf=TVD.pf&&TVD.pf[mat];
   const PPI=cv?N/(cv.f*SZ.mat):N/SZ.mat,C=cv?N-SZ.mat*PPI/2:N/2;
-  const [mi,ri,fi,ri2]=await Promise.all([(TVD.mo&&TVD.mo[mat]?Promise.resolve(TVD.mo[mat]):matFull(mat)).then(load),rackImg(rack),load(tileFull(s)||pile(s)),rack2?rackImg(rack2):Promise.resolve(null)]);
+  const [mi,ri,fi,ri2]=await Promise.all([(TVD.mo&&TVD.mo[mat]?Promise.resolve(TVD.mo[mat]):matFull(mat)).then(load),rackImg(rack),(T[s.tile]&&T[s.tile].soon?Promise.resolve(tileFull(s)):hdOr('t',s.tile,tileFull(s)||pile(s))).then(load)/*R2W sharp: the 1000px HD tile photo, not the 560px one*/,rack2?rackImg(rack2):Promise.resolve(null)]);
   const bk=TVD.backs[s.slug];const [pat,spr]=await Promise.all([load(bk&&bk.p),load(bk&&bk.s)]);
   const oc=document.createElement('canvas');oc.width=oc.height=N;const c=oc.getContext('2d');c.imageSmoothingQuality='high';c.fillStyle=window.TVPROBE||'#e4dcd2';c.fillRect(0,0,N,N);
   if(mi){const W=mi.naturalWidth||mi.width,H=mi.naturalHeight||mi.height;
@@ -1369,7 +1369,7 @@ async function render(mat,s,rack,corner,N,rack2){
         else{const g=c.createLinearGradient(x,y,x+w,y+h);g.addColorStop(0,shade(bk.b,1.14));g.addColorStop(.55,bk.b);g.addColorStop(1,shade(bk.b,.84));c.fillStyle=g;c.fillRect(x,y,w,h)}
         c.restore();c.strokeStyle='rgba(0,0,0,.28)';c.lineWidth=Math.max(1,.02*PPI);rr(c,x,y,w,h,.1*PPI);c.stroke()}}}
   if(ri)drawRacks();
-  if(fi&&TV.faces!=='off'){const d=N*(TV.faces==='center'?.26:.22),cx=TV.faces==='center'?C:(corner?N*.2:N*.8),cy=TV.faces==='center'?C:(corner?N*.2:N*.8);
+  if(fi&&TV.faces!=='off'){const FD=window.R2FD||{c:.32,k:.38},d=N*(TV.faces==='center'?FD.c:FD.k),qo=N*.965-d/2,/*Tiffany 2:28am: all the way in the corner; the heart/X may overlap it*/cx=TV.faces==='center'?C:(corner?N-qo:qo),cy=cx;/*R2W Tiffany Nov 25 2:20am: bigger tile photo, corner default*/
     c.save();c.shadowColor='rgba(0,0,0,.35)';c.shadowBlur=N*.018;c.beginPath();c.arc(cx,cy,d/2+N*.008,0,7);c.fillStyle='#fff';c.fill();c.restore();
     c.save();c.beginPath();c.arc(cx,cy,d/2,0,7);c.clip();const m=Math.min(fi.width,fi.height);c.drawImage(fi,(fi.width-m)/2,(fi.height-m)/2,m,m,cx-d/2,cy-d/2,d,d);c.restore()}
   try{return oc.toDataURL('image/jpeg',.88)}catch(e){return null}}
@@ -1747,7 +1747,7 @@ document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[da
 function relayout(el){if(!el)return;el.querySelectorAll('.sbx').forEach(x=>x.remove());const cmp=el.querySelector(':scope > .cmp');if(!cmp)return;
  const acts=el.querySelector(':scope > .acts'),hint=el.querySelector(':scope > .swhint');let at=cmp;
  if(acts){acts.classList.add('uxmv');at.after(acts);at=acts;}if(hint){hint.classList.add('uxmv');at.after(hint);at=hint;}
- if(el.id==='s-mats'&&!S.rstage&&!S.peek&&!matLocked()&&S.liked.length&&el.querySelector('#sgw')){at.insertAdjacentHTML('afterend',`<button type="button" class="uxsl" data-uxsl>♥ ${S.liked.length} on your shortlist: pick your mat ↓</button>`);}}
+ if(el.id==='s-mats'&&!S.rstage&&!S.peek&&!matLocked()&&S.liked.length&&el.querySelector('#sgw')){at.insertAdjacentHTML('afterend',`<button type="button" class="uxsl" data-uxsl>♥ ${S.liked.length} on your shortlist ↓</button>`);}}
 /* swipe pop: a big heart (right) or X (left) over the photo */
 function pop(sec,yes){const d=qs(sec+' .deck');if(!d)return;const p=document.createElement('div');p.className='uxpop '+(yes?'y':'n');p.setAttribute('aria-hidden','true');p.textContent=yes?'♥':'✕';d.appendChild(p);setTimeout(()=>p.remove(),760);}
 const _fly=fly;fly=function(k,yes){if(k==='r')return;if(k==='m'&&S.rstage)return;const ok=!!$('top-'+k)&&queue(k).length&&!(k==='m'&&(S.peek||matLocked()));const r=_fly(k,yes);if(ok)pop('#s-mats',yes);return r;};
@@ -1757,7 +1757,7 @@ const shownMat=()=>S.rstage?S.fav:S.peek;
 const _tray=tray;tray=function(k){if(k!=='m')return _tray(k);const L=S.liked.filter(id=>M[id]);
  if(!L.length)return `<div class="sgw" id="sgw"><h3 class="sgh">Your shortlist</h3><p class="sgp">Tap ♥ on mats you like. They’ll wait here so you can see each one with your tiles.</p></div>`;
  const cur=shownMat(),guide=!cur&&!S.rstage;
- return `<div class="sgw${guide?' uxpl':''}" id="sgw"><h3 class="sgh">Pick your mat</h3><p class="sgp">Your shortlist (${L.length}): tap one to see it with your tiles.</p><div class="sgrid">${L.slice().reverse().map(id=>`<button type="button" class="sgc${cur===id?' on':''}" data-spk="${esc(id)}" aria-pressed="${cur===id}"><span class="sgi"><img src="${matSrc(id)}" alt="" loading="lazy">${cur===id?'<span class="sgon">Showing ✓</span>':''}</span><b>${esc(MN(id))}</b><small>${esc(BDN(M[id].bn||''))}</small></button>`).join('')}</div></div>`;};
+ return `<div class="sgw${guide?' uxpl':''}" id="sgw"><h3 class="sgh">Your shortlist (${L.length})</h3><p class="sgp">Tap one to see it with your tiles.</p><div class="sgrid">${L.slice().reverse().map(id=>`<button type="button" class="sgc${cur===id?' on':''}" data-spk="${esc(id)}" aria-pressed="${cur===id}"><span class="sgi"><img src="${matSrc(id)}" alt="" loading="lazy">${cur===id?'<span class="sgon">Showing ✓</span>':''}</span><b>${esc(MN(id))}</b><small>${esc(BDN(M[id].bn||''))}</small></button>`).join('')}</div></div>`;};
 const _acts=acts;acts=function(k){if(k==='m'&&S.peek&&!S.rstage)return `<div class="acts pk"><button type="button" class="go pkgo uxpl" data-mock="${esc(S.peek)}">Choose your racks ›</button><div class="pkr"><button type="button" class="pill" data-unpeek>‹ Keep swiping mats</button><button type="button" class="pill gh" data-unlike="${esc(S.peek)}">✕ Remove from shortlist</button></div></div>`;return _acts(k);};
 /* ---------- 6. racks in the same frame ---------- */
 function defRacks(){if(S.mode==='table'&&window.TVPICK){const r=TVPICK(set().slug,S.fav);return r?[r]:[];}let a=[];try{a=herRacks().filter(r=>R[r]&&!R[r].hid);}catch(e){}if(!a.length){try{a=rackDeck().slice(0,2);}catch(e){}}return a.slice(0,2);}
@@ -1832,7 +1832,7 @@ body:not(.tvmode) .r2dot,body:not(.tvmode) .r2bar{display:none!important}
 .r2make{flex:1 0 100%;border:0;border-radius:999px;background:#c8325f;color:#fff;font:700 16px/1 var(--body);padding:13px 16px;cursor:pointer;box-shadow:0 4px 12px rgba(200,50,95,.3)}
 .r2fc{flex:1 0 100%;display:flex;align-items:center;justify-content:center;gap:6px;font:600 12px var(--body);color:#5a6b85}
 .r2fc button{border:1px solid #ecd5df;background:#fff;border-radius:999px;padding:5px 10px;font:700 12px var(--body);color:var(--navy,#054689);cursor:pointer}
-.r2fc button.on{background:#054689;color:#fff;border-color:#054689}
+.r2fc button.on{background:#054689;color:#fff;border-color:#054689} .prev.stk{background:repeating-conic-gradient(#e9e3ea 0 25%,#fff 0 50%) 0 0/22px 22px!important} /*R2W*/ .r2bar{margin:6px 0 2px;gap:6px} .r2bar .r2make{padding:12px 16px} .r2bar .r2fc{margin:0} .r2bar .vrow.r2vw{flex:1 0 100%;margin:2px 0 0;padding:7px 8px;border-radius:14px;background:#fff5f8;border:1.5px solid #f3b9cb;gap:8px} .r2bar .vrow.r2vw>span{color:#c8325f;font-size:11px} .r2bar .vrow.r2vw .seg.mode{flex:1 1 auto;max-width:330px} .r2bar .vrow.r2vw .seg.mode button{padding:9px 8px;font-size:13.5px} body.tvmode .s2ctl{margin-top:6px}
 /* compact sheet: search + brands on one row, colours one row, price + toggles one row, pictures right after */
 .tvp .tvback,.tvp .r2fbtn,.tvp #tvsh{display:none!important}
 .tvp .tvswapsec{display:grid!important;grid-template-columns:repeat(12,minmax(0,1fr));gap:8px 6px;align-items:center}
@@ -1883,17 +1883,18 @@ body:not(.tvmode) .r2chip{display:none}
  function dots(){if(!document.body.classList.contains('tvmode'))return;document.querySelectorAll('.scard[id^="top-"] .ph').forEach(ph=>{const card=ph.closest('.scard');const img=ph.querySelector('img.tvimg');
    if(card.classList.contains('tvoff')||!img){ph.querySelectorAll('.r2dot').forEach(d=>d.remove());return}
    const pr=ph.getBoundingClientRect(),ir=img.getBoundingClientRect();if(!ir.width)return;const fx=x=>((ir.left-pr.left)+ir.width*x)/pr.width*100+'%',fy=y=>((ir.top-pr.top)+ir.height*y)/pr.height*100+'%';
-   const fv=(window.R2GETFACES&&window.R2GETFACES())||'center';const pos={racks:[0.5,0.93]};if(fv==='center')pos.tiles=[0.62,0.40];else if(fv==='corner')pos.tiles=[0.86,0.70];
+   const fv=(window.R2GETFACES&&window.R2GETFACES())||'corner';const pos={racks:[0.5,0.93]};{const FD=window.R2FD||{c:.32,k:.38};if(fv==='center')pos.tiles=[0.5+FD.c*.46,0.5-FD.c*.38];else if(fv==='corner'){const q=.965-FD.k/2;pos.tiles=[q-FD.k*.30,q-FD.k*.45]}}
    for(const k of ['racks','tiles']){let d=ph.querySelector('.r2dot[data-r2open="'+k+'"]');if(!pos[k]){if(d)d.remove();continue}
     if(!d){d=document.createElement('button');d.type='button';d.className='r2dot'+(pulsed?'':' pulse');d.dataset.r2open=k;d.setAttribute('aria-label',k==='racks'?'Change the racks':'Change the tiles');d.innerHTML=PEN;ph.appendChild(d)}
     d.style.left=fx(pos[k][0]);d.style.top=fy(pos[k][1]);}
    });pulsed=true;}
  function bar(){if(!document.body.classList.contains('tvmode'))return;for(const id of ['s-mats','s-tiles','s-racks']){const sec=document.getElementById(id);if(!sec)continue;const card=sec.querySelector('.deck .scard[id^="top-"]');if(!card){continue}
    let b=sec.querySelector('.r2bar');const deck=card.closest('.deck');if(!b){b=document.createElement('div');b.className='r2bar';
-    b.innerHTML='<button type="button" class="r2b" data-r2open="tiles"><img alt="">Tiles</button><button type="button" class="r2b" data-r2open="mat"><img alt="">Mat</button><button type="button" class="r2b" data-r2open="racks"><img alt="">Racks</button><button type="button" class="r2make" data-r2make="1">Make my match card \u2665</button><div class="r2fc">Tile photo:<button type="button" data-r2f="center">Center</button><button type="button" data-r2f="corner">Corner</button><button type="button" data-r2f="off">Off</button></div>';
+    b.innerHTML='<button type="button" class="r2b" data-r2open="tiles"><img alt="">Tiles</button><button type="button" class="r2b" data-r2open="mat"><img alt="">Mat</button><button type="button" class="r2b" data-r2open="racks"><img alt="">Racks</button><button type="button" class="r2make" data-r2make="1">Shop + make my match card \u2665</button><div class="r2fc">Tile photo:<button type="button" data-r2f="center">Center</button><button type="button" data-r2f="corner">Corner</button><button type="button" data-r2f="off">Off</button></div>';
     deck.insertAdjacentElement('afterend',b)}
+   /*R2W Tiffany Nov 25 2:17am: the view switch (Table / Up close / Aerial) sits right under 'Tile photo' as a pink box, so it is in frame on the first jump*/{const vr=sec.querySelector('.vrow');if(vr&&vr.parentElement!==b){vr.classList.add('r2vw');b.appendChild(vr);const w=sec.querySelector('.vrow-wrap');if(w&&!w.children.length)w.remove();}}
    let x=null;try{x=window.R2CTX(card)}catch(e){}if(x){const im=b.querySelectorAll('.r2b img');try{im[0].src=pile(x.s);im[1].src=matTh(x.mat);if(x.rack)im[2].src=rackSrc(x.rack)}catch(e){}}
-   const fv=(window.R2GETFACES&&window.R2GETFACES())||'center';b.querySelectorAll('[data-r2f]').forEach(z=>z.classList.toggle('on',z.dataset.r2f===fv));
+   const fv=(window.R2GETFACES&&window.R2GETFACES())||'corner';b.querySelectorAll('[data-r2f]').forEach(z=>z.classList.toggle('on',z.dataset.r2f===fv));
    const tab=window.R2TAB&&window.R2TAB(),open=document.getElementById('tvpanel')&&document.getElementById('tvpanel').classList.contains('open');b.querySelectorAll('.r2b').forEach(z=>z.classList.toggle('on',!!open&&z.dataset.r2open===tab));}}
  window.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-r2f]');if(!b)return;e.preventDefault();e.stopPropagation();const v=b.dataset.r2f;setTimeout(()=>window.R2FACES(v),30)},true);
  window.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-r2f]')){e.preventDefault();e.stopPropagation()}},true);
