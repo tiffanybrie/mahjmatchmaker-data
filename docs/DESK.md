@@ -326,6 +326,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1, then the newest docs/ANS
 | HQ + Ready to Ship cleanup | ✅ | Tonight's cleanup (new-arrivals need archived; hq/albums rows already current). |
 | Coverage + card sharpness | ⚠️ | Partner coverage: 3 skips excused (review Dec 8); release needs an attended session (OVERDUE). |
 | AI Overview signed-out checks (Duet) | ⚠️ | Mon blocked (0/61, 19/61); Tue see HQ Google tab (blocked = not checked). |
+| Verified dates (weekly, Mondays; daily from Nov 17) | ✅ | Superseded by her Nov 20 rule: current month is enough. |
 | FYM + partner feedback | ✅ | Partner watch + stories checks. |
 | TNT scan (weekly) | ⚠️ Not merged | 81b/81c/81d JSON still to merge into config/tnt-recs.json (Main, Wed Nov 25). |
 
