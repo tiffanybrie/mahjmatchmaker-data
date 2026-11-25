@@ -315,7 +315,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1, then the newest docs/ANS
 | Codes post (Mondays) | ⏸ Paused | Her word Nov 19. |
 | Pinterest queue health | ✅ | 9 pins scheduled Nov 25-29 (checked 10pm); Sadie Jane not in the queue (OVERDUE f). |
 | Planoly next-7-days (IG + FB Page) (d) | ⚠️ 1 IG auto-scheduled (<4) | IG: Christmas style reel Wed 7:15pm ET (FB reel target present, no story version, caption FAILS lint: 604 chars + 'every brand'). Sadie Jane reel = backup reminder draft (hers). Tags: reel tags in caption only. Priority 4. |
-| New albums (last 7 days) (f) | ⚠️ Misses | Sadie Jane page public (200); not on /mahjong-tile-matches, colour pages (pink/blue), /links, OMM brand page; no hq/indexing row; not in Pinterest queue. OVERDUE line, owner Main. |
+| New albums (last 7 days) (f) | ⚠️ Misses (1 closed) | /links fixed Nov 25 11:50am (Tiffany caught it live: "You still have Juniper up there"; feature card + strip both verified Sadie Jane from outside). Still open: not on /mahjong-tile-matches, colour pages (pink/blue), OMM brand page; no hq/indexing row; not in Pinterest queue. OVERDUE line, owner Main. |
 | Repo caption lint (g) | ✅ No new kinds in the repo | 52 FAIL, all in assets/reels/s2/captions.json (same 52 as Sun/Mon). Planoly lint: 3 FAIL on the Christmas reel (length, banned phrase 'every brand'). |
 | Restock first (c) | ⚠️ Open | Deco Indigo Thu 11/26 = priority 1; Dec 1994 leftovers Nov 25; Jade racks; Sunday Blues window to Nov 30 (not built). |
 | Match inbox (e) | ⚠️ 192 undone lines | Priority 5. |
