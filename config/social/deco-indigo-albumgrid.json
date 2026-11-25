@@ -1,0 +1,21 @@
+[
+ {
+  "slug": "deco-indigo",
+  "name": "Deco Indigo",
+  "brand": "Bam Bird Boutique",
+  "code": true,
+  "count": 52,
+  "tiles": "assets/tiles/album/inset/deco-indigo-flowers.jpg",
+  "sub": "My top 8 mat matches",
+  "mats": [
+   "assets/colorcards/deco/mats/bougie-mahjong-gilded-peacock.jpg",
+   "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg",
+   "assets/colorcards/deco/mats/bam-bird-boutique-deco-neoprene.jpg",
+   "assets/albums/discovery/dreamframer-art-dark-blue-art-deco-gold-fans.jpg",
+   "assets/colorcards/deco/mats/oh-my-mahjong-soho.jpg",
+   "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg",
+   "assets/colorcards/deco/mats/lets-be-besties-gatsby-glow.jpg",
+   "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-indigo.jpg"
+  ]
+ }
+]
