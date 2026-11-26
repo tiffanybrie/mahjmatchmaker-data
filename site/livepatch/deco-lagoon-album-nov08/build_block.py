@@ -28,7 +28,7 @@ def brandpg(m):
     p = U.urlparse((m or {}).get('dc') or '').path
     return p if p.endswith('-discount-code') else None
 def rack(n):
-    v = RN.get(n)
+    v = RN.get(n) or RN.get({'Bam Bird Boutique Indigo': 'Bam Bird Boutique Indigo Wood', 'Bam Bird Boutique Olive': 'Bam Bird Boutique Olive Green Wood', 'Peace Love Mahjong Acrylic Burl': 'Peace Love Mahjong Acrylic Burlwood'}.get(n, ''))
     if not v: print('NO RACK LINK', n); return e(n)
     return f'<a href="{e(v["u"])}" target="_blank" rel="sponsored noopener">{e(n)}</a>'
 def figure(n, c, hol):
