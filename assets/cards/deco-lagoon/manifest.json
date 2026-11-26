@@ -1438,6 +1438,31 @@
   },
   {
    "order": 58,
+   "group": "deco",
+   "mat": "Floral Affair",
+   "brand": "Lemondrop Mahjong Co",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "deco-lagoon-mahjong-tiles-lemondrop-mahjong-co-floral-affair-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/catalog-new/lemondrop-mahjong-co--floral-affair.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Mulberry"
+   ],
+   "why": "A navy garden of teal ferns and berry-pink blooms inside a gold art deco arc border. Her teal and mulberry, and the deco line work of her tiles.",
+   "fym": "",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 1,
    "group": "holiday",
    "mat": "Winter Berry",
    "brand": "Britt Mills",
@@ -1462,7 +1487,7 @@
    "rack_notes": []
   },
   {
-   "order": 59,
+   "order": 2,
    "group": "holiday",
    "mat": "Yuletide",
    "brand": "Oh My Mahjong",
@@ -1487,7 +1512,7 @@
    "rack_notes": []
   },
   {
-   "order": 60,
+   "order": 3,
    "group": "holiday",
    "mat": "Winter Jewel",
    "brand": "Let's Be Besties",
@@ -1512,7 +1537,7 @@
    "rack_notes": []
   },
   {
-   "order": 61,
+   "order": 4,
    "group": "holiday",
    "mat": "Poinsettia Party",
    "brand": "Soirée All Day",
@@ -1537,7 +1562,7 @@
    "rack_notes": []
   },
   {
-   "order": 62,
+   "order": 5,
    "group": "holiday",
    "mat": "Bandana – Holiday Green/Pink accents",
    "brand": "Bam Bird Boutique",
@@ -1559,80 +1584,6 @@
    "fym": "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465237813",
    "lowres": false,
    "caption_note": "Holiday match",
-   "rack_notes": []
-  },
-  {
-   "order": 63,
-   "group": "yours",
-   "mat": "Art Deco Lagoon",
-   "brand": "Mahjong Along With Me",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "deco-lagoon-mahjong-tiles-mahjong-along-with-me-art-deco-lagoon-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/deco/leftout/mahjong-along-with-me-art-deco-lagoon.jpg",
-   "racks": [
-    "Bam Bird Boutique Lagoon Wood",
-    "Bam Bird Boutique Mulberry Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Blackboard Black",
-    "Peace Love Mahjong Acrylic Burl"
-   ],
-   "why": "Your pick from Left out (round 3). Claude had said: Made for the Deco tiles (teal, black and gold deco panels), and Tiles & Tablescapes members pair it with Lagoon. A true match, but a new non-partner brand: it goes live as soon as you say yes to Mahjong Along With Me (they run UpPromote, so we can apply).",
-   "fym": null,
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 64,
-   "group": "yours",
-   "mat": "Midnight Botanicals",
-   "brand": "Lemondrop Mahjong Co",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "deco-lagoon-mahjong-tiles-lemondrop-mahjong-co-midnight-botanicals-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/deco/leftout/lemondrop-midnight-botanicals.jpg",
-   "racks": [
-    "Bam Bird Boutique Lagoon Wood",
-    "Bam Bird Boutique Mulberry Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Mulberry"
-   ],
-   "why": "Your pick from Left out (round 3). Claude had said: Navy center in magenta and pink florals: more Indigo and Mulberry than Lagoon.",
-   "fym": null,
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 65,
-   "group": "deco",
-   "mat": "Floral Affair",
-   "brand": "Lemondrop Mahjong Co",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "deco-lagoon-mahjong-tiles-lemondrop-mahjong-co-floral-affair-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/albums/catalog-new/lemondrop-mahjong-co--floral-affair.jpg",
-   "racks": [
-    "Bam Bird Boutique Lagoon Wood",
-    "Bam Bird Boutique Mulberry Wood"
-   ],
-   "mat_racks": [
-    "Peace Love Mahjong Acrylic Burl",
-    "Bird & Bamboo Mulberry"
-   ],
-   "why": "A navy garden of teal ferns and berry-pink blooms inside a gold art deco arc border. Her teal and mulberry, and the deco line work of her tiles.",
-   "fym": "",
-   "lowres": true,
-   "caption_note": null,
    "rack_notes": []
   }
  ],
