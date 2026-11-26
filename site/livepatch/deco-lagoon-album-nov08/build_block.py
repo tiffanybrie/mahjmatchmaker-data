@@ -34,14 +34,14 @@ def rack(n):
 def figure(n, c, hol):
     s = spec[c['mat']]; m = D['mats'].get(c.get('fym') or '') if c.get('fym') else None
     brand, mat, retired = c['brand'], c['mat'], c['retired_mat']
-    if not m and not s.get('url'): raise SystemExit(f'NO LINK for {mat}')
+    if not m and not s.get('url') and not c['retired_mat']: raise SystemExit(f'NO LINK for {mat}')  # Nov 26: retired mats (SoHo, Mirage) have no link
     pg = (brandpg(m) if m else s.get('dc')) if brand in PARTNERS else None
     by = f'<a href="{pg}">{e(brand)}</a>' if pg else e(brand)
     ret = '<span class="mm3-ret">Retired</span>' if retired else ''
     label = mat if mat.lower().endswith(' mat') else mat + ' Mat'
-    u = m['u'] if m else s['url']
-    if brand == 'Mahjong Register': u = plain(u)
-    btn = f'<a class="mm3-btn" href="{e(u)}" target="_blank" rel="sponsored noopener">Shop the {e(label)}</a>'
+    u = m['u'] if m else s.get('url')
+    if brand == 'Mahjong Register' and u: u = plain(u)
+    btn = f'<a class="mm3-btn" href="{e(u)}" target="_blank" rel="sponsored noopener">Shop the {e(label)}</a>' if u else ''  # retired, no link (Nov 26)
     if brand == 'Lemondrop Mahjong Co': code = '<span class="mm3-code" style="color:#8a8a8a">No code for Lemondrop Mahjong Co yet</span>'
     elif brand not in PARTNERS: code = f'<span class="mm3-code" style="color:#8a8a8a">No code for {e(brand)}</span>'
     elif brand == 'Mahjong Register': code = '<span class="mm3-code">10% off at Mahjong Register with MAHJMATCH (excludes racks and other brands\' products)</span>'
@@ -57,11 +57,11 @@ def figure(n, c, hol):
             f'<span class="mm3-n">{n:02d}</span><h3>{SET} + {e(mat)}</h3><span class="mm3-by">Mat by {by}{ret}</span>{take}'
             f'<div class="mm3-l">{btn}{code}</div><div class="mm3-rk" style="margin-top:8px;font-size:.82em;line-height:1.55">{cap}</div></figcaption></figure>')
 main = [c for c in man if not c['holiday']]; hol = [c for c in man if c['holiday']]
-assert [c['order'] for c in main] == list(range(1, len(main) + 1)) and len(hol) == 3
+assert [c['order'] for c in main] == list(range(1, len(main) + 1)) and len(hol) == 5
 figs = ''.join(figure(n, c, False) for n, c in enumerate(main, 1))
 hfigs = ''.join(figure(n, c, True) for n, c in enumerate(hol, 1))
 nb = len({c['brand'] for c in man})
-assert [c['mat'] for c in man[:3]] == ['Deco Dragon (Mulberry)', 'Reba', 'Viola'], [c['mat'] for c in man[:3]]
+assert [c['mat'] for c in man[:3]] == ['Gilded Peacock', 'Deco Dragon (Mulberry)', 'Crane Cloud'], [c['mat'] for c in man[:3]]
 top = ("My top mat picks for Bam Bird Boutique's Deco (Lagoon) tiles are the Deco Dragon mat in Mulberry by Bam Bird Boutique, "
        'and Reba and Viola by Britt Mills.')
 tpl = open(R + 'site/livepatch/juniper-album-nov07/juniper-codeblock.html').read()
@@ -88,7 +88,7 @@ body = (
  '<figcaption><strong>The Tile Edit</strong><p>Deep Lagoon teal backs with a gold-foil deco palm on every tile, ivory faces, and mulberry, rose, gold, teal, navy and periwinkle on the faces. '
  "Bam Bird Boutique's own Lagoon Wood and Mulberry Wood racks pick up the backs and the mulberry crak frames.</p></figcaption></figure>"
  '<style>.mm3-gg>.mm3-g:has(img[src*="tile-edit-moodboard"]){grid-column:1/-1}.mm3-gg>.mm3-g:has(img[src*="tile-edit-moodboard"]) figcaption{max-width:860px;margin:0 auto;padding:20px 26px 12px;font-size:16px}</style>'
- f'<figure class="mm3-g mm3-fav2"><img src="{CDN}assets/social/deco-lagoon-launch/deco-lagoon-favorite-tiles.jpg" data-lb="" alt="My favorite Deco Lagoon mahjong tiles: the teal and mulberry dragons, the gold-winged crane bird bam, the peacock feather East wind, the gold and navy irises and the rose lion joker" loading="lazy">'
+ f'<figure class="mm3-g mm3-fav2"><img src="{CDN}assets/colorcards/deco-lagoon/00-deco-lagoon-mahjong-tiles-profile-d-card@2x.png" data-lb="" alt="Deco Lagoon profile card: the tile set at a glance, with its favorite faces" loading="lazy">'
  f'<figcaption><a class="mm3-btn" href="{e(TILE_URL)}" target="_blank" rel="noopener">Shop Deco Tiles</a></figcaption></figure>'
  '<style>.mm3-gg>.mm3-g.mm3-fav2{grid-column:1/-1;max-width:540px;width:100%;margin:6px auto 0;background:none}.mm3-fav2 img{border-radius:14px}.mm3-fav2 figcaption{text-align:center;padding:14px 0 4px}</style>'
  f'<figure class="mm3-g mm3-wheel"><img src="{CDN}assets/colorwheels/deco-lagoon-color-wheel.jpg" data-lb="" alt="Deco Lagoon mahjong tiles on the color wheel: deep teal, gold, mulberry, rose, navy and periwinkle" loading="lazy">'
