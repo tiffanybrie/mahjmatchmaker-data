@@ -46,7 +46,7 @@ labs = ''.join(f'{ab(M(798, 0)[0] + 12, M(0, y)[1] - 17, "display:flex;align-ite
 capy = M(0, 760)[1]
 LY = P.get('layers') or {}
 if LY.get('labels'):   # Juniper-style sets (Nov 10): layer arrows on OMM's own tile photo + wheel notes from the profile, no Papaya text
-    sc = 380 / LY.get('img_w', 732); ox, oy = 110, 200
+    sc = 380 / LY.get('img_w', 732); ox, oy = 110, (230 if LY.get('split') else 200)
     pts = [(ox + x * sc, oy + y * sc, t, c) for x, y, t, c in LY['labels']]
     lys = (LY.get('label_y') or [310, 390, 470])[:len(pts)]
     lx = 520 if LY.get('label_y') else 500   # Nov 10: short leaders off the right edge, text beside the layers
@@ -55,15 +55,15 @@ if LY.get('labels'):   # Juniper-style sets (Nov 10): layer arrows on OMM's own 
             ''.join(f'<polyline points="{px},{py} {lx-18},{ly} {lx},{ly}" fill="none" stroke="#054689" stroke-width="3"/><circle cx="{px}" cy="{py}" r="6" fill="#fff" stroke="#054689" stroke-width="3"/>' for (px, py, t, c), ly in zip(pts, lys)) + '</svg>')
     labs = ''.join(f'{ab(lx + 8, ly - 15, "display:flex;align-items:center;gap:8px;font:700 24px/1.05 Bit;color:var(--navy)", 330)}<i style="flex:0 0 24px;height:24px;border-radius:50%;background:{c};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.25)"></i><span>{e(t)}</span></div>' for (px, py, t, c), ly in zip(pts, lys))
     if LY.get('split'):   # Tiffany Nov 26 9:17am: photo centred; the face label points in from the LEFT, palm + back from the RIGHT
-        IW = 320; sc = IW / LY.get('img_w', 732); ox = round((CW - IW) / 2); pts = [(ox + x * sc, oy + y * sc, t, c) for x, y, t, c in LY['labels']]
-        rx, lx2 = ox + IW + 30, ox - 30
+        IW = 480; sc = IW / LY.get('img_w', 732); ox = round((CW - IW) / 2); pts = [(ox + x * sc, oy + y * sc, t, c) for x, y, t, c in LY['labels']]
+        rx, lx2 = ox + IW + 20, ox - 20
         def _lab(px, py, t, c, ly):
             if 'face' in t.lower():
                 return (f'<polyline points="{px},{py} {lx2+18},{ly} {lx2},{ly}" fill="none" stroke="#054689" stroke-width="3"/><circle cx="{px}" cy="{py}" r="6" fill="#fff" stroke="#054689" stroke-width="3"/>',
-                        f'{ab(lx2 - 196, ly - 15, "display:flex;align-items:center;justify-content:flex-end;gap:8px;font:700 22px/1.05 Bit;color:var(--navy);text-align:right", 188)}<span>{e(t)}</span><i style="flex:0 0 24px;height:24px;border-radius:50%;background:{c};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.25)"></i></div>')
+                        f'{ab(lx2 - 146, ly - 15, "display:flex;align-items:center;justify-content:flex-end;gap:8px;font:700 21px/1.05 Bit;color:var(--navy);text-align:right", 140)}<span>{e(t)}</span><i style="flex:0 0 24px;height:24px;border-radius:50%;background:{c};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.25)"></i></div>')
             return (f'<polyline points="{px},{py} {rx-18},{ly} {rx},{ly}" fill="none" stroke="#054689" stroke-width="3"/><circle cx="{px}" cy="{py}" r="6" fill="#fff" stroke="#054689" stroke-width="3"/>',
-                    f'{ab(rx + 8, ly - 15, "display:flex;align-items:center;gap:8px;font:700 22px/1.05 Bit;color:var(--navy)", 190)}<i style="flex:0 0 24px;height:24px;border-radius:50%;background:{c};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.25)"></i><span>{e(t)}</span></div>')
-        _ls = LY.get('split_y') or [oy + 40, oy + 120, oy + 210]
+                    f'{ab(rx + 8, ly - 15, "display:flex;align-items:center;gap:8px;font:700 21px/1.05 Bit;color:var(--navy)", 140)}<i style="flex:0 0 24px;height:24px;border-radius:50%;background:{c};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.25)"></i><span>{e(t)}</span></div>')
+        _ls = LY.get('split_y') or [oy + 70, oy + 60, oy + 170]
         parts = [_lab(px, py, t, c, ly) for (px, py, t, c), ly in zip(pts, _ls)]
         diag = (f'<img src="{url(LY["img"])}" style="position:absolute;left:{ox}px;top:{oy}px;width:{IW}px;filter:drop-shadow(0 12px 16px rgba(80,40,20,.16))">'
                 '<svg style="position:absolute;left:0;top:0" width="1080" height="1350">' + ''.join(a for a, b in parts) + '</svg>')

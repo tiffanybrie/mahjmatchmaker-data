@@ -43,7 +43,7 @@
   "love": "Candlelit dinners",
   "prompt_q": "I'm weirdly attracted to",
   "prompt_a": "Gold accents. Every single time.",
-  "photo": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
+  "photo": "assets/launches/bambird-deco-tile-set/backs-only-mulberry.jpg",
   "boxes": [
    [
     "Looking For",
@@ -150,23 +150,23 @@
  },
  "layers": {
   "_note": "Nov 7: Deco tiles are two layers (ivory face on a jewel-tone acrylic back with a gold-foil palm). Diagram = the approved faces|backs split photo (assets/tiles/v92), labels point at the back, the palm and the face.",
-  "img": "assets/tiles/backs/deco-mulberry-layers-split-crop.jpg",
+  "img": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
   "labels": [
    [
-    150,
-    40,
+    300,
+    300,
     "Ivory face",
     "#f4efe6"
    ],
    [
-    550,
-    127,
+    1060,
+    190,
     "Gold-foil palm",
     "#c9a24a"
    ],
    [
-    625,
-    360,
+    1240,
+    560,
     "Mulberry back",
     "#7d3456"
    ]
@@ -195,7 +195,9 @@
    580
   ],
   "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color.",
-  "split": true
+  "split": true,
+  "img_w": 1600,
+  "split_y": null
  },
  "her_type": [
   {
@@ -282,10 +284,13 @@
    "mat": "Deco Dragon (Lagoon)",
    "brand": "Bam Bird Boutique",
    "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg",
-   "together": "assets/launches/bambird-deco-dragon-mat/10-deco-dragon.jpg",
+   "together": "assets/social/deco-mulberry-launch/fym-table/deco-mulberry-table-deco-dragon-lagoon-big.jpg",
    "together_fit": "cover",
-   "together_caption": "Mulberry tiles on the Lagoon Deco Dragon, in Bam Bird Boutique's own photo",
-   "why": "Bam Bird Boutique made the Deco Dragon mats to go with these tiles. Mulberry shines on its sister color, Lagoon."
+   "together_caption": "Deco Mulberry on Deco Dragon (Lagoon), in Find Your Mat-ch",
+   "why": "Bam Bird made the Deco Dragon mats to go with these tiles. Mulberry shines on her sister, Lagoon.",
+   "circle": "assets/tiles/album/inset/deco-mulberry-flowers.jpg",
+   "big": true,
+   "big_pos": "50% 50%"
   },
   "sisters": [],
   "strong_label": "Strong match potential"

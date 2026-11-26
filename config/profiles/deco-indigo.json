@@ -43,7 +43,7 @@
   "love": "Late dinners after the show",
   "prompt_q": "Two truths and a lie",
   "prompt_a": "I'm navy. I'm gold. I'm always in stock.",
-  "photo": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
+  "photo": "assets/launches/bambird-deco-tile-set/backs-only-indigo.jpg",
   "boxes": [
    [
     "Looking For",
@@ -150,23 +150,23 @@
  },
  "layers": {
   "_note": "Nov 7: Deco tiles are two layers (ivory face on a jewel-tone acrylic back with a gold-foil palm). Diagram = the approved faces|backs split photo (assets/tiles/v92), labels point at the back, the palm and the face.",
-  "img": "assets/tiles/backs/deco-indigo-layers-split-crop.jpg",
+  "img": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
   "labels": [
    [
-    150,
-    40,
+    300,
+    300,
     "Ivory face",
     "#f4efe6"
    ],
    [
-    560,
-    212,
+    1060,
+    190,
     "Gold-foil palm",
     "#c9a24a"
    ],
    [
-    625,
-    360,
+    1240,
+    560,
     "Indigo back",
     "#263a63"
    ]
@@ -195,7 +195,9 @@
    580
   ],
   "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color.",
-  "split": true
+  "split": true,
+  "img_w": 1600,
+  "split_y": null
  },
  "her_type": [
   {
