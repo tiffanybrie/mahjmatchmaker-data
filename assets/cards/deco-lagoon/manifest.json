@@ -117,6 +117,33 @@
   },
   {
    "order": 5,
+   "group": "deco",
+   "mat": "Art Deco Gold Fans",
+   "brand": "Dreamframer Art",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "deco-lagoon-mahjong-tiles-dreamframer-art-art-deco-gold-fans-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/deco-lagoon/adds/dreamframer-art-dark-blue-art-deco-gold-fans-2000.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Mahjong Register Admiral Navy",
+    "Bird & Bamboo Mauve"
+   ],
+   "why": "Your New finds pick: navy ground with teal and gold art deco fans. Her teal on the fans, her gold palm, her navy dots.",
+   "fym": "www.etsy.com/listing/4491199204",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": [
+    "Mahjong Register Admiral Navy: brand new (Oct 24), already sold out"
+   ]
+  },
+  {
+   "order": 6,
    "group": "yours",
    "mat": "Bamboo Dragon",
    "brand": "Isabel Harte",
@@ -141,7 +168,7 @@
    "rack_notes": []
   },
   {
-   "order": 6,
+   "order": 7,
    "group": "tnt",
    "mat": "White Lotus",
    "brand": "Mahj Tile Haus",
@@ -166,14 +193,14 @@
    "rack_notes": []
   },
   {
-   "order": 7,
+   "order": 8,
    "group": "yours",
-   "mat": "Year of the Dragon Mat - Amped-Up Pink",
+   "mat": "YOTD Amped-Up Pink",
    "brand": "Bespoke Mahjong",
    "retired_mat": false,
    "holiday": false,
    "partner": true,
-   "file": "deco-lagoon-mahjong-tiles-bespoke-mahjong-year-of-the-dragon-mat-amped-up-pink-mat.jpg",
+   "file": "deco-lagoon-mahjong-tiles-bespoke-mahjong-yotd-amped-up-pink-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
    "src": "assets/albums/deco-lagoon/adds/bespoke-mahjong-year-of-the-dragon-mat-amped-up-pink.jpg",
    "racks": [
@@ -181,8 +208,8 @@
     "Bam Bird Boutique Mulberry Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Radish",
-    "Bird & Bamboo Matcha"
+    "Bam Bird Boutique Olive",
+    "Bird & Bamboo Mauve"
    ],
    "why": "Your add from the catalog search (round 2).",
    "fym": "www.bespokemahjong.com/year-of-the-dragon-amped-up-pink-1",
@@ -191,7 +218,7 @@
    "rack_notes": []
   },
   {
-   "order": 8,
+   "order": 9,
    "group": "yours",
    "mat": "Vegan Leather – Gold",
    "brand": "Bam Bird Boutique",
@@ -215,7 +242,7 @@
    "rack_notes": []
   },
   {
-   "order": 9,
+   "order": 10,
    "group": "yours",
    "mat": "Art Deco Gilded Golden",
    "brand": "Splash of Color",
@@ -240,7 +267,7 @@
    "rack_notes": []
   },
   {
-   "order": 10,
+   "order": 11,
    "group": "deco",
    "mat": "Lady Luck's Teal Lounge",
    "brand": "Splash of Color",
@@ -265,7 +292,7 @@
    "rack_notes": []
   },
   {
-   "order": 11,
+   "order": 12,
    "group": "best",
    "mat": "Deco Neoprene",
    "brand": "Bam Bird Boutique",
@@ -289,7 +316,7 @@
    "rack_notes": []
   },
   {
-   "order": 12,
+   "order": 13,
    "group": "tnt",
    "mat": "YOTD Black",
    "brand": "Bespoke Mahjong",
@@ -314,14 +341,14 @@
    "rack_notes": []
   },
   {
-   "order": 13,
+   "order": 14,
    "group": "yours",
-   "mat": "Year of the Dragon Mat - Amped-Up Grey",
+   "mat": "YOTD Amped-Up Grey",
    "brand": "Bespoke Mahjong",
    "retired_mat": false,
    "holiday": false,
    "partner": true,
-   "file": "deco-lagoon-mahjong-tiles-bespoke-mahjong-year-of-the-dragon-mat-amped-up-grey-mat.jpg",
+   "file": "deco-lagoon-mahjong-tiles-bespoke-mahjong-yotd-amped-up-grey-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
    "src": "assets/albums/deco-lagoon/adds/bespoke-mahjong-year-of-the-dragon-mat-amped-up-grey.jpg",
    "racks": [
@@ -329,8 +356,8 @@
     "Bam Bird Boutique Mulberry Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Magenta",
-    "Bam Bird Boutique Olive"
+    "Bird & Bamboo Silver Metallic",
+    "Bird & Bamboo Champagne Metallic"
    ],
    "why": "Your add from the catalog search (round 2).",
    "fym": "www.bespokemahjong.com/year-of-the-dragon-amped-up-grey-1",
@@ -339,7 +366,7 @@
    "rack_notes": []
   },
   {
-   "order": 14,
+   "order": 15,
    "group": "yours",
    "mat": "The Marquee",
    "brand": "Mahj by SI",
@@ -348,7 +375,7 @@
    "partner": false,
    "file": "deco-lagoon-mahjong-tiles-mahj-by-si-the-marquee-mat.jpg",
    "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/albums/deco-lagoon/adds/mahj-by-si-the-marquee.jpg",
+   "src": "assets/albums/deco-lagoon/adds/mahj-by-si-the-marquee-full.jpg",
    "racks": [
     "Bam Bird Boutique Lagoon Wood",
     "Bam Bird Boutique Mulberry Wood"
@@ -363,7 +390,7 @@
    "rack_notes": []
   },
   {
-   "order": 15,
+   "order": 16,
    "group": "best",
    "mat": "Deco Dragon (Lagoon)",
    "brand": "Bam Bird Boutique",
@@ -388,7 +415,7 @@
    "rack_notes": []
   },
   {
-   "order": 16,
+   "order": 17,
    "group": "contrast",
    "mat": "East Meets West – Magenta",
    "brand": "Bam Bird Boutique",
@@ -413,7 +440,7 @@
    "rack_notes": []
   },
   {
-   "order": 17,
+   "order": 18,
    "group": "deco",
    "mat": "Gatsby's Feathered Affair",
    "brand": "Anders Ruff",
@@ -438,7 +465,7 @@
    "rack_notes": []
   },
   {
-   "order": 18,
+   "order": 19,
    "group": "contrast",
    "mat": "Garden Party – Mulberry",
    "brand": "My Fair Mahjong",
@@ -463,7 +490,7 @@
    "rack_notes": []
   },
   {
-   "order": 19,
+   "order": 20,
    "group": "teal",
    "mat": "Sapphire Blooms",
    "brand": "Lemondrop Mahjong Co",
@@ -479,18 +506,16 @@
    ],
    "mat_racks": [
     "Bird & Bamboo French Blue",
-    "Mahjong Register Admiral Navy"
+    "Mahjong Register Navy Solid Wood"
    ],
    "why": "A teal scallop center, the same fan-shell deco as her backs, framed in mulberry and gold inside a navy garden of plum, berry and teal peonies. Her two colours plus gold, in one mat.",
    "fym": "",
    "lowres": true,
    "caption_note": null,
-   "rack_notes": [
-    "Mahjong Register Admiral Navy: brand new (Oct 24), already sold out"
-   ]
+   "rack_notes": []
   },
   {
-   "order": 20,
+   "order": 21,
    "group": "yours",
    "mat": "Tiger Fans",
    "brand": "Piper Chase Studios",
@@ -515,7 +540,7 @@
    "rack_notes": []
   },
   {
-   "order": 21,
+   "order": 22,
    "group": "stand",
    "mat": "Reba",
    "brand": "Britt Mills",
@@ -540,7 +565,7 @@
    "rack_notes": []
   },
   {
-   "order": 22,
+   "order": 23,
    "group": "tnt",
    "mat": "Jade",
    "brand": "Oh My Mahjong",
@@ -565,7 +590,7 @@
    "rack_notes": []
   },
   {
-   "order": 23,
+   "order": 24,
    "group": "yours",
    "mat": "Esme (retired)",
    "brand": "Oh My Mahjong",
@@ -574,14 +599,14 @@
    "partner": false,
    "file": "deco-lagoon-mahjong-tiles-oh-my-mahjong-esme-retired-mat.jpg",
    "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/deco/leftout/oh-my-mahjong-mirage.jpg",
+   "src": "assets/colorcards/deco/leftout/oh-my-mahjong-esme.jpg",
    "racks": [
     "Bam Bird Boutique Lagoon Wood",
     "Bam Bird Boutique Mulberry Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Magenta",
-    "Bird & Bamboo Light Pink"
+    "Mahjong Register Peacock Teal",
+    "Bird & Bamboo Dark Teal"
    ],
    "why": "Oh My Mahjong retired mat. Retired, but a match if you already own it.",
    "fym": null,
@@ -590,7 +615,7 @@
    "rack_notes": []
   },
   {
-   "order": 24,
+   "order": 25,
    "group": "yours",
    "mat": "Mirage (retired)",
    "brand": "Oh My Mahjong",
@@ -615,7 +640,7 @@
    "rack_notes": []
   },
   {
-   "order": 25,
+   "order": 26,
    "group": "deco",
    "mat": "Midnight Peacock",
    "brand": "Anders Ruff",
@@ -640,7 +665,7 @@
    "rack_notes": []
   },
   {
-   "order": 26,
+   "order": 27,
    "group": "best",
    "mat": "Peony Sociale Premium",
    "brand": "Mahjong Register",
@@ -665,7 +690,7 @@
    "rack_notes": []
   },
   {
-   "order": 27,
+   "order": 28,
    "group": "best",
    "mat": "Caroline in Peacock",
    "brand": "Mahj & Vine",
@@ -690,7 +715,7 @@
    "rack_notes": []
   },
   {
-   "order": 28,
+   "order": 29,
    "group": "teal",
    "mat": "Flora",
    "brand": "Britt Mills",
@@ -715,7 +740,7 @@
    "rack_notes": []
   },
   {
-   "order": 29,
+   "order": 30,
    "group": "yours",
    "mat": "Flourish",
    "brand": "Britt Mills",
@@ -740,7 +765,7 @@
    "rack_notes": []
   },
   {
-   "order": 30,
+   "order": 31,
    "group": "teal",
    "mat": "Year of the Snake",
    "brand": "Wren Mats",
@@ -765,7 +790,7 @@
    "rack_notes": []
   },
   {
-   "order": 31,
+   "order": 32,
    "group": "stand",
    "mat": "Viola",
    "brand": "Britt Mills",
@@ -790,7 +815,7 @@
    "rack_notes": []
   },
   {
-   "order": 32,
+   "order": 33,
    "group": "yours",
    "mat": "Elysium",
    "brand": "Oh My Mahjong",
@@ -815,7 +840,7 @@
    "rack_notes": []
   },
   {
-   "order": 33,
+   "order": 34,
    "group": "yours",
    "mat": "Regal Bloom Neoprene",
    "brand": "Britt Mills",
@@ -840,7 +865,7 @@
    "rack_notes": []
   },
   {
-   "order": 34,
+   "order": 35,
    "group": "stand",
    "mat": "Wren",
    "brand": "Britt Mills",
@@ -865,7 +890,7 @@
    "rack_notes": []
   },
   {
-   "order": 35,
+   "order": 36,
    "group": "tnt",
    "mat": "Mahj In Bloom Mat",
    "brand": "Mahj Mood",
@@ -890,7 +915,7 @@
    "rack_notes": []
   },
   {
-   "order": 36,
+   "order": 37,
    "group": "best",
    "mat": "Ruby",
    "brand": "Britt Mills",
@@ -915,7 +940,32 @@
    "rack_notes": []
   },
   {
-   "order": 37,
+   "order": 38,
+   "group": "deco",
+   "mat": "Floral Affair",
+   "brand": "Lemondrop Mahjong Co",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "deco-lagoon-mahjong-tiles-lemondrop-mahjong-co-floral-affair-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/catalog-new/lemondrop-mahjong-co--floral-affair.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Mulberry"
+   ],
+   "why": "A navy garden of teal ferns and berry-pink blooms inside a gold art deco arc border. Her teal and mulberry, and the deco line work of her tiles.",
+   "fym": "",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 39,
    "group": "deco",
    "mat": "Crane & Moon",
    "brand": "YOLO Mahjong",
@@ -940,7 +990,7 @@
    "rack_notes": []
   },
   {
-   "order": 38,
+   "order": 40,
    "group": "stand",
    "mat": "Eden",
    "brand": "Britt Mills",
@@ -965,7 +1015,7 @@
    "rack_notes": []
   },
   {
-   "order": 39,
+   "order": 41,
    "group": "deco",
    "mat": "Fête (Peacock)",
    "brand": "Betty June & Jeannette",
@@ -990,7 +1040,7 @@
    "rack_notes": []
   },
   {
-   "order": 40,
+   "order": 42,
    "group": "top",
    "mat": "Pretty in Plum Premium",
    "brand": "Mahjong Register",
@@ -1015,7 +1065,7 @@
    "rack_notes": []
   },
   {
-   "order": 41,
+   "order": 43,
    "group": "stand",
    "mat": "Scarlett",
    "brand": "Britt Mills",
@@ -1040,7 +1090,7 @@
    "rack_notes": []
   },
   {
-   "order": 42,
+   "order": 44,
    "group": "best",
    "mat": "Spring Blooms Premium",
    "brand": "Sunday Mahjong",
@@ -1065,7 +1115,7 @@
    "rack_notes": []
   },
   {
-   "order": 43,
+   "order": 45,
    "group": "deco",
    "mat": "Gatsby Glow",
    "brand": "Let's Be Besties",
@@ -1090,7 +1140,7 @@
    "rack_notes": []
   },
   {
-   "order": 44,
+   "order": 46,
    "group": "yours",
    "mat": "Mystic Marrakech",
    "brand": "Mahj by SI",
@@ -1115,7 +1165,7 @@
    "rack_notes": []
   },
   {
-   "order": 45,
+   "order": 47,
    "group": "yours",
    "mat": "Plaid Neoprene – Pink on Pink",
    "brand": "Bam Bird Boutique",
@@ -1130,8 +1180,8 @@
     "Bam Bird Boutique Mulberry Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Magenta",
-    "Bird & Bamboo Peony"
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Magenta"
    ],
    "why": "Your add from the catalog search (round 2).",
    "fym": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963728199989",
@@ -1140,7 +1190,7 @@
    "rack_notes": []
   },
   {
-   "order": 46,
+   "order": 48,
    "group": "stand",
    "mat": "Ocean Florals",
    "brand": "Let's Be Besties",
@@ -1165,7 +1215,7 @@
    "rack_notes": []
   },
   {
-   "order": 47,
+   "order": 49,
    "group": "yours",
    "mat": "Vegan Leather – Navy",
    "brand": "Bam Bird Boutique",
@@ -1180,7 +1230,6 @@
     "Bam Bird Boutique Mulberry Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
     "Bird & Bamboo Blackboard Black"
    ],
    "why": "Your add from the catalog search (round 2).",
@@ -1190,7 +1239,7 @@
    "rack_notes": []
   },
   {
-   "order": 48,
+   "order": 50,
    "group": "yours",
    "mat": "Plaid Neoprene – Green with Pink",
    "brand": "Bam Bird Boutique",
@@ -1205,8 +1254,8 @@
     "Bam Bird Boutique Mulberry Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Forest Green",
-    "Bird & Bamboo Evergreen"
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Forest Green"
    ],
    "why": "Your add from the catalog search (round 2).",
    "fym": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963852194101",
@@ -1215,7 +1264,7 @@
    "rack_notes": []
   },
   {
-   "order": 49,
+   "order": 51,
    "group": "yours",
    "mat": "Plaid Neoprene – Green and Blue",
    "brand": "Bam Bird Boutique",
@@ -1240,7 +1289,7 @@
    "rack_notes": []
   },
   {
-   "order": 50,
+   "order": 52,
    "group": "yours",
    "mat": "Pink Winds",
    "brand": "Amanda Toppe",
@@ -1265,7 +1314,7 @@
    "rack_notes": []
   },
   {
-   "order": 51,
+   "order": 53,
    "group": "yours",
    "mat": "Aria",
    "brand": "Britt Mills",
@@ -1290,7 +1339,7 @@
    "rack_notes": []
   },
   {
-   "order": 52,
+   "order": 54,
    "group": "teal",
    "mat": "Plum Panda Premium",
    "brand": "Sunday Mahjong",
@@ -1315,7 +1364,7 @@
    "rack_notes": []
   },
   {
-   "order": 53,
+   "order": 55,
    "group": "yours",
    "mat": "Carson Revel",
    "brand": "Ozark Mahjongg",
@@ -1340,7 +1389,7 @@
    "rack_notes": []
   },
   {
-   "order": 54,
+   "order": 56,
    "group": "yours",
    "mat": "Trent Celadon",
    "brand": "Ozark Mahjongg",
@@ -1365,7 +1414,7 @@
    "rack_notes": []
   },
   {
-   "order": 55,
+   "order": 57,
    "group": "contrast",
    "mat": "Hawthorne",
    "brand": "Oh My Mahjong",
@@ -1389,7 +1438,7 @@
    "rack_notes": []
   },
   {
-   "order": 56,
+   "order": 58,
    "group": "deco",
    "mat": "SoHo",
    "brand": "Oh My Mahjong",
@@ -1410,56 +1459,6 @@
    "fym": "alb:drake:SoHo",
    "lowres": true,
    "caption_note": "Retired",
-   "rack_notes": []
-  },
-  {
-   "order": 57,
-   "group": "yours",
-   "mat": "Mirage",
-   "brand": "Oh My Mahjong",
-   "retired_mat": true,
-   "holiday": false,
-   "partner": false,
-   "file": "deco-lagoon-mahjong-tiles-oh-my-mahjong-mirage-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/deco/leftout/oh-my-mahjong-mirage.jpg",
-   "racks": [
-    "Bam Bird Boutique Lagoon Wood",
-    "Bam Bird Boutique Mulberry Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Magenta",
-    "Bird & Bamboo Light Pink"
-   ],
-   "why": "Tiffany Nov 17 3:24am: should be in the Lagoon album too.",
-   "fym": null,
-   "lowres": false,
-   "caption_note": "Retired",
-   "rack_notes": []
-  },
-  {
-   "order": 58,
-   "group": "deco",
-   "mat": "Floral Affair",
-   "brand": "Lemondrop Mahjong Co",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "deco-lagoon-mahjong-tiles-lemondrop-mahjong-co-floral-affair-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/albums/catalog-new/lemondrop-mahjong-co--floral-affair.jpg",
-   "racks": [
-    "Bam Bird Boutique Lagoon Wood",
-    "Bam Bird Boutique Mulberry Wood"
-   ],
-   "mat_racks": [
-    "Peace Love Mahjong Acrylic Burl",
-    "Bird & Bamboo Mulberry"
-   ],
-   "why": "A navy garden of teal ferns and berry-pink blooms inside a gold art deco arc border. Her teal and mulberry, and the deco line work of her tiles.",
-   "fym": "",
-   "lowres": true,
-   "caption_note": null,
    "rack_notes": []
   },
   {
@@ -1529,7 +1528,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Dark Teal",
-    "Mahjong Register Peacock Teal"
+    "Bird & Bamboo Brick Red"
    ],
    "why": "Holiday: deep teal like her backs with a jewel snowflake in berry, coral and gold that picks up her faces.",
    "fym": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",

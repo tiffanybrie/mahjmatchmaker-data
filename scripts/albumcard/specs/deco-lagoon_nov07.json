@@ -57,6 +57,25 @@
    "lowres": false
   },
   {
+   "group": "deco",
+   "name": "Art Deco Gold Fans",
+   "brand": "Dreamframer Art",
+   "img": "assets/albums/deco-lagoon/adds/dreamframer-art-dark-blue-art-deco-gold-fans-2000.jpg",
+   "box": [
+    300,
+    480,
+    1686,
+    1868
+   ],
+   "why": "Your New finds pick: navy ground with teal and gold art deco fans. Her teal on the fans, her gold palm, her navy dots.",
+   "retired": false,
+   "fym": "www.etsy.com/listing/4491199204",
+   "lowres": false,
+   "partner": false,
+   "added_after_review": "Nov 8 3:20pm: added after her review (her note: Splash of Color has a deco mat that should be brought in; and her New finds 'Bring it in' on Dreamframer Dark Blue Art Deco Gold Fans). Appended after her saved order.",
+   "url": "https://go.shopmy.us/p-102728926"
+  },
+  {
    "group": "yours",
    "name": "Bamboo Dragon",
    "brand": "Isabel Harte",
@@ -81,7 +100,7 @@
   },
   {
    "group": "yours",
-   "name": "Year of the Dragon Mat - Amped-Up Pink",
+   "name": "YOTD Amped-Up Pink",
    "brand": "Bespoke Mahjong",
    "img": "assets/albums/deco-lagoon/adds/bespoke-mahjong-year-of-the-dragon-mat-amped-up-pink.jpg",
    "why": "Your add from the catalog search (round 2).",
@@ -166,7 +185,7 @@
   },
   {
    "group": "yours",
-   "name": "Year of the Dragon Mat - Amped-Up Grey",
+   "name": "YOTD Amped-Up Grey",
    "brand": "Bespoke Mahjong",
    "img": "assets/albums/deco-lagoon/adds/bespoke-mahjong-year-of-the-dragon-mat-amped-up-grey.jpg",
    "why": "Your add from the catalog search (round 2).",
@@ -180,14 +199,20 @@
    "group": "yours",
    "name": "The Marquee",
    "brand": "Mahj by SI",
-   "img": "assets/albums/deco-lagoon/adds/mahj-by-si-the-marquee.jpg",
+   "img": "assets/albums/deco-lagoon/adds/mahj-by-si-the-marquee-full.jpg",
    "why": "Your add from the catalog search (round 2).",
    "retired": false,
    "fym": "https://www.mahjongbysi.com/products/the-marquee-mahjong-mat?variant=67769211977811",
    "lowres": true,
    "holiday": false,
    "her_pick": true,
-   "url": "https://www.mahjongbysi.com/products/the-marquee-mahjong-mat"
+   "url": "https://www.mahjongbysi.com/products/the-marquee-mahjong-mat",
+   "box": [
+    12,
+    12,
+    1038,
+    1038
+   ]
   },
   {
    "group": "best",
@@ -281,7 +306,7 @@
    "group": "yours",
    "name": "Esme (retired)",
    "brand": "Oh My Mahjong",
-   "img": "assets/colorcards/deco/leftout/oh-my-mahjong-mirage.jpg",
+   "img": "assets/colorcards/deco/leftout/oh-my-mahjong-esme.jpg",
    "why": "Oh My Mahjong retired mat. Retired, but a match if you already own it.",
    "retired": true,
    "fym": null,
@@ -434,6 +459,21 @@
   },
   {
    "group": "deco",
+   "name": "Floral Affair",
+   "brand": "Lemondrop Mahjong Co",
+   "img": "assets/albums/catalog-new/lemondrop-mahjong-co--floral-affair.jpg",
+   "why": "A navy garden of teal ferns and berry-pink blooms inside a gold art deco arc border. Her teal and mulberry, and the deco line work of her tiles.",
+   "retired": false,
+   "fym": "",
+   "lowres": true,
+   "partner": false,
+   "url": "https://lemondropmahjongco.com/products/floral-affair-mat",
+   "price": "$80",
+   "added_after_review": "Nov 8 go-live: found in the exhaustive research redo (Lemondrop, the brand of her Sapphire Blooms bring-in; pending affiliate). True match at colour rank; product link, no code until Lemondrop approves.",
+   "photo_note": "Lemondrop watermark on every photo; bottom-left corner used"
+  },
+  {
+   "group": "deco",
    "name": "Crane & Moon",
    "brand": "YOLO Mahjong",
    "img": "assets/colorcards/deco/mats/yolo-mahjong-crane-and-moon.jpg",
@@ -527,7 +567,13 @@
    "lowres": true,
    "holiday": false,
    "her_pick": true,
-   "url": "https://www.mahjongbysi.com/products/mystic-marrakech"
+   "url": "https://www.mahjongbysi.com/products/mystic-marrakech",
+   "box": [
+    79,
+    82,
+    1122,
+    1124
+   ]
   },
   {
    "group": "yours",
@@ -539,7 +585,13 @@
    "fym": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963728199989",
    "lowres": true,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "box": [
+    23,
+    23,
+    613,
+    617
+   ]
   },
   {
    "group": "stand",
@@ -573,7 +625,13 @@
    "fym": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963852194101",
    "lowres": true,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "box": [
+    22,
+    25,
+    618,
+    615
+   ]
   },
   {
    "group": "yours",
@@ -668,38 +726,6 @@
    "lowres": true
   },
   {
-   "group": "deco",
-   "name": "Dark Blue Art Deco, Gold Fans",
-   "brand": "Dreamframer Art",
-   "img": "assets/albums/discovery/dreamframer-art-dark-blue-art-deco-gold-fans.jpg",
-   "box": [
-    108,
-    180,
-    682,
-    752
-   ],
-   "why": "Your New finds pick: navy ground with teal and gold art deco fans. Her teal on the fans, her gold palm, her navy dots.",
-   "retired": false,
-   "fym": "www.etsy.com/listing/4491199204",
-   "lowres": true,
-   "partner": false,
-   "added_after_review": "Nov 8 3:20pm: added after her review (her note: Splash of Color has a deco mat that should be brought in; and her New finds 'Bring it in' on Dreamframer Dark Blue Art Deco Gold Fans). Appended after her saved order.",
-   "url": "https://go.shopmy.us/p-102728926"
-  },
-  {
-   "group": "yours",
-   "name": "Mirage",
-   "brand": "Oh My Mahjong",
-   "img": "assets/colorcards/deco/leftout/oh-my-mahjong-mirage.jpg",
-   "why": "Tiffany Nov 17 3:24am: should be in the Lagoon album too.",
-   "retired": true,
-   "fym": null,
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true,
-   "added_live_nov17": true
-  },
-  {
    "group": "holiday",
    "name": "Winter Berry",
    "brand": "Britt Mills",
@@ -786,21 +812,6 @@
    "lowres": false,
    "holiday": false,
    "her_pick": true
-  },
-  {
-   "group": "deco",
-   "name": "Floral Affair",
-   "brand": "Lemondrop Mahjong Co",
-   "img": "assets/albums/catalog-new/lemondrop-mahjong-co--floral-affair.jpg",
-   "why": "A navy garden of teal ferns and berry-pink blooms inside a gold art deco arc border. Her teal and mulberry, and the deco line work of her tiles.",
-   "retired": false,
-   "fym": "",
-   "lowres": true,
-   "partner": false,
-   "url": "https://lemondropmahjongco.com/products/floral-affair-mat",
-   "price": "$80",
-   "added_after_review": "Nov 8 go-live: found in the exhaustive research redo (Lemondrop, the brand of her Sapphire Blooms bring-in; pending affiliate). True match at colour rank; product link, no code until Lemondrop approves.",
-   "photo_note": "Lemondrop watermark on every photo; bottom-left corner used"
   }
  ],
  "_nov08": "Tiffany Nov 8 10:11am edits: removed Petals After Dark, Crown Jewels, Royal Peacock, Imperial Peacock, Imperial Koi Pond, Indigo Reef, Teal Tapestry, Community Joy, Purple & Aqua Marble; added Deco Dragon (Lagoon), Deco Neoprene, Gatsby's Feathered Affair, OMM Jade, Britt Mills Ruby, East Meets West Magenta; Eden, Viola, Pretty in Plum into the top 10; TNT recs (config/tnt-recs.json deco-lagoon) lead the album, labelled 'TNT rec · mat · brand'. Reba stays the first non-TNT card; Deco Dragon (Mulberry) #8 (sister mat never #1).",
