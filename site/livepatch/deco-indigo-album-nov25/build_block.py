@@ -119,7 +119,7 @@ body = (
  f'<figure class="mm3-g"><picture><source media="(max-width: 640px)" srcset="{CC}color-guide-mobile.jpg"><img src="{CC}tile-edit-moodboard.jpg" data-lb="" '
  'alt="Bam Bird Boutique Deco Indigo mahjong tiles color card: navy-blue backs with a gold-foil palm and ivory faces, faces in mulberry, teal, rose and gold, with rack and mat matches" loading="lazy"></picture>'
  '<figcaption><strong>The Tile Edit</strong><p>Deep indigo backs with a gold-foil palm, ivory faces, and mulberry, teal, rose and gold on the faces. '
- "Bam Bird's Lagoon Wood and Mulberry Wood racks pick up the faces; never navy on navy.</p></figcaption></figure>"
+ "Bam Bird's own Indigo rack matches the backs, and their Mulberry Wood rack picks up the mulberry crak frames.</p></figcaption></figure>"
  '<style>.mm3-gg>.mm3-g:has(img[src*="tile-edit-moodboard"]){grid-column:1/-1}.mm3-gg>.mm3-g:has(img[src*="tile-edit-moodboard"]) figcaption{max-width:860px;margin:0 auto;padding:20px 26px 12px;font-size:16px}</style>'
  f'<figure class="mm3-g mm3-wheel"><img src="{CDN}assets/colorwheels/deco-indigo-color-wheel.jpg" data-lb="" alt="Deco Indigo mahjong tiles on the color wheel: indigo, gold, ivory, mulberry and teal" loading="lazy">'
  '<figcaption><strong>The colors on the wheel</strong><p>Deco Indigo is a deep jewel-tone set. Mats with berry, teal, green or gold give the navy backs something to stand against; '
