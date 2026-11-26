@@ -86,7 +86,7 @@ body = (
  f'<figure class="mm3-g"><picture><source media="(max-width: 640px)" srcset="{CC}color-guide-mobile.jpg"><img src="{CC}tile-edit-moodboard.jpg" data-lb="" '
  'alt="Bam Bird Boutique Deco Lagoon mahjong tiles color card: deep teal backs with a gold-foil palm, ivory faces in mulberry, rose, gold, teal, navy and periwinkle, rack and mat matches" loading="lazy"></picture>'
  '<figcaption><strong>The Tile Edit</strong><p>Deep Lagoon teal backs with a gold-foil deco palm on every tile, ivory faces, and mulberry, rose, gold, teal, navy and periwinkle on the faces. '
- "Bam Bird Boutique's own Lagoon Wood and Mulberry Wood racks pick up the backs and the mulberry crak frames.</p></figcaption></figure>"
+ "Bam Bird Boutique's own Lagoon and Mulberry racks pick up the backs and the mulberry crak frames.</p></figcaption></figure>"
  '<style>.mm3-gg>.mm3-g:has(img[src*="tile-edit-moodboard"]){grid-column:1/-1}.mm3-gg>.mm3-g:has(img[src*="tile-edit-moodboard"]) figcaption{max-width:860px;margin:0 auto;padding:20px 26px 12px;font-size:16px}</style>'
  f'<figure class="mm3-g mm3-fav2"><img src="{CDN}assets/colorcards/deco-lagoon/00-deco-lagoon-mahjong-tiles-profile-d-card@2x.png" data-lb="" alt="Deco Lagoon profile card: the tile set at a glance, with its favorite faces" loading="lazy">'
  f'<figcaption><a class="mm3-btn" href="{e(TILE_URL)}" target="_blank" rel="noopener">Shop Deco Tiles</a></figcaption></figure>'
