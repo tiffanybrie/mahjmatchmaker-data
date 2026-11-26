@@ -3290,6 +3290,420 @@
    "sent": "2026-11-25T15:11:07Z",
    "url": "https://claude.ai/artifact/FAiTL4JE8X4sjekeK8VJuE",
    "note": "Catalog refresh (scripts/albumreview/catalog_refresh.py) since the Nov 8 pool build: 52 partner-store hits, 13 new mats after dedup, 8 that read as mulberry/berry/teal by sight kept in the 'More matches' group for her to keep/remove (Tilly Neoprene, Caroline in Navy, Darjeeling Peacock Navy Floral, Astor, Deco Dragon Indigo, Enchanted Leatherette, Haven Leatherette, Vegan Leather Hunter Green); 5 navy-forward misses left for her to see too (Peacock Garden, Elysium, SoHo, Calista Leatherette, Dark Blue Art Deco/Gold Geometric Fans). Page republished with the Nov 25 grid-view keep/remove fix."
+  },
+  {
+   "round": 2,
+   "applied_at": "2026-11-25T20:39:30-05:00",
+   "changes": [
+    "Order updated (49 positions changed); new top 3: Deco Dragon (Lagoon), Deco Neoprene, Flourish Neoprene",
+    "Put back in: Reba, Amethyst, Esme (retired)",
+    "Added from the catalog: Bandana – Holiday Green/Pink accents, East Meets West – Purple, Plaid Neoprene – Green and Blue, Plaid Neoprene – Green with Pink, Plaid Neoprene – Pink on Pink, Vegan Leather – Cream, Vegan Leather – Gold, Vegan Leather – Navy, Vintage Plum, Classic Neoprene in Lavender, Classic Neoprene – Teal, Clara, Pink Orchids, Year of the Dragon Mat - Amped-Up Pink, Year of the Dragon Mat - Amped-Up Grey, Mabel Neoprene, Grayson Leatherette, Rosalie Leatherette, Year of the Horse, Bamboo Dragon, Gatsby's Feathered Affair, Midnight Peacock, Blushing Blooms, Amethyst Garden, Beyond the Ribbon: Four Winds Social Collab Mat Benefitting Pink Fund, Playing For Keeps, Lovely Lavender Double-Sided Leatherette, The Winter Garland, The Snowfall, The Maison Ribbon, The Rue de Paris, Winter Berry, Winslow 1920 Noir, Jungle Turquoise, White Lotus, Art Deco Gilded Golden, Sapphire Blooms, Carson Revel, The Marquee, Mystic Marrakech",
+    "Cover: Faces + backs",
+    "Your note: “Splash of Color Art Deco Gilded Golden is a top match for Mulberry (tight-crop screenshot used until the original image is pulled). Carson Revel (Ozark) and Mahj by SI The Marquee and Mystic Marrakech go in for all 3 Deco sets. Lemondrop Sapphire Blooms goes in for all 3 Deco sets; her unwatermarked”"
+   ],
+   "anything": "Splash of Color Art Deco Gilded Golden is a top match for Mulberry (tight-crop screenshot used until the original image is pulled). Carson Revel (Ozark) and Mahj by SI The Marquee and Mystic Marrakech go in for all 3 Deco sets. Lemondrop Sapphire Blooms goes in for all 3 Deco sets; her unwatermarked photo is still to come. Sunday Mahjong Plum Panda is on the after-reset list.",
+   "done": true,
+   "answers": {
+    "adds": [
+     {
+      "b": "Bam Bird Boutique",
+      "k": "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465237813",
+      "n": "Bandana – Holiday Green/Pink accents"
+     },
+     {
+      "b": "Bam Bird Boutique",
+      "k": "www.bambirdboutique.com/east-meets-west-neoprene-mat?v=49857170702645",
+      "n": "East Meets West – Purple"
+     },
+     {
+      "b": "Bam Bird Boutique",
+      "k": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963728232757",
+      "n": "Plaid Neoprene – Green and Blue"
+     },
+     {
+      "b": "Bam Bird Boutique",
+      "k": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963852194101",
+      "n": "Plaid Neoprene – Green with Pink"
+     },
+     {
+      "b": "Bam Bird Boutique",
+      "k": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963728199989",
+      "n": "Plaid Neoprene – Pink on Pink"
+     },
+     {
+      "b": "Bam Bird Boutique",
+      "k": "www.bambirdboutique.com/origami-leather-mat?v=51114566779189",
+      "n": "Vegan Leather – Cream"
+     },
+     {
+      "b": "Bam Bird Boutique",
+      "k": "www.bambirdboutique.com/origami-leather-mat?v=52200887910709",
+      "n": "Vegan Leather – Gold"
+     },
+     {
+      "b": "Bam Bird Boutique",
+      "k": "www.bambirdboutique.com/origami-leather-mat?v=51358452613429",
+      "n": "Vegan Leather – Navy"
+     },
+     {
+      "b": "Bam Bird Boutique",
+      "k": "www.bambirdboutique.com/vintage-plum-neoprene-mahjong-mat",
+      "n": "Vintage Plum"
+     },
+     {
+      "b": "Bam Bird Boutique",
+      "k": "www.bambirdboutique.com/neoprene-mat",
+      "n": "Classic Neoprene in Lavender"
+     },
+     {
+      "b": "Bam Bird Boutique",
+      "k": "www.bambirdboutique.com/neoprene-mat?v=47539954024757",
+      "n": "Classic Neoprene – Teal"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "www.ohmymahjong.com/clara-mat-in-tube",
+      "n": "Clara"
+     },
+     {
+      "b": "Amanda Toppe",
+      "k": "alb:coquette:Pink Orchids",
+      "n": "Pink Orchids"
+     },
+     {
+      "b": "Bespoke Mahjong",
+      "k": "www.bespokemahjong.com/year-of-the-dragon-amped-up-pink-1",
+      "n": "Year of the Dragon Mat - Amped-Up Pink"
+     },
+     {
+      "b": "Bespoke Mahjong",
+      "k": "www.bespokemahjong.com/year-of-the-dragon-amped-up-grey-1",
+      "n": "Year of the Dragon Mat - Amped-Up Grey"
+     },
+     {
+      "b": "Britt Mills",
+      "k": "brittmillsdesign.com/mabel-neoprene-mahjong-mat-1",
+      "n": "Mabel Neoprene"
+     },
+     {
+      "b": "Britt Mills",
+      "k": "brittmillsdesign.com/grayson-leatherette-mahjong-mat",
+      "n": "Grayson Leatherette"
+     },
+     {
+      "b": "Britt Mills",
+      "k": "brittmillsdesign.com/rosalie-leatherette-mahjong-mat",
+      "n": "Rosalie Leatherette"
+     },
+     {
+      "b": "Britt Mills",
+      "k": "brittmillsdesign.com/tilly-neoprene-mahjong-mat",
+      "n": "Tilly Neoprene"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "www.ohmymahjong.com/year-of-the-horse-mat",
+      "n": "Year of the Horse"
+     },
+     {
+      "b": "Isabel Harte",
+      "k": "alb2:isabel-harte-isabel-harte",
+      "n": "Bamboo Dragon"
+     },
+     {
+      "b": "Anders Ruff",
+      "k": "shop.andersruff.com/gatsbys-feathered-affair-mahjong-mat",
+      "n": "Gatsby's Feathered Affair"
+     },
+     {
+      "b": "Anders Ruff",
+      "k": "shop.andersruff.com/midnight-peacock-mahjong-mat",
+      "n": "Midnight Peacock"
+     },
+     {
+      "b": "Anders Ruff",
+      "k": "shop.andersruff.com/blushing-blooms-mahjong-mat",
+      "n": "Blushing Blooms"
+     },
+     {
+      "b": "Let's Be Besties",
+      "k": "letsbebesties.com/amethyst-garden-mahjong-mat",
+      "n": "Amethyst Garden"
+     },
+     {
+      "b": "Mahj Mood",
+      "k": "mahjmood.com/beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december",
+      "n": "Beyond the Ribbon: Four Winds Social Collab Mat Benefitting Pink Fund"
+     },
+     {
+      "b": "Mahj Mood",
+      "k": "mahjmood.com/playing-for-keeps-mat",
+      "n": "Playing For Keeps"
+     },
+     {
+      "b": "Mahjong Register",
+      "k": "mahjongregister.com/colette-s-kaleidoscope-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy",
+      "n": "Lovely Lavender Double-Sided Leatherette"
+     },
+     {
+      "b": "Maison Mahj",
+      "k": "maisonmahj.com/the-winter-garland-mat",
+      "n": "The Winter Garland"
+     },
+     {
+      "b": "Maison Mahj",
+      "k": "maisonmahj.com/the-snowfall-mat",
+      "n": "The Snowfall"
+     },
+     {
+      "b": "Maison Mahj",
+      "k": "maisonmahj.com/the-maison-ribbon-mat",
+      "n": "The Maison Ribbon"
+     },
+     {
+      "b": "Maison Mahj",
+      "k": "maisonmahj.com/the-paris-mat-rue-de-paris-edition",
+      "n": "The Rue de Paris"
+     },
+     {
+      "b": "Britt Mills",
+      "k": "brittmillsdesign.com/winter-berry-neoprene-mahjong-mat",
+      "n": "Winter Berry"
+     },
+     {
+      "b": "Ozark Mahjongg",
+      "k": "ozarkmahjong.com/winslow-1920-noir-mat",
+      "n": "Winslow 1920 Noir"
+     },
+     {
+      "b": "Bespoke Mahjong",
+      "k": "www.bespokemahjong.com/double-the-fun-dhonkcollabmat",
+      "n": "Jungle Turquoise"
+     },
+     {
+      "b": "Mahj Tile Haus",
+      "k": "mahjtilehaus.com/white-lotus-mat",
+      "n": "White Lotus"
+     },
+     {
+      "b": "Splash of Color",
+      "k": "https://splashofcolorco.com/products/art-deco-gilded-golden-blue-speakeasy-collection-mahjong-mat?_pos=1&_sid=ae21811e9&_ss=r",
+      "n": "Art Deco Gilded Golden",
+      "note": "Top match for Mulberry; photo is a tight-crop screenshot from Tiffany until the original image can be pulled",
+      "top": true
+     },
+     {
+      "b": "Lemondrop",
+      "k": "https://lemondropmahjongco.com/collections/mats/products/sapphire-blooms-mahjong-mat",
+      "n": "Sapphire Blooms",
+      "note": "Not yet a partner; applied to their UpPromote and followed up. Unwatermarked photo to come from Tiffany"
+     },
+     {
+      "b": "Ozark Mahjongg",
+      "k": "https://www.ozarkmahjongg.com/product-page/carson-revel-mat",
+      "n": "Carson Revel"
+     },
+     {
+      "b": "Mahj by SI",
+      "k": "https://www.mahjongbysi.com/products/the-marquee-mahjong-mat?variant=67769211977811",
+      "n": "The Marquee",
+      "note": "Affiliate brand; needs affiliate link later (Sunday list)"
+     },
+     {
+      "b": "Mahj by SI",
+      "k": "https://www.mahjongbysi.com/products/mystic-marrakech",
+      "n": "Mystic Marrakech",
+      "note": "Affiliate brand; needs affiliate link later (Sunday list). Photo from Tiffany's lilac screenshot"
+     }
+    ],
+    "anything": "Splash of Color Art Deco Gilded Golden is a top match for Mulberry (tight-crop screenshot used until the original image is pulled). Carson Revel (Ozark) and Mahj by SI The Marquee and Mystic Marrakech go in for all 3 Deco sets. Lemondrop Sapphire Blooms goes in for all 3 Deco sets; her unwatermarked photo is still to come. Sunday Mahjong Plum Panda is on the after-reset list.",
+    "cover": 1,
+    "done": true,
+    "faces": [
+     "dragon-green",
+     "dragon-red",
+     "bam-1-crane",
+     "wind-east",
+     "flower-iris-gold",
+     "flower-iris-navy",
+     "joker-rose-lion"
+    ],
+    "finds": {},
+    "notes": {},
+    "order": {
+     "hol": [
+      "soir-e-all-day-poinsettia-party",
+      "lets-be-besties-winter-jewel",
+      "oh-my-mahjong-yuletide"
+     ],
+     "main": [
+      "bam-bird-boutique-deco-dragon-lagoon",
+      "bam-bird-boutique-deco-neoprene",
+      "britt-mills-flourish-neoprene",
+      "britt-mills-regal-bloom-neoprene",
+      "britt-mills-tilly-neoprene",
+      "bam-bird-boutique-deco-dragon-indigo",
+      "oh-my-mahjong-jade",
+      "britt-mills-wren",
+      "britt-mills-haven-leatherette",
+      "oh-my-mahjong-elysium",
+      "mahj-and-vine-caroline-in-peacock",
+      "britt-mills-viola",
+      "mahjong-register-pretty-in-plum-premium",
+      "piper-chase-studios-tiger-fans",
+      "bam-bird-boutique-deco-dragon-mulberry",
+      "britt-mills-scarlett",
+      "bespoke-mahjong-yotd-raspberry",
+      "bespoke-mahjong-yotd-plum",
+      "bespoke-mahjong-darjeeling-peacock-navy-floral",
+      "my-fair-mahjong-garden-party-mulberry",
+      "britt-mills-enchanted-leatherette",
+      "mahj-mood-fall-fling-mat",
+      "mahj-mood-mahj-in-bloom-mat",
+      "oh-my-mahjong-mirage",
+      "oh-my-mahjong-astor",
+      "mahj-and-vine-caroline-in-navy",
+      "wren-mats-year-of-the-snake",
+      "mahjong-register-peony-sociale-premium",
+      "wren-mats-mulberry-and-sage",
+      "bougie-mahjong-gilded-peacock",
+      "oh-my-mahjong-hawthorne",
+      "that-mahjong-moment-evergreen",
+      "lets-be-besties-the-mariner",
+      "lets-be-besties-ocean-florals",
+      "sunday-mahjong-spring-blooms-premium",
+      "dreamframer-art-dark-blue-art-deco-gold-geometric-fans",
+      "yolo-mahjong-plum-scallop",
+      "mahj-mood-emerald-cove-mat",
+      "royal-mahjong-society-crown-jewels"
+     ]
+    },
+    "ordering_off": false,
+    "putin": [
+     "lo-britt-mills-reba",
+     "lo-oh-my-mahjong-amethyst",
+     "lo-oh-my-mahjong-esme-retired"
+    ],
+    "round": 2,
+    "set": "deco-mulberry",
+    "updated": "2026-11-25T23:07:37.064Z",
+    "v": {}
+   }
+  },
+  {
+   "round": 3,
+   "applied_at": "2026-11-26T03:16:02-05:00",
+   "changes": [
+    "Order updated (92 positions changed); new top 3: Bamboo Dragon, Deco Dragon (Lagoon), Year of the Dragon Mat - Amped-Up Grey",
+    "Cover: Backs only",
+    "Your note: “Same notes as others for mats with white space\n\nSame notes as others for wrong font/font style except now ALL of the cards in this album have the wrong font whereas before it was only the new cards.  \n\nEliminate #68-85\n\n#67 The Maison Ribbon needs to move to holiday”"
+   ],
+   "anything": "Same notes as others for mats with white space\n\nSame notes as others for wrong font/font style except now ALL of the cards in this album have the wrong font whereas before it was only the new cards.  \n\nEliminate #68-85\n\n#67 The Maison Ribbon needs to move to holiday",
+   "done": true,
+   "answers": {
+    "adds": [],
+    "anything": "Same notes as others for mats with white space\n\nSame notes as others for wrong font/font style except now ALL of the cards in this album have the wrong font whereas before it was only the new cards.  \n\nEliminate #68-85\n\n#67 The Maison Ribbon needs to move to holiday",
+    "cover": 0,
+    "done": true,
+    "faces": [
+     "dragon-green",
+     "dragon-red",
+     "bam-1-crane",
+     "wind-east",
+     "flower-iris-gold",
+     "flower-iris-navy",
+     "joker-rose-lion"
+    ],
+    "finds": {},
+    "notes": {},
+    "order": {
+     "hol": [
+      "soir-e-all-day-poinsettia-party",
+      "britt-mills-winter-berry",
+      "oh-my-mahjong-clara",
+      "bam-bird-boutique-bandana-holiday-green-pink-accents",
+      "oh-my-mahjong-yuletide",
+      "maison-mahj-the-winter-garland",
+      "maison-mahj-the-snowfall",
+      "lets-be-besties-winter-jewel",
+      "maison-mahj-the-maison-ribbon"
+     ],
+     "main": [
+      "isabel-harte-bamboo-dragon",
+      "bam-bird-boutique-deco-dragon-lagoon",
+      "bespoke-mahjong-year-of-the-dragon-mat-amped-up-grey",
+      "ozark-mahjongg-carson-revel",
+      "bam-bird-boutique-deco-dragon-indigo",
+      "bam-bird-boutique-deco-neoprene",
+      "lemondrop-sapphire-blooms",
+      "bam-bird-boutique-vegan-leather-gold",
+      "mahj-by-si-the-marquee",
+      "bespoke-mahjong-darjeeling-peacock-navy-floral",
+      "bespoke-mahjong-year-of-the-dragon-mat-amped-up-pink",
+      "bespoke-mahjong-yotd-plum",
+      "piper-chase-studios-tiger-fans",
+      "britt-mills-haven-leatherette",
+      "britt-mills-flourish-neoprene",
+      "britt-mills-tilly-neoprene",
+      "britt-mills-regal-bloom-neoprene",
+      "oh-my-mahjong-year-of-the-horse",
+      "oh-my-mahjong-jade",
+      "oh-my-mahjong-elysium",
+      "britt-mills-wren",
+      "bam-bird-boutique-deco-dragon-mulberry",
+      "amanda-toppe-pink-orchids",
+      "mahjong-register-pretty-in-plum-premium",
+      "my-fair-mahjong-garden-party-mulberry",
+      "mahj-and-vine-caroline-in-peacock",
+      "mahj-and-vine-caroline-in-navy",
+      "mahj-by-si-mystic-marrakech",
+      "britt-mills-enchanted-leatherette",
+      "britt-mills-scarlett",
+      "britt-mills-viola",
+      "mahj-mood-fall-fling-mat",
+      "lets-be-besties-amethyst-garden",
+      "wren-mats-year-of-the-snake",
+      "mahj-mood-mahj-in-bloom-mat",
+      "oh-my-mahjong-astor",
+      "britt-mills-reba",
+      "bespoke-mahjong-jungle-turquoise",
+      "sunday-mahjong-spring-blooms-premium",
+      "lets-be-besties-the-mariner",
+      "lets-be-besties-ocean-florals",
+      "anders-ruff-midnight-peacock",
+      "bougie-mahjong-gilded-peacock",
+      "mahj-tile-haus-white-lotus",
+      "anders-ruff-gatsbys-feathered-affair",
+      "splash-of-color-art-deco-gilded-golden",
+      "dreamframer-art-dark-blue-art-deco-gold-geometric-fans",
+      "oh-my-mahjong-hawthorne",
+      "oh-my-mahjong-esme-retired",
+      "maison-mahj-the-rue-de-paris",
+      "britt-mills-rosalie-leatherette",
+      "britt-mills-mabel-neoprene",
+      "oh-my-mahjong-amethyst",
+      "anders-ruff-purple-and-aqua-marble",
+      "mahj-mood-emerald-cove-mat",
+      "mahjong-register-peony-sociale-premium",
+      "royal-mahjong-society-crown-jewels",
+      "britt-mills-peacock-garden",
+      "bam-bird-boutique-east-meets-west-purple",
+      "bam-bird-boutique-classic-neoprene-in-lavender",
+      "bam-bird-boutique-vegan-leather-navy",
+      "bam-bird-boutique-vegan-leather-cream",
+      "mahj-mood-beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund",
+      "anders-ruff-blushing-blooms",
+      "mahjong-register-lovely-lavender-double-sided-leatherette",
+      "oh-my-mahjong-mirage"
+     ]
+    },
+    "ordering_off": false,
+    "putin": [],
+    "round": 3,
+    "set": "deco-mulberry",
+    "updated": "2026-11-26T06:32:06.666Z",
+    "v": {}
+   }
   }
  ],
  "catalog_checked": {

@@ -1,0 +1,1 @@
+Tiffany's final Deco dating-profile text, captions and reel music (chat, Nov 26 3:18-3:19am ET). Use verbatim on the profile carousel slide 1 and the IG caption. Full text: docs/ANSWERS.md 2026-11-26 03:19 entry + config/profiles/deco-text/*.json.
