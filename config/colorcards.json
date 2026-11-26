@@ -1523,11 +1523,15 @@
    ],
    "racks": [
     "Bam Bird Boutique Indigo",
-    "Bam Bird Boutique Mulberry Wood"
+    "Bam Bird Boutique Mulberry Wood",
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Walnut"
    ],
    "rack_imgs": {
     "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
-    "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png"
+    "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png",
+    "Bam Bird Boutique Indigo": "assets/racks/card/bam-bird-boutique-indigo.png",
+    "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png"
    },
    "tile": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
    "tag": [
@@ -1535,9 +1539,9 @@
     "navy backs, gold palms & lions"
    ],
    "mats": [
-    "Peacock Garden",
-    "Savannah",
-    "Deco Dragon (Mulberry)"
+    "Art Deco Gold Fans",
+    "Deco Dragon (Mulberry)",
+    "Trent Midnight"
    ],
    "mat_imgs": {
     "Peacock Garden": "assets/colorcards/deco/mats/britt-mills-peacock-garden.jpg",
@@ -1548,7 +1552,7 @@
     "Gilded Peacock": "assets/colorcards/deco/mats/bougie-mahjong-gilded-peacock.jpg",
     "Crane Cloud": "assets/colorcards/deco/mats/silk-mahjong-crane-cloud.jpg",
     "Deco Dragon (Indigo)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-indigo.jpg",
-    "Art Deco Gold Fans": "assets/albums/deco-lagoon/adds/dreamframer-art-dark-blue-art-deco-gold-fans-2000.jpg",
+    "Art Deco Gold Fans": "assets/albums/discovery/dreamframer-art-dark-blue-art-deco-gold-fans.jpg",
     "Bamboo Dragon": "assets/albums/deco-lagoon/adds/isabel-harte-bamboo-dragon.jpg",
     "White Lotus": "assets/albums/deco-mulberry/adds/mahj-tile-haus-white-lotus.jpg",
     "YOTD Amped-Up Pink": "assets/albums/deco-lagoon/adds/bespoke-mahjong-year-of-the-dragon-mat-amped-up-pink.jpg",
@@ -1680,7 +1684,11 @@
    "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks in Lagoon (her teal bams) + Mulberry (her crak frames), never Indigo on Indigo; Tiffany Oct 27 put Indigo with Bam Bird Lagoon racks",
    "_nov07": "Indigo back = Bam Bird's Indigo showroom photo (#2a3b5e) + FYM table-view wall (#233862, config/tableview-back-colors.json bam-bird-boutique-deco-indigo), checked by eye against the bag pile (listing img 18). Faces = same as Lagoon/Mulberry. Top 3: Peacock Garden (her Oct 27 two-colour pick: Indigo/Peacock Garden), Savannah (her Oct 27 'put Indigo on the green mat'), Deco Dragon (Mulberry) #3 = sister mat (never #1, never the Indigo Dragon). Indigo SOLD OUT on bambirdboutique.com Nov 7 (all 3 variants).",
    "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 1 BamBird_Deco-1-2.jpg (no variant attached; the navy box of the three stacked boxes; the only Indigo-variant images, 11 and 13, show bags or faces)",
-   "racks_note": "Tiffany Nov 17 3:11am: Indigo (navy) as the match-the-tiles rack instead of Lagoon (teal came out of nowhere); Mulberry for the mulberry frames. Bam Bird Indigo shows sold out on their site Nov 17."
+   "racks_note": "Tiffany Nov 17 3:11am: Indigo (navy) as the match-the-tiles rack instead of Lagoon (teal came out of nowhere); Mulberry for the mulberry frames. Bam Bird Indigo shows sold out on their site Nov 17.",
+   "_nov26b": "Tiffany 9:08am: colour card rack matches = the 4 Bam Bird wood racks, like Lagoon",
+   "mat_labels": {
+    "Dark Blue Art Deco, Gold Geometric Fans": "Art Deco Gold Fans"
+   }
   },
   "cabana-club": {
    "name": "Cabana Club",

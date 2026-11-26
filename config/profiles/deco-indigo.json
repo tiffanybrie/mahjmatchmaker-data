@@ -331,12 +331,36 @@
     "brand": "Bam Bird Boutique"
    },
    {
-    "img": "assets/social/deco-indigo-launch/fym-table/deco-indigo-table-navy.jpg",
-    "mat": "Vegan Leather Navy",
+    "img": "assets/social/deco-indigo-launch/field/vegan-leather-gold.jpg",
+    "mat": "Vegan Leather – Gold",
     "brand": "Bam Bird Boutique"
    }
   ],
-  "sub": "Her Bam Bird Boutique matches"
+  "sub": "",
+  "title": "Her Bam Bird<br>Boutique matches",
+  "mats2": [
+   {
+    "img": "assets/social/deco-indigo-launch/field/dark-blue-art-deco-gold-geometric-fans.jpg",
+    "mat": "Art Deco Gold Fans",
+    "brand": "Dreamframer Art"
+   },
+   {
+    "img": "assets/social/deco-indigo-launch/field/trent-midnight.jpg",
+    "mat": "Trent Midnight",
+    "brand": "Ozark Mahjongg"
+   },
+   {
+    "img": "assets/social/deco-indigo-launch/field/soho.jpg",
+    "mat": "SoHo",
+    "brand": "Oh My Mahjong"
+   },
+   {
+    "img": "assets/social/deco-indigo-launch/field/yotd-amped-up-grey.jpg",
+    "mat": "YOTD Amped-Up Grey",
+    "brand": "Bespoke Mahjong"
+   }
+  ],
+  "sub2": "Her top matches from other brands"
  },
  "end_fan": [
   "cover",

@@ -170,7 +170,7 @@ if FL:
                     f'<div style="margin-top:10px;font:700 23px/1.1 Bit;color:var(--navy)">{e(f["mat"])}</div><div style="font:400 19px Bit;color:#5a6b85;margin-top:3px">{e(f["brand"])}</div></div>'
                     for f in FL['mats'][:4])
     NATIVE[8] = (f'<div class="caps" style="position:absolute;left:{L}px;top:48px;font-size:17px;color:#5a6b85">{e(P["name"])} · her profile</div>'
-                 f'<div class="cap" style="position:absolute;left:{L}px;top:80px;font-size:66px;line-height:1">But she likes to<br>play the field</div>'
+                 f'<div class="cap" style="position:absolute;left:{L}px;top:80px;font-size:66px;line-height:1">{FL.get("title") or "But she likes to<br>play the field"}</div>'
                  f'{ab(L, 228, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">{FL.get("sub") or f'Try {e(P["name"])} on {depth}+ mats in Find <span style="font-style:italic">Your</span> Mat-ch&trade;'}</div></div>'
                  f'{ab(L, 292, "display:grid;grid-template-columns:330px 330px;gap:18px 40px;justify-content:center", W)}{tiles}</div>')
     if FL.get('mats2'):   # Tiffany Nov 23 8:17pm: another round of her OMM mats
@@ -179,7 +179,7 @@ if FL:
                          for f in FL['mats2'][:4])
         NATIVE[9] = (f'<div class="caps" style="position:absolute;left:{L}px;top:48px;font-size:17px;color:#5a6b85">{e(P["name"])} · her profile</div>'
                      f'<div class="cap" style="position:absolute;left:{L}px;top:80px;font-size:66px;line-height:1">But she likes to<br>play the field</div>'
-                     f'{ab(L, 228, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">{FL.get("sub", "")}</div></div>'
+                     f'{ab(L, 228, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">{FL.get("sub2", FL.get("sub", ""))}</div></div>'
                      f'{ab(L, 292, "display:grid;grid-template-columns:330px 330px;gap:18px 40px;justify-content:center", W)}{tiles2}</div>')
 
 def page(n):

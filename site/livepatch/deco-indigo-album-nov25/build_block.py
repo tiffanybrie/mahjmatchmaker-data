@@ -134,7 +134,7 @@ body = (
  '<figcaption><strong>The colors on the wheel</strong><p>Deco Indigo is a deep jewel-tone set. Mats with berry, teal, green or gold give the navy backs something to stand against; '
  'a plain navy or royal blue mat makes them disappear.</p></figcaption></figure>'
  '<style>.mm3-gg>.mm3-g.mm3-wheel{grid-column:1/-1;max-width:760px;width:100%;margin:6px auto 0}</style>'
- '</div></section>\n' + CAROUSEL('deco-indigo', 'Deco Indigo', ['1', '2', '3', '4', '5', '6', '6b-play-the-field', '7']) +
+ '</div></section>\n' + CAROUSEL('deco-indigo', 'Deco Indigo', ['1', '2', '3', '4', '5', '6', '6b-play-the-field', '6c-play-the-field-2', '7']) +
  f'<section id="top-bam-bird-matches"><h2>Top Bam Bird Boutique matches</h2><p class="mm3-sub">My favorite Bam Bird Boutique mats for Deco Indigo. More matches from other brands are below.</p><div class="mm3-grid">{ofigs}</div></section>'
  f'<section id="cross-brand-matches"><h2>Deco Indigo across more brands</h2><p class="mm3-sub">More mat brands that match Deco Indigo, my top picks first. Tap any photo to see it bigger.</p><div class="mm3-grid">{cfigs}</div></section>'
  f'{HOLCSS}<section class="mm3-hol" id="holiday-matches"><h2>Holiday matches for Deco Indigo</h2><p class="mm3-sub">Christmas and Hanukkah mats for Deco Indigo, with rack picks. '
