@@ -44,7 +44,6 @@
   "prompt_q": "Two truths and a lie",
   "prompt_a": "I'm navy. I'm gold. I'm always in stock.",
   "photo": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
-  "personality": "The sophisticated one. Plays hard to get.",
   "boxes": [
    [
     "Looking For",
@@ -195,7 +194,8 @@
    480,
    580
   ],
-  "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color."
+  "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color.",
+  "split": true
  },
  "her_type": [
   {
@@ -294,9 +294,10 @@
   "strong_label": "Strong match potential"
  },
  "album_peek": [
-  "britt-mills-peacock-garden",
-  "britt-mills-savannah",
-  "bam-bird-boutique-deco-dragon-mulberry"
+  "dreamframer-art-dark-blue-art-deco-gold-geometric-fans",
+  "bam-bird-boutique-deco-dragon-mulberry",
+  "ozark-mahjongg-trent-midnight",
+  "oh-my-mahjong-soho"
  ],
  "colors_line": "Indigo backs with a gold-foil deco palm, on an ivory face. Deep jewel tones, rich, not earthy.",
  "layers_hand": "see the layers?<br>an ivory face on an Indigo back, gold palm on top.",
@@ -362,11 +363,6 @@
   ],
   "sub2": "Her top matches from other brands"
  },
- "end_fan": [
-  "cover",
-  "bam-bird-boutique-deco-dragon-mulberry",
-  "bam-bird-boutique-deco-neoprene"
- ],
  "end_cta_html": "<div class=\"pill\" style=\"margin-top:22px;background:var(--pink)\">Comment ALBUM</div><div class=\"pf\" style=\"font-size:32px;margin-top:16px;color:#3c4f73\">or match her up yourself in Find <i>Your</i> Mat-ch&trade;</div>",
  "racks_sub": "Pick up her berry or her teal, both in Bam Bird's own wood.",
  "rack_gap": 58,

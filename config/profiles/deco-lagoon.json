@@ -44,7 +44,6 @@
   "prompt_q": "Most likely to",
   "prompt_a": "Turn mahj night into a speakeasy.",
   "photo": "assets/tiles/v92/bam-bird-boutique-deco-lagoon-split.jpg",
-  "personality": "The social one. Knows the password to the speakeasy.",
   "boxes": [
    [
     "Looking For",
@@ -195,7 +194,8 @@
    480,
    580
   ],
-  "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color."
+  "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color.",
+  "split": true
  },
  "her_type": [
   {
@@ -299,10 +299,10 @@
   "strong_label": "Strong match potential"
  },
  "album_peek": [
-  "britt-mills-reba",
-  "britt-mills-viola",
+  "bougie-mahjong-gilded-peacock",
   "bam-bird-boutique-deco-dragon-mulberry",
-  "britt-mills-eden"
+  "silk-mahjong-crane-cloud",
+  "bam-bird-boutique-deco-dragon-indigo"
  ],
  "colors_line": "Lagoon teal backs with a gold-foil deco palm, on an ivory face. Deep jewel tones, rich, not earthy.",
  "layers_hand": "see the layers?<br>an ivory face on a Lagoon back, gold palm on top.",

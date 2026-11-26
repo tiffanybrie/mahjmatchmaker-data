@@ -44,7 +44,6 @@
   "prompt_q": "I'm weirdly attracted to",
   "prompt_a": "Gold accents. Every single time.",
   "photo": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
-  "personality": "The showstopper. Likes to stand out.",
   "boxes": [
    [
     "Looking For",
@@ -195,7 +194,8 @@
    480,
    580
   ],
-  "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color."
+  "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color.",
+  "split": true
  },
  "her_type": [
   {
@@ -291,9 +291,10 @@
   "strong_label": "Strong match potential"
  },
  "album_peek": [
-  "britt-mills-viola",
-  "mahj-and-vine-caroline-in-peacock",
-  "bam-bird-boutique-deco-dragon-lagoon"
+  "isabel-harte-bamboo-dragon",
+  "bam-bird-boutique-deco-dragon-lagoon",
+  "bespoke-mahjong-yotd-amped-up-grey",
+  "ozark-mahjongg-carson-revel"
  ],
  "colors_line": "Mulberry backs with a gold-foil deco palm, on an ivory face. Deep jewel tones, rich, not earthy.",
  "layers_hand": "see the layers?<br>an ivory face on a Mulberry back, gold palm on top.",
