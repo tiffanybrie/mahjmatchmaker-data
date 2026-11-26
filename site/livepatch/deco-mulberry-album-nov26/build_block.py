@@ -86,6 +86,15 @@ def figure(n, s, hol):
             f'<a class="mm3-pin" href="#" target="_blank" rel="noopener" aria-label="Save to Pinterest">Save</a></div><figcaption>'
             f'<span class="mm3-n">{n:02d}</span><h3>{SET} + {e(mat)}</h3><span class="mm3-by">Mat by {by}{ret}</span>{take}'
             f'<div class="mm3-l">{btn}{code}</div><div class="mm3-rk" style="margin-top:8px;font-size:.82em;line-height:1.55">{cap}</div></figcaption></figure>')
+
+def CAROUSEL(key, setname, slides):
+    imgs = ''.join(f'<img src="{CDN}assets/social/{key}-launch/intro-framed/{s}.jpg" data-lb="" alt="{setname} dating profile, slide {i+1}" loading="lazy">' for i, s in enumerate(slides))
+    return ('<style>.mm3-car{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 14px;-webkit-overflow-scrolling:touch}'
+            '.mm3-car img{flex:0 0 min(78vw,360px);width:min(78vw,360px);height:auto;border-radius:14px;scroll-snap-align:center;box-shadow:0 8px 22px rgba(6,40,90,.14)}</style>'
+            f'<section id="dating-profile" style="max-width:1100px;margin:26px auto 10px;padding:0 16px"><h2>Meet {setname}</h2>'
+            f'<p class="mm3-sub">Her dating profile: swipe through to meet her colors, her best features, the racks she is into and her soulmate mat.</p>'
+            f'<div class="mm3-car">{imgs}</div></section>')
+
 main = [s for s in spec if not s.get('holiday')]; hol = [s for s in spec if s.get('holiday')]
 omm = [s for s in main if s['brand'] == 'Bam Bird Boutique']; cross = [s for s in main if s['brand'] != 'Bam Bird Boutique']
 assert len(omm) + len(cross) + len(hol) == len(spec) == len(man)
@@ -125,7 +134,7 @@ body = (
  '<figcaption><strong>The colors on the wheel</strong><p>Deco Mulberry is a rich jewel-tone set. Mats with teal, green, navy or gold give the mulberry backs something to stand against; '
  'an all-berry or plain purple mat makes them disappear.</p></figcaption></figure>'
  '<style>.mm3-gg>.mm3-g.mm3-wheel{grid-column:1/-1;max-width:760px;width:100%;margin:6px auto 0}</style>'
- '</div></section>\n'
+ '</div></section>\n' + CAROUSEL('deco-mulberry', 'Deco Mulberry', ['1', '2', '3', '4', '5', '6', '7']) +
  f'<section id="top-bam-bird-matches"><h2>Top Bam Bird Boutique matches</h2><p class="mm3-sub">My favorite Bam Bird Boutique mats for Deco Mulberry. More matches from other brands are below.</p><div class="mm3-grid">{ofigs}</div></section>'
  f'<section id="cross-brand-matches"><h2>Deco Mulberry across more brands</h2><p class="mm3-sub">More mat brands that match Deco Mulberry, my top picks first. Tap any photo to see it bigger.</p><div class="mm3-grid">{cfigs}</div></section>'
  f'{HOLCSS}<section class="mm3-hol" id="holiday-matches"><h2>Holiday matches for Deco Mulberry</h2><p class="mm3-sub">Christmas and Hanukkah mats for Deco Mulberry, with rack picks. '
