@@ -8,3 +8,7 @@ Order: Lagoon (live) -> Indigo -> Mulberry.
 - Mulberry page is a duplicate of Indigo (new slug /deco-mulberry-mahjong-tile-matches, SEO set). Its 'New album' pill and shop-at-Bam-Bird foot line are Claude wording; check stock/launch wording.
 - Indigo + Mulberry pages: top section groups Bam Bird mats first (Sadie Jane layout), so her #1 non-Bam-Bird pick sits under 'more brands'. Lagoon uses her straight order.
 - Profile carousel cards (her 3:18am text) + social assets on the pages: in progress after the pages.
+- ~4:05am SOCIAL DONE: Indigo (8-slide carousel, 28s silent reel, PASS cover, end card, her caption) -> HQ posts/2026-11-26-deco-indigo-triple-date + chat; Mulberry + Lagoon same -> HQ posts/2026-11-26-deco-*-profile. Carousels on all 3 album pages; Lagoon page profile card now shows X + heart.
+- Reels are a simple slideshow cut (cover, profile, carousel, top 8 cards on a fast beat, end card), silent for her song. End card logos are static (not the gliding Christmas-reel end card). No real FYM swipe footage.
+- Mulberry has no 'play the field' slide (no Table-view renders for Mulberry yet).
+- Profile carousel slides 2-7 keep the earlier text (her colors, faces, best features, racks, soulmate); only slide 1 took her 3:18am text, as given.
