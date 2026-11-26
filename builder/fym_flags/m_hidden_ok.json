@@ -554,6 +554,13 @@
    "brand": "Mahjong by SI",
    "src": "thin-album heart (live on /osler-mahjong-tile-matches since Nov 1; config/fym-thin-picks-oct26.json)",
    "why": "Nov 6 (FYM 1.16): Mahjong Co. mats retired + hidden 3:56pm; her pick stays in m, mat hidden (never renders)"
+  },
+  {
+   "mat": "The Rue de Paris",
+   "brand": "Maison Mahj",
+   "why": "Her pick on the live Deco Mulberry album (Nov 26), assets/cards/deco-mulberry/manifest.json",
+   "set": "bam-bird-boutique-deco-mulberry",
+   "key": "maisonmahj.com/the-paris-mat-rue-de-paris-edition"
   }
  ]
 }

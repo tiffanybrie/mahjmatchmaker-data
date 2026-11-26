@@ -29,6 +29,7 @@ def mat(c):
     cand = [k for k, o in M.items() if nz(o.get('bn')) == nz(c['brand']) and nz(o['n']) and (nz(nm) in nz(o['n']) or nz(o['n']) in nz(nm))]
     return cand[0] if len(cand) == 1 else None
 SETS = {'deco-indigo': 'bam-bird-boutique-deco-indigo', 'deco-mulberry': 'bam-bird-boutique-deco-mulberry', 'deco-lagoon': 'bam-bird-boutique-deco'}
+MOK = {(a['set'], a['key']) for a in json.load(open(R + 'builder/fym_flags/m_hidden_ok.json'))['allowed']}
 L = json.load(open(R + 'builder/fym_flags/locks.json')); L.setdefault('sets', {})
 rep = {}
 for alb, slug in SETS.items():
@@ -38,10 +39,10 @@ for alb, slug in SETS.items():
     for c in C:
         k = mat(c)
         if not k: r['not_in_app'].append(f"{c['mat']} ({c['brand']})"); continue
-        if M[k].get('hid'): r['hidden'].append(f"{c['mat']} ({c['brand']})"); continue
+        if M[k].get('hid') and (slug, k) not in MOK: r['hidden'].append(f"{c['mat']} ({c['brand']})"); continue
         if k in seen: continue
         seen.add(k)
-        rk = [x for x in (BBR.get(n) or RN.get(nz(n)) for n in c.get('racks') or []) if x in RK]
+        rk = list(dict.fromkeys(list((D.get('lm') or {}).get(k) or []) + [x for x in (BBR.get(n) or RN.get(nz(n)) for n in c.get('racks') or []) if x in RK]))  # gate [36]: her mat picks lead
         m.append([k, rk]); r['added'] += 1
     s['m'] = m; s['album'] = alb; s['cat'] = False
     L['sets'].setdefault(slug, {})['m'] = m
