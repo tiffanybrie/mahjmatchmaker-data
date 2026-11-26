@@ -11,8 +11,8 @@
  },
  "_note": "Deco (Mulberry) Tile Set Profile (doc 81), DRAFT Nov 7, built by Claude for Tiffany's review (her Nov 7 7:03pm: run it like Juniper). Colours from config/colorcards.json sets.deco-mulberry. Mats = Claude's top 3 (Viola #1 = her Oct 27 Mulberry pairing, Caroline in Peacock #2, Deco Dragon (Lagoon) #3 = Bam Bird's own sister mat, never #1 and never Mulberry on Mulberry). Racks = Bam Bird Mulberry Wood + Lagoon Wood (same 19in shape). best_features = Claude's 4 PROPOSALS until she picks. PRONOUN: brand guide s3 says ask Tiffany; 'her' is the draft default. Prompts are new (not Papaya's irrational fear, not Juniper's green flag).",
  "key": "deco-mulberry",
- "name": "Deco (Mulberry)",
- "matches": 30,
+ "name": "Deco Mulberry",
+ "matches": 75,
  "album": "https://www.mahjmatchmaker.com/deco-mulberry-mahjong-tile-matches",
  "profile_line": [
   "Seeking: mulberry, lagoon teal or gold.",
@@ -33,17 +33,32 @@
   ]
  },
  "swipe": {
-  "looking": "A teal who can keep up",
+  "looking": "A mat-ch that lets me steal the spotlight.",
   "pills": [
-   "Velvet",
-   "Cocktail hour",
-   "Lions",
-   "Gold leaf"
+   "Cabaret",
+   "The Charleston",
+   "Vintage jewelry",
+   "Champagne towers"
   ],
   "love": "Candlelit dinners",
   "prompt_q": "I'm weirdly attracted to",
   "prompt_a": "Gold accents. Every single time.",
-  "photo": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg"
+  "photo": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
+  "personality": "The showstopper. Likes to stand out.",
+  "boxes": [
+   [
+    "Looking For",
+    "A mat-ch that lets me steal the spotlight."
+   ],
+   [
+    "Love Language",
+    "Receiving gifts — preferably gold jewelry."
+   ],
+   [
+    "Deal Breaker",
+    "Don’t call me purple."
+   ]
+  ]
  },
  "her_colors": {
   "backs": [
@@ -293,5 +308,6 @@
   ],
   "round": 1,
   "_note": "Tiffany's face picks from the review page; rebuild best_features from these"
- }
+ },
+ "end_cta_html": "<div class=\"pill\" style=\"margin-top:22px;background:var(--pink)\">Comment ALBUM</div><div class=\"pf\" style=\"font-size:32px;margin-top:16px;color:#3c4f73\">or match her up yourself in Find <i>Your</i> Mat-ch&trade;</div>"
 }

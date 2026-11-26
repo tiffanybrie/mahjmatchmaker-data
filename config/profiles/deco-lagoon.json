@@ -11,8 +11,8 @@
  },
  "_note": "Deco (Lagoon) Tile Set Profile (doc 81), DRAFT Nov 7, built by Claude for Tiffany's review (her Nov 7 7:03pm: run it like Juniper). Colours from config/colorcards.json sets.deco-lagoon. Mats = Claude's top 3 (Reba #1 = her Oct 27 favorite Deco pairing, Viola #2 (Tiffany Nov 8: rank Viola higher; was Wren), Deco Dragon (Mulberry) #3 = Bam Bird's own sister mat, never #1 and never Lagoon on Lagoon). Racks = Bam Bird Lagoon Wood + Mulberry Wood (same 19in shape). best_features = Claude's 4 PROPOSALS until she picks. PRONOUN: brand guide s3 says ask Tiffany; 'her' is the draft default. Prompts are new (not Papaya's irrational fear, not Juniper's green flag).",
  "key": "deco-lagoon",
- "name": "Deco (Lagoon)",
- "matches": 30,
+ "name": "Deco Lagoon",
+ "matches": 63,
  "album": "https://www.mahjmatchmaker.com/deco-lagoon-mahjong-tile-matches",
  "profile_line": [
   "Seeking: deep teal with a berry streak.",
@@ -33,17 +33,32 @@
   ]
  },
  "swipe": {
-  "looking": "A deep teal with a berry streak",
+  "looking": "A mat with personality. Wallflowers need not apply.",
   "pills": [
    "Speakeasies",
    "Peacock feathers",
-   "Gold foil",
+   "Opulence",
    "Jazz"
   ],
   "love": "Champagne towers",
   "prompt_q": "Most likely to",
   "prompt_a": "Turn mahj night into a speakeasy.",
-  "photo": "assets/tiles/v92/bam-bird-boutique-deco-lagoon-split.jpg"
+  "photo": "assets/tiles/v92/bam-bird-boutique-deco-lagoon-split.jpg",
+  "personality": "The social one. Knows the password to the speakeasy.",
+  "boxes": [
+   [
+    "Looking For",
+    "A mat with personality. Wallflowers need not apply."
+   ],
+   [
+    "Most Likely To",
+    "Turn mahj night into a speakeasy."
+   ],
+   [
+    "Non-Negotiable",
+    "Must love peacocks. 🦚"
+   ]
+  ]
  },
  "her_colors": {
   "backs": [
@@ -275,9 +290,9 @@
    "mat": "Deco Dragon (Mulberry)",
    "brand": "Bam Bird Boutique",
    "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg",
-   "together": "assets/launches/bambird-deco-dragon-mat/07-deco-dragon.jpg",
+   "together": "assets/social/deco-lagoon-launch/fym-table/deco-lagoon-table-deco-dragon-mulberry.jpg",
    "together_fit": "cover",
-   "together_caption": "Lagoon tiles on the Indigo Deco Dragon, in Bam Bird Boutique's own photo",
+   "together_caption": "Deco Lagoon on Deco Dragon (Mulberry), in Find Your Mat-ch",
    "why": "Bam Bird Boutique made the Deco Dragon mats to go with these tiles. Lagoon shines on a sister color: Mulberry, or Indigo like this."
   },
   "sisters": [],
@@ -329,5 +344,6 @@
     "brand": "Mahjong Register"
    }
   ]
- }
+ },
+ "end_cta_html": "<div class=\"pill\" style=\"margin-top:22px;background:var(--pink)\">Comment ALBUM</div><div class=\"pf\" style=\"font-size:32px;margin-top:16px;color:#3c4f73\">or match her up yourself in Find <i>Your</i> Mat-ch&trade;</div>"
 }

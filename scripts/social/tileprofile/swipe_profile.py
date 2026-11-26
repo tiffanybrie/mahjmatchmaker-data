@@ -37,7 +37,7 @@ if KEY != 'papaya-spritz':
     _w = _p['swipe']
     P = dict(name=_p['name'], brand=_p['brand'], photo=_w.get('photo', _c['tile']), active=_p['launch_line'].split(' · ')[0],
              looking=_w['looking'], pills=_w['pills'], love=_w['love'], prompt_q=_w['prompt_q'], prompt_a=_w['prompt_a'],
-             basics=[], matches=_p['matches'])
+             basics=[], matches=_p['matches'], boxes=_w.get('boxes'), personality=_w.get('personality'))
     OUT = f'{R}/assets/colorcards/{KEY}/00-{KEY}-mahjong-tiles-profile-d-story.jpg'
 
 def svg(path, color, size, stroke=6, fill='none'):
@@ -54,6 +54,8 @@ def buttons(size, inner_x, inner_h):
     """The ONLY profile button row: X (navy on white) + heart (white on flame), same size. Oct 21 rule."""
     return btn(X, '#054689', size, inner_x, stroke=6) + btn(HEART, '#fff', size, inner_h, fill='#fff', stroke=2, bg='#f56c8c')
 
+_bx = P.get('boxes') or [['Looking for', P['looking']], ['Love language', P['love']], [P['prompt_q'], P['prompt_a']]]
+BOXES = ''.join(f'<div class="box"><div class="q">{(svg(HEART, "#c8325f", 30, 4, "#f56c8c") + " ") if i == 0 else ""}{q}</div><div class="a{" wr" if len(a) > 38 else ""}">{a}</div></div>' for i, (q, a) in enumerate(_bx))
 pills = ''.join(f'<span class="pill">{t}</span>' for t in P['pills'])  # Oct 20: Tinder labels these "Interests"
 PIN = 'M24 44 C24 44 10 29 10 19 C10 11 16 5 24 5 C32 5 38 11 38 19 C38 29 24 44 24 44 Z M24 24 A5 5 0 1 0 24 14 A5 5 0 1 0 24 24 Z'
 basics = ''.join(f'<span class="basic"><span class="dot" style="background:{c}"></span>{t}</span>' for c, t in P['basics'])
@@ -91,7 +93,7 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
 .body{{position:absolute;left:44px;right:44px;top:884px}}
 .box{{background:#fdf4ee;border-radius:26px;padding:22px 30px;margin-bottom:20px}}
 .q{{font:700 22px Bit;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:8px;display:flex;align-items:center;gap:12px}}
-.a{{font-family:Capra;font-size:43px;line-height:1.05;color:var(--navy);white-space:nowrap}}
+.a{{font-family:Capra;font-size:43px;line-height:1.08;color:var(--navy);white-space:nowrap}}.a.wr{{white-space:normal;font-size:36px}}
 .pa{{font-family:Capra;font-size:43px;line-height:1.05;color:var(--navy);white-space:nowrap}}/* Nov 24 (Tiffany): the third answer matches the other two, no italic */
 .basics{{display:flex;flex-wrap:nowrap;gap:9px}}
 .basic{{display:inline-flex;align-items:center;gap:10px;font:600 23px Bit;color:var(--navy);background:#fff;border:2.5px solid #ecdcd0;border-radius:999px;padding:8px 16px 8px 10px}}
@@ -108,16 +110,14 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
  <div class="bars">{"<i></i>" * 7}</div>
  <div class="shade"></div>
  <div class="name">{P['name']}<span class="check">{svg('M13 25 L21 33 L36 16', '#fff', 40, 6)}</span></div>
- <div class="meta"><span class="g"></span>{P['active']}</div>
+ <div class="meta"><span class="g"></span>{P.get('personality') or P['active']}</div>
  <div class="loc">{svg(PIN, '#fff', 34, 0, '#fff')}Lives at {P['brand']}</div>
  <!-- Oct 21 1:47pm (Tiffany): no info/up-arrow circle on the photo; the only buttons are X + heart -->
  <div class="ilab">{'<svg width="34" height="34" viewBox="0 0 48 48"><rect x="4" y="4" width="17" height="17" rx="4" fill="#fff"/><circle cx="35.5" cy="12.5" r="8.5" fill="#fff"/><path d="M12.5 27 L21 43 H4 Z" fill="#fff"/><path d="M35.5 44 C27 37 26 33 26 30.5 C26 27.5 28.5 26 30.5 26 C32.5 26 34 27 35.5 29 C37 27 38.5 26 40.5 26 C42.5 26 45 27.5 45 30.5 C45 33 44 37 35.5 44 Z" fill="#fff"/></svg>'}Interests</div>
  <div class="pillrow">{pills}</div>
  </div>
  <div class="body">
-  <div class="box"><div class="q">{svg(HEART, '#c8325f', 30, 4, '#f56c8c')} Looking for</div><div class="a">{P['looking']}</div></div>
-  <div class="box"><div class="q">Love language</div><div class="a">{P['love']}</div></div>
-  <div class="box"><div class="q">{P['prompt_q']}</div><div class="pa">{P['prompt_a']}</div></div>
+{BOXES}
  </div>
 </div>
 <div class="btns">{buttons(130, 58, 62)}</div>

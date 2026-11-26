@@ -12,7 +12,7 @@
  "_note": "Deco (Indigo) Tile Set Profile (doc 81), DRAFT Nov 7 late, built by Claude (coordinator 11:38pm: Tiffany asked for the third colourway). Top 3: Peacock Garden, Savannah (both her Oct 27 Indigo pairings), Deco Dragon (Mulberry) = sister mat #3, never the Indigo Dragon. Racks Bam Bird Lagoon Wood + Mulberry Wood. Indigo sold out at Bam Bird Nov 7. best_features = Claude's 4 PROPOSALS. PRONOUN: ask Tiffany; 'her' is the draft default.",
  "key": "deco-indigo",
  "name": "Deco Indigo",
- "matches": 52,
+ "matches": 60,
  "album": "https://www.mahjmatchmaker.com/deco-indigo-mahjong-tile-matches",
  "profile_line": [
   "Seeking: berry, teal or a little gold.",
@@ -33,17 +33,32 @@
   ]
  },
  "swipe": {
-  "looking": "Anything but navy on navy",
+  "looking": "A little contrast. I already bring the drama.",
   "pills": [
    "Midnight gardens",
-   "Velvet bags",
-   "Gold palms",
-   "Jazz clubs"
+   "Black-tie affairs",
+   "Velvet ropes",
+   "Gilded palms"
   ],
   "love": "Late dinners after the show",
   "prompt_q": "Two truths and a lie",
   "prompt_a": "I'm navy. I'm gold. I'm always in stock.",
-  "photo": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg"
+  "photo": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
+  "personality": "The sophisticated one. Plays hard to get.",
+  "boxes": [
+   [
+    "Looking For",
+    "A little contrast. I already bring the drama."
+   ],
+   [
+    "Love Language",
+    "Words of affirmation. Tell me I look good in everything. (Because I do.)"
+   ],
+   [
+    "Two Truths And A Lie",
+    "I’m navy. I’m gold. I’m always in stock."
+   ]
+  ]
  },
  "her_colors": {
   "backs": [
@@ -217,8 +232,8 @@
  "dealbreaker": "Navy on navy and plain royal blue. Next to her deep indigo they just disappear. Give her berry, green or gold to play against.",
  "racks": [
   {
-   "name": "Bam Bird Boutique Lagoon Wood",
-   "why": "The teal from her bams and green dragon, in Bam Bird's own wood rack.",
+   "name": "Bam Bird Boutique Indigo",
+   "why": "Her Indigo backs, in Bam Bird's own wood rack.",
    "group": "color"
   },
   {
