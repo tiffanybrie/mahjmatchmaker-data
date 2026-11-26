@@ -30,7 +30,7 @@ def walk(o):
     elif isinstance(o, list):
         for x in o: walk(x)
 walk(rec)
-NEWURL.update({'Dark Blue Art Deco, Gold Geometric Fans': 'https://go.shopmy.us/p-102728926', 'Vegan Leather – Hunter Green': 'https://www.bambirdboutique.com/discount/MAHJMATCH?redirect=%2Fproducts%2Forigami-leather-mat%3Fvariant%3D67732658880821%26sca_ref%3D10069575.cf1ZUJEgbaOpCDgy', 'Pink & Blue Grandmillennial': 'https://www.etsy.com/listing/4527255793',
+NEWURL.update({'Eaton Indigo': 'https://www.ozarkmahjongg.com/product-page/eaton-indigo-mat', 'Dark Blue Art Deco, Gold Geometric Fans': 'https://go.shopmy.us/p-102728926', 'Vegan Leather – Hunter Green': 'https://www.bambirdboutique.com/discount/MAHJMATCH?redirect=%2Fproducts%2Forigami-leather-mat%3Fvariant%3D67732658880821%26sca_ref%3D10069575.cf1ZUJEgbaOpCDgy', 'Pink & Blue Grandmillennial': 'https://www.etsy.com/listing/4527255793',
                'Chinoiserie Pastel Floral': 'https://www.etsy.com/listing/4497703295',
                'The Kerry (Glamourous)': 'https://www.etsy.com/listing/4610692079'})
 FIXKEY = {'Deco Dragon (Indigo)': 'www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293', 'Deco Dragon (Lagoon)': 'www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061', 'Deco Dragon (Mulberry)': 'www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829', 'Sunday Sherbert Double-Sided Mahjong Mat – Leatherette 31.5"': 'mahjongregister.com/snowflake-reindeer-lodge-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy'}
@@ -45,6 +45,11 @@ def brandpg(m):
     p = U.urlparse((m or {}).get('dc') or '').path
     return p if p.endswith('-discount-code') else None
 MISSR = []
+OTHERURL = {}
+for _k in ('deco-lagoon', 'deco-mulberry'):
+    for _x in json.load(open(R + f'scripts/albumcard/specs/{_k}_nov07.json'))['mats']:
+        if _x.get('url'): OTHERURL.setdefault(_x['name'], _x['url'])
+
 RALIAS = {'Bam Bird Boutique Indigo': 'Bam Bird Boutique Indigo Wood', 'Bam Bird Boutique Olive': 'Bam Bird Boutique Olive Green Wood', 'Peace Love Mahjong Acrylic Burl': 'Peace Love Mahjong Acrylic Burlwood'}
 def rack(n):
     v = RN.get(n) or RN.get(RALIAS.get(n, ''))
@@ -54,10 +59,10 @@ def figure(n, s, hol):
     c = man[s['name']]
     m = D['mats'].get(c.get('fym') or s.get('fym') or '') or D['mats'].get(FIXKEY.get(s['name']) or '') or next((v for v in D['mats'].values() if v.get('n') == s['name'] and v.get('bn') == s['brand']), None)
     brand, mat, retired = s['brand'], s['name'], bool(s.get('retired') or c.get('retired_mat'))
-    u = (m.get('u') if m else None) or NEWURL.get(mat)
+    u = (m.get('u') if m else None) or NEWURL.get(mat) or s.get('url') or OTHERURL.get(mat)
     
     if not u and m and brand == 'Oh My Mahjong': retired = True; u = 'x'
-    if not u: raise SystemExit(f'NO LINK for {mat}')
+    if not u: print(f'SET ASIDE (no link): {mat}'); return ''
     partner = brand in PARTNERS or (m and m.get('pa')) or brand == 'Bam Bird Boutique'
     pg = brandpg(m) if (m and partner) else None
     by = f'<a href="{pg}">{e(brand)}</a>' if pg else e(brand)
