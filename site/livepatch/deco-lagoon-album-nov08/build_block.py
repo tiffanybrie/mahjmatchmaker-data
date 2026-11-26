@@ -88,14 +88,19 @@ body = (
  '<figcaption><strong>The Tile Edit</strong><p>Deep Lagoon teal backs with a gold-foil deco palm on every tile, ivory faces, and mulberry, rose, gold, teal, navy and periwinkle on the faces. '
  "Bam Bird Boutique's own Lagoon and Mulberry racks pick up the backs and the mulberry crak frames.</p></figcaption></figure>"
  '<style>.mm3-gg>.mm3-g:has(img[src*="tile-edit-moodboard"]){grid-column:1/-1}.mm3-gg>.mm3-g:has(img[src*="tile-edit-moodboard"]) figcaption{max-width:860px;margin:0 auto;padding:20px 26px 12px;font-size:16px}</style>'
- f'<figure class="mm3-g mm3-fav2"><img src="{CDN}assets/colorcards/deco-lagoon/00-deco-lagoon-mahjong-tiles-profile-d-card@2x.png" data-lb="" alt="Deco Lagoon profile card: the tile set at a glance, with its favorite faces" loading="lazy">'
+ f'<figure class="mm3-g mm3-fav2"><img src="{CDN}assets/colorcards/deco-lagoon/00-deco-lagoon-mahjong-tiles-profile-card-buttons.jpg" data-lb="" alt="Deco Lagoon profile card: the tile set at a glance, with its favorite faces" loading="lazy">'
  f'<figcaption><a class="mm3-btn" href="{e(TILE_URL)}" target="_blank" rel="noopener">Shop Deco Tiles</a></figcaption></figure>'
- '<style>.mm3-gg>.mm3-g.mm3-fav2{grid-column:1/-1;max-width:540px;width:100%;margin:6px auto 0;background:none}.mm3-fav2 img{border-radius:14px}.mm3-fav2 figcaption{text-align:center;padding:14px 0 4px}</style>'
+ '<style>.mm3-gg>.mm3-g.mm3-fav2{grid-column:1/-1;max-width:460px;width:100%;margin:6px auto 0;background:none}.mm3-fav2 img{border-radius:14px}.mm3-fav2 figcaption{text-align:center;padding:14px 0 4px}</style>'
  f'<figure class="mm3-g mm3-wheel"><img src="{CDN}assets/colorwheels/deco-lagoon-color-wheel.jpg" data-lb="" alt="Deco Lagoon mahjong tiles on the color wheel: deep teal, gold, mulberry, rose, navy and periwinkle" loading="lazy">'
  '<figcaption><strong>The colors on the wheel</strong><p>Mulberry and rose sit straight across the wheel from deep teal. That is why a teal mat with a berry frame or berry flowers makes Deco (Lagoon) pop, and why an all-teal mat reads tone on tone, with the faces bringing the berry.</p>'
  '<p>Gold sits between them and ties both sides together, so a touch of gold on the mat always looks at home next to the gold-foil palms.</p></figcaption></figure>'
  '<style>.mm3-gg>.mm3-g.mm3-wheel{grid-column:1/-1;max-width:760px;width:100%;margin:6px auto 0}</style>'
- '</div></section>\n'
+ '</div></section>\n' + ('<style>.mm3-car{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 14px;-webkit-overflow-scrolling:touch}'
+ '.mm3-car img{flex:0 0 min(78vw,360px);width:min(78vw,360px);height:auto;border-radius:14px;scroll-snap-align:center;box-shadow:0 8px 22px rgba(6,40,90,.14)}</style>'
+ '<section id="dating-profile" style="max-width:1100px;margin:26px auto 10px;padding:0 16px"><h2>Meet Deco Lagoon</h2>'
+ '<p class="mm3-sub">Her dating profile: swipe through to meet her colors, her best features, the racks she is into and her soulmate mat.</p><div class="mm3-car">'
+ + ''.join(f'<img src="{CDN}assets/social/deco-lagoon-launch/intro-framed/{x}.jpg" data-lb="" alt="Deco Lagoon dating profile, slide {i+1}" loading="lazy">' for i, x in enumerate(['1','2','3','4','5','6','6b-play-the-field','7']))
+ + '</div></section>') +
  f'<section><h2>My Deco (Lagoon) matches</h2><p class="mm3-sub">My top picks come first. Tap any photo to see it bigger.</p><div class="mm3-grid">{figs}</div></section>'
  f'{HOLCSS}<section class="mm3-hol" id="holiday-matches"><h2>Holiday matches for Deco (Lagoon)</h2><p class="mm3-sub">Christmas mats for Deco (Lagoon), with rack picks. '
  'See more holiday matches on the <a href="/holiday-mahjong-matches">Holiday Matches</a> page.</p>'
