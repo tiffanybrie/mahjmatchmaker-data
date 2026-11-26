@@ -55,7 +55,7 @@ if LY.get('labels'):   # Juniper-style sets (Nov 10): layer arrows on OMM's own 
             ''.join(f'<polyline points="{px},{py} {lx-18},{ly} {lx},{ly}" fill="none" stroke="#054689" stroke-width="3"/><circle cx="{px}" cy="{py}" r="6" fill="#fff" stroke="#054689" stroke-width="3"/>' for (px, py, t, c), ly in zip(pts, lys)) + '</svg>')
     labs = ''.join(f'{ab(lx + 8, ly - 15, "display:flex;align-items:center;gap:8px;font:700 24px/1.05 Bit;color:var(--navy)", 330)}<i style="flex:0 0 24px;height:24px;border-radius:50%;background:{c};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.25)"></i><span>{e(t)}</span></div>' for (px, py, t, c), ly in zip(pts, lys))
     if LY.get('split'):   # Tiffany Nov 26 9:17am: photo centred; the face label points in from the LEFT, palm + back from the RIGHT
-        IW = 480; sc = IW / LY.get('img_w', 732); ox = round((CW - IW) / 2); pts = [(ox + x * sc, oy + y * sc, t, c) for x, y, t, c in LY['labels']]
+        IW = LY.get('iw', 480); oy = LY.get('oy', oy); sc = IW / LY.get('img_w', 732); ox = round((CW - IW) / 2); pts = [(ox + x * sc, oy + y * sc, t, c) for x, y, t, c in LY['labels']]
         rx, lx2 = ox + IW + 20, ox - 20
         def _lab(px, py, t, c, ly):
             if 'face' in t.lower():

@@ -40,15 +40,16 @@ if P.get('end_fan'):   # Tiffany Nov 23 8:23pm: newest match card front and cent
     fan = ''.join(f'<div class="ph" style="position:absolute;left:{450 - 200 + dx}px;top:{dy + 20}px;width:400px;height:500px;border-radius:20px;'
                   f'background-image:url({c});background-size:cover;background-position:center;box-shadow:0 0 0 9px #fff,0 16px 34px rgba(6,40,90,.22);transform:rotate({rot}deg);z-index:{z}"></div>'
                   for (dx, dy, rot, z), c in zip(_L, _items) if c)
+_T = bool(P.get('end_cta_html'))   # Tiffany Nov 26 9:45am: wordmark ran to the bottom edge with the longer CTA; tighter spacing gives it breathing room
 end = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}</style></head><body>
-<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding:96px 80px 0">
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding:{64 if _T else 96}px 80px 0">
  <div class="caps" style="font-size:20px;color:#5a6b85">{e(P['name'])} · {e(P['brand'])}</div>
  <div class="cap" style="font-size:108px;margin-top:22px;line-height:.95">She&rsquo;s been<br><span style="color:var(--acc)">MAT-ched!</span></div>
- <div style="position:relative;margin-top:34px;width:900px;height:590px">{fan}</div>
- <div class="pf" style="font-size:46px;margin-top:46px">See all <b style="font-weight:600;color:var(--pink)">{P['matches']}</b> of her match cards</div>
+ <div style="position:relative;margin-top:{24 if _T else 34}px;width:900px;height:590px">{fan}</div>
+ <div class="pf" style="font-size:46px;margin-top:{26 if _T else 46}px">See all <b style="font-weight:600;color:var(--pink)">{P['matches']}</b> of her match cards</div>
  {P.get('end_cta_html') or '<div class="pill" style="margin-top:22px;background:var(--pink)">link in bio &rarr;</div>'}
  <div style="margin-top:28px;font:700 30px Bit">Code <span style="color:var(--pink)">MAHJMATCH</span> at {e(P['brand'])}</div>
- <img src="{url('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="width:420px;margin-top:34px">
+ <img src="{url('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="width:{380 if _T else 420}px;margin-top:{22 if _T else 34}px">
 </div></body></html>"""
 # merged "Her colors" slide (Tiffany, Oct 19 night): layer diagram from the brand's back + side photo, small color wheel, face dots
 BACK = P.get('back_photo', 'assets/tiles/backs/' + key + '-back-and-side-omm.jpg')

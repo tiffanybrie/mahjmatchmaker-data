@@ -150,22 +150,22 @@
  },
  "layers": {
   "_note": "Nov 7: Deco tiles are two layers (ivory face on a jewel-tone acrylic back with a gold-foil palm). Diagram = the approved faces|backs split photo (assets/tiles/v92), labels point at the back, the palm and the face.",
-  "img": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
+  "img": "assets/social/deco-indigo-launch/intro/her-colors-split-crop.jpg",
   "labels": [
    [
-    300,
-    300,
+    200,
+    330,
     "Ivory face",
     "#f4efe6"
    ],
    [
-    1060,
-    190,
+    640,
+    200,
     "Gold-foil palm",
     "#c9a24a"
    ],
    [
-    1240,
+    720,
     560,
     "Indigo back",
     "#263a63"
@@ -196,8 +196,15 @@
   ],
   "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color.",
   "split": true,
-  "img_w": 1600,
-  "split_y": null
+  "img_w": 800,
+  "split_y": [
+   465,
+   305,
+   535
+  ],
+  "iw": 450,
+  "oy": 215,
+  "_note_nov26": "Tiffany Nov 26 9:45am: centre crop of the split (3 columns of faces | 3 of backs), bigger."
  },
  "her_type": [
   {
@@ -241,6 +248,16 @@
   {
    "name": "Bam Bird Boutique Mulberry Wood",
    "why": "The mulberry from her crak frames and South wind.",
+   "group": "color"
+  },
+  {
+   "name": "Bam Bird Boutique Lagoon Wood",
+   "why": "Her sister Lagoon's backs, in Bam Bird's own wood rack.",
+   "group": "color"
+  },
+  {
+   "name": "Bam Bird Boutique Walnut",
+   "why": "Warm walnut wood that goes with everything.",
    "group": "color"
   }
  ],
@@ -334,7 +351,7 @@
     "brand": "Bam Bird Boutique"
    },
    {
-    "img": "assets/social/deco-indigo-launch/field/vegan-leather-gold.jpg",
+    "img": "assets/social/deco-indigo-launch/fym-table/deco-indigo-table-vegan-leather-gold.jpg",
     "mat": "Vegan Leather – Gold",
     "brand": "Bam Bird Boutique"
    }
@@ -366,7 +383,7 @@
   "sub2": "Her top matches from other brands"
  },
  "end_cta_html": "<div class=\"pill\" style=\"margin-top:22px;background:var(--pink)\">Comment ALBUM</div><div class=\"pf\" style=\"font-size:32px;margin-top:16px;color:#3c4f73\">or match her up yourself in Find <i>Your</i> Mat-ch&trade;</div>",
- "racks_sub": "Pick up her berry or her teal, both in Bam Bird's own wood.",
- "rack_gap": 58,
+ "racks_sub": "Her Indigo, her sisters' mulberry and lagoon, or warm walnut, all in Bam Bird's own wood.",
+ "rack_gap": 30,
  "racks_hand_framed": "all Bam Bird Boutique, all picked for her"
 }
