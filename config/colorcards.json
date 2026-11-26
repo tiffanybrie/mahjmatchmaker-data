@@ -1312,11 +1312,15 @@
    ],
    "racks": [
     "Bam Bird Boutique Mulberry Wood",
-    "Bam Bird Boutique Lagoon Wood"
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Indigo",
+    "Bam Bird Boutique Walnut"
    ],
    "rack_imgs": {
     "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
-    "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png"
+    "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png",
+    "Bam Bird Boutique Indigo": "assets/racks/card/bam-bird-boutique-indigo.png",
+    "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png"
    },
    "tile": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
    "tag": [
@@ -1324,9 +1328,9 @@
     "berry backs, gold palms & lions"
    ],
    "mats": [
-    "Viola",
-    "Caroline in Peacock",
-    "Deco Dragon (Lagoon)"
+    "Bamboo Dragon",
+    "Deco Dragon (Lagoon)",
+    "YOTD Amped-Up Grey"
    ],
    "mat_imgs": {
     "Viola": "assets/colorcards/deco/mats/britt-mills-viola.jpg",
@@ -1337,7 +1341,7 @@
     "Crane Cloud": "assets/colorcards/deco/mats/silk-mahjong-crane-cloud.jpg",
     "Deco Dragon (Indigo)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-indigo.jpg",
     "Art Deco Gold Fans": "assets/albums/deco-lagoon/adds/dreamframer-art-dark-blue-art-deco-gold-fans-2000.jpg",
-    "Bamboo Dragon": "assets/albums/deco-lagoon/adds/isabel-harte-bamboo-dragon.jpg",
+    "Bamboo Dragon": "assets/albums/deco-mulberry/adds/isabel-harte-bamboo-dragon.jpg",
     "White Lotus": "assets/albums/deco-mulberry/adds/mahj-tile-haus-white-lotus.jpg",
     "YOTD Amped-Up Pink": "assets/albums/deco-lagoon/adds/bespoke-mahjong-year-of-the-dragon-mat-amped-up-pink.jpg",
     "Vegan Leather – Gold": "assets/albums/deco-lagoon/adds/bam-bird-boutique-vegan-leather-gold.jpg",
@@ -1345,7 +1349,7 @@
     "Lady Luck's Teal Lounge": "assets/colorcards/deco/mats/splash-of-color-lady-lucks-teal-lounge.jpg",
     "Deco Neoprene": "assets/colorcards/deco/mats/bam-bird-boutique-deco-neoprene.jpg",
     "YOTD Black": "assets/mats/gallery/bespoke-mahjong--yotd-black.webp",
-    "YOTD Amped-Up Grey": "assets/albums/deco-lagoon/adds/bespoke-mahjong-year-of-the-dragon-mat-amped-up-grey.jpg",
+    "YOTD Amped-Up Grey": "assets/albums/deco-mulberry/adds/bespoke-mahjong-year-of-the-dragon-mat-amped-up-grey.jpg",
     "The Marquee": "assets/albums/deco-lagoon/adds/mahj-by-si-the-marquee-full.jpg",
     "East Meets West – Magenta": "assets/colorcards/deco/leftout/bam-bird-boutique-east-meets-west-magenta.jpg",
     "Gatsby's Feathered Affair": "assets/colorcards/deco/leftout/anders-ruff-gatsbys-feathered-affair.jpg",
@@ -1467,7 +1471,8 @@
    "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
    "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks, Mulberry (backs) + Lagoon (the teal bams)",
    "_nov07": "Same source photos as deco-lagoon. Top 3: Viola #1 (her Oct 27 Mulberry pairing), Caroline in Peacock #2, Deco Dragon (Lagoon) #3 = Bam Bird's own sister mat (never Mulberry on Mulberry).",
-   "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 8 BamBird_40K_and_Christmas_-83.jpg (variant Mulberry / Lucite Display Box)"
+   "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 8 BamBird_40K_and_Christmas_-83.jpg (variant Mulberry / Lucite Display Box)",
+   "_nov26": "Tiffany 9:12am: tile edit = 4 Bam Bird racks; overall top 3 Bamboo Dragon, Deco Dragon (Lagoon), YOTD Amped-Up Grey"
   },
   "deco-indigo": {
    "name": "Deco Indigo",
