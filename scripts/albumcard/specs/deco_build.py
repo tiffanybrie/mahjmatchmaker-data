@@ -18,7 +18,7 @@ R = '/home/claude/mahjmatchmaker-data/'
 KEY, W = sys.argv[1], sys.argv[2]; os.makedirs(W, exist_ok=True)
 A = json.load(open(R + f'scripts/albumcard/specs/{KEY}_nov07.json'))
 CC = json.load(open(R + 'config/colorcards.json'))['sets'][KEY]
-TRACKS = CC['racks']
+TRACKS = CC['racks'][:2]  # Nov 26 (Tiffany): per-card MATCH THE TILES = Lagoon + Mulberry only; the colour card shows 4 (colorcards.json)
 INSET = f"assets/tiles/album/inset/deco-{KEY.split('-')[1]}-flowers.jpg"  # Nov 8: flower columns, not 9/joker
 BAMBIRD = {'Bam Bird Boutique Olive': '#4c5221', 'Bam Bird Boutique Walnut': '#8c5529'}  # measured from assets/racks/card PNGs
 # Nov 8 2:12pm (Tiffany): use partners with big rack lines more (Mahjong Register, Anders Ruff) and their NEW colourways; a sold-out

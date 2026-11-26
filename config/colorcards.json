@@ -1,1772 +1,1778 @@
 {
- "_note": "Album color cards (The Tile Edit). Built by scripts/colorcards/build.py (Oct 18). Backs/faces read from each set's approved tile photo (doc 34: backs + layers, not faces). Racks = config/tile-racks-picks.json final_lists; sets with no approved list use her universal racks and say so in Ready to Ship. Taglines use only facts she has stated.",
- "sets": {
-  "mahjpit-merry-merry": {
-   "name": "Merry Merry",
-   "col": "#b3122e",
-   "brand": "Mahj Pit",
-   "sub": "Gold confetti backs, cherry-red faces, tiny Christmas trees",
-   "backs": [
-    [
-     "GOLD CONFETTI",
-     "#c9a24a",
-     "glitter resin back"
-    ],
-    [
-     "CHERRY RED",
-     "#b3122e",
-     "face resin"
-    ],
-    [
-     "IVORY",
-     "#f4efe6",
-     "card frame"
-    ]
-   ],
-   "faces": [
-    [
-     "SEAFOAM",
-     "#7fcdb8"
-    ],
-    [
-     "FOREST GREEN",
-     "#1f4d3e"
-    ],
-    [
-     "MUSTARD GOLD",
-     "#d9a94a"
-    ],
-    [
-     "DUSTY CORAL",
-     "#c47e68"
-    ],
-    [
-     "CREAM",
-     "#f4efe6"
-    ]
-   ],
-   "racks": [
-    "Bird & Bamboo Cherry Red",
-    "Bird & Bamboo Gold Metallic"
-   ],
-   "tile": "assets/tiles/album/mahjpit-merry-merry.jpg",
-   "tag": [
-    "Travel-size tiles, full-size party energy",
-    "gold confetti, cherry red & tiny trees"
-   ],
-   "mats": [
-    "Tartan Tidings",
-    "Merry Mix",
-    "Jean Always Chose Cranberry From a Can"
-   ],
-   "mat_imgs": {
-    "Tartan Tidings": "assets/colorcards/origami/mats/anders-ruff-tartan-tidings.jpg",
-    "Merry Mix": "assets/mats/gallery/peace-love-mahjong--merry-mix.webp",
-    "Jean Always Chose Cranberry From a Can": "assets/mats/v106/noli-june-jean-always-chose-cranberry-from-a-can.jpg"
-   },
-   "shop": "Shop Merry Merry \u00b7 Mahj Pit",
-   "shop_m": "Shop Merry Merry \u00b7 Mahj Pit",
-   "mats_source": "Claude's own picks, by colour (gold/red/cranberry): not her yeses. Jean Always Chose Cranberry From a Can is the Noli June mat she asked to include Nov 11 1:08pm.",
-   "racks_source": "Claude's own picks from the Bird & Bamboo paint table (builder/bbracks.json): Cherry Red + Gold Metallic, no Mahj Pit racks of its own in the catalog.",
-   "_nov25": "Backs/faces measured by eye from assets/tiles/album/mahjpit-merry-merry.jpg (straightened, Tiffany-approved Nov 11 3:18pm): gold multicolour confetti resin backs, cherry-red face resin with a white-bordered frame holding 3-4 small Christmas trees per tile in seafoam/forest green/mustard/dusty coral/cream."
+  "_note": "Album color cards (The Tile Edit). Built by scripts/colorcards/build.py (Oct 18). Backs/faces read from each set's approved tile photo (doc 34: backs + layers, not faces). Racks = config/tile-racks-picks.json final_lists; sets with no approved list use her universal racks and say so in Ready to Ship. Taglines use only facts she has stated.",
+  "sets": {
+    "mahjpit-merry-merry": {
+      "name": "Merry Merry",
+      "col": "#b3122e",
+      "brand": "Mahj Pit",
+      "sub": "Gold confetti backs, cherry-red faces, tiny Christmas trees",
+      "backs": [
+        [
+          "GOLD CONFETTI",
+          "#c9a24a",
+          "glitter resin back"
+        ],
+        [
+          "CHERRY RED",
+          "#b3122e",
+          "face resin"
+        ],
+        [
+          "IVORY",
+          "#f4efe6",
+          "card frame"
+        ]
+      ],
+      "faces": [
+        [
+          "SEAFOAM",
+          "#7fcdb8"
+        ],
+        [
+          "FOREST GREEN",
+          "#1f4d3e"
+        ],
+        [
+          "MUSTARD GOLD",
+          "#d9a94a"
+        ],
+        [
+          "DUSTY CORAL",
+          "#c47e68"
+        ],
+        [
+          "CREAM",
+          "#f4efe6"
+        ]
+      ],
+      "racks": [
+        "Bird & Bamboo Cherry Red",
+        "Bird & Bamboo Gold Metallic"
+      ],
+      "tile": "assets/tiles/album/mahjpit-merry-merry.jpg",
+      "tag": [
+        "Travel-size tiles, full-size party energy",
+        "gold confetti, cherry red & tiny trees"
+      ],
+      "mats": [
+        "Tartan Tidings",
+        "Merry Mix",
+        "Jean Always Chose Cranberry From a Can"
+      ],
+      "mat_imgs": {
+        "Tartan Tidings": "assets/colorcards/origami/mats/anders-ruff-tartan-tidings.jpg",
+        "Merry Mix": "assets/mats/gallery/peace-love-mahjong--merry-mix.webp",
+        "Jean Always Chose Cranberry From a Can": "assets/mats/v106/noli-june-jean-always-chose-cranberry-from-a-can.jpg"
+      },
+      "shop": "Shop Merry Merry · Mahj Pit",
+      "shop_m": "Shop Merry Merry · Mahj Pit",
+      "mats_source": "Claude's own picks, by colour (gold/red/cranberry): not her yeses. Jean Always Chose Cranberry From a Can is the Noli June mat she asked to include Nov 11 1:08pm.",
+      "racks_source": "Claude's own picks from the Bird & Bamboo paint table (builder/bbracks.json): Cherry Red + Gold Metallic, no Mahj Pit racks of its own in the catalog.",
+      "_nov25": "Backs/faces measured by eye from assets/tiles/album/mahjpit-merry-merry.jpg (straightened, Tiffany-approved Nov 11 3:18pm): gold multicolour confetti resin backs, cherry-red face resin with a white-bordered frame holding 3-4 small Christmas trees per tile in seafoam/forest green/mustard/dusty coral/cream."
+    },
+    "shangri-la": {
+      "name": "Shangri La",
+      "brand": "Oh My Mahjong",
+      "col": "#1a7f63",
+      "tile": "assets/tiles/album/shangri-la.jpg",
+      "sub": "Emerald green with navy layers",
+      "tag": [
+        "A retired set",
+        "from the Oh My Mahjong vault"
+      ],
+      "backs": [
+        [
+          "EMERALD",
+          "#0d6e5c",
+          "solid back"
+        ],
+        [
+          "NAVY",
+          "#323b54",
+          "layer"
+        ]
+      ],
+      "faces": [
+        [
+          "PINK",
+          "#e5609a"
+        ],
+        [
+          "JADE",
+          "#3fae8c"
+        ],
+        [
+          "NAVY",
+          "#2b3a8c"
+        ],
+        [
+          "RED",
+          "#d23b3b"
+        ]
+      ],
+      "racks": [
+        "Peace Love Mahjong Oak",
+        "Middle & Main Hawksbill Heritage Tortoise"
+      ],
+      "racks_pending": true,
+      "mats": [
+        "Jade",
+        "Camellia",
+        "Esme"
+      ],
+      "mat_imgs": {
+        "Jade": "assets/colorcards/shangri-la/mats/jade-oh-my-mahjong.jpg",
+        "Camellia": "assets/colorcards/shangri-la/mats/camellia-oh-my-mahjong.jpg",
+        "Esme": "assets/colorcards/shangri-la/mats/esme-oh-my-mahjong.jpg"
+      },
+      "rack_imgs": {
+        "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png",
+        "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png"
+      },
+      "shop": "Shop OMM · code MAHJMATCH",
+      "shop_m": "Code MAHJMATCH on tiles, racks & mats"
+    },
+    "lilac-soiree": {
+      "name": "Lilac Soiree",
+      "brand": "Oh My Mahjong",
+      "col": "#8a6fb5",
+      "tile": "assets/tiles/album/lilac-soiree.jpg",
+      "sub": "Lilac backs with navy & blush layers",
+      "tag": [
+        "A retired set",
+        "from the Oh My Mahjong vault"
+      ],
+      "backs": [
+        [
+          "LILAC",
+          "#6356a2",
+          "solid back"
+        ],
+        [
+          "NAVY",
+          "#1c2266",
+          "layer"
+        ],
+        [
+          "BLUSH",
+          "#f0d5cc",
+          "layer"
+        ]
+      ],
+      "faces": [
+        [
+          "ROYAL BLUE",
+          "#2a3fc0"
+        ],
+        [
+          "PURPLE",
+          "#7b4fb5"
+        ],
+        [
+          "PINK",
+          "#e45b8f"
+        ],
+        [
+          "GREEN",
+          "#2fa84f"
+        ]
+      ],
+      "racks": [
+        "Peace Love Mahjong Oak",
+        "Bird & Bamboo Dark Blue",
+        "Bird & Bamboo Ballet Pink"
+      ],
+      "mats": [
+        "Chantilly",
+        "Jade",
+        "Astor"
+      ],
+      "mat_imgs": {
+        "Chantilly": "assets/colorcards/lilac-soiree/mats/chantilly-oh-my-mahjong.jpg",
+        "Jade": "assets/colorcards/lilac-soiree/mats/jade-oh-my-mahjong.jpg",
+        "Astor": "assets/colorcards/lilac-soiree/mats/astor-oh-my-mahjong.jpg"
+      },
+      "rack_imgs": {
+        "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png"
+      },
+      "shop": "Shop OMM · code MAHJMATCH",
+      "shop_m": "Code MAHJMATCH on tiles, racks & mats"
+    },
+    "preppy-soiree": {
+      "name": "Preppy Soiree",
+      "brand": "Oh My Mahjong",
+      "col": "#5a7f9e",
+      "tile": "assets/tiles/album/preppy-soiree.jpg",
+      "sub": "Slate blue with navy & plum layers",
+      "tag": [
+        "A retired set",
+        "from the Oh My Mahjong vault"
+      ],
+      "backs": [
+        [
+          "SLATE BLUE",
+          "#628dad",
+          "solid back"
+        ],
+        [
+          "NAVY",
+          "#233c55",
+          "layer"
+        ],
+        [
+          "PLUM",
+          "#6b3a55",
+          "layer"
+        ]
+      ],
+      "faces": [
+        [
+          "PURPLE",
+          "#7d55b8"
+        ],
+        [
+          "LILAC",
+          "#b59ad6"
+        ],
+        [
+          "PINK",
+          "#e86aa0"
+        ],
+        [
+          "GREEN",
+          "#4fae5c"
+        ]
+      ],
+      "racks": [
+        "Peace Love Mahjong Oak",
+        "Middle & Main Hawksbill Heritage Tortoise"
+      ],
+      "racks_pending": true,
+      "mats": [
+        "Chantilly",
+        "Jade",
+        "Hawthorne"
+      ],
+      "mat_imgs": {
+        "Chantilly": "assets/colorcards/preppy-soiree/mats/chantilly-oh-my-mahjong.jpg",
+        "Jade": "assets/colorcards/preppy-soiree/mats/jade-oh-my-mahjong.jpg",
+        "Hawthorne": "assets/colorcards/preppy-soiree/mats/hawthorne-oh-my-mahjong.jpg"
+      },
+      "rack_imgs": {
+        "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png",
+        "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png"
+      },
+      "shop": "Shop OMM · code MAHJMATCH",
+      "shop_m": "Code MAHJMATCH on tiles, racks & mats"
+    },
+    "spring-love": {
+      "name": "Spring Love",
+      "brand": "Oh My Mahjong",
+      "col": "#e0789c",
+      "tile": "assets/tiles/album/spring-love.jpg",
+      "sub": "Watermelon pink with lime & lavender layers",
+      "tag": [
+        "A retired set",
+        "from the Oh My Mahjong vault"
+      ],
+      "backs": [
+        [
+          "WATERMELON",
+          "#e23e62",
+          "solid back"
+        ],
+        [
+          "LIME",
+          "#b8d86a",
+          "layer"
+        ],
+        [
+          "LAVENDER",
+          "#a99bd0",
+          "layer"
+        ]
+      ],
+      "faces": [
+        [
+          "MAGENTA",
+          "#c8257a"
+        ],
+        [
+          "GREEN",
+          "#2f9d5a"
+        ],
+        [
+          "PURPLE",
+          "#7a5bb0"
+        ]
+      ],
+      "racks": [
+        "Middle & Main Scalloped Beechwood",
+        "Bird & Bamboo Lime Green",
+        "Bird & Bamboo Lavender"
+      ],
+      "mats": [
+        "Zen Glow",
+        "Vivienne",
+        "Goldie"
+      ],
+      "mat_imgs": {
+        "Zen Glow": "assets/colorcards/spring-love/mats/zen-glow-oh-my-mahjong.jpg",
+        "Vivienne": "assets/colorcards/spring-love/mats/vivienne-oh-my-mahjong.jpg",
+        "Goldie": "assets/colorcards/spring-love/mats/goldie-oh-my-mahjong.jpg"
+      },
+      "rack_imgs": {
+        "Middle & Main Scalloped Beechwood": "assets/racks/card/middle--main-scalloped-beechwood.png"
+      },
+      "shop": "Shop OMM · code MAHJMATCH",
+      "shop_m": "Code MAHJMATCH on tiles, racks & mats"
+    },
+    "papaya-spritz": {
+      "name": "Papaya Spritz",
+      "brand": "Oh My Mahjong",
+      "col": "#e0702a",
+      "tile": "assets/tiles/album/papaya-spritz.jpg",
+      "sub": "Papaya orange with lavender & light lime layers",
+      "tag": [
+        "50 mat matches,",
+        "my top picks first"
+      ],
+      "backs": [
+        [
+          "PAPAYA",
+          "#de7e30",
+          "solid back"
+        ],
+        [
+          "LAVENDER",
+          "#a8a3e1",
+          "layer"
+        ],
+        [
+          "LIGHT LIME",
+          "#c8d7a5",
+          "layer"
+        ]
+      ],
+      "faces": [
+        [
+          "PINK",
+          "#ef7aa0"
+        ],
+        [
+          "TEAL",
+          "#3fb8b0"
+        ],
+        [
+          "LIME",
+          "#8fcf4f"
+        ],
+        [
+          "LAVENDER",
+          "#9f8fd6"
+        ]
+      ],
+      "racks": [
+        "Bird & Bamboo Lavender",
+        "Peace Love Mahjong Chartreuse",
+        "Middle & Main Scalloped Beechwood"
+      ],
+      "mats": [
+        "Heiress",
+        "Press for Mahjong",
+        "Greenly"
+      ],
+      "rack_imgs": {
+        "Peace Love Mahjong Chartreuse": "assets/racks/card/peace-love-mahjong-chartreuse.png",
+        "Middle & Main Scalloped Beechwood": "assets/racks/card/middle--main-scalloped-beechwood.png"
+      },
+      "mat_imgs": {
+        "Heiress": "assets/colorcards/papaya-spritz/mats/heiress-britt-mills.jpg",
+        "Press for Mahjong": "assets/colorcards/papaya-spritz/mats/press-for-mahjong-anders-ruff.jpg",
+        "Greenly": "assets/colorcards/papaya-spritz/mats/greenly-mahj-and-vine.jpg"
+      },
+      "profile_line": [
+        "Seeking: pink, peach or periwinkle.",
+        "Must be comfortable around bright color."
+      ],
+      "profile_line_options": {
+        "A": [
+          "Her type: pink with a papaya streak.",
+          "Open to periwinkle. Opposites attract."
+        ],
+        "B": [
+          "Looking for: someone who can handle",
+          "papaya, lavender and a little lime."
+        ],
+        "C": [
+          "Seeking: pink, peach or periwinkle.",
+          "Must be comfortable around bright color."
+        ]
+      },
+      "shop": "Shop OMM · code MAHJMATCH",
+      "shop_m": "Code MAHJMATCH on tiles, racks & mats",
+      "_oct19": "Profile line C picked by Tiffany Oct 19 12:21pm. Cards are now the set's PROFILE (variants a/b via build.py --profile=a|b, DRAFT until she picks).",
+      "matches": 50
+    },
+    "sunday-tile-set": {
+      "name": "Sunday Tile Set",
+      "brand": "Sunday Mahjong",
+      "col": "#9a6a1f",
+      "tile": "assets/tiles/album/sunday-tile-set-hd.jpg",
+      "sub": "Butterscotch backs with ivory faces",
+      "tag": [
+        "The set I own, from",
+        "my favorite tile brand"
+      ],
+      "backs": [
+        [
+          "BUTTERSCOTCH",
+          "#b58438",
+          "solid back"
+        ],
+        [
+          "IVORY",
+          "#f2e6cc",
+          "tile body"
+        ]
+      ],
+      "faces": [
+        [
+          "RED",
+          "#c0392b"
+        ],
+        [
+          "TEAL",
+          "#2a8c8c"
+        ],
+        [
+          "NAVY",
+          "#24375e"
+        ],
+        [
+          "GREEN",
+          "#4f7a3a"
+        ]
+      ],
+      "racks": [
+        "Middle & Main Hawksbill Heritage Tortoise",
+        "Bam Bird Boutique Walnut",
+        "Peace Love Mahjong Oak"
+      ],
+      "mats": [
+        "Carson Vintage",
+        "Brownstone Bloom",
+        "Autumn Saffron"
+      ],
+      "shop": "Shop the Sunday Tile Set",
+      "shop_m": "Shop the Sunday Tile Set",
+      "racks_source": "the Sunday album cards (no Rack Picks final list yet)",
+      "mat_imgs": {
+        "Carson Vintage": "assets/colorcards/sunday-tile-set/mats/carson-vintage-ozark-mahjongg.jpg",
+        "Brownstone Bloom": "assets/colorcards/sunday-tile-set/mats/brownstone-bloom-anders-ruff.jpg",
+        "Autumn Saffron": "assets/colorcards/sunday-tile-set/mats/autumn-saffron-mahjong-row-co.jpg"
+      },
+      "rack_imgs": {
+        "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
+        "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
+        "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png"
+      }
+    },
+    "brownstone-bloom": {
+      "name": "Brownstone Bloom",
+      "brand": "Anders Ruff",
+      "col": "#7b2d3b",
+      "tile": "assets/tiles/album/brownstone-bloom.jpg",
+      "sub": "Ivory with lavender, wine & olive",
+      "tag": [
+        "40 mat matches",
+        "and counting"
+      ],
+      "backs": [
+        [
+          "IVORY",
+          "#eee3cf",
+          "solid tile"
+        ],
+        [
+          "LAVENDER",
+          "#ae9ca9",
+          "butterfly on the back"
+        ]
+      ],
+      "faces": [
+        [
+          "WINE",
+          "#5b3838"
+        ],
+        [
+          "OLIVE",
+          "#5c512a"
+        ],
+        [
+          "DUSTY ROSE",
+          "#bb7c71"
+        ],
+        [
+          "LAVENDER",
+          "#ae9ca9"
+        ]
+      ],
+      "racks": [
+        "Middle & Main Hawksbill Heritage Tortoise",
+        "Bam Bird Boutique Olive"
+      ],
+      "racks_source": "Tiffany Oct 24 + Oct 29 8:04am (config/tile-racks-picks.json final_lists brownstone-bloom): M&M Hawksbill Heritage Tortoise + Bam Bird Boutique Olive; no B&B Wine, no AR Tortoise",
+      "rack_imgs": {
+        "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
+        "Bam Bird Boutique Olive": "assets/racks/card/bam-bird-boutique-olive.png"
+      },
+      "mats": [
+        "Brownstone Bloom",
+        "Autumn Saffron",
+        "Mocha Bloom Light"
+      ],
+      "mat_imgs": {
+        "Brownstone Bloom": "assets/colorcards/brownstone-bloom/mats/brownstone-bloom-anders-ruff.jpg",
+        "Autumn Saffron": "assets/colorcards/brownstone-bloom/mats/autumn-saffron-mahjong-row-co.jpg",
+        "Mocha Bloom Light": "assets/colorcards/brownstone-bloom/mats/mocha-bloom-light-mahjong-row-co.jpg"
+      },
+      "shop": "Code MAHJMATCH on partner mats & racks",
+      "shop_m": "Code MAHJMATCH on partner mats & racks",
+      "_oct21": "Colours measured Oct 21 from the album pile (backs, protea, leaves, craks) + AR's NEWS close-up (doc 86: 3+ spots, saturated-ink median). AR says the tile set itself takes no promo codes (Indigo Pruitt special edition), so the pill never puts the code on the tiles. Top 3 = her album order. Classic Tile Edit labels (no profile wording: gender not set for this set)."
+    },
+    "nature-walk": {
+      "name": "Nature Walk",
+      "col": "#6b1f2a",
+      "sub": "Burgundy backs with ivory faces",
+      "backs": [
+        [
+          "BURGUNDY",
+          "#5a1c24",
+          "solid back"
+        ],
+        [
+          "IVORY",
+          "#ece6cf",
+          "tile body"
+        ]
+      ],
+      "faces": [
+        [
+          "RED",
+          "#a33a35"
+        ],
+        [
+          "BRICK",
+          "#874437"
+        ],
+        [
+          "BURGUNDY",
+          "#552c26"
+        ],
+        [
+          "GREEN",
+          "#3f7a3e"
+        ],
+        [
+          "MOSS",
+          "#677c47"
+        ],
+        [
+          "SAGE",
+          "#8f9963"
+        ],
+        [
+          "GOLD",
+          "#b0843f"
+        ],
+        [
+          "ESPRESSO",
+          "#2a1612"
+        ]
+      ],
+      "racks": [
+        "Middle & Main Hawksbill Heritage Tortoise",
+        "Bam Bird Boutique Walnut",
+        "Oh My Mahjong Burl"
+      ],
+      "brand": "Sunday Mahjong",
+      "tile": "assets/tiles/album/nature-walk.png",
+      "tag": [
+        "37 mats she's said yes to",
+        "so far (swipe in progress)"
+      ],
+      "mats": [
+        "Burgundy Grove",
+        "Osmanthus Grove",
+        "Bold Blooms"
+      ],
+      "mat_imgs": {
+        "Burgundy Grove": "assets/colorcards/nature-walk/mats/burgundy-grove-anders-ruff.jpg",
+        "Osmanthus Grove": "assets/colorcards/nature-walk/mats/osmanthus-grove-mahjong-row-co.jpg",
+        "Bold Blooms": "assets/colorcards/nature-walk/mats/bold-blooms-sunday-mahjong.jpg"
+      },
+      "rack_imgs": {
+        "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
+        "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
+        "Oh My Mahjong Burl": "assets/racks/card/oh-my-mahjong-burl.png"
+      },
+      "shop": "Shop Nature Walk · Sunday Mahjong",
+      "shop_m": "Shop Nature Walk · Sunday Mahjong",
+      "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
+      "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
+      "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
+    },
+    "sunday-blues": {
+      "name": "Sunday Blues",
+      "col": "#263548",
+      "sub": "Navy backs with ivory faces",
+      "backs": [
+        [
+          "NAVY",
+          "#283445",
+          "solid back"
+        ],
+        [
+          "IVORY",
+          "#ede1c4",
+          "tile body"
+        ]
+      ],
+      "faces": [
+        [
+          "NAVY",
+          "#2b4158"
+        ],
+        [
+          "STEEL BLUE",
+          "#597994"
+        ],
+        [
+          "CORNFLOWER",
+          "#7199b2"
+        ],
+        [
+          "DUSTY TEAL",
+          "#769ca8"
+        ],
+        [
+          "SKY AQUA",
+          "#87b9c0"
+        ],
+        [
+          "GOLD",
+          "#b38749"
+        ],
+        [
+          "HONEY GOLD",
+          "#d7ac65"
+        ]
+      ],
+      "racks": [
+        "Peace Love Mahjong Navy",
+        "Bam Bird Boutique Walnut",
+        "Middle & Main Hawksbill Heritage Tortoise"
+      ],
+      "brand": "Sunday Mahjong",
+      "tile": "assets/tiles/album/sunday-blues.png",
+      "tag": [
+        "10 mats she's said yes to",
+        "so far (swipe in progress)"
+      ],
+      "mats": [
+        "Blue Diamond",
+        "Spring Awakening Warm Honey",
+        "Golden Gingham"
+      ],
+      "mat_imgs": {
+        "Blue Diamond": "assets/colorcards/sunday-blues/mats/blue-diamond-sunday-mahjong.jpg",
+        "Spring Awakening Warm Honey": "assets/colorcards/sunday-blues/mats/spring-awakening-warm-honey-mahjong-row-co.jpg",
+        "Golden Gingham": "assets/colorcards/sunday-blues/mats/golden-gingham-sunday-mahjong.jpg"
+      },
+      "rack_imgs": {
+        "Peace Love Mahjong Navy": "assets/racks/card/peace-love-mahjong-navy.png",
+        "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
+        "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png"
+      },
+      "shop": "Shop Sunday Blues · Sunday Mahjong",
+      "shop_m": "Shop Sunday Blues · Sunday Mahjong",
+      "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
+      "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
+      "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
+    },
+    "plum-panda": {
+      "name": "Plum Panda",
+      "col": "#5a2740",
+      "sub": "Plum backs with ivory faces",
+      "backs": [
+        [
+          "PLUM",
+          "#4e2938",
+          "solid back"
+        ],
+        [
+          "IVORY",
+          "#f1e8d4",
+          "tile body"
+        ]
+      ],
+      "faces": [
+        [
+          "CRIMSON",
+          "#7e3537"
+        ],
+        [
+          "TERRACOTTA",
+          "#a45a51"
+        ],
+        [
+          "ORCHID",
+          "#964581"
+        ],
+        [
+          "ROSE",
+          "#c0789a"
+        ],
+        [
+          "BLUSH",
+          "#dca9a2"
+        ],
+        [
+          "JADE",
+          "#526853"
+        ],
+        [
+          "SAGE",
+          "#7ea280"
+        ],
+        [
+          "GOLD",
+          "#d8aa66"
+        ]
+      ],
+      "racks": [
+        "Middle & Main Hawksbill Heritage Tortoise",
+        "Oh My Mahjong Burl",
+        "Peace Love Mahjong Dark Green"
+      ],
+      "brand": "Sunday Mahjong",
+      "tile": "assets/tiles/album/plum-panda.png",
+      "tag": [
+        "14 mats she's said yes to",
+        "so far (swipe in progress)"
+      ],
+      "mats": [
+        "Violet Vines Wisteria",
+        "Plum Panda",
+        "Spring Blooms"
+      ],
+      "mat_imgs": {
+        "Violet Vines Wisteria": "assets/colorcards/plum-panda/mats/violet-vines-wisteria-middle-main-mahjong.jpg",
+        "Plum Panda": "assets/colorcards/plum-panda/mats/plum-panda-sunday-mahjong.jpg",
+        "Spring Blooms": "assets/colorcards/plum-panda/mats/spring-blooms-sunday-mahjong.jpg"
+      },
+      "rack_imgs": {
+        "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
+        "Oh My Mahjong Burl": "assets/racks/card/oh-my-mahjong-burl.png",
+        "Peace Love Mahjong Dark Green": "assets/racks/card/peace-love-mahjong-dark-green.png"
+      },
+      "shop": "Shop Plum Panda · Sunday Mahjong",
+      "shop_m": "Shop Plum Panda · Sunday Mahjong",
+      "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
+      "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
+      "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
+    },
+    "hummingbird": {
+      "name": "Hummingbird",
+      "col": "#a0493f",
+      "sub": "All-ivory tiles with jewel-tone faces",
+      "backs": [
+        [
+          "IVORY",
+          "#ebe3d2",
+          "solid back + body"
+        ]
+      ],
+      "faces": [
+        [
+          "RED",
+          "#b05749"
+        ],
+        [
+          "BRICK",
+          "#7c4038"
+        ],
+        [
+          "INDIGO",
+          "#3f3663"
+        ],
+        [
+          "PURPLE",
+          "#615585"
+        ],
+        [
+          "NAVY",
+          "#3b4864"
+        ],
+        [
+          "TEAL",
+          "#4e8681"
+        ],
+        [
+          "SEAFOAM",
+          "#69a498"
+        ],
+        [
+          "COPPER",
+          "#bb8453"
+        ]
+      ],
+      "racks": [
+        "Peace Love Mahjong Navy",
+        "Middle & Main Hawksbill Heritage Tortoise",
+        "Oh My Mahjong Tortoise Shell"
+      ],
+      "brand": "Sunday Mahjong",
+      "tile": "assets/tiles/album/hummingbird.png",
+      "tag": [
+        "23 mats she's said yes to",
+        "so far (swipe in progress)"
+      ],
+      "mats": [
+        "Azure Bloom",
+        "Savannah Leatherette",
+        "Bold Blooms"
+      ],
+      "mat_imgs": {
+        "Azure Bloom": "assets/colorcards/hummingbird/mats/azure-bloom-luxe-mahjong.jpg",
+        "Savannah Leatherette": "assets/colorcards/hummingbird/mats/savannah-leatherette-britt-mills.jpg",
+        "Bold Blooms": "assets/colorcards/hummingbird/mats/bold-blooms-sunday-mahjong.jpg"
+      },
+      "rack_imgs": {
+        "Peace Love Mahjong Navy": "assets/racks/card/peace-love-mahjong-navy.png",
+        "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
+        "Oh My Mahjong Tortoise Shell": "assets/racks/card/oh-my-mahjong-tortoise-shell.png"
+      },
+      "shop": "Shop Hummingbird · Sunday Mahjong",
+      "shop_m": "Shop Hummingbird · Sunday Mahjong",
+      "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
+      "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
+      "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
+    },
+    "juniper": {
+      "name": "Juniper",
+      "col": "#225d36",
+      "brand": "Oh My Mahjong",
+      "sub": "Forest green jade with chartreuse & teal layers",
+      "backs": [
+        [
+          "FOREST GREEN JADE",
+          "#225d36",
+          "jade-look stone"
+        ],
+        [
+          "CHARTREUSE",
+          "#a9c54f",
+          "layer"
+        ],
+        [
+          "TEAL",
+          "#00a792",
+          "layer"
+        ]
+      ],
+      "faces": [
+        [
+          "HOT PINK",
+          "#f05aa5"
+        ],
+        [
+          "CORAL",
+          "#f0857c"
+        ],
+        [
+          "BAMBOO GREEN",
+          "#43a16b"
+        ],
+        [
+          "MINT",
+          "#9fdcc5"
+        ],
+        [
+          "TEAL",
+          "#18b39c"
+        ],
+        [
+          "NAVY",
+          "#1d4a5a"
+        ],
+        [
+          "GOLD",
+          "#d9b85a"
+        ]
+      ],
+      "racks": [
+        "Oh My Mahjong Hot Pink",
+        "Oh My Mahjong Agate"
+      ],
+      "rack_imgs": {
+        "Oh My Mahjong Hot Pink": "assets/racks/card/oh-my-mahjong-hot-pink.png",
+        "Oh My Mahjong Agate": "assets/racks/card/oh-my-mahjong-agate.png"
+      },
+      "tile": "assets/tiles/album/juniper.jpg",
+      "tag": [
+        "A lush lantern-lit garden",
+        "pagodas, lotus & a peacock"
+      ],
+      "mats": [
+        "Palm Royale",
+        "Flora Belle",
+        "Lotus Cove"
+      ],
+      "mat_imgs": {
+        "Garden Glow": "assets/colorcards/juniper/mats/garden-glow-emerald-bespoke-mahjong.jpg",
+        "Palm Royale": "assets/colorcards/juniper/mats/palm-royale-mahj-tile-haus.jpg",
+        "Lotus Cove": "assets/colorcards/juniper/mats/lotus-cove-oh-my-mahjong.jpg",
+        "Flora Belle": "assets/colorcards/juniper/mats/flora-belle-anders-ruff.jpg"
+      },
+      "shop": "Shop Juniper · Oh My Mahjong",
+      "shop_m": "Shop Juniper · Oh My Mahjong",
+      "mats_source": "Tiffany's final album order Nov 7 11:21pm (top 3: Palm Royale, Flora Belle, Lotus Cove)",
+      "racks_source": "Tiffany Nov 6 2:11am: OMM Hot Pink + OMM Agate",
+      "_nov04": "Colours measured from OMM's Juniper alt pile photo (05-Tile_Juniper_Alt) and checked by eye; OMM's own copy: forest green, jade, warm coral pink.",
+      "_nov05": "Tiffany Nov 5 12:42am: back = forest green JADE-LOOK (OMM: 'inspired by the rich beauty of jade'); never call the teal layer 'jade'. Pair mat Lotus Cove top 3, not #1; Palm Royale #2.",
+      "profile_line": [
+        "Seeking: hot pink, kelly or forest green.",
+        "Must love a garden party."
+      ],
+      "profile_line_options": {
+        "A": [
+          "Seeking: hot pink, kelly or forest green.",
+          "Must love a garden party."
+        ],
+        "B": [
+          "Her type: pink with a green streak.",
+          "Lotus ponds a plus."
+        ],
+        "C": [
+          "Looking for: someone who can handle",
+          "forest green, chartreuse and hot pink."
+        ]
+      },
+      "_nov06r3": "Tiffany Nov 6 2:26am round 3: tagline in the dating-app voice like Papaya ('Seeking: ...'), not 'A lush lantern-lit garden'; back = Forest Green Jade colour with a jade-look STONE pattern (never 'jade-look green'); tile = PILE photo; top mats Palm Royale #1, Garden Glow #2, Lotus Cove #3.",
+      "matches": 42,
+      "_nov07": "Final: top 3 from her order; 42 matches (37 + 5 holiday)."
+    },
+    "style-of-your-life": {
+      "name": "Style of Your Life",
+      "col": "#0b6b3a",
+      "brand": "My Fair Mahjong",
+      "sub": "Pearl green malachite with a deep green layer",
+      "backs": [
+        [
+          "PEARL GREEN",
+          "#0e9a5a",
+          "malachite swirl"
+        ],
+        [
+          "DEEP GREEN",
+          "#0a4a25",
+          "middle layer"
+        ]
+      ],
+      "faces": [
+        [
+          "INDIGO",
+          "#393c90"
+        ],
+        [
+          "WINE",
+          "#902836"
+        ],
+        [
+          "BUBBLEGUM PINK",
+          "#f590b8"
+        ],
+        [
+          "CORNFLOWER",
+          "#80acdf"
+        ],
+        [
+          "MARIGOLD",
+          "#e79d15"
+        ],
+        [
+          "FERN GREEN",
+          "#4f9a60"
+        ]
+      ],
+      "racks": [
+        "My Fair Mahjong Indigo Blue",
+        "My Fair Mahjong Magenta"
+      ],
+      "rack_imgs": {
+        "My Fair Mahjong Indigo Blue": "assets/racks/card/my-fair-mahjong-indigo-blue.png",
+        "My Fair Mahjong Magenta": "assets/racks/card/my-fair-mahjong-magenta.png"
+      },
+      "tile": "assets/tiles/album/style-of-your-life.jpg",
+      "tag": [
+        "A day of shopping",
+        "shoes, handbags, jewelry & escalators"
+      ],
+      "mats": [
+        "Tennis Club",
+        "MOD Daisies",
+        "Crimson Harvest"
+      ],
+      "mat_imgs": {
+        "Tennis Club": "assets/colorcards/style-of-your-life/mats/tennis-club-lets-be-besties.jpg",
+        "MOD Daisies": "assets/colorcards/style-of-your-life/mats/mod-daisies-lets-be-besties.jpg",
+        "Crimson Harvest": "assets/colorcards/style-of-your-life/mats/crimson-harvest-britt-mills.jpg"
+      },
+      "shop": "Shop Style of Your Life · My Fair Mahjong",
+      "shop_m": "Shop Style of Your Life · My Fair Mahjong",
+      "profile_line": [
+        "Seeking: navy with a pink streak.",
+        "Retail therapy a plus."
+      ],
+      "mats_source": "Claude's own picks (Nov 7, run like Juniper), not her picks yet",
+      "racks_source": "Claude's own picks (MFM solid acrylic Indigo Blue + Magenta, same shape, 20in), pending her OK",
+      "_nov07": "Colours measured from MFM's pile photo (StyleofYourLifeSeries_11) and the flat lay (_2), checked by eye. MFM's own words: 'a pearl green back, a deep green middle layer, and a white face'. Faces lead with indigo ink; wine, bubblegum pink, cornflower, marigold, fern green. No chartreuse, teal or coral (those are Juniper's)."
+    },
+    "deco-lagoon": {
+      "name": "Deco (Lagoon)",
+      "col": "#0a5560",
+      "brand": "Bam Bird Boutique",
+      "sub": "Lagoon teal backs with a gold-foil deco palm",
+      "backs": [
+        [
+          "LAGOON",
+          "#0a4a56",
+          "jewel-tone back"
+        ],
+        [
+          "GOLD FOIL",
+          "#c9a24a",
+          "deco palm"
+        ],
+        [
+          "IVORY",
+          "#f4efe6",
+          "face layer"
+        ]
+      ],
+      "faces": [
+        [
+          "MULBERRY",
+          "#7c2b55"
+        ],
+        [
+          "ROSE",
+          "#c47e68"
+        ],
+        [
+          "GOLD",
+          "#d1ad5c"
+        ],
+        [
+          "TEAL",
+          "#22939a"
+        ],
+        [
+          "NAVY",
+          "#2a3f7a"
+        ],
+        [
+          "PERIWINKLE",
+          "#7f9fd0"
+        ],
+        [
+          "DEEP GREEN",
+          "#1f4d3e"
+        ]
+      ],
+      "racks": [
+        "Bam Bird Boutique Lagoon Wood",
+        "Bam Bird Boutique Mulberry Wood",
+        "Bam Bird Boutique Indigo",
+        "Bam Bird Boutique Walnut"
+      ],
+      "rack_imgs": {
+        "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
+        "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png",
+        "Bam Bird Boutique Indigo": "assets/racks/card/bam-bird-boutique-indigo.png",
+        "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png"
+      },
+      "tile": "assets/tiles/v92/bam-bird-boutique-deco-lagoon-split.jpg",
+      "tag": [
+        "Art deco after dark",
+        "peacock winds, gold cranes & lions"
+      ],
+      "mats": [
+        "Gilded Peacock",
+        "Deco Dragon (Mulberry)",
+        "Crane Cloud"
+      ],
+      "mat_imgs": {
+        "Gilded Peacock": "assets/colorcards/deco/mats/bougie-mahjong-gilded-peacock.jpg",
+        "Deco Dragon (Mulberry)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg",
+        "Crane Cloud": "assets/colorcards/deco/mats/silk-mahjong-crane-cloud.jpg"
+      },
+      "shop": "Shop Deco · Bam Bird Boutique",
+      "shop_m": "Shop Deco · Bam Bird Boutique",
+      "profile_line": [
+        "Seeking: deep teal with a berry streak.",
+        "Must love a speakeasy."
+      ],
+      "profile_line_options": {
+        "A": [
+          "Seeking: deep teal with a berry streak.",
+          "Must love a speakeasy."
+        ],
+        "B": [
+          "Seeking: teal, mulberry or gold.",
+          "Jazz age a plus."
+        ],
+        "C": [
+          "Her type: dark teal, with a little berry.",
+          "Gold accents only."
+        ]
+      },
+      "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
+      "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks, one per tile colour (Lagoon = backs, Mulberry = the crak frames), same shape so they lie the same",
+      "_nov07": "Colours measured from Bam Bird's Deco listing photos (backs tray img 07, faces tray img 16, pile img 14) and checked by eye. Bam Bird's own words: 'two jewel-toned colorways: Lagoon and Mulberry', 'inspired by the bold elegance of the Art Deco era'. Same faces on every colourway. Top 3: Reba #1 (her favorite Deco pairing Oct 27), Wren #2, Deco Dragon (Mulberry) #3 = Bam Bird's own sister mat (pair rule: never #1; her Oct 26 rule: Lagoon tiles on the MULBERRY Dragon, never Lagoon on Lagoon).",
+      "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 7 BamBird_40K_and_Christmas_-102.jpg (variant Lagoon / Lucite Display Box)",
+      "_nov08": "Tiffany Nov 8 review: top 3 = Reba, Viola (moved up at her ask), Deco Dragon (Mulberry); TNT recs lead the album itself.",
+      "_nov26": "Tiffany Nov 26: the Colors and Racks (tile edit) card shows 4 racks: Lagoon Wood, Mulberry Wood, Indigo, Walnut. Per-card MATCH THE TILES stays Lagoon + Mulberry (deco_build TRACKS = first 2).",
+      "_nov26b": "Tiffany round 3: top 3 = Gilded Peacock, Deco Dragon (Mulberry), Crane Cloud"
+    },
+    "deco-mulberry": {
+      "name": "Deco Mulberry",
+      "col": "#7a2c55",
+      "brand": "Bam Bird Boutique",
+      "sub": "Mulberry backs with a gold-foil deco palm",
+      "backs": [
+        [
+          "MULBERRY",
+          "#7d3456",
+          "jewel-tone back"
+        ],
+        [
+          "GOLD FOIL",
+          "#c9a24a",
+          "deco palm"
+        ],
+        [
+          "IVORY",
+          "#f4efe6",
+          "face layer"
+        ]
+      ],
+      "faces": [
+        [
+          "TEAL",
+          "#22939a"
+        ],
+        [
+          "MULBERRY",
+          "#7c2b55"
+        ],
+        [
+          "ROSE",
+          "#c47e68"
+        ],
+        [
+          "GOLD",
+          "#d1ad5c"
+        ],
+        [
+          "NAVY",
+          "#2a3f7a"
+        ],
+        [
+          "PERIWINKLE",
+          "#7f9fd0"
+        ],
+        [
+          "DEEP GREEN",
+          "#1f4d3e"
+        ]
+      ],
+      "racks": [
+        "Bam Bird Boutique Mulberry Wood",
+        "Bam Bird Boutique Lagoon Wood"
+      ],
+      "rack_imgs": {
+        "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
+        "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png"
+      },
+      "tile": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
+      "tag": [
+        "Art deco after dark",
+        "berry backs, gold palms & lions"
+      ],
+      "mats": [
+        "Viola",
+        "Caroline in Peacock",
+        "Deco Dragon (Lagoon)"
+      ],
+      "mat_imgs": {
+        "Viola": "assets/colorcards/deco/mats/britt-mills-viola.jpg",
+        "Caroline in Peacock": "assets/colorcards/deco/mats/mahj-and-vine-caroline-in-peacock.jpg",
+        "Deco Dragon (Lagoon)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg"
+      },
+      "shop": "Shop Deco · Bam Bird Boutique",
+      "shop_m": "Shop Deco · Bam Bird Boutique",
+      "profile_line": [
+        "Seeking: mulberry, lagoon teal or gold.",
+        "Must love jazz-age glamour."
+      ],
+      "profile_line_options": {
+        "A": [
+          "Seeking: mulberry, lagoon teal or gold.",
+          "Must love jazz-age glamour."
+        ],
+        "B": [
+          "Her type: deep teal. Opposites attract.",
+          "Gold accents a plus."
+        ],
+        "C": [
+          "Seeking: a teal that can keep up",
+          "with a berry back."
+        ]
+      },
+      "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
+      "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks, Mulberry (backs) + Lagoon (the teal bams)",
+      "_nov07": "Same source photos as deco-lagoon. Top 3: Viola #1 (her Oct 27 Mulberry pairing), Caroline in Peacock #2, Deco Dragon (Lagoon) #3 = Bam Bird's own sister mat (never Mulberry on Mulberry).",
+      "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 8 BamBird_40K_and_Christmas_-83.jpg (variant Mulberry / Lucite Display Box)"
+    },
+    "deco-indigo": {
+      "name": "Deco Indigo",
+      "col": "#253a66",
+      "brand": "Bam Bird Boutique",
+      "sub": "Indigo backs with a gold-foil deco palm",
+      "backs": [
+        [
+          "INDIGO",
+          "#263a63",
+          "jewel-tone back"
+        ],
+        [
+          "GOLD FOIL",
+          "#c9a24a",
+          "deco palm"
+        ],
+        [
+          "IVORY",
+          "#f4efe6",
+          "face layer"
+        ]
+      ],
+      "faces": [
+        [
+          "MULBERRY",
+          "#7c2b55"
+        ],
+        [
+          "TEAL",
+          "#22939a"
+        ],
+        [
+          "ROSE",
+          "#c47e68"
+        ],
+        [
+          "GOLD",
+          "#d1ad5c"
+        ],
+        [
+          "PERIWINKLE",
+          "#7f9fd0"
+        ],
+        [
+          "DEEP GREEN",
+          "#1f4d3e"
+        ],
+        [
+          "NAVY",
+          "#2a3f7a"
+        ]
+      ],
+      "racks": [
+        "Bam Bird Boutique Indigo",
+        "Bam Bird Boutique Mulberry Wood"
+      ],
+      "rack_imgs": {
+        "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
+        "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png"
+      },
+      "tile": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
+      "tag": [
+        "Art deco after dark",
+        "navy backs, gold palms & lions"
+      ],
+      "mats": [
+        "Peacock Garden",
+        "Savannah",
+        "Deco Dragon (Mulberry)"
+      ],
+      "mat_imgs": {
+        "Peacock Garden": "assets/colorcards/deco/mats/britt-mills-peacock-garden.jpg",
+        "Savannah": "assets/colorcards/deco/mats/britt-mills-savannah.jpg",
+        "Deco Dragon (Mulberry)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg",
+        "Deco Neoprene": "assets/colorcards/deco/mats/bam-bird-boutique-deco-neoprene.jpg",
+        "Deco Dragon (Lagoon)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg"
+      },
+      "shop": "Shop Deco · Bam Bird Boutique",
+      "shop_m": "Shop Deco · Bam Bird Boutique",
+      "profile_line": [
+        "Seeking: berry, teal or a little gold.",
+        "Must love a midnight garden."
+      ],
+      "profile_line_options": {
+        "A": [
+          "Seeking: berry, teal or a little gold.",
+          "Must love a midnight garden."
+        ],
+        "B": [
+          "Her type: anything but navy.",
+          "Gold accents a plus."
+        ],
+        "C": [
+          "Seeking: a green that can keep up",
+          "with a navy back."
+        ]
+      },
+      "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
+      "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks in Lagoon (her teal bams) + Mulberry (her crak frames), never Indigo on Indigo; Tiffany Oct 27 put Indigo with Bam Bird Lagoon racks",
+      "_nov07": "Indigo back = Bam Bird's Indigo showroom photo (#2a3b5e) + FYM table-view wall (#233862, config/tableview-back-colors.json bam-bird-boutique-deco-indigo), checked by eye against the bag pile (listing img 18). Faces = same as Lagoon/Mulberry. Top 3: Peacock Garden (her Oct 27 two-colour pick: Indigo/Peacock Garden), Savannah (her Oct 27 'put Indigo on the green mat'), Deco Dragon (Mulberry) #3 = sister mat (never #1, never the Indigo Dragon). Indigo SOLD OUT on bambirdboutique.com Nov 7 (all 3 variants).",
+      "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 1 BamBird_Deco-1-2.jpg (no variant attached; the navy box of the three stacked boxes; the only Indigo-variant images, 11 and 13, show bags or faces)",
+      "racks_note": "Tiffany Nov 17 3:11am: Indigo (navy) as the match-the-tiles rack instead of Lagoon (teal came out of nowhere); Mulberry for the mulberry frames. Bam Bird Indigo shows sold out on their site Nov 17."
+    },
+    "cabana-club": {
+      "name": "Cabana Club",
+      "col": "#0c92a7",
+      "brand": "Charleston Mahjong Club",
+      "sub": "Pool-water backs on soft yellow faces",
+      "backs": [
+        [
+          "POOL TURQUOISE",
+          "#57aabd",
+          "water-print back"
+        ],
+        [
+          "SEAFOAM",
+          "#b0dbe3",
+          "water highlights"
+        ],
+        [
+          "SOFT YELLOW",
+          "#f6f4b3",
+          "face layer"
+        ]
+      ],
+      "faces": [
+        [
+          "TEAL",
+          "#0c92a7"
+        ],
+        [
+          "LIME",
+          "#85c412"
+        ],
+        [
+          "RASPBERRY",
+          "#b83161"
+        ],
+        [
+          "APRICOT",
+          "#f9cc6f"
+        ],
+        [
+          "WHITE",
+          "#ffffff"
+        ]
+      ],
+      "racks": [
+        "Charleston Mahjong Club Key Lime",
+        "Charleston Mahjong Club Azalea Pink",
+        "Charleston Mahjong Club Winter White"
+      ],
+      "rack_imgs": {
+        "Charleston Mahjong Club Key Lime": "assets/racks/card/charleston-mahjong-club-key-lime-drawn.png",
+        "Charleston Mahjong Club Azalea Pink": "assets/racks/card/charleston-mahjong-club-azalea-pink-drawn.png",
+        "Charleston Mahjong Club Winter White": "assets/racks/card/charleston-mahjong-club-winter-white-drawn.png"
+      },
+      "tile": "assets/tiles/album/cabana-club.jpg",
+      "tag": [
+        "Vintage beach club",
+        "beach balls, palms, a diver, cabanas"
+      ],
+      "mats": [
+        "Cabana Club"
+      ],
+      "mat_imgs": {
+        "Cabana Club": "assets/launches/charlestonmahjongclub-cabana-club/cabana-club-mat-flat.jpg"
+      },
+      "shop": "Shop Cabana Club · Charleston Mahjong Club",
+      "shop_m": "Shop Cabana Club · Charleston Mahjong Club",
+      "profile_line": [
+        "Seeking: teal, lime or a pop of pink.",
+        "Must love a pool day."
+      ],
+      "_note": "Nov 10 (album start, Matches & Catalog agent): colours measured from CMC listing image 3 (flat layout) + image 9 (back tile). Racks = CMC 20in wooden Key Lime / Azalea Pink / Winter White (tile brand's own racks; drawn bars in measured colours until a clean rack cut-out exists). Top mats = the coordinated mat only until her picks; the top 3 get filled from her standouts."
+    },
+    "origami-timber": {
+      "name": "Origami Timber",
+      "col": "#8c4329",
+      "brand": "Bam Bird Boutique",
+      "sub": "Timber backs with an etched origami crane",
+      "backs": [
+        [
+          "TIMBER",
+          "#8c4329",
+          "warm wood back"
+        ],
+        [
+          "IVORY",
+          "#f4efe6",
+          "face layer"
+        ]
+      ],
+      "faces": [
+        [
+          "DEEP TEAL",
+          "#1d5f6b"
+        ],
+        [
+          "COPPER",
+          "#c47a45"
+        ],
+        [
+          "GREEN",
+          "#2e7a52"
+        ],
+        [
+          "PLUM",
+          "#5b2c40"
+        ],
+        [
+          "SEAFOAM",
+          "#87bec2"
+        ]
+      ],
+      "racks": [
+        "Bam Bird Boutique Walnut",
+        "Bam Bird Boutique Lagoon Wood"
+      ],
+      "rack_imgs": {
+        "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
+        "Bam Bird Boutique Olive": "assets/racks/card/bam-bird-boutique-olive.png"
+      },
+      "tile": "assets/tiles/v92/bam-bird-origami-timber-split.jpg",
+      "tag": [
+        "Warm wood + jewel tones",
+        "teal, copper & green faces"
+      ],
+      "mats": [],
+      "mat_imgs": {},
+      "shop": "Shop Origami · Bam Bird Boutique",
+      "shop_m": "Shop Origami · Bam Bird Boutique",
+      "profile_line": [
+        "Seeking: deep teal, copper or forest green.",
+        "Must love a warm wood table."
+      ],
+      "_measured": "Nov 16 2026: back median rgb(140,67,41) from the FYM split photo right half; faces k-means on the left half (teal #0e525e 31%, copper #bf7c54 18%, seafoam-teal #3e8486 17%, copper-brown 17%); plum + green read by eye from winds/bams.",
+      "racks_note": "Tiffany Nov 17 1:28am: Walnut + Lagoon Wood (Olive 'isn't it'). B&B Forest Green is a very good green for these tiles (use for mat racks); Mahjong Register Navy looks good; wood tones (PLM Acrylic Burl, PLM Oak, OMM Burl) beat one-off mustard; no tortoise, no Peacock Teal, no Miss Mahjong Jade & Brass, PLM Dark Green is the wrong (too deep) green."
+    },
+    "sadie-jane": {
+      "name": "Sadie Jane",
+      "col": "#37709a",
+      "brand": "Oh My Mahjong",
+      "sub": "Blush pink backs with denim and pale blue stripe layers",
+      "backs": [
+        [
+          "BLUSH PINK",
+          "#ead2d4",
+          "back"
+        ],
+        [
+          "DENIM BLUE",
+          "#37709a",
+          "stripe layer"
+        ],
+        [
+          "PALE BLUE",
+          "#b3bbc8",
+          "stripe layer"
+        ],
+        [
+          "WHITE",
+          "#e8eaf0",
+          "face layer"
+        ]
+      ],
+      "faces": [
+        [
+          "DENIM BLUE",
+          "#366ea3"
+        ],
+        [
+          "NAVY",
+          "#103f67"
+        ],
+        [
+          "LILY GREEN",
+          "#2d9763"
+        ],
+        [
+          "LOTUS CORAL",
+          "#b76765"
+        ],
+        [
+          "SKY BLUE",
+          "#5b94c3"
+        ]
+      ],
+      "racks": [
+        "Bird & Bamboo Ballet Pink",
+        "Bird & Bamboo French Blue"
+      ],
+      "rack_imgs": {},
+      "tile": "assets/tiles/album/sadie-jane.jpg",
+      "tag": [
+        "Lotus ponds, lily pads and pandas",
+        "blush backs, denim stripes"
+      ],
+      "mats": [
+        "Serendipity",
+        "Petalwing",
+        "Pink & Blue Grandmillennial"
+      ],
+      "mat_imgs": {
+        "Serendipity": "assets/colorcards/sadie-jane/mats/serendipity.jpg",
+        "Petalwing": "assets/colorcards/sadie-jane/mats/virora-mahjong-petalwing.jpg",
+        "Pink & Blue Grandmillennial": "assets/albums/sadie-jane/adds/mahj-and-moon-pink-blue-grandmillennial.jpg"
+      },
+      "shop": "Shop Sadie Jane · Oh My Mahjong",
+      "shop_m": "Shop Sadie Jane · Oh My Mahjong",
+      "draft": "Nov 23 2026: racks = her Ballet Pink + French Blue; top 3 mats = the first three for-sale mats in her review order at 1pm (Serendipity, Heron, Vivara; Peri-twinkle is retired so it is skipped). Re-check against her FINAL order after she taps Done. | Nov 23 6:55pm: top 3 = her FINAL album order (Serendipity, Petalwing, Pink & Blue Grandmillennial).",
+      "racks_by": "Tiffany Nov 22 2026 1:10am: 'My rack choice is ballet pink with the French blue.' (Ballet Pink colour reset to blush #F5D6E0 the same night)"
+    },
+    "beaumont": {
+      "name": "Beaumont",
+      "col": "#27498f",
+      "brand": "Oh My Mahjong",
+      "sub": "Tortoiseshell backs with cobalt and chartreuse stripe layers",
+      "backs": [
+        [
+          "TORTOISESHELL",
+          "#633314",
+          "back"
+        ],
+        [
+          "COBALT BLUE",
+          "#27498f",
+          "stripe layer"
+        ],
+        [
+          "CHARTREUSE",
+          "#898310",
+          "stripe layer"
+        ],
+        [
+          "WHITE",
+          "#ebecec",
+          "face layer"
+        ]
+      ],
+      "faces": [
+        [
+          "BAMBOO GREEN",
+          "#7aaf6f"
+        ],
+        [
+          "CORAL PINK",
+          "#d9838a"
+        ],
+        [
+          "TEAL",
+          "#4594a7"
+        ],
+        [
+          "BLUSH",
+          "#e5b2af"
+        ],
+        [
+          "POWDER BLUE",
+          "#a2c9d7"
+        ]
+      ],
+      "racks": [
+        "Oh My Mahjong Tortoise Shell",
+        "My Fair Mahjong Indigo Blue"
+      ],
+      "rack_imgs": {
+        "Oh My Mahjong Tortoise Shell": "assets/racks/card/oh-my-mahjong-tortoise-shell.png",
+        "My Fair Mahjong Indigo Blue": "assets/racks/card/my-fair-mahjong-indigo-blue.png"
+      },
+      "tile": "assets/tiles/album/beaumont.jpg",
+      "tag": [
+        "Lotus ponds, bamboo and turtles",
+        "tortoiseshell backs, cobalt + chartreuse stripes"
+      ],
+      "mats": [
+        "Lily",
+        "Elysium",
+        "Larkspur"
+      ],
+      "mat_imgs": {
+        "Lily": "assets/albums/beaumont/adds/oh-my-mahjong-lily-2400.jpg",
+        "Elysium": "assets/albums/beaumont/mats/oh-my-mahjong-elysium.jpg",
+        "Larkspur": "assets/albums/beaumont/mats/oh-my-mahjong-larkspur.jpg"
+      },
+      "shop": "Shop Beaumont · Oh My Mahjong",
+      "shop_m": "Shop Beaumont · Oh My Mahjong",
+      "draft": "Nov 24 2026 (Main, scheduled run): measured by k-means on the OMM pile shot (backs) and the OMM laid-out faces image 01 (faces), nothing recoloured. Top 3 mats + racks filled after the by-sight pass; final after her review."
+    },
+    "oasis": {
+      "name": "Oasis",
+      "col": "#104344",
+      "brand": "Oh My Mahjong",
+      "sub": "Marbled jade backs with deep teal and orchid pink stripe layers",
+      "backs": [
+        [
+          "MARBLED JADE",
+          "#5d6655",
+          "back"
+        ],
+        [
+          "DEEP TEAL",
+          "#104344",
+          "stripe layer"
+        ],
+        [
+          "ORCHID PINK",
+          "#de98b8",
+          "stripe layer"
+        ],
+        [
+          "WHITE",
+          "#e2ddda",
+          "face layer"
+        ]
+      ],
+      "faces": [
+        [
+          "ORCHID PINK",
+          "#de98b8"
+        ],
+        [
+          "MAGENTA",
+          "#d63c8c"
+        ],
+        [
+          "JADE GREEN",
+          "#1fa981"
+        ],
+        [
+          "MINT",
+          "#6ec29e"
+        ],
+        [
+          "TEAL",
+          "#167a7a"
+        ]
+      ],
+      "racks": [
+        "Oh My Mahjong Pink Quartz",
+        "Virora Spring Jade"
+      ],
+      "rack_imgs": {
+        "Oh My Mahjong Pink Quartz": "assets/racks/card/oh-my-mahjong-pink-quartz.png",
+        "Virora Spring Jade": "assets/racks/card/virora-spring-jade.png"
+      },
+      "tile": "assets/tiles/album/oasis.jpg",
+      "tag": [
+        "Orchids, bamboo and lanterns",
+        "marbled jade backs, teal + pink stripes"
+      ],
+      "mats": [
+        "Starling",
+        "Jade",
+        "Enchanted"
+      ],
+      "mat_imgs": {
+        "Starling": "assets/albums/oasis/adds/oh-my-mahjong-starling-2400.jpg",
+        "Jade": "assets/albums/oasis/mats/oh-my-mahjong-jade.jpg",
+        "Enchanted": "assets/mats/omm-retired/enchanted.jpg"
+      },
+      "shop": "Shop Oasis · Oh My Mahjong",
+      "shop_m": "Shop Oasis · Oh My Mahjong",
+      "draft": "Nov 24 2026 (Main, scheduled run): backs measured by k-means on the OMM pile shot; magenta + teal faces read by sight (small on the pile). Racks + top 3 after the by-sight pass."
+    },
+    "plm-merry-nutcracker": {
+      "name": "Merry Nutcracker",
+      "col": "#1e5631",
+      "brand": "Peace Love Mahjong",
+      "sub": "Hand-drawn nutcracker ballet on white tiles, pine-green box, ballet-pink trim",
+      "backs": [
+        [
+          "IVORY WHITE",
+          "#f5f3ee",
+          "tile body"
+        ],
+        [
+          "PINE GREEN",
+          "#1e5631",
+          "box + tree mat"
+        ],
+        [
+          "BALLET PINK",
+          "#f2a8c4",
+          "box trim + ribbon"
+        ]
+      ],
+      "faces": [
+        [
+          "CANDY PINK",
+          "#e05a86"
+        ],
+        [
+          "FOREST GREEN",
+          "#2d6b4a"
+        ],
+        [
+          "SEAFOAM TEAL",
+          "#5bbfae"
+        ],
+        [
+          "CHERRY RED",
+          "#c23b4f"
+        ],
+        [
+          "GOLD",
+          "#d9a94a"
+        ]
+      ],
+      "racks": [
+        "Bird & Bamboo Ballet Pink",
+        "Bird & Bamboo Gold Metallic"
+      ],
+      "tile": "assets/tiles/album/plm-merry-nutcracker.jpg",
+      "tag": [
+        "Nutcracker ballet dancers in pink, green & gold",
+        "on crisp white tiles, pine-green box"
+      ],
+      "mats": [],
+      "mat_imgs": {},
+      "shop": "Shop Merry Nutcracker · Peace Love Mahjong",
+      "shop_m": "Shop Merry Nutcracker · Peace Love Mahjong",
+      "mats_source": "PENDING: by-sight pool pull not yet run (Nov 25 11:55am)",
+      "racks_source": "Claude's own picks from the Bird & Bamboo paint table (no PLM racks of its own in the catalog)",
+      "_nov25": "Backs/faces measured by eye from assets/tiles/album/plm-merry-nutcracker.jpg + box photo (peacelovemahjong.com product photos): ivory-white tile body, pine-green box + tree mat, ballet-pink scalloped box trim and ribbon; hand-drawn nutcracker ballet figures in candy pink, forest green, seafoam teal, cherry red and gold ink across the tile faces."
+    }
   },
-  "shangri-la": {
-   "name": "Shangri La",
-   "brand": "Oh My Mahjong",
-   "col": "#1a7f63",
-   "tile": "assets/tiles/album/shangri-la.jpg",
-   "sub": "Emerald green with navy layers",
-   "tag": [
-    "A retired set",
-    "from the Oh My Mahjong vault"
-   ],
-   "backs": [
-    [
-     "EMERALD",
-     "#0d6e5c",
-     "solid back"
-    ],
-    [
-     "NAVY",
-     "#323b54",
-     "layer"
-    ]
-   ],
-   "faces": [
-    [
-     "PINK",
-     "#e5609a"
-    ],
-    [
-     "JADE",
-     "#3fae8c"
-    ],
-    [
-     "NAVY",
-     "#2b3a8c"
-    ],
-    [
-     "RED",
-     "#d23b3b"
-    ]
-   ],
-   "racks": [
-    "Peace Love Mahjong Oak",
-    "Middle & Main Hawksbill Heritage Tortoise"
-   ],
-   "racks_pending": true,
-   "mats": [
-    "Jade",
-    "Camellia",
-    "Esme"
-   ],
-   "mat_imgs": {
-    "Jade": "assets/colorcards/shangri-la/mats/jade-oh-my-mahjong.jpg",
-    "Camellia": "assets/colorcards/shangri-la/mats/camellia-oh-my-mahjong.jpg",
-    "Esme": "assets/colorcards/shangri-la/mats/esme-oh-my-mahjong.jpg"
-   },
-   "rack_imgs": {
-    "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png",
-    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png"
-   },
-   "shop": "Shop OMM \u00b7 code MAHJMATCH",
-   "shop_m": "Code MAHJMATCH on tiles, racks & mats"
-  },
-  "lilac-soiree": {
-   "name": "Lilac Soiree",
-   "brand": "Oh My Mahjong",
-   "col": "#8a6fb5",
-   "tile": "assets/tiles/album/lilac-soiree.jpg",
-   "sub": "Lilac backs with navy & blush layers",
-   "tag": [
-    "A retired set",
-    "from the Oh My Mahjong vault"
-   ],
-   "backs": [
-    [
-     "LILAC",
-     "#6356a2",
-     "solid back"
-    ],
-    [
-     "NAVY",
-     "#1c2266",
-     "layer"
-    ],
-    [
-     "BLUSH",
-     "#f0d5cc",
-     "layer"
-    ]
-   ],
-   "faces": [
-    [
-     "ROYAL BLUE",
-     "#2a3fc0"
-    ],
-    [
-     "PURPLE",
-     "#7b4fb5"
-    ],
-    [
-     "PINK",
-     "#e45b8f"
-    ],
-    [
-     "GREEN",
-     "#2fa84f"
-    ]
-   ],
-   "racks": [
-    "Peace Love Mahjong Oak",
-    "Bird & Bamboo Dark Blue",
-    "Bird & Bamboo Ballet Pink"
-   ],
-   "mats": [
-    "Chantilly",
-    "Jade",
-    "Astor"
-   ],
-   "mat_imgs": {
-    "Chantilly": "assets/colorcards/lilac-soiree/mats/chantilly-oh-my-mahjong.jpg",
-    "Jade": "assets/colorcards/lilac-soiree/mats/jade-oh-my-mahjong.jpg",
-    "Astor": "assets/colorcards/lilac-soiree/mats/astor-oh-my-mahjong.jpg"
-   },
-   "rack_imgs": {
-    "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png"
-   },
-   "shop": "Shop OMM \u00b7 code MAHJMATCH",
-   "shop_m": "Code MAHJMATCH on tiles, racks & mats"
-  },
-  "preppy-soiree": {
-   "name": "Preppy Soiree",
-   "brand": "Oh My Mahjong",
-   "col": "#5a7f9e",
-   "tile": "assets/tiles/album/preppy-soiree.jpg",
-   "sub": "Slate blue with navy & plum layers",
-   "tag": [
-    "A retired set",
-    "from the Oh My Mahjong vault"
-   ],
-   "backs": [
-    [
-     "SLATE BLUE",
-     "#628dad",
-     "solid back"
-    ],
-    [
-     "NAVY",
-     "#233c55",
-     "layer"
-    ],
-    [
-     "PLUM",
-     "#6b3a55",
-     "layer"
-    ]
-   ],
-   "faces": [
-    [
-     "PURPLE",
-     "#7d55b8"
-    ],
-    [
-     "LILAC",
-     "#b59ad6"
-    ],
-    [
-     "PINK",
-     "#e86aa0"
-    ],
-    [
-     "GREEN",
-     "#4fae5c"
-    ]
-   ],
-   "racks": [
-    "Peace Love Mahjong Oak",
-    "Middle & Main Hawksbill Heritage Tortoise"
-   ],
-   "racks_pending": true,
-   "mats": [
-    "Chantilly",
-    "Jade",
-    "Hawthorne"
-   ],
-   "mat_imgs": {
-    "Chantilly": "assets/colorcards/preppy-soiree/mats/chantilly-oh-my-mahjong.jpg",
-    "Jade": "assets/colorcards/preppy-soiree/mats/jade-oh-my-mahjong.jpg",
-    "Hawthorne": "assets/colorcards/preppy-soiree/mats/hawthorne-oh-my-mahjong.jpg"
-   },
-   "rack_imgs": {
-    "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png",
-    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png"
-   },
-   "shop": "Shop OMM \u00b7 code MAHJMATCH",
-   "shop_m": "Code MAHJMATCH on tiles, racks & mats"
-  },
-  "spring-love": {
-   "name": "Spring Love",
-   "brand": "Oh My Mahjong",
-   "col": "#e0789c",
-   "tile": "assets/tiles/album/spring-love.jpg",
-   "sub": "Watermelon pink with lime & lavender layers",
-   "tag": [
-    "A retired set",
-    "from the Oh My Mahjong vault"
-   ],
-   "backs": [
-    [
-     "WATERMELON",
-     "#e23e62",
-     "solid back"
-    ],
-    [
-     "LIME",
-     "#b8d86a",
-     "layer"
-    ],
-    [
-     "LAVENDER",
-     "#a99bd0",
-     "layer"
-    ]
-   ],
-   "faces": [
-    [
-     "MAGENTA",
-     "#c8257a"
-    ],
-    [
-     "GREEN",
-     "#2f9d5a"
-    ],
-    [
-     "PURPLE",
-     "#7a5bb0"
-    ]
-   ],
-   "racks": [
-    "Middle & Main Scalloped Beechwood",
-    "Bird & Bamboo Lime Green",
-    "Bird & Bamboo Lavender"
-   ],
-   "mats": [
-    "Zen Glow",
-    "Vivienne",
-    "Goldie"
-   ],
-   "mat_imgs": {
-    "Zen Glow": "assets/colorcards/spring-love/mats/zen-glow-oh-my-mahjong.jpg",
-    "Vivienne": "assets/colorcards/spring-love/mats/vivienne-oh-my-mahjong.jpg",
-    "Goldie": "assets/colorcards/spring-love/mats/goldie-oh-my-mahjong.jpg"
-   },
-   "rack_imgs": {
-    "Middle & Main Scalloped Beechwood": "assets/racks/card/middle--main-scalloped-beechwood.png"
-   },
-   "shop": "Shop OMM \u00b7 code MAHJMATCH",
-   "shop_m": "Code MAHJMATCH on tiles, racks & mats"
-  },
-  "papaya-spritz": {
-   "name": "Papaya Spritz",
-   "brand": "Oh My Mahjong",
-   "col": "#e0702a",
-   "tile": "assets/tiles/album/papaya-spritz.jpg",
-   "sub": "Papaya orange with lavender & light lime layers",
-   "tag": [
-    "50 mat matches,",
-    "my top picks first"
-   ],
-   "backs": [
-    [
-     "PAPAYA",
-     "#de7e30",
-     "solid back"
-    ],
-    [
-     "LAVENDER",
-     "#a8a3e1",
-     "layer"
-    ],
-    [
-     "LIGHT LIME",
-     "#c8d7a5",
-     "layer"
-    ]
-   ],
-   "faces": [
-    [
-     "PINK",
-     "#ef7aa0"
-    ],
-    [
-     "TEAL",
-     "#3fb8b0"
-    ],
-    [
-     "LIME",
-     "#8fcf4f"
-    ],
-    [
-     "LAVENDER",
-     "#9f8fd6"
-    ]
-   ],
-   "racks": [
-    "Bird & Bamboo Lavender",
-    "Peace Love Mahjong Chartreuse",
-    "Middle & Main Scalloped Beechwood"
-   ],
-   "mats": [
-    "Heiress",
-    "Press for Mahjong",
-    "Greenly"
-   ],
-   "rack_imgs": {
-    "Peace Love Mahjong Chartreuse": "assets/racks/card/peace-love-mahjong-chartreuse.png",
-    "Middle & Main Scalloped Beechwood": "assets/racks/card/middle--main-scalloped-beechwood.png"
-   },
-   "mat_imgs": {
-    "Heiress": "assets/colorcards/papaya-spritz/mats/heiress-britt-mills.jpg",
-    "Press for Mahjong": "assets/colorcards/papaya-spritz/mats/press-for-mahjong-anders-ruff.jpg",
-    "Greenly": "assets/colorcards/papaya-spritz/mats/greenly-mahj-and-vine.jpg"
-   },
-   "profile_line": [
-    "Seeking: pink, peach or periwinkle.",
-    "Must be comfortable around bright color."
-   ],
-   "profile_line_options": {
-    "A": [
-     "Her type: pink with a papaya streak.",
-     "Open to periwinkle. Opposites attract."
-    ],
-    "B": [
-     "Looking for: someone who can handle",
-     "papaya, lavender and a little lime."
-    ],
-    "C": [
-     "Seeking: pink, peach or periwinkle.",
-     "Must be comfortable around bright color."
-    ]
-   },
-   "shop": "Shop OMM \u00b7 code MAHJMATCH",
-   "shop_m": "Code MAHJMATCH on tiles, racks & mats",
-   "_oct19": "Profile line C picked by Tiffany Oct 19 12:21pm. Cards are now the set's PROFILE (variants a/b via build.py --profile=a|b, DRAFT until she picks).",
-   "matches": 50
-  },
-  "sunday-tile-set": {
-   "name": "Sunday Tile Set",
-   "brand": "Sunday Mahjong",
-   "col": "#9a6a1f",
-   "tile": "assets/tiles/album/sunday-tile-set-hd.jpg",
-   "sub": "Butterscotch backs with ivory faces",
-   "tag": [
-    "The set I own, from",
-    "my favorite tile brand"
-   ],
-   "backs": [
-    [
-     "BUTTERSCOTCH",
-     "#b58438",
-     "solid back"
-    ],
-    [
-     "IVORY",
-     "#f2e6cc",
-     "tile body"
-    ]
-   ],
-   "faces": [
-    [
-     "RED",
-     "#c0392b"
-    ],
-    [
-     "TEAL",
-     "#2a8c8c"
-    ],
-    [
-     "NAVY",
-     "#24375e"
-    ],
-    [
-     "GREEN",
-     "#4f7a3a"
-    ]
-   ],
-   "racks": [
-    "Middle & Main Hawksbill Heritage Tortoise",
-    "Bam Bird Boutique Walnut",
-    "Peace Love Mahjong Oak"
-   ],
-   "mats": [
-    "Carson Vintage",
-    "Brownstone Bloom",
-    "Autumn Saffron"
-   ],
-   "shop": "Shop the Sunday Tile Set",
-   "shop_m": "Shop the Sunday Tile Set",
-   "racks_source": "the Sunday album cards (no Rack Picks final list yet)",
-   "mat_imgs": {
-    "Carson Vintage": "assets/colorcards/sunday-tile-set/mats/carson-vintage-ozark-mahjongg.jpg",
-    "Brownstone Bloom": "assets/colorcards/sunday-tile-set/mats/brownstone-bloom-anders-ruff.jpg",
-    "Autumn Saffron": "assets/colorcards/sunday-tile-set/mats/autumn-saffron-mahjong-row-co.jpg"
-   },
-   "rack_imgs": {
-    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
-    "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
-    "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png"
-   }
-  },
-  "brownstone-bloom": {
-   "name": "Brownstone Bloom",
-   "brand": "Anders Ruff",
-   "col": "#7b2d3b",
-   "tile": "assets/tiles/album/brownstone-bloom.jpg",
-   "sub": "Ivory with lavender, wine & olive",
-   "tag": [
-    "40 mat matches",
-    "and counting"
-   ],
-   "backs": [
-    [
-     "IVORY",
-     "#eee3cf",
-     "solid tile"
-    ],
-    [
-     "LAVENDER",
-     "#ae9ca9",
-     "butterfly on the back"
-    ]
-   ],
-   "faces": [
-    [
-     "WINE",
-     "#5b3838"
-    ],
-    [
-     "OLIVE",
-     "#5c512a"
-    ],
-    [
-     "DUSTY ROSE",
-     "#bb7c71"
-    ],
-    [
-     "LAVENDER",
-     "#ae9ca9"
-    ]
-   ],
-   "racks": [
-    "Middle & Main Hawksbill Heritage Tortoise",
-    "Bam Bird Boutique Olive"
-   ],
-   "racks_source": "Tiffany Oct 24 + Oct 29 8:04am (config/tile-racks-picks.json final_lists brownstone-bloom): M&M Hawksbill Heritage Tortoise + Bam Bird Boutique Olive; no B&B Wine, no AR Tortoise",
-   "rack_imgs": {
-    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
-    "Bam Bird Boutique Olive": "assets/racks/card/bam-bird-boutique-olive.png"
-   },
-   "mats": [
-    "Brownstone Bloom",
-    "Autumn Saffron",
-    "Mocha Bloom Light"
-   ],
-   "mat_imgs": {
-    "Brownstone Bloom": "assets/colorcards/brownstone-bloom/mats/brownstone-bloom-anders-ruff.jpg",
-    "Autumn Saffron": "assets/colorcards/brownstone-bloom/mats/autumn-saffron-mahjong-row-co.jpg",
-    "Mocha Bloom Light": "assets/colorcards/brownstone-bloom/mats/mocha-bloom-light-mahjong-row-co.jpg"
-   },
-   "shop": "Code MAHJMATCH on partner mats & racks",
-   "shop_m": "Code MAHJMATCH on partner mats & racks",
-   "_oct21": "Colours measured Oct 21 from the album pile (backs, protea, leaves, craks) + AR's NEWS close-up (doc 86: 3+ spots, saturated-ink median). AR says the tile set itself takes no promo codes (Indigo Pruitt special edition), so the pill never puts the code on the tiles. Top 3 = her album order. Classic Tile Edit labels (no profile wording: gender not set for this set)."
-  },
-  "nature-walk": {
-   "name": "Nature Walk",
-   "col": "#6b1f2a",
-   "sub": "Burgundy backs with ivory faces",
-   "backs": [
-    [
-     "BURGUNDY",
-     "#5a1c24",
-     "solid back"
-    ],
-    [
-     "IVORY",
-     "#ece6cf",
-     "tile body"
-    ]
-   ],
-   "faces": [
-    [
-     "RED",
-     "#a33a35"
-    ],
-    [
-     "BRICK",
-     "#874437"
-    ],
-    [
-     "BURGUNDY",
-     "#552c26"
-    ],
-    [
-     "GREEN",
-     "#3f7a3e"
-    ],
-    [
-     "MOSS",
-     "#677c47"
-    ],
-    [
-     "SAGE",
-     "#8f9963"
-    ],
-    [
-     "GOLD",
-     "#b0843f"
-    ],
-    [
-     "ESPRESSO",
-     "#2a1612"
-    ]
-   ],
-   "racks": [
-    "Middle & Main Hawksbill Heritage Tortoise",
-    "Bam Bird Boutique Walnut",
-    "Oh My Mahjong Burl"
-   ],
-   "brand": "Sunday Mahjong",
-   "tile": "assets/tiles/album/nature-walk.png",
-   "tag": [
-    "37 mats she's said yes to",
-    "so far (swipe in progress)"
-   ],
-   "mats": [
-    "Burgundy Grove",
-    "Osmanthus Grove",
-    "Bold Blooms"
-   ],
-   "mat_imgs": {
-    "Burgundy Grove": "assets/colorcards/nature-walk/mats/burgundy-grove-anders-ruff.jpg",
-    "Osmanthus Grove": "assets/colorcards/nature-walk/mats/osmanthus-grove-mahjong-row-co.jpg",
-    "Bold Blooms": "assets/colorcards/nature-walk/mats/bold-blooms-sunday-mahjong.jpg"
-   },
-   "rack_imgs": {
-    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
-    "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
-    "Oh My Mahjong Burl": "assets/racks/card/oh-my-mahjong-burl.png"
-   },
-   "shop": "Shop Nature Walk \u00b7 Sunday Mahjong",
-   "shop_m": "Shop Nature Walk \u00b7 Sunday Mahjong",
-   "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
-   "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
-   "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
-  },
-  "sunday-blues": {
-   "name": "Sunday Blues",
-   "col": "#263548",
-   "sub": "Navy backs with ivory faces",
-   "backs": [
-    [
-     "NAVY",
-     "#283445",
-     "solid back"
-    ],
-    [
-     "IVORY",
-     "#ede1c4",
-     "tile body"
-    ]
-   ],
-   "faces": [
-    [
-     "NAVY",
-     "#2b4158"
-    ],
-    [
-     "STEEL BLUE",
-     "#597994"
-    ],
-    [
-     "CORNFLOWER",
-     "#7199b2"
-    ],
-    [
-     "DUSTY TEAL",
-     "#769ca8"
-    ],
-    [
-     "SKY AQUA",
-     "#87b9c0"
-    ],
-    [
-     "GOLD",
-     "#b38749"
-    ],
-    [
-     "HONEY GOLD",
-     "#d7ac65"
-    ]
-   ],
-   "racks": [
-    "Peace Love Mahjong Navy",
-    "Bam Bird Boutique Walnut",
-    "Middle & Main Hawksbill Heritage Tortoise"
-   ],
-   "brand": "Sunday Mahjong",
-   "tile": "assets/tiles/album/sunday-blues.png",
-   "tag": [
-    "10 mats she's said yes to",
-    "so far (swipe in progress)"
-   ],
-   "mats": [
-    "Blue Diamond",
-    "Spring Awakening Warm Honey",
-    "Golden Gingham"
-   ],
-   "mat_imgs": {
-    "Blue Diamond": "assets/colorcards/sunday-blues/mats/blue-diamond-sunday-mahjong.jpg",
-    "Spring Awakening Warm Honey": "assets/colorcards/sunday-blues/mats/spring-awakening-warm-honey-mahjong-row-co.jpg",
-    "Golden Gingham": "assets/colorcards/sunday-blues/mats/golden-gingham-sunday-mahjong.jpg"
-   },
-   "rack_imgs": {
-    "Peace Love Mahjong Navy": "assets/racks/card/peace-love-mahjong-navy.png",
-    "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
-    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png"
-   },
-   "shop": "Shop Sunday Blues \u00b7 Sunday Mahjong",
-   "shop_m": "Shop Sunday Blues \u00b7 Sunday Mahjong",
-   "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
-   "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
-   "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
-  },
-  "plum-panda": {
-   "name": "Plum Panda",
-   "col": "#5a2740",
-   "sub": "Plum backs with ivory faces",
-   "backs": [
-    [
-     "PLUM",
-     "#4e2938",
-     "solid back"
-    ],
-    [
-     "IVORY",
-     "#f1e8d4",
-     "tile body"
-    ]
-   ],
-   "faces": [
-    [
-     "CRIMSON",
-     "#7e3537"
-    ],
-    [
-     "TERRACOTTA",
-     "#a45a51"
-    ],
-    [
-     "ORCHID",
-     "#964581"
-    ],
-    [
-     "ROSE",
-     "#c0789a"
-    ],
-    [
-     "BLUSH",
-     "#dca9a2"
-    ],
-    [
-     "JADE",
-     "#526853"
-    ],
-    [
-     "SAGE",
-     "#7ea280"
-    ],
-    [
-     "GOLD",
-     "#d8aa66"
-    ]
-   ],
-   "racks": [
-    "Middle & Main Hawksbill Heritage Tortoise",
-    "Oh My Mahjong Burl",
-    "Peace Love Mahjong Dark Green"
-   ],
-   "brand": "Sunday Mahjong",
-   "tile": "assets/tiles/album/plum-panda.png",
-   "tag": [
-    "14 mats she's said yes to",
-    "so far (swipe in progress)"
-   ],
-   "mats": [
-    "Violet Vines Wisteria",
-    "Plum Panda",
-    "Spring Blooms"
-   ],
-   "mat_imgs": {
-    "Violet Vines Wisteria": "assets/colorcards/plum-panda/mats/violet-vines-wisteria-middle-main-mahjong.jpg",
-    "Plum Panda": "assets/colorcards/plum-panda/mats/plum-panda-sunday-mahjong.jpg",
-    "Spring Blooms": "assets/colorcards/plum-panda/mats/spring-blooms-sunday-mahjong.jpg"
-   },
-   "rack_imgs": {
-    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
-    "Oh My Mahjong Burl": "assets/racks/card/oh-my-mahjong-burl.png",
-    "Peace Love Mahjong Dark Green": "assets/racks/card/peace-love-mahjong-dark-green.png"
-   },
-   "shop": "Shop Plum Panda \u00b7 Sunday Mahjong",
-   "shop_m": "Shop Plum Panda \u00b7 Sunday Mahjong",
-   "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
-   "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
-   "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
-  },
-  "hummingbird": {
-   "name": "Hummingbird",
-   "col": "#a0493f",
-   "sub": "All-ivory tiles with jewel-tone faces",
-   "backs": [
-    [
-     "IVORY",
-     "#ebe3d2",
-     "solid back + body"
-    ]
-   ],
-   "faces": [
-    [
-     "RED",
-     "#b05749"
-    ],
-    [
-     "BRICK",
-     "#7c4038"
-    ],
-    [
-     "INDIGO",
-     "#3f3663"
-    ],
-    [
-     "PURPLE",
-     "#615585"
-    ],
-    [
-     "NAVY",
-     "#3b4864"
-    ],
-    [
-     "TEAL",
-     "#4e8681"
-    ],
-    [
-     "SEAFOAM",
-     "#69a498"
-    ],
-    [
-     "COPPER",
-     "#bb8453"
-    ]
-   ],
-   "racks": [
-    "Peace Love Mahjong Navy",
-    "Middle & Main Hawksbill Heritage Tortoise",
-    "Oh My Mahjong Tortoise Shell"
-   ],
-   "brand": "Sunday Mahjong",
-   "tile": "assets/tiles/album/hummingbird.png",
-   "tag": [
-    "23 mats she's said yes to",
-    "so far (swipe in progress)"
-   ],
-   "mats": [
-    "Azure Bloom",
-    "Savannah Leatherette",
-    "Bold Blooms"
-   ],
-   "mat_imgs": {
-    "Azure Bloom": "assets/colorcards/hummingbird/mats/azure-bloom-luxe-mahjong.jpg",
-    "Savannah Leatherette": "assets/colorcards/hummingbird/mats/savannah-leatherette-britt-mills.jpg",
-    "Bold Blooms": "assets/colorcards/hummingbird/mats/bold-blooms-sunday-mahjong.jpg"
-   },
-   "rack_imgs": {
-    "Peace Love Mahjong Navy": "assets/racks/card/peace-love-mahjong-navy.png",
-    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
-    "Oh My Mahjong Tortoise Shell": "assets/racks/card/oh-my-mahjong-tortoise-shell.png"
-   },
-   "shop": "Shop Hummingbird \u00b7 Sunday Mahjong",
-   "shop_m": "Shop Hummingbird \u00b7 Sunday Mahjong",
-   "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
-   "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
-   "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
-  },
-  "juniper": {
-   "name": "Juniper",
-   "col": "#225d36",
-   "brand": "Oh My Mahjong",
-   "sub": "Forest green jade with chartreuse & teal layers",
-   "backs": [
-    [
-     "FOREST GREEN JADE",
-     "#225d36",
-     "jade-look stone"
-    ],
-    [
-     "CHARTREUSE",
-     "#a9c54f",
-     "layer"
-    ],
-    [
-     "TEAL",
-     "#00a792",
-     "layer"
-    ]
-   ],
-   "faces": [
-    [
-     "HOT PINK",
-     "#f05aa5"
-    ],
-    [
-     "CORAL",
-     "#f0857c"
-    ],
-    [
-     "BAMBOO GREEN",
-     "#43a16b"
-    ],
-    [
-     "MINT",
-     "#9fdcc5"
-    ],
-    [
-     "TEAL",
-     "#18b39c"
-    ],
-    [
-     "NAVY",
-     "#1d4a5a"
-    ],
-    [
-     "GOLD",
-     "#d9b85a"
-    ]
-   ],
-   "racks": [
-    "Oh My Mahjong Hot Pink",
-    "Oh My Mahjong Agate"
-   ],
-   "rack_imgs": {
-    "Oh My Mahjong Hot Pink": "assets/racks/card/oh-my-mahjong-hot-pink.png",
-    "Oh My Mahjong Agate": "assets/racks/card/oh-my-mahjong-agate.png"
-   },
-   "tile": "assets/tiles/album/juniper.jpg",
-   "tag": [
-    "A lush lantern-lit garden",
-    "pagodas, lotus & a peacock"
-   ],
-   "mats": [
-    "Palm Royale",
-    "Flora Belle",
-    "Lotus Cove"
-   ],
-   "mat_imgs": {
-    "Garden Glow": "assets/colorcards/juniper/mats/garden-glow-emerald-bespoke-mahjong.jpg",
-    "Palm Royale": "assets/colorcards/juniper/mats/palm-royale-mahj-tile-haus.jpg",
-    "Lotus Cove": "assets/colorcards/juniper/mats/lotus-cove-oh-my-mahjong.jpg",
-    "Flora Belle": "assets/colorcards/juniper/mats/flora-belle-anders-ruff.jpg"
-   },
-   "shop": "Shop Juniper \u00b7 Oh My Mahjong",
-   "shop_m": "Shop Juniper \u00b7 Oh My Mahjong",
-   "mats_source": "Tiffany's final album order Nov 7 11:21pm (top 3: Palm Royale, Flora Belle, Lotus Cove)",
-   "racks_source": "Tiffany Nov 6 2:11am: OMM Hot Pink + OMM Agate",
-   "_nov04": "Colours measured from OMM's Juniper alt pile photo (05-Tile_Juniper_Alt) and checked by eye; OMM's own copy: forest green, jade, warm coral pink.",
-   "_nov05": "Tiffany Nov 5 12:42am: back = forest green JADE-LOOK (OMM: 'inspired by the rich beauty of jade'); never call the teal layer 'jade'. Pair mat Lotus Cove top 3, not #1; Palm Royale #2.",
-   "profile_line": [
-    "Seeking: hot pink, kelly or forest green.",
-    "Must love a garden party."
-   ],
-   "profile_line_options": {
-    "A": [
-     "Seeking: hot pink, kelly or forest green.",
-     "Must love a garden party."
-    ],
-    "B": [
-     "Her type: pink with a green streak.",
-     "Lotus ponds a plus."
-    ],
-    "C": [
-     "Looking for: someone who can handle",
-     "forest green, chartreuse and hot pink."
-    ]
-   },
-   "_nov06r3": "Tiffany Nov 6 2:26am round 3: tagline in the dating-app voice like Papaya ('Seeking: ...'), not 'A lush lantern-lit garden'; back = Forest Green Jade colour with a jade-look STONE pattern (never 'jade-look green'); tile = PILE photo; top mats Palm Royale #1, Garden Glow #2, Lotus Cove #3.",
-   "matches": 42,
-   "_nov07": "Final: top 3 from her order; 42 matches (37 + 5 holiday)."
-  },
-  "style-of-your-life": {
-   "name": "Style of Your Life",
-   "col": "#0b6b3a",
-   "brand": "My Fair Mahjong",
-   "sub": "Pearl green malachite with a deep green layer",
-   "backs": [
-    [
-     "PEARL GREEN",
-     "#0e9a5a",
-     "malachite swirl"
-    ],
-    [
-     "DEEP GREEN",
-     "#0a4a25",
-     "middle layer"
-    ]
-   ],
-   "faces": [
-    [
-     "INDIGO",
-     "#393c90"
-    ],
-    [
-     "WINE",
-     "#902836"
-    ],
-    [
-     "BUBBLEGUM PINK",
-     "#f590b8"
-    ],
-    [
-     "CORNFLOWER",
-     "#80acdf"
-    ],
-    [
-     "MARIGOLD",
-     "#e79d15"
-    ],
-    [
-     "FERN GREEN",
-     "#4f9a60"
-    ]
-   ],
-   "racks": [
-    "My Fair Mahjong Indigo Blue",
-    "My Fair Mahjong Magenta"
-   ],
-   "rack_imgs": {
-    "My Fair Mahjong Indigo Blue": "assets/racks/card/my-fair-mahjong-indigo-blue.png",
-    "My Fair Mahjong Magenta": "assets/racks/card/my-fair-mahjong-magenta.png"
-   },
-   "tile": "assets/tiles/album/style-of-your-life.jpg",
-   "tag": [
-    "A day of shopping",
-    "shoes, handbags, jewelry & escalators"
-   ],
-   "mats": [
-    "Tennis Club",
-    "MOD Daisies",
-    "Crimson Harvest"
-   ],
-   "mat_imgs": {
-    "Tennis Club": "assets/colorcards/style-of-your-life/mats/tennis-club-lets-be-besties.jpg",
-    "MOD Daisies": "assets/colorcards/style-of-your-life/mats/mod-daisies-lets-be-besties.jpg",
-    "Crimson Harvest": "assets/colorcards/style-of-your-life/mats/crimson-harvest-britt-mills.jpg"
-   },
-   "shop": "Shop Style of Your Life \u00b7 My Fair Mahjong",
-   "shop_m": "Shop Style of Your Life \u00b7 My Fair Mahjong",
-   "profile_line": [
-    "Seeking: navy with a pink streak.",
-    "Retail therapy a plus."
-   ],
-   "mats_source": "Claude's own picks (Nov 7, run like Juniper), not her picks yet",
-   "racks_source": "Claude's own picks (MFM solid acrylic Indigo Blue + Magenta, same shape, 20in), pending her OK",
-   "_nov07": "Colours measured from MFM's pile photo (StyleofYourLifeSeries_11) and the flat lay (_2), checked by eye. MFM's own words: 'a pearl green back, a deep green middle layer, and a white face'. Faces lead with indigo ink; wine, bubblegum pink, cornflower, marigold, fern green. No chartreuse, teal or coral (those are Juniper's)."
-  },
-  "deco-lagoon": {
-   "name": "Deco (Lagoon)",
-   "col": "#0a5560",
-   "brand": "Bam Bird Boutique",
-   "sub": "Lagoon teal backs with a gold-foil deco palm",
-   "backs": [
-    [
-     "LAGOON",
-     "#0a4a56",
-     "jewel-tone back"
-    ],
-    [
-     "GOLD FOIL",
-     "#c9a24a",
-     "deco palm"
-    ],
-    [
-     "IVORY",
-     "#f4efe6",
-     "face layer"
-    ]
-   ],
-   "faces": [
-    [
-     "MULBERRY",
-     "#7c2b55"
-    ],
-    [
-     "ROSE",
-     "#c47e68"
-    ],
-    [
-     "GOLD",
-     "#d1ad5c"
-    ],
-    [
-     "TEAL",
-     "#22939a"
-    ],
-    [
-     "NAVY",
-     "#2a3f7a"
-    ],
-    [
-     "PERIWINKLE",
-     "#7f9fd0"
-    ],
-    [
-     "DEEP GREEN",
-     "#1f4d3e"
-    ]
-   ],
-   "racks": [
-    "Bam Bird Boutique Lagoon Wood",
-    "Bam Bird Boutique Mulberry Wood"
-   ],
-   "rack_imgs": {
-    "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
-    "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png"
-   },
-   "tile": "assets/tiles/v92/bam-bird-boutique-deco-lagoon-split.jpg",
-   "tag": [
-    "Art deco after dark",
-    "peacock winds, gold cranes & lions"
-   ],
-   "mats": [
-    "Reba",
-    "Viola",
-    "Deco Dragon (Mulberry)"
-   ],
-   "mat_imgs": {
-    "Reba": "assets/colorcards/deco/mats/britt-mills-reba.jpg",
-    "Viola": "assets/colorcards/deco/mats/britt-mills-viola.jpg",
-    "Deco Dragon (Mulberry)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg"
-   },
-   "shop": "Shop Deco \u00b7 Bam Bird Boutique",
-   "shop_m": "Shop Deco \u00b7 Bam Bird Boutique",
-   "profile_line": [
-    "Seeking: deep teal with a berry streak.",
-    "Must love a speakeasy."
-   ],
-   "profile_line_options": {
-    "A": [
-     "Seeking: deep teal with a berry streak.",
-     "Must love a speakeasy."
-    ],
-    "B": [
-     "Seeking: teal, mulberry or gold.",
-     "Jazz age a plus."
-    ],
-    "C": [
-     "Her type: dark teal, with a little berry.",
-     "Gold accents only."
-    ]
-   },
-   "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
-   "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks, one per tile colour (Lagoon = backs, Mulberry = the crak frames), same shape so they lie the same",
-   "_nov07": "Colours measured from Bam Bird's Deco listing photos (backs tray img 07, faces tray img 16, pile img 14) and checked by eye. Bam Bird's own words: 'two jewel-toned colorways: Lagoon and Mulberry', 'inspired by the bold elegance of the Art Deco era'. Same faces on every colourway. Top 3: Reba #1 (her favorite Deco pairing Oct 27), Wren #2, Deco Dragon (Mulberry) #3 = Bam Bird's own sister mat (pair rule: never #1; her Oct 26 rule: Lagoon tiles on the MULBERRY Dragon, never Lagoon on Lagoon).",
-   "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 7 BamBird_40K_and_Christmas_-102.jpg (variant Lagoon / Lucite Display Box)",
-   "_nov08": "Tiffany Nov 8 review: top 3 = Reba, Viola (moved up at her ask), Deco Dragon (Mulberry); TNT recs lead the album itself."
-  },
-  "deco-mulberry": {
-   "name": "Deco Mulberry",
-   "col": "#7a2c55",
-   "brand": "Bam Bird Boutique",
-   "sub": "Mulberry backs with a gold-foil deco palm",
-   "backs": [
-    [
-     "MULBERRY",
-     "#7d3456",
-     "jewel-tone back"
-    ],
-    [
-     "GOLD FOIL",
-     "#c9a24a",
-     "deco palm"
-    ],
-    [
-     "IVORY",
-     "#f4efe6",
-     "face layer"
-    ]
-   ],
-   "faces": [
-    [
-     "TEAL",
-     "#22939a"
-    ],
-    [
-     "MULBERRY",
-     "#7c2b55"
-    ],
-    [
-     "ROSE",
-     "#c47e68"
-    ],
-    [
-     "GOLD",
-     "#d1ad5c"
-    ],
-    [
-     "NAVY",
-     "#2a3f7a"
-    ],
-    [
-     "PERIWINKLE",
-     "#7f9fd0"
-    ],
-    [
-     "DEEP GREEN",
-     "#1f4d3e"
-    ]
-   ],
-   "racks": [
-    "Bam Bird Boutique Mulberry Wood",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "rack_imgs": {
-    "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
-    "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png"
-   },
-   "tile": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
-   "tag": [
-    "Art deco after dark",
-    "berry backs, gold palms & lions"
-   ],
-   "mats": [
-    "Viola",
-    "Caroline in Peacock",
-    "Deco Dragon (Lagoon)"
-   ],
-   "mat_imgs": {
-    "Viola": "assets/colorcards/deco/mats/britt-mills-viola.jpg",
-    "Caroline in Peacock": "assets/colorcards/deco/mats/mahj-and-vine-caroline-in-peacock.jpg",
-    "Deco Dragon (Lagoon)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg"
-   },
-   "shop": "Shop Deco \u00b7 Bam Bird Boutique",
-   "shop_m": "Shop Deco \u00b7 Bam Bird Boutique",
-   "profile_line": [
-    "Seeking: mulberry, lagoon teal or gold.",
-    "Must love jazz-age glamour."
-   ],
-   "profile_line_options": {
-    "A": [
-     "Seeking: mulberry, lagoon teal or gold.",
-     "Must love jazz-age glamour."
-    ],
-    "B": [
-     "Her type: deep teal. Opposites attract.",
-     "Gold accents a plus."
-    ],
-    "C": [
-     "Seeking: a teal that can keep up",
-     "with a berry back."
-    ]
-   },
-   "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
-   "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks, Mulberry (backs) + Lagoon (the teal bams)",
-   "_nov07": "Same source photos as deco-lagoon. Top 3: Viola #1 (her Oct 27 Mulberry pairing), Caroline in Peacock #2, Deco Dragon (Lagoon) #3 = Bam Bird's own sister mat (never Mulberry on Mulberry).",
-   "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 8 BamBird_40K_and_Christmas_-83.jpg (variant Mulberry / Lucite Display Box)"
-  },
-  "deco-indigo": {
-   "name": "Deco Indigo",
-   "col": "#253a66",
-   "brand": "Bam Bird Boutique",
-   "sub": "Indigo backs with a gold-foil deco palm",
-   "backs": [
-    [
-     "INDIGO",
-     "#263a63",
-     "jewel-tone back"
-    ],
-    [
-     "GOLD FOIL",
-     "#c9a24a",
-     "deco palm"
-    ],
-    [
-     "IVORY",
-     "#f4efe6",
-     "face layer"
-    ]
-   ],
-   "faces": [
-    [
-     "MULBERRY",
-     "#7c2b55"
-    ],
-    [
-     "TEAL",
-     "#22939a"
-    ],
-    [
-     "ROSE",
-     "#c47e68"
-    ],
-    [
-     "GOLD",
-     "#d1ad5c"
-    ],
-    [
-     "PERIWINKLE",
-     "#7f9fd0"
-    ],
-    [
-     "DEEP GREEN",
-     "#1f4d3e"
-    ],
-    [
-     "NAVY",
-     "#2a3f7a"
-    ]
-   ],
-   "racks": [
-    "Bam Bird Boutique Indigo",
-    "Bam Bird Boutique Mulberry Wood"
-   ],
-   "rack_imgs": {
-    "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
-    "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png"
-   },
-   "tile": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
-   "tag": [
-    "Art deco after dark",
-    "navy backs, gold palms & lions"
-   ],
-   "mats": [
-    "Peacock Garden",
-    "Savannah",
-    "Deco Dragon (Mulberry)"
-   ],
-   "mat_imgs": {
-    "Peacock Garden": "assets/colorcards/deco/mats/britt-mills-peacock-garden.jpg",
-    "Savannah": "assets/colorcards/deco/mats/britt-mills-savannah.jpg",
-    "Deco Dragon (Mulberry)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg",
-    "Deco Neoprene": "assets/colorcards/deco/mats/bam-bird-boutique-deco-neoprene.jpg",
-    "Deco Dragon (Lagoon)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg"
-   },
-   "shop": "Shop Deco \u00b7 Bam Bird Boutique",
-   "shop_m": "Shop Deco \u00b7 Bam Bird Boutique",
-   "profile_line": [
-    "Seeking: berry, teal or a little gold.",
-    "Must love a midnight garden."
-   ],
-   "profile_line_options": {
-    "A": [
-     "Seeking: berry, teal or a little gold.",
-     "Must love a midnight garden."
-    ],
-    "B": [
-     "Her type: anything but navy.",
-     "Gold accents a plus."
-    ],
-    "C": [
-     "Seeking: a green that can keep up",
-     "with a navy back."
-    ]
-   },
-   "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
-   "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks in Lagoon (her teal bams) + Mulberry (her crak frames), never Indigo on Indigo; Tiffany Oct 27 put Indigo with Bam Bird Lagoon racks",
-   "_nov07": "Indigo back = Bam Bird's Indigo showroom photo (#2a3b5e) + FYM table-view wall (#233862, config/tableview-back-colors.json bam-bird-boutique-deco-indigo), checked by eye against the bag pile (listing img 18). Faces = same as Lagoon/Mulberry. Top 3: Peacock Garden (her Oct 27 two-colour pick: Indigo/Peacock Garden), Savannah (her Oct 27 'put Indigo on the green mat'), Deco Dragon (Mulberry) #3 = sister mat (never #1, never the Indigo Dragon). Indigo SOLD OUT on bambirdboutique.com Nov 7 (all 3 variants).",
-   "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 1 BamBird_Deco-1-2.jpg (no variant attached; the navy box of the three stacked boxes; the only Indigo-variant images, 11 and 13, show bags or faces)",
-   "racks_note": "Tiffany Nov 17 3:11am: Indigo (navy) as the match-the-tiles rack instead of Lagoon (teal came out of nowhere); Mulberry for the mulberry frames. Bam Bird Indigo shows sold out on their site Nov 17."
-  },
-  "cabana-club": {
-   "name": "Cabana Club",
-   "col": "#0c92a7",
-   "brand": "Charleston Mahjong Club",
-   "sub": "Pool-water backs on soft yellow faces",
-   "backs": [
-    [
-     "POOL TURQUOISE",
-     "#57aabd",
-     "water-print back"
-    ],
-    [
-     "SEAFOAM",
-     "#b0dbe3",
-     "water highlights"
-    ],
-    [
-     "SOFT YELLOW",
-     "#f6f4b3",
-     "face layer"
-    ]
-   ],
-   "faces": [
-    [
-     "TEAL",
-     "#0c92a7"
-    ],
-    [
-     "LIME",
-     "#85c412"
-    ],
-    [
-     "RASPBERRY",
-     "#b83161"
-    ],
-    [
-     "APRICOT",
-     "#f9cc6f"
-    ],
-    [
-     "WHITE",
-     "#ffffff"
-    ]
-   ],
-   "racks": [
-    "Charleston Mahjong Club Key Lime",
-    "Charleston Mahjong Club Azalea Pink",
-    "Charleston Mahjong Club Winter White"
-   ],
-   "rack_imgs": {
-    "Charleston Mahjong Club Key Lime": "assets/racks/card/charleston-mahjong-club-key-lime-drawn.png",
-    "Charleston Mahjong Club Azalea Pink": "assets/racks/card/charleston-mahjong-club-azalea-pink-drawn.png",
-    "Charleston Mahjong Club Winter White": "assets/racks/card/charleston-mahjong-club-winter-white-drawn.png"
-   },
-   "tile": "assets/tiles/album/cabana-club.jpg",
-   "tag": [
-    "Vintage beach club",
-    "beach balls, palms, a diver, cabanas"
-   ],
-   "mats": [
-    "Cabana Club"
-   ],
-   "mat_imgs": {
-    "Cabana Club": "assets/launches/charlestonmahjongclub-cabana-club/cabana-club-mat-flat.jpg"
-   },
-   "shop": "Shop Cabana Club \u00b7 Charleston Mahjong Club",
-   "shop_m": "Shop Cabana Club \u00b7 Charleston Mahjong Club",
-   "profile_line": [
-    "Seeking: teal, lime or a pop of pink.",
-    "Must love a pool day."
-   ],
-   "_note": "Nov 10 (album start, Matches & Catalog agent): colours measured from CMC listing image 3 (flat layout) + image 9 (back tile). Racks = CMC 20in wooden Key Lime / Azalea Pink / Winter White (tile brand's own racks; drawn bars in measured colours until a clean rack cut-out exists). Top mats = the coordinated mat only until her picks; the top 3 get filled from her standouts."
-  },
-  "origami-timber": {
-   "name": "Origami Timber",
-   "col": "#8c4329",
-   "brand": "Bam Bird Boutique",
-   "sub": "Timber backs with an etched origami crane",
-   "backs": [
-    [
-     "TIMBER",
-     "#8c4329",
-     "warm wood back"
-    ],
-    [
-     "IVORY",
-     "#f4efe6",
-     "face layer"
-    ]
-   ],
-   "faces": [
-    [
-     "DEEP TEAL",
-     "#1d5f6b"
-    ],
-    [
-     "COPPER",
-     "#c47a45"
-    ],
-    [
-     "GREEN",
-     "#2e7a52"
-    ],
-    [
-     "PLUM",
-     "#5b2c40"
-    ],
-    [
-     "SEAFOAM",
-     "#87bec2"
-    ]
-   ],
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "rack_imgs": {
-    "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
-    "Bam Bird Boutique Olive": "assets/racks/card/bam-bird-boutique-olive.png"
-   },
-   "tile": "assets/tiles/v92/bam-bird-origami-timber-split.jpg",
-   "tag": [
-    "Warm wood + jewel tones",
-    "teal, copper & green faces"
-   ],
-   "mats": [],
-   "mat_imgs": {},
-   "shop": "Shop Origami \u00b7 Bam Bird Boutique",
-   "shop_m": "Shop Origami \u00b7 Bam Bird Boutique",
-   "profile_line": [
-    "Seeking: deep teal, copper or forest green.",
-    "Must love a warm wood table."
-   ],
-   "_measured": "Nov 16 2026: back median rgb(140,67,41) from the FYM split photo right half; faces k-means on the left half (teal #0e525e 31%, copper #bf7c54 18%, seafoam-teal #3e8486 17%, copper-brown 17%); plum + green read by eye from winds/bams.",
-   "racks_note": "Tiffany Nov 17 1:28am: Walnut + Lagoon Wood (Olive 'isn't it'). B&B Forest Green is a very good green for these tiles (use for mat racks); Mahjong Register Navy looks good; wood tones (PLM Acrylic Burl, PLM Oak, OMM Burl) beat one-off mustard; no tortoise, no Peacock Teal, no Miss Mahjong Jade & Brass, PLM Dark Green is the wrong (too deep) green."
-  },
-  "sadie-jane": {
-   "name": "Sadie Jane",
-   "col": "#37709a",
-   "brand": "Oh My Mahjong",
-   "sub": "Blush pink backs with denim and pale blue stripe layers",
-   "backs": [
-    [
-     "BLUSH PINK",
-     "#ead2d4",
-     "back"
-    ],
-    [
-     "DENIM BLUE",
-     "#37709a",
-     "stripe layer"
-    ],
-    [
-     "PALE BLUE",
-     "#b3bbc8",
-     "stripe layer"
-    ],
-    [
-     "WHITE",
-     "#e8eaf0",
-     "face layer"
-    ]
-   ],
-   "faces": [
-    [
-     "DENIM BLUE",
-     "#366ea3"
-    ],
-    [
-     "NAVY",
-     "#103f67"
-    ],
-    [
-     "LILY GREEN",
-     "#2d9763"
-    ],
-    [
-     "LOTUS CORAL",
-     "#b76765"
-    ],
-    [
-     "SKY BLUE",
-     "#5b94c3"
-    ]
-   ],
-   "racks": [
-    "Bird & Bamboo Ballet Pink",
-    "Bird & Bamboo French Blue"
-   ],
-   "rack_imgs": {},
-   "tile": "assets/tiles/album/sadie-jane.jpg",
-   "tag": [
-    "Lotus ponds, lily pads and pandas",
-    "blush backs, denim stripes"
-   ],
-   "mats": [
-    "Serendipity",
-    "Petalwing",
-    "Pink & Blue Grandmillennial"
-   ],
-   "mat_imgs": {
-    "Serendipity": "assets/colorcards/sadie-jane/mats/serendipity.jpg",
-    "Petalwing": "assets/colorcards/sadie-jane/mats/virora-mahjong-petalwing.jpg",
-    "Pink & Blue Grandmillennial": "assets/albums/sadie-jane/adds/mahj-and-moon-pink-blue-grandmillennial.jpg"
-   },
-   "shop": "Shop Sadie Jane \u00b7 Oh My Mahjong",
-   "shop_m": "Shop Sadie Jane \u00b7 Oh My Mahjong",
-   "draft": "Nov 23 2026: racks = her Ballet Pink + French Blue; top 3 mats = the first three for-sale mats in her review order at 1pm (Serendipity, Heron, Vivara; Peri-twinkle is retired so it is skipped). Re-check against her FINAL order after she taps Done. | Nov 23 6:55pm: top 3 = her FINAL album order (Serendipity, Petalwing, Pink & Blue Grandmillennial).",
-   "racks_by": "Tiffany Nov 22 2026 1:10am: 'My rack choice is ballet pink with the French blue.' (Ballet Pink colour reset to blush #F5D6E0 the same night)"
-  },
-  "beaumont": {
-   "name": "Beaumont",
-   "col": "#27498f",
-   "brand": "Oh My Mahjong",
-   "sub": "Tortoiseshell backs with cobalt and chartreuse stripe layers",
-   "backs": [
-    [
-     "TORTOISESHELL",
-     "#633314",
-     "back"
-    ],
-    [
-     "COBALT BLUE",
-     "#27498f",
-     "stripe layer"
-    ],
-    [
-     "CHARTREUSE",
-     "#898310",
-     "stripe layer"
-    ],
-    [
-     "WHITE",
-     "#ebecec",
-     "face layer"
-    ]
-   ],
-   "faces": [
-    [
-     "BAMBOO GREEN",
-     "#7aaf6f"
-    ],
-    [
-     "CORAL PINK",
-     "#d9838a"
-    ],
-    [
-     "TEAL",
-     "#4594a7"
-    ],
-    [
-     "BLUSH",
-     "#e5b2af"
-    ],
-    [
-     "POWDER BLUE",
-     "#a2c9d7"
-    ]
-   ],
-   "racks": [
-    "Oh My Mahjong Tortoise Shell",
-    "My Fair Mahjong Indigo Blue"
-   ],
-   "rack_imgs": {
-    "Oh My Mahjong Tortoise Shell": "assets/racks/card/oh-my-mahjong-tortoise-shell.png",
-    "My Fair Mahjong Indigo Blue": "assets/racks/card/my-fair-mahjong-indigo-blue.png"
-   },
-   "tile": "assets/tiles/album/beaumont.jpg",
-   "tag": [
-    "Lotus ponds, bamboo and turtles",
-    "tortoiseshell backs, cobalt + chartreuse stripes"
-   ],
-   "mats": [
-    "Lily",
-    "Elysium",
-    "Larkspur"
-   ],
-   "mat_imgs": {
-    "Lily": "assets/albums/beaumont/adds/oh-my-mahjong-lily-2400.jpg",
-    "Elysium": "assets/albums/beaumont/mats/oh-my-mahjong-elysium.jpg",
-    "Larkspur": "assets/albums/beaumont/mats/oh-my-mahjong-larkspur.jpg"
-   },
-   "shop": "Shop Beaumont \u00b7 Oh My Mahjong",
-   "shop_m": "Shop Beaumont \u00b7 Oh My Mahjong",
-   "draft": "Nov 24 2026 (Main, scheduled run): measured by k-means on the OMM pile shot (backs) and the OMM laid-out faces image 01 (faces), nothing recoloured. Top 3 mats + racks filled after the by-sight pass; final after her review."
-  },
-  "oasis": {
-   "name": "Oasis",
-   "col": "#104344",
-   "brand": "Oh My Mahjong",
-   "sub": "Marbled jade backs with deep teal and orchid pink stripe layers",
-   "backs": [
-    [
-     "MARBLED JADE",
-     "#5d6655",
-     "back"
-    ],
-    [
-     "DEEP TEAL",
-     "#104344",
-     "stripe layer"
-    ],
-    [
-     "ORCHID PINK",
-     "#de98b8",
-     "stripe layer"
-    ],
-    [
-     "WHITE",
-     "#e2ddda",
-     "face layer"
-    ]
-   ],
-   "faces": [
-    [
-     "ORCHID PINK",
-     "#de98b8"
-    ],
-    [
-     "MAGENTA",
-     "#d63c8c"
-    ],
-    [
-     "JADE GREEN",
-     "#1fa981"
-    ],
-    [
-     "MINT",
-     "#6ec29e"
-    ],
-    [
-     "TEAL",
-     "#167a7a"
-    ]
-   ],
-   "racks": [
-    "Oh My Mahjong Pink Quartz",
-    "Virora Spring Jade"
-   ],
-   "rack_imgs": {
-    "Oh My Mahjong Pink Quartz": "assets/racks/card/oh-my-mahjong-pink-quartz.png",
-    "Virora Spring Jade": "assets/racks/card/virora-spring-jade.png"
-   },
-   "tile": "assets/tiles/album/oasis.jpg",
-   "tag": [
-    "Orchids, bamboo and lanterns",
-    "marbled jade backs, teal + pink stripes"
-   ],
-   "mats": [
-    "Starling",
-    "Jade",
-    "Enchanted"
-   ],
-   "mat_imgs": {
-    "Starling": "assets/albums/oasis/adds/oh-my-mahjong-starling-2400.jpg",
-    "Jade": "assets/albums/oasis/mats/oh-my-mahjong-jade.jpg",
-    "Enchanted": "assets/mats/omm-retired/enchanted.jpg"
-   },
-   "shop": "Shop Oasis \u00b7 Oh My Mahjong",
-   "shop_m": "Shop Oasis \u00b7 Oh My Mahjong",
-   "draft": "Nov 24 2026 (Main, scheduled run): backs measured by k-means on the OMM pile shot; magenta + teal faces read by sight (small on the pile). Racks + top 3 after the by-sight pass."
-  },
-  "plm-merry-nutcracker": {
-   "name": "Merry Nutcracker",
-   "col": "#1e5631",
-   "brand": "Peace Love Mahjong",
-   "sub": "Hand-drawn nutcracker ballet on white tiles, pine-green box, ballet-pink trim",
-   "backs": [
-    [
-     "IVORY WHITE",
-     "#f5f3ee",
-     "tile body"
-    ],
-    [
-     "PINE GREEN",
-     "#1e5631",
-     "box + tree mat"
-    ],
-    [
-     "BALLET PINK",
-     "#f2a8c4",
-     "box trim + ribbon"
-    ]
-   ],
-   "faces": [
-    [
-     "CANDY PINK",
-     "#e05a86"
-    ],
-    [
-     "FOREST GREEN",
-     "#2d6b4a"
-    ],
-    [
-     "SEAFOAM TEAL",
-     "#5bbfae"
-    ],
-    [
-     "CHERRY RED",
-     "#c23b4f"
-    ],
-    [
-     "GOLD",
-     "#d9a94a"
-    ]
-   ],
-   "racks": [
-    "Bird & Bamboo Ballet Pink",
-    "Bird & Bamboo Gold Metallic"
-   ],
-   "tile": "assets/tiles/album/plm-merry-nutcracker.jpg",
-   "tag": [
-    "Nutcracker ballet dancers in pink, green & gold",
-    "on crisp white tiles, pine-green box"
-   ],
-   "mats": [],
-   "mat_imgs": {},
-   "shop": "Shop Merry Nutcracker \u00b7 Peace Love Mahjong",
-   "shop_m": "Shop Merry Nutcracker \u00b7 Peace Love Mahjong",
-   "mats_source": "PENDING: by-sight pool pull not yet run (Nov 25 11:55am)",
-   "racks_source": "Claude's own picks from the Bird & Bamboo paint table (no PLM racks of its own in the catalog)",
-   "_nov25": "Backs/faces measured by eye from assets/tiles/album/plm-merry-nutcracker.jpg + box photo (peacelovemahjong.com product photos): ivory-white tile body, pine-green box + tree mat, ballet-pink scalloped box trim and ribbon; hand-drawn nutcracker ballet figures in candy pink, forest green, seafoam teal, cherry red and gold ink across the tile faces."
-  }
- },
- "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."
+  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."
 }

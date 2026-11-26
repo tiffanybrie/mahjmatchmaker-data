@@ -13,6 +13,16 @@
  },
  "mats": [
   {
+   "group": "best",
+   "name": "Gilded Peacock",
+   "brand": "Bougie Mahjong",
+   "img": "assets/colorcards/deco/mats/bougie-mahjong-gilded-peacock.jpg",
+   "why": "Art deco on art deco: gold fan lines and peacock feathers on deep teal, with an ivory center like her faces.",
+   "retired": false,
+   "fym": "bougiemahjong.com/gilded-peacock-mahjong-mat",
+   "lowres": false
+  },
+  {
    "group": "stand",
    "name": "Deco Dragon (Mulberry)",
    "brand": "Bam Bird Boutique",
@@ -23,24 +33,99 @@
    "lowres": false
   },
   {
-   "group": "stand",
-   "name": "Reba",
-   "brand": "Britt Mills",
-   "img": "assets/colorcards/deco/mats/britt-mills-reba.jpg",
-   "why": "Your favorite Deco pairing. The deep teal field holds her Lagoon backs, and the pink frame and bouquet pick up her mulberry and rose faces.",
+   "group": "deco",
+   "name": "Crane Cloud",
+   "brand": "Silk Mahjong",
+   "img": "assets/colorcards/deco/mats/silk-mahjong-crane-cloud.jpg",
+   "why": "White cranes circling a gold sun on deep teal, inside a lagoon-blue cloud border. Her teal backs and gold palms, and a crane like her 1 Bam.",
    "retired": false,
-   "fym": "brittmillsdesign.com/reba-neoprene-mahjong-mat",
+   "fym": "",
+   "lowres": false,
+   "partner": false,
+   "url": "https://silkmahjong.com/products/mahjong-mat-2994012",
+   "price": "$109",
+   "added_after_review": "Nov 8 6:24pm: Tiffany brought it in (Silk Mahjong, no affiliate program; whole line allowed 6:25pm). Leatherette or neoprene, same listing."
+  },
+  {
+   "group": "contrast",
+   "name": "Deco Dragon (Indigo)",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-indigo.jpg",
+   "why": "Bam Bird Boutique's navy Deco Dragon. It matches her navy dots and numbers, and the dragons match hers.",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293",
    "lowres": false
   },
   {
-   "group": "stand",
-   "name": "Viola",
-   "brand": "Britt Mills",
-   "img": "assets/colorcards/deco/mats/britt-mills-viola.jpg",
-   "why": "A deep teal center inside a black floral border of pinks and plums. Moody, and very her: her teal backs and her mulberry faces in one mat.",
+   "group": "yours",
+   "name": "Dark Blue Art Deco, Gold Geometric Fans",
+   "brand": "Dreamframer Art",
+   "img": "assets/albums/discovery/dreamframer-art-dark-blue-art-deco-gold-fans.jpg",
+   "why": "Your pick from New finds (round 2). Navy ground with teal and gold art deco fans: her teal on the fans, her gold palm, her navy dots.",
    "retired": false,
-   "fym": "brittmillsdesign.com/viola-neoprene-mahjong-mat-arriving-late-october",
-   "lowres": false
+   "fym": null,
+   "lowres": true,
+   "her_pick": true,
+   "new_find": "https://www.etsy.com/listing/4491199204"
+  },
+  {
+   "group": "yours",
+   "name": "Bamboo Dragon",
+   "brand": "Isabel Harte",
+   "img": "assets/albums/deco-lagoon/adds/isabel-harte-bamboo-dragon.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "alb2:isabel-harte-isabel-harte",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "tnt",
+   "name": "White Lotus",
+   "brand": "Mahj Tile Haus",
+   "img": "assets/albums/deco-mulberry/adds/mahj-tile-haus-white-lotus.jpg",
+   "why": "Shown twice in Tiles & Tablescapes with Deco Lagoon: soft aqua and ivory with a gold key frame. Her gold palm and ivory faces, with a lighter teal around her.",
+   "retired": false,
+   "fym": "mahjtilehaus.com/white-lotus-mat",
+   "lowres": true,
+   "tnt": "Nandi Linscombe Shenkan + Bernadette Yllana Gerace: Deco Lagoon on Mahj Tile Haus White Lotus"
+  },
+  {
+   "group": "yours",
+   "name": "Year of the Dragon Mat - Amped-Up Pink",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/albums/deco-lagoon/adds/bespoke-mahjong-year-of-the-dragon-mat-amped-up-pink.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "www.bespokemahjong.com/year-of-the-dragon-amped-up-pink-1",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Vegan Leather – Gold",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/albums/deco-lagoon/adds/bam-bird-boutique-vegan-leather-gold.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/origami-leather-mat?v=52200887910709",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Art Deco Gilded Golden",
+   "brand": "Splash of Color",
+   "img": "assets/albums/deco-lagoon/adds/splash-of-color-art-deco-gilded-golden.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "https://splashofcolorco.com/products/art-deco-gilded-golden-blue-speakeasy-collection-mahjong-mat?_pos=1&_sid=ae21811e9&_ss=r",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true
   },
   {
    "group": "deco",
@@ -63,10 +148,96 @@
    "dc": "/splash-of-color-discount-code"
   },
   {
+   "group": "best",
+   "name": "Deco Neoprene",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-neoprene.jpg",
+   "why": "Bam Bird Boutique's Deco Neoprene mat (one colorway, deep teal with gold deco fans in the corners): designed to go with the Deco tiles.",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "tnt",
+   "name": "YOTD Black",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/mats/gallery/bespoke-mahjong--yotd-black.webp",
+   "why": "From Tiles & Tablescapes: black with embroidered dragons and pink roses. Dragons like hers, and the teal, berry and rose in the stitching pick up her faces.",
+   "retired": false,
+   "fym": "www.bespokemahjong.com/year-of-the-dragon-black",
+   "lowres": true,
+   "tnt": "Nandi Linscombe Shenkan: Bespoke Year of the Dragon (black) with Deco Lagoon, Club Mah Jenn Mother of Pearl racks",
+   "her_keep": true
+  },
+  {
+   "group": "yours",
+   "name": "Year of the Dragon Mat - Amped-Up Grey",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/albums/deco-lagoon/adds/bespoke-mahjong-year-of-the-dragon-mat-amped-up-grey.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "www.bespokemahjong.com/year-of-the-dragon-amped-up-grey-1",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "The Marquee",
+   "brand": "Mahj by SI",
+   "img": "assets/albums/deco-lagoon/adds/mahj-by-si-the-marquee.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "https://www.mahjongbysi.com/products/the-marquee-mahjong-mat?variant=67769211977811",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "best",
+   "name": "Deco Dragon (Lagoon)",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg",
+   "why": "Bam Bird Boutique's own Lagoon Deco Dragon, made for these tiles: the same dragons, peacock feathers and deco lines, tone on tone. The Mulberry racks bring her second color.",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061",
+   "lowres": false
+  },
+  {
+   "group": "contrast",
+   "name": "East Meets West – Magenta",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/leftout/bam-bird-boutique-east-meets-west-magenta.jpg",
+   "why": "Bam Bird Boutique's solid magenta: her berry, turned up. The tiles bring all the teal.",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/east-meets-west-neoprene-mat?v=49857170735413",
+   "lowres": true
+  },
+  {
+   "group": "deco",
+   "name": "Gatsby's Feathered Affair",
+   "brand": "Anders Ruff",
+   "img": "assets/colorcards/deco/leftout/anders-ruff-gatsbys-feathered-affair.jpg",
+   "why": "An art deco fan and herons in deep green and sage, with a deco line frame. Same era as the tiles; the deep green picks up her dragon and lion.",
+   "retired": false,
+   "fym": "shop.andersruff.com/gatsbys-feathered-affair-mahjong-mat",
+   "lowres": true
+  },
+  {
+   "group": "contrast",
+   "name": "Garden Party – Mulberry",
+   "brand": "My Fair Mahjong",
+   "img": "assets/colorcards/deco/mats/my-fair-mahjong-garden-party-mulberry.jpg",
+   "why": "A berry center with a teal edge and lilac scallops. The tiles bring the teal, the mat brings the berry.",
+   "retired": false,
+   "fym": "myfairmahjong.com/mat-garden-party-mulberry",
+   "lowres": false
+  },
+  {
    "group": "teal",
    "name": "Sapphire Blooms",
    "brand": "Lemondrop Mahjong Co",
-   "img": "assets/colorcards/deco/mats/lemondrop-mahjong-co-sapphire-blooms.jpg",
+   "img": "assets/albums/deco-lagoon/adds/lemondrop-sapphire-blooms.jpg",
    "why": "A teal scallop center, the same fan-shell deco as her backs, framed in mulberry and gold inside a navy garden of plum, berry and teal peonies. Her two colours plus gold, in one mat.",
    "retired": false,
    "fym": "",
@@ -84,89 +255,47 @@
    ]
   },
   {
-   "group": "top",
-   "name": "Pretty in Plum Premium",
-   "brand": "Mahjong Register",
-   "img": "assets/colorcards/deco/mats/mahjong-register-pretty-in-plum-premium.jpg",
-   "why": "Plum, lilac and ivory with a scalloped deco pattern in the middle: her mulberry faces, big.",
+   "group": "yours",
+   "name": "Tiger Fans",
+   "brand": "Piper Chase Studios",
+   "img": "assets/colorcards/deco/mats/piper-chase-studios-tiger-fans.jpg",
+   "why": "Tiffany Nov 17 3:24am: should be in the Lagoon album too.",
    "retired": false,
-   "fym": "mahjongregister.com/preorder-buttercup-cherie-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
-   "lowres": false
+   "fym": "www.etsy.com/listing/4553922554/tiger-fans",
+   "lowres": true,
+   "her_pick": true,
+   "added_live_nov17": true
   },
   {
-   "group": "best",
-   "name": "Gilded Peacock",
-   "brand": "Bougie Mahjong",
-   "img": "assets/colorcards/deco/mats/bougie-mahjong-gilded-peacock.jpg",
-   "why": "Art deco on art deco: gold fan lines and peacock feathers on deep teal, with an ivory center like her faces.",
+   "group": "stand",
+   "name": "Reba",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-reba.jpg",
+   "why": "Your favorite Deco pairing. The deep teal field holds her Lagoon backs, and the pink frame and bouquet pick up her mulberry and rose faces.",
    "retired": false,
-   "fym": "bougiemahjong.com/gilded-peacock-mahjong-mat",
-   "lowres": false
-  },
-  {
-   "group": "best",
-   "name": "Spring Blooms Premium",
-   "brand": "Sunday Mahjong",
-   "img": "assets/colorcards/deco/mats/sunday-mahjong-spring-blooms-premium.jpg",
-   "why": "A lagoon-teal center framed in plum and gold flowers: the backs, the crak frames and the gold palm all at once.",
-   "retired": false,
-   "fym": "sundaymahjong.com/spring-blooms-premium-mahjong-mat",
+   "fym": "brittmillsdesign.com/reba-neoprene-mahjong-mat",
    "lowres": false
   },
   {
    "group": "tnt",
-   "name": "YOTD Black",
-   "brand": "Bespoke Mahjong",
-   "img": "assets/mats/gallery/bespoke-mahjong--yotd-black.webp",
-   "why": "From Tiles & Tablescapes: black with embroidered dragons and pink roses. Dragons like hers, and the teal, berry and rose in the stitching pick up her faces.",
+   "name": "Jade",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-jade.jpg",
+   "why": "A Tiles & Tablescapes member's pick, and yours: teal-green fans on a periwinkle and navy ground. Moody, and it carries her teal backs, navy dots and periwinkle stars.",
    "retired": false,
-   "fym": "www.bespokemahjong.com/year-of-the-dragon-black",
-   "lowres": true,
-   "tnt": "Nandi Linscombe Shenkan: Bespoke Year of the Dragon (black) with Deco Lagoon, Club Mah Jenn Mother of Pearl racks",
-   "her_keep": true
-  },
-  {
-   "group": "best",
-   "name": "Deco Neoprene",
-   "brand": "Bam Bird Boutique",
-   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-neoprene.jpg",
-   "why": "Bam Bird Boutique's Deco Neoprene mat (one colorway, deep teal with gold deco fans in the corners): designed to go with the Deco tiles.",
-   "retired": false,
-   "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat",
-   "lowres": false
-  },
-  {
-   "group": "deco",
-   "name": "Crane Cloud",
-   "brand": "Silk Mahjong",
-   "img": "assets/colorcards/deco/mats/silk-mahjong-crane-cloud.jpg",
-   "why": "White cranes circling a gold sun on deep teal, inside a lagoon-blue cloud border. Her teal backs and gold palms, and a crane like her 1 Bam.",
-   "retired": false,
-   "fym": "",
+   "fym": "www.ohmymahjong.com/jade-mat-in-tube",
    "lowres": false,
-   "partner": false,
-   "url": "https://silkmahjong.com/products/mahjong-mat-2994012",
-   "price": "$109",
-   "added_after_review": "Nov 8 6:24pm: Tiffany brought it in (Silk Mahjong, no affiliate program; whole line allowed 6:25pm). Leatherette or neoprene, same listing."
+   "tnt": "Heather Huddleston McDonough: Deco Lagoon on OMM Jade, BBB racks (\"the moody, slightly masculine feel I was looking for\")"
   },
   {
    "group": "deco",
-   "name": "Dark Blue Art Deco, Gold Fans",
-   "brand": "Dreamframer Art",
-   "img": "assets/albums/discovery/dreamframer-art-dark-blue-art-deco-gold-fans.jpg",
-   "box": [
-    108,
-    180,
-    682,
-    752
-   ],
-   "why": "Your New finds pick: navy ground with teal and gold art deco fans. Her teal on the fans, her gold palm, her navy dots.",
+   "name": "Midnight Peacock",
+   "brand": "Anders Ruff",
+   "img": "assets/colorcards/deco/mats/anders-ruff-midnight-peacock.jpg",
+   "why": "Deep teal-green with gold palms, a quiet echo of the gold palm on every back.",
    "retired": false,
-   "fym": "www.etsy.com/listing/4491199204",
-   "lowres": true,
-   "partner": false,
-   "added_after_review": "Nov 8 3:20pm: added after her review (her note: Splash of Color has a deco mat that should be brought in; and her New finds 'Bring it in' on Dreamframer Dark Blue Art Deco Gold Fans). Appended after her saved order.",
-   "url": "https://go.shopmy.us/p-102728926"
+   "fym": "shop.andersruff.com/midnight-peacock-mahjong-mat",
+   "lowres": true
   },
   {
    "group": "best",
@@ -179,13 +308,13 @@
    "lowres": false
   },
   {
-   "group": "stand",
-   "name": "Wren",
-   "brand": "Britt Mills",
-   "img": "assets/colorcards/deco/mats/britt-mills-wren.jpg",
-   "why": "A dark lagoon center inside a mulberry scalloped frame, with a plum paisley border. Her back color plus her faces' second color, like it was made for her.",
+   "group": "best",
+   "name": "Caroline in Peacock",
+   "brand": "Mahj & Vine",
+   "img": "assets/colorcards/deco/mats/mahj-and-vine-caroline-in-peacock.jpg",
+   "why": "A peacock teal center inside a frame of berry and magenta blooms. Both of her colors at full strength.",
    "retired": false,
-   "fym": "brittmillsdesign.com/wren-neoprene-mahjong-mat",
+   "fym": "mahjandvine.com/caroline-in-peacock",
    "lowres": false
   },
   {
@@ -206,48 +335,70 @@
    "added_after_review": "Nov 8 2:45pm: added after her review (she caught Scarlett + Flora; Fête (Peacock) from the re-pull). Appended after her saved order."
   },
   {
-   "group": "deco",
-   "name": "Fête (Peacock)",
-   "brand": "Betty June & Jeannette",
-   "img": "assets/colorcards/deco/mats/betty-june-and-jeannette-fete-peacock.jpg",
-   "box": [
-    24,
-    16,
-    617,
-    640
-   ],
-   "why": "Peacock feathers in deep teal, magenta and gold: her peacock-feather winds blown up into a whole mat, with both her backs and her berry faces.",
+   "group": "yours",
+   "name": "Flourish",
+   "brand": "Britt Mills",
+   "img": "assets/albums/deco-lagoon/adds/britt-mills-flourish.jpg",
+   "why": "Your add from the catalog search (round 2).",
    "retired": false,
-   "fym": "www.etsy.com/listing/4568416056/f-te-peacock",
+   "fym": "brittmillsdesign.com/flourish-neoprene-mahjong-mat",
    "lowres": true,
-   "added_after_review": "Nov 8 2:45pm: added after her review (she caught Scarlett + Flora; Fête (Peacock) from the re-pull). Appended after her saved order."
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "teal",
+   "name": "Year of the Snake",
+   "brand": "Wren Mats",
+   "img": "assets/colorcards/deco/mats/wren-mats-year-of-the-snake.jpg",
+   "why": "Lagoon-blue ground with a pink frame and pink snakes; the sage center keeps it soft.",
+   "retired": false,
+   "fym": "www.wrenmats.com/year-of-the-snake-mat",
+   "lowres": true
   },
   {
    "group": "stand",
-   "name": "Eden",
+   "name": "Viola",
    "brand": "Britt Mills",
-   "img": "assets/colorcards/deco/mats/britt-mills-eden.jpg",
-   "why": "A deep teal frame around a garden of blues, pinks and corals; the pond in the middle picks up her periwinkle stars.",
+   "img": "assets/colorcards/deco/mats/britt-mills-viola.jpg",
+   "why": "A deep teal center inside a black floral border of pinks and plums. Moody, and very her: her teal backs and her mulberry faces in one mat.",
    "retired": false,
-   "fym": "brittmillsdesign.com/eden-neoprene-mahjong-mat",
+   "fym": "brittmillsdesign.com/viola-neoprene-mahjong-mat-arriving-late-october",
    "lowres": false
   },
   {
-   "group": "stand",
-   "name": "Scarlett",
-   "brand": "Britt Mills",
-   "img": "assets/colorcards/deco/mats/britt-mills-scarlett.jpg",
-   "box": [
-    0,
-    0,
-    1200,
-    1192
-   ],
-   "why": "Reba's berry sister: a deep mulberry field with a flower-crowned statue head in pinks, plum and gold. Her mulberry faces as the whole mat, so the Lagoon backs pop against it.",
+   "group": "yours",
+   "name": "Elysium",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/deco-lagoon/adds/oh-my-mahjong-elysium.jpg",
+   "why": "Your add from the catalog search (round 2).",
    "retired": false,
-   "fym": "brittmillsdesign.com/scarlett-neoprene-mahjong-mat",
+   "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
    "lowres": false,
-   "added_after_review": "Nov 8 2:45pm: added after her review (she caught Scarlett + Flora; Fête (Peacock) from the re-pull). Appended after her saved order."
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Regal Bloom Neoprene",
+   "brand": "Britt Mills",
+   "img": "assets/albums/deco-lagoon/adds/britt-mills-regal-bloom-neoprene.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "brittmillsdesign.com/regal-bloom-neoprene-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "stand",
+   "name": "Wren",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-wren.jpg",
+   "why": "A dark lagoon center inside a mulberry scalloped frame, with a plum paisley border. Her back color plus her faces' second color, like it was made for her.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/wren-neoprene-mahjong-mat",
+   "lowres": false
   },
   {
    "group": "tnt",
@@ -262,62 +413,12 @@
   },
   {
    "group": "best",
-   "name": "Caroline in Peacock",
-   "brand": "Mahj & Vine",
-   "img": "assets/colorcards/deco/mats/mahj-and-vine-caroline-in-peacock.jpg",
-   "why": "A peacock teal center inside a frame of berry and magenta blooms. Both of her colors at full strength.",
-   "retired": false,
-   "fym": "mahjandvine.com/caroline-in-peacock",
-   "lowres": false
-  },
-  {
-   "group": "deco",
-   "name": "Crane & Moon",
-   "brand": "YOLO Mahjong",
-   "img": "assets/colorcards/deco/mats/yolo-mahjong-crane-and-moon.jpg",
-   "why": "Deep teal with a gold moon, cranes and coral flowers. The crane is a twin of her 1 Bam.",
-   "retired": false,
-   "fym": "www.yolomahjong.com/crane-moon-mahjong-mat-floral-chinese-mahjong-table-mat-for-mahjong-set-31-5-x-31-5-inch",
-   "lowres": false
-  },
-  {
-   "group": "contrast",
-   "name": "Deco Dragon (Indigo)",
-   "brand": "Bam Bird Boutique",
-   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-indigo.jpg",
-   "why": "Bam Bird Boutique's navy Deco Dragon. It matches her navy dots and numbers, and the dragons match hers.",
-   "retired": false,
-   "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293",
-   "lowres": false
-  },
-  {
-   "group": "deco",
-   "name": "Gatsby's Feathered Affair",
-   "brand": "Anders Ruff",
-   "img": "assets/colorcards/deco/leftout/anders-ruff-gatsbys-feathered-affair.jpg",
-   "why": "An art deco fan and herons in deep green and sage, with a deco line frame. Same era as the tiles; the deep green picks up her dragon and lion.",
-   "retired": false,
-   "fym": "shop.andersruff.com/gatsbys-feathered-affair-mahjong-mat",
-   "lowres": true
-  },
-  {
-   "group": "best",
    "name": "Ruby",
    "brand": "Britt Mills",
    "img": "assets/colorcards/deco/leftout/britt-mills-ruby.jpg",
    "why": "A sage center inside a dark floral border of berry, rose and gold. It ranked near the top of the Lagoon color pull in October, and the berry blooms pick up her crak frames.",
    "retired": false,
    "fym": "brittmillsdesign.com/ruby-neoprene-mahjong-mat",
-   "lowres": true
-  },
-  {
-   "group": "deco",
-   "name": "Midnight Peacock",
-   "brand": "Anders Ruff",
-   "img": "assets/colorcards/deco/mats/anders-ruff-midnight-peacock.jpg",
-   "why": "Deep teal-green with gold palms, a quiet echo of the gold palm on every back.",
-   "retired": false,
-   "fym": "shop.andersruff.com/midnight-peacock-mahjong-mat",
    "lowres": true
   },
   {
@@ -342,107 +443,78 @@
    "photo_note": "Lemondrop watermark on every photo; bottom-left corner used"
   },
   {
+   "group": "deco",
+   "name": "Crane & Moon",
+   "brand": "YOLO Mahjong",
+   "img": "assets/colorcards/deco/mats/yolo-mahjong-crane-and-moon.jpg",
+   "why": "Deep teal with a gold moon, cranes and coral flowers. The crane is a twin of her 1 Bam.",
+   "retired": false,
+   "fym": "www.yolomahjong.com/crane-moon-mahjong-mat-floral-chinese-mahjong-table-mat-for-mahjong-set-31-5-x-31-5-inch",
+   "lowres": false
+  },
+  {
    "group": "stand",
-   "name": "Ocean Florals",
-   "brand": "Let's Be Besties",
-   "img": "assets/colorcards/deco/mats/lets-be-besties-ocean-florals.jpg",
-   "why": "A dark teal center ringed in coral, rose and blue blooms, close to her rose crak frames.",
+   "name": "Eden",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-eden.jpg",
+   "why": "A deep teal frame around a garden of blues, pinks and corals; the pond in the middle picks up her periwinkle stars.",
    "retired": false,
-   "fym": "letsbebesties.com/ocean-florals-mahjong-mat",
+   "fym": "brittmillsdesign.com/eden-neoprene-mahjong-mat",
    "lowres": false
   },
   {
-   "group": "teal",
-   "name": "Year of the Snake",
-   "brand": "Wren Mats",
-   "img": "assets/colorcards/deco/mats/wren-mats-year-of-the-snake.jpg",
-   "why": "Lagoon-blue ground with a pink frame and pink snakes; the sage center keeps it soft.",
+   "group": "deco",
+   "name": "Fête (Peacock)",
+   "brand": "Betty June & Jeannette",
+   "img": "assets/colorcards/deco/mats/betty-june-and-jeannette-fete-peacock.jpg",
+   "box": [
+    24,
+    16,
+    617,
+    640
+   ],
+   "why": "Peacock feathers in deep teal, magenta and gold: her peacock-feather winds blown up into a whole mat, with both her backs and her berry faces.",
    "retired": false,
-   "fym": "www.wrenmats.com/year-of-the-snake-mat",
-   "lowres": true
-  },
-  {
-   "group": "contrast",
-   "name": "Garden Party – Mulberry",
-   "brand": "My Fair Mahjong",
-   "img": "assets/colorcards/deco/mats/my-fair-mahjong-garden-party-mulberry.jpg",
-   "why": "A berry center with a teal edge and lilac scallops. The tiles bring the teal, the mat brings the berry.",
-   "retired": false,
-   "fym": "myfairmahjong.com/mat-garden-party-mulberry",
-   "lowres": false
-  },
-  {
-   "group": "contrast",
-   "name": "East Meets West – Magenta",
-   "brand": "Bam Bird Boutique",
-   "img": "assets/colorcards/deco/leftout/bam-bird-boutique-east-meets-west-magenta.jpg",
-   "why": "Bam Bird Boutique's solid magenta: her berry, turned up. The tiles bring all the teal.",
-   "retired": false,
-   "fym": "www.bambirdboutique.com/east-meets-west-neoprene-mat?v=49857170735413",
-   "lowres": true
-  },
-  {
-   "group": "tnt",
-   "name": "Jade",
-   "brand": "Oh My Mahjong",
-   "img": "assets/colorcards/deco/mats/oh-my-mahjong-jade.jpg",
-   "why": "A Tiles & Tablescapes member's pick, and yours: teal-green fans on a periwinkle and navy ground. Moody, and it carries her teal backs, navy dots and periwinkle stars.",
-   "retired": false,
-   "fym": "www.ohmymahjong.com/jade-mat-in-tube",
-   "lowres": false,
-   "tnt": "Heather Huddleston McDonough: Deco Lagoon on OMM Jade, BBB racks (\"the moody, slightly masculine feel I was looking for\")"
-  },
-  {
-   "group": "contrast",
-   "name": "Hawthorne",
-   "brand": "Oh My Mahjong",
-   "img": "assets/colorcards/deco/mats/oh-my-mahjong-hawthorne.jpg",
-   "why": "A plum center inside navy and gold. Rich and dark, so her mulberry crak frames come forward.",
-   "retired": false,
-   "fym": "www.ohmymahjong.com/hawthorne-mat-in-tube",
-   "lowres": false
-  },
-  {
-   "group": "tnt",
-   "name": "White Lotus",
-   "brand": "Mahj Tile Haus",
-   "img": "assets/mats/gallery/mahj-tile-haus--white-lotus.webp",
-   "why": "Shown twice in Tiles & Tablescapes with Deco Lagoon: soft aqua and ivory with a gold key frame. Her gold palm and ivory faces, with a lighter teal around her.",
-   "retired": false,
-   "fym": "mahjtilehaus.com/white-lotus-mat",
+   "fym": "www.etsy.com/listing/4568416056/f-te-peacock",
    "lowres": true,
-   "tnt": "Nandi Linscombe Shenkan + Bernadette Yllana Gerace: Deco Lagoon on Mahj Tile Haus White Lotus"
+   "added_after_review": "Nov 8 2:45pm: added after her review (she caught Scarlett + Flora; Fête (Peacock) from the re-pull). Appended after her saved order."
   },
   {
-   "group": "teal",
-   "name": "Plum Panda Premium",
-   "brand": "Sunday Mahjong",
-   "img": "assets/colorcards/deco/mats/sunday-mahjong-plum-panda-premium.jpg",
-   "why": "Teal-green with a plum border and little pink flowers. The orange trim is the only stretch.",
+   "group": "top",
+   "name": "Pretty in Plum Premium",
+   "brand": "Mahjong Register",
+   "img": "assets/colorcards/deco/mats/mahjong-register-pretty-in-plum-premium.jpg",
+   "why": "Plum, lilac and ivory with a scalloped deco pattern in the middle: her mulberry faces, big.",
    "retired": false,
-   "fym": "sundaymahjong.com/plum-panda-premium-mahjong-mat",
+   "fym": "mahjongregister.com/preorder-buttercup-cherie-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
    "lowres": false
+  },
+  {
+   "group": "stand",
+   "name": "Scarlett",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-scarlett.jpg",
+   "box": [
+    0,
+    0,
+    1200,
+    1192
+   ],
+   "why": "Reba's berry sister: a deep mulberry field with a flower-crowned statue head in pinks, plum and gold. Her mulberry faces as the whole mat, so the Lagoon backs pop against it.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/scarlett-neoprene-mahjong-mat",
+   "lowres": false,
+   "added_after_review": "Nov 8 2:45pm: added after her review (she caught Scarlett + Flora; Fête (Peacock) from the re-pull). Appended after her saved order."
   },
   {
    "group": "best",
-   "name": "Deco Dragon (Lagoon)",
-   "brand": "Bam Bird Boutique",
-   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg",
-   "why": "Bam Bird Boutique's own Lagoon Deco Dragon, made for these tiles: the same dragons, peacock feathers and deco lines, tone on tone. The Mulberry racks bring her second color.",
+   "name": "Spring Blooms Premium",
+   "brand": "Sunday Mahjong",
+   "img": "assets/colorcards/deco/mats/sunday-mahjong-spring-blooms-premium.jpg",
+   "why": "A lagoon-teal center framed in plum and gold flowers: the backs, the crak frames and the gold palm all at once.",
    "retired": false,
-   "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061",
+   "fym": "sundaymahjong.com/spring-blooms-premium-mahjong-mat",
    "lowres": false
-  },
-  {
-   "group": "tnt",
-   "name": "Brightside",
-   "brand": "My Fair Mahjong",
-   "img": "assets/mats/gallery/my-fair-mahjong--mahjong-mat-brightside-33-x-33.webp",
-   "why": "From Tiles & Tablescapes: an aqua and green deco lattice. One of its teals matches her backs almost exactly, and it gives her a brighter, daytime look.",
-   "retired": false,
-   "fym": "myfairmahjong.com/mahjong-mat-brightside-33-x-33",
-   "lowres": true,
-   "tnt": "Rhonda Lehtinen: Deco Lagoon on My Fair Mahjong Brightside (green); \"one of the colors matches the deco almost perfectly\""
   },
   {
    "group": "deco",
@@ -455,6 +527,144 @@
    "lowres": false
   },
   {
+   "group": "yours",
+   "name": "Mystic Marrakech",
+   "brand": "Mahj by SI",
+   "img": "assets/albums/deco-lagoon/adds/mahj-by-si-mystic-marrakech.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "https://www.mahjongbysi.com/products/mystic-marrakech",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Plaid Neoprene – Pink on Pink",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/albums/deco-lagoon/adds/bam-bird-boutique-plaid-neoprene-pink-on-pink.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963728199989",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "stand",
+   "name": "Ocean Florals",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-ocean-florals.jpg",
+   "why": "A dark teal center ringed in coral, rose and blue blooms, close to her rose crak frames.",
+   "retired": false,
+   "fym": "letsbebesties.com/ocean-florals-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "yours",
+   "name": "Vegan Leather – Navy",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/albums/deco-lagoon/adds/bam-bird-boutique-vegan-leather-navy.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/origami-leather-mat?v=51358452613429",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Plaid Neoprene – Green with Pink",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/albums/deco-lagoon/adds/bam-bird-boutique-plaid-neoprene-green-with-pink.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963852194101",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Plaid Neoprene – Green and Blue",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/albums/deco-lagoon/adds/bam-bird-boutique-plaid-neoprene-green-and-blue.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963728232757",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Pink Winds",
+   "brand": "Amanda Toppe",
+   "img": "assets/albums/deco-lagoon/adds/amanda-toppe-pink-winds.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "alb:coquette:Pink Winds",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Aria",
+   "brand": "Britt Mills",
+   "img": "assets/albums/deco-lagoon/adds/britt-mills-aria.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "brittmillsdesign.com/aria-britt-mills-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "teal",
+   "name": "Plum Panda Premium",
+   "brand": "Sunday Mahjong",
+   "img": "assets/colorcards/deco/mats/sunday-mahjong-plum-panda-premium.jpg",
+   "why": "Teal-green with a plum border and little pink flowers. The orange trim is the only stretch.",
+   "retired": false,
+   "fym": "sundaymahjong.com/plum-panda-premium-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "yours",
+   "name": "Carson Revel",
+   "brand": "Ozark Mahjongg",
+   "img": "assets/albums/deco-lagoon/adds/ozark-mahjongg-carson-revel.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "https://www.ozarkmahjongg.com/product-page/carson-revel-mat",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Trent Celadon",
+   "brand": "Ozark Mahjongg",
+   "img": "assets/albums/deco-lagoon/adds/trent-celadon-candidate.jpg",
+   "why": "Tiffany round 2: Ozark Trent Celadon for Lagoon only.",
+   "retired": false,
+   "fym": "https://www.ozarkmahjongg.com/product-page/trent-celadon-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "contrast",
+   "name": "Hawthorne",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-hawthorne.jpg",
+   "why": "A plum center inside navy and gold. Rich and dark, so her mulberry crak frames come forward.",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/hawthorne-mat-in-tube",
+   "lowres": false
+  },
+  {
    "group": "deco",
    "name": "SoHo",
    "brand": "Oh My Mahjong",
@@ -463,6 +673,61 @@
    "retired": true,
    "fym": "alb:drake:SoHo",
    "lowres": true
+  },
+  {
+   "group": "deco",
+   "name": "Dark Blue Art Deco, Gold Fans",
+   "brand": "Dreamframer Art",
+   "img": "assets/albums/discovery/dreamframer-art-dark-blue-art-deco-gold-fans.jpg",
+   "box": [
+    108,
+    180,
+    682,
+    752
+   ],
+   "why": "Your New finds pick: navy ground with teal and gold art deco fans. Her teal on the fans, her gold palm, her navy dots.",
+   "retired": false,
+   "fym": "www.etsy.com/listing/4491199204",
+   "lowres": true,
+   "partner": false,
+   "added_after_review": "Nov 8 3:20pm: added after her review (her note: Splash of Color has a deco mat that should be brought in; and her New finds 'Bring it in' on Dreamframer Dark Blue Art Deco Gold Fans). Appended after her saved order.",
+   "url": "https://go.shopmy.us/p-102728926"
+  },
+  {
+   "group": "yours",
+   "name": "Mirage",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/leftout/oh-my-mahjong-mirage.jpg",
+   "why": "Tiffany Nov 17 3:24am: should be in the Lagoon album too.",
+   "retired": true,
+   "fym": null,
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "added_live_nov17": true
+  },
+  {
+   "group": "holiday",
+   "name": "Winter Berry",
+   "brand": "Britt Mills",
+   "img": "assets/albums/deco-lagoon/adds/britt-mills-winter-berry.jpg",
+   "why": "Your add from the catalog search (round 2).",
+   "retired": false,
+   "fym": "brittmillsdesign.com/winter-berry-neoprene-mahjong-mat",
+   "lowres": false,
+   "holiday": true,
+   "her_pick": true
+  },
+  {
+   "group": "holiday",
+   "name": "Yuletide",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-yuletide.jpg",
+   "why": "Holiday: an emerald-and-teal plaid like her backs inside a berry-red frame with roses and lanterns: two colours, not tonal.",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/yuletide-mat-in-tube",
+   "lowres": false,
+   "holiday": true
   },
   {
    "group": "holiday",
@@ -479,18 +744,8 @@
     150,
     1020,
     1080
-   ]
-  },
-  {
-   "group": "holiday",
-   "name": "Yuletide",
-   "brand": "Oh My Mahjong",
-   "img": "assets/colorcards/deco/mats/oh-my-mahjong-yuletide.jpg",
-   "why": "Holiday: an emerald-and-teal plaid like her backs inside a berry-red frame with roses and lanterns: two colours, not tonal.",
-   "retired": false,
-   "fym": "www.ohmymahjong.com/yuletide-mat-in-tube",
-   "lowres": false,
-   "holiday": true
+   ],
+   "her_note": "mat needs to be straightened onto the card, it's lopsided and I see part of the table, see other cards that have correct graphic"
   },
   {
    "group": "holiday",
@@ -504,29 +759,40 @@
    "holiday": true
   },
   {
-   "group": "yours",
-   "name": "Tiger Fans",
-   "brand": "Piper Chase Studios",
-   "img": "assets/colorcards/deco/mats/piper-chase-studios-tiger-fans.jpg",
-   "why": "Tiffany Nov 17 3:24am: should be in the Lagoon album too.",
+   "group": "holiday",
+   "name": "Bandana – Holiday Green/Pink accents",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/albums/deco-lagoon/adds/bam-bird-boutique-bandana-holiday-green-pink-accents.jpg",
+   "why": "Your add from the catalog search (round 2).",
    "retired": false,
-   "fym": "www.etsy.com/listing/4553922554/tiger-fans",
-   "lowres": true,
-   "her_pick": true,
-   "added_live_nov17": true
+   "fym": "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465237813",
+   "lowres": false,
+   "holiday": true,
+   "her_pick": true
   },
   {
    "group": "yours",
-   "name": "Mirage",
-   "brand": "Oh My Mahjong",
-   "img": "assets/colorcards/deco/leftout/oh-my-mahjong-mirage.jpg",
-   "why": "Tiffany Nov 17 3:24am: should be in the Lagoon album too.",
-   "retired": true,
+   "name": "Art Deco Lagoon",
+   "brand": "Mahjong Along With Me",
+   "img": "assets/colorcards/deco/leftout/mahjong-along-with-me-art-deco-lagoon.jpg",
+   "why": "Your pick from Left out (round 3). Claude had said: Made for the Deco tiles (teal, black and gold deco panels), and Tiles & Tablescapes members pair it with Lagoon. A true match, but a new non-partner brand: it goes live as soon as you say yes to Mahjong Along With Me (they run UpPromote, so we can apply).",
+   "retired": false,
    "fym": null,
    "lowres": false,
    "holiday": false,
-   "her_pick": true,
-   "added_live_nov17": true
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Midnight Botanicals",
+   "brand": "Lemondrop Mahjong Co",
+   "img": "assets/colorcards/deco/leftout/lemondrop-midnight-botanicals.jpg",
+   "why": "Your pick from Left out (round 3). Claude had said: Navy center in magenta and pink florals: more Indigo and Mulberry than Lagoon.",
+   "retired": false,
+   "fym": null,
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
   }
  ],
  "_nov08": "Tiffany Nov 8 10:11am edits: removed Petals After Dark, Crown Jewels, Royal Peacock, Imperial Peacock, Imperial Koi Pond, Indigo Reef, Teal Tapestry, Community Joy, Purple & Aqua Marble; added Deco Dragon (Lagoon), Deco Neoprene, Gatsby's Feathered Affair, OMM Jade, Britt Mills Ruby, East Meets West Magenta; Eden, Viola, Pretty in Plum into the top 10; TNT recs (config/tnt-recs.json deco-lagoon) lead the album, labelled 'TNT rec · mat · brand'. Reba stays the first non-TNT card; Deco Dragon (Mulberry) #8 (sister mat never #1).",
