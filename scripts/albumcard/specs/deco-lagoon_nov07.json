@@ -58,19 +58,6 @@
   },
   {
    "group": "yours",
-   "name": "Dark Blue Art Deco, Gold Geometric Fans",
-   "brand": "Dreamframer Art",
-   "img": "assets/albums/discovery/dreamframer-art-dark-blue-art-deco-gold-fans.jpg",
-   "why": "Your pick from New finds (round 2). Navy ground with teal and gold art deco fans: her teal on the fans, her gold palm, her navy dots.",
-   "retired": false,
-   "fym": null,
-   "lowres": true,
-   "her_pick": true,
-   "new_find": "https://www.etsy.com/listing/4491199204",
-   "url": "https://go.shopmy.us/p-102728926"
-  },
-  {
-   "group": "yours",
    "name": "Bamboo Dragon",
    "brand": "Isabel Harte",
    "img": "assets/albums/deco-lagoon/adds/isabel-harte-bamboo-dragon.jpg",
@@ -114,7 +101,13 @@
    "fym": "www.bambirdboutique.com/origami-leather-mat?v=52200887910709",
    "lowres": true,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "box": [
+    225,
+    735,
+    1520,
+    1800
+   ]
   },
   {
    "group": "yours",
@@ -438,27 +431,6 @@
    "retired": false,
    "fym": "brittmillsdesign.com/ruby-neoprene-mahjong-mat",
    "lowres": true
-  },
-  {
-   "group": "deco",
-   "name": "Floral Affair",
-   "brand": "Lemondrop Mahjong Co",
-   "img": "assets/colorcards/deco/mats/lemondrop-mahjong-co-floral-affair.jpg",
-   "why": "A navy garden of teal ferns and berry-pink blooms inside a gold art deco arc border. Her teal and mulberry, and the deco line work of her tiles.",
-   "retired": false,
-   "fym": "",
-   "lowres": true,
-   "partner": false,
-   "box": [
-    0,
-    470,
-    530,
-    1000
-   ],
-   "url": "https://lemondropmahjongco.com/products/floral-affair-mat",
-   "price": "$80",
-   "added_after_review": "Nov 8 go-live: found in the exhaustive research redo (Lemondrop, the brand of her Sapphire Blooms bring-in; pending affiliate). True match at colour rank; product link, no code until Lemondrop approves.",
-   "photo_note": "Lemondrop watermark on every photo; bottom-left corner used"
   },
   {
    "group": "deco",
@@ -814,6 +786,21 @@
    "lowres": false,
    "holiday": false,
    "her_pick": true
+  },
+  {
+   "group": "deco",
+   "name": "Floral Affair",
+   "brand": "Lemondrop Mahjong Co",
+   "img": "assets/albums/catalog-new/lemondrop-mahjong-co--floral-affair.jpg",
+   "why": "A navy garden of teal ferns and berry-pink blooms inside a gold art deco arc border. Her teal and mulberry, and the deco line work of her tiles.",
+   "retired": false,
+   "fym": "",
+   "lowres": true,
+   "partner": false,
+   "url": "https://lemondropmahjongco.com/products/floral-affair-mat",
+   "price": "$80",
+   "added_after_review": "Nov 8 go-live: found in the exhaustive research redo (Lemondrop, the brand of her Sapphire Blooms bring-in; pending affiliate). True match at colour rank; product link, no code until Lemondrop approves.",
+   "photo_note": "Lemondrop watermark on every photo; bottom-left corner used"
   }
  ],
  "_nov08": "Tiffany Nov 8 10:11am edits: removed Petals After Dark, Crown Jewels, Royal Peacock, Imperial Peacock, Imperial Koi Pond, Indigo Reef, Teal Tapestry, Community Joy, Purple & Aqua Marble; added Deco Dragon (Lagoon), Deco Neoprene, Gatsby's Feathered Affair, OMM Jade, Britt Mills Ruby, East Meets West Magenta; Eden, Viola, Pretty in Plum into the top 10; TNT recs (config/tnt-recs.json deco-lagoon) lead the album, labelled 'TNT rec · mat · brand'. Reba stays the first non-TNT card; Deco Dragon (Mulberry) #8 (sister mat never #1).",
