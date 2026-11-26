@@ -16,7 +16,9 @@ h = open(FYM, encoding='utf-8').read(); i = h.index('const D=') + 8; D, _ = json
 CDN = f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{SHA}/'
 e = lambda s: H.escape(s, quote=True)
 man = {c['mat']: c for c in json.load(open(R + 'assets/cards/deco-indigo/manifest.json'))['cards']}
-spec = json.load(open(R + 'scripts/albumcard/specs/deco-indigo_nov07.json'))['mats']
+_allspec = {x['name']: x for x in json.load(open(R + 'scripts/albumcard/specs/deco-indigo_nov07.json'))['mats']}
+_mo = json.load(open(R + 'assets/cards/deco-indigo/manifest.json'))['cards']  # Nov 26: page = manifest cards, manifest order
+spec = [dict(_allspec[c['mat']], holiday=c['holiday']) for c in _mo]
 rec = json.load(open(R + 'config/album-records/deco-indigo.json'))
 NEWURL = {}
 for v in rec.values() if isinstance(rec, dict) else []:
