@@ -24,7 +24,7 @@ async def main():
     for n,k,r,mode in SHOTS:
       await pg.evaluate("""([k,r,m,s])=>{try{TOUR.on=false}catch(e){};S.set=D.sets.findIndex(x=>x.slug===s);S.tilesOpen=false;S.mode=m;S.fav=k;S.rstage=true;S.rpick=[r];S.mfront=k;S.mfset=S.set;S.peek=null;delete S.seen[k];renderAll();}""",[k,r,mode,SET])
       await pg.wait_for_timeout(4500)
-      await pg.evaluate("(m)=>{const c=document.querySelector('#s-mats .scard[id^=top-]');let y=c.getBoundingClientRect().top+scrollY-78;if(m==='close'){const t=[...document.querySelectorAll('#s-mats *')].filter(e=>/Deco Indigo tiles|Indigo tiles/.test(e.textContent)&&e.children.length<4&&e.getBoundingClientRect().height>0).pop();if(t){let el=t;while(el&&el.getBoundingClientRect().height<120)el=el.parentElement;y=el.getBoundingClientRect().top+scrollY-92;}}window.scrollTo(0,y)}",mode)
+      await pg.evaluate("(m)=>{const c=document.querySelector('#s-mats .scard[id^=top-]');let y=c.getBoundingClientRect().top+scrollY-78;if(m==='close'){const t=[...document.querySelectorAll('#s-mats *')].filter(e=>/Deco Indigo tiles|Indigo tiles/.test(e.textContent)&&e.children.length<4&&e.getBoundingClientRect().height>0).pop();if(t){let el=t;while(el&&el.getBoundingClientRect().height<120)el=el.parentElement;y=el.getBoundingClientRect().top+scrollY-92;}else{y=c.getBoundingClientRect().top+scrollY-78-150;}}window.scrollTo(0,y)}",mode)
       await pg.wait_for_timeout(3500)
       x=await pg.evaluate("()=>{const c=document.querySelector('#s-mats .scard[id^=top-]');const x=window.R2CTX(c);return [c.dataset.id,x.rack,x.rack2,S.mode]}")
       assert not x[2], f'MIXED RACKS {n} {x}'
@@ -45,4 +45,6 @@ async def main():
       await pg.screenshot(path=OUT+f'shop-{i+1}.png')
     print('shop rows',nn)
     await b.close()
+import sys
+if len(sys.argv)>1: SHOTS=[x for x in SHOTS if x[0] in sys.argv[1:]]; CARDS=[]
 asyncio.run(main())
