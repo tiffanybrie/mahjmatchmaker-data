@@ -57,11 +57,11 @@ def rack(n):
     return f'<a href="{e(v["u"])}" target="_blank" rel="sponsored noopener">{e(n)}</a>'
 def figure(n, s, hol):
     c = man[s['name']]
-    m = D['mats'].get(c.get('fym') or s.get('fym') or '') or D['mats'].get(FIXKEY.get(s['name']) or '') or next((v for v in D['mats'].values() if v.get('n') == s['name'] and v.get('bn') == s['brand']), None)
+    m = D['mats'].get(c.get('fym') or s.get('fym') or '') or D['mats'].get(FIXKEY.get(s['name']) or '') or next((v for v in D['mats'].values() if v.get('n') == s['name'] and v.get('bn') == s['brand']), None) or next((v for v in D['mats'].values() if v.get('n') == s['name'] and not v.get('hid')), None)
     brand, mat, retired = s['brand'], s['name'], bool(s.get('retired') or c.get('retired_mat'))
     u = (m.get('u') if m else None) or NEWURL.get(mat) or s.get('url') or OTHERURL.get(mat)
     
-    if not u and m and brand == 'Oh My Mahjong': retired = True; u = 'x'
+    if not u and brand == 'Oh My Mahjong' and (m or s.get('retired')): retired = True; u = 'x'
     if not u: print(f'SET ASIDE (no link): {mat}'); return ''
     partner = brand in PARTNERS or (m and m.get('pa')) or brand == 'Bam Bird Boutique'
     pg = brandpg(m) if (m and partner) else None
